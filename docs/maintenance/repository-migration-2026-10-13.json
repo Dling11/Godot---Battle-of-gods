@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-13",
+  "old_repository": "https://github.com/Dling11/godot-practice-first-game.git",
+  "old_head": "1c635ab551ed8218516e8789d3912d05ecc23c40",
+  "new_repository": "https://github.com/Dling11/Godot---Battle-of-gods.git",
+  "new_root_commit": "29a52973b0c2d3b8e868fe3dcf5ebff777e111ef",
+  "normal_clone_before_import": {
+    "bytes": 107859033,
+    "files": 2843
+  },
+  "normal_clone_git": {
+    "bytes": 51286371,
+    "files": 28
+  },
+  "normal_clone_after_import": {
+    "bytes": 145831376,
+    "files": 4092
+  },
+  "normal_clone_godot_cache": {
+    "bytes": 37972343,
+    "files": 1249
+  },
+  "baseline_tracked_files": 2815,
+  "original_metadata_backup": "D:/React_ONLY_2026/GODOT-BATTLE-OF-GODS-git-history-backup-2026-10-13-PSMN3a/.git",
+  "verification": {
+    "non_document_git_blobs_unchanged": 2559,
+    "protected_assets_unchanged": 646,
+    "fresh_editor_import_errors": 0,
+    "fresh_resource_files": 868,
+    "fresh_resource_failures": 0,
+    "original_remote_unchanged": true,
+    "original_metadata_backup_head": "1c635ab551ed8218516e8789d3912d05ecc23c40",
+    "old_commit_objects_in_new_metadata": false,
+    "metadata_switch_completed": true
+  },
+  "measurement_note": "Normal clone of the clean root commit; subsequent documentation-only commit records measurements. No old Git history is imported."
+}
