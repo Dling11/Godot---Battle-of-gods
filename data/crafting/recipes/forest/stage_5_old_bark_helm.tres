@@ -1,0 +1,40 @@
+[gd_resource type="Resource" script_class="RecipeDefinition" format=3 uid="uid://dc1y354j2xaje"]
+
+[ext_resource type="Script" uid="uid://ddkkkbe8622gd" path="res://data/crafting/recipes/recipe_definition.gd" id="1_recipe"]
+[ext_resource type="Script" uid="uid://bll3k2id0v40j" path="res://data/items/materials/material_stack_definition.gd" id="2_stack"]
+[ext_resource type="Resource" path="res://data/items/materials/forest/varkuun_core.tres" id="3_varkuun"]
+[ext_resource type="Resource" path="res://data/items/materials/forest/living_bark_plate.tres" id="4_bark"]
+[ext_resource type="Resource" uid="uid://cudovbs2y3gpc" path="res://data/items/materials/forest/rootbound_core.tres" id="5_rootbound"]
+[ext_resource type="Resource" uid="uid://dduabducj38a" path="res://data/items/materials/forest/forsaken_cloth.tres" id="6_cloth"]
+
+[sub_resource type="Resource" id="Cost_varkuun"]
+script = ExtResource("2_stack")
+material = ExtResource("3_varkuun")
+
+[sub_resource type="Resource" id="Cost_bark"]
+script = ExtResource("2_stack")
+material = ExtResource("4_bark")
+quantity = 3
+
+[sub_resource type="Resource" id="Cost_rootbound"]
+script = ExtResource("2_stack")
+material = ExtResource("5_rootbound")
+quantity = 2
+
+[sub_resource type="Resource" id="Cost_cloth"]
+script = ExtResource("2_stack")
+material = ExtResource("6_cloth")
+quantity = 4
+
+[resource]
+script = ExtResource("1_recipe")
+recipe_id = &"forest_stage_5_old_bark_helm"
+display_name = "Old Bark Helm"
+description = "Shape old-growth bark, core wood, and reclaimed lining into open-faced head protection."
+region_id = &"forest"
+tier = 2
+category = 0
+output_id = &"forest_old_bark_helm"
+ingredients = Array[ExtResource("2_stack")]([SubResource("Cost_varkuun"), SubResource("Cost_bark"), SubResource("Cost_rootbound"), SubResource("Cost_cloth")])
+unlock_id = &"forest_core_gear_crafting"
+gold_cost = 250

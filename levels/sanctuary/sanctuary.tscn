@@ -1,0 +1,138 @@
+[gd_scene format=3 uid="uid://cya5pdouba08m"]
+
+[ext_resource type="Script" uid="uid://krn2lwlcb2bw" path="res://levels/sanctuary/sanctuary_flow.gd" id="1_flow"]
+[ext_resource type="PackedScene" path="res://entities/player/player.tscn" id="2_player"]
+[ext_resource type="PackedScene" path="res://entities/npcs/skillkeeper/skillkeeper.tscn" id="10_skillkeeper"]
+[ext_resource type="PackedScene" path="res://entities/npcs/armskeeper/armskeeper.tscn" id="11_merchant"]
+[ext_resource type="PackedScene" uid="uid://dxh0gl18lug1c" path="res://gameplay/expeditions/expedition_altar.tscn" id="12_altar"]
+[ext_resource type="PackedScene" uid="uid://ch613n2b3q848" path="res://environment/props/sanctuary/divine_fountain.tscn" id="12_fountain"]
+[ext_resource type="PackedScene" path="res://ui/combat_hud.tscn" id="13_hud"]
+[ext_resource type="PackedScene" path="res://ui/character_menu.tscn" id="14_character"]
+[ext_resource type="PackedScene" path="res://ui/dialogue/dialogue_panel.tscn" id="15_dialogue"]
+[ext_resource type="PackedScene" path="res://ui/expeditions/expedition_menu.tscn" id="16_expedition"]
+[ext_resource type="Script" uid="uid://ds6tx8vmvokpu" path="res://gameplay/audio/stage_music.gd" id="17_music_script"]
+[ext_resource type="AudioStream" uid="uid://c1vj618m4ysv1" path="res://assets/audio/music/cathedral_in_the_forest.ogg" id="18_music"]
+[ext_resource type="PackedScene" path="res://ui/pause_menu.tscn" id="19_pause"]
+[ext_resource type="PackedScene" path="res://entities/npcs/rootweaver/rootweaver_nema.tscn" id="21_rootweaver"]
+[ext_resource type="PackedScene" path="res://ui/crafting/rootforge_menu.tscn" id="22_rootforge_menu"]
+[ext_resource type="PackedScene" path="res://entities/npcs/umi/umi.tscn" id="23_umi"]
+[ext_resource type="PackedScene" path="res://ui/material_exchange/umi_exchange_menu.tscn" id="25_exchange_menu"]
+
+[node name="Sanctuary" type="Node" unique_id=1171524165 node_paths=PackedStringArray("player", "combat_hud", "character_menu", "skillkeeper", "weapon_merchant", "rootweaver", "echo_melder", "expedition_altar", "dialogue_panel", "expedition_menu", "rootforge_menu", "umi_exchange_menu", "admin_panel", "admin_stage_6_button", "admin_lab_button")]
+script = ExtResource("1_flow")
+player = NodePath("World/Actors/Player")
+combat_hud = NodePath("UI/CombatHUD")
+character_menu = NodePath("UI/CharacterMenu")
+skillkeeper = NodePath("World/Actors/Skillkeeper")
+weapon_merchant = NodePath("World/Actors/WeaponMerchant")
+rootweaver = NodePath("World/Actors/Rootweaver")
+echo_melder = NodePath("World/Actors/Umi")
+expedition_altar = NodePath("World/Actors/ExpeditionAltar")
+dialogue_panel = NodePath("UI/DialoguePanel")
+expedition_menu = NodePath("UI/ExpeditionMenu")
+rootforge_menu = NodePath("UI/RootforgeMenu")
+umi_exchange_menu = NodePath("UI/UmiExchangeMenu")
+admin_panel = NodePath("UI/AdminPanel")
+admin_stage_6_button = NodePath("UI/AdminPanel/Margin/Stack/OpenStage6")
+admin_lab_button = NodePath("UI/AdminPanel/Margin/Stack/OpenLab")
+
+[node name="StageMusic" type="Node" parent="." unique_id=2133377204]
+script = ExtResource("17_music_script")
+music_stream = ExtResource("18_music")
+
+[node name="World" type="Node2D" parent="." unique_id=782410060]
+
+[node name="Level" type="Node2D" parent="World" unique_id=52788733]
+
+[node name="Actors" type="Node2D" parent="World" unique_id=323569221]
+y_sort_enabled = true
+
+[node name="ExpeditionAltar" parent="World/Actors" unique_id=2049147653 instance=ExtResource("12_altar")]
+position = Vector2(576, 300)
+
+[node name="DivineFountain" parent="World/Actors" unique_id=1246935042 instance=ExtResource("12_fountain")]
+position = Vector2(576, 452)
+
+[node name="Skillkeeper" parent="World/Actors" unique_id=1532334195 instance=ExtResource("10_skillkeeper")]
+position = Vector2(360, 520)
+
+[node name="WeaponMerchant" parent="World/Actors" unique_id=70869700 instance=ExtResource("11_merchant")]
+position = Vector2(916, 580)
+
+[node name="Rootweaver" parent="World/Actors" instance=ExtResource("21_rootweaver")]
+position = Vector2(342, 630)
+
+[node name="Umi" parent="World/Actors" instance=ExtResource("23_umi")]
+position = Vector2(786, 650)
+
+[node name="Player" parent="World/Actors" unique_id=1654953230 instance=ExtResource("2_player")]
+position = Vector2(576, 676)
+movement_bounds = Rect2(56, 56, 1040, 656)
+
+[node name="Camera2D" type="Camera2D" parent="World/Actors/Player" unique_id=1964421429]
+position = Vector2(0, -8)
+limit_left = 0
+limit_top = 0
+limit_right = 1152
+limit_bottom = 768
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=545047153]
+
+[node name="CombatHUD" parent="UI" unique_id=914588911 instance=ExtResource("13_hud")]
+
+[node name="AdminPanel" type="PanelContainer" parent="UI"]
+visible = false
+offset_left = 744.0
+offset_top = 96.0
+offset_right = 944.0
+offset_bottom = 218.0
+
+[node name="Margin" type="MarginContainer" parent="UI/AdminPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 6
+
+[node name="Stack" type="VBoxContainer" parent="UI/AdminPanel/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="Title" type="Label" parent="UI/AdminPanel/Margin/Stack"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.82, 0.9, 0.62, 1)
+theme_override_font_sizes/font_size = 11
+text = "ADMIN TOOLS"
+horizontal_alignment = 1
+
+[node name="OpenStage6" type="Button" parent="UI/AdminPanel/Margin/Stack"]
+custom_minimum_size = Vector2(0, 34)
+layout_mode = 2
+mouse_default_cursor_shape = 2
+text = "STAGE VI LOOK  [F6]"
+
+[node name="OpenLab" type="Button" parent="UI/AdminPanel/Margin/Stack"]
+custom_minimum_size = Vector2(0, 34)
+layout_mode = 2
+mouse_default_cursor_shape = 2
+text = "COMBAT LAB  [F7]"
+
+[node name="OpenSanctuaryStudy" type="Button" parent="UI/AdminPanel/Margin/Stack"]
+custom_minimum_size = Vector2(0, 34)
+layout_mode = 2
+mouse_default_cursor_shape = 2
+theme_override_font_sizes/font_size = 12
+text = "SANCTUARY REVIEW · NO SAVES"
+
+[node name="CharacterMenu" parent="UI" unique_id=603162087 node_paths=PackedStringArray("player") instance=ExtResource("14_character")]
+player = NodePath("../../World/Actors/Player")
+
+[node name="DialoguePanel" parent="UI" unique_id=1063779937 instance=ExtResource("15_dialogue")]
+
+[node name="ExpeditionMenu" parent="UI" unique_id=385825578 instance=ExtResource("16_expedition")]
+
+[node name="RootforgeMenu" parent="UI" instance=ExtResource("22_rootforge_menu")]
+
+[node name="UmiExchangeMenu" parent="UI" instance=ExtResource("25_exchange_menu")]
+
+[node name="PauseMenu" parent="UI" instance=ExtResource("19_pause")]

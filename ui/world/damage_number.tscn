@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://ui/world/damage_number.gd" id="1_script"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_damage"]
+font_size = 11
+font_color = Color(1, 1, 1, 1)
+outline_size = 3
+outline_color = Color(0.06, 0.035, 0.02, 1)
+
+[node name="DamageNumber" type="Node2D"]
+z_index = 40
+script = ExtResource("1_script")
+
+[node name="Label" type="Label" parent="."]
+unique_name_in_owner = true
+offset_left = -16.0
+offset_top = -7.0
+offset_right = 16.0
+offset_bottom = 7.0
+mouse_filter = 2
+label_settings = SubResource("LabelSettings_damage")
+horizontal_alignment = 1

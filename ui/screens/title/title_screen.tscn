@@ -1,0 +1,233 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="Script" path="res://ui/screens/title/title_screen.gd" id="1_script"]
+[ext_resource type="PackedScene" path="res://ui/screens/title/title_background.tscn" id="2_background"]
+[ext_resource type="Theme" path="res://assets/ui/themes/battle_of_gods_theme.tres" id="3_theme"]
+[ext_resource type="Script" path="res://gameplay/audio/stage_music.gd" id="4_music_script"]
+[ext_resource type="AudioStream" path="res://assets/audio/music/cathedral_in_the_forest.ogg" id="5_music"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBox_main_panel"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBox_title_panel"]
+bg_color = Color(0.035, 0.043, 0.063, 0.88)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.55, 0.46, 0.29, 0.8)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[node name="TitleScreen" type="Control"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("3_theme")
+script = ExtResource("1_script")
+
+[node name="Background" parent="." instance=ExtResource("2_background")]
+layout_mode = 1
+
+[node name="StageMusic" type="Node" parent="."]
+script = ExtResource("4_music_script")
+music_stream = ExtResource("5_music")
+
+[node name="Content" type="Control" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TitleGroup" type="VBoxContainer" parent="Content"]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 58.0
+offset_right = 360.0
+offset_bottom = 180.0
+theme_override_constants/separation = 0
+
+[node name="Title" type="Label" parent="Content/TitleGroup"]
+layout_mode = 2
+text = "BATTLE\nOF GODS"
+horizontal_alignment = 0
+theme_override_colors/font_color = Color(0.839, 0.757, 0.443, 1)
+theme_override_colors/font_shadow_color = Color(0.035, 0.043, 0.063, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 36
+
+[node name="Subtitle" type="Label" parent="Content/TitleGroup"]
+layout_mode = 2
+text = "THE VEIL REMEMBERS"
+horizontal_alignment = 0
+theme_override_colors/font_color = Color(0.69, 0.63, 0.78, 1)
+theme_override_font_sizes/font_size = 11
+
+[node name="MainMenuPanel" type="PanelContainer" parent="Content"]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 50.0
+offset_top = 195.0
+offset_right = 314.0
+offset_bottom = 415.0
+theme_override_styles/panel = SubResource("StyleBox_main_panel")
+
+[node name="Margin" type="MarginContainer" parent="Content/MainMenuPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 18
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 18
+theme_override_constants/margin_bottom = 16
+
+[node name="Buttons" type="VBoxContainer" parent="Content/MainMenuPanel/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="ContinueButton" type="Button" parent="Content/MainMenuPanel/Margin/Buttons"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(228, 38)
+layout_mode = 2
+focus_neighbor_top = NodePath("../QuitButton")
+focus_neighbor_bottom = NodePath("../StartButton")
+mouse_default_cursor_shape = 2
+text = "CONTINUE  •  NO SAVE"
+theme_override_font_sizes/font_size = 12
+
+[node name="StartButton" type="Button" parent="Content/MainMenuPanel/Margin/Buttons"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(228, 38)
+layout_mode = 2
+focus_neighbor_top = NodePath("../ContinueButton")
+focus_neighbor_bottom = NodePath("../SettingsButton")
+mouse_default_cursor_shape = 2
+text = "BEGIN NEW JOURNEY"
+theme_override_font_sizes/font_size = 12
+
+[node name="SettingsButton" type="Button" parent="Content/MainMenuPanel/Margin/Buttons"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(228, 34)
+layout_mode = 2
+focus_neighbor_top = NodePath("../StartButton")
+focus_neighbor_bottom = NodePath("../QuitButton")
+mouse_default_cursor_shape = 2
+text = "SETTINGS"
+theme_override_font_sizes/font_size = 11
+
+[node name="QuitButton" type="Button" parent="Content/MainMenuPanel/Margin/Buttons"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(228, 34)
+layout_mode = 2
+focus_neighbor_top = NodePath("../SettingsButton")
+focus_neighbor_bottom = NodePath("../ContinueButton")
+mouse_default_cursor_shape = 2
+text = "QUIT TO DESKTOP"
+theme_override_font_sizes/font_size = 11
+
+[node name="SettingsPanel" type="PanelContainer" parent="Content"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 0
+offset_left = 338.0
+offset_top = 278.0
+offset_right = 622.0
+offset_bottom = 494.0
+theme_override_styles/panel = SubResource("StyleBox_title_panel")
+
+[node name="Margin" type="MarginContainer" parent="Content/SettingsPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 18
+theme_override_constants/margin_top = 14
+theme_override_constants/margin_right = 18
+theme_override_constants/margin_bottom = 14
+
+[node name="Root" type="VBoxContainer" parent="Content/SettingsPanel/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 7
+
+[node name="Heading" type="Label" parent="Content/SettingsPanel/Margin/Root"]
+layout_mode = 2
+text = "SETTINGS"
+horizontal_alignment = 1
+theme_override_colors/font_color = Color(0.839, 0.757, 0.443, 1)
+theme_override_font_sizes/font_size = 18
+
+[node name="Note" type="Label" parent="Content/SettingsPanel/Margin/Root"]
+layout_mode = 2
+text = "SESSION AUDIO"
+horizontal_alignment = 1
+theme_override_colors/font_color = Color(0.455, 0.502, 0.42, 1)
+theme_override_font_sizes/font_size = 8
+
+[node name="MusicButton" type="Button" parent="Content/SettingsPanel/Margin/Root"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(248, 30)
+layout_mode = 2
+focus_neighbor_top = NodePath("../BackButton")
+focus_neighbor_bottom = NodePath("../SfxButton")
+mouse_default_cursor_shape = 2
+text = "MUSIC  ON"
+
+[node name="SfxButton" type="Button" parent="Content/SettingsPanel/Margin/Root"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(248, 30)
+layout_mode = 2
+focus_neighbor_top = NodePath("../MusicButton")
+focus_neighbor_bottom = NodePath("../UiAudioButton")
+mouse_default_cursor_shape = 2
+text = "COMBAT SOUND  ON"
+
+[node name="UiAudioButton" type="Button" parent="Content/SettingsPanel/Margin/Root"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(248, 30)
+layout_mode = 2
+focus_neighbor_top = NodePath("../SfxButton")
+focus_neighbor_bottom = NodePath("../BackButton")
+mouse_default_cursor_shape = 2
+text = "MENU SOUND  ON"
+
+[node name="BackButton" type="Button" parent="Content/SettingsPanel/Margin/Root"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(248, 30)
+layout_mode = 2
+focus_neighbor_top = NodePath("../UiAudioButton")
+focus_neighbor_bottom = NodePath("../MusicButton")
+mouse_default_cursor_shape = 2
+text = "BACK"
+
+[node name="Footer" type="Label" parent="Content"]
+layout_mode = 0
+offset_left = 272.0
+offset_top = 510.0
+offset_right = 688.0
+offset_bottom = 530.0
+text = "PRE-ALPHA  •  A JOURNEY BENEATH FORGOTTEN GODS"
+horizontal_alignment = 1
+theme_override_colors/font_color = Color(0.455, 0.502, 0.42, 0.9)
+theme_override_font_sizes/font_size = 8
+
+[node name="NewJourneyConfirmation" type="ConfirmationDialog" parent="."]
+unique_name_in_owner = true
+title = "BEGIN NEW JOURNEY"
+initial_position = 2
+size = Vector2i(430, 150)
+ok_button_text = "START NEW JOURNEY"
+dialog_text = "Begin a new journey?\nThe existing autosave will be replaced."
+
+[connection signal="pressed" from="Content/MainMenuPanel/Margin/Buttons/ContinueButton" to="." method="continue_journey"]
+[connection signal="pressed" from="Content/MainMenuPanel/Margin/Buttons/StartButton" to="." method="begin_new_journey"]
+[connection signal="pressed" from="Content/MainMenuPanel/Margin/Buttons/SettingsButton" to="." method="open_settings"]
+[connection signal="pressed" from="Content/MainMenuPanel/Margin/Buttons/QuitButton" to="." method="request_quit"]
+[connection signal="pressed" from="Content/SettingsPanel/Margin/Root/MusicButton" to="." method="toggle_music"]
+[connection signal="pressed" from="Content/SettingsPanel/Margin/Root/SfxButton" to="." method="toggle_sfx"]
+[connection signal="pressed" from="Content/SettingsPanel/Margin/Root/UiAudioButton" to="." method="toggle_ui_audio"]
+[connection signal="pressed" from="Content/SettingsPanel/Margin/Root/BackButton" to="." method="close_settings"]
+[connection signal="confirmed" from="NewJourneyConfirmation" to="." method="_commit_new_journey"]

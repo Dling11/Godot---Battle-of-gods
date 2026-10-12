@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://sd2qfhrb6ev1"]
+
+[ext_resource type="Texture2D" path="res://assets/environment/forest/shared/props/ruined_shrine_statue.png" id="1_statue"]
+[ext_resource type="Script" uid="uid://bpvdh5hx5ke8i" path="res://gameplay/navigation/navigation_cutout.gd" id="2_cutout"]
+
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_footprint"]
+points = PackedVector2Array(-30, -33, 34, -33, 39, -30, 39, -3, -38, -3, -38, -30)
+
+[node name="RuinedStatue" type="StaticBody2D" unique_id=1978832249]
+collision_mask = 6
+
+[node name="Shadow" type="Sprite2D" parent="." unique_id=30098675]
+modulate = Color(0.08, 0.16, 0.06, 0.26)
+z_index = -1
+position = Vector2(-1.0000038, -12.279999)
+scale = Vector2(0.9999999, 0.2830769)
+texture = ExtResource("1_statue")
+
+[node name="Visuals" type="Node2D" parent="." unique_id=952323978]
+
+[node name="Statue" type="Sprite2D" parent="Visuals" unique_id=463343749]
+position = Vector2(0, -52)
+texture = ExtResource("1_statue")
+
+[node name="StatueFootprint" type="CollisionShape2D" parent="." unique_id=923617343]
+shape = SubResource("ConvexPolygonShape2D_footprint")
+
+[node name="NavigationCutout" type="Node" parent="." unique_id=2056922715 groups=["navigation_cutout"]]
+script = ExtResource("2_cutout")
+local_outline = PackedVector2Array(-10, -15, 10, -15, 10, 7, -10, 7)
+derive_from_collision_shapes = true

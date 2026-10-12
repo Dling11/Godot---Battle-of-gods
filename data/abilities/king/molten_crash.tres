@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="MoltenCrashDefinition" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://data/abilities/king/molten_crash_definition.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/ui/icons/combat/king_skill_2_icon.tres" id="2_icon"]
+
+[resource]
+script = ExtResource("1_script")
+icon = ExtResource("2_icon")
+damage_type = 1

@@ -1,0 +1,664 @@
+[gd_scene load_steps=21 format=3]
+
+[ext_resource type="Script" path="res://ui/character_menu.gd" id="1_script"]
+[ext_resource type="Theme" path="res://assets/ui/themes/battle_of_gods_theme.tres" id="2_theme"]
+[ext_resource type="Texture2D" path="res://assets/ui/icons/status/icon_status_experience_16x16.png" id="3_experience"]
+[ext_resource type="Texture2D" path="res://assets/ui/icons/economy/icon_currency_coin_16x16.png" id="4_coin"]
+[ext_resource type="Texture2D" path="res://assets/ui/icons/combat/basic_attack_icon.tres" id="5_attack"]
+[ext_resource type="Texture2D" path="res://assets/ui/hud/eclipse_bind/eclipse_dash_24.png" id="6_dash"]
+[ext_resource type="SpriteFrames" path="res://assets/characters/playable/king/shared_bodies/sword/frames.tres" id="7_frames"]
+[ext_resource type="Shader" path="res://entities/player/presentation/king_spellward_outline.gdshader" id="king_outline"]
+[ext_resource type="PackedScene" path="res://ui/equipment/equipment_detail_panel.tscn" id="8_detail"]
+[ext_resource type="Script" path="res://entities/npcs/presentation/npc_idle_breath.gd" id="9_breath"]
+[ext_resource type="Texture2D" path="res://assets/ui/icons/status/icon_status_health_16x16.png" id="11_health"]
+
+[ext_resource type="Texture2D" path="res://assets/ui/player_readability/satchel.png" id="12_satchel"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/playable/king/portraits/king_portrait_96x96.png" id="13_portrait"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_king_outline"]
+shader = ExtResource("king_outline")
+
+[sub_resource type="StyleBoxFlat" id="panel"]
+bg_color = Color(0.027, 0.034, 0.052, 0.99)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.38, 0.31, 0.5, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="inner_panel"]
+bg_color = Color(0.023, 0.03, 0.045, 0.96)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.23, 0.25, 0.23, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id="portrait_panel"]
+bg_color = Color(0.018, 0.024, 0.039, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.33, 0.28, 0.43, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="tab_pressed"]
+bg_color = Color(0.18, 0.145, 0.247, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 2
+border_color = Color(0.839, 0.757, 0.443, 1)
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+
+[sub_resource type="StyleBoxFlat" id="filter_pressed"]
+bg_color = Color(0.12, 0.18, 0.14, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.45, 0.62, 0.38, 1)
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+
+[sub_resource type="StyleBoxFlat" id="detail_strip"]
+bg_color = Color(0.047, 0.051, 0.067, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.306, 0.247, 0.424, 1)
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+
+[node name="CharacterMenu" type="Control" node_paths=PackedStringArray("player")]
+visible = false
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_theme")
+script = ExtResource("1_script")
+
+[node name="Veil" type="ColorRect" parent="."]
+mouse_filter = 2
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.006, 0.01, 0.019, 0.84)
+
+[node name="Panel" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -420.0
+offset_top = -245.0
+offset_right = 420.0
+offset_bottom = 245.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("panel")
+
+[node name="CloseButton" type="Button" parent="."]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(30, 26)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 388.0
+offset_top = -239.0
+offset_right = 414.0
+offset_bottom = -215.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+text = "X"
+tooltip_text = "Close (Esc)"
+
+[node name="Margin" type="MarginContainer" parent="Panel"]
+layout_mode = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 5
+
+[node name="Root" type="VBoxContainer" parent="Panel/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 2
+
+[node name="Header" type="HBoxContainer" parent="Panel/Margin/Root"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="KingPortrait" type="TextureRect" parent="Panel/Margin/Root/Header"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+texture = ExtResource("13_portrait")
+expand_mode = 1
+stretch_mode = 5
+mouse_filter = 2
+
+[node name="Identity" type="VBoxContainer" parent="Panel/Margin/Root/Header"]
+layout_mode = 2
+theme_override_constants/separation = 1
+
+[node name="Title" type="Label" parent="Panel/Margin/Root/Header/Identity"]
+layout_mode = 2
+text = "KING"
+theme_override_colors/font_color = Color(0.85, 0.76, 0.57, 1)
+theme_override_font_sizes/font_size = 16
+
+[node name="Subtitle" type="Label" parent="Panel/Margin/Root/Header/Identity"]
+layout_mode = 2
+text = "MORTAL RIFTSWORD  •  EQUIPMENT & TECHNIQUES"
+theme_override_colors/font_color = Color(0.45, 0.5, 0.42, 1)
+theme_override_font_sizes/font_size = 8
+
+[node name="HeaderSpacer" type="Control" parent="Panel/Margin/Root/Header"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Progress" type="VBoxContainer" parent="Panel/Margin/Root/Header"]
+custom_minimum_size = Vector2(260, 0)
+layout_mode = 2
+theme_override_constants/separation = 2
+
+[node name="ProgressHeader" type="HBoxContainer" parent="Panel/Margin/Root/Header/Progress"]
+layout_mode = 2
+
+[node name="ExperienceIcon" type="TextureRect" parent="Panel/Margin/Root/Header/Progress/ProgressHeader"]
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 2
+texture = ExtResource("3_experience")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="LevelLabel" type="Label" parent="Panel/Margin/Root/Header/Progress/ProgressHeader"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "LEVEL 1 / 10"
+theme_override_colors/font_color = Color(0.7, 0.86, 1, 1)
+theme_override_font_sizes/font_size = 10
+
+[node name="VitalityIcon" type="TextureRect" parent="Panel/Margin/Root/Header/Progress/ProgressHeader"]
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 2
+texture = ExtResource("11_health")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="VitalityLabel" type="Label" parent="Panel/Margin/Root/Header/Progress/ProgressHeader"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "HP 100/100"
+theme_override_colors/font_color = Color(1, 0.72, 0.66, 1)
+theme_override_font_sizes/font_size = 9
+
+[node name="ProgressSpacer" type="Control" parent="Panel/Margin/Root/Header/Progress/ProgressHeader"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="CoinIcon" type="TextureRect" parent="Panel/Margin/Root/Header/Progress/ProgressHeader"]
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 2
+texture = ExtResource("4_coin")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="CoinLabel" type="Label" parent="Panel/Margin/Root/Header/Progress/ProgressHeader"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "0 COINS"
+theme_override_colors/font_color = Color(0.96, 0.76, 0.3, 1)
+theme_override_font_sizes/font_size = 10
+
+[node name="CloseClearance" type="Control" parent="Panel/Margin/Root/Header/Progress/ProgressHeader"]
+custom_minimum_size = Vector2(30, 0)
+layout_mode = 2
+
+[node name="ExperienceBar" type="ProgressBar" parent="Panel/Margin/Root/Header/Progress"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 7)
+layout_mode = 2
+show_percentage = false
+
+[node name="ExperienceLabel" type="Label" parent="Panel/Margin/Root/Header/Progress"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "0 / 20 XP"
+horizontal_alignment = 1
+theme_override_colors/font_color = Color(0.62, 0.72, 0.82, 1)
+theme_override_font_sizes/font_size = 7
+
+[node name="Tabs" type="HBoxContainer" parent="Panel/Margin/Root"]
+layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="GearTabButton" type="Button" parent="Panel/Margin/Root/Tabs"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(132, 26)
+layout_mode = 2
+toggle_mode = true
+button_pressed = true
+mouse_default_cursor_shape = 2
+text = "CHARACTER & BAG"
+theme_override_styles/pressed = SubResource("tab_pressed")
+
+[node name="SkillsTabButton" type="Button" parent="Panel/Margin/Root/Tabs"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(116, 26)
+layout_mode = 2
+toggle_mode = true
+mouse_default_cursor_shape = 2
+text = "ACTIVE SKILLS"
+theme_override_styles/pressed = SubResource("tab_pressed")
+
+[node name="PreviewNotice" type="Label" parent="Panel/Margin/Root/Tabs"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "SELECT FOR DETAILS  •  DRAG EQUIPMENT TO A MATCHING SLOT"
+horizontal_alignment = 2
+vertical_alignment = 1
+theme_override_colors/font_color = Color(0.45, 0.5, 0.42, 1)
+theme_override_font_sizes/font_size = 7
+
+[node name="PageDivider" type="HSeparator" parent="Panel/Margin/Root"]
+visible = false
+layout_mode = 2
+
+[node name="PageHost" type="Control" parent="Panel/Margin/Root"]
+custom_minimum_size = Vector2(808, 348)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="GearPage" type="VBoxContainer" parent="Panel/Margin/Root/PageHost"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 6
+
+[node name="LoadoutRow" type="HBoxContainer" parent="Panel/Margin/Root/PageHost/GearPage"]
+custom_minimum_size = Vector2(0, 232)
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="PaperDollPanel" type="PanelContainer" parent="Panel/Margin/Root/PageHost/GearPage/LoadoutRow"]
+custom_minimum_size = Vector2(520, 232)
+layout_mode = 2
+theme_override_styles/panel = SubResource("inner_panel")
+
+[node name="PaperDollMargin" type="MarginContainer" parent="Panel/Margin/Root/PageHost/GearPage/LoadoutRow/PaperDollPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 5
+
+[node name="PaperDollRoot" type="VBoxContainer" parent="Panel/Margin/Root/PageHost/GearPage/LoadoutRow/PaperDollPanel/PaperDollMargin"]
+layout_mode = 2
+theme_override_constants/separation = 2
+
+[node name="LoadoutTitle" type="Label" parent="Panel/Margin/Root/PageHost/GearPage/LoadoutRow/PaperDollPanel/PaperDollMargin/PaperDollRoot"]
+layout_mode = 2
+text = "EQUIPPED LOADOUT  •  1 WEAPON  •  5 ARMOR  •  4 ACCESSORIES"
+theme_override_colors/font_color = Color(0.85, 0.76, 0.57, 1)
+theme_override_font_sizes/font_size = 9
+
+[node name="EquipmentLayout" type="Control" parent="Panel/Margin/Root/PageHost/GearPage/LoadoutRow/PaperDollPanel/PaperDollMargin/PaperDollRoot"]
+custom_minimum_size = Vector2(502, 206)
+layout_mode = 2
+
+[node name="Portrait" type="PanelContainer" parent="Panel/Margin/Root/PageHost/GearPage/LoadoutRow/PaperDollPanel/PaperDollMargin/PaperDollRoot/EquipmentLayout"]
+layout_mode = 1
+anchors_preset = 0
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -76.0
+offset_top = 0.0
+offset_right = 76.0
+offset_bottom = 206.0
+theme_override_styles/panel = SubResource("portrait_panel")
+
+[node name="PortraitCanvas" type="Control" parent="Panel/Margin/Root/PageHost/GearPage/LoadoutRow/PaperDollPanel/PaperDollMargin/PaperDollRoot/EquipmentLayout/Portrait"]
+layout_mode = 2
+clip_contents = true
+
+[node name="PortraitAura" type="Polygon2D" parent="Panel/Margin/Root/PageHost/GearPage/LoadoutRow/PaperDollPanel/PaperDollMargin/PaperDollRoot/EquipmentLayout/Portrait/PortraitCanvas"]
+unique_name_in_owner = true
+position = Vector2(76, 103)
+polygon = PackedVector2Array(0, -54, 40, -33, 55, 0, 40, 33, 0, 54, -40, 33, -55, 0, -40, -33)
+color = Color(0.463, 0.353, 0.639, 0.34)
+
+[node name="PortraitAuraCore" type="Polygon2D" parent="Panel/Margin/Root/PageHost/GearPage/LoadoutRow/PaperDollPanel/PaperDollMargin/PaperDollRoot/EquipmentLayout/Portrait/PortraitCanvas"]
+position = Vector2(76, 103)
+polygon = PackedVector2Array(0, -43, 32, -26, 44, 0, 32, 26, 0, 43, -32, 26, -44, 0, -32, -26)
+color = Color(0.027, 0.034, 0.052, 0.96)
+
+[node name="PortraitShadow" type="Polygon2D" parent="Panel/Margin/Root/PageHost/GearPage/LoadoutRow/PaperDollPanel/PaperDollMargin/PaperDollRoot/EquipmentLayout/Portrait/PortraitCanvas"]
+position = Vector2(76, 157)
+polygon = PackedVector2Array(-25, 0, -15, -5, 15, -5, 25, 0, 15, 5, -15, 5)
+color = Color(0.01, 0.015, 0.025, 0.68)
+
+[node name="Body" type="AnimatedSprite2D" parent="Panel/Margin/Root/PageHost/GearPage/LoadoutRow/PaperDollPanel/PaperDollMargin/PaperDollRoot/EquipmentLayout/Portrait/PortraitCanvas"]
+material = SubResource("ShaderMaterial_king_outline")
+position = Vector2(76, 101)
+scale = Vector2(2, 2)
+sprite_frames = ExtResource("7_frames")
+animation = &"idle_down"
+
+[node name="WeaponGrip" type="Node2D" parent="Panel/Margin/Root/PageHost/GearPage/LoadoutRow/PaperDollPanel/PaperDollMargin/PaperDollRoot/EquipmentLayout/Portrait/PortraitCanvas"]
+visible = false
+position = Vector2(44, 84)
+rotation = -0.42
+scale = Vector2(3.5, 3.5)
+
+[node name="WeaponPreview" type="Sprite2D" parent="Panel/Margin/Root/PageHost/GearPage/LoadoutRow/PaperDollPanel/PaperDollMargin/PaperDollRoot/EquipmentLayout/Portrait/PortraitCanvas/WeaponGrip"]
+unique_name_in_owner = true
+position = Vector2(0, -7)
+
+[node name="IdleBreath" type="Timer" parent="Panel/Margin/Root/PageHost/GearPage/LoadoutRow/PaperDollPanel/PaperDollMargin/PaperDollRoot/EquipmentLayout/Portrait/PortraitCanvas" node_paths=PackedStringArray("visual")]
+wait_time = 0.22
+autostart = true
+script = ExtResource("9_breath")
+visual = NodePath("../Body")
+vertical_steps = PackedInt32Array(0, -1, -1, 0, 0)
+
+[node name="EquipmentSlots" type="Control" parent="Panel/Margin/Root/PageHost/GearPage/LoadoutRow/PaperDollPanel/PaperDollMargin/PaperDollRoot/EquipmentLayout"]
+unique_name_in_owner = true
+mouse_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="EquipmentDetailPanel" parent="Panel/Margin/Root/PageHost/GearPage/LoadoutRow" instance=ExtResource("8_detail")]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(280, 232)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="BagPanel" type="PanelContainer" parent="Panel/Margin/Root/PageHost/GearPage"]
+custom_minimum_size = Vector2(0, 150)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("inner_panel")
+
+[node name="BagMargin" type="MarginContainer" parent="Panel/Margin/Root/PageHost/GearPage/BagPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 4
+
+[node name="BagRoot" type="VBoxContainer" parent="Panel/Margin/Root/PageHost/GearPage/BagPanel/BagMargin"]
+layout_mode = 2
+theme_override_constants/separation = 3
+
+[node name="BagHeader" type="HBoxContainer" parent="Panel/Margin/Root/PageHost/GearPage/BagPanel/BagMargin/BagRoot"]
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="BagIcon" type="TextureRect" parent="Panel/Margin/Root/PageHost/GearPage/BagPanel/BagMargin/BagRoot/BagHeader"]
+custom_minimum_size = Vector2(20,20)
+layout_mode = 2
+texture = ExtResource("12_satchel")
+expand_mode = 1
+stretch_mode = 5
+mouse_filter = 2
+
+[node name="BagTitle" type="Label" parent="Panel/Margin/Root/PageHost/GearPage/BagPanel/BagMargin/BagRoot/BagHeader"]
+layout_mode = 2
+text = "ADVENTURER'S BAG"
+theme_override_colors/font_color = Color(0.9, 0.86, 0.72, 1)
+theme_override_font_sizes/font_size = 9
+
+[node name="AllFilterButton" type="Button" parent="Panel/Margin/Root/PageHost/GearPage/BagPanel/BagMargin/BagRoot/BagHeader"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(46, 20)
+layout_mode = 2
+toggle_mode = true
+button_pressed = true
+text = "ALL"
+theme_override_font_sizes/font_size = 7
+theme_override_styles/pressed = SubResource("filter_pressed")
+
+[node name="EquipmentFilterButton" type="Button" parent="Panel/Margin/Root/PageHost/GearPage/BagPanel/BagMargin/BagRoot/BagHeader"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(72, 20)
+layout_mode = 2
+toggle_mode = true
+text = "EQUIPMENT"
+theme_override_font_sizes/font_size = 7
+theme_override_styles/pressed = SubResource("filter_pressed")
+
+[node name="MaterialsFilterButton" type="Button" parent="Panel/Margin/Root/PageHost/GearPage/BagPanel/BagMargin/BagRoot/BagHeader"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(68, 20)
+layout_mode = 2
+toggle_mode = true
+text = "MATERIALS"
+theme_override_font_sizes/font_size = 7
+theme_override_styles/pressed = SubResource("filter_pressed")
+
+[node name="ConsumablesFilterButton" type="Button" parent="Panel/Margin/Root/PageHost/GearPage/BagPanel/BagMargin/BagRoot/BagHeader"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(76, 20)
+layout_mode = 2
+toggle_mode = true
+text = "CONSUMABLES"
+theme_override_font_sizes/font_size = 7
+theme_override_styles/pressed = SubResource("filter_pressed")
+
+[node name="KeyFilterButton" type="Button" parent="Panel/Margin/Root/PageHost/GearPage/BagPanel/BagMargin/BagRoot/BagHeader"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(36, 20)
+layout_mode = 2
+toggle_mode = true
+text = "KEY"
+theme_override_font_sizes/font_size = 7
+theme_override_styles/pressed = SubResource("filter_pressed")
+
+[node name="SortButton" type="Button" parent="Panel/Margin/Root/PageHost/GearPage/BagPanel/BagMargin/BagRoot/BagHeader"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(78, 20)
+layout_mode = 2
+mouse_default_cursor_shape = 2
+text = "SORT: SLOT"
+theme_override_font_sizes/font_size = 7
+
+[node name="BagHeaderSpacer" type="Control" parent="Panel/Margin/Root/PageHost/GearPage/BagPanel/BagMargin/BagRoot/BagHeader"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="BagCapacityLabel" type="Label" parent="Panel/Margin/Root/PageHost/GearPage/BagPanel/BagMargin/BagRoot/BagHeader"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "SHOWING 1"
+vertical_alignment = 1
+theme_override_colors/font_color = Color(0.72, 0.78, 0.68, 1)
+theme_override_font_sizes/font_size = 8
+
+[node name="SearchRow" type="HBoxContainer" parent="Panel/Margin/Root/PageHost/GearPage/BagPanel/BagMargin/BagRoot"]
+layout_mode = 2
+
+[node name="BagSearch" type="LineEdit" parent="Panel/Margin/Root/PageHost/GearPage/BagPanel/BagMargin/BagRoot/SearchRow"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0,24)
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "Search owned items by name, slot or rarity..."
+clear_button_enabled = true
+theme_override_font_sizes/font_size = 11
+
+[node name="BagScroll" type="ScrollContainer" parent="Panel/Margin/Root/PageHost/GearPage/BagPanel/BagMargin/BagRoot"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0,80)
+layout_mode = 2
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+follow_focus = true
+
+[node name="InventoryGrid" type="GridContainer" parent="Panel/Margin/Root/PageHost/GearPage/BagPanel/BagMargin/BagRoot/BagScroll"]
+size_flags_horizontal = 3
+unique_name_in_owner = true
+layout_mode = 2
+columns = 12
+theme_override_constants/h_separation = 3
+theme_override_constants/v_separation = 3
+
+[node name="BagEmptyLabel" type="Label" parent="Panel/Margin/Root/PageHost/GearPage/BagPanel/BagMargin/BagRoot"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+text = "NO ITEMS IN THIS VIEW"
+theme_override_colors/font_color = Color(0.52, 0.56, 0.5, 1)
+theme_override_font_sizes/font_size = 7
+
+[node name="BagFooter" type="Label" parent="Panel/Margin/Root/PageHost/GearPage/BagPanel/BagMargin/BagRoot"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "MATERIALS USE NO BAG SPACE  •  DRAG OR SELECT + EQUIP ITEMS"
+theme_override_colors/font_color = Color(0.45, 0.5, 0.42, 1)
+theme_override_font_sizes/font_size = 7
+
+[node name="SkillsPage" type="VBoxContainer" parent="Panel/Margin/Root/PageHost"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 6
+
+[node name="Actions" type="HBoxContainer" parent="Panel/Margin/Root/PageHost/SkillsPage"]
+layout_mode = 2
+alignment = 1
+theme_override_constants/separation = 7
+
+[node name="Title" type="Label" parent="Panel/Margin/Root/PageHost/SkillsPage/Actions"]
+layout_mode = 2
+text = "CORE ACTIONS"
+theme_override_colors/font_color = Color(0.72, 0.72, 0.66, 1)
+theme_override_font_sizes/font_size = 10
+
+[node name="AttackIcon" type="TextureRect" parent="Panel/Margin/Root/PageHost/SkillsPage/Actions"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+texture = ExtResource("5_attack")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="AttackLabel" type="Label" parent="Panel/Margin/Root/PageHost/SkillsPage/Actions"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "MOUSE: KING'S BLADE"
+theme_override_colors/font_color = Color(0.72, 0.72, 0.66, 1)
+theme_override_font_sizes/font_size = 9
+
+[node name="DashIcon" type="TextureRect" parent="Panel/Margin/Root/PageHost/SkillsPage/Actions"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+texture = ExtResource("6_dash")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="DashLabel" type="Label" parent="Panel/Margin/Root/PageHost/SkillsPage/Actions"]
+layout_mode = 2
+text = "SPACE: DASH"
+theme_override_colors/font_color = Color(0.72, 0.72, 0.66, 1)
+theme_override_font_sizes/font_size = 9
+
+[node name="SkillHeader" type="HBoxContainer" parent="Panel/Margin/Root/PageHost/SkillsPage"]
+layout_mode = 2
+
+[node name="SkillTitle" type="Label" parent="Panel/Margin/Root/PageHost/SkillsPage/SkillHeader"]
+layout_mode = 2
+text = "EQUIPPED SKILLS"
+theme_override_colors/font_color = Color(0.9, 0.86, 0.72, 1)
+theme_override_font_sizes/font_size = 11
+
+[node name="SkillSpacer" type="Control" parent="Panel/Margin/Root/PageHost/SkillsPage/SkillHeader"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="SkillRule" type="Label" parent="Panel/Margin/Root/PageHost/SkillsPage/SkillHeader"]
+layout_mode = 2
+text = "SELECT A SLOT FOR DETAILS"
+theme_override_colors/font_color = Color(0.45, 0.5, 0.42, 1)
+theme_override_font_sizes/font_size = 7
+
+[node name="Skills" type="GridContainer" parent="Panel/Margin/Root/PageHost/SkillsPage"]
+columns = 5
+unique_name_in_owner = true
+layout_mode = 2
+alignment = 1
+theme_override_constants/separation = 8
+
+[node name="SkillDetail" type="PanelContainer" parent="Panel/Margin/Root/PageHost/SkillsPage"]
+custom_minimum_size = Vector2(0, 76)
+layout_mode = 2
+theme_override_styles/panel = SubResource("detail_strip")
+
+[node name="SkillDetailMargin" type="MarginContainer" parent="Panel/Margin/Root/PageHost/SkillsPage/SkillDetail"]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 6
+
+[node name="SkillDetailLabel" type="Label" parent="Panel/Margin/Root/PageHost/SkillsPage/SkillDetail/SkillDetailMargin"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "SWEEPING CUT\nA broad grounded sword technique.\nSLOT 1 • EQUIPPED • PRESS 1 DURING COMBAT"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+theme_override_colors/font_color = Color(0.68, 0.7, 0.76, 1)
+theme_override_font_sizes/font_size = 9
+
+[node name="Footer" type="Label" parent="Panel/Margin/Root"]
+layout_mode = 2
+text = "TAB  •  OPEN    ESC  •  CLOSE    MOUSE / ARROWS + ENTER  •  NAVIGATE"
+horizontal_alignment = 1
+theme_override_colors/font_color = Color(0.55, 0.52, 0.62, 1)
+theme_override_font_sizes/font_size = 8
+
+[connection signal="pressed" from="CloseButton" to="." method="close_menu"]

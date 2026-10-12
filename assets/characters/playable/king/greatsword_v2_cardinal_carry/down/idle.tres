@@ -1,0 +1,30 @@
+[gd_resource type="Resource" load_steps=7 format=3]
+[ext_resource type="Script" path="res://data/weapons/weapon_family_pose_definition.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/characters/playable/king/greatsword_v2_cardinal_carry/down/idle_body.png" id="2"]
+[ext_resource type="Texture2D" path="res://assets/characters/playable/king/greatsword_v2_cardinal_carry/down/idle_hands.png" id="3"]
+[ext_resource type="Texture2D" path="res://assets/characters/playable/king/huge_greatsword_proof/greatsword.png" id="4"]
+[ext_resource type="Script" path="res://data/weapons/weapon_planting_definition.gd" id="5"]
+[sub_resource type="Resource" id="Planting"]
+script = ExtResource("5")
+ground_anchor = Vector2(74,95)
+burial_depth_pixels = 10.0
+[resource]
+script = ExtResource("1")
+body_atlas = ExtResource("2")
+hand_atlas = ExtResource("3")
+weapon_texture = ExtResource("4")
+planting = SubResource("Planting")
+primary_hands = PackedVector2Array(96, 74.1579, 96, 74.1579, 96, 74.1579, 96, 74.1579, 83, 57.368423, 83, 71, 83, 71, 83, 71)
+secondary_hands = PackedVector2Array(100.949745, 79.10764, 100.949745, 79.10764, 100.949745, 79.10764, 100.949745, 79.10764, 91, 61.368423, 91, 75, 91, 75, 91, 75)
+weapon_primary_grip = Vector2(15, 113)
+weapon_tip = Vector2(15, 0)
+mirror_cutting_edge = false
+weapon_behind_body = PackedByteArray(0, 0, 0, 0, 0, 0, 1, 1)
+single_hand_poses = PackedByteArray(1, 1, 1, 1, 1, 1, 1, 1)
+stowed_poses = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0)
+released_poses = PackedByteArray(0, 0, 0, 0, 0, 1, 1, 1)
+ground_clipped_poses = PackedByteArray(0, 0, 0, 0, 0, 1, 1, 1)
+lift_pixels = PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0)
+allow_rest = true
+identity_regions = Array[Rect2]([Rect2(83, 36, 27, 29), Rect2(83, 36, 27, 29), Rect2(83, 36, 27, 29), Rect2(83, 36, 27, 29), Rect2(84, 28, 27, 29), Rect2(84, 30, 27, 29), Rect2(84, 30, 27, 29), Rect2(83, 28, 27, 29)])
+identity_source_region = Rect2(83, 36, 27, 29)

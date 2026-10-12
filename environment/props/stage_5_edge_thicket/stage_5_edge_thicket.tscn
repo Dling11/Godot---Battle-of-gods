@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://c8fmh88s5npdg"]
+
+[ext_resource type="Texture2D" uid="uid://cefp3n7k0atx1" path="res://assets/environment/forest/stage_5/props/stage_5_edge_thicket_256x192.png" id="1_thicket"]
+[ext_resource type="Script" uid="uid://bpvdh5hx5ke8i" path="res://gameplay/navigation/navigation_cutout.gd" id="2_cutout"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_roots"]
+size = Vector2(224, 45)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_thicket"]
+polygon = PackedVector2Array(-121, -30, -98, -128, -44, -181, 0, -176, 52, -139, 113, -32, 94, -5, -96, -5)
+
+[node name="Stage5EdgeThicket" type="StaticBody2D" unique_id=1419922871]
+collision_mask = 6
+
+[node name="Shadow" type="Polygon2D" parent="." unique_id=2057301242]
+z_index = -2
+position = Vector2(0, -12)
+color = Color(0.022, 0.01, 0.018, 0.48)
+polygon = PackedVector2Array(-115, -5, -100, -19, -81, -25, 88, -27, 111, -11, 103, 5, 88, 10, -105, 9)
+
+[node name="Thicket" type="Sprite2D" parent="." unique_id=924925510]
+position = Vector2(0, -96)
+texture = ExtResource("1_thicket")
+
+[node name="Footprint" type="CollisionShape2D" parent="." unique_id=426032023]
+position = Vector2(-3, -25.5)
+shape = SubResource("RectangleShape2D_roots")
+
+[node name="Occluder" type="LightOccluder2D" parent="." unique_id=1969065719]
+position = Vector2(0, -96)
+occluder = SubResource("OccluderPolygon2D_thicket")
+
+[node name="NavigationCutout" type="Node" parent="." unique_id=1197644780 groups=["navigation_cutout"]]
+script = ExtResource("2_cutout")
+derive_from_collision_shapes = true

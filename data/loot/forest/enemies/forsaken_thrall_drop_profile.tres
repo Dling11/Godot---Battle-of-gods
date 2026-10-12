@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="DropProfileDefinition" format=3 uid="uid://dsgfbadgnpvte"]
+
+[ext_resource type="Script" uid="uid://dl3k32mipxq87" path="res://data/loot/drop_profile_definition.gd" id="1_profile"]
+[ext_resource type="Script" uid="uid://bjfif5kirqwdc" path="res://data/loot/material_drop_entry_definition.gd" id="2_entry"]
+[ext_resource type="Resource" uid="uid://dduabducj38a" path="res://data/items/materials/forest/forsaken_cloth.tres" id="3_cloth"]
+[ext_resource type="Resource" uid="uid://dbinq5oclqkgp" path="res://data/items/materials/forest/weathered_fittings.tres" id="4_fittings"]
+
+[sub_resource type="Resource" id="Drop_cloth"]
+script = ExtResource("2_entry")
+material = ExtResource("3_cloth")
+chance = 0.2
+bad_luck_protection_key = &"forest_forsaken_cloth_misses"
+guaranteed_after_misses = 6
+
+[sub_resource type="Resource" id="Drop_fittings"]
+script = ExtResource("2_entry")
+material = ExtResource("4_fittings")
+chance = 0.08
+bad_luck_protection_key = &"forest_weathered_fittings_misses"
+guaranteed_after_misses = 12
+
+[resource]
+script = ExtResource("1_profile")
+profile_id = &"forest_forsaken_thrall_drops"
+source_enemy_id = &"forsaken_thrall"
+region_id = &"forest"
+common_drops = Array[ExtResource("2_entry")]([SubResource("Drop_cloth")])
+optional_secondary = Array[ExtResource("2_entry")]([SubResource("Drop_fittings")])

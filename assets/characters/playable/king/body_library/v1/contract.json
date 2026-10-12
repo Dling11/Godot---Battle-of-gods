@@ -1,0 +1,57 @@
+{
+  "cell": [
+    192,
+    128
+  ],
+  "policy": "Reuse complete body PNGs. Weapon size and hand attachments never resize King. New motion requires a new reviewed pose; height alone is insufficient.",
+  "poses": {
+    "down_ready": {
+      "first_body": "[P: (76, 40), S: (41, 55)]",
+      "sha256": "817a9e1b59d6de16d937536c83f36183ebe26237f65021c0d6788ca1ab44cbf5",
+      "source": "res://assets/characters/playable/king/greatsword_v2_cardinal_carry/down/idle.tres"
+    },
+    "down_relaxed": {
+      "sha256": "7feb6ee0c6d542be382bdab9f800a6a8a47360fb933eee47a4b656780208ba49",
+      "source": "res://assets/characters/playable/king/dual_identity_lock/down/idle.tres"
+    },
+    "down_run": {
+      "first_body": "[P: (78, 38), S: (35, 57)]",
+      "sha256": "6d3e612bff1c072d79f08b40f895a31ed5a9141f8c29cbcd7444f21229d264fd",
+      "source": "res://assets/characters/playable/king/greatsword_v2_cardinal_carry/down/run.tres"
+    },
+    "side_ready": {
+      "first_body": "[P: (77, 42), S: (38, 54)]",
+      "sha256": "a5b4c983dd5ebce926d0504eabfb246620096b660fd7bcbc1546b38f3cb14134",
+      "source": "res://assets/characters/playable/king/greatsword_confidence_v2/idle.tres"
+    },
+    "side_relaxed": {
+      "sha256": "7a0bb0d0171383b1bb3c5dbe3264e350da8c7c5b247cb4e9eb3bcd2b31dc62fa",
+      "source": "res://assets/characters/playable/king/dual_v2/idle.tres"
+    },
+    "side_run": {
+      "first_body": "[P: (69, 42), S: (51, 56)]",
+      "sha256": "42ab29cce07aeb3584265c83ea2b91cd5d35bcf97296baf05984102fa19693b2",
+      "source": "res://assets/characters/playable/king/greatsword_readability/side/run.tres"
+    },
+    "up_ready": {
+      "first_body": "[P: (79, 40), S: (34, 55)]",
+      "sha256": "481129bba5c5193e1c3dfb07baf40c341b75fe0e7ef2b5a66db8b36f1c909700",
+      "source": "res://assets/characters/playable/king/greatsword_v2_cardinal_carry/up/idle.tres"
+    },
+    "up_relaxed": {
+      "sha256": "37823e19d371f38f46a80ebd71c8786eb368bb53e28e63ab0c1710eafc643aa3",
+      "source": "res://assets/characters/playable/king/dual_v2/up/idle.tres"
+    },
+    "up_run": {
+      "first_body": "[P: (79, 38), S: (33, 57)]",
+      "sha256": "b4af8f5cd8e8419e9920b237e683754131315931bd8a81b6461589cc74a636de",
+      "source": "res://assets/characters/playable/king/greatsword_v2_cardinal_carry/up/run.tres"
+    },
+    "side_axe_ready": {
+      "source": "res://assets/characters/playable/king/body_library/v1/side_relaxed.tres; complete neutral cel repeated during ready phase",
+      "sha256": "808c61da64d50a88a67a39b9305d13db4aa9dc570b86e6594762446a7d825cfd"
+    }
+  },
+  "scale": 0.5,
+  "version": 1
+}

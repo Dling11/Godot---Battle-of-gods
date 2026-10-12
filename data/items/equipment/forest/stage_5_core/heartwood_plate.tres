@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="EquipmentDefinition" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://data/items/equipment_definition.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/items/equipment/forest/stage_5_core/heartwood_plate_64x64.png" id="2_icon"]
+
+[resource]
+script = ExtResource("1_script")
+item_id = &"forest_heartwood_plate"
+display_name = "Heartwood Plate"
+slot = 2
+rarity = 7
+icon = ExtResource("2_icon")
+compatible_classes = PackedStringArray("warrior")
+armor_bonus = 30.0
+magic_resistance_bonus = 30.0
+lore = "Layered heartwood carries the forest lord's weight without copying the corruption that broke him."
+synergy_name = "Old Growth"
+synergy_description = "Grants 30 armor and 30 magic resistance, reducing physical or magic damage by about 23% before ward. Pure damage bypasses these reductions."

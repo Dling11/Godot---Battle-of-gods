@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="DropProfileDefinition" format=3 uid="uid://dbw0xm7g7wueh"]
+
+[ext_resource type="Script" uid="uid://dl3k32mipxq87" path="res://data/loot/drop_profile_definition.gd" id="1"]
+[ext_resource type="Script" uid="uid://bjfif5kirqwdc" path="res://data/loot/material_drop_entry_definition.gd" id="2"]
+[ext_resource type="Resource" path="res://data/items/materials/forest/crag_iron.tres" id="3"]
+[ext_resource type="Resource" path="res://data/items/materials/forest/echo_claw.tres" id="4"]
+
+[sub_resource type="Resource" id="iron"]
+script = ExtResource("2")
+material = ExtResource("3")
+chance = 0.3
+bad_luck_protection_key = &"forest_crag_iron_misses"
+guaranteed_after_misses = 5
+
+[sub_resource type="Resource" id="claw"]
+script = ExtResource("2")
+material = ExtResource("4")
+chance = 0.08
+bad_luck_protection_key = &"forest_echo_claw_misses"
+guaranteed_after_misses = 12
+
+[resource]
+script = ExtResource("1")
+profile_id = &"forest_crag_bear_drops"
+source_enemy_id = &"crag_bear"
+region_id = &"forest"
+common_drops = Array[ExtResource("2")]([SubResource("iron")])
+optional_secondary = Array[ExtResource("2")]([SubResource("claw")])

@@ -1,0 +1,40 @@
+[gd_resource type="Resource" script_class="RecipeDefinition" format=3 uid="uid://bfm3lgqtnvay2"]
+
+[ext_resource type="Script" uid="uid://ddkkkbe8622gd" path="res://data/crafting/recipes/recipe_definition.gd" id="1_recipe"]
+[ext_resource type="Script" uid="uid://bll3k2id0v40j" path="res://data/items/materials/material_stack_definition.gd" id="2_stack"]
+[ext_resource type="Resource" path="res://data/items/materials/forest/varkuun_core.tres" id="3_varkuun"]
+[ext_resource type="Resource" path="res://data/items/materials/forest/armored_hog_hide.tres" id="4_hide"]
+[ext_resource type="Resource" path="res://data/items/materials/forest/living_bark_plate.tres" id="5_bark"]
+[ext_resource type="Resource" uid="uid://co68leshraied" path="res://data/items/materials/forest/root_fiber.tres" id="6_fiber"]
+
+[sub_resource type="Resource" id="Cost_varkuun"]
+script = ExtResource("2_stack")
+material = ExtResource("3_varkuun")
+
+[sub_resource type="Resource" id="Cost_hide"]
+script = ExtResource("2_stack")
+material = ExtResource("4_hide")
+quantity = 4
+
+[sub_resource type="Resource" id="Cost_bark"]
+script = ExtResource("2_stack")
+material = ExtResource("5_bark")
+quantity = 3
+
+[sub_resource type="Resource" id="Cost_fiber"]
+script = ExtResource("2_stack")
+material = ExtResource("6_fiber")
+quantity = 4
+
+[resource]
+script = ExtResource("1_recipe")
+recipe_id = &"forest_stage_5_mirebound_leggings"
+display_name = "Mirebound Leggings"
+description = "Join guarded bark plates with flexible rootfiber so King's stance remains protected and mobile."
+region_id = &"forest"
+tier = 2
+category = 0
+output_id = &"forest_mirebound_leggings"
+ingredients = Array[ExtResource("2_stack")]([SubResource("Cost_varkuun"), SubResource("Cost_hide"), SubResource("Cost_bark"), SubResource("Cost_fiber")])
+unlock_id = &"forest_core_gear_crafting"
+gold_cost = 300

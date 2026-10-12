@@ -1,0 +1,123 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://bnkus0aby72yv"]
+
+[ext_resource type="Texture2D" uid="uid://deotoi85efr0u" path="res://assets/environment/portals/generated/stage_abyssal_veil_base_16x_160x192.png" id="1_sheet"]
+
+[sub_resource type="AtlasTexture" id="BaseFrame1"]
+atlas = ExtResource("1_sheet")
+region = Rect2(0, 0, 160, 192)
+
+[sub_resource type="AtlasTexture" id="BaseFrame2"]
+atlas = ExtResource("1_sheet")
+region = Rect2(160, 0, 160, 192)
+
+[sub_resource type="AtlasTexture" id="BaseFrame3"]
+atlas = ExtResource("1_sheet")
+region = Rect2(320, 0, 160, 192)
+
+[sub_resource type="AtlasTexture" id="BaseFrame4"]
+atlas = ExtResource("1_sheet")
+region = Rect2(480, 0, 160, 192)
+
+[sub_resource type="AtlasTexture" id="BaseFrame5"]
+atlas = ExtResource("1_sheet")
+region = Rect2(640, 0, 160, 192)
+
+[sub_resource type="AtlasTexture" id="BaseFrame6"]
+atlas = ExtResource("1_sheet")
+region = Rect2(800, 0, 160, 192)
+
+[sub_resource type="AtlasTexture" id="BaseFrame7"]
+atlas = ExtResource("1_sheet")
+region = Rect2(960, 0, 160, 192)
+
+[sub_resource type="AtlasTexture" id="BaseFrame8"]
+atlas = ExtResource("1_sheet")
+region = Rect2(1120, 0, 160, 192)
+
+[sub_resource type="AtlasTexture" id="BaseFrame9"]
+atlas = ExtResource("1_sheet")
+region = Rect2(1280, 0, 160, 192)
+
+[sub_resource type="AtlasTexture" id="BaseFrame10"]
+atlas = ExtResource("1_sheet")
+region = Rect2(1440, 0, 160, 192)
+
+[sub_resource type="AtlasTexture" id="BaseFrame11"]
+atlas = ExtResource("1_sheet")
+region = Rect2(1600, 0, 160, 192)
+
+[sub_resource type="AtlasTexture" id="BaseFrame12"]
+atlas = ExtResource("1_sheet")
+region = Rect2(1760, 0, 160, 192)
+
+[sub_resource type="AtlasTexture" id="BaseFrame13"]
+atlas = ExtResource("1_sheet")
+region = Rect2(1920, 0, 160, 192)
+
+[sub_resource type="AtlasTexture" id="BaseFrame14"]
+atlas = ExtResource("1_sheet")
+region = Rect2(2080, 0, 160, 192)
+
+[sub_resource type="AtlasTexture" id="BaseFrame15"]
+atlas = ExtResource("1_sheet")
+region = Rect2(2240, 0, 160, 192)
+
+[sub_resource type="AtlasTexture" id="BaseFrame16"]
+atlas = ExtResource("1_sheet")
+region = Rect2(2400, 0, 160, 192)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("BaseFrame1")
+}, {
+"duration": 1.0,
+"texture": SubResource("BaseFrame2")
+}, {
+"duration": 1.0,
+"texture": SubResource("BaseFrame3")
+}, {
+"duration": 1.0,
+"texture": SubResource("BaseFrame4")
+}, {
+"duration": 1.0,
+"texture": SubResource("BaseFrame5")
+}, {
+"duration": 1.0,
+"texture": SubResource("BaseFrame6")
+}, {
+"duration": 1.0,
+"texture": SubResource("BaseFrame7")
+}, {
+"duration": 1.0,
+"texture": SubResource("BaseFrame8")
+}, {
+"duration": 1.0,
+"texture": SubResource("BaseFrame9")
+}, {
+"duration": 1.0,
+"texture": SubResource("BaseFrame10")
+}, {
+"duration": 1.0,
+"texture": SubResource("BaseFrame11")
+}, {
+"duration": 1.0,
+"texture": SubResource("BaseFrame12")
+}, {
+"duration": 1.0,
+"texture": SubResource("BaseFrame13")
+}, {
+"duration": 1.0,
+"texture": SubResource("BaseFrame14")
+}, {
+"duration": 1.0,
+"texture": SubResource("BaseFrame15")
+}, {
+"duration": 1.0,
+"texture": SubResource("BaseFrame16")
+}],
+"loop": 1,
+"name": &"active",
+"speed": 8.5
+}]

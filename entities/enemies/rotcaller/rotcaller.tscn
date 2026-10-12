@@ -1,0 +1,98 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://entities/enemies/rotcaller/rotcaller.gd" id="1"]
+[ext_resource type="Resource" path="res://data/enemies/rotcaller.tres" id="2"]
+[ext_resource type="Script" path="res://entities/enemies/rotcaller/rotcaller_visual.gd" id="3"]
+[ext_resource type="SpriteFrames" path="res://assets/characters/enemies/rotcaller/rotcaller_frames.tres" id="4"]
+[ext_resource type="Script" path="res://gameplay/combat/health_component.gd" id="5"]
+[ext_resource type="Script" path="res://gameplay/combat/hurtbox_component.gd" id="6"]
+[ext_resource type="Script" path="res://gameplay/combat/knockback_component.gd" id="7"]
+[ext_resource type="Script" path="res://gameplay/combat/stagger_component.gd" id="8"]
+[ext_resource type="PackedScene" path="res://ui/world/enemy_health_bar.tscn" id="9"]
+[ext_resource type="PackedScene" path="res://gameplay/presentation/stun_indicator.tscn" id="10"]
+[ext_resource type="Script" path="res://entities/shared/presentation/combat_foot_aura.gd" id="11"]
+
+[ext_resource type="Script" path="res://entities/enemies/components/enemy_reward_component.gd" id="12"]
+[ext_resource type="Resource" path="res://data/loot/forest/enemies/rotcaller_drop_profile.tres" id="13"]
+[ext_resource type="Shader" path="res://entities/player/presentation/king_spellward_outline.gdshader" id="14"]
+
+[sub_resource type="ShaderMaterial" id="outline"]
+shader = ExtResource("14")
+
+[sub_resource type="CircleShape2D" id="foot"]
+radius = 8.0
+[sub_resource type="CircleShape2D" id="body"]
+radius = 12.0
+
+[node name="Rotcaller" type="CharacterBody2D"]
+texture_filter = 1
+collision_layer = 4
+script = ExtResource("1")
+definition = ExtResource("2")
+
+[node name="CombatFootAura" type="Node2D" parent="."]
+script = ExtResource("11")
+[node name="Shadow" type="Polygon2D" parent="."]
+position = Vector2(0,-4)
+color = Color(0.03,0.04,0.02,0.3)
+polygon = PackedVector2Array(-10,0,-5,-3,5,-3,10,0,5,3,-5,3)
+[node name="Visual" type="Node2D" parent="."]
+script = ExtResource("3")
+[node name="Body" type="AnimatedSprite2D" parent="Visual"]
+position = Vector2(0,-24)
+material = SubResource("outline")
+sprite_frames = ExtResource("4")
+animation = &"idle_south"
+[node name="CastHint" type="Label" parent="Visual"]
+visible = false
+offset_left = -48.0
+offset_top = -58.0
+offset_right = 48.0
+offset_bottom = -44.0
+theme_override_colors/font_color = Color(0.94,0.85,0.57,1)
+theme_override_colors/font_outline_color = Color(0.08,0.07,0.06,1)
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 8
+text = "INTERRUPT CAST"
+horizontal_alignment = 1
+[node name="BodyCollision" type="CollisionShape2D" parent="."]
+position = Vector2(0,-4)
+shape = SubResource("foot")
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+unique_name_in_owner = true
+path_desired_distance = 6.0
+target_desired_distance = 8.0
+radius = 8.0
+max_speed = 46.0
+[node name="HealthComponent" type="Node" parent="."]
+unique_name_in_owner = true
+script = ExtResource("5")
+[node name="EnemyRewardComponent" type="Node" parent="." node_paths=PackedStringArray("health_component")]
+script = ExtResource("12")
+health_component = NodePath("../HealthComponent")
+drop_profile = ExtResource("13")
+
+[node name="KnockbackComponent" type="Node" parent="." node_paths=PackedStringArray("health_component")]
+script = ExtResource("7")
+health_component = NodePath("../HealthComponent")
+[node name="StaggerComponent" type="Node" parent="." node_paths=PackedStringArray("health_component")]
+script = ExtResource("8")
+health_component = NodePath("../HealthComponent")
+[node name="EnemyHealthBar" parent="." node_paths=PackedStringArray("health_component") instance=ExtResource("9")]
+position = Vector2(0,-12)
+health_component = NodePath("../HealthComponent")
+[node name="StunIndicator" parent="." instance=ExtResource("10")]
+position = Vector2(0,-52)
+[node name="Hurtbox" type="Area2D" parent="." node_paths=PackedStringArray("health_component")]
+collision_layer = 16
+collision_mask = 8
+script = ExtResource("6")
+health_component = NodePath("../HealthComponent")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox"]
+position = Vector2(0,-18)
+shape = SubResource("body")
+
+[connection signal="state_changed" from="." to="Visual" method="play_state"]
+[connection signal="facing_changed" from="." to="Visual" method="set_facing"]
+[connection signal="moving_changed" from="." to="Visual" method="set_moving"]
+[connection signal="cast_interrupted" from="." to="Visual" method="interrupt"]

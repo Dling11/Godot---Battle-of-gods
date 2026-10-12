@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="EncounterWaveDefinition" load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://gameplay/encounters/encounter_wave_definition.gd" id="1_wave"]
+[ext_resource type="Script" path="res://gameplay/encounters/encounter_spawn_entry_definition.gd" id="2_entry"]
+[ext_resource type="PackedScene" path="res://entities/enemies/crag_bear/crag_bear.tscn" id="3_bear"]
+[ext_resource type="PackedScene" path="res://entities/enemies/armored_hog/armored_hog.tscn" id="4_hog"]
+[ext_resource type="PackedScene" path="res://entities/enemies/forsaken_thrall/forsaken_thrall.tscn" id="5_thrall"]
+[ext_resource type="PackedScene" path="res://entities/enemies/bramble_spitter/bramble_spitter.tscn" id="6_spitter"]
+
+[sub_resource type="Resource" id="bear"]
+script = ExtResource("2_entry")
+enemy_scene = ExtResource("3_bear")
+count = 2
+
+[sub_resource type="Resource" id="hog"]
+script = ExtResource("2_entry")
+enemy_scene = ExtResource("4_hog")
+count = 1
+
+[sub_resource type="Resource" id="thrall"]
+script = ExtResource("2_entry")
+enemy_scene = ExtResource("5_thrall")
+count = 4
+
+[sub_resource type="Resource" id="spitter"]
+script = ExtResource("2_entry")
+enemy_scene = ExtResource("6_spitter")
+count = 2
+
+[resource]
+script = ExtResource("1_wave")
+title = "WARDENS AND THE HORDE"
+spawn_entries = Array[ExtResource("2_entry")]([SubResource("bear"), SubResource("spitter"), SubResource("thrall"), SubResource("hog")])
+spawn_interval = 0.5
+reinforcement_delay = 0.55

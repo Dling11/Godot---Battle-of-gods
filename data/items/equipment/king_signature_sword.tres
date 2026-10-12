@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="EquipmentDefinition" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://data/items/equipment_definition.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/ui/inventory/weapons/kings_sword.png" id="2_icon"]
+[ext_resource type="Resource" path="res://data/weapons/king_signature_sword.tres" id="3_weapon"]
+
+[resource]
+script = ExtResource("1_script")
+item_id = &"weapon_king_signature_sword"
+display_name = "King's Sword"
+rarity = 0
+icon = ExtResource("2_icon")
+show_combo_details = true
+compatible_classes = PackedStringArray("warrior")
+weapon_definition = ExtResource("3_weapon")
+preview_power = 25
+lore = "King's trusted steel. A steady three-hit exchange with a heavy closing cut."
+synergy_name = "Balanced Sword"
+synergy_description = "Cut → return → heavy cleave. Finisher: 1.65× base damage. One hit per enemy per swing. Skill Power feeds King's abilities separately."

@@ -1,0 +1,78 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="Script" path="res://gameplay/encounters/stage_portal.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/ui/icons/interactions/icon_interaction_portal_16x16.png" id="2_portal_icon"]
+[ext_resource type="SpriteFrames" path="res://assets/environment/portals/threat_family/calm_frames.tres" id="3_base_frames"]
+[ext_resource type="SpriteFrames" path="res://gameplay/encounters/stage_veil_portal_fx_frames.tres" id="4_fx_frames"]
+[ext_resource type="AudioStream" path="res://assets/audio/sfx/abilities/king/sovereign_pursuit_launch.wav" id="5_travel_sound"]
+[ext_resource type="Script" path="res://gameplay/encounters/stage_portal_surface_animation.gd" id="6_surface"]
+
+[sub_resource type="CircleShape2D" id="TriggerShape"]
+radius = 52.0
+
+[node name="StagePortal" type="Area2D" node_paths=PackedStringArray("portal_visual", "portal_fx", "guidance_arrow", "offscreen_guide", "travel_sound")]
+collision_layer = 0
+collision_mask = 2
+monitoring = true
+script = ExtResource("1_script")
+portal_visual = NodePath("PortalVisual")
+portal_fx = NodePath("PortalFx")
+guidance_arrow = NodePath("GuidanceArrow")
+offscreen_guide = NodePath("PortalGuideLayer/OffscreenGuide")
+travel_sound = NodePath("TravelSound")
+interaction_icon = ExtResource("2_portal_icon")
+
+[node name="PortalVisual" type="AnimatedSprite2D" parent="."]
+script = ExtResource("6_surface")
+z_index = 2
+position = Vector2(0, -46)
+sprite_frames = ExtResource("3_base_frames")
+animation = &"active"
+autoplay = "active"
+
+[node name="PortalFx" type="AnimatedSprite2D" parent="."]
+z_index = 1
+position = Vector2(0, -46)
+sprite_frames = ExtResource("4_fx_frames")
+animation = &"active"
+frame = 5
+autoplay = "active"
+
+[node name="GuidanceArrow" type="Label" parent="."]
+z_index = 3
+offset_left = -10.0
+offset_top = -151.0
+offset_right = 10.0
+offset_bottom = -127.0
+text = "▼"
+horizontal_alignment = 1
+theme_override_colors/font_color = Color(0.55, 0.78, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.02, 0.08, 0.18, 0.9)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 18
+
+[node name="PortalGuideLayer" type="CanvasLayer" parent="."]
+layer = 12
+
+[node name="OffscreenGuide" type="Label" parent="PortalGuideLayer"]
+visible = false
+offset_right = 28.0
+offset_bottom = 28.0
+text = "➤"
+horizontal_alignment = 1
+vertical_alignment = 1
+theme_override_colors/font_color = Color(0.55, 0.78, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.02, 0.08, 0.18, 0.95)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 22
+
+[node name="TravelSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_travel_sound")
+volume_db = -8.0
+bus = &"SFX"
+
+[node name="Trigger" type="CollisionShape2D" parent="."]
+position = Vector2(0, -18)
+shape = SubResource("TriggerShape")

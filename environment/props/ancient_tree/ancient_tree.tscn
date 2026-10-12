@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://btb1xkj7mh3s1"]
+
+[ext_resource type="Texture2D" path="res://assets/environment/forest/shared/props/ancient_tree_base.png" id="1_base"]
+[ext_resource type="Texture2D" path="res://assets/environment/forest/shared/props/ancient_tree_canopy.png" id="2_canopy"]
+[ext_resource type="Script" uid="uid://bpvdh5hx5ke8i" path="res://gameplay/navigation/navigation_cutout.gd" id="3_cutout"]
+[ext_resource type="Script" uid="uid://diu0tatp1gsqm" path="res://environment/props/ancient_tree/ancient_tree_visual.gd" id="4_visual"]
+
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_footprint"]
+points = PackedVector2Array(-34, -16, -27, -24, -20, -30, 22, -32, 37, -21, 37, -9, 23, -2, -25, -1)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_canopy"]
+polygon = PackedVector2Array(-36, -54, -23, -76, 0, -86, 25, -75, 37, -52, 31, -27, 0, -18, -31, -28)
+
+[node name="AncientTree" type="StaticBody2D" unique_id=297222190 node_paths=PackedStringArray("canopy")]
+collision_mask = 6
+script = ExtResource("4_visual")
+canopy = NodePath("CanopyPivot/Canopy")
+
+[node name="Shadow" type="Sprite2D" parent="." unique_id=746849492]
+modulate = Color(0.08, 0.16, 0.06, 0.28)
+z_index = -2
+position = Vector2(1.0000002, -5)
+scale = Vector2(0.6595745, 0.16)
+texture = ExtResource("2_canopy")
+
+[node name="GroundVisuals" type="Node2D" parent="." unique_id=1187257819]
+
+[node name="Trunk" type="Sprite2D" parent="GroundVisuals" unique_id=896167351]
+position = Vector2(0, -56)
+texture = ExtResource("1_base")
+
+[node name="CanopyPivot" type="Node2D" parent="." unique_id=281654781]
+position = Vector2(0, -56)
+
+[node name="Canopy" type="Sprite2D" parent="CanopyPivot" unique_id=1043215329]
+texture = ExtResource("2_canopy")
+
+[node name="TreeFootprint" type="CollisionShape2D" parent="." unique_id=1656781724]
+shape = SubResource("ConvexPolygonShape2D_footprint")
+
+[node name="Occluder" type="LightOccluder2D" parent="." unique_id=536797746]
+position = Vector2(0, -65)
+occluder = SubResource("OccluderPolygon2D_canopy")
+
+[node name="NavigationCutout" type="Node" parent="." unique_id=675471000 groups=["navigation_cutout"]]
+script = ExtResource("3_cutout")
+local_outline = PackedVector2Array(-10, -15, 10, -15, 10, 7, -10, 7)
+derive_from_collision_shapes = true

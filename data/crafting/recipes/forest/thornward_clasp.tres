@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="RecipeDefinition" format=3 uid="uid://d3feax13bmejb"]
+
+[ext_resource type="Script" uid="uid://ddkkkbe8622gd" path="res://data/crafting/recipes/recipe_definition.gd" id="1_recipe"]
+[ext_resource type="Script" uid="uid://bll3k2id0v40j" path="res://data/items/materials/material_stack_definition.gd" id="2_stack"]
+[ext_resource type="Resource" uid="uid://elkww58s4uf3" path="res://data/items/materials/forest/barbed_seed.tres" id="3_seed"]
+[ext_resource type="Resource" uid="uid://32r3ksqif6tb" path="res://data/items/materials/forest/thorn_sap.tres" id="4_sap"]
+[ext_resource type="Resource" uid="uid://dbinq5oclqkgp" path="res://data/items/materials/forest/weathered_fittings.tres" id="5_fittings"]
+
+[sub_resource type="Resource" id="Cost_seed"]
+script = ExtResource("2_stack")
+material = ExtResource("3_seed")
+quantity = 4
+
+[sub_resource type="Resource" id="Cost_sap"]
+script = ExtResource("2_stack")
+material = ExtResource("4_sap")
+quantity = 3
+
+[sub_resource type="Resource" id="Cost_fittings"]
+script = ExtResource("2_stack")
+material = ExtResource("5_fittings")
+quantity = 2
+
+[resource]
+script = ExtResource("1_recipe")
+recipe_id = &"forest_thornward_clasp"
+display_name = "Thornward Clasp"
+description = "A reinforced clasp concept that turns Bramble materials toward pressure resistance."
+region_id = &"forest"
+category = 2
+output_id = &"forest_thornward_clasp"
+ingredients = Array[ExtResource("2_stack")]([SubResource("Cost_seed"), SubResource("Cost_sap"), SubResource("Cost_fittings")])
+unlock_id = &"forest_thornward_clasp"

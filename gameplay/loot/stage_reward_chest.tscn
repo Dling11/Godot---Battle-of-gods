@@ -1,0 +1,60 @@
+[gd_scene load_steps=11 format=3]
+
+[ext_resource type="Script" path="res://gameplay/loot/stage_reward_chest.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/gameplay/loot/stage_clear_chest/renewed/forest_closed.png" id="2_closed"]
+[ext_resource type="Texture2D" path="res://assets/gameplay/loot/stage_clear_chest/renewed/forest_open.png" id="3_open"]
+[ext_resource type="Texture2D" path="res://assets/gameplay/loot/stage_clear_chest/renewed/rootbound_closed.png" id="4_rootbound_closed"]
+[ext_resource type="Texture2D" path="res://assets/gameplay/loot/stage_clear_chest/renewed/rootbound_open.png" id="5_rootbound_open"]
+[ext_resource type="PackedScene" path="res://gameplay/loot/chest_spawn_effect.tscn" id="6_spawn_effect"]
+[ext_resource type="Texture2D" path="res://assets/gameplay/loot/stage_clear_chest/renewed/varkuun_closed.png" id="7_varkuun_closed"]
+[ext_resource type="Texture2D" path="res://assets/gameplay/loot/stage_clear_chest/renewed/varkuun_open.png" id="8_varkuun_open"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_interaction"]
+size = Vector2(72, 48)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_footprint"]
+size = Vector2(42, 14)
+
+[node name="StageRewardChest" type="Area2D" node_paths=PackedStringArray("chest_sprite", "glow", "visual_root", "interaction_shape", "physical_body", "physical_shape", "spawn_effect")]
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("1_script")
+chest_sprite = NodePath("VisualRoot/Chest")
+closed_texture = ExtResource("2_closed")
+open_texture = ExtResource("3_open")
+rootbound_closed_texture = ExtResource("4_rootbound_closed")
+rootbound_open_texture = ExtResource("5_rootbound_open")
+varkuun_closed_texture = ExtResource("7_varkuun_closed")
+varkuun_open_texture = ExtResource("8_varkuun_open")
+glow = NodePath("VisualRoot/Glow")
+visual_root = NodePath("VisualRoot")
+interaction_shape = NodePath("InteractionRange")
+physical_body = NodePath("Footprint")
+physical_shape = NodePath("Footprint/CollisionShape2D")
+spawn_effect = NodePath("SpawnEffect")
+
+[node name="SpawnEffect" parent="." instance=ExtResource("6_spawn_effect")]
+position = Vector2(0, -10)
+
+[node name="VisualRoot" type="Node2D" parent="."]
+
+[node name="Glow" type="Polygon2D" parent="VisualRoot"]
+position = Vector2(0, -10)
+polygon = PackedVector2Array(0, -28, 30, -18, 38, 0, 30, 18, 0, 28, -30, 18, -38, 0, -30, -18)
+color = Color(0.84, 0.68, 0.26, 0.26)
+
+[node name="Chest" type="Sprite2D" parent="VisualRoot"]
+position = Vector2(0, -20)
+texture = ExtResource("2_closed")
+
+[node name="InteractionRange" type="CollisionShape2D" parent="."]
+position = Vector2(0, -14)
+shape = SubResource("RectangleShape2D_interaction")
+
+[node name="Footprint" type="StaticBody2D" parent="."]
+collision_layer = 0
+collision_mask = 6
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Footprint"]
+position = Vector2(0, -7)
+shape = SubResource("RectangleShape2D_footprint")

@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="DropProfileDefinition" format=3 uid="uid://bxenbdw8t5rai"]
+
+[ext_resource type="Script" uid="uid://dl3k32mipxq87" path="res://data/loot/drop_profile_definition.gd" id="1"]
+[ext_resource type="Script" uid="uid://bjfif5kirqwdc" path="res://data/loot/material_drop_entry_definition.gd" id="2"]
+[ext_resource type="Resource" path="res://data/items/materials/forest/armored_hog_hide.tres" id="3"]
+[ext_resource type="Resource" path="res://data/items/materials/forest/living_bark_plate.tres" id="4"]
+
+[sub_resource type="Resource" id="hide"]
+script = ExtResource("2")
+material = ExtResource("3")
+chance = 0.2
+bad_luck_protection_key = &"forest_armored_hog_hide_misses"
+guaranteed_after_misses = 6
+
+[sub_resource type="Resource" id="plate"]
+script = ExtResource("2")
+material = ExtResource("4")
+chance = 0.08
+bad_luck_protection_key = &"forest_living_bark_plate_misses"
+guaranteed_after_misses = 12
+
+[resource]
+script = ExtResource("1")
+profile_id = &"forest_armored_hog_drops"
+source_enemy_id = &"armored_hog"
+region_id = &"forest"
+common_drops = Array[ExtResource("2")]([SubResource("hide")])
+optional_secondary = Array[ExtResource("2")]([SubResource("plate")])

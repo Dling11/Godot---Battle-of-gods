@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="ExpeditionDefinition" format=3 uid="uid://22acvv6itm1s"]
+
+[ext_resource type="Script" uid="uid://cc5ey0o5cyle8" path="res://data/expeditions/expedition_definition.gd" id="1_definition"]
+[ext_resource type="Script" uid="uid://bce1s2bt2iedf" path="res://data/expeditions/expedition_requirement.gd" id="2_requirement"]
+
+[sub_resource type="Resource" id="Requirement"]
+script = ExtResource("2_requirement")
+minimum_level = 3
+required_story_flags = PackedStringArray("forgotten_grove_completed")
+required_boss_victories = PackedStringArray("thornbound_warden")
+required_discoveries = null
+required_key_items = PackedStringArray("cinder_sigil")
+
+[resource]
+script = ExtResource("1_definition")
+expedition_id = &"rootbound_hollow"
+route_label = "STAGE III"
+display_name = "THE ROOTBOUND HOLLOW"
+difficulty_label = "MINI-BOSS EXPEDITION"
+description = "Cut through the Husk's Rootling brood and enter a corrupted hollow guarded by the first mini-boss: the Rootbound Husk."
+destination_scene = "res://levels/stage_3/stage_3.tscn"
+requirement = SubResource("Requirement")

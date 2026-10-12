@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="ExpeditionDefinition" format=3 uid="uid://cju8tth0mclg1"]
+
+[ext_resource type="Script" uid="uid://cc5ey0o5cyle8" path="res://data/expeditions/expedition_definition.gd" id="1_definition"]
+[ext_resource type="Script" uid="uid://bce1s2bt2iedf" path="res://data/expeditions/expedition_requirement.gd" id="2_requirement"]
+
+[sub_resource type="Resource" id="Requirement"]
+script = ExtResource("2_requirement")
+required_story_flags = PackedStringArray("forgotten_grove_stage_1_cleared")
+required_boss_victories = null
+required_discoveries = null
+required_key_items = null
+
+[resource]
+script = ExtResource("1_definition")
+expedition_id = &"thorns_of_the_forgotten_grove"
+route_label = "STAGE II"
+display_name = "THORNS OF THE FORGOTTEN GROVE"
+difficulty_label = "GROVE PRESSURE"
+description = "Press deeper into the wounded grove, where rooted ambushes and Bramble Spitters turn the forest against you."
+destination_scene = "res://levels/stage_2/stage_2.tscn"
+requirement = SubResource("Requirement")

@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="EnemyDefinition" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://data/enemies/enemy_definition.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/characters/enemies/portraits/bramble_spitter_portrait_96x96.png" id="2_portrait"]
+
+[resource]
+script = ExtResource("1")
+enemy_id = &"bramble_spitter"
+display_name = "Bramble Spitter"
+portrait = ExtResource("2_portrait")
+maximum_health = 40.0
+move_speed = 46.0
+acceleration = 420.0
+movement_footprint_radius = 7.0
+crowd_separation_radius = 32.0
+attack_range = 190.0
+attack_damage = 14.0
+wind_up_seconds = 0.62
+active_seconds = 0.1
+recovery_seconds = 0.82
+spawn_seconds = 0.7
+experience_reward = 20
+coin_reward = 5
+crowd_control_tier = 0

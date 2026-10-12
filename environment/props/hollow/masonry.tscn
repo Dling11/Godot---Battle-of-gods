@@ -1,0 +1,25 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://environment/props/woodland/woodland_prop.gd" id="1_8m8aq"]
+[ext_resource type="Texture2D" path="res://assets/environment/forest/hollow_renewal/masonry.png" id="2_bwsew"]
+[ext_resource type="Script" path="res://gameplay/navigation/navigation_cutout.gd" id="3_r5scd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bh4gd"]
+size = Vector2(36, 18)
+
+[node name="Masonry" type="StaticBody2D" unique_id=1277475730]
+texture_filter = 1
+collision_mask = 0
+script = ExtResource("1_8m8aq")
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1259969899]
+position = Vector2(0, -13)
+texture = ExtResource("2_bwsew")
+
+[node name="Footprint" type="CollisionShape2D" parent="." unique_id=822500027]
+position = Vector2(0, -2)
+shape = SubResource("RectangleShape2D_bh4gd")
+
+[node name="NavigationCutout" type="Node" parent="." unique_id=1243308119 groups=["navigation_cutout"]]
+script = ExtResource("3_r5scd")
+derive_from_collision_shapes = true

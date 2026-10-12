@@ -1,0 +1,38 @@
+[gd_resource type="SpriteFrames" load_steps=10 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/vfx/abilities/king/sovereign_pursuit_review/travel.png" id="1_sheet"]
+
+[sub_resource type="AtlasTexture" id="Frame_00"]
+atlas = ExtResource("1_sheet")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Frame_01"]
+atlas = ExtResource("1_sheet")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Frame_02"]
+atlas = ExtResource("1_sheet")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Frame_03"]
+atlas = ExtResource("1_sheet")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Frame_04"]
+atlas = ExtResource("1_sheet")
+region = Rect2(0, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Frame_05"]
+atlas = ExtResource("1_sheet")
+region = Rect2(128, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Frame_06"]
+atlas = ExtResource("1_sheet")
+region = Rect2(256, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Frame_07"]
+atlas = ExtResource("1_sheet")
+region = Rect2(384, 128, 128, 128)
+
+[resource]
+animations = [{"frames": [{"duration": 1.0, "texture": SubResource("Frame_00")}, {"duration": 1.0, "texture": SubResource("Frame_01")}, {"duration": 1.0, "texture": SubResource("Frame_02")}, {"duration": 1.0, "texture": SubResource("Frame_03")}, {"duration": 1.0, "texture": SubResource("Frame_04")}, {"duration": 1.0, "texture": SubResource("Frame_05")}, {"duration": 1.0, "texture": SubResource("Frame_06")}, {"duration": 1.0, "texture": SubResource("Frame_07")}], "loop": false, "name": &"travel", "speed": 30.0}]

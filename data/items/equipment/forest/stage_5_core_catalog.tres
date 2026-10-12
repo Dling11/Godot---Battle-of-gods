@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EquipmentCatalogDefinition" load_steps=8 format=3]
+
+[ext_resource type="Script" path="res://data/items/equipment_catalog_definition.gd" id="1_catalog"]
+[ext_resource type="Resource" path="res://data/items/equipment/forest/stage_5_core/varkuun_edge_essence.tres" id="2_weapon"]
+[ext_resource type="Resource" path="res://data/items/equipment/forest/stage_5_core/old_bark_helm.tres" id="3_head"]
+[ext_resource type="Resource" path="res://data/items/equipment/forest/stage_5_core/heartwood_plate.tres" id="4_plate"]
+[ext_resource type="Resource" path="res://data/items/equipment/forest/stage_5_core/rootfiber_gloves.tres" id="5_gloves"]
+[ext_resource type="Resource" path="res://data/items/equipment/forest/stage_5_core/mirebound_leggings.tres" id="6_leggings"]
+[ext_resource type="Resource" path="res://data/items/equipment/forest/stage_5_core/mirehide_boots.tres" id="7_boots"]
+
+[resource]
+script = ExtResource("1_catalog")
+catalog_id = &"forest_stage_5_core"
+items = Array[Resource]([ExtResource("2_weapon"), ExtResource("3_head"), ExtResource("4_plate"), ExtResource("5_gloves"), ExtResource("6_leggings"), ExtResource("7_boots")])

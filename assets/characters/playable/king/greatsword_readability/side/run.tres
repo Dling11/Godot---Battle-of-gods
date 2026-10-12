@@ -1,0 +1,24 @@
+[gd_resource type="Resource" load_steps=5 format=3]
+[ext_resource type="Script" path="res://data/weapons/weapon_family_pose_definition.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/characters/playable/king/greatsword_readability/side/run_body.png" id="2"]
+[ext_resource type="Texture2D" path="res://assets/characters/playable/king/greatsword_readability/side/run_hands.png" id="3"]
+[ext_resource type="Texture2D" path="res://assets/characters/playable/king/huge_greatsword_proof/greatsword.png" id="4"]
+[resource]
+script = ExtResource("1")
+body_atlas = ExtResource("2")
+hand_atlas = ExtResource("3")
+weapon_texture = ExtResource("4")
+primary_hands = PackedVector2Array(93, 60, 93, 61, 94, 61, 93, 59, 94, 60, 94, 61, 94, 60, 93, 59)
+secondary_hands = PackedVector2Array(101, 64, 101, 65, 102, 65, 101, 63, 102, 64, 102, 65, 102, 64, 101, 63)
+weapon_primary_grip = Vector2(15, 113)
+weapon_tip = Vector2(-1, -1)
+mirror_cutting_edge = false
+weapon_behind_body = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0)
+single_hand_poses = PackedByteArray(1, 1, 1, 1, 1, 1, 1, 1)
+stowed_poses = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0)
+released_poses = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0)
+ground_clipped_poses = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0)
+lift_pixels = PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0)
+allow_rest = true
+identity_regions = Array[Rect2]([Rect2(91, 41, 25, 24), Rect2(91, 42, 25, 24), Rect2(93, 41, 25, 24), Rect2(92, 40, 25, 24), Rect2(89, 39, 25, 24), Rect2(91, 42, 25, 24), Rect2(92, 40, 25, 24), Rect2(88, 38, 25, 24)])
+identity_source_region = Rect2(87, 41, 25, 24)

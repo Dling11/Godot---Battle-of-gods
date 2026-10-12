@@ -1,0 +1,241 @@
+# Decisions Index
+
+Current code/contracts are authoritative. Earlier decisions document history; removed art/tool/archive paths are not supported setup or build instructions. Recover historical material from the original repository only when needed.
+
+- [198 — Start a fresh repository from the cleaned project](docs/decisions/198-start-fresh-repository-from-cleaned-project.md): owner-created Dling11/Godot---Battle-of-gods, clean root history, same game folder, separate original metadata/repository and measured ordinary clone.
+
+- [197 — Delete retired content and preserve production assets](docs/decisions/197-delete-retired-content-preserve-production-assets.md): owner-authorized folder cleanup, current-only rebuilds/tests, ignored evidence, lightweight packaging and explicit Git-history boundary.
+
+- [196 — Steady Twinsteel carry with frozen upper anatomy](docs/decisions/196-steady-twinsteel-carry-with-frozen-upper-anatomy.md): distinct complete-cel walking variant fixes rejected idle/run pose mismatch; exact approved upper carry, registered stepping legs and matched blade endpoints. Frozen references/other weapons/contacts/rest/gameplay protected; owner motion review pending.
+
+- [195 — Reuse complete King bodies across weapons](docs/decisions/195-reuse-complete-king-bodies-across-weapons.md): fix equipped axe with approved whole poses, share exact gait across all four weapons, freeze full-body references and reject same-height torso drift; Greatsword/gameplay protected. Installed for owner visual review.
+
+- [194 — Freeze King anatomy and repair axe/dual motion](docs/decisions/194-freeze-king-anatomy-and-repair-axe-dual-motion.md): frozen native four-view tracing reference, fresh registered vertical axe bodies, accepted Greatsword-derived dual gait and corrected complete front cuts/idle; original axe sides/Greatsword and combat rules preserved. Historical; owner rejected equipped axe DOWN proportions on2026-10-11. Decision195 supersedes standing/gait selections and the sizing gate.
+
+- [193 — Rebuild rejected axe vertical choreography with fresh art](docs/decisions/193-rebuild-axe-vertical-choreography-with-fresh-art.md): fresh full-body vertical cuts/real turn/rear overhead jump and independent floor-perspective effects replace the insufficient proportion pass; accepted side/carry/gait/steel and melee authority stay.
+
+- [192 — Polish axe vertical proportions before scythe](docs/decisions/192-polish-axe-vertical-proportions-before-scythe.md): owner prioritizes UP/DOWN axe against the approved King baseline; shared offline complete-cel registration, rigid one-hand shaft basis, exact carry/queue endpoints, preserved side art/gameplay and deferred Iron Reaper.
+
+- [191 — Match vertical King body proportions](docs/decisions/191-match-vertical-king-body-proportions.md): owner authorizes focused UP/DOWN Twinsteel/Greatsword body correction against approved side art; offline anatomical density, whole-body/hand registration, real palette/palm/occlusion preservation and matched carry endpoints; gameplay/steel/effects stay.
+
+- [190 — Install accepted Twinsteel V2 with cardinal gait and proud idle](docs/decisions/190-install-dual-v2-with-cardinal-gait-and-proud-idle.md): existing equipment/save identity, dedicated vertical cuts/fresh gait, optional timer-driven baked head-glance rest and independent blade visibility; accepted heavy art stays.
+
+- [189 — New dual-sword side combo before cardinal promotion](docs/decisions/189-preview-new-dual-side-combo-before-cardinal-promotion.md): Iron Reaper selected; prioritize fresh dual bodies/effects and LEFT/RIGHT review, preserving accepted locomotion/steel/live families. Owner review, vertical art and combat promotion pending.
+
+**188 — Close weapon impacts / retire V1 (2026-10-07):** Owner accepts Greatsword and explicitly removes the old comparison. Keep approved motion and stable V2 ID, migrate supported legacy saves, archive obsolete definitions while retaining shared art, select normal/finisher contact profiles through optional data, and compare authentic enemy/control/horde results before retuning. Scythe receives distinct design previews only until selected. This supersedes186/187's separately selectable V1 requirement. [Decision188](docs/decisions/188-close-weapon-impacts-and-retire-greatsword-v1.md), [current guide](docs/design/weapon-impact-closure.md).
+
+**187 — Held primary/heavy V2 polish (2026-10-07):** Preserve approved fast contacts/V1 identity; author vertical bodies and independent larger FX, enlarge/slow spin, shorten axe loading/recovery and repeat world mouse holds through existing authority. [Decision187](docs/decisions/187-repeat-held-primary-and-polish-heavy-v2.md). This supersedes186's temporary vertical-fallback state.
+
+**186 — Authorized V2 equipment playtest (2026-10-07):** Owner requests revised jump impact and F9/F7 access, with original/new comparison. Keep accepted Oathbound as its own item and add Royal Greatsword V2 through the existing catalog/Player/contact systems and Lab Weapons tab. Preserve native gait, proud idle and steel; use new side jump/grounded burst and explicitly labelled V1 vertical fallback bodies pending true V2 art. F9 remains non-saving; owner feel and campaign acquisition/balance remain open. This supersedes the earlier isolated-only promotion scope. [Decision186](docs/decisions/186-preview-heavy-burst-attacks-before-promotion.md), [current rules/play/proof](docs/design/king-greatsword-front-combo.md).
+
+**185 — Separate contact sound and close three weapon roles (2026-10-06):** Sword/axe/dual use shared recorded body impacts with family weight, accurate base-hit/combo/DPS inspection and initial role tuning. Accepted artwork/timing remains; Greatsword is owner-frozen. [Decision185](docs/decisions/185-close-three-weapon-roles-with-scoped-hit-audio.md).
+
+**180 — Iron Beard five-hit implementation update (2026-10-06):** Owner clarifies third head thrust: current chain is chop → rise → head push → hop slam → spin, with native push-body reuse, blade-leading rig registration and four new broad raster impact cels. Five connected clips retain25/0/60% walking and accepted carry/gait. The78px push lane changes contact tuning; collection, recipes and milestones remain unchanged. [Decision180](docs/decisions/180-craft-weapon-variants-with-milestone-blueprints.md), [axe guide](docs/design/king-axe-cardinal-motion.md). Owner feel and comparative balance remain open.
+
+**184 — Twinsteel dual swords as third family (2026-10-05, updated2026-10-06):** A remains the selected family, installed in normal equipment/Player/Combat Lab through F9 and Tab. Current owner-sketch correction gives the front sword to the lower near hand, hides the rear hand/handle behind the vest and strengthens native charcoal edges consistently. Native cardinal4567/0 and actual gameplay220/0 pass; owner accepted this carry/outline correction on2026-10-06. Comparative balance, campaign acquisition and device profiling remain pending. [Decision](docs/decisions/184-select-dual-swords-as-third-family.md), implementation.
+
+**183 — Fresh complete Greatsword motion with protected installed identity (2026-10-05):** Implemented; owner accepts the current animation/art pass for now after small upward body centering. Shared ordinary white-effect scale, huge steel/3.00s authority, proud idle, gait and provisional.25/0/.6 walking remain; rejected trial paths are archived. Final comparative balance/device profiling remain open. [Decision](docs/decisions/183-protect-king-identity-in-fresh-greatsword-motion.md), implementation.
+
+Architecture decisions are stored as durable ADR history. Read this compact index first, then open only the decision relevant to the current task.
+
+The complete text of Decisions 001-025 is preserved in [`docs/decisions/001-025-archive.md`](docs/decisions/001-025-archive.md).
+
+Current Sanctuary baseline: [Decision165](docs/decisions/165-finalize-sanctuary-and-archive-legacy-town.md) supersedes optional-only/comparison and study-only placement in Decisions163/164.
+
+## Active Decision Map
+| ID | Decision | Read when working on |
+|---|---|---|
+| 001 | Repository documentation is persistent project memory | Documentation workflow or project handoff |
+| 002 | Prefer composition and data-driven content | New gameplay systems, resources, or actor capabilities |
+| 003 | Preserve authority boundaries without premature networking | Gameplay authority, state ownership, or multiplayer readiness |
+| 004 | Optimize from budgets and profiles | Performance, pooling, or large enemy counts |
+| 005 | Pin the prototype to Godot 4.7 stable | Engine upgrades or compatibility |
+| 006 | Use a pixel-oriented viewport baseline | Resolution, cameras, scaling, or pixel stability |
+| 007 | Separate player intent from movement authority | Input, movement, control sources, or replay/network boundaries |
+| 008 | Treat environment art as layered gameplay assets | Props, collision, navigation, depth, and occlusion |
+| 009 | Establish combat with a data-driven plain sword | Weapons, attack phases, hitboxes, or damage data |
+| 010 | Present the reusable evade as a supernatural dash | Dodge behavior, invulnerability, or mobility |
+| 011 | Begin enemy combat with an open-arena Forsaken Thrall | Enemy state machines, pursuit, or melee behavior |
+| 012 | Keep defeat authority outside the HUD | Death, restart, HUD ownership, or game flow |
+| 013 | Validate environment assets and navigation together | Tilemaps, props, navigation baking, or path tests |
+| 014 | Favor a wider, simpler, brighter gameplay presentation | Viewport, palette, visual density, or HUD scale |
+| 015 | Enforce strict 24x32 sprite cells and integrated weapon poses | Character sprite production and import rules |
+| 016 | Preserve body scale and separate the hand-anchored swing | Attack sprite alignment, shadows, or collision placement |
+| 017 | Author full-body six-frame sword attacks (superseded for the active player by 039) | Legacy attack art or integrated non-modular actions |
+| 018 | Polish enemy arrival, footprint navigation, and combat-space presentation | Spawning, navigation footprints, or combat readability |
+| 019 | Author the Thrall claw scratch as full-body directional animation | Thrall animation and attack telegraphs |
+| 020 | Turn the proving ground into a small staged playable level | Map layout, waves, camera, and encounter structure |
+| 021 | Make enemy pressure dodgeable and obstacle-correct | Mireling leaps, Thrall pursuit, and obstacle behavior |
+| 022 | Define waves within a stage and exit through a portal | Wave lifecycle, stage completion, or portals |
+| 023 | Use local proximity separation for prototype crowds | Enemy crowd spacing and movement blending |
+| 024 | Announce spawns with a reusable summon effect | Spawn presentation and effects ownership |
+| 025 | Make portals explicit reusable scene boundaries | Portal interaction and scene transitions |
+| 026 | Begin with a grounded weapon skill | Ability framework, early-game power, or Sweeping Cut |
+| 027 | Introduce ranged pressure through committed projectiles | Ranged enemies, projectile authority, or early enemy balance |
+| 028 | Teach ranged pressure in an authored second stage | Stage pacing, enemy introduction, or stage-owned encounters |
+| 029 | Use a session-only authored level-10 progression foundation | XP, coins, levels, skill unlocks, or save design |
+| 030 | Keep combat impact feedback presentation-only and time-scale-free | Damage numbers, screen shake, hit stop, or effects |
+| 031 | Drive positional combat SFX from authoritative events | Audio buses, player/enemy cues, or combat sound ownership |
+| 032 | Use four numbered skills and a narrow in-memory run session | Skill controls, character menu, portal progression, or run reset |
+| 033 | Give assets canonical identities and replaceable presentation contracts | Art generation, asset naming, folders, UI themes, or backgrounds |
+| 034 | Use one shared theme and semantic UI icons | HUD/menu styling, interaction prompts, icon replacement, or new UI screens |
+| 035 | Make the title screen the explicit journey entry | Main scene, menu navigation, new journeys, settings, or title backgrounds |
+| 036 | Use Sanctuary as the expedition hub | Hub flow, NPCs, destination choice, route unlocks, or stage return behavior |
+| 037 | Generate and normalize a dedicated Sanctuary art kit | Sanctuary tiles, generated props, NPC presentation, hub collisions, or visual replacement |
+| 038 | Preview skill-synergy equipment before persistence | Equipment ranks, inventory UI, weapon synergies, shops, drops, or stat authority |
+| 039 | Use modular mortal character presentation | Opaw, playable classes, layered equipment, visible weapons, or NPC scale migration |
+| 040 | Split playable animation by action while locking body scale | Opaw animation sheets, directional scale, attack-body phases, dash, hurt, or defeat |
+| 041 | Activate compact armless Opaw with an explicit visual rollback | Opaw's active silhouette, detached weapon orbit, model replacement, or art backup |
+| 042 | Share body animation across data-driven sword styles and grades | Sword grades, attack presentation profiles, visible weapon swapping, or animation reuse |
+| 043 | Align Sanctuary services with compact characters and archive superseded runtime material | Eira/Orren art, service buildings, asset cleanup, supported rollbacks, or archive policy |
+| 044 | Use story memory for data-driven expedition access | Story flags, bosses, discoveries, key items, route requirements, lore memory, or future profile saves |
+| 045 | Use a class-gated session weapon inventory | Weapon ownership, shops, equip switching, class restrictions, default weapons, or session retention |
+| 046 | Buffer basic attack through dash recovery | Dash attacks, evade recovery, input buffering, cancel windows, or invulnerability overlap |
+| 047 | Equip weapon-scaled Piercing Rush and preserve Sweeping Cut | Skill 1, ability movement, weapon scaling, clickable skills, spectral thrusts, or alternate techniques |
+| 048 | Use an effect-only animation atlas for exaggerated Piercing Rush presentation | Piercing Rush VFX, oversized skill art, visual-versus-hitbox bounds, directional effect reuse, or sword-independent technique animation |
+| 049 | Align Piercing Rush's central lance and audio with its presentation | Piercing Rush reach, first-skill balance, damage multiplier, pushback, accepted-hit audio, or CC0 sound sourcing |
+| 050 | Use authored multi-strike data and a debug-only test loadout for Consecutive Thrust | Repeated hits, Skill 2, debug testing, effect-only VFX, weapon scaling, or future free awakening |
+| 051 | Use data-driven crowd-control tiers for enemy resistance | Knockback, stagger, enemy interruption, elites, bosses, control immunity, or future poise |
+| 052 | Extend expedition pacing within the readable four-enemy cap | Stage wave counts, mixed enemy pacing, encounter length, or crowd-performance budgets |
+| 053 | Use Rootbound Husk as an authored forest melee archetype | Forest enemy art, Root Spear attack, Stage 1 roster, or future Rootbound Elder boss |
+| 054 | Make Rootling the compact Stage 1 rooted melee enemy | Rootling art, locked ground-jab authority, Stage 1 wave composition, or Rootbound escalation |
+| 055 | Gate authored reveals and give recurring characters reusable portraits | Pre-fight dialogue, encounter gates, character portraits, bestiary art, or expedition previews |
+| 056 | Bake combat-stage TileMaps from authored layout resources | Forest tiles, stage composition, landmark placement, terrain authoring, or environment folders |
+| 057 | Complete the pre-Stage-IV progression and control pass | XP curve, Eira awakening, Skill 2 invulnerability/cancel, explicit equip, HUD input, dash/options UI |
+| 058 | Use compact action UI and data-owned combat scale | HUD/menu sizing, level vitality, level-up feedback, weapon shapes, sword grip, skill reach, future weapon families |
+| 059 | Align cleave, routing, and run vitality | Visible melee contacts, Stage III boss navigation, dash separation, current-health continuity, regeneration, enemy damage |
+| 060 | Tighten starter cleave and localize feedback | Beginner-sword reach, future weapon-family shapes, overhead level feedback, clustered-hit performance, or hitstop tiers |
+| 061 | Slow the first-forest progression curve | XP thresholds, stage-level pacing, Iron Sword price, early economy, or save reconstruction |
+| 062 | Use regional crafting and a reusable material grammar | Loot/crafting, monster drops, chests, Hunts, Rootweaver, material icons, cross-region reuse, or regional Mastery |
+| 063 | Use one safe-point autosave profile | Save files, Continue, autosave checkpoints, backup recovery, New Journey replacement, or future migrations |
+| 064 | Use stable crafting data and dedicated progress authorities | Material IDs, drop profiles, stage loot tables, recipe catalogs, material inventory, recipe discovery, or crafting save extensions |
+| 065 | Use one Character and Bag surface | Paper-doll equipment layout, 24-slot bag, material pouch, inventory filters, item details, or future stash/discard UX |
+| 066 | Use protected enemy drops and tiered clear chests | Enemy drop chances, bad-luck protection, auto-pickup, boss guarantees, chest collision, spawn presentation, or chest rarity |
+| 067 | Use milestone boss rewards and crafting seals | Sparse loot, ordinary-stage completion, Stage III/V/VIII/X rewards, crafting-category unlocks, or repeatable boss catalysts |
+| 068 | Introduce Rootweaver Nema through a read-only Rootforge | Nema, visible-arm NPC work animation, Sanctuary crafting presentation, portrait dialogue, or pre-transaction recipe inspection |
+| 069 | Phase Forest core gear, accessories, and relics across Stages V-X | Equipment categories, accessory slots/stats, crafting seals, or Stage VI-X reward pacing |
+| 070 | Centralize enemy movement footprints without flattening combat shapes | Enemy collision size, navigation radius, crowd separation, selection rings, or new enemy contracts |
+| 071 | Use character-owned combat and equipment essences | King, playable roster architecture, real combos, signature weapons, essence/relic equipment, or cinematic ultimates |
+| 072 | Preserve Opaw and build King as a distinct sword character | Opaw roster support, King tap/hold combo, young-prime art, four skills, impact tiers, or additive save migration |
+| 073 | Lock King's coarse gameplay-sprite body direction (weapon/cell clauses superseded by 074) | King pixel density, approved turnaround identity, palette, costume, or visual-drift rejection |
+| 074 | Give King a shoulder greatsword and weapon-bound crescents | King greatsword silhouette, shoulder carry, exact sheet geometry, white-hot crescent VFX, or superseded modest-sword proofs |
+| 075 | Use action-owned exact-grid sheets and purposeful frame budgets | Character sheet layout, directional rows, frame counts, stable pivots/scale, chroma cleanup, or King rear shoulder grip |
+| 076 | Reboot King with simple art and explicit skill targeting | Simple King identity, archived detailed package, character-owned fixed sword, aim preview, ground targeting, or instant-skill limits |
+| 077 | Bench Opaw and run King as the active combat proof | Temporary active player, King basic slash, sealed King skills, integrated sword presentation, or explicit Opaw regression setup |
+| 078 | Make Echoing Sever the first explicit-targeting skill proof | King Skill 1, smooth directional wedge targeting, cardinal body fallback, confirm/cancel input, delayed echo contacts, or proof VFX |
+| 079 | Make Skill 2 a self-centered Riftbreak | King Skill 2, radial self-AOE, outward knockback, natural Skill 3 sequencing, or reserving jump/lift for later skills |
+| 080 | Make Skill 3 a ground-targeted Sovereign Pursuit leap | King Skill 3, ground targeting, collision-safe traversal, active-only invulnerability, landing AOE, or natural Riftbreak sequencing |
+| 081 | Use a short latest-intent combat buffer | Attack, dash, skill chaining, Sovereign Pursuit into Riftbreak, input expiry, or safe execution boundaries |
+| 082 | Make Skill 4 a two-stage targeted spirit-sword strike | King Skill 4, giant spirit sword, second drive, delayed AOE, rigid generated VFX, or boss damage |
+| 083 | Scale live enemy pressure after Stage Three | Stage-specific enemy ceilings, Stage 4 eight-enemy pressure, later horde profiling, or AOE encounter value |
+| 084 | Make the Stage 4 Armored Hog a committed-lane charger | Armored Hog telegraph, charge/daze counterplay, frontal guard, Stage 4 placement, protected drops, or action art/audio |
+| 085 | Lock the Stage 5 boss identity below colossal scale | Stage 5 boss anatomy, relative size, armor-break silhouette, concept boundary, or preserving Stage 10 colossal escalation |
+| 086 | Prove the Stage 5 boss in an isolated playable arena | Stage 5 boss runtime, root-arm sweep, target-locked jump, world crater, F8 feel-test, or provisional tuning |
+| 087 | Gate a reusable Combat Lab behind debug Admin Mode | Admin tooling, F7/F10, enemy simulator, rewardless spawning, AI pause, invincibility, or test workflow |
+| 088 | Separate the boss lunge from a real overhead slap | Stage 5 boss melee readability, lunge naming, overhead slap, attack alternation, directional slap frames, or camera response |
+| 089 | Make the buried-hand root execution an active escape check | Stage 5 root prison, skill lockout, dash struggle, mobile tapping, 300 damage, world-locked VFX, or failure execution |
+| 090 | Tighten the Stage 5 boss tempo and keep root execution positional | Stage 5 boss chase speed, lunge/slap cadence, escaped root execution, locked ground hazard, or 300 damage |
+| 091 | Scale repeatable jump pursuits with boss health | Stage 5 boss health tiers, multi-jumps, 2/3 or 3/4/5 cadence, prediction, cooldown, or final slam |
+| 092 | Give major bosses one reusable top-screen health HUD | Boss health UI, delayed damage, phase thresholds, local bar suppression, F8, or Combat Lab binding |
+| 093 | Author Stage 5 around a dormant broken shrine | Stage 5 terrain, dead trees, boss basin, broken shrine, Stage 4 portal, or future godlike event seam |
+| 094 | Move Stage 5 into a scrolling dead-forest route | Production Stage 5, edge thickets, dead animal, animated flies, rejected stump deletion, gateway route, or gated boss basin |
+| 095 | Introduce Varkuun through an aerial entrance and real-recording audio suite | Stage 5 boss name, entrance, dialogue input, boss music, action audio, jump air cue, or root-prison sound |
+| 096 | Give cooldown-blocked player actions one shared denied cue | Dash or skill cooldown spam, invalid-action audio, tappable cooldown HUD, controller, or touch parity |
+| 097 | Make Varkuun's Chest the Stage Five milestone claim | Stage V reward chest, Varkuun Core, core-gear seal, King/Varkuun dialogue, mouse Skip, or post-boss save order |
+| 098 | Separate normal-hit power and use armor for boss durability | King basic attack damage/reach, weapon skill power, armor mitigation, Varkuun anti-kiting, or Stage II live pressure |
+| 099 | Finalize nine explicit equipment slots | One weapon, Head/Plate/Gloves/Boots, Bracer/Amulet/Ring/Talisman, Character menu layout, or future equipment authority |
+| 100 | Lock the Stage V core set before enabling crafting | Varkuun Edge, four Forest armor pieces, exact recipes/stats/icons, Rootforge preview, or Segment 5 transaction boundary |
+| 101 | Complete Stage V armor and enable equipment authority | Leggings, five armor slots, GearInventory, live equipment stats, sorting, drag-to-equip, F9 crafting readiness, or save migration |
+| 102 | Add single-target assisted combat | Click targeting, auto-approach, auto-attack, target HUD/marker, Attack button, manual override, or hitstop-versus-stagger |
+| 103 | Clarify King combat control and target UX | Click-to-move, selected-target flow, basic flinch/stun, circular enemy cards, target marker, or combat cursor |
+| 104 | Refine numbered click combat and footprint auras | Attack key 1, Skills 2-5, air swings, double-click auto attack, actor foot auras, simple target chevron, or top-right enemy roster |
+| 105 | Use contextual right click and restore skill keys | Right-click move/engage, Skills 1-4, unnumbered Attack fallback, Escape-only skill cancellation, or modal targeting |
+| 106 | Restore left-click attack and right-click cancel | Manual left-click swing, contextual right-click world command, right-click/Escape skill cancellation, or far-right Attack button |
+| 107 | Add directional click attacks and opt-in auto combat | Pointer-side manual attack, Auto All roster cycle, Auto Skill, initial move feedback, or matching action icons |
+| 108 | Polish move, skill, and cursor feedback (art portion superseded by 109) | Four-arrow move marker, aim/cancel slot feedback, or HUD accent borders |
+| 109 | Use generated raster art for skills and cursors | Generated King Skill 1-4 icons, royal hand/sword cursors, full-resolution UI sources, or runtime downscaling |
+| 110 | Adopt B+C hard-pixel King skill icons | Native 24x24 King skill icons, B/C silhouette contract, fixed palette, binary alpha, or superseding painted skill art |
+| 111 | Retire Opaw and consolidate combat icons | King-only runtime, Opaw archive, weapon/awakening cleanup, six-cell action atlas, or unused-image audit |
+| 112 | Make left click manual selection authority | Cancel move on attack, single-click selection, double-click engage, foot-circle picking, or size-aware assisted approach |
+| 113 | Make Sanctuary a full-health recovery checkpoint | Continue health, Sanctuary entry, expedition attrition, or safe-point saves |
+| 114 | Make movement cancel combat intent | Right-click movement, repeated left-click engagement, WASD cancellation, roster disclosure, or marquee labels |
+| 115 | Return to Sanctuary on expedition defeat | Defeat consequences, progression preservation, utility-item boundary, Stage V approach music, or portal travel presentation |
+| 116 | Separate fixed Sanctuary architecture from tiered stage vortices | Static angel gate, isolated energy animation, prior stage-vortex baseline, superiority tiers, or off-screen portal guidance |
+| 117 | Layer upright stage portals from separate vortex and lightning sheets (superseded by 118) | Historical ring and localized-eye portal passes |
+| 118 | Generate full-surface abyssal portal and dense lightning boards | Full-interior vortex depth, moving center/rim, frequent circumference lightning, smaller portal scale, or 16-frame board processing |
+| 119 | Tier stage portals by threat color and lightning reach | Normal-through-Transcendent color ladder, lightning suppression/intensity/reach, or tier-matched loading veil |
+| 120 | Enable atomic Rootforge crafting | Stage V category unlock, spend-once/grant-once/save-once transaction, duplicate rejection, or drag-preview alignment |
+| 121 | Make Stage V gear optional but consequential | Varkuun Edge Stage VI-XV band, slot identities, critical hits, percentage caps, compact equipment UI, or Stage VI no-gate balance |
+| 122 | Scope Forest naming without globalizing it | Forest Stages I-X, no automatic root/tree names for unrelated characters or systems, or meaningful personal names |
+| 123 | Use Umi and material-owned exchange metadata | Umi, Echo Crucible, selling, reconstruction, enemy memory, gold crafting fees, or automatic future-material integration |
+| 124 | Establish Stage VI environment before enemies (upper presentation superseded by 125) | Stage VI preview sequencing, environment-first review, F6 debug access, or campaign-integration boundary |
+| 125 | Keep Stage VI upper terrain top-down and modular | Stage VI perspective, continuous ground, reusable cliffs/rocks/trees, waterfall animation, or rejected scenic backdrop/threshold |
+| 126 | Introduce Crag Bear and purposeful Stage VI continuity | One-Mireling opening, Crag Bear combat/art/drops, generic spawn entries, Stage VI waves, or production route completion |
+| 127 | Recompose Stage VI pressure and rebuild the Bramble Spitter | Missing Stage V expedition route, Mireling removal, five-live Stage VI composition, bounded Spitter retreat, fresh body/projectile art, destructible seeds, or Bear drop retuning |
+| 128 | Separate impact feedback from accumulating stagger breakout | Stun-lock prevention, Heavy control, Hog/Bear resistance, player interruption, super armor, or Spitter native scale |
+| 129 | Make clear portals preview the destination threat | Stage I-VI portal colors, post-mini-boss/post-boss reset, or Stage V direct continuation into Stage VI |
+| 130 | Saturate earned loot but keep paid creation strict | Full material stacks, pickup cleanup, chest progression, overflow feedback, or Umi capacity checks |
+| 131 | Establish the divine Game slow-burn roadmap | King's Champion motive, The One Above as Game architect, hidden tragedy involvement, Stage VII Disciple choice, Stage IX ruins, Stage XX confrontation, reusable content naming, or divine hierarchy boundaries |
+| 132 | Define the two Disciple visual identities | Examiner ivory mask and Split Glaive, Executioner fractured halo and Execution Wheel, shared divine-order language, gameplay scale, animation-first contract, missing reference preservation, or identity-owned folders |
+| 133 | Separate the Examiner challenge into a divine arena | Stage VII Continue/Challenge environments, Court of the First Measure, circular arena, Axiom Divide, modular divine terrain, or special-arena references |
+| 134 | Rebuild the Examiner around readable divine combat | Physical attack frames, Judgment Charge, Ground Judgment, accurate warnings, divine threat aura, synchronized audio, restrained VFX, or compact adaptive behavior |
+| 135 | Make Divine Descent the Examiner phase transition | 70% phase break, calm dialogue, launch/fall frames, exact pylon cover, finite impact damage, phase-aware music, or Stage XV cover escalation boundary |
+| 136 | Rework Examiner animation, court, and audio | New eight-pose action families, contact timing, grounded charge collision, slate court, exact ward plates, compact lab UI, actual phase display, and original Foley |
+| 137 | [Examiner gait, complete weapons, and impact atlases](docs/decisions/137-examiner-gait-complete-weapons-and-impact-atlases.md) | Alternating feet, source clipping, raster skills, red telegraphs, and Descent impacts |
+| 138 | [Examiner Trial of Worth and Stage XX false mentor](docs/decisions/138-examiner-trial-of-worth-and-stage-xx.md) | Advancing combos, earned sanctuary, finite Verdict, dead family and manipulated Stage 100 promise |
+| 139 | [Examiner breakable seal, Borrowed Sun and Unbound](docs/decisions/139-examiner-breakable-seal-and-borrowed-sun.md) | Guard absorption/stun, 60%/35% escalation, fixed Sun impacts and Crownfall; supersedes 138 combat trial rules |
+| 140 | [Living Sun charge and Crimson Firmament](docs/decisions/140-examiner-crimson-firmament-and-living-charge.md) | Sixteen-frame core, faster fixed Sun flight, persistent enrage aura, twelve-meteor barrage and clear corridor |
+| 141 | [Examiner randomized rain, tactics and victory](docs/decisions/141-examiner-random-rain-tactics-and-victory.md) | Twenty-four warned meteors, legal move variety, committed links, seal reactions and rewardless outro |
+| 142 | [King adventurer identity and scale](docs/decisions/142-king-adventurer-identity-and-scale.md) | Rejected royal costume; compact progressing adventurer, preview before full animation production |
+| 143 | [King greatsword, mastery and stage caps](docs/decisions/143-king-greatsword-mastery-and-stage-caps.md) | Selected C installed, physical three-cut combo, clipped white trails, Resolve, Pursuit/Riftbreak link and bounded growth |
+| 144 | [King Unwritten Oath and skill collection](docs/decisions/144-king-unwritten-oath-and-skill-collection.md) | Eight techniques, four equipped slots, finite forms, saved Sanctuary swaps and future-form Lab previews |
+| 145 | [King ten equipped skills direction](docs/decisions/145-king-ten-equipped-skills-direction.md) | Accepted ten equipped skills on 1–0; broader powers and statuses proposed; runtime migration completed in 147 |
+| 146 | [Examiner divinity and inheritance direction](docs/decisions/146-examiner-divinity-and-inheritance-direction.md) | Examiner is a god and disciple; female Forest Goddess direction accepted; boss traits and inheritances proposed |
+| 147 | [Responsive King core and ten equipped slots](docs/decisions/147-responsive-king-core-and-ten-slots.md) | Current short core skills, released damage, Breakstep riposte, ten-slot input/UI/save migration |
+| 149 | [Explicit stun and targeted Riftbreak review](docs/decisions/149-explicit-stun-and-riftbreak-review.md) | Separate flinch/knockback from opt-in stun, accepted status presentation and reversible targeted Skill 2 comparison |
+| 150 | [Earthsplitter motion proof](docs/decisions/150-earthsplitter-motion-proof.md) | Separate summoned sword, quick cast, released wall-safe rupture, one-hit budget and reversible Skill 1 review |
+| 148 | [King C Spellward isolated Lab review](docs/decisions/148-king-spellward-lab-review.md) | Opt-in fine-detail C art, three cuts, clipped white trails, real control/speed comparison; campaign promotion pending |
+| 151 | [Earthsplitter directional pressure](docs/decisions/151-earthsplitter-directional-pressure.md) | Preserve accepted sword, upright pressure views, fixed-length terrain-aware lane and reusable summon language |
+| 152 | [Earthsplitter Advanced Lab form](docs/decisions/152-earthsplitter-advanced-lab.md) | One quick cast, three released waves, bounded damage and reversible Foundation comparison |
+
+| 153 | [Earthsplitter Advanced Fan](docs/decisions/153-earthsplitter-advanced-fan.md) | Three simultaneous spatial lanes, common contact, shared target accounting; Cascade preserved |
+
+| 154 | [Molten Crash Foundation](docs/decisions/154-molten-crash-foundation.md) | Local summoned sword impact, explicit initial stun, quick recovery and reversible Skill 2 Lab review |
+
+| 155 | [Molten Crash upgrade forms](docs/decisions/155-molten-crash-upgrade-forms.md) | Stone/light Foundation, molten Advanced, delayed damage-only pulse and bounded Mature area in the Lab |
+
+| 156 | [Sovereign Pursuit visual review](docs/decisions/156-sovereign-pursuit-visual-review.md) | Reversible Skill 3 blade-cut/travel comparison with unchanged mobility and damage |
+| 157 | [King kit production cleanup](docs/decisions/157-king-kit-production-cleanup.md) | Promote King C and Skills 1-3; archive old Oath/skill variants and normalize saved slots |
+| 158 | [Pursuit trained charges](docs/decisions/158-pursuit-trained-charges.md) | Eira-gated Level 5/8 Pursuit ranks with 1/2/3 stored uses, 220/250/280px reach and sequential refill |
+| 159 | [King buff four, Worldsplitter five](docs/decisions/159-king-buff-four-worldsplitter-five.md) | Approved skill-role and slot direction, save migration, generated visual review; prototype balance pending |
+
+| 160 | [Worldsplitter upright released impact](docs/decisions/160-worldsplitter-upright-released-impact.md) | Straight descent, independent control, generated frames, upgrade/training/save rules |
+
+| 161 | [Worldsplitter fractured-light plunges](docs/decisions/161-worldsplitter-fractured-light-plunges.md) | One/two/three same-point contacts, buried tip, crimson upgrade, compact light effects |
+| 162 | [Worldsplitter summoned radial blasts](docs/decisions/162-worldsplitter-summoned-radial-blasts.md) | Fresh swords, deep burial, rapid cadence and radial shatter replace the rejected bouncing blade |
+
+| 163 | [Inhabited Sanctuary study](docs/decisions/163-inhabited-sanctuary-study.md) | Cohesive replacement props, service beacons/greetings, map/noticeboard, ambient courier and F10 review entry |
+
+| 164 | [Eira reachable curriculum](docs/decisions/164-eira-reachable-curriculum.md) | Direct mentor Training/Loadout, free five-technique upgrades within cap10 and compatible Earth/Molten saving |
+| 165 | [Finalize Sanctuary and archive legacy town](docs/decisions/165-finalize-sanctuary-and-archive-legacy-town.md) | Normal renewed town, recoverable cleanup, normal vs debug saving and temporary closeout |
+| 166 | [Observe expedition objectives and collected rewards](docs/decisions/166-observe-expedition-objectives-and-collected-rewards.md) | Current-stage tracker, actual credited receipt and banked-clear Sanctuary return |
+| 167 | [Review Stage I woodland at finer terrain scale](docs/decisions/167-review-stage-1-woodland-at-finer-terrain-scale.md) | Stage I32px environment pilot, compact props, foliage/birds and owner gate before II–VI |
+| 168 | [Renew distinct biomes and stage audio](docs/decisions/168-renew-distinct-biomes-and-stage-audio.md) | Approved five-part world-life program; Stage II bramble kit and shared music/outdoor ambience |
+| 169 | [Renew Rootbound Hollow and preview enemy pressure](docs/decisions/169-renew-rootbound-hollow-and-preview-enemy-pressure.md) | Stage III compact root kit/audio, optional14/five comparison and proposed enemy roles |
+| 170 | [Renew Eastern Rot and prototype Rotcaller](docs/decisions/170-renew-eastern-rot-and-prototype-rotcaller.md) | Normal IV compact eastern biome/regional ambience and isolated playable caster trial |
+| 171 | [Campaign Rotcaller, Dead Forest and bounded wave feedback](docs/decisions/171-add-campaign-rotcaller-renew-dead-forest-and-bound-wave-feedback.md) | Current III14/five, IV60/eight, finite V guards/renewal/music, Skill1 stutter and post-V polish |
+| 172 | [Divine patron reversal and complete threat portal family](docs/decisions/172-expand-divine-patron-reversal-and-select-threat-portals.md) | All-six portal concept selection, apparent invasion/divine aid, late patron betrayal and proposed monster origins/clues |
+| 173 | [Threat portals and quiet stage presentation](docs/decisions/173-promote-threat-portals-and-quiet-stage-presentation.md) | Native six-family animation, actual threaded loading, title/chest art and isolated continuation review |
+| 174 | [Upgrade engine to Godot 4.7.2](docs/decisions/174-upgrade-engine-to-4-7-2.md) | Current engine pin, preserved launcher paths, backups, compatibility evidence and rollback |
+| 175 | [Warn and safely materialize enemy arrivals](docs/decisions/175-warn-and-safely-materialize-enemy-arrivals.md) | Reserved warning slots, safe placement/retry, original bounded SFX and focused horde profiling |
+| 176 | [Use one generic underfoot monster arrival](docs/decisions/176-use-one-generic-underfoot-monster-arrival.md) | Shared four-drawing raster spawn; promoted through normal I–VI common scene after owner testing |
+| 177 | [Preserve skill reach and clear leap landings](docs/decisions/177-preserve-skill-reach-and-clear-leap-landings.md) | Full-range Skills1/5, any-obstacle Pursuit with safe feet, silver/violet render-frame targeting and hardware cursors |
+| 178 | [Typed damage and registered critical impact](docs/decisions/178-typed-damage-and-critical-impact.md) | Damage families/resistance, compact raster critical animation and isolated counter/reach comparisons |
+| 179 | [Prepare visible King weapon families and equipment](docs/decisions/179-prepare-visible-king-weapon-families.md) | Owner-authorized five-family/armor samples, reusable animation, genuine gait and runtime-pending equipment presentation |
+| 180 | [Craft weapon variants with milestone blueprints](docs/decisions/180-craft-weapon-variants-with-milestone-blueprints.md) | Accepted crafting-led collection, family/variant separation and isolated first axe motion/contact proof |
+| 181 | [Drive Greatsword with connected two-hand motion](docs/decisions/181-drive-greatsword-with-connected-two-hand-motion.md) | Owner-rejected motion; superseded by182 |
+| 182 | [Use responsive complete body poses for Greatsword](docs/decisions/182-return-greatsword-to-responsive-full-body-poses.md) | Full-body cel recovery branches, actual opening inheritance and3.00s axe-benchmarked pacing |
+
+## New Decisions
+
+Record future decisions as individual files under `docs/decisions/` using `NNN-short-title.md`, then add one row to this index. New ADRs should contain status, context, alternatives, decision, and consequences.

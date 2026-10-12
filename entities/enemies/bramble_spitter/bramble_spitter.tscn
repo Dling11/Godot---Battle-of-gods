@@ -1,0 +1,166 @@
+[gd_scene format=3 uid="uid://dx1xojwoo5ion"]
+
+[ext_resource type="PackedScene" path="res://gameplay/presentation/stun_indicator.tscn" id="stun_indicator"]
+
+[ext_resource type="Script" uid="uid://ceuq32bin765p" path="res://entities/enemies/bramble_spitter/bramble_spitter.gd" id="1"]
+[ext_resource type="Resource" path="res://data/enemies/bramble_spitter.tres" id="2"]
+[ext_resource type="SpriteFrames" path="res://assets/characters/enemies/bramble_spitter/bramble_spitter_sprite_frames.tres" id="3"]
+[ext_resource type="Script" uid="uid://11yc31dqcbvc" path="res://entities/enemies/bramble_spitter/bramble_spitter_visual.gd" id="4"]
+[ext_resource type="Script" uid="uid://1th6uujswp43" path="res://gameplay/combat/health_component.gd" id="5"]
+[ext_resource type="Script" uid="uid://edpqlhbhvhav" path="res://gameplay/combat/hurtbox_component.gd" id="6"]
+[ext_resource type="PackedScene" path="res://entities/enemies/components/enemy_separation_component.tscn" id="7"]
+[ext_resource type="PackedScene" path="res://ui/world/enemy_health_bar.tscn" id="8"]
+[ext_resource type="Script" uid="uid://c8rfkjxuqq0u8" path="res://gameplay/combat/knockback_component.gd" id="9"]
+[ext_resource type="PackedScene" path="res://gameplay/projectiles/bramble_seed_projectile.tscn" id="10"]
+[ext_resource type="Script" uid="uid://k00adtwpm5uh" path="res://entities/enemies/components/enemy_reward_component.gd" id="11"]
+[ext_resource type="Script" uid="uid://dyes4qkflxig2" path="res://gameplay/audio/actor_action_sfx.gd" id="12"]
+[ext_resource type="AudioStream" uid="uid://dyhj7wp1fu8ww" path="res://assets/audio/sfx/bramble_spit.wav" id="13"]
+[ext_resource type="Script" uid="uid://c482dvqfbxph8" path="res://gameplay/combat/stagger_component.gd" id="14_stagger"]
+[ext_resource type="Resource" uid="uid://terbmisjeuwn" path="res://data/loot/forest/enemies/bramble_spitter_drop_profile.tres" id="15_drop"]
+[ext_resource type="Script" uid="uid://e0ra2uokw16y" path="res://entities/shared/presentation/combat_foot_aura.gd" id="99_foot_aura"]
+
+[sub_resource type="CircleShape2D" id="foot"]
+radius = 7.0
+
+[sub_resource type="CircleShape2D" id="body"]
+
+[node name="BrambleSpitter" type="CharacterBody2D" unique_id=2043039760]
+collision_layer = 4
+script = ExtResource("1")
+definition = ExtResource("2")
+projectile_scene = ExtResource("10")
+
+[node name="CombatFootAura" type="Node2D" parent="." unique_id=395796252]
+script = ExtResource("99_foot_aura")
+
+[node name="Shadow" type="Polygon2D" parent="." unique_id=902186980]
+position = Vector2(0, -4)
+color = Color(0.03, 0.06, 0.04, 0.34)
+polygon = PackedVector2Array(-9, 0, -4, -2, 4, -2, 9, 0, 5, 2, -5, 2)
+
+[node name="Visual" type="Node2D" parent="." unique_id=243547449 node_paths=PackedStringArray("body", "target_marker", "target_ring", "muzzle_flash", "muzzle_sparks")]
+script = ExtResource("4")
+body = NodePath("Body")
+target_marker = NodePath("../TargetMarker")
+target_ring = NodePath("../TargetMarker/Ring")
+muzzle_flash = NodePath("../MuzzleFlash")
+muzzle_sparks = NodePath("../MuzzleSparks")
+
+[node name="Body" type="AnimatedSprite2D" parent="Visual" unique_id=1825944091]
+position = Vector2(0, -17)
+sprite_frames = ExtResource("3")
+animation = &"idle_down"
+
+[node name="TargetMarker" type="Node2D" parent="." unique_id=1068349395]
+z_index = 1
+
+[node name="DangerFill" type="Polygon2D" parent="TargetMarker" unique_id=1614211894]
+color = Color(0.9, 0.06, 0.04, 0.22)
+polygon = PackedVector2Array(14, 0, 12.934, 5.358, 9.899, 9.899, 5.358, 12.934, 0, 14, -5.358, 12.934, -9.899, 9.899, -12.934, 5.358, -14, 0, -12.934, -5.358, -9.899, -9.899, -5.358, -12.934, 0, -14, 5.358, -12.934, 9.899, -9.899, 12.934, -5.358)
+
+[node name="Outline" type="Line2D" parent="TargetMarker" unique_id=270017220]
+points = PackedVector2Array(14, 0, 12.934, 5.358, 9.899, 9.899, 5.358, 12.934, 0, 14, -5.358, 12.934, -9.899, 9.899, -12.934, 5.358, -14, 0, -12.934, -5.358, -9.899, -9.899, -5.358, -12.934, 0, -14, 5.358, -12.934, 9.899, -9.899, 12.934, -5.358)
+closed = true
+width = 5.0
+default_color = Color(0.13, 0.015, 0.01, 0.9)
+
+[node name="Ring" type="Line2D" parent="TargetMarker" unique_id=465976097]
+points = PackedVector2Array(14, 0, 12.934, 5.358, 9.899, 9.899, 5.358, 12.934, 0, 14, -5.358, 12.934, -9.899, 9.899, -12.934, 5.358, -14, 0, -12.934, -5.358, -9.899, -9.899, -5.358, -12.934, 0, -14, 5.358, -12.934, 9.899, -9.899, 12.934, -5.358)
+closed = true
+width = 2.0
+default_color = Color(1, 0.12, 0.06, 0.95)
+
+[node name="Cross" type="Line2D" parent="TargetMarker" unique_id=292894598]
+points = PackedVector2Array(-6, 0, 6, 0)
+width = 2.0
+default_color = Color(1, 0.22, 0.12, 0.9)
+
+[node name="CrossVertical" type="Line2D" parent="TargetMarker" unique_id=621795765]
+points = PackedVector2Array(0, -6, 0, 6)
+width = 2.0
+default_color = Color(1, 0.22, 0.12, 0.9)
+
+[node name="MuzzleFlash" type="Polygon2D" parent="." unique_id=1062731950]
+z_index = 2
+color = Color(1, 0.92, 0.25, 1)
+polygon = PackedVector2Array(-2, 0, 0, -5, 2, -2, 7, 0, 2, 2, 0, 5)
+
+[node name="MuzzleSparks" type="CPUParticles2D" parent="." unique_id=145384815]
+z_index = 2
+emitting = false
+lifetime = 0.28
+one_shot = true
+explosiveness = 1.0
+spread = 32.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 22.0
+initial_velocity_max = 42.0
+scale_amount_max = 2.0
+color = Color(0.68, 0.9, 0.18, 1)
+
+[node name="BodyCollision" type="CollisionShape2D" parent="." unique_id=2064127]
+position = Vector2(0, -4)
+shape = SubResource("foot")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="." unique_id=555871652]
+unique_name_in_owner = true
+path_desired_distance = 7.0
+target_desired_distance = 8.0
+radius = 7.0
+neighbor_distance = 48.0
+max_speed = 42.0
+
+[node name="EnemySeparationComponent" parent="." unique_id=1863054817 instance=ExtResource("7")]
+unique_name_in_owner = true
+
+[node name="HealthComponent" type="Node" parent="." unique_id=1505390406]
+unique_name_in_owner = true
+script = ExtResource("5")
+maximum_health = 40.0
+
+[node name="EnemyRewardComponent" type="Node" parent="." unique_id=632041789 node_paths=PackedStringArray("health_component")]
+script = ExtResource("11")
+health_component = NodePath("../HealthComponent")
+drop_profile = ExtResource("15_drop")
+
+[node name="ActionSfx" type="Node2D" parent="." unique_id=1101191888 node_paths=PackedStringArray("primary_player")]
+script = ExtResource("12")
+primary_player = NodePath("Spit")
+
+[node name="Spit" type="AudioStreamPlayer2D" parent="ActionSfx" unique_id=2124600716]
+stream = ExtResource("13")
+volume_db = -8.0
+bus = &"SFX"
+
+[node name="EnemyHealthBar" parent="." unique_id=881877201 node_paths=PackedStringArray("health_component") instance=ExtResource("8")]
+health_component = NodePath("../HealthComponent")
+
+[node name="KnockbackComponent" type="Node" parent="." unique_id=962945246 node_paths=PackedStringArray("health_component")]
+unique_name_in_owner = true
+script = ExtResource("9")
+health_component = NodePath("../HealthComponent")
+
+[node name="StaggerComponent" type="Node" parent="." unique_id=2017008642 node_paths=PackedStringArray("health_component")]
+unique_name_in_owner = true
+script = ExtResource("14_stagger")
+health_component = NodePath("../HealthComponent")
+
+[node name="Hurtbox" type="Area2D" parent="." unique_id=1668224570 node_paths=PackedStringArray("health_component")]
+collision_layer = 16
+collision_mask = 8
+script = ExtResource("6")
+health_component = NodePath("../HealthComponent")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox" unique_id=1233137207]
+position = Vector2(0, -13)
+shape = SubResource("body")
+
+[node name="StunIndicator" parent="." instance=ExtResource("stun_indicator")]
+position = Vector2(0, -44)
+orbit_radius = Vector2(9, 3)
+
+[connection signal="facing_changed" from="." to="Visual" method="set_facing"]
+[connection signal="shot_fired" from="." to="Visual" method="play_firing_feedback"]
+[connection signal="shot_fired" from="." to="ActionSfx" method="play_primary"]
+[connection signal="shot_telegraphed" from="." to="Visual" method="show_shot_telegraph"]
+[connection signal="state_changed" from="." to="Visual" method="play_state"]

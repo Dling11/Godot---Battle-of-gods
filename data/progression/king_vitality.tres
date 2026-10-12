@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="PlayerVitalityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/progression/player_vitality_definition.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+base_maximum_health = 140.0
+health_per_level = 12.0
+base_health_regeneration_per_second = 1.0
+regeneration_delay_seconds = 5.0
+regeneration_tick_seconds = 1.0

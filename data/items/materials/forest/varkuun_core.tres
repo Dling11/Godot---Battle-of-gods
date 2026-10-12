@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MaterialDefinition" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://data/items/materials/material_definition.gd" id="1_definition"]
+[ext_resource type="Texture2D" path="res://assets/items/materials/forest/varkuun_core_24x24.png" id="2_icon"]
+
+[resource]
+script = ExtResource("1_definition")
+material_id = &"forest_varkuun_core"
+display_name = "Varkuun Core"
+description = "The living seal torn from Varkuun's hoard, still pulsing with the authority of the grove's fallen lord."
+region_id = &"forest"
+material_family = 6
+rarity = 3
+icon = ExtResource("2_icon")
+crafting_tags = PackedStringArray("varkuun", "core", "boss", "weapon", "armor")
+source_lore = "Varkuun bound the oldest roots to this core. A skilled crafter can force that bond into weapons and armor."
+source_enemy_id = &"varkuun"
+source_enemy_display_name = "Varkuun"
+required_source_defeats_override = 20
+can_be_sold = false
+can_be_melded = false

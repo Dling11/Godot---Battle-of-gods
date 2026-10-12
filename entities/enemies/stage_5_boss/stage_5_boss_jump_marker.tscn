@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://entities/enemies/stage_5_boss/stage_5_boss_jump_marker.gd" id="1"]
+
+[node name="Stage5BossJumpMarker" type="Node2D"]
+z_index = -1
+script = ExtResource("1")
+

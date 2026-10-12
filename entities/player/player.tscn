@@ -1,0 +1,573 @@
+[gd_scene format=3 uid="uid://7gpqrhm32t6x"]
+
+[ext_resource type="Script" path="res://gameplay/abilities/king/unbroken_vow_component.gd" id="vow_component"]
+[ext_resource type="Resource" path="res://data/abilities/king/unbroken_vow.tres" id="vow_data"]
+[ext_resource type="Script" path="res://gameplay/abilities/king/unbroken_vow_visual.gd" id="vow_visual"]
+
+[ext_resource type="PackedScene" path="res://gameplay/presentation/stun_indicator.tscn" id="stun_indicator"]
+[ext_resource type="Script" path="res://gameplay/abilities/king/riftbreak_hitbox.gd" id="riftbreak_hitbox"]
+
+[ext_resource type="Script" uid="uid://bfjslqi8334my" path="res://entities/player/player.gd" id="1_player"]
+[ext_resource type="Script" uid="uid://dob8x3ikf6t0i" path="res://entities/player/components/player_input_source.gd" id="2_input"]
+[ext_resource type="Script" uid="uid://cj8rt8iwktnj2" path="res://entities/player/components/player_movement_component.gd" id="3_movement"]
+[ext_resource type="Script" uid="uid://4l3spvpulsnw" path="res://entities/player/presentation/player_aim_visual.gd" id="4_aim"]
+[ext_resource type="Script" uid="uid://bewr0rcrltrhq" path="res://entities/player/components/melee_attack_component.gd" id="5_attack"]
+[ext_resource type="Script" uid="uid://6520tclsqofq" path="res://gameplay/combat/melee_hitbox.gd" id="6_hitbox"]
+[ext_resource type="Resource" path="res://data/weapons/king_signature_sword.tres" id="7_sword_data"]
+[ext_resource type="Script" uid="uid://cciyoum4pr3f7" path="res://entities/player/components/evade_component.gd" id="9_evade"]
+[ext_resource type="Resource" path="res://data/evade/player_dash.tres" id="10_dash_data"]
+[ext_resource type="Script" uid="uid://1th6uujswp43" path="res://gameplay/combat/health_component.gd" id="11_health"]
+[ext_resource type="Script" uid="uid://edpqlhbhvhav" path="res://gameplay/combat/hurtbox_component.gd" id="12_hurtbox"]
+[ext_resource type="Script" uid="uid://c6tnb2d6x4r3l" path="res://entities/player/presentation/dash_visual.gd" id="13_dash_visual"]
+[ext_resource type="Script" uid="uid://bfftqao8u5k1s" path="res://entities/player/presentation/player_state_visual.gd" id="14_state_visual"]
+[ext_resource type="SpriteFrames" path="res://assets/characters/playable/king/shared_bodies/sword/frames.tres" id="15_player_frames"]
+[ext_resource type="Script" path="res://entities/player/presentation/king_spellward_animation.gd" id="16_player_animation"]
+[ext_resource type="Script" path="res://gameplay/abilities/king/earthsplitter_component.gd" id="17_ability"]
+[ext_resource type="Resource" path="res://data/abilities/king/earthsplitter.tres" id="18_ability_data"]
+[ext_resource type="Script" uid="uid://y4q77uqmwwkr" path="res://entities/player/components/player_progression_component.gd" id="20_progression"]
+[ext_resource type="Resource" path="res://data/progression/king_path.tres" id="21_progression_data"]
+[ext_resource type="Script" uid="uid://b61awjvau5rtl" path="res://gameplay/audio/player_action_sfx.gd" id="22_player_sfx"]
+[ext_resource type="AudioStream" uid="uid://tg77jorh8gfu" path="res://assets/audio/sfx/sword_swing.wav" id="23_sword_swing"]
+[ext_resource type="AudioStream" path="res://assets/audio/sfx/player_dash_grounded.wav" id="25_dash"]
+[ext_resource type="Resource" path="res://data/skills/king_starting_loadout.tres" id="26_loadout"]
+[ext_resource type="Resource" path="res://data/skills/king_starting_loadout.tres" id="38_debug_loadout"]
+[ext_resource type="Resource" path="res://data/items/king_weapon_catalog.tres" id="27_weapon_catalog"]
+[ext_resource type="Script" uid="uid://bdrcc6co0unfp" path="res://entities/player/presentation/player_weapon_visual.gd" id="28_weapon_visual"]
+[ext_resource type="Script" path="res://entities/player/components/player_vitality_component.gd" id="42_vitality"]
+[ext_resource type="Resource" path="res://data/progression/king_vitality.tres" id="43_vitality_data"]
+[ext_resource type="Script" path="res://entities/player/presentation/player_level_up_visual.gd" id="44_level_visual"]
+[ext_resource type="Shape2D" path="res://data/weapons/hit_shapes/king_greatsword_cleave.tres" id="45_melee_shape"]
+[ext_resource type="Script" path="res://entities/player/components/player_health_regeneration_component.gd" id="46_health_regen"]
+[ext_resource type="AudioStream" path="res://assets/audio/sfx/ui/player_level_up_chime.wav" id="47_level_chime"]
+[ext_resource type="Script" path="res://gameplay/abilities/targeting/directional_wedge_targeting.gd" id="48_cardinal_targeting"]
+[ext_resource type="Script" path="res://gameplay/abilities/king/molten_crash_component.gd" id="53_riftbreak_component"]
+[ext_resource type="Resource" path="res://data/abilities/king/molten_crash.tres" id="54_riftbreak_data"]
+[ext_resource type="Script" path="res://gameplay/abilities/targeting/ground_point_targeting.gd" id="59_ground_targeting"]
+[ext_resource type="Script" path="res://gameplay/abilities/king/sovereign_pursuit_component.gd" id="60_pursuit_component"]
+[ext_resource type="Resource" path="res://data/abilities/king/sovereign_pursuit.tres" id="61_pursuit_data"]
+[ext_resource type="Script" path="res://gameplay/abilities/king/sovereign_pursuit_visual.gd" id="62_pursuit_visual"]
+[ext_resource type="SpriteFrames" path="res://assets/vfx/abilities/king/sovereign_pursuit_review/landing_frames.tres" id="63_pursuit_frames"]
+[ext_resource type="AudioStream" path="res://assets/audio/sfx/abilities/king/sovereign_pursuit_landing.wav" id="64_pursuit_landing"]
+[ext_resource type="AudioStream" path="res://assets/audio/sfx/abilities/king/sovereign_pursuit_launch.wav" id="65_pursuit_launch"]
+[ext_resource type="Script" path="res://gameplay/abilities/king/sovereign_pursuit_travel_visual.gd" id="66_pursuit_travel_visual"]
+[ext_resource type="SpriteFrames" path="res://assets/vfx/abilities/king/sovereign_pursuit_review/travel_frames.tres" id="67_pursuit_travel_frames"]
+[ext_resource type="Script" path="res://gameplay/abilities/king/king_skill_4_component.gd" id="68_skill_4_component"]
+[ext_resource type="Resource" path="res://data/abilities/king/king_skill_4.tres" id="69_skill_4_data"]
+[ext_resource type="AudioStream" path="res://assets/audio/sfx/abilities/king/king_skill_4_formation.wav" id="73_skill_4_formation"]
+[ext_resource type="AudioStream" path="res://assets/audio/sfx/abilities/king/king_skill_4_first_impact.wav" id="74_skill_4_impact"]
+[ext_resource type="AudioStream" path="res://assets/audio/sfx/abilities/king/king_skill_4_explosion.wav" id="75_skill_4_explosion"]
+[ext_resource type="Shader" path="res://assets/vfx/abilities/king/king_skill_4_sword_sink.gdshader" id="76_skill_4_sink"]
+[ext_resource type="AudioStream" path="res://assets/audio/sfx/ui/player_action_denied.mp3" id="77_action_denied"]
+[ext_resource type="Script" path="res://entities/player/components/player_combat_targeting_component.gd" id="78_targeting"]
+[ext_resource type="Script" path="res://entities/player/presentation/combat_target_marker.gd" id="79_target_marker"]
+[ext_resource type="Script" path="res://entities/player/presentation/click_move_marker.gd" id="80_click_move_marker"]
+[ext_resource type="Script" path="res://entities/shared/presentation/combat_foot_aura.gd" id="81_foot_aura"]
+[ext_resource type="Script" path="res://entities/player/components/player_auto_combat_component.gd" id="82_auto_combat"]
+[ext_resource type="Script" path="res://gameplay/combat/knockback_component.gd" id="83_knockback"]
+[ext_resource type="Script" path="res://gameplay/combat/stagger_component.gd" id="84_stagger"]
+
+[ext_resource type="Script" path="res://entities/player/king/king_mastery_component.gd" id="85_mastery"]
+[ext_resource type="Resource" path="res://data/abilities/king/king_mastery.tres" id="86_mastery_data"]
+
+[ext_resource type="Script" path="res://entities/player/presentation/king_greatsword_effects.gd" id="87_greatsword_fx"]
+
+[ext_resource type="Script" path="res://entities/player/king/king_skill_library.gd" id="90_library"]
+[ext_resource type="Shader" path="res://entities/player/presentation/king_spellward_outline.gdshader" id="king_outline"]
+
+[ext_resource type="Script" path="res://entities/player/presentation/player_weapon_family_presentation.gd" id="family_presentation"]
+
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_sweep"]
+points = PackedVector2Array(3, -9, 14, -28, 39, -24, 48, 0, 39, 24, 14, 28, 3, 9)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_player_footprint"]
+radius = 6.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_player_hurtbox"]
+radius = 6.0
+height = 24.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_skill_4_sink"]
+shader = ExtResource("76_skill_4_sink")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_king_outline"]
+shader = ExtResource("king_outline")
+
+[sub_resource type="LabelSettings" id="LabelSettings_name"]
+font_size = 8
+font_color = Color(0.741, 0.69, 0.859, 1)
+outline_size = 2
+outline_color = Color(0.027, 0.02, 0.039, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_level_up"]
+font_size = 9
+font_color = Color(1, 0.86, 0.36, 1)
+outline_size = 2
+outline_color = Color(0.027, 0.02, 0.039, 1)
+
+[node name="Player" type="CharacterBody2D" unique_id=442018439]
+collision_layer = 2
+script = ExtResource("1_player")
+character_id = &"king"
+skill_loadout = ExtResource("26_loadout")
+debug_test_skill_loadout = ExtResource("38_debug_loadout")
+weapon_catalog = ExtResource("27_weapon_catalog")
+
+[node name="CombatFootAura" type="Node2D" parent="."]
+script = ExtResource("81_foot_aura")
+player_aura = true
+
+[node name="VisualRoot" type="Node2D" parent="." unique_id=1303120843]
+
+[node name="Shadow" type="Polygon2D" parent="VisualRoot" unique_id=146521578]
+z_index = -2
+position = Vector2(0, -2)
+color = Color(0.035, 0.06, 0.035, 0.36)
+polygon = PackedVector2Array(-7, 0, -4, -2, 4, -2, 7, 0, 4, 2, -4, 2)
+
+[node name="SovereignPursuitTravelVisual" type="Node2D" parent="VisualRoot" node_paths=PackedStringArray("ability_component", "effect_sprite")]
+visible = false
+z_index = -1
+position = Vector2(0, -16)
+script = ExtResource("66_pursuit_travel_visual")
+ability_component = NodePath("../../Ability3Component")
+effect_sprite = NodePath("EffectSprite")
+
+[node name="EffectSprite" type="AnimatedSprite2D" parent="VisualRoot/SovereignPursuitTravelVisual"]
+texture_filter = 1
+sprite_frames = ExtResource("67_pursuit_travel_frames")
+animation = &"travel"
+
+[node name="Body" type="AnimatedSprite2D" parent="VisualRoot" unique_id=924091774 node_paths=PackedStringArray("attack_component", "ability_component", "ability_2_component", "ability_3_component", "ability_4_component")]
+unique_name_in_owner = true
+material = SubResource("ShaderMaterial_king_outline")
+position = Vector2(0, -16)
+scale = Vector2(0.5, 0.5)
+sprite_frames = ExtResource("15_player_frames")
+animation = &"attack_down"
+script = ExtResource("16_player_animation")
+attack_component = NodePath("../../MeleeAttackComponent")
+ability_4_component = NodePath("../../Ability4Component")
+ability_component = NodePath("../../Ability1Component")
+ability_2_component = NodePath("../../Ability2Component")
+ability_3_component = NodePath("../../Ability3Component")
+
+[node name="SwordSwingTrail" type="Line2D" parent="VisualRoot" unique_id=300580408]
+visible = false
+z_index = 1
+width = 2.0
+default_color = Color(0.94, 0.74, 0.32, 0.72)
+
+[node name="SwordCleaveSmoke" type="Line2D" parent="VisualRoot"]
+visible = false
+z_index = 0
+width = 9.0
+default_color = Color(0.82, 0.9, 1, 0.34)
+joint_mode = 2
+begin_cap_mode = 2
+end_cap_mode = 2
+
+[node name="WeaponVisual" type="Node2D" parent="VisualRoot" unique_id=455917304 node_paths=PackedStringArray("weapon_sprite", "swing_trail", "swing_smoke", "ability_component", "ability_2_component", "ability_3_component", "ability_4_component")]
+script = ExtResource("28_weapon_visual")
+weapon = ExtResource("7_sword_data")
+weapon_sprite = NodePath("Weapon")
+swing_trail = NodePath("../SwordSwingTrail")
+swing_smoke = NodePath("../SwordCleaveSmoke")
+ability_component = NodePath("../../Ability1Component")
+ability_2_component = NodePath("../../Ability2Component")
+ability_3_component = NodePath("../../Ability3Component")
+ability_4_component = NodePath("../../Ability4Component")
+show_weapon_sprite = false
+
+[node name="Weapon" type="Sprite2D" parent="VisualRoot/WeaponVisual" unique_id=995404015]
+
+[node name="SwordPivot" type="Node2D" parent="." unique_id=14777553 node_paths=PackedStringArray("attack_component")]
+position = Vector2(0, -16)
+script = ExtResource("4_aim")
+attack_component = NodePath("../MeleeAttackComponent")
+lock_during_attack = true
+
+[node name="AttackHitbox" type="Area2D" parent="SwordPivot" unique_id=996490997]
+collision_layer = 8
+collision_mask = 16
+script = ExtResource("6_hitbox")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SwordPivot/AttackHitbox" unique_id=1837141321]
+shape = ExtResource("45_melee_shape")
+
+[node name="AbilityPivot" type="Node2D" parent="." unique_id=560028112 node_paths=PackedStringArray("ability_component", "ability_2_component", "ability_3_component", "ability_4_component")]
+position = Vector2(0, -16)
+script = ExtResource("4_aim")
+ability_component = NodePath("../Ability1Component")
+ability_2_component = NodePath("../Ability2Component")
+ability_3_component = NodePath("../Ability3Component")
+ability_4_component = NodePath("../Ability4Component")
+lock_during_ability_cast = true
+
+[node name="DirectionalWedgeTargeting" type="Node2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(0, -16)
+z_index = 6
+script = ExtResource("48_cardinal_targeting")
+
+[node name="GroundPointTargeting" type="Node2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(0, -16)
+z_index = 6
+script = ExtResource("59_ground_targeting")
+
+[node name="AbilityHitbox" type="Area2D" parent="AbilityPivot" unique_id=299637553]
+collision_layer = 8
+collision_mask = 16
+script = ExtResource("6_hitbox")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AbilityPivot/AbilityHitbox" unique_id=1161930034]
+shape = SubResource("ConvexPolygonShape2D_sweep")
+
+[node name="Ability2Hitbox" type="Area2D" parent="AbilityPivot" node_paths=PackedStringArray()]
+collision_layer = 8
+collision_mask = 16
+script = ExtResource("riftbreak_hitbox")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AbilityPivot/Ability2Hitbox"]
+shape = SubResource("ConvexPolygonShape2D_sweep")
+
+[node name="Ability3Hitbox" type="Area2D" parent="AbilityPivot"]
+collision_layer = 8
+collision_mask = 16
+script = ExtResource("6_hitbox")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AbilityPivot/Ability3Hitbox"]
+
+[node name="Ability4Hitbox" type="Area2D" parent="AbilityPivot"]
+collision_layer = 8
+collision_mask = 16
+script = ExtResource("6_hitbox")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AbilityPivot/Ability4Hitbox"]
+
+[node name="SovereignPursuitVisual" type="Node2D" parent="AbilityPivot" node_paths=PackedStringArray("ability_component", "effect_sprite")]
+visible = false
+z_index = -1
+script = ExtResource("62_pursuit_visual")
+ability_component = NodePath("../../Ability3Component")
+effect_sprite = NodePath("EffectSprite")
+
+[node name="EffectSprite" type="AnimatedSprite2D" parent="AbilityPivot/SovereignPursuitVisual"]
+texture_filter = 1
+sprite_frames = ExtResource("63_pursuit_frames")
+animation = &"launch"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=256904912]
+position = Vector2(0, -4)
+shape = SubResource("CircleShape2D_player_footprint")
+
+[node name="InputSource" type="Node" parent="." unique_id=889070660]
+unique_name_in_owner = true
+script = ExtResource("2_input")
+
+[node name="ActionBufferTimer" type="Timer" parent="."]
+unique_name_in_owner = true
+wait_time = 0.8
+one_shot = true
+
+[node name="MovementComponent" type="Node" parent="." unique_id=2013263965]
+unique_name_in_owner = true
+script = ExtResource("3_movement")
+max_speed = 110.0
+
+[node name="CombatNavigationAgent" type="NavigationAgent2D" parent="."]
+unique_name_in_owner = true
+path_desired_distance = 8.0
+target_desired_distance = 38.0
+radius = 6.0
+neighbor_distance = 40.0
+avoidance_enabled = false
+
+[node name="CombatTargetingComponent" type="Node" parent="." node_paths=PackedStringArray("player", "navigation_agent")]
+unique_name_in_owner = true
+script = ExtResource("78_targeting")
+player = NodePath("..")
+navigation_agent = NodePath("../CombatNavigationAgent")
+
+[node name="AutoCombatComponent" type="Node" parent="." node_paths=PackedStringArray("player", "targeting_component")]
+unique_name_in_owner = true
+script = ExtResource("82_auto_combat")
+player = NodePath("..")
+targeting_component = NodePath("../CombatTargetingComponent")
+
+[node name="CombatTargetMarker" type="Node2D" parent="." node_paths=PackedStringArray("targeting_component")]
+script = ExtResource("79_target_marker")
+targeting_component = NodePath("../CombatTargetingComponent")
+
+[node name="ClickMoveMarker" type="Node2D" parent="." node_paths=PackedStringArray("targeting_component")]
+script = ExtResource("80_click_move_marker")
+targeting_component = NodePath("../CombatTargetingComponent")
+
+[node name="MeleeAttackComponent" type="Node" parent="." unique_id=2065298328 node_paths=PackedStringArray("hitbox", "collision_shape")]
+unique_name_in_owner = true
+script = ExtResource("5_attack")
+weapon = ExtResource("7_sword_data")
+hitbox = NodePath("../SwordPivot/AttackHitbox")
+collision_shape = NodePath("../SwordPivot/AttackHitbox/CollisionShape2D")
+
+[node name="EvadeComponent" type="Node" parent="." unique_id=730348988]
+unique_name_in_owner = true
+script = ExtResource("9_evade")
+definition = ExtResource("10_dash_data")
+
+[node name="Ability1Component" type="Node" parent="." unique_id=1997312539 node_paths=PackedStringArray("hitbox", "collision_shape")]
+unique_name_in_owner = true
+script = ExtResource("17_ability")
+definition = ExtResource("18_ability_data")
+hitbox = NodePath("../AbilityPivot/AbilityHitbox")
+collision_shape = NodePath("../AbilityPivot/AbilityHitbox/CollisionShape2D")
+
+[node name="Ability2Component" type="Node" parent="." unique_id=481704885 node_paths=PackedStringArray("hitbox", "collision_shape")]
+unique_name_in_owner = true
+script = ExtResource("53_riftbreak_component")
+definition = ExtResource("54_riftbreak_data")
+hitbox = NodePath("../AbilityPivot/Ability2Hitbox")
+collision_shape = NodePath("../AbilityPivot/Ability2Hitbox/CollisionShape2D")
+
+[node name="Ability3Component" type="Node" parent="." node_paths=PackedStringArray("hitbox", "collision_shape")]
+unique_name_in_owner = true
+script = ExtResource("60_pursuit_component")
+definition = ExtResource("61_pursuit_data")
+hitbox = NodePath("../AbilityPivot/Ability3Hitbox")
+collision_shape = NodePath("../AbilityPivot/Ability3Hitbox/CollisionShape2D")
+
+[node name="Ability4Component" type="Node" parent="." node_paths=PackedStringArray("hitbox", "collision_shape")]
+unique_name_in_owner = true
+script = ExtResource("68_skill_4_component")
+definition = ExtResource("69_skill_4_data")
+hitbox = NodePath("../AbilityPivot/Ability4Hitbox")
+collision_shape = NodePath("../AbilityPivot/Ability4Hitbox/CollisionShape2D")
+
+[node name="UnbrokenVowComponent" type="Node" parent="."]
+script = ExtResource("vow_component")
+definition = ExtResource("vow_data")
+
+[node name="UnbrokenVowVisual" type="Node2D" parent="."]
+script = ExtResource("vow_visual")
+
+[node name="ProgressionComponent" type="Node" parent="." unique_id=611931721]
+unique_name_in_owner = true
+script = ExtResource("20_progression")
+definition = ExtResource("21_progression_data")
+
+[node name="HealthComponent" type="Node" parent="." unique_id=1183354851]
+unique_name_in_owner = true
+script = ExtResource("11_health")
+
+[node name="KnockbackComponent" type="Node" parent="." node_paths=PackedStringArray("health_component")]
+unique_name_in_owner = true
+script = ExtResource("83_knockback")
+health_component = NodePath("../HealthComponent")
+
+[node name="StaggerComponent" type="Node" parent="." node_paths=PackedStringArray("health_component")]
+unique_name_in_owner = true
+script = ExtResource("84_stagger")
+health_component = NodePath("../HealthComponent")
+
+[node name="VitalityComponent" type="Node" parent="." node_paths=PackedStringArray("progression_component", "health_component")]
+unique_name_in_owner = true
+script = ExtResource("42_vitality")
+definition = ExtResource("43_vitality_data")
+progression_component = NodePath("../ProgressionComponent")
+health_component = NodePath("../HealthComponent")
+
+[node name="HealthRegenerationComponent" type="Node" parent="." node_paths=PackedStringArray("health_component", "delay_timer", "tick_timer")]
+unique_name_in_owner = true
+script = ExtResource("46_health_regen")
+health_component = NodePath("../HealthComponent")
+vitality_definition = ExtResource("43_vitality_data")
+delay_timer = NodePath("RegenerationDelay")
+tick_timer = NodePath("RegenerationTick")
+
+[node name="RegenerationDelay" type="Timer" parent="HealthRegenerationComponent"]
+wait_time = 5.0
+one_shot = true
+
+[node name="RegenerationTick" type="Timer" parent="HealthRegenerationComponent"]
+
+[node name="Hurtbox" type="Area2D" parent="." unique_id=618577649 node_paths=PackedStringArray("health_component")]
+collision_layer = 64
+collision_mask = 32
+script = ExtResource("12_hurtbox")
+health_component = NodePath("../HealthComponent")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox" unique_id=1772155013]
+position = Vector2(0, -14)
+shape = SubResource("CapsuleShape2D_player_hurtbox")
+
+[node name="DashVisual" type="Node" parent="." unique_id=1237805110 node_paths=PackedStringArray("body_visual")]
+script = ExtResource("13_dash_visual")
+body_visual = NodePath("../VisualRoot/Body")
+
+[node name="StateVisual" type="Node" parent="." unique_id=161641014 node_paths=PackedStringArray("visual_root")]
+script = ExtResource("14_state_visual")
+visual_root = NodePath("../VisualRoot")
+
+[node name="LevelUpVisual" type="Node2D" parent="." node_paths=PackedStringArray("progression_component")]
+position = Vector2(0, -14)
+z_index = 7
+script = ExtResource("44_level_visual")
+progression_component = NodePath("../ProgressionComponent")
+
+[node name="LevelLabel" type="Label" parent="LevelUpVisual"]
+unique_name_in_owner = true
+offset_left = -28.0
+offset_top = -6.0
+offset_right = 28.0
+offset_bottom = 7.0
+mouse_filter = 2
+text = "LEVEL 2"
+label_settings = SubResource("LabelSettings_level_up")
+horizontal_alignment = 1
+
+[node name="ChimePlayer" type="AudioStreamPlayer" parent="LevelUpVisual"]
+unique_name_in_owner = true
+stream = ExtResource("47_level_chime")
+volume_db = -7.0
+bus = &"UI"
+
+[node name="PlayerActionSfx" type="Node2D" parent="." unique_id=1478518642 node_paths=PackedStringArray("sword_swing_player", "dash_player", "ability_component", "ability_2_component", "ability_3_component", "ability_4_component", "sovereign_pursuit_landing_player", "sovereign_pursuit_launch_player", "skill_4_formation_player", "skill_4_first_impact_player", "skill_4_explosion_player", "action_denied_player")]
+script = ExtResource("22_player_sfx")
+sword_swing_player = NodePath("SwordSwing")
+dash_player = NodePath("Dash")
+ability_component = NodePath("../Ability1Component")
+ability_2_component = NodePath("../Ability2Component")
+ability_3_component = NodePath("../Ability3Component")
+ability_4_component = NodePath("../Ability4Component")
+sovereign_pursuit_landing_player = NodePath("SovereignPursuitLanding")
+sovereign_pursuit_launch_player = NodePath("SovereignPursuitLaunch")
+skill_4_formation_player = NodePath("Skill4Formation")
+skill_4_first_impact_player = NodePath("Skill4FirstImpact")
+skill_4_explosion_player = NodePath("Skill4Explosion")
+action_denied_player = NodePath("ActionDenied")
+
+[node name="SwordSwing" type="AudioStreamPlayer2D" parent="PlayerActionSfx" unique_id=1524140265]
+stream = ExtResource("23_sword_swing")
+volume_db = -7.0
+bus = &"SFX"
+
+[node name="Dash" type="AudioStreamPlayer2D" parent="PlayerActionSfx" unique_id=795989634]
+stream = ExtResource("25_dash")
+volume_db = -11.0
+bus = &"SFX"
+
+[node name="SovereignPursuitLanding" type="AudioStreamPlayer2D" parent="PlayerActionSfx"]
+stream = ExtResource("64_pursuit_landing")
+volume_db = -4.0
+bus = &"SFX"
+
+[node name="SovereignPursuitLaunch" type="AudioStreamPlayer2D" parent="PlayerActionSfx"]
+stream = ExtResource("65_pursuit_launch")
+volume_db = -7.0
+bus = &"SFX"
+
+[node name="Skill4Formation" type="AudioStreamPlayer2D" parent="PlayerActionSfx"]
+stream = ExtResource("73_skill_4_formation")
+volume_db = -7.0
+bus = &"SFX"
+
+[node name="Skill4FirstImpact" type="AudioStreamPlayer2D" parent="PlayerActionSfx"]
+stream = ExtResource("74_skill_4_impact")
+volume_db = -3.5
+bus = &"SFX"
+
+[node name="Skill4Explosion" type="AudioStreamPlayer2D" parent="PlayerActionSfx"]
+stream = ExtResource("75_skill_4_explosion")
+volume_db = -1.5
+bus = &"SFX"
+
+[node name="ActionDenied" type="AudioStreamPlayer2D" parent="PlayerActionSfx"]
+stream = ExtResource("77_action_denied")
+volume_db = -8.0
+pitch_scale = 0.94
+bus = &"SFX"
+
+[node name="Name" type="Label" parent="." unique_id=336850558]
+visible = false
+offset_left = -18.0
+offset_top = 14.0
+offset_right = 18.0
+offset_bottom = 25.0
+text = "KING"
+label_settings = SubResource("LabelSettings_name")
+horizontal_alignment = 1
+
+[node name="KingMastery" type="Node" parent="."]
+script = ExtResource("85_mastery")
+definition = ExtResource("86_mastery_data")
+
+[node name="GreatswordEffects" type="Node2D" parent="."]
+script = ExtResource("87_greatsword_fx")
+
+[node name="KingSkillLibrary" type="Node" parent="."]
+script = ExtResource("90_library")
+
+[node name="StunIndicator" parent="." instance=ExtResource("stun_indicator")]
+position = Vector2(0, -36)
+orbit_radius = Vector2(9, 3)
+
+[node name="WeaponFamilyPresentation" type="Node" parent="."]
+script = ExtResource("family_presentation")
+
+[connection signal="defeated" from="." to="VisualRoot/Body" method="play_defeat"]
+[connection signal="defeated" from="." to="VisualRoot/WeaponVisual" method="play_defeat"]
+[connection signal="defeated" from="." to="StateVisual" method="play_defeat"]
+[connection signal="facing_changed" from="." to="VisualRoot/Body" method="set_facing_direction"]
+[connection signal="facing_changed" from="." to="VisualRoot/WeaponVisual" method="set_facing_direction"]
+[connection signal="facing_changed" from="." to="SwordPivot" method="set_facing_direction"]
+[connection signal="facing_changed" from="." to="AbilityPivot" method="set_facing_direction"]
+[connection signal="interaction_finished" from="." to="VisualRoot/Body" method="resume_locomotion"]
+[connection signal="interaction_started" from="." to="VisualRoot/Body" method="play_interaction"]
+[connection signal="movement_changed" from="." to="VisualRoot/Body" method="set_movement"]
+[connection signal="action_denied" from="." to="PlayerActionSfx" method="play_action_denied"]
+[connection signal="hit_recovery_started" from="." to="VisualRoot/Body" method="play_hit_recovery"]
+[connection signal="hit_recovery_kind_changed" from="." to="VisualRoot/Body" method="play_hit_recovery"]
+[connection signal="hit_recovery_finished" from="." to="VisualRoot/Body" method="resume_locomotion"]
+[connection signal="attack_finished" from="MeleeAttackComponent" to="VisualRoot/Body" method="resume_locomotion"]
+[connection signal="attack_finished" from="MeleeAttackComponent" to="VisualRoot/WeaponVisual" method="resume_locomotion"]
+[connection signal="phase_changed" from="MeleeAttackComponent" to="VisualRoot/Body" method="play_attack_phase"]
+[connection signal="phase_changed" from="MeleeAttackComponent" to="VisualRoot/WeaponVisual" method="play_attack_phase"]
+[connection signal="phase_changed" from="MeleeAttackComponent" to="PlayerActionSfx" method="play_attack_phase"]
+[connection signal="evade_finished" from="EvadeComponent" to="VisualRoot/Body" method="resume_locomotion"]
+[connection signal="evade_started" from="EvadeComponent" to="VisualRoot/Body" method="play_dash"]
+[connection signal="evade_started" from="EvadeComponent" to="DashVisual" method="play_dash"]
+[connection signal="evade_started" from="EvadeComponent" to="PlayerActionSfx" method="play_dash"]
+[connection signal="invulnerability_changed" from="EvadeComponent" to="HealthComponent" method="set_invulnerable"]
+[connection signal="invulnerability_changed" from="EvadeComponent" to="DashVisual" method="set_invulnerable"]
+[connection signal="ability_finished" from="Ability1Component" to="VisualRoot/Body" method="resume_locomotion"]
+[connection signal="ability_finished" from="Ability1Component" to="VisualRoot/WeaponVisual" method="resume_locomotion"]
+[connection signal="phase_changed" from="Ability1Component" to="VisualRoot/Body" method="play_ability_phase"]
+[connection signal="strike_started" from="Ability1Component" to="VisualRoot/Body" method="play_ability_strike"]
+[connection signal="phase_changed" from="Ability1Component" to="VisualRoot/WeaponVisual" method="play_ability_phase"]
+[connection signal="phase_changed" from="Ability1Component" to="PlayerActionSfx" method="play_ability_phase"]
+[connection signal="strike_started" from="Ability1Component" to="PlayerActionSfx" method="play_ability_strike"]
+[connection signal="ability_finished" from="Ability2Component" to="VisualRoot/Body" method="resume_locomotion"]
+[connection signal="ability_finished" from="Ability2Component" to="VisualRoot/WeaponVisual" method="resume_locomotion"]
+[connection signal="phase_changed" from="Ability2Component" to="VisualRoot/Body" method="play_ability_phase"]
+[connection signal="phase_changed" from="Ability2Component" to="VisualRoot/WeaponVisual" method="play_ability_phase"]
+[connection signal="phase_changed" from="Ability2Component" to="PlayerActionSfx" method="play_ability_phase"]
+[connection signal="strike_started" from="Ability2Component" to="PlayerActionSfx" method="play_ability_strike"]
+[connection signal="invulnerability_changed" from="Ability2Component" to="HealthComponent" method="set_invulnerable"]
+[connection signal="ability_finished" from="Ability3Component" to="VisualRoot/Body" method="resume_locomotion"]
+[connection signal="ability_finished" from="Ability3Component" to="VisualRoot/WeaponVisual" method="resume_locomotion"]
+[connection signal="ability_finished" from="Ability3Component" to="VisualRoot/SovereignPursuitTravelVisual" method="hide_visual"]
+[connection signal="ability_finished" from="Ability3Component" to="AbilityPivot/SovereignPursuitVisual" method="hide_visual"]
+[connection signal="phase_changed" from="Ability3Component" to="VisualRoot/Body" method="play_ability_phase"]
+[connection signal="phase_changed" from="Ability3Component" to="VisualRoot/WeaponVisual" method="play_ability_phase"]
+[connection signal="phase_changed" from="Ability3Component" to="VisualRoot/SovereignPursuitTravelVisual" method="play_phase"]
+[connection signal="phase_changed" from="Ability3Component" to="AbilityPivot/SovereignPursuitVisual" method="play_phase"]
+[connection signal="strike_started" from="Ability3Component" to="AbilityPivot/SovereignPursuitVisual" method="play_strike"]
+[connection signal="strike_started" from="Ability3Component" to="PlayerActionSfx" method="play_ability_strike"]
+[connection signal="invulnerability_changed" from="Ability3Component" to="HealthComponent" method="set_invulnerable"]
+[connection signal="ability_finished" from="Ability4Component" to="VisualRoot/Body" method="resume_locomotion"]
+[connection signal="ability_finished" from="Ability4Component" to="VisualRoot/WeaponVisual" method="resume_locomotion"]
+[connection signal="phase_changed" from="Ability4Component" to="VisualRoot/Body" method="play_ability_phase"]
+[connection signal="phase_changed" from="Ability4Component" to="VisualRoot/WeaponVisual" method="play_ability_phase"]
+[connection signal="damage_blocked" from="HealthComponent" to="StateVisual" method="flash_blocked"]
+[connection signal="damaged" from="HealthComponent" to="VisualRoot/Body" method="play_hurt"]
+[connection signal="damaged" from="HealthComponent" to="StateVisual" method="flash_damaged"]

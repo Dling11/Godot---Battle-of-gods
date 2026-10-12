@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MaterialDefinition" format=3 uid="uid://32r3ksqif6tb"]
+
+[ext_resource type="Script" uid="uid://cxhyqe5l2yvh1" path="res://data/items/materials/material_definition.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://cgcmuw8d80crw" path="res://assets/items/materials/forest/thorn_sap_24x24.png" id="2_icon"]
+
+[resource]
+script = ExtResource("1")
+material_id = &"forest_thorn_sap"
+display_name = "Thorn Sap"
+description = "A sharp-smelling sap that hardens around barbs without making them brittle."
+region_id = &"forest"
+material_family = 0
+rarity = 1
+icon = ExtResource("2_icon")
+crafting_tags = PackedStringArray("thorn", "sap", "critical", "resistance")
+source_lore = "The Spitter's pulsing body mixes this sap immediately before firing."
+source_enemy_id = &"bramble_spitter"
+source_enemy_display_name = "Bramble Spitter"

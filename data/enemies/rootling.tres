@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="EnemyDefinition" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://data/enemies/enemy_definition.gd" id="1_definition"]
+[ext_resource type="Texture2D" path="res://assets/characters/enemies/portraits/rootling_portrait_96x96.png" id="2_portrait"]
+
+[resource]
+script = ExtResource("1_definition")
+enemy_id = &"rootling"
+display_name = "Rootling"
+portrait = ExtResource("2_portrait")
+maximum_health = 35.0
+move_speed = 52.0
+acceleration = 460.0
+movement_footprint_radius = 6.0
+crowd_separation_radius = 28.0
+attack_range = 58.0
+attack_damage = 10.0
+wind_up_seconds = 0.58
+active_seconds = 0.12
+recovery_seconds = 0.82
+spawn_seconds = 0.65
+experience_reward = 9
+coin_reward = 1
+crowd_control_tier = 0

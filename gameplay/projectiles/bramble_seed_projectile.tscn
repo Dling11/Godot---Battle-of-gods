@@ -1,0 +1,48 @@
+[gd_scene load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://gameplay/projectiles/counterable_hostile_projectile.gd" id="1"]
+[ext_resource type="PackedScene" path="res://gameplay/projectiles/bramble_seed_impact.tscn" id="2"]
+[ext_resource type="SpriteFrames" path="res://assets/characters/enemies/bramble_spitter/bramble_thorn_seed_sprite_frames.tres" id="3_frames"]
+[ext_resource type="Script" path="res://gameplay/combat/health_component.gd" id="4_health"]
+[ext_resource type="Script" path="res://gameplay/combat/hurtbox_component.gd" id="5_hurtbox"]
+
+[sub_resource type="CircleShape2D" id="seed_shape"]
+radius = 3.0
+
+[node name="BrambleSeedProjectile" type="Area2D"]
+collision_layer = 32
+collision_mask = 65
+script = ExtResource("1")
+speed = 155.0
+lifetime_seconds = 2.4
+impact_effect_scene = ExtResource("2")
+counter_effect_scene = ExtResource("2")
+
+[node name="Trail" type="Line2D" parent="."]
+z_index = -1
+points = PackedVector2Array(-10, 0, -4, 0)
+width = 2.0
+default_color = Color(0.62, 0.88, 0.12, 0.72)
+
+[node name="Body" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("3_frames")
+animation = &"flight"
+autoplay = "flight"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("seed_shape")
+
+[node name="HealthComponent" type="Node" parent="."]
+unique_name_in_owner = true
+script = ExtResource("4_health")
+maximum_health = 1.0
+
+[node name="Hurtbox" type="Area2D" parent="." node_paths=PackedStringArray("health_component")]
+collision_layer = 16
+collision_mask = 8
+script = ExtResource("5_hurtbox")
+health_component = NodePath("../HealthComponent")
+selectable_as_combat_target = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox"]
+shape = SubResource("seed_shape")

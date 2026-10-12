@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="EarthsplitterDefinition" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://data/abilities/king/earthsplitter_definition.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/ui/icons/combat/king_skill_1_icon.tres" id="2_icon"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_lane"]
+radius = 17.0
+
+[resource]
+script = ExtResource("1_script")
+ability_id = &"echoing_sever"
+display_name = "Earthsplitter"
+hud_name = "EARTHSPLIT"
+description = "Aim a quick summoned sword smash. One fixed-length earth rupture hits each enemy once. No stun; King can move while the wave finishes."
+icon = ExtResource("2_icon")
+activation_mode = 1
+impact_weight = 2
+hitbox_shape = SubResource("CircleShape2D_lane")
+weapon_damage_multiplier = 1.65
+knockback_strength = 45.0
+stagger_seconds = 0.1
+wind_up_seconds = 0.2
+active_seconds = 0.04
+recovery_seconds = 0.12
+cooldown_seconds = 5.0
+dash_cancelable = true

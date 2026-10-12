@@ -1,0 +1,141 @@
+[gd_scene format=3 uid="uid://d0fi77o2m5rxa"]
+
+[ext_resource type="PackedScene" path="res://gameplay/presentation/stun_indicator.tscn" id="stun_indicator"]
+
+[ext_resource type="Script" uid="uid://bpyjwhfealhuy" path="res://entities/enemies/mireling/mireling.gd" id="1"]
+[ext_resource type="Resource" path="res://data/enemies/mireling.tres" id="2"]
+[ext_resource type="Script" uid="uid://c75hy86crniob" path="res://entities/enemies/mireling/mireling_visual.gd" id="4"]
+[ext_resource type="SpriteFrames" path="res://assets/characters/enemies/mireling/mireling_sprite_frames.tres" id="4_frames"]
+[ext_resource type="Script" uid="uid://1th6uujswp43" path="res://gameplay/combat/health_component.gd" id="5"]
+[ext_resource type="Script" uid="uid://edpqlhbhvhav" path="res://gameplay/combat/hurtbox_component.gd" id="6"]
+[ext_resource type="Script" path="res://entities/shared/presentation/combat_foot_aura.gd" id="99_foot_aura"]
+[ext_resource type="Script" uid="uid://6520tclsqofq" path="res://gameplay/combat/melee_hitbox.gd" id="7"]
+[ext_resource type="Script" uid="uid://4l3spvpulsnw" path="res://entities/player/presentation/player_aim_visual.gd" id="8"]
+[ext_resource type="PackedScene" path="res://ui/world/enemy_health_bar.tscn" id="9"]
+[ext_resource type="Script" uid="uid://c8rfkjxuqq0u8" path="res://gameplay/combat/knockback_component.gd" id="10"]
+[ext_resource type="Script" uid="uid://k00adtwpm5uh" path="res://entities/enemies/components/enemy_reward_component.gd" id="11"]
+[ext_resource type="Script" uid="uid://dyes4qkflxig2" path="res://gameplay/audio/actor_action_sfx.gd" id="12"]
+[ext_resource type="AudioStream" uid="uid://bdyx4gw1xauu8" path="res://assets/audio/sfx/mireling_leap.wav" id="13"]
+[ext_resource type="AudioStream" uid="uid://dypav1hx0ser1" path="res://assets/audio/sfx/mireling_land.wav" id="14"]
+[ext_resource type="Script" uid="uid://c482dvqfbxph8" path="res://gameplay/combat/stagger_component.gd" id="15_stagger"]
+[ext_resource type="Resource" path="res://data/loot/forest/enemies/mireling_drop_profile.tres" id="16_drop"]
+
+[sub_resource type="CircleShape2D" id="foot"]
+radius = 6.0
+
+[sub_resource type="CircleShape2D" id="body"]
+radius = 9.0
+
+[sub_resource type="CircleShape2D" id="attack"]
+radius = 13.0
+
+[node name="Mireling" type="CharacterBody2D" unique_id=2113206764]
+collision_layer = 4
+script = ExtResource("1")
+definition = ExtResource("2")
+
+[node name="CombatFootAura" type="Node2D" parent="."]
+script = ExtResource("99_foot_aura")
+
+[node name="Shadow" type="Polygon2D" parent="." unique_id=106586711]
+position = Vector2(0, -5)
+color = Color(0.03, 0.06, 0.04, 0.32)
+polygon = PackedVector2Array(-8, 0, -3, -2, 3, -2, 8, 0, 5, 2, -5, 2)
+
+[node name="Visual" type="Node2D" parent="." unique_id=1418975544 node_paths=PackedStringArray("body", "landing_marker")]
+script = ExtResource("4")
+body = NodePath("Body")
+landing_marker = NodePath("../LandingMarker")
+
+[node name="Body" type="AnimatedSprite2D" parent="Visual" unique_id=1348569313]
+position = Vector2(0, -16)
+sprite_frames = ExtResource("4_frames")
+animation = &"idle_down"
+
+[node name="LandingMarker" type="Polygon2D" parent="." unique_id=975010209]
+z_index = -1
+color = Color(0.72, 0.9, 0.32, 0.55)
+polygon = PackedVector2Array(-14, 0, -10, -7, 0, -10, 10, -7, 14, 0, 10, 7, 0, 10, -10, 7)
+
+[node name="BodyCollision" type="CollisionShape2D" parent="." unique_id=520638693]
+position = Vector2(0, -4)
+shape = SubResource("foot")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="." unique_id=1904066278]
+unique_name_in_owner = true
+path_desired_distance = 6.0
+target_desired_distance = 6.0
+radius = 6.0
+max_speed = 44.0
+
+[node name="HealthComponent" type="Node" parent="." unique_id=1692864368]
+unique_name_in_owner = true
+script = ExtResource("5")
+
+[node name="EnemyRewardComponent" type="Node" parent="." unique_id=1768923426 node_paths=PackedStringArray("health_component")]
+script = ExtResource("11")
+health_component = NodePath("../HealthComponent")
+drop_profile = ExtResource("16_drop")
+
+[node name="ActionSfx" type="Node2D" parent="." unique_id=1993078642 node_paths=PackedStringArray("primary_player", "secondary_player")]
+script = ExtResource("12")
+primary_player = NodePath("Leap")
+secondary_player = NodePath("Land")
+primary_state = 3
+secondary_state = 4
+
+[node name="Leap" type="AudioStreamPlayer2D" parent="ActionSfx" unique_id=844897348]
+stream = ExtResource("13")
+volume_db = -11.0
+bus = &"SFX"
+
+[node name="Land" type="AudioStreamPlayer2D" parent="ActionSfx" unique_id=2061501666]
+stream = ExtResource("14")
+volume_db = -7.0
+bus = &"SFX"
+
+[node name="EnemyHealthBar" parent="." unique_id=1350063573 node_paths=PackedStringArray("health_component") instance=ExtResource("9")]
+health_component = NodePath("../HealthComponent")
+
+[node name="KnockbackComponent" type="Node" parent="." unique_id=2070388569 node_paths=PackedStringArray("health_component")]
+unique_name_in_owner = true
+script = ExtResource("10")
+health_component = NodePath("../HealthComponent")
+
+[node name="StaggerComponent" type="Node" parent="." unique_id=125586840 node_paths=PackedStringArray("health_component")]
+unique_name_in_owner = true
+script = ExtResource("15_stagger")
+health_component = NodePath("../HealthComponent")
+
+[node name="Hurtbox" type="Area2D" parent="." unique_id=143966310 node_paths=PackedStringArray("health_component")]
+collision_layer = 16
+collision_mask = 8
+script = ExtResource("6")
+health_component = NodePath("../HealthComponent")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox" unique_id=631323456]
+position = Vector2(0, -12)
+shape = SubResource("body")
+
+[node name="AttackPivot" type="Node2D" parent="." unique_id=1521924568]
+position = Vector2(0, -10)
+script = ExtResource("8")
+
+[node name="AttackHitbox" type="Area2D" parent="AttackPivot" unique_id=1640671456]
+unique_name_in_owner = true
+collision_layer = 32
+collision_mask = 64
+script = ExtResource("7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AttackPivot/AttackHitbox" unique_id=1857687529]
+shape = SubResource("attack")
+
+[node name="StunIndicator" parent="." instance=ExtResource("stun_indicator")]
+position = Vector2(0, -44)
+orbit_radius = Vector2(8, 3)
+
+[connection signal="facing_changed" from="." to="Visual" method="set_facing"]
+[connection signal="facing_changed" from="." to="AttackPivot" method="set_facing_direction"]
+[connection signal="leap_targeted" from="." to="Visual" method="show_landing_target"]
+[connection signal="state_changed" from="." to="Visual" method="play_state"]
+[connection signal="state_changed" from="." to="ActionSfx" method="play_state"]

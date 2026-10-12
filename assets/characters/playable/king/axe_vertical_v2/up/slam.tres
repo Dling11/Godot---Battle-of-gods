@@ -1,0 +1,31 @@
+[gd_resource type="Resource" load_steps=5 format=3]
+[ext_resource type="Script" path="res://data/weapons/weapon_family_pose_definition.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/characters/playable/king/axe_vertical_v2/up/slam_body.png" id="2"]
+[ext_resource type="Texture2D" path="res://assets/characters/playable/king/axe_vertical_v2/up/slam_hands.png" id="3"]
+[ext_resource type="Texture2D" path="res://assets/characters/playable/king/axe_proof/iron_beard.png" id="4"]
+[resource]
+script = ExtResource("1")
+body_atlas = ExtResource("2")
+hand_atlas = ExtResource("3")
+weapon_texture = ExtResource("4")
+primary_hands = PackedVector2Array(91, 71, 88, 42, 91, 43, 94, 33, 117, 35, 117, 35, 110, 41, 110, 41, 107, 53, 107, 53, 107, 53, 80, 76, 89, 66.4, 110, 41, 107, 53, 107, 53)
+secondary_hands = PackedVector2Array(84.7813, 74.21369, 92.244736, 47.56617, 97.82952, 44.535473, 99.89249, 36.778706, 110.7813, 38.21369, 110.7813, 38.21369, 103.16144, 42.494667, 103.16144, 42.494667, 100.00578, 53.28446, 100.00578, 53.28446, 100.00578, 53.28446, 73.17048, 74.46453, 86.04167, 72.744156, 103.16144, 42.494667, 100.00578, 53.28446, 100.00578, 53.28446)
+lift_pixels = PackedFloat32Array(0, 0, -9, -13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+weapon_behind_body = PackedByteArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
+single_hand_poses = PackedByteArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
+stowed_poses = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+released_poses = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+ground_clipped_poses = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+primary_visible_poses = PackedByteArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
+occluded_hand_poses = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+pose_count = 16
+pose_order = PackedInt32Array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15)
+weapon_primary_grip = Vector2(39, 33)
+weapon_handle_axis = Vector2(4, 10)
+mirror_cutting_edge = false
+phase_windows = PackedVector2Array(0, 3, 4, 9, 10, 12)
+queued_recovery_window = Vector2(13, 15)
+pose_weights = PackedFloat32Array(0.25, 0.7, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0.7, 1, 1)
+identity_regions = Array[Rect2]([Rect2(97, 40, 25, 24), Rect2(85, 41, 25, 24), Rect2(94, 40, 25, 24), Rect2(86, 40, 25, 24), Rect2(103, 39, 25, 24), Rect2(103, 39, 25, 24), Rect2(89, 41, 25, 24), Rect2(89, 41, 25, 24), Rect2(81, 40, 25, 24), Rect2(81, 40, 25, 24), Rect2(81, 40, 25, 24), Rect2(83, 41, 25, 24), Rect2(89, 40, 25, 24), Rect2(89, 41, 25, 24), Rect2(81, 40, 25, 24), Rect2(81, 40, 25, 24)])
+identity_source_region = Rect2(97, 40, 25, 24)
+allow_rest = false

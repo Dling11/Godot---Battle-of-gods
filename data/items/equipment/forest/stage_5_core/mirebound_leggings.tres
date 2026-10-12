@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="EquipmentDefinition" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://data/items/equipment_definition.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/items/equipment/forest/stage_5_core/mirebound_leggings_64x64.png" id="2_icon"]
+
+[resource]
+script = ExtResource("1_script")
+item_id = &"forest_mirebound_leggings"
+display_name = "Mirebound Leggings"
+slot = 4
+rarity = 7
+icon = ExtResource("2_icon")
+compatible_classes = PackedStringArray("warrior")
+flat_health_bonus = 90.0
+lore = "Layered bark guards the legs while rootfiber joints keep King's stance mobile."
+synergy_name = "Deep Stance"
+synergy_description = "Adds 90 maximum HP as the set's strongest vitality piece."

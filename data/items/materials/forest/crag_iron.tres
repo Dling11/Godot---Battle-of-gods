@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MaterialDefinition" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://data/items/materials/material_definition.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/items/materials/forest/crag_iron_24x24.png" id="2"]
+
+[resource]
+script = ExtResource("1")
+material_id = &"forest_crag_iron"
+display_name = "Crag Iron"
+description = "A battered piece of pale ascent-forged armor, still carrying a shallow rune channel."
+region_id = &"forest"
+material_family = 4
+rarity = 0
+icon = ExtResource("2")
+crafting_tags = PackedStringArray("iron", "fitting", "armor", "rune", "accessory_setting", "forest")
+source_lore = "Crag Bears wear fitted plates scavenged from the ascent's abandoned guardians."
+source_enemy_id = &"crag_bear"
+source_enemy_display_name = "Crag Bear"

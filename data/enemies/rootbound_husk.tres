@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="EnemyDefinition" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://data/enemies/enemy_definition.gd" id="1_definition"]
+[ext_resource type="Texture2D" path="res://assets/characters/enemies/portraits/rootbound_husk_portrait_96x96.png" id="2_portrait"]
+
+[resource]
+script = ExtResource("1_definition")
+enemy_id = &"rootbound_husk"
+display_name = "Rootbound Husk"
+portrait = ExtResource("2_portrait")
+maximum_health = 280.0
+move_speed = 46.0
+acceleration = 440.0
+movement_footprint_radius = 16.0
+crowd_separation_radius = 44.0
+attack_range = 120.0
+attack_damage = 18.0
+wind_up_seconds = 0.68
+active_seconds = 0.14
+recovery_seconds = 0.72
+spawn_seconds = 0.8
+experience_reward = 90
+coin_reward = 16
+crowd_control_tier = 2

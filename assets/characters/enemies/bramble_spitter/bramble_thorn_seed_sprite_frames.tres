@@ -1,0 +1,65 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://b6qi4d82p7h6c"]
+
+[ext_resource type="Texture2D" uid="uid://q2657q66lk58" path="res://assets/characters/enemies/bramble_spitter/bramble_thorn_seed_sheet_24x24.png" id="1_qwb0l"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_umi6y"]
+atlas = ExtResource("1_qwb0l")
+region = Rect2(0, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nix3y"]
+atlas = ExtResource("1_qwb0l")
+region = Rect2(24, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nvt6q"]
+atlas = ExtResource("1_qwb0l")
+region = Rect2(48, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hnrp1"]
+atlas = ExtResource("1_qwb0l")
+region = Rect2(72, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dis01"]
+atlas = ExtResource("1_qwb0l")
+region = Rect2(96, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7ac0v"]
+atlas = ExtResource("1_qwb0l")
+region = Rect2(120, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ok6ui"]
+atlas = ExtResource("1_qwb0l")
+region = Rect2(144, 0, 24, 24)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_umi6y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nix3y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nvt6q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hnrp1")
+}],
+"loop": 1,
+"name": &"flight",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dis01")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7ac0v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ok6ui")
+}],
+"loop": 0,
+"name": &"impact",
+"speed": 16.0
+}]

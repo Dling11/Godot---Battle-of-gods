@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MaterialDefinition" format=3 uid="uid://elj26grlw2lq"]
+
+[ext_resource type="Script" uid="uid://cxhyqe5l2yvh1" path="res://data/items/materials/material_definition.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://bdoblxkuydssp" path="res://assets/items/materials/forest/husk_heartwood_24x24.png" id="2_icon"]
+
+[resource]
+script = ExtResource("1")
+material_id = &"forest_husk_heartwood"
+display_name = "Husk Heartwood"
+description = "Dense corrupted heartwood capable of reinforcing heavy Forest equipment."
+region_id = &"forest"
+material_family = 9
+rarity = 2
+icon = ExtResource("2_icon")
+crafting_tags = PackedStringArray("rootbound", "heartwood", "reinforcement", "heavy")
+source_lore = "Years beneath the Rootbound Hollow compressed the guardian's inner rings into a dark mass."
+source_enemy_id = &"rootbound_husk"
+source_enemy_display_name = "Rootbound Husk"

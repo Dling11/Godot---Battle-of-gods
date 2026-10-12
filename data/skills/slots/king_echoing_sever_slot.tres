@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="SkillSlotDefinition" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://data/skills/skill_slot_definition.gd" id="1_script"]
+[ext_resource type="Resource" path="res://data/abilities/king/earthsplitter.tres" id="2_ability"]
+[ext_resource type="Texture2D" path="res://assets/ui/icons/states/icon_slot_locked_16x16.png" id="3_locked"]
+
+[resource]
+script = ExtResource("1_script")
+slot_number = 1
+input_action = &"player_skill_1"
+ability = ExtResource("2_ability")
+locked_icon = ExtResource("3_locked")

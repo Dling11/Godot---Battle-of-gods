@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="EquipmentDefinition" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://data/items/equipment_definition.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/items/equipment/forest/stage_5_core/old_bark_helm_64x64.png" id="2_icon"]
+
+[resource]
+script = ExtResource("1_script")
+item_id = &"forest_old_bark_helm"
+display_name = "Old Bark Helm"
+slot = 1
+rarity = 7
+icon = ExtResource("2_icon")
+compatible_classes = PackedStringArray("warrior")
+flat_health_bonus = 50.0
+regeneration_bonus = 2.0
+lore = "Old-growth bark and reclaimed fittings turn a direct blow without sealing the wearer's sight."
+synergy_name = "Rooted Ward"
+synergy_description = "Restores 2 additional HP each second after the damage-free recovery delay and adds 50 maximum HP."

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MaterialDefinition" format=3 uid="uid://elkww58s4uf3"]
+
+[ext_resource type="Script" uid="uid://cxhyqe5l2yvh1" path="res://data/items/materials/material_definition.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://cgxu0fnoxouxe" path="res://assets/items/materials/forest/barbed_seed_24x24.png" id="2_icon"]
+
+[resource]
+script = ExtResource("1")
+material_id = &"forest_barbed_seed"
+display_name = "Barbed Seed"
+description = "A hard thorned seed shaped to catch flesh, bark, and woven armor."
+region_id = &"forest"
+material_family = 5
+icon = ExtResource("2_icon")
+crafting_tags = PackedStringArray("thorn", "seed", "critical", "projectile")
+source_lore = "Bramble Spitters launch these seeds after compressing sap around them."
+source_enemy_id = &"bramble_spitter"
+source_enemy_display_name = "Bramble Spitter"

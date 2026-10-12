@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="EquipmentDefinition" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://data/items/equipment_definition.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/items/equipment/forest/stage_5_core/varkuun_edge_essence_64x64.png" id="2_icon"]
+[ext_resource type="Resource" path="res://data/weapons/varkuun_edge_essence.tres" id="3_weapon"]
+
+[resource]
+script = ExtResource("1_script")
+item_id = &"weapon_varkuun_edge_essence"
+display_name = "Varkuun Edge"
+slot = 0
+rarity = 7
+icon = ExtResource("2_icon")
+compatible_classes = PackedStringArray("warrior")
+weapon_definition = ExtResource("3_weapon")
+preview_power = 38
+lore = "Nema binds the memory of Varkuun's core into King's own sword form. The visible blade remains King's."
+synergy_name = "Upgrade Over King's Sword"
+synergy_description = "+6 minimum and +8 maximum Basic Hit damage. +13 Skill Power feeds all four King skills. 8% critical chance deals 150% damage. Timing and reach stay unchanged."

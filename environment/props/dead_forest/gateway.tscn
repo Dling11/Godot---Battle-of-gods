@@ -1,0 +1,39 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" path="res://assets/environment/forest/dead_forest_renewal/gateway.png" id="1_vejpr"]
+[ext_resource type="Script" path="res://gameplay/navigation/navigation_cutout.gd" id="2_b5j1d"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n81j0"]
+size = Vector2(12, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qqmfr"]
+size = Vector2(12, 20)
+
+[node name="DeadGateway" type="Node2D" unique_id=1038943274]
+texture_filter = 1
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=886575669]
+position = Vector2(0, -54)
+texture = ExtResource("1_vejpr")
+
+[node name="WestPillar" type="StaticBody2D" parent="." unique_id=973082997]
+position = Vector2(-44, -3)
+collision_mask = 0
+
+[node name="@CollisionShape2D@7" type="CollisionShape2D" parent="WestPillar" unique_id=1424820071]
+shape = SubResource("RectangleShape2D_n81j0")
+
+[node name="NavigationCutout" type="Node" parent="WestPillar" unique_id=721827454 groups=["navigation_cutout"]]
+script = ExtResource("2_b5j1d")
+derive_from_collision_shapes = true
+
+[node name="EastPillar" type="StaticBody2D" parent="." unique_id=393506491]
+position = Vector2(44, -3)
+collision_mask = 0
+
+[node name="@CollisionShape2D@8" type="CollisionShape2D" parent="EastPillar" unique_id=2127365473]
+shape = SubResource("RectangleShape2D_qqmfr")
+
+[node name="NavigationCutout" type="Node" parent="EastPillar" unique_id=1913267977 groups=["navigation_cutout"]]
+script = ExtResource("2_b5j1d")
+derive_from_collision_shapes = true

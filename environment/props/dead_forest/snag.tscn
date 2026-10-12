@@ -1,0 +1,37 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://environment/props/woodland/woodland_prop.gd" id="1_aux51"]
+[ext_resource type="Texture2D" path="res://assets/environment/forest/dead_forest_renewal/snag.png" id="2_cfjtn"]
+[ext_resource type="Script" path="res://gameplay/navigation/navigation_cutout.gd" id="3_80g2y"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o45br"]
+size = Vector2(16, 14)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_po5yq"]
+size = Vector2(43.2, 82.6)
+
+[node name="Snag" type="StaticBody2D" unique_id=90158415]
+texture_filter = 1
+collision_mask = 0
+script = ExtResource("1_aux51")
+foliage = true
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=753146491]
+position = Vector2(0, -54)
+texture = ExtResource("2_cfjtn")
+
+[node name="Footprint" type="CollisionShape2D" parent="." unique_id=715865073]
+position = Vector2(0, -2)
+shape = SubResource("RectangleShape2D_o45br")
+
+[node name="NavigationCutout" type="Node" parent="." unique_id=371599969 groups=["navigation_cutout"]]
+script = ExtResource("3_80g2y")
+derive_from_collision_shapes = true
+
+[node name="CanopyFade" type="Area2D" parent="." unique_id=828628008]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CanopyVolume" type="CollisionShape2D" parent="CanopyFade" unique_id=1970936928]
+position = Vector2(0, -59)
+shape = SubResource("RectangleShape2D_po5yq")

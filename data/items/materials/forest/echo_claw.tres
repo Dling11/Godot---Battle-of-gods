@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MaterialDefinition" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://data/items/materials/material_definition.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/items/materials/forest/echo_claw_24x24.png" id="2"]
+
+[resource]
+script = ExtResource("1")
+material_id = &"forest_echo_claw"
+display_name = "Echo Claw"
+description = "A resonance-hardened claw that releases a muted chime when seated in metal."
+region_id = &"forest"
+material_family = 8
+rarity = 1
+icon = ExtResource("2")
+crafting_tags = PackedStringArray("claw", "spirit", "resonance", "accessory_component", "forest")
+source_lore = "The ascent's old runes collect inside a Crag Bear's claws after years of armored digging."
+source_enemy_id = &"crag_bear"
+source_enemy_display_name = "Crag Bear"

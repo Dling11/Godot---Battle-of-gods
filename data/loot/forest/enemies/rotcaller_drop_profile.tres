@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="DropProfileDefinition" format=3]
+
+[ext_resource type="Script" path="res://data/loot/drop_profile_definition.gd" id="1_profile"]
+[ext_resource type="Script" path="res://data/loot/material_drop_entry_definition.gd" id="2_entry"]
+[ext_resource type="Resource" path="res://data/items/materials/forest/root_fiber.tres" id="3_fiber"]
+[ext_resource type="Resource" path="res://data/items/materials/forest/young_heartwood.tres" id="4_heartwood"]
+
+[sub_resource type="Resource" id="Drop_fiber"]
+script = ExtResource("2_entry")
+material = ExtResource("3_fiber")
+chance = 0.15
+bad_luck_protection_key = &"forest_root_fiber_misses"
+guaranteed_after_misses = 6
+
+[sub_resource type="Resource" id="Drop_heartwood"]
+script = ExtResource("2_entry")
+material = ExtResource("4_heartwood")
+chance = 0.06
+bad_luck_protection_key = &"forest_young_heartwood_misses"
+guaranteed_after_misses = 12
+
+[resource]
+script = ExtResource("1_profile")
+profile_id = &"forest_rotcaller_drops"
+source_enemy_id = &"rotcaller"
+region_id = &"forest"
+common_drops = Array[ExtResource("2_entry")]([SubResource("Drop_fiber")])
+optional_secondary = Array[ExtResource("2_entry")]([SubResource("Drop_heartwood")])

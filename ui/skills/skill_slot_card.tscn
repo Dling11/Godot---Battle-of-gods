@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://ui/skills/skill_slot_card.gd" id="1_script"]
+[ext_resource type="Theme" path="res://assets/ui/themes/battle_of_gods_theme.tres" id="2_theme"]
+
+[node name="SkillSlotCard" type="Button"]
+custom_minimum_size = Vector2(144, 52)
+layout_mode = 2
+theme = ExtResource("2_theme")
+toggle_mode = true
+mouse_default_cursor_shape = 2
+text = "[1]  SKILL\nSTATE"
+alignment = 1
+icon_alignment = 0
+expand_icon = true
+theme_override_constants/icon_max_width = 24
+autowrap_mode = 2
+theme_override_font_sizes/font_size = 10
+script = ExtResource("1_script")

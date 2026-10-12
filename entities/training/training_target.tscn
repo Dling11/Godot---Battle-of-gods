@@ -1,0 +1,68 @@
+[gd_scene load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://entities/training/training_target.gd" id="1_target"]
+[ext_resource type="Script" path="res://gameplay/combat/health_component.gd" id="2_health"]
+[ext_resource type="Script" path="res://gameplay/combat/hurtbox_component.gd" id="3_hurtbox"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_body"]
+size = Vector2(18, 28)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_hurtbox"]
+radius = 14.0
+
+[sub_resource type="LabelSettings" id="LabelSettings_health"]
+font_size = 8
+font_color = Color(0.761, 0.78, 0.827, 1)
+outline_size = 2
+outline_color = Color(0.025, 0.02, 0.035, 1)
+
+[node name="TrainingTarget" type="StaticBody2D"]
+collision_layer = 1
+collision_mask = 2
+script = ExtResource("1_target")
+
+[node name="Shadow" type="Polygon2D" parent="."]
+position = Vector2(0, 12)
+polygon = PackedVector2Array(-11, 0, -7, -4, 7, -4, 11, 0, 7, 4, -7, 4)
+color = Color(0.012, 0.012, 0.02, 0.65)
+
+[node name="BodyVisual" type="Polygon2D" parent="."]
+unique_name_in_owner = true
+polygon = PackedVector2Array(-9, -14, 9, -14, 9, 14, -9, 14)
+color = Color(0.302, 0.235, 0.255, 1)
+
+[node name="Rune" type="Polygon2D" parent="."]
+polygon = PackedVector2Array(0, -8, 5, 0, 0, 8, -5, 0)
+color = Color(0.596, 0.294, 0.29, 1)
+
+[node name="BodyCollision" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_body")
+
+[node name="HealthComponent" type="Node" parent="."]
+unique_name_in_owner = true
+script = ExtResource("2_health")
+maximum_health = 100.0
+
+[node name="Hurtbox" type="Area2D" parent="." node_paths=PackedStringArray("health_component")]
+collision_layer = 16
+collision_mask = 8
+script = ExtResource("3_hurtbox")
+health_component = NodePath("../HealthComponent")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox"]
+shape = SubResource("CircleShape2D_hurtbox")
+
+[node name="HealthLabel" type="Label" parent="."]
+unique_name_in_owner = true
+offset_left = -18.0
+offset_top = -27.0
+offset_right = 18.0
+offset_bottom = -16.0
+text = "100 / 100"
+label_settings = SubResource("LabelSettings_health")
+horizontal_alignment = 1
+
+[connection signal="damaged" from="HealthComponent" to="." method="_on_damaged"]
+[connection signal="died" from="HealthComponent" to="." method="_on_died"]
+[connection signal="health_changed" from="HealthComponent" to="." method="_update_health"]
+

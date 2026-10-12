@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://caajkt4b5wak5"]
+
+[ext_resource type="Texture2D" uid="uid://cyafacv3kwyx2" path="res://assets/environment/forest/stage_5/props/stage_5_dead_tree_snag_128x160.png" id="1_tree"]
+[ext_resource type="Script" uid="uid://bpvdh5hx5ke8i" path="res://gameplay/navigation/navigation_cutout.gd" id="2_cutout"]
+
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_footprint"]
+points = PackedVector2Array(-52, -36, -30, -52, 17, -46, 27, -7, -33, -3, -53, -13)
+
+[node name="Stage5DeadTreeSnag" type="StaticBody2D" unique_id=483629780]
+collision_mask = 6
+
+[node name="Shadow" type="Polygon2D" parent="." unique_id=327976146]
+z_index = -2
+position = Vector2(-23, -25)
+color = Color(0.025, 0.012, 0.022, 0.46)
+polygon = PackedVector2Array(-36, -1, -21, -15, 44, -13, 57, -1, 51, 16, 30, 24, -7, 23, -28, 18)
+
+[node name="Tree" type="Sprite2D" parent="." unique_id=1203604107]
+position = Vector2(0, -80)
+texture = ExtResource("1_tree")
+
+[node name="Footprint" type="CollisionShape2D" parent="." unique_id=846788394]
+position = Vector2(-1, 1)
+shape = SubResource("ConvexPolygonShape2D_footprint")
+
+[node name="NavigationCutout" type="Node" parent="." unique_id=1817260913 groups=["navigation_cutout"]]
+script = ExtResource("2_cutout")
+derive_from_collision_shapes = true

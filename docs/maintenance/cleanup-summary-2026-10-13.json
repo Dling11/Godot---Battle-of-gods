@@ -1,0 +1,164 @@
+{
+  "date": "2026-10-13",
+  "removed_source_files": 26460,
+  "removed_source_bytes": 4902076595,
+  "removed_derived_files": 1937,
+  "removed_derived_bytes": 1598677407,
+  "current_source": {
+    "files": 2815,
+    "bytes": 56576866
+  },
+  "current_cache": {
+    "files": 1942,
+    "bytes": 81012572
+  },
+  "folders": {
+    "root_docs": {
+      "files": 21,
+      "bytes": 268735
+    },
+    "art_source": {
+      "files": 42,
+      "bytes": 1640665
+    },
+    "assets": {
+      "files": 1296,
+      "bytes": 47810074
+    },
+    "autoload": {
+      "files": 32,
+      "bytes": 81630
+    },
+    "data": {
+      "files": 240,
+      "bytes": 233995
+    },
+    "docs": {
+      "files": 232,
+      "bytes": 3896478
+    },
+    "entities": {
+      "files": 197,
+      "bytes": 542910
+    },
+    "environment": {
+      "files": 69,
+      "bytes": 74682
+    },
+    "gameplay": {
+      "files": 168,
+      "bytes": 278506
+    },
+    "levels": {
+      "files": 65,
+      "bytes": 434826
+    },
+    "tests": {
+      "files": 276,
+      "bytes": 753112
+    },
+    "tools": {
+      "files": 95,
+      "bytes": 150197
+    },
+    "ui": {
+      "files": 79,
+      "bytes": 319145
+    }
+  },
+  "protected_asset_files": 646,
+  "protected_asset_changes": 0,
+  "before_folders": {
+    "root_docs": {
+      "files": 21,
+      "bytes": 1273899
+    },
+    "art_source": {
+      "files": 25255,
+      "bytes": 4891398142
+    },
+    "assets": {
+      "files": 2066,
+      "bytes": 58584177
+    },
+    "autoload": {
+      "files": 32,
+      "bytes": 81630
+    },
+    "data": {
+      "files": 246,
+      "bytes": 239414
+    },
+    "docs": {
+      "files": 239,
+      "bytes": 3937326
+    },
+    "entities": {
+      "files": 200,
+      "bytes": 545270
+    },
+    "environment": {
+      "files": 69,
+      "bytes": 74682
+    },
+    "gameplay": {
+      "files": 172,
+      "bytes": 284354
+    },
+    "levels": {
+      "files": 65,
+      "bytes": 434826
+    },
+    "tests": {
+      "files": 331,
+      "bytes": 908165
+    },
+    "tmp": {
+      "files": 114,
+      "bytes": 15855250
+    },
+    "tools": {
+      "files": 486,
+      "bytes": 1397610
+    },
+    "ui": {
+      "files": 79,
+      "bytes": 319145
+    }
+  },
+  "before_source": {
+    "files": 29261,
+    "bytes": 4959478640
+  },
+  "package": {
+    "path": "D:\\React_ONLY_2026\\GODOT-BATTLE-OF-GODS\\exports\\Battle-of-Gods-project.zip",
+    "files": 2150,
+    "bytes": 46530390,
+    "sha256": "90D5A2A22526C346D7979A65E138BFEFE24E3AF5EDD0272A20296D25E1DFB347",
+    "requirement": "Godot 4.7.2 standard; import project.godot and press F5."
+  },
+  "verification": {
+    "resource_files": 868,
+    "resource_failures": 0,
+    "protected_asset_failures": 0,
+    "carry_rebuild_files": 60,
+    "carry_rebuild_changes": 0,
+    "frozen_body_atlases": 10,
+    "package_content_files": 2150,
+    "package_content_mismatches": 0,
+    "fresh_native_startup": true,
+    "full_suite": {
+      "active_scripts": 134,
+      "assertion_passes": 134,
+      "assertion_or_execution_failures": 0,
+      "with_teardown_warnings": 54
+    },
+    "production_profile_matches_pre_test_hashes": true
+  },
+  "temporary_test_copy_cleanup": "Automatic approval review rejected recursive deletion of exports/cleanup_fresh_project with reason blocked by policy; ignored copy remains.",
+  "followup_clone_audit": {
+    "removed_tracked_temporary_files": 26,
+    "removed_tracked_temporary_bytes": 15841974,
+    "reason": "Temporary paths were tracked before tmp/ became ignored; .gitignore alone does not remove existing tracked files."
+  }
+}

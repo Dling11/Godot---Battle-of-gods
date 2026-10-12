@@ -1,0 +1,67 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://brq3xanbbvrex"]
+
+[ext_resource type="Texture2D" uid="uid://cxqh05vogkjmq" path="res://assets/environment/portals/threat_family/divine.png" id="1_ywc7d"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cwr7c"]
+atlas = ExtResource("1_ywc7d")
+region = Rect2(0, 0, 192, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dknuw"]
+atlas = ExtResource("1_ywc7d")
+region = Rect2(192, 0, 192, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2r5kp"]
+atlas = ExtResource("1_ywc7d")
+region = Rect2(384, 0, 192, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y0dav"]
+atlas = ExtResource("1_ywc7d")
+region = Rect2(576, 0, 192, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b11nw"]
+atlas = ExtResource("1_ywc7d")
+region = Rect2(768, 0, 192, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ccjt4"]
+atlas = ExtResource("1_ywc7d")
+region = Rect2(960, 0, 192, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ny8a7"]
+atlas = ExtResource("1_ywc7d")
+region = Rect2(1152, 0, 192, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8xs41"]
+atlas = ExtResource("1_ywc7d")
+region = Rect2(1344, 0, 192, 160)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cwr7c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dknuw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2r5kp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y0dav")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b11nw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ccjt4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ny8a7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8xs41")
+}],
+"loop": 1,
+"name": &"active",
+"speed": 8.0
+}]

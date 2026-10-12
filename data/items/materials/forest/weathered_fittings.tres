@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MaterialDefinition" format=3 uid="uid://dbinq5oclqkgp"]
+
+[ext_resource type="Script" uid="uid://cxhyqe5l2yvh1" path="res://data/items/materials/material_definition.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://c4xtwk8ppush5" path="res://assets/items/materials/forest/weathered_fittings_24x24.png" id="2_icon"]
+
+[resource]
+script = ExtResource("1")
+material_id = &"forest_weathered_fittings"
+display_name = "Weathered Fittings"
+description = "Recoverable buckles, rivets, and weapon fittings worn smooth by the forest."
+region_id = &"forest"
+material_family = 4
+rarity = 1
+icon = ExtResource("2_icon")
+crafting_tags = PackedStringArray("metal", "fitting", "armor", "weapon")
+source_lore = "The metal outlasted the Forsaken warriors who carried it into the grove."
+source_enemy_id = &"forsaken_thrall"
+source_enemy_display_name = "Forsaken Thrall"

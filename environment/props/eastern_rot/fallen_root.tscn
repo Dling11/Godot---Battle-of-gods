@@ -1,0 +1,25 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://environment/props/woodland/woodland_prop.gd" id="1_krwhl"]
+[ext_resource type="Texture2D" path="res://assets/environment/forest/eastern_rot_renewal/fallen_root.png" id="2_28tsh"]
+[ext_resource type="Script" path="res://gameplay/navigation/navigation_cutout.gd" id="3_2hrjw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rsj4s"]
+size = Vector2(48, 16)
+
+[node name="Fallen Root" type="StaticBody2D" unique_id=112156708]
+texture_filter = 1
+collision_mask = 0
+script = ExtResource("1_krwhl")
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=536425287]
+position = Vector2(0, -10.5)
+texture = ExtResource("2_28tsh")
+
+[node name="Footprint" type="CollisionShape2D" parent="." unique_id=867407653]
+position = Vector2(0, -2)
+shape = SubResource("RectangleShape2D_rsj4s")
+
+[node name="NavigationCutout" type="Node" parent="." unique_id=1416805881 groups=["navigation_cutout"]]
+script = ExtResource("3_2hrjw")
+derive_from_collision_shapes = true

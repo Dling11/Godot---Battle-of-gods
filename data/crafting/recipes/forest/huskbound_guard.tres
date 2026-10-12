@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="RecipeDefinition" format=3 uid="uid://buwp5nqmooybb"]
+
+[ext_resource type="Script" uid="uid://ddkkkbe8622gd" path="res://data/crafting/recipes/recipe_definition.gd" id="1_recipe"]
+[ext_resource type="Script" uid="uid://bll3k2id0v40j" path="res://data/items/materials/material_stack_definition.gd" id="2_stack"]
+[ext_resource type="Resource" uid="uid://elj26grlw2lq" path="res://data/items/materials/forest/husk_heartwood.tres" id="3_heartwood"]
+[ext_resource type="Resource" uid="uid://cudovbs2y3gpc" path="res://data/items/materials/forest/rootbound_core.tres" id="4_core"]
+[ext_resource type="Resource" uid="uid://dduabducj38a" path="res://data/items/materials/forest/forsaken_cloth.tres" id="5_cloth"]
+[ext_resource type="Resource" uid="uid://dbinq5oclqkgp" path="res://data/items/materials/forest/weathered_fittings.tres" id="6_fittings"]
+
+[sub_resource type="Resource" id="Cost_heartwood"]
+script = ExtResource("2_stack")
+material = ExtResource("3_heartwood")
+quantity = 3
+
+[sub_resource type="Resource" id="Cost_core"]
+script = ExtResource("2_stack")
+material = ExtResource("4_core")
+quantity = 2
+
+[sub_resource type="Resource" id="Cost_cloth"]
+script = ExtResource("2_stack")
+material = ExtResource("5_cloth")
+quantity = 4
+
+[sub_resource type="Resource" id="Cost_fittings"]
+script = ExtResource("2_stack")
+material = ExtResource("6_fittings")
+quantity = 3
+
+[resource]
+script = ExtResource("1_recipe")
+recipe_id = &"forest_huskbound_guard"
+display_name = "Huskbound Guard"
+description = "A reinforced Forest armor concept requiring two guaranteed Rootbound Core rewards."
+region_id = &"forest"
+category = 0
+output_id = &"forest_huskbound_guard"
+ingredients = Array[ExtResource("2_stack")]([SubResource("Cost_heartwood"), SubResource("Cost_core"), SubResource("Cost_cloth"), SubResource("Cost_fittings")])
+unlock_id = &"forest_huskbound_guard"

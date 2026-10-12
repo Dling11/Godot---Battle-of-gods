@@ -1,0 +1,44 @@
+[gd_resource type="Resource" load_steps=5 format=3]
+[ext_resource type="Script" path="res://data/weapons/weapon_family_pose_definition.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/characters/playable/king/shared_bodies/axe/side/spin_body.png" id="2"]
+[ext_resource type="Texture2D" path="res://assets/characters/playable/king/shared_bodies/axe/side/spin_hands.png" id="3"]
+[ext_resource type="Texture2D" path="res://assets/characters/playable/king/axe_proof/iron_beard.png" id="4"]
+[resource]
+script = ExtResource("1")
+body_atlas = ExtResource("2")
+hand_atlas = ExtResource("3")
+weapon_texture = ExtResource("4")
+cell_size = Vector2i(192, 128)
+columns = 4
+pose_count = 13
+pose_order = PackedInt32Array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12)
+primary_hands = PackedVector2Array(115, 74, 83, 80, 113, 72, 113, 72, 123, 64, 71, 61, 125, 67, 121, 68, 112, 80, 85, 75, 125, 67, 121, 68, 85, 75)
+secondary_hands = PackedVector2Array(107, 72, 76, 72, 98, 73, 98, 73, 115, 64, 78, 61, 118, 69, 110, 70, 107, 76, 78.209, 76.69775, 118, 69, 110, 70, 78.209, 76.69775)
+weapon_primary_grip = Vector2(39, 33)
+weapon_handle_axis = Vector2(4, 10)
+weapon_tip = Vector2(-1, -1)
+mirror_cutting_edge = true
+lift_pixels = PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+maximum_lift_pixels = 24.0
+weapon_behind_body = PackedByteArray(0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0)
+primary_visible_poses = PackedByteArray()
+occluded_hand_poses = PackedByteArray()
+single_hand_poses = PackedByteArray(0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1)
+stowed_poses = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+released_poses = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+ground_clipped_poses = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+phase_windows = PackedVector2Array(0, 3, 4, 6, 7, 9)
+queued_recovery_window = Vector2(10, 12)
+pose_weights = PackedFloat32Array(0.15, 0.6, 0.8, 1, 1, 1, 1, 0.7, 0.8, 1, 0.65, 0.85, 1)
+interpolate_weapon = false
+interpolate_blade_angles = false
+allow_rest = true
+rest_start_pose = 4
+rest_transition_end_pose = -1
+rest_transition_seconds = 0.48
+rest_loop_window = Vector2(-1, -1)
+rest_loop_seconds = 3.0
+retrieval_end_pose = 3
+identity_regions = Array[Rect2]([])
+identity_source_region = Rect2(0, 0, 0, 0)
+linked_recovery_pose = -1

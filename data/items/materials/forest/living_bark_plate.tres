@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MaterialDefinition" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://data/items/materials/material_definition.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/items/materials/forest/living_bark_plate_24x24.png" id="2"]
+
+[resource]
+script = ExtResource("1")
+material_id = &"forest_living_bark_plate"
+display_name = "Living Bark Plate"
+description = "A compact armor slab that still tightens around its glowing stress grain."
+region_id = &"forest"
+material_family = 3
+rarity = 1
+icon = ExtResource("2")
+crafting_tags = PackedStringArray("bark", "plate", "armor", "living_wood")
+source_lore = "Armored Hogs grow these plates over the skull and shoulders before their first charge."
+source_enemy_id = &"armored_hog"
+source_enemy_display_name = "Armored Hog"

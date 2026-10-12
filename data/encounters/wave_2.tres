@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="EncounterWaveDefinition" load_steps=2 format=3]
+[ext_resource type="Script" path="res://gameplay/encounters/encounter_wave_definition.gd" id="1"]
+[resource]
+script = ExtResource("1")
+title = "Roots Stir"
+mireling_count = 3
+rootling_count = 1
+spawn_interval = 0.8

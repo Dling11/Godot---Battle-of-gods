@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="WeaponFamilyPresentationDefinition" load_steps=13 format=3]
+[ext_resource type="Script" path="res://data/weapons/weapon_family_presentation_definition.gd" id="1"]
+[ext_resource type="Resource" path="res://assets/characters/playable/king/shared_bodies/dual_carry_v3/side/diagonal.tres" id="2"]
+[ext_resource type="Resource" path="res://assets/characters/playable/king/shared_bodies/dual_carry_v3/side/idle.tres" id="3"]
+[ext_resource type="Resource" path="res://assets/characters/playable/king/shared_bodies/dual_carry_v3/side/run.tres" id="4"]
+[ext_resource type="Resource" path="res://assets/characters/playable/king/shared_bodies/dual_carry_v3/up/diagonal.tres" id="5"]
+[ext_resource type="Resource" path="res://assets/characters/playable/king/shared_bodies/dual_carry_v3/up/idle.tres" id="6"]
+[ext_resource type="Resource" path="res://assets/characters/playable/king/shared_bodies/dual_carry_v3/up/run.tres" id="7"]
+[ext_resource type="Resource" path="res://assets/characters/playable/king/shared_bodies/dual_carry_v3/down/diagonal.tres" id="8"]
+[ext_resource type="Resource" path="res://assets/characters/playable/king/shared_bodies/dual_carry_v3/down/idle.tres" id="9"]
+[ext_resource type="Resource" path="res://assets/characters/playable/king/shared_bodies/dual_carry_v3/down/run.tres" id="10"]
+[ext_resource type="Texture2D" path="res://assets/characters/playable/king/dual_v2/slash.png" id="11"]
+[ext_resource type="PackedScene" path="res://gameplay/presentation/dual_v2_swing.tscn" id="12"]
+[resource]
+script = ExtResource("1")
+attack_poses = ExtResource("2")
+idle_poses = ExtResource("3")
+running_poses = ExtResource("4")
+upward_attack_poses = ExtResource("5")
+upward_idle_poses = ExtResource("6")
+upward_running_poses = ExtResource("7")
+downward_attack_poses = ExtResource("8")
+downward_idle_poses = ExtResource("9")
+downward_running_poses = ExtResource("10")
+swing_atlas = ExtResource("11")
+swing_scene = ExtResource("12")
+step_distances = PackedFloat32Array(4,4,4,0,6)
+swing_rows = 5
+swing_origins = PackedVector2Array(96,96,96,96,96,96,96,96,96,96)
+sound_pitches = PackedFloat32Array(1.18,1.22,1.16,1.08,1.12)

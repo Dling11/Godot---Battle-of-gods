@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="SkillSlotDefinition" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://data/skills/skill_slot_definition.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/ui/icons/states/icon_slot_locked_16x16.png" id="2_locked"]
+[ext_resource type="Resource" path="res://data/abilities/king/king_skill_4.tres" id="3_ability"]
+
+[resource]
+script = ExtResource("1_script")
+slot_number = 5
+input_action = &"player_skill_5"
+ability = ExtResource("3_ability")
+locked_icon = ExtResource("2_locked")
+locked_title = "Skill 4"
+locked_description = "King's fourth skill is unavailable."
+unlock_hint = "SKILL UNAVAILABLE"

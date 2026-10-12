@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="RecipeDefinition" format=3 uid="uid://c0g5i7ro460hh"]
+
+[ext_resource type="Script" uid="uid://ddkkkbe8622gd" path="res://data/crafting/recipes/recipe_definition.gd" id="1_recipe"]
+[ext_resource type="Script" uid="uid://bll3k2id0v40j" path="res://data/items/materials/material_stack_definition.gd" id="2_stack"]
+[ext_resource type="Resource" uid="uid://co68leshraied" path="res://data/items/materials/forest/root_fiber.tres" id="3_fiber"]
+[ext_resource type="Resource" path="res://data/items/materials/forest/armored_hog_hide.tres" id="4_hide"]
+[ext_resource type="Resource" uid="uid://32r3ksqif6tb" path="res://data/items/materials/forest/thorn_sap.tres" id="5_sap"]
+
+[sub_resource type="Resource" id="Cost_fiber"]
+script = ExtResource("2_stack")
+material = ExtResource("3_fiber")
+quantity = 6
+
+[sub_resource type="Resource" id="Cost_hide"]
+script = ExtResource("2_stack")
+material = ExtResource("4_hide")
+quantity = 3
+
+[sub_resource type="Resource" id="Cost_sap"]
+script = ExtResource("2_stack")
+material = ExtResource("5_sap")
+quantity = 3
+
+[resource]
+script = ExtResource("1_recipe")
+recipe_id = &"forest_stage_5_rootfiber_gloves"
+display_name = "Rootfiber Gloves"
+description = "Bind flexible rootfiber over cured hide so protection does not interfere with King's sword grip."
+region_id = &"forest"
+tier = 2
+category = 0
+output_id = &"forest_rootfiber_gloves"
+ingredients = Array[ExtResource("2_stack")]([SubResource("Cost_fiber"), SubResource("Cost_hide"), SubResource("Cost_sap")])
+unlock_id = &"forest_core_gear_crafting"
+gold_cost = 150

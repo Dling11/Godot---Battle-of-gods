@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="EvadeDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/evade/evade_definition.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+speed = 320.0
+dash_seconds = 0.15
+recovery_seconds = 0.25
+cooldown_seconds = 0.85

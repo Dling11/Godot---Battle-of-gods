@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="MaterialCatalogDefinition" format=3 uid="uid://drvwyucswatyb"]
+
+[ext_resource type="Script" uid="uid://cxhyqe5l2yvh1" path="res://data/items/materials/material_definition.gd" id="1_2a203"]
+[ext_resource type="Script" uid="uid://bfyhbv86inm7q" path="res://data/items/materials/material_catalog_definition.gd" id="1_catalog"]
+[ext_resource type="Resource" uid="uid://cdc505wvdfcn4" path="res://data/items/materials/forest/mire_resin.tres" id="2_resin"]
+[ext_resource type="Resource" uid="uid://b1iggmtrfklf0" path="res://data/items/materials/forest/mire_membrane.tres" id="3_membrane"]
+[ext_resource type="Resource" uid="uid://co68leshraied" path="res://data/items/materials/forest/root_fiber.tres" id="4_fiber"]
+[ext_resource type="Resource" uid="uid://bfsw26rss7q8q" path="res://data/items/materials/forest/young_heartwood.tres" id="5_young"]
+[ext_resource type="Resource" uid="uid://dduabducj38a" path="res://data/items/materials/forest/forsaken_cloth.tres" id="6_cloth"]
+[ext_resource type="Resource" uid="uid://dbinq5oclqkgp" path="res://data/items/materials/forest/weathered_fittings.tres" id="7_fittings"]
+[ext_resource type="Resource" uid="uid://elkww58s4uf3" path="res://data/items/materials/forest/barbed_seed.tres" id="8_seed"]
+[ext_resource type="Resource" uid="uid://32r3ksqif6tb" path="res://data/items/materials/forest/thorn_sap.tres" id="9_sap"]
+[ext_resource type="Resource" uid="uid://elj26grlw2lq" path="res://data/items/materials/forest/husk_heartwood.tres" id="10_husk"]
+[ext_resource type="Resource" uid="uid://cudovbs2y3gpc" path="res://data/items/materials/forest/rootbound_core.tres" id="11_core"]
+[ext_resource type="Resource" path="res://data/items/materials/forest/armored_hog_hide.tres" id="12_hog_hide"]
+[ext_resource type="Resource" path="res://data/items/materials/forest/living_bark_plate.tres" id="13_bark_plate"]
+[ext_resource type="Resource" path="res://data/items/materials/forest/varkuun_core.tres" id="14_varkuun_core"]
+[ext_resource type="Resource" path="res://data/items/materials/forest/crag_iron.tres" id="15_crag_iron"]
+[ext_resource type="Resource" path="res://data/items/materials/forest/echo_claw.tres" id="16_echo_claw"]
+
+[resource]
+script = ExtResource("1_catalog")
+materials = Array[ExtResource("1_2a203")]([ExtResource("2_resin"), ExtResource("3_membrane"), ExtResource("4_fiber"), ExtResource("5_young"), ExtResource("6_cloth"), ExtResource("7_fittings"), ExtResource("8_seed"), ExtResource("9_sap"), ExtResource("10_husk"), ExtResource("11_core"), ExtResource("12_hog_hide"), ExtResource("13_bark_plate"), ExtResource("14_varkuun_core"), ExtResource("15_crag_iron"), ExtResource("16_echo_claw")])

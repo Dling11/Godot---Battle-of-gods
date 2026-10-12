@@ -1,0 +1,67 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://tqmmomt2o3ls"]
+
+[ext_resource type="Texture2D" uid="uid://dt71k23fxysbe" path="res://assets/environment/portals/threat_family/maw.png" id="1_xgsd3"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1o6rr"]
+atlas = ExtResource("1_xgsd3")
+region = Rect2(0, 0, 192, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uvsii"]
+atlas = ExtResource("1_xgsd3")
+region = Rect2(192, 0, 192, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wsx6i"]
+atlas = ExtResource("1_xgsd3")
+region = Rect2(384, 0, 192, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rkfg5"]
+atlas = ExtResource("1_xgsd3")
+region = Rect2(576, 0, 192, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_elwoq"]
+atlas = ExtResource("1_xgsd3")
+region = Rect2(768, 0, 192, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2n5bb"]
+atlas = ExtResource("1_xgsd3")
+region = Rect2(960, 0, 192, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_40xc4"]
+atlas = ExtResource("1_xgsd3")
+region = Rect2(1152, 0, 192, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6uk88"]
+atlas = ExtResource("1_xgsd3")
+region = Rect2(1344, 0, 192, 160)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1o6rr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uvsii")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wsx6i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rkfg5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_elwoq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2n5bb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_40xc4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6uk88")
+}],
+"loop": 1,
+"name": &"active",
+"speed": 8.0
+}]

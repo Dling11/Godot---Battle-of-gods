@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MaterialDefinition" format=3 uid="uid://bfsw26rss7q8q"]
+
+[ext_resource type="Script" uid="uid://cxhyqe5l2yvh1" path="res://data/items/materials/material_definition.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://dp2iyy538aaik" path="res://assets/items/materials/forest/young_heartwood_24x24.png" id="2_icon"]
+
+[resource]
+script = ExtResource("1")
+material_id = &"forest_young_heartwood"
+display_name = "Young Heartwood"
+description = "A light but resilient wooden core taken from a mature Rootling."
+region_id = &"forest"
+material_family = 9
+rarity = 1
+icon = ExtResource("2_icon")
+crafting_tags = PackedStringArray("root", "heartwood", "reinforcement", "weapon")
+source_lore = "The grove has not yet hardened this wood into the dense core found in older guardians."
+source_enemy_id = &"rootling"
+source_enemy_display_name = "Rootling"

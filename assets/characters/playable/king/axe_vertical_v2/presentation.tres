@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="WeaponFamilyPresentationDefinition" load_steps=13 format=3]
+[ext_resource type="Script" path="res://data/weapons/weapon_family_presentation_definition.gd" id="1"]
+[ext_resource type="Resource" path="res://assets/characters/playable/king/axe_flow/side/chop.tres" id="2"]
+[ext_resource type="Resource" path="res://assets/characters/playable/king/axe_proof_v3/carry.tres" id="3"]
+[ext_resource type="Resource" path="res://assets/characters/playable/king/greatsword_confidence_v2/axe_run.tres" id="4"]
+[ext_resource type="Texture2D" path="res://assets/characters/playable/king/axe_flow/swing.png" id="5"]
+[ext_resource type="Resource" path="res://assets/characters/playable/king/axe_vertical_v2/up/chop.tres" id="6"]
+[ext_resource type="Resource" path="res://assets/characters/playable/king/axe_flow/up/idle.tres" id="7"]
+[ext_resource type="Resource" path="res://assets/characters/playable/king/axe_flow/up/run.tres" id="8"]
+[ext_resource type="Resource" path="res://assets/characters/playable/king/axe_vertical_v2/down/chop.tres" id="9"]
+[ext_resource type="Resource" path="res://assets/characters/playable/king/axe_flow/down/idle.tres" id="10"]
+[ext_resource type="Resource" path="res://assets/characters/playable/king/axe_flow/down/run.tres" id="11"]
+[ext_resource type="PackedScene" path="res://gameplay/presentation/axe_vertical_v2_swing.tscn" id="12"]
+[resource]
+script = ExtResource("1")
+attack_poses = ExtResource("2")
+idle_poses = ExtResource("3")
+running_poses = ExtResource("4")
+upward_attack_poses = ExtResource("6")
+upward_idle_poses = ExtResource("7")
+upward_running_poses = ExtResource("8")
+downward_attack_poses = ExtResource("9")
+downward_idle_poses = ExtResource("10")
+downward_running_poses = ExtResource("11")
+swing_atlas = ExtResource("5")
+swing_rows = 5
+swing_origins = PackedVector2Array(64,64,64,64,44,64,64,64,64,64)
+swing_texel_scale = 1.1
+swing_full_frame_rows = PackedByteArray(1,1,1,1,1)
+sound_indices = PackedInt32Array(0,1,0,2,2)
+sound_pitches = PackedFloat32Array(1,1,0.9,1,0.85)
+swing_scene = ExtResource("12")

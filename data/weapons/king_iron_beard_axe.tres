@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="WeaponDefinition" load_steps=6 format=3]
+[ext_resource type="Script" path="res://data/weapons/weapon_definition.gd" id="1"]
+[ext_resource type="Resource" path="res://data/weapons/families/iron_beard/combo.tres" id="2"]
+[ext_resource type="Resource" path="res://data/weapons/families/iron_beard/presentation.tres" id="3"]
+[ext_resource type="Resource" path="res://data/weapons/audio/axe_contact.tres" id="4_audio"]
+[sub_resource type="ConvexPolygonShape2D" id="shape"]
+points = PackedVector2Array(2,-14,20,-40,56,-34,72,0,56,34,20,40,2,14)
+[resource]
+script = ExtResource("1")
+weapon_id = &"weapon_king_iron_beard_axe"
+display_name = "Iron Beard Axe"
+uses_integrated_visual = true
+family_presentation = ExtResource("3")
+melee_hitbox_shape = SubResource("shape")
+combo = ExtResource("2")
+hit_audio = ExtResource("4_audio")
+damage = 25.0
+basic_damage_minimum = 14.0
+basic_damage_maximum = 16.0
+knockback_strength = 60.0
+basic_stagger_seconds = 0.12
+attack_movement_ratios = PackedFloat32Array(0.25,0.0,0.60)

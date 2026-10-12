@@ -1,0 +1,67 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://cmpcfyyj4b2ip"]
+
+[ext_resource type="Texture2D" uid="uid://i5b3m7806b24" path="res://assets/environment/portals/threat_family/calm.png" id="1_w7y1e"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tqhpt"]
+atlas = ExtResource("1_w7y1e")
+region = Rect2(0, 0, 192, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1td0p"]
+atlas = ExtResource("1_w7y1e")
+region = Rect2(192, 0, 192, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5j55p"]
+atlas = ExtResource("1_w7y1e")
+region = Rect2(384, 0, 192, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wod5m"]
+atlas = ExtResource("1_w7y1e")
+region = Rect2(576, 0, 192, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4n8d8"]
+atlas = ExtResource("1_w7y1e")
+region = Rect2(768, 0, 192, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d114x"]
+atlas = ExtResource("1_w7y1e")
+region = Rect2(960, 0, 192, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qsrqa"]
+atlas = ExtResource("1_w7y1e")
+region = Rect2(1152, 0, 192, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_563qf"]
+atlas = ExtResource("1_w7y1e")
+region = Rect2(1344, 0, 192, 160)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tqhpt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1td0p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5j55p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wod5m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4n8d8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d114x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qsrqa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_563qf")
+}],
+"loop": 1,
+"name": &"active",
+"speed": 8.0
+}]

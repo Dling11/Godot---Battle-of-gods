@@ -1,0 +1,75 @@
+[gd_resource type="SpriteFrames" format=3]
+
+[ext_resource type="Texture2D" path="res://assets/characters/npcs/umi/renewal/idle_work.png" id="1_vx2a6"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_efmnj"]
+atlas = ExtResource("1_vx2a6")
+region = Rect2(0, 0, 96, 96)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iynj6"]
+atlas = ExtResource("1_vx2a6")
+region = Rect2(96, 0, 96, 96)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r5h5g"]
+atlas = ExtResource("1_vx2a6")
+region = Rect2(192, 0, 96, 96)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hm3wg"]
+atlas = ExtResource("1_vx2a6")
+region = Rect2(288, 0, 96, 96)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vrp60"]
+atlas = ExtResource("1_vx2a6")
+region = Rect2(0, 96, 96, 96)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ddm7c"]
+atlas = ExtResource("1_vx2a6")
+region = Rect2(96, 96, 96, 96)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_53xnk"]
+atlas = ExtResource("1_vx2a6")
+region = Rect2(192, 96, 96, 96)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vkqwc"]
+atlas = ExtResource("1_vx2a6")
+region = Rect2(288, 96, 96, 96)
+filter_clip = true
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 5.0,
+"texture": SubResource("AtlasTexture_efmnj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iynj6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r5h5g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hm3wg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vrp60")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ddm7c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_53xnk")
+}, {
+"duration": 3.0,
+"texture": SubResource("AtlasTexture_vkqwc")
+}],
+"loop": 1,
+"name": &"artisan_work",
+"speed": 5.0
+}]

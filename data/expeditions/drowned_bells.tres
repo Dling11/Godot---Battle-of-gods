@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="ExpeditionDefinition" format=3 uid="uid://ti0v5ciafon8"]
+
+[ext_resource type="Script" uid="uid://cc5ey0o5cyle8" path="res://data/expeditions/expedition_definition.gd" id="1_definition"]
+[ext_resource type="Script" uid="uid://bce1s2bt2iedf" path="res://data/expeditions/expedition_requirement.gd" id="2_requirement"]
+
+[sub_resource type="Resource" id="Requirement"]
+script = ExtResource("2_requirement")
+minimum_level = 5
+required_story_flags = PackedStringArray("rootbound_hollow_completed")
+required_boss_victories = PackedStringArray("ashen_seraph")
+required_discoveries = PackedStringArray("drowned_bell_tower")
+required_key_items = PackedStringArray("tideglass_chime")
+
+[resource]
+script = ExtResource("1_definition")
+expedition_id = &"drowned_bells"
+route_label = "FUTURE REGION"
+display_name = "THE DROWNED BELLS"
+difficulty_label = "FORBIDDEN DEPTHS"
+description = "A sunken sanctuary whose bells still call to gods that abandoned it."
+requirement = SubResource("Requirement")

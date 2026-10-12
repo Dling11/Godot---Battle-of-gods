@@ -1,0 +1,52 @@
+[gd_scene load_steps=7 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/environment/forest/stage_6/waterfall/upper_terrace_waterfall_4f_192x256.png" id="1_sheet"]
+
+[sub_resource type="AtlasTexture" id="frame_0"]
+atlas = ExtResource("1_sheet")
+region = Rect2(0, 0, 192, 256)
+
+[sub_resource type="AtlasTexture" id="frame_1"]
+atlas = ExtResource("1_sheet")
+region = Rect2(192, 0, 192, 256)
+
+[sub_resource type="AtlasTexture" id="frame_2"]
+atlas = ExtResource("1_sheet")
+region = Rect2(384, 0, 192, 256)
+
+[sub_resource type="AtlasTexture" id="frame_3"]
+atlas = ExtResource("1_sheet")
+region = Rect2(576, 0, 192, 256)
+
+[sub_resource type="SpriteFrames" id="waterfall_frames"]
+animations = [{
+"frames": [{"duration": 1.0, "texture": SubResource("frame_0")}, {"duration": 1.0, "texture": SubResource("frame_1")}, {"duration": 1.0, "texture": SubResource("frame_2")}, {"duration": 1.0, "texture": SubResource("frame_3")}],
+"loop": true,
+"name": &"flow",
+"speed": 6.0
+}]
+
+[node name="Stage6UpperTerraceWaterfall" type="Node2D"]
+
+[node name="AnimatedWaterfall" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -68)
+sprite_frames = SubResource("waterfall_frames")
+animation = &"flow"
+autoplay = "flow"
+frame_progress = 0.25
+
+[node name="Mist" type="CPUParticles2D" parent="."]
+position = Vector2(0, 20)
+amount = 10
+lifetime = 1.5
+preprocess = 1.5
+emission_shape = 3
+emission_rect_extents = Vector2(48, 8)
+direction = Vector2(0, -1)
+spread = 45.0
+gravity = Vector2(0, -3)
+initial_velocity_min = 2.0
+initial_velocity_max = 7.0
+scale_amount_min = 0.7
+scale_amount_max = 1.4
+color = Color(0.72, 0.94, 1, 0.34)

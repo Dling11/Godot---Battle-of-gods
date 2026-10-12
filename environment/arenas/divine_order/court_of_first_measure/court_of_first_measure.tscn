@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://environment/arenas/divine_order/court_of_first_measure/court_of_first_measure.gd" id="1"]
+
+[node name="CourtOfFirstMeasure" type="Node2D"]
+z_index = -8
+script = ExtResource("1")

@@ -1,0 +1,304 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://ui/crafting/rootforge_menu.gd" id="1_script"]
+[ext_resource type="Theme" path="res://assets/ui/themes/battle_of_gods_theme.tres" id="2_theme"]
+[ext_resource type="Resource" path="res://data/crafting/recipes/recipe_catalog.tres" id="3_catalog"]
+[ext_resource type="Texture2D" path="res://assets/characters/npcs/rootweaver/renewal/portrait.png" id="4_portrait"]
+
+[node name="RootforgeMenu" type="Control"]
+visible = false
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_theme")
+script = ExtResource("1_script")
+catalog = ExtResource("3_catalog")
+
+[node name="Veil" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.008, 0.012, 0.02, 0.84)
+
+[node name="Panel" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -400.0
+offset_top = -240.0
+offset_right = 400.0
+offset_bottom = 240.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Margin" type="MarginContainer" parent="Panel"]
+layout_mode = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 9
+
+[node name="Root" type="VBoxContainer" parent="Panel/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Header" type="HBoxContainer" parent="Panel/Margin/Root"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="Portrait" type="TextureRect" parent="Panel/Margin/Root/Header"]
+custom_minimum_size = Vector2(56, 56)
+layout_mode = 2
+texture = ExtResource("4_portrait")
+expand_mode = 1
+stretch_mode = 5
+texture_filter = 1
+
+[node name="Identity" type="VBoxContainer" parent="Panel/Margin/Root/Header"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 2
+
+[node name="Title" type="Label" parent="Panel/Margin/Root/Header/Identity"]
+layout_mode = 2
+text = "NEMA'S LIVING ROOTFORGE"
+theme_override_colors/font_color = Color(0.839, 0.757, 0.443, 1)
+theme_override_font_sizes/font_size = 16
+
+[node name="Subtitle" type="Label" parent="Panel/Margin/Root/Header/Identity"]
+layout_mode = 2
+text = "ROOTWEAVER  •  FOREST EQUIPMENT MEMORY"
+theme_override_colors/font_color = Color(0.58, 0.68, 0.5, 1)
+theme_override_font_sizes/font_size = 9
+
+[node name="MaterialSummaryLabel" type="Label" parent="Panel/Margin/Root/Header/Identity"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "MATERIAL POUCH  •  0 KINDS  •  0 UNITS"
+theme_override_colors/font_color = Color(0.54, 0.72, 0.84, 1)
+theme_override_font_sizes/font_size = 9
+
+[node name="CloseButton" type="Button" parent="Panel/Margin/Root/Header"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(30, 28)
+layout_mode = 2
+size_flags_vertical = 4
+mouse_default_cursor_shape = 2
+text = "×"
+tooltip_text = "Close (Esc)"
+
+[node name="Rule" type="HSeparator" parent="Panel/Margin/Root"]
+layout_mode = 2
+
+[node name="Filters" type="HBoxContainer" parent="Panel/Margin/Root"]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="AllFilterButton" type="Button" parent="Panel/Margin/Root/Filters"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(92, 26)
+layout_mode = 2
+toggle_mode = true
+button_pressed = true
+text = "ALL RECIPES"
+
+[node name="WeaponsFilterButton" type="Button" parent="Panel/Margin/Root/Filters"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(92, 26)
+layout_mode = 2
+toggle_mode = true
+text = "WEAPONS"
+
+[node name="ArmorFilterButton" type="Button" parent="Panel/Margin/Root/Filters"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(92, 26)
+layout_mode = 2
+toggle_mode = true
+text = "ARMOR"
+
+[node name="AccessoriesFilterButton" type="Button" parent="Panel/Margin/Root/Filters"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(92, 26)
+layout_mode = 2
+toggle_mode = true
+text = "ACCESSORIES"
+
+[node name="PreviewNotice" type="Label" parent="Panel/Margin/Root/Filters"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "FOREST BLUEPRINTS  •  EQUIPMENT AND RELICS"
+horizontal_alignment = 2
+vertical_alignment = 1
+theme_override_colors/font_color = Color(0.52, 0.54, 0.5, 1)
+theme_override_font_sizes/font_size = 8
+
+[node name="BodyScroll" type="ScrollContainer" parent="Panel/Margin/Root"]
+custom_minimum_size = Vector2(0, 310)
+layout_mode = 2
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+follow_focus = true
+
+[node name="Body" type="HBoxContainer" parent="Panel/Margin/Root/BodyScroll"]
+size_flags_horizontal = 3
+custom_minimum_size = Vector2(0, 310)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 12
+
+[node name="RecipesPanel" type="PanelContainer" parent="Panel/Margin/Root/BodyScroll/Body"]
+custom_minimum_size = Vector2(260, 0)
+layout_mode = 2
+
+[node name="RecipesMargin" type="MarginContainer" parent="Panel/Margin/Root/BodyScroll/Body/RecipesPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="Recipes" type="VBoxContainer" parent="Panel/Margin/Root/BodyScroll/Body/RecipesPanel/RecipesMargin"]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="RecipesTitle" type="Label" parent="Panel/Margin/Root/BodyScroll/Body/RecipesPanel/RecipesMargin/Recipes"]
+layout_mode = 2
+text = "FOREST FORMULAE"
+theme_override_colors/font_color = Color(0.76, 0.69, 0.88, 1)
+theme_override_font_sizes/font_size = 10
+
+[node name="RecipeList" type="VBoxContainer" parent="Panel/Margin/Root/BodyScroll/Body/RecipesPanel/RecipesMargin/Recipes"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 6
+
+[node name="DetailPanel" type="PanelContainer" parent="Panel/Margin/Root/BodyScroll/Body"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="DetailMargin" type="MarginContainer" parent="Panel/Margin/Root/BodyScroll/Body/DetailPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 14
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 14
+theme_override_constants/margin_bottom = 12
+
+[node name="Detail" type="VBoxContainer" parent="Panel/Margin/Root/BodyScroll/Body/DetailPanel/DetailMargin"]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="RecipeNameLabel" type="Label" parent="Panel/Margin/Root/BodyScroll/Body/DetailPanel/DetailMargin/Detail"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "ROOTFIBER WRAPS"
+theme_override_font_sizes/font_size = 15
+
+[node name="RecipeMetaLabel" type="Label" parent="Panel/Margin/Root/BodyScroll/Body/DetailPanel/DetailMargin/Detail"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "FOREST  •  TIER 1  •  ARMOR"
+theme_override_colors/font_color = Color(0.54, 0.72, 0.84, 1)
+theme_override_font_sizes/font_size = 9
+
+[node name="OutputPreview" type="HBoxContainer" parent="Panel/Margin/Root/BodyScroll/Body/DetailPanel/DetailMargin/Detail"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="OutputIcon" type="TextureRect" parent="Panel/Margin/Root/BodyScroll/Body/DetailPanel/DetailMargin/Detail/OutputPreview"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+texture_filter = 1
+expand_mode = 1
+stretch_mode = 5
+
+[node name="OutputCopy" type="VBoxContainer" parent="Panel/Margin/Root/BodyScroll/Body/DetailPanel/DetailMargin/Detail/OutputPreview"]
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
+theme_override_constants/separation = 2
+
+[node name="OutputSlotLabel" type="Label" parent="Panel/Margin/Root/BodyScroll/Body/DetailPanel/DetailMargin/Detail/OutputPreview/OutputCopy"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "WEAPON  •  RARE"
+theme_override_colors/font_color = Color(0.54, 0.72, 0.84, 1)
+theme_override_font_sizes/font_size = 8
+
+[node name="OutputStatsLabel" type="Label" parent="Panel/Margin/Root/BodyScroll/Body/DetailPanel/DetailMargin/Detail/OutputPreview/OutputCopy"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "BASIC HIT 16-20  •  SKILL POWER 38  •  CRIT 8%"
+autowrap_mode = 2
+theme_override_colors/font_color = Color(0.82, 0.84, 0.76, 1)
+theme_override_font_sizes/font_size = 9
+
+[node name="RecipeDescriptionLabel" type="Label" parent="Panel/Margin/Root/BodyScroll/Body/DetailPanel/DetailMargin/Detail"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 42)
+layout_mode = 2
+text = "Layered forest protection."
+autowrap_mode = 2
+theme_override_colors/font_color = Color(0.68, 0.69, 0.65, 1)
+theme_override_font_sizes/font_size = 9
+
+[node name="RecipeStateLabel" type="Label" parent="Panel/Margin/Root/BodyScroll/Body/DetailPanel/DetailMargin/Detail"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "BLUEPRINT NOT REMEMBERED  •  RECIPE PREVIEW"
+theme_override_font_sizes/font_size = 9
+
+[node name="IngredientTitle" type="Label" parent="Panel/Margin/Root/BodyScroll/Body/DetailPanel/DetailMargin/Detail"]
+layout_mode = 2
+text = "MATERIAL MEMORY"
+theme_override_colors/font_color = Color(0.76, 0.69, 0.88, 1)
+theme_override_font_sizes/font_size = 10
+
+[node name="IngredientList" type="VBoxContainer" parent="Panel/Margin/Root/BodyScroll/Body/DetailPanel/DetailMargin/Detail"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 2
+
+[node name="MilestoneLabel" type="Label" parent="Panel/Margin/Root/BodyScroll/Body/DetailPanel/DetailMargin/Detail"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 34)
+layout_mode = 2
+text = "STAGE V CORE GEAR SEAL REQUIRED\nOUTPUT EQUIPMENT IS NOT YET IMPLEMENTED"
+horizontal_alignment = 1
+autowrap_mode = 2
+theme_override_colors/font_color = Color(0.78, 0.55, 0.34, 1)
+theme_override_font_sizes/font_size = 8
+
+[node name="PrimaryActionButton" type="Button" parent="Panel/Margin/Root/BodyScroll/Body/DetailPanel/DetailMargin/Detail"]
+unique_name_in_owner = true
+layout_mode = 2
+disabled = true
+text = "STAGE V CORE GEAR SEAL REQUIRED"
+
+[node name="Footer" type="Label" parent="Panel/Margin/Root"]
+layout_mode = 2
+text = "ESC  •  CLOSE     MOUSE / ARROWS + ENTER  •  INSPECT AND CRAFT"
+horizontal_alignment = 1
+theme_override_colors/font_color = Color(0.49, 0.5, 0.54, 1)
+theme_override_font_sizes/font_size = 8
+
+[connection signal="pressed" from="Panel/Margin/Root/Header/CloseButton" to="." method="close_menu"]
+[connection signal="pressed" from="Panel/Margin/Root/Filters/AllFilterButton" to="." method="set_category_filter" binds= [-1]]
+[connection signal="pressed" from="Panel/Margin/Root/Filters/WeaponsFilterButton" to="." method="set_category_filter" binds= [1]]
+[connection signal="pressed" from="Panel/Margin/Root/Filters/ArmorFilterButton" to="." method="set_category_filter" binds= [0]]
+[connection signal="pressed" from="Panel/Margin/Root/Filters/AccessoriesFilterButton" to="." method="set_category_filter" binds= [2]]
+[connection signal="pressed" from="Panel/Margin/Root/BodyScroll/Body/DetailPanel/DetailMargin/Detail/PrimaryActionButton" to="." method="_craft_selected_recipe"]

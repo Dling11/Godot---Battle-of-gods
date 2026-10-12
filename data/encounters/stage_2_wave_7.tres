@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="EncounterWaveDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://gameplay/encounters/encounter_wave_definition.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+title = "Grove's Last Stand"
+mireling_count = 2
+rootling_count = 1
+thrall_count = 2
+bramble_spitter_count = 2
+spawn_interval = 0.65
+reinforcement_delay = 0.8

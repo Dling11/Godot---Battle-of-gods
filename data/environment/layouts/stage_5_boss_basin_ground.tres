@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="AuthoredGroundLayout" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://environment/ground/authored_ground_layout.gd" id="1_layout"]
+
+[resource]
+script = ExtResource("1_layout")
+map_size = Vector2i(15, 9)
+default_source_id = 0
+default_tile = Vector2i(0, 3)
+tile_legend = {
+"a": Vector2i(0, 0),
+"b": Vector2i(1, 0),
+"d": Vector2i(3, 0),
+"e": Vector2i(0, 1),
+"l": Vector2i(3, 2),
+"m": Vector2i(0, 3),
+"n": Vector2i(1, 3),
+"p": Vector2i(3, 3)
+}
+rows = PackedStringArray("mmmpaaaaaaapmmm", "mppaaabbbaaappm", "paabbbnnnbbbaap", "aabnnaaadaannba", "abnnaaeleaannba", "aabnnaaadaannba", "paabbbnnnbbbaap", "mppaaabbbaaappm", "mmmpaaaaaaapmmm")

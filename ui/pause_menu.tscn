@@ -1,0 +1,118 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://ui/pause_menu.gd" id="1_script"]
+[ext_resource type="Theme" path="res://assets/ui/themes/battle_of_gods_theme.tres" id="2_theme"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBox_pause_panel"]
+bg_color = Color(0.035, 0.043, 0.063, 0.96)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.463, 0.353, 0.639, 0.9)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[node name="PauseMenu" type="Control"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 0
+theme = ExtResource("2_theme")
+script = ExtResource("1_script")
+
+[node name="Dim" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 0
+color = Color(0.01, 0.014, 0.025, 0.72)
+
+[node name="Panel" type="PanelContainer" parent="."]
+layout_mode = 0
+offset_left = 332.0
+offset_top = 172.0
+offset_right = 628.0
+offset_bottom = 430.0
+theme_override_styles/panel = SubResource("StyleBox_pause_panel")
+
+[node name="Margin" type="MarginContainer" parent="Panel"]
+layout_mode = 2
+theme_override_constants/margin_left = 18
+theme_override_constants/margin_top = 14
+theme_override_constants/margin_right = 18
+theme_override_constants/margin_bottom = 14
+
+[node name="Content" type="VBoxContainer" parent="Panel/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 7
+
+[node name="Heading" type="Label" parent="Panel/Margin/Content"]
+layout_mode = 2
+text = "EXPEDITION PAUSED"
+horizontal_alignment = 1
+theme_override_colors/font_color = Color(0.839, 0.757, 0.443, 1)
+theme_override_font_sizes/font_size = 18
+
+[node name="Note" type="Label" parent="Panel/Margin/Content"]
+layout_mode = 2
+text = "YOUR CURRENT RUN PROGRESS IS SAFE"
+horizontal_alignment = 1
+theme_override_colors/font_color = Color(0.455, 0.502, 0.42, 1)
+theme_override_font_sizes/font_size = 8
+
+[node name="ResumeButton" type="Button" parent="Panel/Margin/Content"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(260, 30)
+layout_mode = 2
+mouse_default_cursor_shape = 2
+text = "RESUME"
+
+[node name="MusicButton" type="Button" parent="Panel/Margin/Content"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(260, 27)
+layout_mode = 2
+mouse_default_cursor_shape = 2
+text = "MUSIC & AMBIENCE  ON"
+
+[node name="SfxButton" type="Button" parent="Panel/Margin/Content"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(260, 27)
+layout_mode = 2
+mouse_default_cursor_shape = 2
+text = "COMBAT SOUND  ON"
+
+[node name="UiAudioButton" type="Button" parent="Panel/Margin/Content"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(260, 27)
+layout_mode = 2
+mouse_default_cursor_shape = 2
+text = "MENU SOUND  ON"
+
+[node name="ReturnButton" type="Button" parent="Panel/Margin/Content"]
+custom_minimum_size = Vector2(260, 30)
+layout_mode = 2
+mouse_default_cursor_shape = 2
+text = "RETURN TO SANCTUARY"
+
+[node name="QuitButton" type="Button" parent="Panel/Margin/Content"]
+custom_minimum_size = Vector2(260, 27)
+layout_mode = 2
+mouse_default_cursor_shape = 2
+text = "QUIT TO DESKTOP"
+
+[connection signal="pressed" from="Panel/Margin/Content/ResumeButton" to="." method="close_menu"]
+[connection signal="pressed" from="Panel/Margin/Content/MusicButton" to="." method="toggle_music"]
+[connection signal="pressed" from="Panel/Margin/Content/SfxButton" to="." method="toggle_sfx"]
+[connection signal="pressed" from="Panel/Margin/Content/UiAudioButton" to="." method="toggle_ui_audio"]
+[connection signal="pressed" from="Panel/Margin/Content/ReturnButton" to="." method="return_to_sanctuary"]
+[connection signal="pressed" from="Panel/Margin/Content/QuitButton" to="." method="quit_game"]

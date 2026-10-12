@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="WeaponHitAudioDefinition" load_steps=3 format=3]
+[ext_resource type="Script" path="res://data/weapons/weapon_hit_audio_definition.gd" id="1"]
+[ext_resource type="AudioStream" path="res://assets/audio/sfx/player/weapon_contact/greatsword_finisher.wav" id="2"]
+[resource]
+script = ExtResource("1")
+variations = Array[AudioStream]([ExtResource("2")])
+pitch = 0.9
+volume_db = -4.0

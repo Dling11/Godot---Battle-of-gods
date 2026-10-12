@@ -1,0 +1,41 @@
+[gd_resource type="Resource" script_class="RecipeDefinition" format=3 uid="uid://dmwepc2ms5ecd"]
+
+[ext_resource type="Script" uid="uid://ddkkkbe8622gd" path="res://data/crafting/recipes/recipe_definition.gd" id="1_recipe"]
+[ext_resource type="Script" uid="uid://bll3k2id0v40j" path="res://data/items/materials/material_stack_definition.gd" id="2_stack"]
+[ext_resource type="Resource" path="res://data/items/materials/forest/varkuun_core.tres" id="3_varkuun"]
+[ext_resource type="Resource" uid="uid://cudovbs2y3gpc" path="res://data/items/materials/forest/rootbound_core.tres" id="4_rootbound"]
+[ext_resource type="Resource" uid="uid://dbinq5oclqkgp" path="res://data/items/materials/forest/weathered_fittings.tres" id="5_fittings"]
+[ext_resource type="Resource" path="res://data/items/materials/forest/living_bark_plate.tres" id="6_bark"]
+
+[sub_resource type="Resource" id="Cost_varkuun"]
+script = ExtResource("2_stack")
+material = ExtResource("3_varkuun")
+quantity = 2
+
+[sub_resource type="Resource" id="Cost_rootbound"]
+script = ExtResource("2_stack")
+material = ExtResource("4_rootbound")
+quantity = 3
+
+[sub_resource type="Resource" id="Cost_fittings"]
+script = ExtResource("2_stack")
+material = ExtResource("5_fittings")
+quantity = 5
+
+[sub_resource type="Resource" id="Cost_bark"]
+script = ExtResource("2_stack")
+material = ExtResource("6_bark")
+quantity = 3
+
+[resource]
+script = ExtResource("1_recipe")
+recipe_id = &"forest_stage_5_varkuun_edge"
+display_name = "Varkuun Edge"
+description = "Bind Varkuun's core memory into King's existing sword form without replacing its visible blade."
+region_id = &"forest"
+tier = 2
+category = 1
+output_id = &"weapon_varkuun_edge_essence"
+ingredients = Array[ExtResource("2_stack")]([SubResource("Cost_varkuun"), SubResource("Cost_rootbound"), SubResource("Cost_fittings"), SubResource("Cost_bark")])
+unlock_id = &"forest_core_gear_crafting"
+gold_cost = 500

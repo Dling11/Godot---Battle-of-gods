@@ -1,0 +1,25 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://environment/props/woodland/woodland_prop.gd" id="1_qoly1"]
+[ext_resource type="Texture2D" path="res://assets/environment/forest/eastern_rot_renewal/rubble.png" id="2_mlnsy"]
+[ext_resource type="Script" path="res://gameplay/navigation/navigation_cutout.gd" id="3_5krxu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dwhvx"]
+size = Vector2(36, 18)
+
+[node name="Rubble" type="StaticBody2D" unique_id=1220156531]
+texture_filter = 1
+collision_mask = 0
+script = ExtResource("1_qoly1")
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=690101992]
+position = Vector2(0, -8.5)
+texture = ExtResource("2_mlnsy")
+
+[node name="Footprint" type="CollisionShape2D" parent="." unique_id=1645541413]
+position = Vector2(0, -2)
+shape = SubResource("RectangleShape2D_dwhvx")
+
+[node name="NavigationCutout" type="Node" parent="." unique_id=197860921 groups=["navigation_cutout"]]
+script = ExtResource("3_5krxu")
+derive_from_collision_shapes = true

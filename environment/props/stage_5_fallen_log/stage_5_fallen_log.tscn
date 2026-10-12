@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://c26k25bxn0vcy"]
+
+[ext_resource type="Texture2D" uid="uid://3jmqr7202bd3" path="res://assets/environment/forest/stage_5/props/stage_5_fallen_log_192x96.png" id="1_log"]
+[ext_resource type="Script" uid="uid://bpvdh5hx5ke8i" path="res://gameplay/navigation/navigation_cutout.gd" id="2_cutout"]
+
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_log"]
+points = PackedVector2Array(-75, -37, 83, -50, 95, -16, 84, -3, -60, 17, -84, -9)
+
+[node name="Stage5FallenLog" type="StaticBody2D" unique_id=1893929588]
+collision_mask = 6
+
+[node name="Shadow" type="Polygon2D" parent="." unique_id=1812687917]
+z_index = -2
+position = Vector2(0, -11)
+color = Color(0.025, 0.012, 0.022, 0.42)
+polygon = PackedVector2Array(-93, -16, -66, -25, 86, -55, 82, -46, 85, -41, 82, -31, 89, -21, 86, -13, 71, -4, 56, -4, 28, -4, -26, 6, -63, 9, -77, 8, -78, 0, -86, -3, -87, -10)
+
+[node name="Log" type="Sprite2D" parent="." unique_id=462034482]
+position = Vector2(0, -48)
+texture = ExtResource("1_log")
+
+[node name="Footprint" type="CollisionShape2D" parent="." unique_id=1214604010]
+position = Vector2(-6, -19)
+shape = SubResource("ConvexPolygonShape2D_log")
+
+[node name="NavigationCutout" type="Node" parent="." unique_id=1796964784 groups=["navigation_cutout"]]
+script = ExtResource("2_cutout")
+derive_from_collision_shapes = true

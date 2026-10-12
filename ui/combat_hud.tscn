@@ -1,0 +1,766 @@
+[gd_scene load_steps=20 format=3]
+
+[ext_resource type="Script" path="res://ui/combat_hud.gd" id="1"]
+[ext_resource type="Theme" path="res://assets/ui/themes/battle_of_gods_theme.tres" id="2_theme"]
+[ext_resource type="Texture2D" path="res://assets/ui/icons/status/icon_status_health_16x16.png" id="3_health"]
+[ext_resource type="Texture2D" path="res://assets/ui/icons/status/icon_status_experience_16x16.png" id="4_experience"]
+[ext_resource type="Texture2D" path="res://assets/ui/icons/economy/icon_currency_coin_16x16.png" id="5_coin"]
+[ext_resource type="Texture2D" path="res://assets/ui/player_readability/satchel.png" id="6_bag"]
+[ext_resource type="PackedScene" path="res://ui/skills/dash_bar_slot.tscn" id="7_dash_slot"]
+[ext_resource type="Texture2D" path="res://assets/ui/icons/combat/basic_attack_icon.tres" id="8_attack_icon"]
+[ext_resource type="Texture2D" path="res://assets/ui/icons/actions/icon_action_auto_all_24.svg" id="9_auto_icon"]
+[ext_resource type="Texture2D" path="res://assets/ui/icons/actions/icon_action_auto_skill_24.svg" id="10_auto_skill_icon"]
+[ext_resource type="Texture2D" path="res://assets/ui/hud/eclipse_bind/eclipse_frame_compact_720x104.png" id="11_eclipse_frame"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_panel"]
+bg_color = Color(0.035, 0.043, 0.063, 0.96)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.306, 0.247, 0.424, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_health"]
+bg_color = Color(0.55, 0.12, 0.16, 1)
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_experience"]
+bg_color = Color(0.25, 0.62, 0.86, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_action_tray"]
+bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_attack_cap"]
+bg_color = Color(0.055, 0.041, 0.067, 0.96)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.72, 0.66, 0.72, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_attack_state"]
+bg_color = Color(0.018, 0.015, 0.026, 0.96)
+border_width_top = 1
+border_color = Color(0.36, 0.24, 0.43, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_attack_interact"]
+bg_color = Color(0.55, 0.28, 0.76, 0.18)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.81, 0.62, 0.92, 0.95)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_enemy_roster"]
+bg_color = Color(0.035, 0.028, 0.045, 0.96)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.58, 0.25, 0.22, 0.92)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+shadow_color = Color(0.01, 0.005, 0.01, 0.58)
+shadow_size = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_target_portrait"]
+bg_color = Color(0.16, 0.055, 0.06, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.92, 0.22, 0.18, 0.95)
+corner_radius_top_left = 19
+corner_radius_top_right = 19
+corner_radius_bottom_right = 19
+corner_radius_bottom_left = 19
+
+[node name="CombatHUD" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme = ExtResource("2_theme")
+script = ExtResource("1")
+
+[node name="HealthPanel" type="PanelContainer" parent="."]
+offset_left = 12.0
+offset_top = 12.0
+offset_right = 192.0
+offset_bottom = 54.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_panel")
+
+[node name="Margin" type="MarginContainer" parent="HealthPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 2
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 2
+
+[node name="Stack" type="VBoxContainer" parent="HealthPanel/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 2
+
+[node name="Header" type="HBoxContainer" parent="HealthPanel/Margin/Stack"]
+layout_mode = 2
+theme_override_constants/separation = 3
+
+[node name="HealthIcon" type="TextureRect" parent="HealthPanel/Margin/Stack/Header"]
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 2
+texture = ExtResource("3_health")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="HealthLabel" type="Label" parent="HealthPanel/Margin/Stack/Header"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "HP  100 / 100"
+theme_override_colors/font_color = Color(1, 0.88, 0.82, 1)
+theme_override_font_sizes/font_size = 12
+
+[node name="HealthBar" type="ProgressBar" parent="HealthPanel/Margin/Stack"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(166, 8)
+layout_mode = 2
+value = 100.0
+show_percentage = false
+theme_override_styles/fill = SubResource("StyleBoxFlat_health")
+
+[node name="ProgressPanel" type="PanelContainer" parent="."]
+offset_left = 12.0
+offset_top = 60.0
+offset_right = 192.0
+offset_bottom = 101.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_panel")
+
+[node name="Margin" type="MarginContainer" parent="ProgressPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 3
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 3
+
+[node name="Stack" type="VBoxContainer" parent="ProgressPanel/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 1
+
+[node name="Header" type="HBoxContainer" parent="ProgressPanel/Margin/Stack"]
+layout_mode = 2
+
+[node name="ExperienceIcon" type="TextureRect" parent="ProgressPanel/Margin/Stack/Header"]
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 2
+texture = ExtResource("4_experience")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="LevelLabel" type="Label" parent="ProgressPanel/Margin/Stack/Header"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "LEVEL 1"
+theme_override_colors/font_color = Color(0.76, 0.9, 1, 1)
+theme_override_font_sizes/font_size = 9
+
+[node name="Spacer" type="Control" parent="ProgressPanel/Margin/Stack/Header"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="CoinIcon" type="TextureRect" parent="ProgressPanel/Margin/Stack/Header"]
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 2
+texture = ExtResource("5_coin")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="CoinLabel" type="Label" parent="ProgressPanel/Margin/Stack/Header"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "COINS 0"
+theme_override_colors/font_color = Color(0.94, 0.76, 0.34, 1)
+theme_override_font_sizes/font_size = 8
+
+[node name="ExperienceBar" type="ProgressBar" parent="ProgressPanel/Margin/Stack"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 4)
+layout_mode = 2
+show_percentage = false
+theme_override_styles/fill = SubResource("StyleBoxFlat_experience")
+
+[node name="ExperienceLabel" type="Label" parent="ProgressPanel/Margin/Stack"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "0 / 20 XP"
+horizontal_alignment = 1
+theme_override_colors/font_color = Color(0.64, 0.78, 0.9, 1)
+theme_override_font_sizes/font_size = 7
+
+[node name="CharacterMenuButton" type="Button" parent="."]
+unique_name_in_owner = true
+offset_left = 12.0
+offset_top = 107.0
+offset_right = 192.0
+offset_bottom = 139.0
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+focus_mode = 0
+tooltip_text = "Inspect owned gear and materials, search the bag, and equip items (Tab)"
+text = "CHARACTER & BAG  [TAB]"
+icon = ExtResource("6_bag")
+icon_max_width = 24
+theme_override_colors/font_color = Color(0.86, 0.84, 0.7, 1)
+theme_override_font_sizes/font_size = 9
+
+[node name="OptionsButton" type="Button" parent="."]
+unique_name_in_owner = true
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -126.0
+offset_top = 12.0
+offset_right = -12.0
+offset_bottom = 44.0
+grow_horizontal = 0
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+focus_mode = 0
+tooltip_text = "Open Menu (Esc)"
+text = "MENU  [ESC]"
+theme_override_colors/font_color = Color(0.86, 0.84, 0.7, 1)
+theme_override_font_sizes/font_size = 9
+
+[node name="LootToastPanel" type="PanelContainer" parent="."]
+unique_name_in_owner = true
+visible = false
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -250.0
+offset_top = 52.0
+offset_right = -12.0
+offset_bottom = 96.0
+grow_horizontal = 0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_panel")
+
+[node name="Margin" type="MarginContainer" parent="LootToastPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 7
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 7
+theme_override_constants/margin_bottom = 4
+
+[node name="Content" type="HBoxContainer" parent="LootToastPanel/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 7
+
+[node name="LootToastIcon" type="TextureRect" parent="LootToastPanel/Margin/Content"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(28, 28)
+layout_mode = 2
+expand_mode = 3
+stretch_mode = 5
+
+[node name="Text" type="VBoxContainer" parent="LootToastPanel/Margin/Content"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 0
+
+[node name="LootToastLabel" type="Label" parent="LootToastPanel/Margin/Content/Text"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "ROOT FIBER  ×2"
+theme_override_colors/font_color = Color(0.9, 0.88, 0.72, 1)
+theme_override_font_sizes/font_size = 9
+
+[node name="LootToastSourceLabel" type="Label" parent="LootToastPanel/Margin/Content/Text"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "ENEMY DROP"
+theme_override_colors/font_color = Color(0.5, 0.62, 0.48, 1)
+theme_override_font_sizes/font_size = 7
+
+[node name="BlockedLabel" type="Label" parent="."]
+unique_name_in_owner = true
+visible = false
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -42.0
+offset_top = 80.0
+offset_right = 42.0
+offset_bottom = 103.0
+text = "IMMUNE"
+horizontal_alignment = 1
+theme_override_colors/font_color = Color(0.45, 0.8, 1, 1)
+theme_override_font_sizes/font_size = 16
+
+[node name="StageLabel" type="Label" parent="."]
+unique_name_in_owner = true
+visible = false
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -150.0
+offset_top = 14.0
+offset_right = 150.0
+offset_bottom = 34.0
+text = "WAVE 1/3"
+horizontal_alignment = 1
+theme_override_colors/font_color = Color(0.88, 0.9, 0.72, 1)
+theme_override_font_sizes/font_size = 12
+
+[node name="TargetPanel" type="PanelContainer" parent="."]
+unique_name_in_owner = true
+visible = false
+offset_left = 12.0
+offset_top = 145.0
+offset_right = 192.0
+offset_bottom = 195.0
+mouse_filter = 1
+theme_override_styles/panel = SubResource("StyleBoxFlat_panel")
+
+[node name="Margin" type="MarginContainer" parent="TargetPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 7
+theme_override_constants/margin_top = 3
+theme_override_constants/margin_right = 7
+theme_override_constants/margin_bottom = 3
+
+[node name="Content" type="HBoxContainer" parent="TargetPanel/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="PortraitFrame" type="Panel" parent="TargetPanel/Margin/Content"]
+custom_minimum_size = Vector2(38, 38)
+layout_mode = 2
+clip_contents = true
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_target_portrait")
+
+[node name="TargetPortrait" type="TextureRect" parent="TargetPanel/Margin/Content/PortraitFrame"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Stack" type="VBoxContainer" parent="TargetPanel/Margin/Content"]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+theme_override_constants/separation = 1
+
+[node name="Header" type="HBoxContainer" parent="TargetPanel/Margin/Content/Stack"]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="TargetNameLabel" type="Label" parent="TargetPanel/Margin/Content/Stack/Header"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "TARGET"
+theme_override_colors/font_color = Color(1, 0.78, 0.34, 1)
+theme_override_font_sizes/font_size = 9
+
+[node name="TargetHealthLabel" type="Label" parent="TargetPanel/Margin/Content/Stack/Header"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "100 / 100"
+theme_override_colors/font_color = Color(0.9, 0.86, 0.78, 1)
+theme_override_font_sizes/font_size = 8
+
+[node name="TargetHealthBar" type="ProgressBar" parent="TargetPanel/Margin/Content/Stack"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 7)
+layout_mode = 2
+show_percentage = false
+theme_override_styles/fill = SubResource("StyleBoxFlat_health")
+
+[node name="TargetCloseButton" type="Button" parent="TargetPanel/Margin/Content"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(18, 26)
+layout_mode = 2
+mouse_default_cursor_shape = 2
+focus_mode = 0
+tooltip_text = "Stop targeting (Esc)"
+text = "×"
+theme_override_colors/font_color = Color(1, 0.55, 0.48, 1)
+theme_override_font_sizes/font_size = 15
+
+[node name="EnemyRosterPanel" type="PanelContainer" parent="."]
+unique_name_in_owner = true
+visible = false
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -212.0
+offset_top = 56.0
+offset_right = -12.0
+offset_bottom = 272.0
+grow_horizontal = 0
+mouse_filter = 1
+theme_override_styles/panel = SubResource("StyleBoxFlat_enemy_roster")
+
+[node name="Margin" type="MarginContainer" parent="EnemyRosterPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 3
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 3
+
+[node name="Stack" type="VBoxContainer" parent="EnemyRosterPanel/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 2
+
+[node name="Title" type="Label" parent="EnemyRosterPanel/Margin/Stack"]
+layout_mode = 2
+text = "ENEMIES  •  CLICK / DOUBLE-CLICK"
+theme_override_colors/font_color = Color(1, 0.65, 0.34, 1)
+theme_override_font_sizes/font_size = 9
+
+[node name="AutoControls" type="HBoxContainer" parent="EnemyRosterPanel/Margin/Stack"]
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="AutoFarmButton" type="Button" parent="EnemyRosterPanel/Margin/Stack/AutoControls"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(90, 24)
+layout_mode = 2
+mouse_default_cursor_shape = 2
+focus_mode = 0
+tooltip_text = "Automatically engage every enemy in this live roster"
+icon = ExtResource("9_auto_icon")
+icon_max_width = 16
+text = "AUTO ALL"
+theme_override_font_sizes/font_size = 8
+
+[node name="AutoSkillButton" type="Button" parent="EnemyRosterPanel/Margin/Stack/AutoControls"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(90, 24)
+layout_mode = 2
+mouse_default_cursor_shape = 2
+focus_mode = 0
+tooltip_text = "Let Auto use ready Skills 1-4 against its current target"
+icon = ExtResource("10_auto_skill_icon")
+icon_max_width = 16
+text = "AUTO SKILL"
+theme_override_font_sizes/font_size = 8
+
+[node name="EnemyRosterScroll" type="ScrollContainer" parent="EnemyRosterPanel/Margin/Stack"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 160)
+layout_mode = 2
+horizontal_scroll_mode = 0
+metadata/_edit_group_ = true
+
+[node name="EnemyRosterRows" type="VBoxContainer" parent="EnemyRosterPanel/Margin/Stack/EnemyRosterScroll"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 2
+
+[node name="SpawnIndicator" type="Label" parent="."]
+unique_name_in_owner = true
+visible = false
+offset_right = 20.0
+offset_bottom = 20.0
+text = "▲"
+horizontal_alignment = 1
+theme_override_colors/font_color = Color(0.92, 0.42, 0.25, 1)
+theme_override_font_sizes/font_size = 14
+
+[node name="InteractionPanel" type="PanelContainer" parent="."]
+unique_name_in_owner = true
+visible = false
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -100.0
+offset_top = -116.0
+offset_right = 100.0
+offset_bottom = -88.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_panel")
+
+[node name="Margin" type="MarginContainer" parent="InteractionPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 7
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 7
+theme_override_constants/margin_bottom = 4
+
+[node name="Content" type="HBoxContainer" parent="InteractionPanel/Margin"]
+layout_mode = 2
+alignment = 1
+theme_override_constants/separation = 5
+
+[node name="InteractionIcon" type="TextureRect" parent="InteractionPanel/Margin/Content"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="InteractionLabel" type="Label" parent="InteractionPanel/Margin/Content"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "PRESS F TO ENTER PORTAL"
+horizontal_alignment = 1
+vertical_alignment = 1
+theme_override_colors/font_color = Color(0.84, 0.76, 1, 1)
+theme_override_font_sizes/font_size = 11
+
+[node name="EclipseVeil" type="ColorRect" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -326.0
+offset_top = -76.0
+offset_right = 326.0
+offset_bottom = -19.0
+grow_horizontal = 2
+mouse_filter = 2
+color = Color(0.015, 0.013, 0.022, 0.78)
+
+[node name="EclipseFrame" type="TextureRect" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -360.0
+offset_top = -104.0
+offset_right = 360.0
+offset_bottom = 0.0
+grow_horizontal = 2
+mouse_filter = 2
+texture_filter = 1
+texture = ExtResource("11_eclipse_frame")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="ActionTray" type="PanelContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -324.0
+offset_top = -75.0
+offset_right = 324.0
+offset_bottom = -21.0
+grow_horizontal = 2
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_action_tray")
+
+[node name="Margin" type="MarginContainer" parent="ActionTray"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="Actions" type="HBoxContainer" parent="ActionTray/Margin"]
+layout_mode = 2
+mouse_filter = 2
+alignment = 1
+theme_override_constants/separation = 3
+
+[node name="DashBarSlot" parent="ActionTray/Margin/Actions" instance=ExtResource("7_dash_slot")]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="DashSkillGap" type="Control" parent="ActionTray/Margin/Actions"]
+custom_minimum_size = Vector2(8, 0)
+layout_mode = 2
+mouse_filter = 2
+
+[node name="SkillBar" type="HBoxContainer" parent="ActionTray/Margin/Actions"]
+unique_name_in_owner = true
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 3
+
+[node name="SkillAttackGap" type="Control" parent="ActionTray/Margin/Actions"]
+custom_minimum_size = Vector2(8, 0)
+layout_mode = 2
+mouse_filter = 2
+
+[node name="AttackCap" type="Panel" parent="ActionTray/Margin/Actions"]
+custom_minimum_size = Vector2(54, 44)
+layout_mode = 2
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_attack_cap")
+
+[node name="AttackIcon" type="TextureRect" parent="ActionTray/Margin/Actions/AttackCap"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -12.0
+offset_top = -16.0
+offset_right = 12.0
+offset_bottom = 8.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("8_attack_icon")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="AttackKey" type="Label" parent="ActionTray/Margin/Actions/AttackCap"]
+layout_mode = 1
+offset_left = 5.0
+offset_top = 1.0
+offset_right = 27.0
+offset_bottom = 13.0
+mouse_filter = 2
+text = "LMB"
+theme_override_colors/font_color = Color(0.92, 0.87, 0.93, 1)
+theme_override_colors/font_outline_color = Color(0.03, 0.02, 0.01, 1)
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 8
+
+[node name="AttackStatePlate" type="Panel" parent="ActionTray/Margin/Actions/AttackCap"]
+layout_mode = 1
+anchors_preset = 12
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -15.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_attack_state")
+
+[node name="AttackLabel" type="Label" parent="ActionTray/Margin/Actions/AttackCap"]
+layout_mode = 1
+anchors_preset = 12
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_top = -15.0
+offset_right = -1.0
+offset_bottom = -2.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+text = "ATK"
+horizontal_alignment = 1
+theme_override_colors/font_color = Color(0.91, 0.83, 0.97, 1)
+theme_override_colors/font_outline_color = Color(0.03, 0.02, 0.01, 1)
+theme_override_constants/outline_size = 1
+theme_override_font_sizes/font_size = 10
+
+[node name="AttackOuterAccent" type="ColorRect" parent="ActionTray/Margin/Actions/AttackCap"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -4.0
+offset_top = 4.0
+offset_right = -2.0
+offset_bottom = 27.0
+grow_horizontal = 0
+mouse_filter = 2
+color = Color(0.67, 0.35, 0.84, 0.92)
+
+[node name="AttackAccentTop" type="ColorRect" parent="ActionTray/Margin/Actions/AttackCap"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -49.0
+offset_top = 3.0
+offset_right = -39.0
+offset_bottom = 4.0
+grow_horizontal = 0
+mouse_filter = 2
+color = Color(0.67, 0.35, 0.84, 0.92)
+
+[node name="AttackButton" type="Button" parent="ActionTray/Margin/Actions/AttackCap"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+focus_mode = 0
+tooltip_text = "Left-click empty ground to attack • double-click an enemy to engage"
+flat = true
+theme_override_styles/hover = SubResource("StyleBoxFlat_attack_interact")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_attack_interact")
+
+[node name="DefeatPanel" type="PanelContainer" parent="."]
+unique_name_in_owner = true
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -120.0
+offset_top = -42.0
+offset_right = 120.0
+offset_bottom = 42.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_panel")
+
+[node name="Margin" type="MarginContainer" parent="DefeatPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 14
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 14
+
+[node name="Stack" type="VBoxContainer" parent="DefeatPanel/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Fallen" type="Label" parent="DefeatPanel/Margin/Stack"]
+layout_mode = 2
+text = "FALLEN"
+horizontal_alignment = 1
+theme_override_colors/font_color = Color(0.839, 0.41, 0.38, 1)
+theme_override_font_sizes/font_size = 20
+
+[node name="Restart" type="Label" parent="DefeatPanel/Margin/Stack"]
+layout_mode = 2
+text = "Press R / gamepad north button to return to Sanctuary"
+horizontal_alignment = 1
+
+[node name="ResolveLabel" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -190.0
+offset_top = -123.0
+offset_right = 190.0
+offset_bottom = -107.0
+mouse_filter = 1
+theme_override_colors/font_color = Color(0.82, 0.94, 1.0, 1)
+theme_override_colors/font_outline_color = Color(0.01, 0.02, 0.03, 1)
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 11
+horizontal_alignment = 1
+text = "RESOLVE 0/3 · LAND BASIC HITS"

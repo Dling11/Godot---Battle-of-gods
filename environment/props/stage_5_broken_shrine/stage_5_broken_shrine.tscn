@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://bmalc3acxni6o"]
+
+[ext_resource type="Texture2D" uid="uid://db2q66rb0jxgh" path="res://assets/environment/forest/stage_5/props/stage_5_broken_shrine_320x192.png" id="1_shrine"]
+[ext_resource type="Script" uid="uid://bpvdh5hx5ke8i" path="res://gameplay/navigation/navigation_cutout.gd" id="2_cutout"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_left"]
+size = Vector2(87, 101)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_right"]
+size = Vector2(93, 99)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_left"]
+polygon = PackedVector2Array(-148, -18, -156, -38, -141, -79, -119, -98, -101, -175, -89, -156, -51, -144, -46, -5)
+
+[node name="Stage5BrokenShrine" type="StaticBody2D" unique_id=632242364]
+collision_mask = 6
+
+[node name="Shadow" type="Sprite2D" parent="." unique_id=1836586346]
+modulate = Color(0.025, 0.012, 0.025, 0.3)
+z_index = -2
+position = Vector2(0, -24.640003)
+scale = Vector2(0.92, 0.24624997)
+texture = ExtResource("1_shrine")
+
+[node name="Shrine" type="Sprite2D" parent="." unique_id=826250951]
+position = Vector2(0, -96)
+texture = ExtResource("1_shrine")
+
+[node name="LeftMass" type="CollisionShape2D" parent="." unique_id=200693478]
+position = Vector2(-108.5, -54.5)
+shape = SubResource("RectangleShape2D_left")
+
+[node name="RightMass" type="CollisionShape2D" parent="." unique_id=1665382954]
+position = Vector2(101.5, -54.5)
+shape = SubResource("RectangleShape2D_right")
+
+[node name="LeftOccluder" type="LightOccluder2D" parent="." unique_id=669314115]
+occluder = SubResource("OccluderPolygon2D_left")
+
+[node name="RightOccluder" type="LightOccluder2D" parent="." unique_id=1648322956]
+scale = Vector2(-1, 1)
+occluder = SubResource("OccluderPolygon2D_left")
+
+[node name="NavigationCutout" type="Node" parent="." unique_id=126882056 groups=["navigation_cutout"]]
+script = ExtResource("2_cutout")
+derive_from_collision_shapes = true

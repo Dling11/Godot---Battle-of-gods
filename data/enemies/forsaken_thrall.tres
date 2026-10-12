@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="EnemyDefinition" load_steps=2 format=3 uid="uid://d2fw7lw1r1tdv"]
+
+[ext_resource type="Script" uid="uid://c5yp0kfbjt25e" path="res://data/enemies/enemy_definition.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/characters/enemies/portraits/forsaken_thrall_portrait_96x96.png" id="2_portrait"]
+
+[resource]
+script = ExtResource("1")
+enemy_id = &"forsaken_thrall"
+display_name = "Forsaken Thrall"
+portrait = ExtResource("2_portrait")
+move_speed = 58.0
+acceleration = 520.0
+movement_footprint_radius = 7.0
+crowd_separation_radius = 32.0
+attack_range = 36.0
+attack_damage = 18.0
+experience_reward = 15
+coin_reward = 3
+crowd_control_tier = 0

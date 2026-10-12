@@ -1,0 +1,25 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://environment/props/woodland/woodland_prop.gd" id="1_ckbnp"]
+[ext_resource type="Texture2D" path="res://assets/environment/forest/dead_forest_renewal/rubble.png" id="2_vpdrp"]
+[ext_resource type="Script" path="res://gameplay/navigation/navigation_cutout.gd" id="3_awq27"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hatid"]
+size = Vector2(32, 18)
+
+[node name="Rubble" type="StaticBody2D" unique_id=1951973187]
+texture_filter = 1
+collision_mask = 0
+script = ExtResource("1_ckbnp")
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=814421685]
+position = Vector2(0, -10)
+texture = ExtResource("2_vpdrp")
+
+[node name="Footprint" type="CollisionShape2D" parent="." unique_id=163471199]
+position = Vector2(0, -2)
+shape = SubResource("RectangleShape2D_hatid")
+
+[node name="NavigationCutout" type="Node" parent="." unique_id=2089062811 groups=["navigation_cutout"]]
+script = ExtResource("3_awq27")
+derive_from_collision_shapes = true

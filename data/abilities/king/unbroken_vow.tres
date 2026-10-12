@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="UnbrokenVowDefinition" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://data/abilities/king/unbroken_vow_definition.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/ui/icons/combat/unbroken_vow_icon.tres" id="2"]
+
+[resource]
+script = ExtResource("1")
+ability_id = &"unbroken_vow"
+display_name = "Unbroken Vow"
+hud_name = "VOW"
+description = "A short pressure release forms a protective shield and empowers King's attacks."
+icon = ExtResource("2")
+activation_mode = 2
+wind_up_seconds = 0.16
+active_seconds = 0.04
+recovery_seconds = 0.12
+cooldown_seconds = 20.0

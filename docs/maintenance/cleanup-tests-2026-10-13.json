@@ -1,0 +1,2047 @@
+{
+  "date": "2026-10-13",
+  "scripts": 134,
+  "passed": 134,
+  "assertion_or_execution_failures": 0,
+  "with_teardown_warnings": 54,
+  "results": [
+    {
+      "script": "ability_input_buffer_smoke",
+      "log": "ability_input_buffer_smoke.log",
+      "exit": 0,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "",
+        "Short latest-intent combat buffer smoke test passed."
+      ],
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "armored_hog_smoke",
+      "exit": 0,
+      "seconds": 3.43,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "Armored Hog art, guard, charge, reaction, and audio smoke test passed."
+      ],
+      "log": "armored_hog_smoke.log",
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "armor_mitigation_smoke",
+      "exit": 0,
+      "seconds": 2.24,
+      "errors": [],
+      "tail": [
+        "Reusable armor mitigation and Varkuun armor smoke test passed.",
+        "WARNING: 2 ObjectDB instances were leaked at exit (run with `--verbose` for details).",
+        "   at: cleanup (core/object/object.cpp:2536)",
+        "ERROR: 1 resources still in use at exit (run with --verbose for details).",
+        "   at: clear (core/io/resource.cpp:822)"
+      ],
+      "log": "armor_mitigation_smoke.log",
+      "teardown_warnings": true,
+      "completion_marker": true
+    },
+    {
+      "script": "assisted_combat_targeting_smoke",
+      "exit": 0,
+      "seconds": 3.29,
+      "errors": [],
+      "tail": [
+        "Assisted combat targeting smoke test passed.",
+        "WARNING: 2 ObjectDB instances were leaked at exit (run with `--verbose` for details).",
+        "   at: cleanup (core/object/object.cpp:2536)",
+        "ERROR: 1 resources still in use at exit (run with --verbose for details).",
+        "   at: clear (core/io/resource.cpp:822)"
+      ],
+      "log": "assisted_combat_targeting_smoke.log",
+      "teardown_warnings": true,
+      "completion_marker": true
+    },
+    {
+      "script": "audio_director_smoke",
+      "exit": 0,
+      "seconds": 3.83,
+      "errors": [],
+      "tail": [
+        "Audio director smoke test passed.",
+        "WARNING: 4 ObjectDB instances were leaked at exit (run with `--verbose` for details).",
+        "   at: cleanup (core/object/object.cpp:2536)",
+        "ERROR: 2 resources still in use at exit (run with --verbose for details).",
+        "   at: clear (core/io/resource.cpp:822)"
+      ],
+      "log": "audio_director_smoke.log",
+      "teardown_warnings": true,
+      "completion_marker": true
+    },
+    {
+      "script": "auto_combat_smoke",
+      "exit": 0,
+      "seconds": 3.01,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "Directional attack and optional auto-combat smoke test passed."
+      ],
+      "log": "auto_combat_smoke.log",
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "axe_trail_edge_smoke",
+      "exit": 0,
+      "seconds": 2.18,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "AXE_TRAIL_EDGE checks=25 failures=0"
+      ],
+      "log": "axe_trail_edge_smoke.log",
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "basic_attack_repeat_smoke",
+      "exit": 0,
+      "seconds": 3.35,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "Basic attack repeat cadence smoke test passed."
+      ],
+      "log": "basic_attack_repeat_smoke.log",
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "biome_audio_smoke",
+      "exit": 0,
+      "seconds": 13.47,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "BIOME_AUDIO_RENDERED: 24 checks, 0 failures"
+      ],
+      "log": "biome_audio_smoke.log",
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "boss_health_hud_smoke",
+      "exit": 0,
+      "seconds": 3.77,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "Reusable top-screen boss HUD, delayed damage, phase thresholds, arena binding, and local-bar suppression passed."
+      ],
+      "log": "boss_health_hud_smoke.log",
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "bramble_spitter_smoke",
+      "exit": 0,
+      "seconds": 7.09,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "Bramble Spitter smoke test passed."
+      ],
+      "log": "bramble_spitter_smoke.log",
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "character_menu_smoke",
+      "exit": 0,
+      "seconds": 3.85,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "Character menu smoke test passed."
+      ],
+      "log": "character_menu_smoke_rerun.log",
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "combat_audio_smoke",
+      "exit": 0,
+      "seconds": 3.69,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "Combat audio smoke test passed."
+      ],
+      "log": "combat_audio_smoke.log",
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "combat_feedback_smoke",
+      "exit": 0,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "Combat feedback smoke test passed."
+      ],
+      "log": "combat_feedback_smoke_final.log",
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "combat_foot_aura_smoke",
+      "exit": 0,
+      "seconds": 3.51,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "Combat footprint aura smoke test passed."
+      ],
+      "log": "combat_foot_aura_smoke.log",
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "combat_impact_review_smoke",
+      "exit": 0,
+      "seconds": 8.11,
+      "errors": [],
+      "tail": [
+        "TYPED_REVIEW kind=PURE accepted=11.0",
+        "COMBAT_IMPACT_REVIEW checks=46 failures=0",
+        "WARNING: 10 ObjectDB instances were leaked at exit (run with `--verbose` for details).",
+        "   at: cleanup (core/object/object.cpp:2536)",
+        "ERROR: 3 resources still in use at exit (run with --verbose for details).",
+        "   at: clear (core/io/resource.cpp:822)"
+      ],
+      "log": "combat_impact_review_smoke_rerun.log",
+      "teardown_warnings": true,
+      "completion_marker": true
+    },
+    {
+      "script": "combat_lab_sidebar_smoke",
+      "exit": 0,
+      "seconds": 5.58,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "COMBAT_LAB_SIDEBAR: 30 checks, 0 failures"
+      ],
+      "log": "combat_lab_sidebar_smoke.log",
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "combat_lab_smoke",
+      "exit": 0,
+      "seconds": 4.85,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "Combat Lab admin boundary, complete roster including Examiner trial, reward stripping, arena switching, AI, x1/x4/x8 spawning, clear, and invincibility passed."
+      ],
+      "log": "combat_lab_smoke.log",
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "crafting_service_smoke",
+      "log": "crafting_service_smoke.log",
+      "exit": 0,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "",
+        "Atomic crafting service smoke test passed."
+      ],
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "critical_feedback_visual_smoke",
+      "exit": 0,
+      "seconds": 5.81,
+      "errors": [],
+      "tail": [
+        "CRITICAL_ACTUAL_HIT critical=true damage=28.5 text=CRIT 29 font=17",
+        "CRITICAL_FEEDBACK_VISUAL checks=14 failures=0",
+        "WARNING: 6 ObjectDB instances were leaked at exit (run with `--verbose` for details).",
+        "   at: cleanup (core/object/object.cpp:2536)",
+        "ERROR: 1 resources still in use at exit (run with --verbose for details).",
+        "   at: clear (core/io/resource.cpp:822)"
+      ],
+      "log": "critical_feedback_visual_smoke_rerun.log",
+      "teardown_warnings": true,
+      "completion_marker": true
+    },
+    {
+      "script": "critical_hit_smoke",
+      "exit": 0,
+      "seconds": 2.74,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "Varkuun Edge critical authority, feedback, and percentage caps passed."
+      ],
+      "log": "critical_hit_smoke.log",
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "critical_number_readability_smoke",
+      "exit": 0,
+      "seconds": 2.3,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "CRITICAL_NUMBER_METRICS normal_font=11 critical_font=17 normal_height=16.0 critical_height=24.0",
+        "CRITICAL_NUMBER_READABILITY checks=6 failures=0"
+      ],
+      "log": "critical_number_readability_smoke.log",
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "dash_attack_smoke",
+      "exit": 0,
+      "seconds": 3.74,
+      "errors": [],
+      "tail": [
+        "Buffered dash-to-basic-attack smoke test passed.",
+        "WARNING: 2 ObjectDB instances were leaked at exit (run with `--verbose` for details).",
+        "   at: cleanup (core/object/object.cpp:2536)",
+        "ERROR: 1 resources still in use at exit (run with --verbose for details).",
+        "   at: clear (core/io/resource.cpp:822)"
+      ],
+      "log": "dash_attack_smoke.log",
+      "teardown_warnings": true,
+      "completion_marker": true
+    },
+    {
+      "script": "debug_unlimited_skills_smoke",
+      "exit": 0,
+      "seconds": 3.11,
+      "errors": [],
+      "tail": [
+        "F9 unlimited-skills debug smoke test passed.",
+        "WARNING: 4 ObjectDB instances were leaked at exit (run with `--verbose` for details).",
+        "   at: cleanup (core/object/object.cpp:2536)",
+        "ERROR: 2 resources still in use at exit (run with --verbose for details).",
+        "   at: clear (core/io/resource.cpp:822)"
+      ],
+      "log": "debug_unlimited_skills_smoke.log",
+      "teardown_warnings": true,
+      "completion_marker": true
+    },
+    {
+      "script": "earthsplitter_horde_feedback_smoke",
+      "exit": 0,
+      "seconds": 5.3,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "EARTHSPLITTER_HORDE {\"contact_ticks\":7,\"contacts\":8,\"draw_calls_peak\":225,\"form\":0,\"frame_max_ms\":15.886,\"frame_p50_ms\":13.304,\"frame_p95_ms\":14.508,\"global_pauses\":0,\"nodes_peak\":399,\"pass\":\"first\",\"paused_ms\":0.0,\"physics_peak_ms\":3.052,\"process_peak_ms\":15.209,\"targets\":8}"
+      ],
+      "log": "earthsplitter_horde_feedback_smoke.log",
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "editor_preview_backdrop_smoke",
+      "exit": 0,
+      "seconds": 2.29,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "Editor preview backdrop smoke test passed."
+      ],
+      "log": "editor_preview_backdrop_smoke.log",
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "eira_curriculum_smoke",
+      "exit": 0,
+      "seconds": 6.41,
+      "errors": [],
+      "tail": [
+        "EIRA_CURRICULUM: 91 checks, 0 failures",
+        "WARNING: 6 ObjectDB instances were leaked at exit (run with `--verbose` for details).",
+        "   at: cleanup (core/object/object.cpp:2536)",
+        "ERROR: 3 resources still in use at exit (run with --verbose for details).",
+        "   at: clear (core/io/resource.cpp:822)"
+      ],
+      "log": "eira_curriculum_smoke.log",
+      "teardown_warnings": true,
+      "completion_marker": true
+    },
+    {
+      "script": "encounter_reinforcement_smoke",
+      "exit": 0,
+      "seconds": 14.54,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "Encounter reinforcement smoke test passed."
+      ],
+      "log": "encounter_reinforcement_smoke.log",
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "encounter_wave_structure_smoke",
+      "log": "encounter_wave_structure_smoke.log",
+      "exit": 0,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "",
+        "Encounter wave structure smoke test passed."
+      ],
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "enemy_arrival_review_smoke",
+      "exit": 0,
+      "seconds": 7.01,
+      "errors": [],
+      "tail": [
+        "ENEMY_ARRIVAL_REVIEW checks=30 failures=0",
+        "WARNING: 6 ObjectDB instances were leaked at exit (run with `--verbose` for details).",
+        "   at: cleanup (core/object/object.cpp:2536)",
+        "ERROR: 1 resources still in use at exit (run with --verbose for details).",
+        "   at: clear (core/io/resource.cpp:822)"
+      ],
+      "log": "enemy_arrival_review_smoke.log",
+      "teardown_warnings": true,
+      "completion_marker": true
+    },
+    {
+      "script": "enemy_crowd_control_smoke",
+      "exit": 0,
+      "seconds": 4.65,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "Enemy Light stagger and Boss crowd-control resistance smoke test passed."
+      ],
+      "log": "enemy_crowd_control_smoke.log",
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "enemy_crowd_separation_smoke",
+      "exit": 0,
+      "seconds": 5.14,
+      "errors": [],
+      "tail": [
+        "Enemy crowd separation smoke test passed. Minimum spacing: 21.52 px.",
+        "WARNING: 4 ObjectDB instances were leaked at exit (run with `--verbose` for details).",
+        "   at: cleanup (core/object/object.cpp:2536)",
+        "ERROR: 1 resources still in use at exit (run with --verbose for details).",
+        "   at: clear (core/io/resource.cpp:822)"
+      ],
+      "log": "enemy_crowd_separation_smoke.log",
+      "teardown_warnings": true,
+      "completion_marker": true
+    },
+    {
+      "script": "enemy_footprint_smoke",
+      "log": "enemy_footprint_smoke.log",
+      "exit": 0,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "",
+        "Enemy footprint smoke test passed for five archetypes."
+      ],
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "enemy_health_bar_smoke",
+      "exit": 0,
+      "seconds": 2.25,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "Enemy health bar smoke test passed."
+      ],
+      "log": "enemy_health_bar_smoke.log",
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "enemy_obstacle_behavior_smoke",
+      "exit": 0,
+      "seconds": 4.08,
+      "errors": [],
+      "tail": [
+        "Enemy obstacle behavior smoke test passed.",
+        "WARNING: 4 ObjectDB instances were leaked at exit (run with `--verbose` for details).",
+        "   at: cleanup (core/object/object.cpp:2536)",
+        "ERROR: 1 resources still in use at exit (run with --verbose for details).",
+        "   at: clear (core/io/resource.cpp:822)"
+      ],
+      "log": "enemy_obstacle_behavior_smoke.log",
+      "teardown_warnings": true,
+      "completion_marker": true
+    },
+    {
+      "script": "environment_navigation_smoke",
+      "exit": 0,
+      "seconds": 5.9,
+      "errors": [],
+      "tail": [
+        "STAGE_1_ENVIRONMENT: 183 checks, 0 failures",
+        "WARNING: 4 ObjectDB instances were leaked at exit (run with `--verbose` for details).",
+        "   at: cleanup (core/object/object.cpp:2536)",
+        "ERROR: 1 resources still in use at exit (run with --verbose for details).",
+        "   at: clear (core/io/resource.cpp:822)"
+      ],
+      "log": "environment_navigation_smoke.log",
+      "teardown_warnings": true,
+      "completion_marker": true
+    },
+    {
+      "script": "equipment_preview_smoke",
+      "exit": 0,
+      "seconds": 2.08,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "King equipment catalog smoke test passed."
+      ],
+      "log": "equipment_preview_smoke.log",
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "examiner_ascendant_smoke",
+      "exit": 0,
+      "seconds": 4.96,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "Examiner Ascendant: seal absorption/overflow/stun, cancel/failure, fixed Sun geometry, phase tuning, Crownfall, reset: PASS"
+      ],
+      "log": "examiner_ascendant_smoke.log",
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "examiner_effects_smoke",
+      "exit": 0,
+      "seconds": 4.07,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "Examiner VFX: all eight frames reachable, warning/contact timing and cleanup passed."
+      ],
+      "log": "examiner_effects_smoke.log",
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "examiner_firmament_smoke",
+      "exit": 0,
+      "seconds": 6.62,
+      "errors": [],
+      "tail": [
+        "Examiner Firmament: gate, break/timeout, 24 random meteors, local openings, dodge, prediction, pause/death cleanup: PASS",
+        "WARNING: 7 ObjectDB instances were leaked at exit (run with `--verbose` for details).",
+        "   at: cleanup (core/object/object.cpp:2536)",
+        "ERROR: 3 resources still in use at exit (run with --verbose for details).",
+        "   at: clear (core/io/resource.cpp:822)"
+      ],
+      "log": "examiner_firmament_smoke.log",
+      "teardown_warnings": true,
+      "completion_marker": true
+    },
+    {
+      "script": "examiner_rain_movement_smoke",
+      "exit": 0,
+      "seconds": 5.55,
+      "errors": [],
+      "tail": [
+        "Rain movement simulation: 30 seeds, center/corner starts, 24 meteors, at most 6 armed; stationary/moving damage=[24000.0, 0.0]; failures=0",
+        "WARNING: 4 ObjectDB instances were leaked at exit (run with `--verbose` for details).",
+        "   at: cleanup (core/object/object.cpp:2536)",
+        "ERROR: 2 resources still in use at exit (run with --verbose for details).",
+        "   at: clear (core/io/resource.cpp:822)"
+      ],
+      "log": "examiner_rain_movement_smoke.log",
+      "teardown_warnings": true,
+      "completion_marker": true
+    },
+    {
+      "script": "examiner_rework_smoke",
+      "exit": 0,
+      "seconds": 4.78,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "Examiner rework: contact timing, directional continuity, physical charge collision, phase HUD, exact wards, and UI fit passed."
+      ],
+      "log": "examiner_rework_smoke.log",
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "examiner_tactics_victory_smoke",
+      "exit": 0,
+      "seconds": 10.7,
+      "errors": [],
+      "tail": [
+        "Examiner tactics/victory: eligible variety, committed link, seal reactions, lethal outro, skip/once, reset lifecycle: PASS",
+        "WARNING: 4 ObjectDB instances were leaked at exit (run with `--verbose` for details).",
+        "   at: cleanup (core/object/object.cpp:2536)",
+        "ERROR: 2 resources still in use at exit (run with --verbose for details).",
+        "   at: clear (core/io/resource.cpp:822)"
+      ],
+      "log": "examiner_tactics_victory_smoke.log",
+      "teardown_warnings": true,
+      "completion_marker": true
+    },
+    {
+      "script": "examiner_trial_smoke",
+      "exit": 0,
+      "seconds": 6.62,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "Examiner physical attacks, facing, Divine Descent phases, exact pylon cover, finite damage, presentation/audio, court, and Axiom lanes passed."
+      ],
+      "log": "examiner_trial_smoke.log",
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "examiner_worth_smoke",
+      "exit": 0,
+      "seconds": 8.52,
+      "errors": [],
+      "tail": [
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "Retreat fixture / sidestep=false / damage=82.0",
+        "Retreat fixture / sidestep=true / damage=0.0",
+        "Examiner Worth: branch/commit, advancing step, guard meter, guard-break stun, Court geometry, Verdict mitigation/i-frames/immunity, timeout and cleanup: PASS"
+      ],
+      "log": "examiner_worth_smoke.log",
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "expedition_defeat_return_smoke",
+      "exit": 0,
+      "seconds": 4.11,
+      "errors": [],
+      "tail": [
+        "Expedition defeat return preserves progression and reaches Sanctuary.",
+        "WARNING: 60 ObjectDB instances were leaked at exit (run with `--verbose` for details).",
+        "   at: cleanup (core/object/object.cpp:2536)",
+        "ERROR: 2 resources still in use at exit (run with --verbose for details).",
+        "   at: clear (core/io/resource.cpp:822)"
+      ],
+      "log": "expedition_defeat_return_smoke.log",
+      "teardown_warnings": true,
+      "completion_marker": true
+    },
+    {
+      "script": "expedition_feedback_smoke",
+      "exit": 0,
+      "seconds": 75.09,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "EXPEDITION_FEEDBACK: 108 checks, 0 failures"
+      ],
+      "log": "expedition_feedback_smoke.log",
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "expedition_unlock_smoke",
+      "log": "expedition_unlock_smoke.log",
+      "exit": 0,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "",
+        "Expedition unlock smoke test passed."
+      ],
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "forsaken_thrall_smoke",
+      "exit": 0,
+      "seconds": 5.23,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "Running Forsaken Thrall smoke test...",
+        "Forsaken Thrall smoke test passed."
+      ],
+      "log": "forsaken_thrall_smoke.log",
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "generic_spawn_review_smoke",
+      "exit": 0,
+      "seconds": 13.65,
+      "errors": [],
+      "tail": [
+        "GENERIC_SPAWN_REVIEW checks=61 failures=0",
+        "WARNING: 8 ObjectDB instances were leaked at exit (run with `--verbose` for details).",
+        "   at: cleanup (core/object/object.cpp:2536)",
+        "ERROR: 2 resources still in use at exit (run with --verbose for details).",
+        "   at: clear (core/io/resource.cpp:822)"
+      ],
+      "log": "generic_spawn_review_smoke.log",
+      "teardown_warnings": true,
+      "completion_marker": true
+    },
+    {
+      "script": "greatsword_blade_atlas_smoke",
+      "exit": 0,
+      "seconds": 1.94,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "GREATSWORD_BLADE_ATLAS checks=6 failures=0"
+      ],
+      "log": "greatsword_blade_atlas_smoke.log",
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "hud_action_controls_smoke",
+      "exit": 0,
+      "seconds": 3.19,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "HUD action controls smoke test passed."
+      ],
+      "log": "hud_action_controls_smoke.log",
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "king_axe_cardinal_smoke",
+      "log": "king_axe_cardinal_smoke.log",
+      "exit": 0,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "AXE_FLOW checks=2858 failures=0"
+      ],
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "king_dual_gait_smoke",
+      "log": "king_dual_gait_smoke.log",
+      "exit": 0,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "KING_DUAL_GAIT checks=995 failures=0"
+      ],
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "king_dual_steady_carry_smoke",
+      "exit": 0,
+      "seconds": 4.32,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "KING_DUAL_STEADY_CARRY checks=392 failures=0"
+      ],
+      "log": "king_dual_steady_carry_smoke.log",
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "king_dual_v2_idle_smoke",
+      "log": "king_dual_v2_idle_smoke.log",
+      "exit": 0,
+      "errors": [],
+      "tail": [
+        "",
+        "DUAL_IDLE_FIRST_GLANCE direction=(-1.0, 0.0) elapsed_ms=2518 pose=5",
+        "DUAL_IDLE_FIRST_GLANCE direction=(1.0, 0.0) elapsed_ms=2519 pose=5",
+        "DUAL_IDLE_FIRST_GLANCE direction=(0.0, -1.0) elapsed_ms=2532 pose=5",
+        "DUAL_IDLE_FIRST_GLANCE direction=(0.0, 1.0) elapsed_ms=2518 pose=5",
+        "DUAL_V2_IDLE checks=100 failures=0"
+      ],
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "king_greatsword_v2_gameplay_smoke",
+      "log": "king_greatsword_v2_gameplay_smoke.log",
+      "exit": 0,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "GREATSWORD_V2_FINAL: 197 checks, 0 failures",
+        "WARNING: 54 ObjectDB instances were leaked at exit (run with `--verbose` for details).",
+        "   at: cleanup (core/object/object.cpp:2536)"
+      ],
+      "teardown_warnings": true,
+      "completion_marker": true
+    },
+    {
+      "script": "king_production_kit_smoke",
+      "log": "king_production_kit_smoke.log",
+      "exit": 0,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "",
+        "KING_PRODUCTION_KIT_SMOKE_FAILURES=0"
+      ],
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "king_shared_body_smoke",
+      "exit": 0,
+      "seconds": 7.16,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "KING_SHARED_BODY checks=711 failures=0"
+      ],
+      "log": "king_shared_body_smoke.log",
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "king_skill_4_smoke",
+      "exit": 0,
+      "seconds": 10.44,
+      "errors": [],
+      "tail": [
+        "VOW_WORLDSPLITTER: 54 checks, 0 failures",
+        "WARNING: 6 ObjectDB instances were leaked at exit (run with `--verbose` for details).",
+        "   at: cleanup (core/object/object.cpp:2536)",
+        "ERROR: 3 resources still in use at exit (run with --verbose for details).",
+        "   at: clear (core/io/resource.cpp:822)"
+      ],
+      "log": "king_skill_4_smoke.log",
+      "teardown_warnings": true,
+      "completion_marker": true
+    },
+    {
+      "script": "king_skill_terrain_smoke",
+      "log": "king_skill_terrain_smoke.log",
+      "exit": 0,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "",
+        "KING_SKILL_TERRAIN checks=33 failures=0"
+      ],
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "king_targeting_art_smoke",
+      "exit": 0,
+      "seconds": 5.3,
+      "errors": [],
+      "tail": [
+        "KING_TARGETING_ART checks=39 failures=0",
+        "WARNING: 6 ObjectDB instances were leaked at exit (run with `--verbose` for details).",
+        "   at: cleanup (core/object/object.cpp:2536)",
+        "ERROR: 1 resources still in use at exit (run with --verbose for details).",
+        "   at: clear (core/io/resource.cpp:822)"
+      ],
+      "log": "king_targeting_art_smoke.log",
+      "teardown_warnings": true,
+      "completion_marker": true
+    },
+    {
+      "script": "king_twinsteel_gameplay_smoke",
+      "log": "king_twinsteel_gameplay_smoke.log",
+      "exit": 0,
+      "errors": [],
+      "tail": [
+        "TWINSTEEL_EFFECT final_slash down bright_pixels=1148",
+        "TWINSTEEL_GAMEPLAY checks=244 failures=0",
+        "WARNING: 6 ObjectDB instances were leaked at exit (run with `--verbose` for details).",
+        "   at: cleanup (core/object/object.cpp:2536)",
+        "ERROR: 2 resources still in use at exit (run with --verbose for details).",
+        "   at: clear (core/io/resource.cpp:822)"
+      ],
+      "teardown_warnings": true,
+      "completion_marker": true
+    },
+    {
+      "script": "king_vow_worldsplitter_smoke",
+      "exit": 0,
+      "seconds": 10.5,
+      "errors": [],
+      "tail": [
+        "VOW_WORLDSPLITTER: 54 checks, 0 failures",
+        "WARNING: 6 ObjectDB instances were leaked at exit (run with `--verbose` for details).",
+        "   at: cleanup (core/object/object.cpp:2536)",
+        "ERROR: 3 resources still in use at exit (run with --verbose for details).",
+        "   at: clear (core/io/resource.cpp:822)"
+      ],
+      "log": "king_vow_worldsplitter_smoke.log",
+      "teardown_warnings": true,
+      "completion_marker": true
+    },
+    {
+      "script": "loot_resolution_smoke",
+      "log": "loot_resolution_smoke.log",
+      "exit": 0,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "",
+        "Loot chances, magnetic pickups, chest tiers, rollback, and claim smoke test passed."
+      ],
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "material_crafting_data_smoke",
+      "log": "material_crafting_data_smoke.log",
+      "exit": 0,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "",
+        "Material and crafting data smoke test passed."
+      ],
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "material_exchange_service_smoke",
+      "log": "material_exchange_service_smoke.log",
+      "exit": 0,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "",
+        "Metadata-driven material exchange service smoke test passed."
+      ],
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "material_inventory_snapshot_smoke",
+      "exit": 0,
+      "seconds": 1.94,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "Material inventory snapshot smoke test passed."
+      ],
+      "log": "material_inventory_snapshot_smoke.log",
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "melee_combat_smoke",
+      "exit": 0,
+      "seconds": 3.18,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "Melee combat smoke test passed."
+      ],
+      "log": "melee_combat_smoke.log",
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "mireling_leap_dodge_smoke",
+      "exit": 0,
+      "seconds": 4.68,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "Mireling leap dodge smoke test passed."
+      ],
+      "log": "mireling_leap_dodge_smoke.log",
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "mireling_smoke",
+      "exit": 0,
+      "seconds": 5.39,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "Mireling smoke test passed."
+      ],
+      "log": "mireling_smoke.log",
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "pause_menu_smoke",
+      "exit": 0,
+      "seconds": 2.06,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "In-stage pause menu smoke test passed."
+      ],
+      "log": "pause_menu_smoke.log",
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "perfect_counter_smoke",
+      "exit": 0,
+      "seconds": 4.76,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "PERFECT_COUNTER checks=25 failures=0"
+      ],
+      "log": "perfect_counter_smoke.log",
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "player_control_scheme_smoke",
+      "exit": 0,
+      "seconds": 3.13,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "Player control scheme and debug testing preset smoke test passed."
+      ],
+      "log": "player_control_scheme_smoke.log",
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "player_defeat_flow_smoke",
+      "exit": 0,
+      "seconds": 4.32,
+      "errors": [],
+      "tail": [
+        "Player defeat flow smoke test passed.",
+        "WARNING: 4 ObjectDB instances were leaked at exit (run with `--verbose` for details).",
+        "   at: cleanup (core/object/object.cpp:2536)",
+        "ERROR: 1 resources still in use at exit (run with --verbose for details).",
+        "   at: clear (core/io/resource.cpp:822)"
+      ],
+      "log": "player_defeat_flow_smoke.log",
+      "teardown_warnings": true,
+      "completion_marker": true
+    },
+    {
+      "script": "player_evade_smoke",
+      "exit": 0,
+      "seconds": 3.38,
+      "errors": [],
+      "tail": [
+        "Player evade smoke test passed. Distance: 53.33 px",
+        "WARNING: 2 ObjectDB instances were leaked at exit (run with `--verbose` for details).",
+        "   at: cleanup (core/object/object.cpp:2536)",
+        "ERROR: 1 resources still in use at exit (run with --verbose for details).",
+        "   at: clear (core/io/resource.cpp:822)"
+      ],
+      "log": "player_evade_smoke.log",
+      "teardown_warnings": true,
+      "completion_marker": true
+    },
+    {
+      "script": "player_held_attack_smoke",
+      "exit": 0,
+      "seconds": 23.46,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "HELD_ATTACK checks=40 failures=0"
+      ],
+      "log": "player_held_attack_smoke.log",
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "player_interface_demo_smoke",
+      "exit": 0,
+      "seconds": 4.6,
+      "errors": [],
+      "tail": [
+        "",
+        "PLAYER_INTERFACE_DEMO: 14 checks, 0 failures",
+        "WARNING: 6 ObjectDB instances were leaked at exit (run with `--verbose` for details).",
+        "   at: cleanup (core/object/object.cpp:2536)",
+        "ERROR: 3 resources still in use at exit (run with --verbose for details).",
+        "   at: clear (core/io/resource.cpp:822)"
+      ],
+      "log": "player_interface_demo_smoke_rerun.log",
+      "teardown_warnings": true,
+      "completion_marker": true
+    },
+    {
+      "script": "player_interface_readability_smoke",
+      "exit": 0,
+      "seconds": 6.48,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "PLAYER_INTERFACE_READABILITY: 87 checks, 0 failures"
+      ],
+      "log": "player_interface_readability_smoke.log",
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "player_movement_smoke",
+      "exit": 0,
+      "seconds": 2.76,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "Player movement smoke test passed."
+      ],
+      "log": "player_movement_smoke.log",
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "player_progression_smoke",
+      "exit": 0,
+      "seconds": 3.06,
+      "errors": [],
+      "tail": [
+        "Player progression smoke test passed.",
+        "WARNING: 2 ObjectDB instances were leaked at exit (run with `--verbose` for details).",
+        "   at: cleanup (core/object/object.cpp:2536)",
+        "ERROR: 1 resources still in use at exit (run with --verbose for details).",
+        "   at: clear (core/io/resource.cpp:822)"
+      ],
+      "log": "player_progression_smoke.log",
+      "teardown_warnings": true,
+      "completion_marker": true
+    },
+    {
+      "script": "portal_interaction_smoke",
+      "exit": 0,
+      "seconds": 3.2,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "Portal interaction smoke test passed."
+      ],
+      "log": "portal_interaction_smoke.log",
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "portal_surface_stability_smoke",
+      "exit": 0,
+      "seconds": 10.11,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "PORTAL_SURFACE_STABILITY: 144 checks, 0 failures; {\"calm\":{\"changed_silhouette_pixels\":0,\"inner_motion_pixels\":[293,5211,3364],\"used\":\"[P: (66, 70), S: (60, 81)]\"},\"divine\":{\"changed_silhouette_pixels\":0,\"inner_motion_pixels\":[6277,7558,2240],\"used\":\"[P: (55, 37), S: (81, 113)]\"},\"grasp\":{\"changed_silhouette_pixels\":0,\"inner_motion_pixels\":[4190,7858,2748],\"used\":\"[P: (59, 50), S: (79, 101)]\"},\"maw\":{\"changed_silhouette_pixels\":0,\"inner_motion_pixels\":[2739,7188,1990],\"used\":\"[P: (58, 52), S: (75, 98)]\"},\"ominous\":{\"changed_silhouette_pixels\":0,\"inner_motion_pixels\":[1277,6332,3233],\"used\":\"[P: (64, 64), S: (64, 87)]\"},\"unknowable\":{\"changed_silhouette_pixels\":0,\"inner_motion_pixels\":[7703,8350,2765],\"used\":\"[P: (51, 34), S: (92, 116)]\"}}"
+      ],
+      "log": "portal_surface_stability_smoke.log",
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "pursuit_stage_landing_smoke",
+      "exit": 0,
+      "seconds": 11.19,
+      "errors": [],
+      "tail": [
+        "PURSUIT_STAGE_LANDING checks=45 failures=0",
+        "WARNING: 6 ObjectDB instances were leaked at exit (run with `--verbose` for details).",
+        "   at: cleanup (core/object/object.cpp:2536)",
+        "ERROR: 3 resources still in use at exit (run with --verbose for details).",
+        "   at: clear (core/io/resource.cpp:822)"
+      ],
+      "log": "pursuit_stage_landing_smoke.log",
+      "teardown_warnings": true,
+      "completion_marker": true
+    },
+    {
+      "script": "quiet_ui_stability_smoke",
+      "exit": 0,
+      "seconds": 9.36,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "QUIET_SEAL_SOURCE: [{\"changed_silhouette_pixels\":0,\"frame\":0,\"used\":\"[P: (14, 21), S: (89, 83)]\"},{\"changed_silhouette_pixels\":666,\"frame\":1,\"used\":\"[P: (12, 21), S: (87, 83)]\"},{\"changed_silhouette_pixels\":1231,\"frame\":2,\"used\":\"[P: (10, 21), S: (91, 83)]\"},{\"changed_silhouette_pixels\":1578,\"frame\":3,\"used\":\"[P: (8, 21), S: (93, 83)]\"},{\"changed_silhouette_pixels\":1058,\"frame\":4,\"used\":\"[P: (14, 18), S: (87, 82)]\"},{\"changed_silhouette_pixels\":1165,\"frame\":5,\"used\":\"[P: (12, 18), S: (87, 84)]\"},{\"changed_silhouette_pixels\":1490,\"frame\":6,\"used\":\"[P: (10, 18), S: (86, 82)]\"},{\"changed_silhouette_pixels\":1736,\"frame\":7,\"used\":\"[P: (8, 18), S: (91, 82)]\"}]",
+        "QUIET_UI_STABILITY: 27 checks, 0 failures; {\"loading\":{\"changed_silhouette_pixels\":0,\"moving_light_pixels\":5276,\"used\":\"[P: (14, 21), S: (89, 83)]\"}}"
+      ],
+      "log": "quiet_ui_stability_smoke.log",
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "rootbound_husk_smoke",
+      "exit": 0,
+      "seconds": 8.88,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "Rootbound Husk mini-boss behavior smoke test passed."
+      ],
+      "log": "rootbound_husk_smoke.log",
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "rootling_behavior_smoke",
+      "exit": 0,
+      "seconds": 3.35,
+      "errors": [],
+      "tail": [
+        "Rootling behavior smoke test passed.",
+        "WARNING: 2 ObjectDB instances were leaked at exit (run with `--verbose` for details).",
+        "   at: cleanup (core/object/object.cpp:2536)",
+        "ERROR: 1 resources still in use at exit (run with --verbose for details).",
+        "   at: clear (core/io/resource.cpp:822)"
+      ],
+      "log": "rootling_behavior_smoke.log",
+      "teardown_warnings": true,
+      "completion_marker": true
+    },
+    {
+      "script": "rotcaller_smoke",
+      "exit": 0,
+      "seconds": 14.71,
+      "errors": [],
+      "tail": [
+        "ROTCaller: 47 checks, 0 failures",
+        "WARNING: 6 ObjectDB instances were leaked at exit (run with `--verbose` for details).",
+        "   at: cleanup (core/object/object.cpp:2536)",
+        "ERROR: 1 resources still in use at exit (run with --verbose for details).",
+        "   at: clear (core/io/resource.cpp:822)"
+      ],
+      "log": "rotcaller_smoke.log",
+      "teardown_warnings": true,
+      "completion_marker": true
+    },
+    {
+      "script": "runtime_archive_boundary_smoke",
+      "log": "runtime_archive_boundary_smoke.log",
+      "exit": 0,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "",
+        "Runtime/archive boundary smoke test passed."
+      ],
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "run_session_progression_smoke",
+      "exit": 0,
+      "seconds": 2.84,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "Run session progression smoke test passed."
+      ],
+      "log": "run_session_progression_smoke.log",
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "safe_milestone_autosave_smoke",
+      "log": "safe_milestone_autosave_smoke.log",
+      "exit": 0,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "",
+        "Safe milestone autosave smoke test passed."
+      ],
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "sanctuary_hub_smoke",
+      "log": "sanctuary_hub_smoke.log",
+      "exit": 0,
+      "errors": [],
+      "tail": [
+        "",
+        "SANCTUARY_CLOSEOUT: 68 checks, 0 failures",
+        "WARNING: 4 ObjectDB instances were leaked at exit (run with `--verbose` for details).",
+        "   at: cleanup (core/object/object.cpp:2536)",
+        "ERROR: 2 resources still in use at exit (run with --verbose for details).",
+        "   at: clear (core/io/resource.cpp:822)"
+      ],
+      "teardown_warnings": true,
+      "completion_marker": true
+    },
+    {
+      "script": "sanctuary_skills_flow_smoke",
+      "exit": 0,
+      "seconds": 5.34,
+      "errors": [],
+      "tail": [
+        "SANCTUARY_SKILLS_FLOW: 84 checks, 0 failures",
+        "WARNING: 4 ObjectDB instances were leaked at exit (run with `--verbose` for details).",
+        "   at: cleanup (core/object/object.cpp:2536)",
+        "ERROR: 2 resources still in use at exit (run with --verbose for details).",
+        "   at: clear (core/io/resource.cpp:822)"
+      ],
+      "log": "sanctuary_skills_flow_smoke.log",
+      "teardown_warnings": true,
+      "completion_marker": true
+    },
+    {
+      "script": "sanctuary_workshop_interior_smoke",
+      "exit": 0,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "SANCTUARY_WORKSHOP_INTERIOR: 60 checks, 0 failures",
+        "WARNING: 4 ObjectDB instances were leaked at exit (run with `--verbose` for details).",
+        "   at: cleanup (core/object/object.cpp:2536)",
+        "ERROR: 2 resources still in use at exit (run with --verbose for details).",
+        "   at: clear (core/io/resource.cpp:822)"
+      ],
+      "log": "sanctuary_workshop_interior_smoke_final.log",
+      "teardown_warnings": true,
+      "completion_marker": true
+    },
+    {
+      "script": "save_disk_persistence_smoke",
+      "log": "save_disk_persistence_smoke.log",
+      "exit": 0,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "",
+        "Save disk persistence smoke test passed."
+      ],
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "save_profile_snapshot_smoke",
+      "log": "save_profile_snapshot_smoke.log",
+      "exit": 0,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "",
+        "Save profile snapshot smoke test passed."
+      ],
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "scene_transition_smoke",
+      "exit": 0,
+      "seconds": 5.06,
+      "errors": [],
+      "tail": [
+        "Scene transition smoke test passed.",
+        "WARNING: 7 ObjectDB instances were leaked at exit (run with `--verbose` for details).",
+        "   at: cleanup (core/object/object.cpp:2536)",
+        "ERROR: 1 resources still in use at exit (run with --verbose for details).",
+        "   at: clear (core/io/resource.cpp:822)"
+      ],
+      "log": "scene_transition_smoke.log",
+      "teardown_warnings": true,
+      "completion_marker": true
+    },
+    {
+      "script": "sovereign_pursuit_charges_smoke",
+      "exit": 0,
+      "seconds": 4.73,
+      "errors": [],
+      "tail": [
+        "SOVEREIGN_PURSUIT_CHARGES_FAILURES=0",
+        "WARNING: 2 ObjectDB instances were leaked at exit (run with `--verbose` for details).",
+        "   at: cleanup (core/object/object.cpp:2536)",
+        "ERROR: 1 resources still in use at exit (run with --verbose for details).",
+        "   at: clear (core/io/resource.cpp:822)"
+      ],
+      "log": "sovereign_pursuit_charges_smoke.log",
+      "teardown_warnings": true,
+      "completion_marker": true
+    },
+    {
+      "script": "sovereign_pursuit_trainer_smoke",
+      "exit": 0,
+      "seconds": 3.67,
+      "errors": [],
+      "tail": [
+        "SOVEREIGN_PURSUIT_TRAINER_FAILURES=0",
+        "WARNING: 4 ObjectDB instances were leaked at exit (run with `--verbose` for details).",
+        "   at: cleanup (core/object/object.cpp:2536)",
+        "ERROR: 2 resources still in use at exit (run with --verbose for details).",
+        "   at: clear (core/io/resource.cpp:822)"
+      ],
+      "log": "sovereign_pursuit_trainer_smoke.log",
+      "teardown_warnings": true,
+      "completion_marker": true
+    },
+    {
+      "script": "stage_2_encounter_smoke",
+      "exit": 0,
+      "seconds": 3.6,
+      "errors": [],
+      "tail": [
+        "Stage 2 encounter smoke test passed.",
+        "WARNING: 4 ObjectDB instances were leaked at exit (run with `--verbose` for details).",
+        "   at: cleanup (core/object/object.cpp:2536)",
+        "ERROR: 1 resources still in use at exit (run with --verbose for details).",
+        "   at: clear (core/io/resource.cpp:822)"
+      ],
+      "log": "stage_2_encounter_smoke.log",
+      "teardown_warnings": true,
+      "completion_marker": true
+    },
+    {
+      "script": "stage_3_encounter_smoke",
+      "exit": 0,
+      "seconds": 3.61,
+      "errors": [],
+      "tail": [
+        "Stage 3 encounter smoke test passed.",
+        "WARNING: 4 ObjectDB instances were leaked at exit (run with `--verbose` for details).",
+        "   at: cleanup (core/object/object.cpp:2536)",
+        "ERROR: 1 resources still in use at exit (run with --verbose for details).",
+        "   at: clear (core/io/resource.cpp:822)"
+      ],
+      "log": "stage_3_encounter_smoke.log",
+      "teardown_warnings": true,
+      "completion_marker": true
+    },
+    {
+      "script": "stage_3_pressure_smoke",
+      "exit": 0,
+      "seconds": 11.18,
+      "errors": [],
+      "tail": [
+        "",
+        "STAGE_3_PRESSURE: 10 checks, 0 failures",
+        "WARNING: 4 ObjectDB instances were leaked at exit (run with `--verbose` for details).",
+        "   at: cleanup (core/object/object.cpp:2536)",
+        "ERROR: 2 resources still in use at exit (run with --verbose for details).",
+        "   at: clear (core/io/resource.cpp:822)"
+      ],
+      "log": "stage_3_pressure_smoke_rerun.log",
+      "teardown_warnings": true,
+      "completion_marker": true
+    },
+    {
+      "script": "stage_4_encounter_smoke",
+      "exit": 0,
+      "seconds": 4.13,
+      "errors": [],
+      "tail": [
+        "Stage 4 encounter smoke test passed.",
+        "WARNING: 2 ObjectDB instances were leaked at exit (run with `--verbose` for details).",
+        "   at: cleanup (core/object/object.cpp:2536)",
+        "ERROR: 1 resources still in use at exit (run with --verbose for details).",
+        "   at: clear (core/io/resource.cpp:822)"
+      ],
+      "log": "stage_4_encounter_smoke.log",
+      "teardown_warnings": true,
+      "completion_marker": true
+    },
+    {
+      "script": "stage_4_review_smoke",
+      "exit": 0,
+      "seconds": 6.22,
+      "errors": [],
+      "tail": [
+        "STAGE_4_REVIEW: 18 checks, 0 failures",
+        "WARNING: 6 ObjectDB instances were leaked at exit (run with `--verbose` for details).",
+        "   at: cleanup (core/object/object.cpp:2536)",
+        "ERROR: 1 resources still in use at exit (run with --verbose for details).",
+        "   at: clear (core/io/resource.cpp:822)"
+      ],
+      "log": "stage_4_review_smoke.log",
+      "teardown_warnings": true,
+      "completion_marker": true
+    },
+    {
+      "script": "stage_5_boss_audio_dialogue_smoke",
+      "exit": 0,
+      "seconds": 2.44,
+      "errors": [],
+      "tail": [
+        "Varkuun action/root audio, speaker-swapping conversation, single advance, and mouse Skip passed.",
+        "WARNING: 14 ObjectDB instances were leaked at exit (run with `--verbose` for details).",
+        "   at: cleanup (core/object/object.cpp:2536)",
+        "ERROR: 6 resources still in use at exit (run with --verbose for details).",
+        "   at: clear (core/io/resource.cpp:822)"
+      ],
+      "log": "stage_5_boss_audio_dialogue_smoke.log",
+      "teardown_warnings": true,
+      "completion_marker": true
+    },
+    {
+      "script": "stage_5_boss_desperation_smoke",
+      "exit": 0,
+      "seconds": 4.46,
+      "errors": [],
+      "tail": [
+        "Stage 5 health-tier jump cadence, recurring 3/4/5 pursuit, varied locks, and prison handoff passed.",
+        "WARNING: 8 ObjectDB instances were leaked at exit (run with `--verbose` for details).",
+        "   at: cleanup (core/object/object.cpp:2536)",
+        "ERROR: 3 resources still in use at exit (run with --verbose for details).",
+        "   at: clear (core/io/resource.cpp:822)"
+      ],
+      "log": "stage_5_boss_desperation_smoke.log",
+      "teardown_warnings": true,
+      "completion_marker": true
+    },
+    {
+      "script": "stage_5_boss_portrait_asset_smoke",
+      "exit": 0,
+      "seconds": 2.07,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "PASS: Stage 5 boss portrait is a readable transparent 96x96 presentation asset."
+      ],
+      "log": "stage_5_boss_portrait_asset_smoke.log",
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "stage_5_boss_root_prison_smoke",
+      "exit": 0,
+      "seconds": 4.54,
+      "errors": [],
+      "tail": [
+        "Stage 5 root warning, capture, skill lock, struggle escape, world lock, and in-zone 300-damage execution passed.",
+        "WARNING: 15 ObjectDB instances were leaked at exit (run with `--verbose` for details).",
+        "   at: cleanup (core/object/object.cpp:2536)",
+        "ERROR: 3 resources still in use at exit (run with --verbose for details).",
+        "   at: clear (core/io/resource.cpp:822)"
+      ],
+      "log": "stage_5_boss_root_prison_smoke.log",
+      "teardown_warnings": true,
+      "completion_marker": true
+    },
+    {
+      "script": "stage_5_boss_smoke",
+      "exit": 0,
+      "seconds": 9.45,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "Stage 5 boss runtime attacks, bounded death frames, corpse fade, and world impact passed."
+      ],
+      "log": "stage_5_boss_smoke.log",
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "stage_5_defeat_sequence_smoke",
+      "exit": 0,
+      "seconds": 6.49,
+      "errors": [],
+      "tail": [
+        "Varkuun final quote and post-collapse delayed chest sequence passed.",
+        "WARNING: 6 ObjectDB instances were leaked at exit (run with `--verbose` for details).",
+        "   at: cleanup (core/object/object.cpp:2536)",
+        "ERROR: 2 resources still in use at exit (run with --verbose for details).",
+        "   at: clear (core/io/resource.cpp:822)"
+      ],
+      "log": "stage_5_defeat_sequence_smoke.log",
+      "teardown_warnings": true,
+      "completion_marker": true
+    },
+    {
+      "script": "stage_5_environment_smoke",
+      "log": "stage_5_environment_smoke.log",
+      "exit": 0,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "",
+        "STAGE_5_RENEWAL: 139 checks, 0 failures"
+      ],
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "stage_5_review_smoke",
+      "exit": 0,
+      "seconds": 7.73,
+      "errors": [],
+      "tail": [
+        "STAGE_5_REVIEW: 42 checks, 0 failures",
+        "WARNING: 10 ObjectDB instances were leaked at exit (run with `--verbose` for details).",
+        "   at: cleanup (core/object/object.cpp:2536)",
+        "ERROR: 3 resources still in use at exit (run with --verbose for details).",
+        "   at: clear (core/io/resource.cpp:822)"
+      ],
+      "log": "stage_5_review_smoke.log",
+      "teardown_warnings": true,
+      "completion_marker": true
+    },
+    {
+      "script": "stage_6_crag_bear_smoke",
+      "exit": 0,
+      "seconds": 5.59,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "STAGE_6_CRAG_BEAR_SMOKE_PASSED"
+      ],
+      "log": "stage_6_crag_bear_smoke.log",
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "stage_6_debug_access_smoke",
+      "exit": 0,
+      "seconds": 4.22,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "STAGE_6_DEBUG_ACCESS_SMOKE_PASSED",
+        "WARNING: 3 ObjectDB instances were leaked at exit (run with `--verbose` for details).",
+        "   at: cleanup (core/object/object.cpp:2536)"
+      ],
+      "log": "stage_6_debug_access_smoke_final.log",
+      "teardown_warnings": true,
+      "completion_marker": true
+    },
+    {
+      "script": "stage_6_environment_smoke",
+      "log": "stage_6_environment_smoke.log",
+      "exit": 0,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "",
+        "STAGE_6_ENVIRONMENT_SMOKE_PASSED"
+      ],
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "stage_transition_presentation_smoke",
+      "exit": 0,
+      "seconds": 10.8,
+      "errors": [],
+      "tail": [
+        "STAGE_PRESENTATION: 54 checks, 0 failures; real loading seal/King frames 6/11",
+        "WARNING: 7 ObjectDB instances were leaked at exit (run with `--verbose` for details).",
+        "   at: cleanup (core/object/object.cpp:2536)",
+        "ERROR: 1 resources still in use at exit (run with --verbose for details).",
+        "   at: clear (core/io/resource.cpp:822)"
+      ],
+      "log": "stage_transition_presentation_smoke.log",
+      "teardown_warnings": true,
+      "completion_marker": true
+    },
+    {
+      "script": "stagger_resistance_smoke",
+      "exit": 0,
+      "seconds": 3.92,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "STAGGER_RESISTANCE_SMOKE_PASSED"
+      ],
+      "log": "stagger_resistance_smoke.log",
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "stun_indicator_smoke",
+      "exit": 0,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "STUN_INDICATOR_CHECKS=45 FAILURES=0"
+      ],
+      "log": "stun_indicator_smoke_final.log",
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "summon_effect_smoke",
+      "exit": 0,
+      "seconds": 9.51,
+      "errors": [],
+      "tail": [
+        "ENEMY_ARRIVAL checks=40 failures=0",
+        "WARNING: 2 ObjectDB instances were leaked at exit (run with `--verbose` for details).",
+        "   at: cleanup (core/object/object.cpp:2536)",
+        "ERROR: 1 resources still in use at exit (run with --verbose for details).",
+        "   at: clear (core/io/resource.cpp:822)"
+      ],
+      "log": "summon_effect_smoke.log",
+      "teardown_warnings": true,
+      "completion_marker": true
+    },
+    {
+      "script": "sword_attack_style_smoke",
+      "exit": 0,
+      "seconds": 4.69,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "Sword attack style smoke test passed."
+      ],
+      "log": "sword_attack_style_smoke.log",
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "thrall_statue_endpoint_smoke",
+      "exit": 0,
+      "seconds": 7.38,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "Thrall statue endpoint smoke test passed. Longest stall: 1 frames."
+      ],
+      "log": "thrall_statue_endpoint_smoke.log",
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "title_continue_smoke",
+      "exit": 0,
+      "seconds": 3.95,
+      "errors": [],
+      "tail": [
+        "Title Continue smoke test passed.",
+        "WARNING: 52 ObjectDB instances were leaked at exit (run with `--verbose` for details).",
+        "   at: cleanup (core/object/object.cpp:2536)",
+        "ERROR: 2 resources still in use at exit (run with --verbose for details).",
+        "   at: clear (core/io/resource.cpp:822)"
+      ],
+      "log": "title_continue_smoke.log",
+      "teardown_warnings": true,
+      "completion_marker": true
+    },
+    {
+      "script": "title_screen_smoke",
+      "exit": 0,
+      "seconds": 4.17,
+      "errors": [],
+      "tail": [
+        "Title screen smoke test passed.",
+        "WARNING: 52 ObjectDB instances were leaked at exit (run with `--verbose` for details).",
+        "   at: cleanup (core/object/object.cpp:2536)",
+        "ERROR: 2 resources still in use at exit (run with --verbose for details).",
+        "   at: clear (core/io/resource.cpp:822)"
+      ],
+      "log": "title_screen_smoke.log",
+      "teardown_warnings": true,
+      "completion_marker": true
+    },
+    {
+      "script": "title_trio_smoke",
+      "log": "title_trio_smoke.log",
+      "exit": 0,
+      "errors": [],
+      "tail": [
+        "TITLE_TRIO_SEQUENCE: [0, 2, 1] last=2",
+        "TITLE_TRIO: 72 checks, 0 failures; restart history uses isolated cosmetic config",
+        "WARNING: 4 ObjectDB instances were leaked at exit (run with `--verbose` for details).",
+        "   at: cleanup (core/object/object.cpp:2536)",
+        "ERROR: 2 resources still in use at exit (run with --verbose for details).",
+        "   at: clear (core/io/resource.cpp:822)"
+      ],
+      "teardown_warnings": true,
+      "completion_marker": true
+    },
+    {
+      "script": "typed_damage_smoke",
+      "exit": 0,
+      "seconds": 7.63,
+      "errors": [],
+      "tail": [
+        "TYPED_DAMAGE checks=50 failures=0",
+        "WARNING: 7 ObjectDB instances were leaked at exit (run with `--verbose` for details).",
+        "   at: cleanup (core/object/object.cpp:2536)",
+        "ERROR: 3 resources still in use at exit (run with --verbose for details).",
+        "   at: clear (core/io/resource.cpp:822)"
+      ],
+      "log": "typed_damage_smoke.log",
+      "teardown_warnings": true,
+      "completion_marker": true
+    },
+    {
+      "script": "ui_theme_icon_smoke",
+      "exit": 0,
+      "seconds": 2.53,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "UI theme and named icon smoke test passed."
+      ],
+      "log": "ui_theme_icon_smoke.log",
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "umi_exchange_menu_smoke",
+      "exit": 0,
+      "seconds": 2.23,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "Compact metadata-driven Umi exchange menu smoke test passed."
+      ],
+      "log": "umi_exchange_menu_smoke.log",
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "unbroken_vow_test_smoke",
+      "exit": 0,
+      "seconds": 5.45,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "UNBROKEN_VOW_TEST_CHECKS=31 FAILURES=0"
+      ],
+      "log": "unbroken_vow_test_smoke.log",
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "unbroken_vow_training_smoke",
+      "exit": 0,
+      "seconds": 3.58,
+      "errors": [],
+      "tail": [
+        "VOW_TRAINING: 14 checks, 0 failures",
+        "WARNING: 4 ObjectDB instances were leaked at exit (run with `--verbose` for details).",
+        "   at: cleanup (core/object/object.cpp:2536)",
+        "ERROR: 2 resources still in use at exit (run with --verbose for details).",
+        "   at: clear (core/io/resource.cpp:822)"
+      ],
+      "log": "unbroken_vow_training_smoke.log",
+      "teardown_warnings": true,
+      "completion_marker": true
+    },
+    {
+      "script": "weapon_finalize_smoke",
+      "log": "weapon_finalize_smoke.log",
+      "exit": 0,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "Weapon finalize smoke: 301 checks, 0 failures"
+      ],
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "weapon_retirement_smoke",
+      "log": "weapon_retirement_smoke.log",
+      "exit": 0,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "WEAPON_RETIREMENT: 39 checks, 0 failures"
+      ],
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "worldsplitter_activation_smoke",
+      "exit": 0,
+      "seconds": 10.23,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "WORLDSPLITTER_ACTIVATION: 16 checks, 0 failures"
+      ],
+      "log": "worldsplitter_activation_smoke.log",
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "worldsplitter_descent_smoke",
+      "exit": 0,
+      "seconds": 15.43,
+      "errors": [],
+      "tail": [
+        "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics",
+        "",
+        "WORLDSPLITTER_DESCENT: 142 checks, 0 failures"
+      ],
+      "log": "worldsplitter_descent_smoke.log",
+      "teardown_warnings": false,
+      "completion_marker": true
+    },
+    {
+      "script": "worldsplitter_training_smoke",
+      "exit": 0,
+      "seconds": 3.64,
+      "errors": [],
+      "tail": [
+        "WORLDSPLITTER_TRAINING: 14 checks, 0 failures",
+        "WARNING: 4 ObjectDB instances were leaked at exit (run with `--verbose` for details).",
+        "   at: cleanup (core/object/object.cpp:2536)",
+        "ERROR: 2 resources still in use at exit (run with --verbose for details).",
+        "   at: clear (core/io/resource.cpp:822)"
+      ],
+      "log": "worldsplitter_training_smoke.log",
+      "teardown_warnings": true,
+      "completion_marker": true
+    }
+  ]
+}

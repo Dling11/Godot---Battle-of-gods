@@ -1,0 +1,40 @@
+[gd_resource type="Resource" script_class="RecipeDefinition" format=3 uid="uid://dqajqy8xdwi0s"]
+
+[ext_resource type="Script" uid="uid://ddkkkbe8622gd" path="res://data/crafting/recipes/recipe_definition.gd" id="1_recipe"]
+[ext_resource type="Script" uid="uid://bll3k2id0v40j" path="res://data/items/materials/material_stack_definition.gd" id="2_stack"]
+[ext_resource type="Resource" path="res://data/items/materials/forest/varkuun_core.tres" id="3_varkuun"]
+[ext_resource type="Resource" path="res://data/items/materials/forest/living_bark_plate.tres" id="4_bark"]
+[ext_resource type="Resource" path="res://data/items/materials/forest/armored_hog_hide.tres" id="5_hide"]
+[ext_resource type="Resource" uid="uid://elj26grlw2lq" path="res://data/items/materials/forest/husk_heartwood.tres" id="6_heartwood"]
+
+[sub_resource type="Resource" id="Cost_varkuun"]
+script = ExtResource("2_stack")
+material = ExtResource("3_varkuun")
+
+[sub_resource type="Resource" id="Cost_bark"]
+script = ExtResource("2_stack")
+material = ExtResource("4_bark")
+quantity = 4
+
+[sub_resource type="Resource" id="Cost_hide"]
+script = ExtResource("2_stack")
+material = ExtResource("5_hide")
+quantity = 4
+
+[sub_resource type="Resource" id="Cost_heartwood"]
+script = ExtResource("2_stack")
+material = ExtResource("6_heartwood")
+quantity = 4
+
+[resource]
+script = ExtResource("1_recipe")
+recipe_id = &"forest_stage_5_heartwood_plate"
+display_name = "Heartwood Plate"
+description = "Layer living bark over dense heartwood and hide for the set's main defensive piece."
+region_id = &"forest"
+tier = 2
+category = 0
+output_id = &"forest_heartwood_plate"
+ingredients = Array[ExtResource("2_stack")]([SubResource("Cost_varkuun"), SubResource("Cost_bark"), SubResource("Cost_hide"), SubResource("Cost_heartwood")])
+unlock_id = &"forest_core_gear_crafting"
+gold_cost = 400

@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="ArmoredHogDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/enemies/armored_hog_definition.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+enemy_id = &"armored_hog"
+display_name = "Armored Hog"
+maximum_health = 125.0
+move_speed = 46.0
+acceleration = 430.0
+movement_footprint_radius = 9.0
+crowd_separation_radius = 40.0
+attack_range = 230.0
+attack_damage = 22.0
+wind_up_seconds = 0.62
+active_seconds = 0.70
+recovery_seconds = 1.15
+spawn_seconds = 0.8
+experience_reward = 22
+coin_reward = 4
+crowd_control_tier = 1
+stagger_interrupt_limit = 3
+stagger_chain_window_seconds = 0.9
+stagger_resistance_seconds = 0.8
+charge_trigger_range = 250.0
+charge_distance = 210.0
+charge_speed = 330.0
+charge_knockback_strength = 175.0
+charge_stagger_seconds = 0.24
+dazed_seconds = 1.15
+braced_front_damage_multiplier = 0.35
+front_guard_half_angle_degrees = 55.0

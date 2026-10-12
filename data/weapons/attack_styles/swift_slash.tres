@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="SwordAttackStyleDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/weapons/sword_attack_style_definition.gd" id="1_style"]
+
+[resource]
+script = ExtResource("1_style")
+style_id = &"swift_slash"
+display_name = "Swift Slash"
+normal_wind_up_arc = 1.38
+normal_strike_arc = 1.08
+normal_active_extension = 0.5
+ability_wind_up_arc = 1.58
+ability_strike_arc = 1.28
+ability_active_extension = 2.0
+trail_point_count = 9
+trail_width = 2.75
+trail_color = Color(0.88, 0.96, 1, 1)
+trail_fade_padding_seconds = 0.04
+strike_scale_multiplier = 1.07
+strike_tint = Color(1.12, 1.18, 1.26, 1)

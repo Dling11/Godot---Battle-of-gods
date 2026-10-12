@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="SwordComboDefinition" load_steps=5 format=3]
+[ext_resource type="Script" path="res://data/weapons/sword_combo_definition.gd" id="1"]
+[sub_resource type="ConvexPolygonShape2D" id="fan"]
+points = PackedVector2Array(2,-12,22,-36,60,-28,72,0,60,28,22,36,2,12)
+[sub_resource type="CircleShape2D" id="spin"]
+radius = 58.0
+[sub_resource type="ConvexPolygonShape2D" id="finish"]
+points = PackedVector2Array(2,-16,24,-42,68,-32,80,0,68,32,24,42,2,16)
+[resource]
+script = ExtResource("1")
+animation_keys = PackedStringArray("attack","return_cut","heavy_cleave","attack","heavy_cleave")
+windups = PackedFloat32Array(0.14,0.12,0.15,0.16,0.23)
+contacts = PackedFloat32Array(0.08,0.08,0.10,0.22,0.10)
+recoveries = PackedFloat32Array(0.16,0.14,0.15,0.15,0.22)
+damage_multipliers = PackedFloat32Array(0.80,0.85,1.05,1.10,1.50)
+knockback_multipliers = PackedFloat32Array(0.65,0.70,0.85,1.0,1.4)
+continue_seconds = 0.7
+hitbox_shapes = Array[Shape2D]([SubResource("fan"),SubResource("fan"),SubResource("fan"),SubResource("spin"),SubResource("finish")])
+radial_steps = PackedByteArray(0,0,0,1,0)

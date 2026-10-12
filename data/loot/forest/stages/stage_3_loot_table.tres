@@ -1,0 +1,64 @@
+[gd_resource type="Resource" script_class="LootTableDefinition" format=3 uid="uid://dlf7ggr7xhunb"]
+
+[ext_resource type="Script" uid="uid://bln8sbixhfpvj" path="res://data/loot/loot_table_definition.gd" id="1_table"]
+[ext_resource type="Script" uid="uid://bll3k2id0v40j" path="res://data/items/materials/material_stack_definition.gd" id="2_stack"]
+[ext_resource type="Resource" uid="uid://co68leshraied" path="res://data/items/materials/forest/root_fiber.tres" id="3_fiber"]
+[ext_resource type="Resource" uid="uid://cdc505wvdfcn4" path="res://data/items/materials/forest/mire_resin.tres" id="4_resin"]
+[ext_resource type="Resource" uid="uid://dduabducj38a" path="res://data/items/materials/forest/forsaken_cloth.tres" id="5_cloth"]
+[ext_resource type="Resource" uid="uid://elkww58s4uf3" path="res://data/items/materials/forest/barbed_seed.tres" id="6_seed"]
+[ext_resource type="Resource" uid="uid://dbinq5oclqkgp" path="res://data/items/materials/forest/weathered_fittings.tres" id="7_fittings"]
+[ext_resource type="Script" uid="uid://bjfif5kirqwdc" path="res://data/loot/material_drop_entry_definition.gd" id="7_nrufi"]
+
+[sub_resource type="Resource" id="First_fiber"]
+script = ExtResource("2_stack")
+material = ExtResource("3_fiber")
+quantity = 3
+
+[sub_resource type="Resource" id="First_resin"]
+script = ExtResource("2_stack")
+material = ExtResource("4_resin")
+quantity = 3
+
+[sub_resource type="Resource" id="First_cloth"]
+script = ExtResource("2_stack")
+material = ExtResource("5_cloth")
+quantity = 2
+
+[sub_resource type="Resource" id="First_seed"]
+script = ExtResource("2_stack")
+material = ExtResource("6_seed")
+quantity = 2
+
+[sub_resource type="Resource" id="First_fittings"]
+script = ExtResource("2_stack")
+material = ExtResource("7_fittings")
+
+[sub_resource type="Resource" id="Replay_fiber"]
+script = ExtResource("2_stack")
+material = ExtResource("3_fiber")
+quantity = 2
+
+[sub_resource type="Resource" id="Replay_resin"]
+script = ExtResource("2_stack")
+material = ExtResource("4_resin")
+quantity = 2
+
+[sub_resource type="Resource" id="Replay_cloth"]
+script = ExtResource("2_stack")
+material = ExtResource("5_cloth")
+
+[sub_resource type="Resource" id="Replay_seed"]
+script = ExtResource("2_stack")
+material = ExtResource("6_seed")
+
+[resource]
+script = ExtResource("1_table")
+loot_table_id = &"forest_stage_3_clear"
+stage_id = &"rootbound_hollow"
+region_id = &"forest"
+first_clear_claim_id = &"forest_stage_3_first_clear_claim"
+first_clear_guarantees = Array[ExtResource("2_stack")]([SubResource("First_fiber"), SubResource("First_resin"), SubResource("First_cloth"), SubResource("First_seed"), SubResource("First_fittings")])
+replay_guarantees = Array[ExtResource("2_stack")]([SubResource("Replay_fiber"), SubResource("Replay_resin"), SubResource("Replay_cloth"), SubResource("Replay_seed")])
+first_clear_recipe_ids = null
+first_clear_discovery_ids = null
+first_clear_key_item_ids = null

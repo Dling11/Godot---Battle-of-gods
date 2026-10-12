@@ -1,0 +1,82 @@
+[gd_scene load_steps=3 format=3]
+[ext_resource type="Script" path="res://ui/dialogue/dialogue_panel.gd" id="1_script"]
+[ext_resource type="Theme" path="res://assets/ui/themes/battle_of_gods_theme.tres" id="2_theme"]
+[node name="DialoguePanel" type="Control"]
+visible = false
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme = ExtResource("2_theme")
+script = ExtResource("1_script")
+[node name="Panel" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 118.0
+offset_top = -166.0
+offset_right = -118.0
+offset_bottom = -22.0
+grow_horizontal = 2
+grow_vertical = 0
+[node name="Margin" type="MarginContainer" parent="Panel"]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 10
+[node name="Root" type="HBoxContainer" parent="Panel/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 12
+[node name="Portrait" type="TextureRect" parent="Panel/Margin/Root"]
+unique_name_in_owner = true
+visible = false
+custom_minimum_size = Vector2(88, 88)
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+texture_filter = 1
+[node name="Text" type="VBoxContainer" parent="Panel/Margin/Root"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 7
+[node name="Header" type="HBoxContainer" parent="Panel/Margin/Root/Text"]
+layout_mode = 2
+
+[node name="SpeakerLabel" type="Label" parent="Panel/Margin/Root/Text/Header"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "VEILKEEPER"
+theme_override_colors/font_color = Color(0.839, 0.757, 0.443, 1)
+theme_override_font_sizes/font_size = 14
+
+[node name="SkipButton" type="Button" parent="Panel/Margin/Root/Text/Header"]
+unique_name_in_owner = true
+layout_mode = 2
+focus_mode = 0
+text = "SKIP"
+mouse_default_cursor_shape = 2
+theme_override_font_sizes/font_size = 8
+[node name="BodyLabel" type="Label" parent="Panel/Margin/Root/Text"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+text = "The fountain remembers."
+autowrap_mode = 2
+theme_override_font_sizes/font_size = 11
+[node name="ContinueButton" type="Button" parent="Panel/Margin/Root/Text"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "F / ENTER / SPACE  •  CONTINUE"
+size_flags_horizontal = 8
+mouse_default_cursor_shape = 2
+theme_override_font_sizes/font_size = 8
+
+[connection signal="pressed" from="Panel/Margin/Root/Text/ContinueButton" to="." method="advance"]
+[connection signal="pressed" from="Panel/Margin/Root/Text/Header/SkipButton" to="." method="close_dialogue"]

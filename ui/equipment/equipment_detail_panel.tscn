@@ -1,0 +1,167 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://ui/equipment/equipment_detail_panel.gd" id="1_script"]
+[ext_resource type="Theme" path="res://assets/ui/themes/battle_of_gods_theme.tres" id="2_theme"]
+
+[sub_resource type="StyleBoxFlat" id="detail_panel"]
+bg_color = Color(0.035, 0.043, 0.063, 0.98)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.278, 0.302, 0.278, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[node name="EquipmentDetailPanel" type="PanelContainer"]
+custom_minimum_size = Vector2(225, 188)
+layout_mode = 2
+theme = ExtResource("2_theme")
+theme_override_styles/panel = SubResource("detail_panel")
+script = ExtResource("1_script")
+
+[node name="Margin" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 6
+
+[node name="Root" type="VBoxContainer" parent="Margin"]
+layout_mode = 2
+theme_override_constants/separation = 2
+
+[node name="Preview" type="Control" parent="Margin/Root"]
+custom_minimum_size = Vector2(0, 42)
+layout_mode = 2
+
+[node name="AuraBack" type="Panel" parent="Margin/Root/Preview"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(38, 38)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -19.0
+offset_top = -19.0
+offset_right = 19.0
+offset_bottom = 19.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(19, 19)
+mouse_filter = 2
+
+[node name="ItemIcon" type="TextureRect" parent="Margin/Root/Preview"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(42, 42)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -21.0
+offset_top = -21.0
+offset_right = 21.0
+offset_bottom = 21.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="FallbackGlyph" type="Label" parent="Margin/Root/Preview"]
+unique_name_in_owner = true
+visible = false
+mouse_filter = 2
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "M"
+horizontal_alignment = 1
+vertical_alignment = 1
+theme_override_font_sizes/font_size = 18
+
+[node name="RarityLabel" type="Label" parent="Margin/Root"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "A GRADE  •  WEAPON"
+horizontal_alignment = 1
+theme_override_font_sizes/font_size = 8
+
+[node name="NameLabel" type="Label" parent="Margin/Root"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "WAYFARER'S IRON"
+horizontal_alignment = 1
+theme_override_font_sizes/font_size = 12
+
+[node name="PowerLabel" type="Label" parent="Margin/Root"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "BASIC HIT 10-12 • SKILL POWER 25"
+horizontal_alignment = 1
+autowrap_mode = 2
+theme_override_font_sizes/font_size = 8
+theme_override_colors/font_color = Color(0.7, 0.86, 1, 1)
+theme_override_font_sizes/font_size = 9
+
+[node name="ComparisonLabel" type="Label" parent="Margin/Root"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "+6 MIN HIT  •  +8 MAX HIT  •  +13 SKILL POWER  •  +8% CRIT"
+horizontal_alignment = 1
+autowrap_mode = 2
+theme_override_colors/font_color = Color(0.56, 0.79, 0.47, 1)
+theme_override_font_sizes/font_size = 8
+
+[node name="LoreLabel" type="Label" parent="Margin/Root"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 18)
+layout_mode = 2
+text = "Item lore."
+horizontal_alignment = 1
+autowrap_mode = 2
+theme_override_colors/font_color = Color(0.68, 0.69, 0.65, 1)
+theme_override_font_sizes/font_size = 7
+
+[node name="Divider" type="HSeparator" parent="Margin/Root"]
+layout_mode = 2
+
+[node name="SynergyTitle" type="Label" parent="Margin/Root"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "SKILL SYNERGY"
+theme_override_font_sizes/font_size = 9
+
+[node name="SynergyBody" type="Label" parent="Margin/Root"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 18)
+layout_mode = 2
+text = "Intended equipment and skill relationship."
+autowrap_mode = 2
+theme_override_colors/font_color = Color(0.76, 0.77, 0.72, 1)
+theme_override_font_sizes/font_size = 7
+
+[node name="StateLabel" type="Label" parent="Margin/Root"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "OWNED • READY TO EQUIP"
+horizontal_alignment = 1
+theme_override_font_sizes/font_size = 7
+
+[node name="EquipButton" type="Button" parent="Margin/Root"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 22)
+layout_mode = 2
+mouse_default_cursor_shape = 2
+text = "EQUIP WEAPON"
+
+[connection signal="pressed" from="Margin/Root/EquipButton" to="." method="_on_equip_button_pressed"]

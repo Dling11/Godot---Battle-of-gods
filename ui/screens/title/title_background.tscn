@@ -1,0 +1,117 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://ui/screens/title/title_background.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/ui/title/trio/b.png" id="2_base"]
+
+[sub_resource type="Gradient" id="Gradient_vignette"]
+offsets = PackedFloat32Array(0, 0.65, 1)
+colors = PackedColorArray(0.01, 0.012, 0.018, 0, 0.01, 0.012, 0.018, 0.02, 0.01, 0.012, 0.018, 0.45)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture_vignette"]
+gradient = SubResource("Gradient_vignette")
+width = 960
+height = 540
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(1, 0.5)
+
+[node name="TitleBackground" type="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture_filter = 1
+script = ExtResource("1_script")
+
+[node name="Base" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("2_base")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Atmosphere" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Glimmers" type="Control" parent="Atmosphere"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Glimmer1" type="ColorRect" parent="Atmosphere/Glimmers"]
+offset_left = 570
+offset_top = 190
+offset_right = 571
+offset_bottom = 191
+mouse_filter = 2
+color = Color(0.74, 0.68, 0.50, 1)
+
+[node name="Glimmer2" type="ColorRect" parent="Atmosphere/Glimmers"]
+offset_left = 820
+offset_top = 220
+offset_right = 821
+offset_bottom = 221
+mouse_filter = 2
+color = Color(0.74, 0.68, 0.50, 1)
+
+[node name="Glimmer3" type="ColorRect" parent="Atmosphere/Glimmers"]
+offset_left = 890
+offset_top = 365
+offset_right = 891
+offset_bottom = 366
+mouse_filter = 2
+color = Color(0.74, 0.68, 0.50, 1)
+
+[node name="Glimmer4" type="ColorRect" parent="Atmosphere/Glimmers"]
+offset_left = 650
+offset_top = 400
+offset_right = 651
+offset_bottom = 401
+mouse_filter = 2
+color = Color(0.74, 0.68, 0.50, 1)
+
+[node name="Glimmer5" type="ColorRect" parent="Atmosphere/Glimmers"]
+offset_left = 350.0
+offset_top = 452.0
+offset_right = 351.0
+offset_bottom = 453.0
+mouse_filter = 2
+color = Color(0.74, 0.68, 0.50, 1)
+
+[node name="Glimmer6" type="ColorRect" parent="Atmosphere/Glimmers"]
+offset_left = 610.0
+offset_top = 442.0
+offset_right = 611.0
+offset_bottom = 443.0
+mouse_filter = 2
+color = Color(0.74, 0.68, 0.50, 1)
+
+[node name="Vignette" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = SubResource("GradientTexture_vignette")
+expand_mode = 1

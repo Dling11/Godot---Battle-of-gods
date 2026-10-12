@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://ch613n2b3q848"]
+
+[ext_resource type="Script" uid="uid://cfp155gi4b16l" path="res://environment/props/sanctuary/divine_fountain.gd" id="1_script"]
+[ext_resource type="Texture2D" uid="uid://b51jsg87igyr5" path="res://assets/environment/sanctuary/landmarks/divine_fountain_112x96.png" id="2_texture"]
+[ext_resource type="PackedScene" path="res://tools/editor/editor_preview_backdrop.tscn" id="99_preview"]
+
+[node name="DivineFountain" type="StaticBody2D" unique_id=2139756943 node_paths=PackedStringArray("water_glint", "fountain_glow")]
+collision_mask = 2
+script = ExtResource("1_script")
+water_glint = NodePath("WaterGlint")
+fountain_glow = NodePath("FountainGlow")
+
+[node name="EditorPreviewBackdrop" parent="." unique_id=1225109566 instance=ExtResource("99_preview")]
+
+[node name="Shadow" type="Polygon2D" parent="." unique_id=294980704]
+z_index = -2
+position = Vector2(2, 3)
+color = Color(0.02, 0.03, 0.03, 0.38)
+polygon = PackedVector2Array(-46, -18, -46, -38, 42, -41, 42, -23, 38, -13, 22, -3, 1, 0, -23, -3, -36, -9)
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=714061260]
+position = Vector2(0, -48)
+texture = ExtResource("2_texture")
+
+[node name="FountainGlow" type="Polygon2D" parent="." unique_id=81977507]
+z_index = -1
+position = Vector2(0, -36)
+color = Color(0.32, 0.68, 0.9, 0.16)
+polygon = PackedVector2Array(0, -23, 35, -17, 47, 0, 34, 15, 0, 20, -34, 15, -47, 0, -35, -17)
+
+[node name="WaterGlint" type="Node2D" parent="." unique_id=1691341258]
+z_index = 1
+position = Vector2(0, -39)
+
+[node name="West" type="Line2D" parent="WaterGlint" unique_id=2129614283]
+points = PackedVector2Array(-28, 0, -13, 0)
+width = 1.0
+default_color = Color(0.55, 0.83, 1, 0.76)
+
+[node name="East" type="Line2D" parent="WaterGlint" unique_id=1902988576]
+points = PackedVector2Array(12, 2, 27, 2)
+width = 1.0
+default_color = Color(0.55, 0.83, 1, 0.76)
+
+[node name="Collision" type="CollisionPolygon2D" parent="." unique_id=690405883]
+visible = false
+position = Vector2(-2, 13.040222)
+scale = Vector2(1, 1.464674)
+polygon = PackedVector2Array(-45, -36.895737, -37, -47.13692, -19, -54.413727, 1, -56.413727, 21, -54.413727, 40, -47.819668, 48, -38.261227, 48, -25.413727, 36, -15.413727, 16, -10.413727, -14, -10.413727, -34, -15.413727, -45, -23.923565)

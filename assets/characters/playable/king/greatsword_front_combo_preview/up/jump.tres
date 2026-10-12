@@ -1,0 +1,29 @@
+[gd_resource type="Resource" load_steps=5 format=3]
+[ext_resource type="Script" path="res://data/weapons/weapon_family_pose_definition.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/characters/playable/king/greatsword_front_combo_preview/up/jump_body.png" id="2"]
+[ext_resource type="Texture2D" path="res://assets/characters/playable/king/greatsword_front_combo_preview/up/jump_hands.png" id="3"]
+[ext_resource type="Texture2D" path="res://assets/characters/playable/king/huge_greatsword_proof/greatsword.png" id="4"]
+[resource]
+script = ExtResource("1")
+body_atlas = ExtResource("2")
+hand_atlas = ExtResource("3")
+weapon_texture = ExtResource("4")
+pose_count = 16
+pose_order = PackedInt32Array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15)
+primary_hands = PackedVector2Array(88.4, 56, 99.36, 47, 90.16, 45, 94.12, 45, 96, 66, 96, 66, 96, 66, 96, 66, 95, 67, 95, 67, 95, 67, 97, 66, 83, 75.91667, 95, 67, 97, 66, 83, 75.91667)
+secondary_hands = PackedVector2Array(91.28001, 50.80385, 102.24, 41.80385, 94.23293, 40.75736, 99.10831, 48, 94.5092, 71.795555, 94.5092, 71.795555, 94.5092, 71.795555, 94.5092, 71.795555, 93.5092, 72.795555, 93.5092, 72.795555, 93.5092, 72.795555, 95.5092, 71.795555, 87.949745, 80.86642, 93.5092, 72.795555, 95.5092, 71.795555, 87.949745, 80.86642)
+weapon_primary_grip = Vector2(15, 113)
+weapon_tip = Vector2(15, 0)
+mirror_cutting_edge = false
+phase_windows = PackedVector2Array(0, 3, 4, 9, 10, 12)
+queued_recovery_window = Vector2(13, 15)
+weapon_behind_body = PackedByteArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0)
+single_hand_poses = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1)
+stowed_poses = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+released_poses = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+ground_clipped_poses = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+lift_pixels = PackedFloat32Array(0, -3, -24, -12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+pose_weights = PackedFloat32Array(0.8, 1, 1.5, 0.35, 1.5, 1, 1, 0.8, 0.8, 0.6, 0.6, 0.8, 1, 0.6, 0.8, 1)
+identity_regions = Array[Rect2]([Rect2(86, 45, 25, 24), Rect2(96, 37, 25, 24), Rect2(82, 36, 25, 24), Rect2(85, 40, 25, 24), Rect2(84, 36, 25, 24), Rect2(84, 36, 25, 24), Rect2(84, 36, 25, 24), Rect2(84, 36, 25, 24), Rect2(83, 37, 25, 24), Rect2(83, 37, 25, 24), Rect2(83, 37, 25, 24), Rect2(85, 36, 25, 24), Rect2(86, 39, 25, 24), Rect2(83, 37, 25, 24), Rect2(85, 36, 25, 24), Rect2(86, 39, 25, 24)])
+identity_source_region = Rect2(87, 51, 23, 20)
+occluded_hand_poses = PackedByteArray(0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0)

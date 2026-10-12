@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://c72pdero0nl6j"]
+
+[ext_resource type="Texture2D" uid="uid://dqhig4fjmsoj6" path="res://assets/environment/forest/rootbound_hollow/props/rootbound_arena_seal_384x224.png" id="1_seal"]
+[ext_resource type="Script" uid="uid://bpvdh5hx5ke8i" path="res://gameplay/navigation/navigation_cutout.gd" id="2_cutout"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_footprint"]
+size = Vector2(345, 88)
+
+[node name="RootboundArenaSeal" type="StaticBody2D" unique_id=347404873]
+collision_mask = 6
+
+[node name="Shadow" type="Sprite2D" parent="." unique_id=1796993784]
+modulate = Color(0.08, 0.02, 0.08, 0.36)
+z_index = -1
+position = Vector2(0, -28.96)
+scale = Vector2(0.9, 0.21392857)
+texture = ExtResource("1_seal")
+
+[node name="Visual" type="Sprite2D" parent="." unique_id=291721066]
+position = Vector2(0, -112)
+texture = ExtResource("1_seal")
+
+[node name="Footprint" type="CollisionShape2D" parent="." unique_id=629248723]
+position = Vector2(-4, -54)
+shape = SubResource("RectangleShape2D_footprint")
+
+[node name="NavigationCutout" type="Node" parent="." unique_id=410379079 groups=["navigation_cutout"]]
+script = ExtResource("2_cutout")
+local_outline = PackedVector2Array(-160, -38, 160, -38, 160, 0, -160, 0)
+derive_from_collision_shapes = true

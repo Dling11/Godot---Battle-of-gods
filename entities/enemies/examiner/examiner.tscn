@@ -1,0 +1,169 @@
+[gd_scene load_steps=18 format=3]
+
+[ext_resource type="PackedScene" path="res://gameplay/presentation/stun_indicator.tscn" id="stun_indicator"]
+
+[ext_resource type="Script" path="res://entities/enemies/examiner/examiner.gd" id="1"]
+[ext_resource type="Resource" path="res://data/enemies/examiner.tres" id="2"]
+[ext_resource type="Script" path="res://entities/enemies/examiner/examiner_visual.gd" id="3"]
+[ext_resource type="Script" path="res://gameplay/combat/health_component.gd" id="4"]
+[ext_resource type="Script" path="res://gameplay/combat/hurtbox_component.gd" id="5"]
+[ext_resource type="Script" path="res://gameplay/combat/melee_hitbox.gd" id="6"]
+[ext_resource type="Script" path="res://gameplay/combat/knockback_component.gd" id="7"]
+[ext_resource type="Script" path="res://entities/enemies/examiner/examiner_combat_presenter.gd" id="8"]
+[ext_resource type="Script" path="res://entities/enemies/examiner/examiner_action_sfx.gd" id="9"]
+[ext_resource type="Script" path="res://entities/shared/presentation/divine_threat_aura.gd" id="10"]
+[ext_resource type="SpriteFrames" path="res://assets/characters/enemies/examiner/examiner_sprite_frames.tres" id="11_frames"]
+
+[sub_resource type="CircleShape2D" id="movement"]
+radius = 12.0
+
+[sub_resource type="CapsuleShape2D" id="hurt"]
+radius = 15.0
+height = 54.0
+
+[sub_resource type="RectangleShape2D" id="thrust"]
+size = Vector2(76, 24)
+
+[sub_resource type="CircleShape2D" id="sweep"]
+radius = 58.0
+
+[sub_resource type="CircleShape2D" id="dash"]
+radius = 22.0
+
+[sub_resource type="CircleShape2D" id="slam"]
+radius = 72.0
+
+[node name="Examiner" type="CharacterBody2D"]
+collision_layer = 4
+collision_mask = 1
+script = ExtResource("1")
+definition = ExtResource("2")
+
+[node name="Shadow" type="Polygon2D" parent="."]
+z_index = -2
+position = Vector2(0, -4)
+color = Color(0.035, 0.04, 0.055, 0.42)
+polygon = PackedVector2Array(-18, 0, -11, -5, 11, -5, 18, 0, 11, 5, -11, 5)
+
+[node name="DivineThreatAura" type="Node2D" parent="."]
+position = Vector2(0, -4)
+script = ExtResource("10")
+
+[node name="Visual" type="Node2D" parent="." node_paths=PackedStringArray("body", "shadow")]
+script = ExtResource("3")
+body = NodePath("Body")
+shadow = NodePath("../Shadow")
+
+[node name="Body" type="AnimatedSprite2D" parent="Visual"]
+position = Vector2(0, -48)
+texture_filter = 1
+sprite_frames = ExtResource("11_frames")
+animation = &"idle_down"
+autoplay = "idle_down"
+
+[node name="CombatPresentation" type="Node2D" parent="." node_paths=PackedStringArray("examiner", "body", "divine_aura")]
+script = ExtResource("8")
+examiner = NodePath("..")
+body = NodePath("../Visual/Body")
+divine_aura = NodePath("../DivineThreatAura")
+
+[node name="BodyCollision" type="CollisionShape2D" parent="."]
+position = Vector2(0, -5)
+shape = SubResource("movement")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+unique_name_in_owner = true
+radius = 12.0
+path_desired_distance = 7.0
+target_desired_distance = 14.0
+
+[node name="HealthComponent" type="Node" parent="."]
+unique_name_in_owner = true
+script = ExtResource("4")
+maximum_health = 1800.0
+
+[node name="KnockbackComponent" type="Node" parent="." node_paths=PackedStringArray("health_component")]
+unique_name_in_owner = true
+script = ExtResource("7")
+health_component = NodePath("../HealthComponent")
+
+[node name="Hurtbox" type="Area2D" parent="." node_paths=PackedStringArray("health_component")]
+collision_layer = 16
+collision_mask = 8
+script = ExtResource("5")
+health_component = NodePath("../HealthComponent")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox"]
+position = Vector2(0, -31)
+shape = SubResource("hurt")
+
+[node name="ThrustPivot" type="Node2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(0, -26)
+
+[node name="ThrustHitbox" type="Area2D" parent="ThrustPivot"]
+unique_name_in_owner = true
+collision_layer = 32
+collision_mask = 64
+script = ExtResource("6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ThrustPivot/ThrustHitbox"]
+position = Vector2(48, 0)
+shape = SubResource("thrust")
+
+[node name="SweepHitbox" type="Area2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(0, -24)
+collision_layer = 32
+collision_mask = 64
+script = ExtResource("6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SweepHitbox"]
+shape = SubResource("sweep")
+
+[node name="DashHitbox" type="Area2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(0, -22)
+collision_layer = 32
+collision_mask = 64
+script = ExtResource("6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DashHitbox"]
+shape = SubResource("dash")
+
+[node name="SlamHitbox" type="Area2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(0, -6)
+collision_layer = 32
+collision_mask = 64
+script = ExtResource("6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SlamHitbox"]
+shape = SubResource("slam")
+
+[node name="ActionSfx" type="Node" parent="." node_paths=PackedStringArray("action_player", "impact_player")]
+script = ExtResource("9")
+action_player = NodePath("ActionPlayer")
+impact_player = NodePath("ImpactPlayer")
+
+[node name="ActionPlayer" type="AudioStreamPlayer2D" parent="ActionSfx"]
+bus = &"SFX"
+max_distance = 900.0
+
+[node name="ImpactPlayer" type="AudioStreamPlayer2D" parent="ActionSfx"]
+bus = &"SFX"
+max_distance = 900.0
+
+[node name="StunIndicator" parent="." instance=ExtResource("stun_indicator")]
+position = Vector2(0, -55)
+orbit_radius = Vector2(15, 3)
+
+[connection signal="facing_changed" from="." to="Visual" method="set_facing"]
+[connection signal="movement_changed" from="." to="Visual" method="set_moving"]
+[connection signal="state_changed" from="." to="Visual" method="play_state"]
+[connection signal="state_changed" from="." to="CombatPresentation" method="play_state"]
+[connection signal="state_changed" from="." to="ActionSfx" method="play_state"]
+[connection signal="action_impact" from="." to="CombatPresentation" method="play_impact"]
+[connection signal="action_impact" from="." to="ActionSfx" method="play_impact"]
+[connection signal="refutation_triggered" from="." to="Visual" method="play_refutation_flash"]
+[connection signal="damaged" from="HealthComponent" to="Visual" method="play_hurt"]

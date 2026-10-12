@@ -1,0 +1,37 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://environment/props/woodland/woodland_prop.gd" id="1_6qm78"]
+[ext_resource type="Texture2D" path="res://assets/environment/forest/eastern_rot_renewal/fungal_ash.png" id="2_nkuk5"]
+[ext_resource type="Script" path="res://gameplay/navigation/navigation_cutout.gd" id="3_4t01k"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h3for"]
+size = Vector2(18, 14)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_746as"]
+size = Vector2(63, 82.6)
+
+[node name="Fungal Ash" type="StaticBody2D" unique_id=151253645]
+texture_filter = 1
+collision_mask = 0
+script = ExtResource("1_6qm78")
+foliage = true
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1098313296]
+position = Vector2(0, -54)
+texture = ExtResource("2_nkuk5")
+
+[node name="Footprint" type="CollisionShape2D" parent="." unique_id=223971723]
+position = Vector2(0, -2)
+shape = SubResource("RectangleShape2D_h3for")
+
+[node name="NavigationCutout" type="Node" parent="." unique_id=1902800637 groups=["navigation_cutout"]]
+script = ExtResource("3_4t01k")
+derive_from_collision_shapes = true
+
+[node name="CanopyFade" type="Area2D" parent="." unique_id=1758921949]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CanopyVolume" type="CollisionShape2D" parent="CanopyFade" unique_id=188436354]
+position = Vector2(0, -59)
+shape = SubResource("RectangleShape2D_746as")

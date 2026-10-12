@@ -1,0 +1,75 @@
+[gd_resource type="SpriteFrames" format=3]
+
+[ext_resource type="Texture2D" path="res://assets/characters/npcs/armskeeper/renewal/idle_work_v2.png" id="1_no2tt"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_irdoa"]
+atlas = ExtResource("1_no2tt")
+region = Rect2(0, 0, 96, 96)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3r72q"]
+atlas = ExtResource("1_no2tt")
+region = Rect2(96, 0, 96, 96)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bi2bn"]
+atlas = ExtResource("1_no2tt")
+region = Rect2(192, 0, 96, 96)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fimbx"]
+atlas = ExtResource("1_no2tt")
+region = Rect2(288, 0, 96, 96)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5llql"]
+atlas = ExtResource("1_no2tt")
+region = Rect2(0, 96, 96, 96)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yv55m"]
+atlas = ExtResource("1_no2tt")
+region = Rect2(96, 96, 96, 96)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h3scp"]
+atlas = ExtResource("1_no2tt")
+region = Rect2(192, 96, 96, 96)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mouln"]
+atlas = ExtResource("1_no2tt")
+region = Rect2(288, 96, 96, 96)
+filter_clip = true
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 2.0,
+"texture": SubResource("AtlasTexture_irdoa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3r72q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bi2bn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fimbx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5llql")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yv55m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h3scp")
+}, {
+"duration": 2.0,
+"texture": SubResource("AtlasTexture_mouln")
+}],
+"loop": 1,
+"name": &"idle_down",
+"speed": 5.0
+}]

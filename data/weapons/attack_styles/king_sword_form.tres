@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="SwordAttackStyleDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/weapons/sword_attack_style_definition.gd" id="1_style"]
+
+[resource]
+script = ExtResource("1_style")
+style_id = &"king_sword_form"
+display_name = "King Sword Form"
+normal_wind_up_arc = 1.46
+normal_strike_arc = 1.18
+normal_active_extension = 0.5
+ability_wind_up_arc = 1.82
+ability_strike_arc = 1.48
+ability_active_extension = 3.0
+trail_point_count = 11
+trail_width = 3.0
+trail_color = Color(0.94, 0.9, 1, 1)
+trail_fade_padding_seconds = 0.05
+strike_scale_multiplier = 1.08
+strike_tint = Color(1.12, 1.04, 1.28, 1)

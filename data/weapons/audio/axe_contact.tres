@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="WeaponHitAudioDefinition" load_steps=5 format=3]
+[ext_resource type="Script" path="res://data/weapons/weapon_hit_audio_definition.gd" id="1"]
+[ext_resource type="AudioStream" path="res://assets/audio/sfx/player/weapon_contact/contact_1.wav" id="2"]
+[ext_resource type="AudioStream" path="res://assets/audio/sfx/player/weapon_contact/contact_2.wav" id="3"]
+[ext_resource type="AudioStream" path="res://assets/audio/sfx/player/weapon_contact/contact_3.wav" id="4"]
+[resource]
+script = ExtResource("1")
+variations = Array[AudioStream]([ExtResource("2"), ExtResource("3"), ExtResource("4")])
+pitch = 0.82
+volume_db = -4.0

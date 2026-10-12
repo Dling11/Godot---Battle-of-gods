@@ -1,0 +1,25 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://environment/props/woodland/woodland_prop.gd" id="1_b1e2t"]
+[ext_resource type="Texture2D" path="res://assets/environment/forest/hollow_renewal/root_mound.png" id="2_qp1di"]
+[ext_resource type="Script" path="res://gameplay/navigation/navigation_cutout.gd" id="3_m3nwy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0ux21"]
+size = Vector2(36, 18)
+
+[node name="Root Mound" type="StaticBody2D" unique_id=552635418]
+texture_filter = 1
+collision_mask = 0
+script = ExtResource("1_b1e2t")
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=59144134]
+position = Vector2(0, -10.5)
+texture = ExtResource("2_qp1di")
+
+[node name="Footprint" type="CollisionShape2D" parent="." unique_id=774934191]
+position = Vector2(0, -2)
+shape = SubResource("RectangleShape2D_0ux21")
+
+[node name="NavigationCutout" type="Node" parent="." unique_id=436018476 groups=["navigation_cutout"]]
+script = ExtResource("3_m3nwy")
+derive_from_collision_shapes = true

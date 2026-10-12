@@ -1,0 +1,37 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://environment/props/woodland/woodland_prop.gd" id="1_3fr0q"]
+[ext_resource type="Texture2D" path="res://assets/environment/forest/thorns_renewal/thorn_tree.png" id="2_o4y8a"]
+[ext_resource type="Script" path="res://gameplay/navigation/navigation_cutout.gd" id="3_51jbr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f4f3r"]
+size = Vector2(20, 14)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k07ju"]
+size = Vector2(81.9, 78.4)
+
+[node name="Thorn Tree" type="StaticBody2D" unique_id=115174387]
+texture_filter = 1
+collision_mask = 0
+script = ExtResource("1_3fr0q")
+foliage = true
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=186745891]
+position = Vector2(0, -51)
+texture = ExtResource("2_o4y8a")
+
+[node name="Footprint" type="CollisionShape2D" parent="." unique_id=1725719421]
+position = Vector2(0, -2)
+shape = SubResource("RectangleShape2D_f4f3r")
+
+[node name="NavigationCutout" type="Node" parent="." unique_id=1132463867 groups=["navigation_cutout"]]
+script = ExtResource("3_51jbr")
+derive_from_collision_shapes = true
+
+[node name="CanopyFade" type="Area2D" parent="." unique_id=1202188853]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CanopyVolume" type="CollisionShape2D" parent="CanopyFade" unique_id=1051337537]
+position = Vector2(0, -56)
+shape = SubResource("RectangleShape2D_k07ju")

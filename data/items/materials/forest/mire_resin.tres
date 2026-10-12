@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MaterialDefinition" format=3 uid="uid://cdc505wvdfcn4"]
+
+[ext_resource type="Script" uid="uid://cxhyqe5l2yvh1" path="res://data/items/materials/material_definition.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://0sshcbi1e8tv" path="res://assets/items/materials/forest/mire_resin_24x24.png" id="2_icon"]
+
+[resource]
+script = ExtResource("1")
+material_id = &"forest_mire_resin"
+display_name = "Mire Resin"
+description = "A sticky green resin that holds warmth and moisture after a Mireling falls."
+region_id = &"forest"
+material_family = 0
+icon = ExtResource("2_icon")
+crafting_tags = PackedStringArray("mire", "resin", "recovery", "binding")
+source_lore = "Mirelings coat their soft bodies in this resin to survive the grove's wet ground."
+source_enemy_id = &"mireling"
+source_enemy_display_name = "Mireling"

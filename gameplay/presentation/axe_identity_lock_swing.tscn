@@ -1,0 +1,11 @@
+[gd_scene load_steps=4 format=3]
+[ext_resource type="Script" path="res://gameplay/presentation/axe_vertical_v2_swing.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/characters/playable/king/axe_vertical_v2/up/swing.png" id="2"]
+[ext_resource type="Texture2D" path="res://assets/characters/playable/king/axe_vertical_v2/down/swing.png" id="3"]
+[node name="AxeVerticalV2Swing" type="Node2D"]
+script = ExtResource("1")
+upward_atlas = ExtResource("2")
+downward_atlas = ExtResource("3")
+register_jump_origin = true
+upward_jump_origin = Vector2(5.9999924, 7.327591)
+downward_jump_origin = Vector2(4.750004, -17.12759)

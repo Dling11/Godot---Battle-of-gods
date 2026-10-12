@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="DropProfileDefinition" format=3 uid="uid://c570c4mx3c5lq"]
+
+[ext_resource type="Script" uid="uid://dl3k32mipxq87" path="res://data/loot/drop_profile_definition.gd" id="1_profile"]
+[ext_resource type="Script" uid="uid://bjfif5kirqwdc" path="res://data/loot/material_drop_entry_definition.gd" id="2_entry"]
+[ext_resource type="Resource" uid="uid://elj26grlw2lq" path="res://data/items/materials/forest/husk_heartwood.tres" id="3_heartwood"]
+[ext_resource type="Resource" uid="uid://cudovbs2y3gpc" path="res://data/items/materials/forest/rootbound_core.tres" id="4_core"]
+
+[sub_resource type="Resource" id="Drop_heartwood"]
+script = ExtResource("2_entry")
+material = ExtResource("3_heartwood")
+minimum_quantity = 2
+maximum_quantity = 3
+
+[sub_resource type="Resource" id="Drop_core"]
+script = ExtResource("2_entry")
+material = ExtResource("4_core")
+
+[resource]
+script = ExtResource("1_profile")
+profile_id = &"forest_rootbound_husk_drops"
+source_enemy_id = &"rootbound_husk"
+region_id = &"forest"
+is_boss_profile = true
+boss_guarantees = Array[ExtResource("2_entry")]([SubResource("Drop_heartwood"), SubResource("Drop_core")])

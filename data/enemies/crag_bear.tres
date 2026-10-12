@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="CragBearDefinition" format=3 uid="uid://cfucgyv1543es"]
+
+[ext_resource type="Script" uid="uid://bh0koa12ojjeq" path="res://data/enemies/crag_bear_definition.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://vpqpuvc15lk5" path="res://assets/characters/enemies/portraits/crag_bear_portrait_96x96.png" id="2_portrait"]
+
+[resource]
+script = ExtResource("1")
+enemy_id = &"crag_bear"
+display_name = "Crag Bear"
+portrait = ExtResource("2_portrait")
+maximum_health = 210.0
+armor_rating = 12.0
+magic_resistance_rating = 12.0
+move_speed = 50.0
+acceleration = 460.0
+movement_footprint_radius = 11.0
+crowd_separation_radius = 46.0
+attack_range = 42.0
+attack_damage = 24.0
+wind_up_seconds = 0.42
+active_seconds = 0.14
+recovery_seconds = 0.62
+spawn_seconds = 0.8
+experience_reward = 32
+coin_reward = 6
+crowd_control_tier = 3
+stagger_interrupt_limit = 4
+stagger_resistance_seconds = 1.05

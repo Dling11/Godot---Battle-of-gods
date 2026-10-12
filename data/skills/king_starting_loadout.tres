@@ -1,0 +1,55 @@
+[gd_resource type="Resource" script_class="SkillLoadoutDefinition" load_steps=13 format=3]
+
+[ext_resource type="Script" path="res://data/skills/skill_loadout_definition.gd" id="1_script"]
+[ext_resource type="Resource" path="res://data/skills/slots/king_echoing_sever_slot.tres" id="2_slot_1"]
+[ext_resource type="Resource" path="res://data/skills/slots/king_riftbreak_slot.tres" id="3_slot_2"]
+[ext_resource type="Resource" path="res://data/skills/slots/king_sovereign_pursuit_slot.tres" id="4_slot_3"]
+[ext_resource type="Resource" path="res://data/skills/slots/king_worldsplitter_slot.tres" id="world_slot_5"]
+
+[ext_resource type="Resource" path="res://data/skills/slots/king_unbroken_vow_slot.tres" id="vow_slot_4"]
+
+[ext_resource type="Script" path="res://data/skills/skill_slot_definition.gd" id="6_slot_script"]
+
+[sub_resource type="Resource" id="Empty_6"]
+script = ExtResource("6_slot_script")
+slot_number = 6
+input_action = &"player_skill_6"
+locked_title = "Empty slot"
+locked_description = "Equip a learned technique in Sanctuary."
+unlock_hint = "EMPTY"
+
+[sub_resource type="Resource" id="Empty_7"]
+script = ExtResource("6_slot_script")
+slot_number = 7
+input_action = &"player_skill_7"
+locked_title = "Empty slot"
+locked_description = "Equip a learned technique in Sanctuary."
+unlock_hint = "EMPTY"
+
+[sub_resource type="Resource" id="Empty_8"]
+script = ExtResource("6_slot_script")
+slot_number = 8
+input_action = &"player_skill_8"
+locked_title = "Empty slot"
+locked_description = "Equip a learned technique in Sanctuary."
+unlock_hint = "EMPTY"
+
+[sub_resource type="Resource" id="Empty_9"]
+script = ExtResource("6_slot_script")
+slot_number = 9
+input_action = &"player_skill_9"
+locked_title = "Empty slot"
+locked_description = "Equip a learned technique in Sanctuary."
+unlock_hint = "EMPTY"
+
+[sub_resource type="Resource" id="Empty_10"]
+script = ExtResource("6_slot_script")
+slot_number = 10
+input_action = &"player_skill_10"
+locked_title = "Empty slot"
+locked_description = "Equip a learned technique in Sanctuary."
+unlock_hint = "EMPTY"
+
+[resource]
+script = ExtResource("1_script")
+slots = Array[Resource]([ExtResource("2_slot_1"), ExtResource("3_slot_2"), ExtResource("4_slot_3"), ExtResource("vow_slot_4"), ExtResource("world_slot_5"), SubResource("Empty_6"), SubResource("Empty_7"), SubResource("Empty_8"), SubResource("Empty_9"), SubResource("Empty_10")])

@@ -1,0 +1,25 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://environment/props/woodland/woodland_prop.gd" id="1_wwlkx"]
+[ext_resource type="Texture2D" path="res://assets/environment/forest/hollow_renewal/seal.png" id="2_rrg15"]
+[ext_resource type="Script" path="res://gameplay/navigation/navigation_cutout.gd" id="3_mdtd0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ki6de"]
+size = Vector2(140, 40)
+
+[node name="Seal" type="StaticBody2D" unique_id=1856101080]
+texture_filter = 1
+collision_mask = 0
+script = ExtResource("1_wwlkx")
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=171928490]
+position = Vector2(0, -40)
+texture = ExtResource("2_rrg15")
+
+[node name="Footprint" type="CollisionShape2D" parent="." unique_id=1736530973]
+position = Vector2(0, -2)
+shape = SubResource("RectangleShape2D_ki6de")
+
+[node name="NavigationCutout" type="Node" parent="." unique_id=1248764204 groups=["navigation_cutout"]]
+script = ExtResource("3_mdtd0")
+derive_from_collision_shapes = true

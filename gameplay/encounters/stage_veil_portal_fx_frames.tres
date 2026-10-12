@@ -1,0 +1,123 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://brt1war5tu2re"]
+
+[ext_resource type="Texture2D" uid="uid://b60mbhj1q6hs0" path="res://assets/environment/portals/generated/stage_abyssal_veil_lightning_fx_16x_256x224.png" id="1_sheet"]
+
+[sub_resource type="AtlasTexture" id="FxFrame1"]
+atlas = ExtResource("1_sheet")
+region = Rect2(0, 0, 256, 224)
+
+[sub_resource type="AtlasTexture" id="FxFrame2"]
+atlas = ExtResource("1_sheet")
+region = Rect2(256, 0, 256, 224)
+
+[sub_resource type="AtlasTexture" id="FxFrame3"]
+atlas = ExtResource("1_sheet")
+region = Rect2(512, 0, 256, 224)
+
+[sub_resource type="AtlasTexture" id="FxFrame4"]
+atlas = ExtResource("1_sheet")
+region = Rect2(768, 0, 256, 224)
+
+[sub_resource type="AtlasTexture" id="FxFrame5"]
+atlas = ExtResource("1_sheet")
+region = Rect2(1024, 0, 256, 224)
+
+[sub_resource type="AtlasTexture" id="FxFrame6"]
+atlas = ExtResource("1_sheet")
+region = Rect2(1280, 0, 256, 224)
+
+[sub_resource type="AtlasTexture" id="FxFrame7"]
+atlas = ExtResource("1_sheet")
+region = Rect2(1536, 0, 256, 224)
+
+[sub_resource type="AtlasTexture" id="FxFrame8"]
+atlas = ExtResource("1_sheet")
+region = Rect2(1792, 0, 256, 224)
+
+[sub_resource type="AtlasTexture" id="FxFrame9"]
+atlas = ExtResource("1_sheet")
+region = Rect2(2048, 0, 256, 224)
+
+[sub_resource type="AtlasTexture" id="FxFrame10"]
+atlas = ExtResource("1_sheet")
+region = Rect2(2304, 0, 256, 224)
+
+[sub_resource type="AtlasTexture" id="FxFrame11"]
+atlas = ExtResource("1_sheet")
+region = Rect2(2560, 0, 256, 224)
+
+[sub_resource type="AtlasTexture" id="FxFrame12"]
+atlas = ExtResource("1_sheet")
+region = Rect2(2816, 0, 256, 224)
+
+[sub_resource type="AtlasTexture" id="FxFrame13"]
+atlas = ExtResource("1_sheet")
+region = Rect2(3072, 0, 256, 224)
+
+[sub_resource type="AtlasTexture" id="FxFrame14"]
+atlas = ExtResource("1_sheet")
+region = Rect2(3328, 0, 256, 224)
+
+[sub_resource type="AtlasTexture" id="FxFrame15"]
+atlas = ExtResource("1_sheet")
+region = Rect2(3584, 0, 256, 224)
+
+[sub_resource type="AtlasTexture" id="FxFrame16"]
+atlas = ExtResource("1_sheet")
+region = Rect2(3840, 0, 256, 224)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("FxFrame1")
+}, {
+"duration": 1.0,
+"texture": SubResource("FxFrame2")
+}, {
+"duration": 1.0,
+"texture": SubResource("FxFrame3")
+}, {
+"duration": 1.0,
+"texture": SubResource("FxFrame4")
+}, {
+"duration": 1.0,
+"texture": SubResource("FxFrame5")
+}, {
+"duration": 1.0,
+"texture": SubResource("FxFrame6")
+}, {
+"duration": 1.0,
+"texture": SubResource("FxFrame7")
+}, {
+"duration": 1.0,
+"texture": SubResource("FxFrame8")
+}, {
+"duration": 1.0,
+"texture": SubResource("FxFrame9")
+}, {
+"duration": 1.0,
+"texture": SubResource("FxFrame10")
+}, {
+"duration": 1.0,
+"texture": SubResource("FxFrame11")
+}, {
+"duration": 1.0,
+"texture": SubResource("FxFrame12")
+}, {
+"duration": 1.0,
+"texture": SubResource("FxFrame13")
+}, {
+"duration": 1.0,
+"texture": SubResource("FxFrame14")
+}, {
+"duration": 1.0,
+"texture": SubResource("FxFrame15")
+}, {
+"duration": 1.0,
+"texture": SubResource("FxFrame16")
+}],
+"loop": 1,
+"name": &"active",
+"speed": 11.0
+}]

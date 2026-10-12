@@ -1,0 +1,137 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://ui/skills/skill_bar_slot.gd" id="1_script"]
+
+[sub_resource type="StyleBoxFlat" id="slot_panel"]
+bg_color = Color(0.045, 0.035, 0.053, 0.96)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.58, 0.52, 0.59, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+shadow_color = Color(0.005, 0.01, 0.02, 0.65)
+shadow_size = 2
+
+[sub_resource type="StyleBoxFlat" id="cooldown_fill"]
+bg_color = Color(0.82, 0.67, 0.3, 0.96)
+
+[sub_resource type="StyleBoxFlat" id="state_plate"]
+bg_color = Color(0.01, 0.02, 0.035, 0.94)
+border_width_top = 1
+border_color = Color(0.36, 0.24, 0.43, 1)
+
+[node name="SkillBarSlot" type="Panel"]
+custom_minimum_size = Vector2(46, 44)
+layout_mode = 2
+mouse_filter = 2
+theme_override_styles/panel = SubResource("slot_panel")
+script = ExtResource("1_script")
+
+[node name="AbilityIcon" type="TextureRect" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -11.0
+offset_top = -16.0
+offset_right = 11.0
+offset_bottom = 6.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="KeyLabel" type="Label" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+offset_left = 3.0
+offset_top = 1.0
+offset_right = 17.0
+offset_bottom = 15.0
+mouse_filter = 2
+text = "1"
+theme_override_colors/font_color = Color(1, 0.88, 0.52, 1)
+theme_override_colors/font_outline_color = Color(0.02, 0.02, 0.03, 1)
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 12
+
+[node name="StatePlate" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -15.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("state_plate")
+
+[node name="StateLabel" type="Label" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 12
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_top = -15.0
+offset_right = -1.0
+offset_bottom = -2.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+text = "READY"
+horizontal_alignment = 1
+theme_override_colors/font_color = Color(0.62, 0.9, 0.54, 1)
+theme_override_colors/font_outline_color = Color(0.01, 0.02, 0.03, 1)
+theme_override_constants/outline_size = 1
+theme_override_font_sizes/font_size = 10
+
+[node name="AbilityName" type="Label" parent="."]
+unique_name_in_owner = true
+visible = false
+layout_mode = 0
+mouse_filter = 2
+text = "ABILITY"
+
+[node name="CooldownBar" type="ProgressBar" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 12
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 3.0
+offset_top = -3.0
+offset_right = -3.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+show_percentage = false
+theme_override_styles/fill = SubResource("cooldown_fill")
+
+[node name="CooldownTick" type="Timer" parent="."]
+unique_name_in_owner = true
+wait_time = 0.1
+
+[node name="ActivationButton" type="Button" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 0
+focus_mode = 0
+mouse_default_cursor_shape = 2
+flat = true
+
+[connection signal="timeout" from="CooldownTick" to="." method="_on_cooldown_tick"]
+[connection signal="pressed" from="ActivationButton" to="." method="_on_activation_button_pressed"]

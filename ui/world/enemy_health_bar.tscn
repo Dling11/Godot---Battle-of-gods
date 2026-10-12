@@ -1,0 +1,46 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://ui/world/enemy_health_bar.gd" id="1"]
+
+[sub_resource type="StyleBoxFlat" id="background"]
+bg_color = Color(0.055, 0.065, 0.055, 1)
+
+[sub_resource type="StyleBoxFlat" id="frame"]
+bg_color = Color(0.025, 0.03, 0.025, 0.98)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.78, 0.72, 0.52, 1)
+
+[sub_resource type="StyleBoxFlat" id="fill"]
+bg_color = Color(0.55, 0.82, 0.28, 1)
+
+[node name="EnemyHealthBar" type="Node2D" node_paths=PackedStringArray("health_component")]
+z_index = 30
+script = ExtResource("1")
+
+[node name="Frame" type="Panel" parent="."]
+offset_left = -16.0
+offset_top = -36.0
+offset_right = 16.0
+offset_bottom = -27.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("frame")
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+unique_name_in_owner = true
+offset_left = -14.0
+offset_top = -34.0
+offset_right = 14.0
+offset_bottom = -29.0
+mouse_filter = 2
+theme_override_styles/background = SubResource("background")
+theme_override_styles/fill = SubResource("fill")
+show_percentage = false
+
+[node name="HideTimer" type="Timer" parent="."]
+unique_name_in_owner = true
+one_shot = true
+
+[connection signal="timeout" from="HideTimer" to="." method="_on_hide_timer_timeout"]

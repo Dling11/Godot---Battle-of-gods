@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="EncounterWaveDefinition" load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://gameplay/encounters/encounter_wave_definition.gd" id="1"]
+[ext_resource type="Script" path="res://gameplay/encounters/encounter_spawn_entry_definition.gd" id="2"]
+[ext_resource type="PackedScene" path="res://entities/enemies/rotcaller/rotcaller.tscn" id="3"]
+[ext_resource type="PackedScene" path="res://entities/enemies/rootling/rootling.tscn" id="4"]
+
+[sub_resource type="Resource" id="caster"]
+script = ExtResource("2")
+enemy_scene = ExtResource("3")
+count = 1
+
+[sub_resource type="Resource" id="roots"]
+script = ExtResource("2")
+enemy_scene = ExtResource("4")
+count = 5
+
+[resource]
+script = ExtResource("1")
+title = "The Grove's Last Sentries"
+spawn_entries = Array[ExtResource("2")]([SubResource("caster"), SubResource("roots")])
+spawn_interval = 0.4
+reinforcement_delay = 0.55

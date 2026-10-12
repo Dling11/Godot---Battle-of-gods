@@ -1,0 +1,67 @@
+{
+	"cell": [
+		192,
+		128
+	],
+	"foot": 94,
+	"rule": "Freeze native head pixels; calibrate torso density once per sheet. Never resize individual poses or anchor X to the lowest boot.",
+	"runtime_scale": 0.5,
+	"standing_height": [
+		54,
+		57
+	],
+	"version": 1,
+	"views": {
+		"down": {
+			"foot": 94,
+			"hair": "Rect2i(86, 40, 21, 19)",
+			"head": [
+				84,
+				36,
+				27,
+				29
+			],
+			"height": 55,
+			"ready_primary": "Vector2(84, 76.39286)",
+			"source": "res://assets/characters/playable/king/dual_v2/down/idle.tres"
+		},
+		"left": {
+			"foot": 94,
+			"head": [
+				80,
+				38,
+				27,
+				27
+			],
+			"height": 57,
+			"mirrored_from": "right",
+			"source": "res://assets/characters/playable/king/axe_proof_v3/carry.tres"
+		},
+		"right": {
+			"foot": 94,
+			"hair": "Rect2i(85, 38, 24, 19)",
+			"head": [
+				85,
+				38,
+				27,
+				27
+			],
+			"height": 57,
+			"ready_primary": "Vector2(109, 76)",
+			"source": "res://assets/characters/playable/king/axe_proof_v3/carry.tres"
+		},
+		"up": {
+			"foot": 94,
+			"hair": "Rect2i(84, 39, 25, 24)",
+			"head": [
+				84,
+				39,
+				25,
+				24
+			],
+			"height": 55,
+			"ready_primary": "Vector2(83, 74.07143)",
+			"source": "res://assets/characters/playable/king/dual_v2/up/idle.tres"
+		}
+	}
+}

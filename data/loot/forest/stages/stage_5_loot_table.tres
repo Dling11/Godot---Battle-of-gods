@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="LootTableDefinition" format=3 uid="uid://csavaogtmeg8n"]
+
+[ext_resource type="Script" uid="uid://bln8sbixhfpvj" path="res://data/loot/loot_table_definition.gd" id="1_table"]
+[ext_resource type="Script" uid="uid://bll3k2id0v40j" path="res://data/items/materials/material_stack_definition.gd" id="2_stack"]
+[ext_resource type="Script" uid="uid://bjfif5kirqwdc" path="res://data/loot/material_drop_entry_definition.gd" id="3_ccq70"]
+[ext_resource type="Resource" path="res://data/items/materials/forest/varkuun_core.tres" id="3_core"]
+
+[sub_resource type="Resource" id="First_core"]
+script = ExtResource("2_stack")
+material = ExtResource("3_core")
+quantity = 2
+
+[sub_resource type="Resource" id="Replay_core"]
+script = ExtResource("2_stack")
+material = ExtResource("3_core")
+
+[resource]
+script = ExtResource("1_table")
+loot_table_id = &"forest_stage_5_boss_chest"
+stage_id = &"dead_forest"
+region_id = &"forest"
+first_clear_claim_id = &"forest_stage_5_first_clear_claim"
+first_clear_guarantees = Array[ExtResource("2_stack")]([SubResource("First_core")])
+replay_guarantees = Array[ExtResource("2_stack")]([SubResource("Replay_core")])
+first_clear_recipe_ids = null
+first_clear_discovery_ids = PackedStringArray("forest_core_gear_crafting")
+first_clear_key_item_ids = PackedStringArray("forest_core_gear_seal")

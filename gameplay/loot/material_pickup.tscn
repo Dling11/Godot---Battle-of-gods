@@ -1,0 +1,41 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://gameplay/loot/material_pickup.gd" id="1_script"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_pickup"]
+radius = 13.0
+
+[sub_resource type="LabelSettings" id="LabelSettings_quantity"]
+font_size = 7
+font_color = Color(0.94, 0.9, 0.72, 1)
+outline_size = 2
+outline_color = Color(0.027, 0.034, 0.052, 1)
+
+[node name="MaterialPickup" type="Area2D" node_paths=PackedStringArray("icon_sprite", "quantity_label", "glow", "visual_root")]
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("1_script")
+icon_sprite = NodePath("VisualRoot/Icon")
+quantity_label = NodePath("VisualRoot/Quantity")
+glow = NodePath("VisualRoot/Glow")
+visual_root = NodePath("VisualRoot")
+
+[node name="VisualRoot" type="Node2D" parent="."]
+
+[node name="Glow" type="Polygon2D" parent="VisualRoot"]
+polygon = PackedVector2Array(0, -12, 8, -8, 12, 0, 8, 8, 0, 12, -8, 8, -12, 0, -8, -8)
+color = Color(0.5, 0.65, 0.42, 0.22)
+
+[node name="Icon" type="Sprite2D" parent="VisualRoot"]
+position = Vector2(0, -2)
+
+[node name="Quantity" type="Label" parent="VisualRoot"]
+offset_left = 3.0
+offset_top = 4.0
+offset_right = 28.0
+offset_bottom = 17.0
+text = "x2"
+label_settings = SubResource("LabelSettings_quantity")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_pickup")

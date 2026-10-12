@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MaterialDefinition" format=3 uid="uid://dduabducj38a"]
+
+[ext_resource type="Script" uid="uid://cxhyqe5l2yvh1" path="res://data/items/materials/material_definition.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://cuvwfv7qax24o" path="res://assets/items/materials/forest/forsaken_cloth_24x24.png" id="2_icon"]
+
+[resource]
+script = ExtResource("1")
+material_id = &"forest_forsaken_cloth"
+display_name = "Forsaken Cloth"
+description = "Weathered cloth whose surviving weave remains useful as armor lining."
+region_id = &"forest"
+material_family = 2
+icon = ExtResource("2_icon")
+crafting_tags = PackedStringArray("cloth", "lining", "armor", "mortal")
+source_lore = "Its faded stitching is one of the last signs that a Forsaken Thrall was once mortal."
+source_enemy_id = &"forsaken_thrall"
+source_enemy_display_name = "Forsaken Thrall"

@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MaterialDefinition" format=3 uid="uid://cudovbs2y3gpc"]
+
+[ext_resource type="Script" uid="uid://cxhyqe5l2yvh1" path="res://data/items/materials/material_definition.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://biqkmwltcpk8u" path="res://assets/items/materials/forest/rootbound_core_24x24.png" id="2_icon"]
+
+[resource]
+script = ExtResource("1")
+material_id = &"forest_rootbound_core"
+display_name = "Rootbound Core"
+description = "The rare living knot that commanded the Rootbound Husk's buried roots."
+region_id = &"forest"
+material_family = 6
+rarity = 3
+icon = ExtResource("2_icon")
+crafting_tags = PackedStringArray("rootbound", "core", "boss", "catalyst")
+source_lore = "Even severed from its guardian, the core strains toward the deepest roots of the hollow."
+source_enemy_id = &"rootbound_husk"
+source_enemy_display_name = "Rootbound Husk"
+required_source_defeats_override = 10
+can_be_sold = false
+can_be_melded = false

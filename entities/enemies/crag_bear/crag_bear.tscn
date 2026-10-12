@@ -1,0 +1,202 @@
+[gd_scene load_steps=29 format=3]
+
+[ext_resource type="PackedScene" path="res://gameplay/presentation/stun_indicator.tscn" id="stun_indicator"]
+
+[ext_resource type="Script" path="res://entities/enemies/crag_bear/crag_bear.gd" id="1_enemy"]
+[ext_resource type="Resource" path="res://data/enemies/crag_bear.tres" id="2_data"]
+[ext_resource type="Script" path="res://entities/enemies/components/enemy_movement_component.gd" id="3_move"]
+[ext_resource type="Script" path="res://gameplay/combat/health_component.gd" id="4_health"]
+[ext_resource type="Script" path="res://gameplay/combat/hurtbox_component.gd" id="5_hurtbox"]
+[ext_resource type="Script" path="res://gameplay/combat/melee_hitbox.gd" id="6_hitbox"]
+[ext_resource type="Script" path="res://entities/shared/presentation/combat_foot_aura.gd" id="7_aura"]
+[ext_resource type="Script" path="res://entities/enemies/crag_bear/crag_bear_visual.gd" id="8_visual"]
+[ext_resource type="SpriteFrames" path="res://assets/characters/enemies/stage_6_crag_bear/crag_bear_sprite_frames.tres" id="9_frames"]
+[ext_resource type="PackedScene" path="res://entities/enemies/components/enemy_separation_component.tscn" id="10_separation"]
+[ext_resource type="PackedScene" path="res://ui/world/enemy_health_bar.tscn" id="11_health_bar"]
+[ext_resource type="Script" path="res://gameplay/combat/knockback_component.gd" id="12_knockback"]
+[ext_resource type="Script" path="res://gameplay/combat/stagger_component.gd" id="13_stagger"]
+[ext_resource type="Script" path="res://entities/enemies/components/enemy_reward_component.gd" id="14_reward"]
+[ext_resource type="Resource" path="res://data/loot/forest/enemies/crag_bear_drop_profile.tres" id="15_drop"]
+[ext_resource type="Script" path="res://entities/player/presentation/player_aim_visual.gd" id="16_facing"]
+[ext_resource type="Script" path="res://entities/enemies/crag_bear/crag_bear_action_audio.gd" id="17_audio"]
+[ext_resource type="AudioStream" path="res://assets/audio/sfx/enemies/crag_bear/crag_bear_claw_swipe.wav" id="18_claw"]
+[ext_resource type="AudioStream" path="res://assets/audio/sfx/enemies/crag_bear/crag_bear_ground_slam.wav" id="19_slam"]
+[ext_resource type="AudioStream" path="res://assets/audio/sfx/enemies/crag_bear/crag_bear_growl_a.ogg" id="20_growl_a"]
+[ext_resource type="AudioStream" path="res://assets/audio/sfx/enemies/crag_bear/crag_bear_growl_b.ogg" id="21_growl_b"]
+[ext_resource type="Script" path="res://entities/enemies/crag_bear/crag_bear_impact_presenter.gd" id="22_impact_presenter"]
+[ext_resource type="PackedScene" path="res://entities/enemies/crag_bear/crag_bear_slam_impact_vfx.tscn" id="23_impact_vfx"]
+
+[sub_resource type="CircleShape2D" id="movement"]
+radius = 11.0
+
+[sub_resource type="CapsuleShape2D" id="hurt"]
+radius = 11.0
+height = 32.0
+
+[sub_resource type="CircleShape2D" id="basic"]
+radius = 12.0
+
+[sub_resource type="CircleShape2D" id="slam"]
+radius = 44.0
+
+[node name="CragBear" type="CharacterBody2D"]
+collision_layer = 4
+script = ExtResource("1_enemy")
+definition = ExtResource("2_data")
+
+[node name="CombatFootAura" type="Node2D" parent="."]
+script = ExtResource("7_aura")
+
+[node name="Shadow" type="Polygon2D" parent="."]
+position = Vector2(0, -3)
+color = Color(0.035, 0.06, 0.035, 0.4)
+polygon = PackedVector2Array(-12, 0, -8, -3, 8, -3, 12, 0, 8, 3, -8, 3)
+
+[node name="VisualPivot" type="Node2D" parent="." node_paths=PackedStringArray("body", "basic_marker", "ground_slam_marker", "spawn_shadow")]
+script = ExtResource("8_visual")
+body = NodePath("Body")
+basic_marker = NodePath("../BasicPivot/BasicMarker")
+ground_slam_marker = NodePath("../GroundSlamMarker")
+spawn_shadow = NodePath("../Shadow")
+
+[node name="Body" type="AnimatedSprite2D" parent="VisualPivot"]
+position = Vector2(0, -22)
+sprite_frames = ExtResource("9_frames")
+animation = &"idle_down"
+
+[node name="BodyCollision" type="CollisionShape2D" parent="."]
+position = Vector2(0, -5)
+shape = SubResource("movement")
+
+[node name="MovementComponent" type="Node" parent="."]
+unique_name_in_owner = true
+script = ExtResource("3_move")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+unique_name_in_owner = true
+path_desired_distance = 8.0
+target_desired_distance = 8.0
+radius = 11.0
+neighbor_distance = 56.0
+max_speed = 120.0
+
+[node name="EnemySeparationComponent" parent="." instance=ExtResource("10_separation")]
+unique_name_in_owner = true
+
+[node name="HealthComponent" type="Node" parent="."]
+unique_name_in_owner = true
+script = ExtResource("4_health")
+maximum_health = 210.0
+armor_rating = 12.0
+
+[node name="EnemyRewardComponent" type="Node" parent="." node_paths=PackedStringArray("health_component")]
+script = ExtResource("14_reward")
+health_component = NodePath("../HealthComponent")
+drop_profile = ExtResource("15_drop")
+
+[node name="EnemyHealthBar" parent="." node_paths=PackedStringArray("health_component") instance=ExtResource("11_health_bar")]
+health_component = NodePath("../HealthComponent")
+
+[node name="KnockbackComponent" type="Node" parent="." node_paths=PackedStringArray("health_component")]
+unique_name_in_owner = true
+script = ExtResource("12_knockback")
+health_component = NodePath("../HealthComponent")
+
+[node name="StaggerComponent" type="Node" parent="." node_paths=PackedStringArray("health_component")]
+unique_name_in_owner = true
+script = ExtResource("13_stagger")
+health_component = NodePath("../HealthComponent")
+
+[node name="Hurtbox" type="Area2D" parent="." node_paths=PackedStringArray("health_component")]
+collision_layer = 16
+collision_mask = 8
+script = ExtResource("5_hurtbox")
+health_component = NodePath("../HealthComponent")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox"]
+position = Vector2(0, -16)
+shape = SubResource("hurt")
+
+[node name="BasicPivot" type="Node2D" parent="."]
+position = Vector2(0, -16)
+script = ExtResource("16_facing")
+
+[node name="BasicMarker" type="Polygon2D" parent="BasicPivot"]
+modulate = Color(1, 1, 1, 0)
+color = Color(1, 0.42, 0.2, 0.4)
+polygon = PackedVector2Array(12, -11, 28, -13, 42, -8, 48, 0, 42, 8, 28, 13, 12, 11)
+
+[node name="BasicHitbox" type="Area2D" parent="BasicPivot"]
+unique_name_in_owner = true
+collision_layer = 32
+collision_mask = 64
+script = ExtResource("6_hitbox")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BasicPivot/BasicHitbox"]
+position = Vector2(24, 0)
+shape = SubResource("basic")
+
+[node name="GroundSlamMarker" type="Polygon2D" parent="."]
+position = Vector2(0, -8)
+modulate = Color(1, 1, 1, 0)
+color = Color(1, 0.3, 0.14, 0.4)
+polygon = PackedVector2Array(44, 0, 41, 17, 31, 31, 17, 41, 0, 44, -17, 41, -31, 31, -41, 17, -44, 0, -41, -17, -31, -31, -17, -41, 0, -44, 17, -41, 31, -31, 41, -17)
+
+[node name="GroundSlamHitbox" type="Area2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(0, -8)
+collision_layer = 32
+collision_mask = 64
+script = ExtResource("6_hitbox")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GroundSlamHitbox"]
+shape = SubResource("slam")
+
+[node name="ActionAudio" type="Node2D" parent="." node_paths=PackedStringArray("claw_player", "growl_a_player", "growl_b_player", "slam_player")]
+script = ExtResource("17_audio")
+claw_player = NodePath("Claw")
+growl_a_player = NodePath("GrowlA")
+growl_b_player = NodePath("GrowlB")
+slam_player = NodePath("Slam")
+
+[node name="Claw" type="AudioStreamPlayer2D" parent="ActionAudio"]
+stream = ExtResource("18_claw")
+volume_db = -4.0
+max_distance = 620.0
+bus = &"SFX"
+
+[node name="GrowlA" type="AudioStreamPlayer2D" parent="ActionAudio"]
+stream = ExtResource("20_growl_a")
+volume_db = -7.0
+pitch_scale = 0.9
+max_distance = 680.0
+bus = &"SFX"
+
+[node name="GrowlB" type="AudioStreamPlayer2D" parent="ActionAudio"]
+stream = ExtResource("21_growl_b")
+volume_db = -7.0
+pitch_scale = 0.88
+max_distance = 680.0
+bus = &"SFX"
+
+[node name="Slam" type="AudioStreamPlayer2D" parent="ActionAudio"]
+stream = ExtResource("19_slam")
+volume_db = -3.0
+max_distance = 720.0
+bus = &"SFX"
+
+[node name="ImpactPresenter" type="Node2D" parent="." node_paths=PackedStringArray("impact_origin")]
+script = ExtResource("22_impact_presenter")
+impact_origin = NodePath("../GroundSlamHitbox")
+impact_scene = ExtResource("23_impact_vfx")
+
+[node name="StunIndicator" parent="." instance=ExtResource("stun_indicator")]
+position = Vector2(0, -48)
+orbit_radius = Vector2(12, 3)
+
+[connection signal="facing_changed" from="." to="VisualPivot" method="set_facing_direction"]
+[connection signal="facing_changed" from="." to="BasicPivot" method="set_facing_direction"]
+[connection signal="state_changed" from="." to="VisualPivot" method="play_state"]
+[connection signal="state_changed" from="." to="ActionAudio" method="play_state"]
+[connection signal="state_changed" from="." to="ImpactPresenter" method="play_state"]
+[connection signal="damaged" from="HealthComponent" to="VisualPivot" method="play_hurt"]

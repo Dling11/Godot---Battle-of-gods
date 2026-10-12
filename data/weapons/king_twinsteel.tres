@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="WeaponDefinition" load_steps=6 format=3]
+[ext_resource type="Script" path="res://data/weapons/weapon_definition.gd" id="1"]
+[ext_resource type="Resource" path="res://data/weapons/families/twinsteel_v2/combo.tres" id="2"]
+[ext_resource type="Resource" path="res://data/weapons/families/twinsteel_v2/presentation.tres" id="3"]
+[ext_resource type="Resource" path="res://data/weapons/audio/dual_contact.tres" id="4_audio"]
+[sub_resource type="ConvexPolygonShape2D" id="fan"]
+points = PackedVector2Array(2,-12,22,-36,60,-28,72,0,60,28,22,36,2,12)
+[resource]
+script = ExtResource("1")
+weapon_id = &"weapon_king_twinsteel"
+display_name = "Twinsteel"
+uses_integrated_visual = true
+family_presentation = ExtResource("3")
+melee_hitbox_shape = SubResource("fan")
+combo = ExtResource("2")
+hit_audio = ExtResource("4_audio")
+damage = 25.0
+basic_damage_minimum = 9.0
+basic_damage_maximum = 11.0
+knockback_strength = 40.0
+basic_stagger_seconds = 0.08
+attack_movement_ratios = PackedFloat32Array(0.5,0.0,0.75)

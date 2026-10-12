@@ -1,0 +1,242 @@
+[
+	{
+		"density": 1.0,
+		"key": 0,
+		"leg_shift": "Vector2i(4, 0)",
+		"mirrored_legs": false,
+		"seam": 81,
+		"source_key": 0,
+		"target_pelvis_x": 99.8775510204082,
+		"view": "side"
+	},
+	{
+		"density": 1.0,
+		"key": 1,
+		"leg_shift": "Vector2i(5, 0)",
+		"mirrored_legs": false,
+		"seam": 81,
+		"source_key": 1,
+		"target_pelvis_x": 99.8775510204082,
+		"view": "side"
+	},
+	{
+		"density": 1.0,
+		"key": 2,
+		"leg_shift": "Vector2i(0, 0)",
+		"mirrored_legs": false,
+		"seam": 81,
+		"source_key": 2,
+		"target_pelvis_x": 99.8775510204082,
+		"view": "side"
+	},
+	{
+		"density": 1.0,
+		"key": 3,
+		"leg_shift": "Vector2i(6, 0)",
+		"mirrored_legs": false,
+		"seam": 81,
+		"source_key": 3,
+		"target_pelvis_x": 99.8775510204082,
+		"view": "side"
+	},
+	{
+		"density": 1.0,
+		"key": 4,
+		"leg_shift": "Vector2i(6, 0)",
+		"mirrored_legs": false,
+		"seam": 81,
+		"source_key": 4,
+		"target_pelvis_x": 99.8775510204082,
+		"view": "side"
+	},
+	{
+		"density": 1.0,
+		"key": 5,
+		"leg_shift": "Vector2i(4, 0)",
+		"mirrored_legs": false,
+		"seam": 81,
+		"source_key": 5,
+		"target_pelvis_x": 99.8775510204082,
+		"view": "side"
+	},
+	{
+		"density": 1.0,
+		"key": 6,
+		"leg_shift": "Vector2i(1, 0)",
+		"mirrored_legs": false,
+		"seam": 81,
+		"source_key": 6,
+		"target_pelvis_x": 99.8775510204082,
+		"view": "side"
+	},
+	{
+		"density": 1.0,
+		"key": 7,
+		"leg_shift": "Vector2i(4, 0)",
+		"mirrored_legs": false,
+		"seam": 81,
+		"source_key": 7,
+		"target_pelvis_x": 99.8775510204082,
+		"view": "side"
+	},
+	{
+		"density": 0.191780821917808,
+		"key": 0,
+		"leg_shift": "Vector2i(87, 81)",
+		"mirrored_legs": false,
+		"seam": 81,
+		"source_key": 0,
+		"target_pelvis_x": 96.5862068965517,
+		"view": "up"
+	},
+	{
+		"density": 0.191780821917808,
+		"key": 1,
+		"leg_shift": "Vector2i(86, 81)",
+		"mirrored_legs": false,
+		"seam": 81,
+		"source_key": 1,
+		"target_pelvis_x": 96.5862068965517,
+		"view": "up"
+	},
+	{
+		"density": 0.191780821917808,
+		"key": 2,
+		"leg_shift": "Vector2i(85, 81)",
+		"mirrored_legs": false,
+		"seam": 81,
+		"source_key": 3,
+		"target_pelvis_x": 96.5862068965517,
+		"view": "up"
+	},
+	{
+		"density": 0.191780821917808,
+		"key": 3,
+		"leg_shift": "Vector2i(86, 81)",
+		"mirrored_legs": false,
+		"seam": 81,
+		"source_key": 4,
+		"target_pelvis_x": 96.5862068965517,
+		"view": "up"
+	},
+	{
+		"density": 0.191780821917808,
+		"key": 4,
+		"leg_shift": "Vector2i(85, 81)",
+		"mirrored_legs": true,
+		"seam": 81,
+		"source_key": 0,
+		"target_pelvis_x": 96.5862068965517,
+		"view": "up"
+	},
+	{
+		"density": 0.191780821917808,
+		"key": 5,
+		"leg_shift": "Vector2i(85, 81)",
+		"mirrored_legs": true,
+		"seam": 81,
+		"source_key": 1,
+		"target_pelvis_x": 96.5862068965517,
+		"view": "up"
+	},
+	{
+		"density": 0.191780821917808,
+		"key": 6,
+		"leg_shift": "Vector2i(85, 81)",
+		"mirrored_legs": true,
+		"seam": 81,
+		"source_key": 3,
+		"target_pelvis_x": 96.5862068965517,
+		"view": "up"
+	},
+	{
+		"density": 0.191780821917808,
+		"key": 7,
+		"leg_shift": "Vector2i(85, 81)",
+		"mirrored_legs": true,
+		"seam": 81,
+		"source_key": 4,
+		"target_pelvis_x": 96.5862068965517,
+		"view": "up"
+	},
+	{
+		"density": 0.202898550724638,
+		"key": 0,
+		"leg_shift": "Vector2i(84, 81)",
+		"mirrored_legs": false,
+		"seam": 81,
+		"source_key": 0,
+		"target_pelvis_x": 96.2647058823529,
+		"view": "down"
+	},
+	{
+		"density": 0.202898550724638,
+		"key": 1,
+		"leg_shift": "Vector2i(84, 81)",
+		"mirrored_legs": false,
+		"seam": 81,
+		"source_key": 1,
+		"target_pelvis_x": 96.2647058823529,
+		"view": "down"
+	},
+	{
+		"density": 0.202898550724638,
+		"key": 2,
+		"leg_shift": "Vector2i(84, 81)",
+		"mirrored_legs": false,
+		"seam": 81,
+		"source_key": 3,
+		"target_pelvis_x": 96.2647058823529,
+		"view": "down"
+	},
+	{
+		"density": 0.202898550724638,
+		"key": 3,
+		"leg_shift": "Vector2i(84, 81)",
+		"mirrored_legs": false,
+		"seam": 81,
+		"source_key": 4,
+		"target_pelvis_x": 96.2647058823529,
+		"view": "down"
+	},
+	{
+		"density": 0.202898550724638,
+		"key": 4,
+		"leg_shift": "Vector2i(86, 81)",
+		"mirrored_legs": true,
+		"seam": 81,
+		"source_key": 0,
+		"target_pelvis_x": 96.2647058823529,
+		"view": "down"
+	},
+	{
+		"density": 0.202898550724638,
+		"key": 5,
+		"leg_shift": "Vector2i(84, 81)",
+		"mirrored_legs": true,
+		"seam": 81,
+		"source_key": 1,
+		"target_pelvis_x": 96.2647058823529,
+		"view": "down"
+	},
+	{
+		"density": 0.202898550724638,
+		"key": 6,
+		"leg_shift": "Vector2i(85, 81)",
+		"mirrored_legs": true,
+		"seam": 81,
+		"source_key": 3,
+		"target_pelvis_x": 96.2647058823529,
+		"view": "down"
+	},
+	{
+		"density": 0.202898550724638,
+		"key": 7,
+		"leg_shift": "Vector2i(84, 81)",
+		"mirrored_legs": true,
+		"seam": 81,
+		"source_key": 4,
+		"target_pelvis_x": 96.2647058823529,
+		"view": "down"
+	}
+]

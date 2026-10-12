@@ -1,0 +1,13 @@
+# Decision 197 — Delete retired content, preserve production assets
+
+2026-10-13. Owner explicitly authorizes automatic folder deletion of old archives/images/models, redundant code removal, documentation consolidation and Godot testing to reduce GitHub/project size. No image inspection/generation is required. Do not create another in-repository archive of what is being deleted.
+
+Trace current runtime resources plus maintained test/tool dependencies. Preserve actual production rasters/resources with SHA256 checks, including the accepted Greatsword and current axe/Twinsteel contacts/carry/idle; preserve save IDs, combat and useful global-class/signal callbacks. An old version name is not proof of unused content. Remove archives, review captures, rejected generation inputs, unreferenced asset/sidecar files, obsolete builders/viewers/comparison fixtures and proven unused prototype models.
+
+Replace the archive-dependent shared/dual builder inheritance chain with a current Twinsteel carry rebuild reading production poses and its retained gait source. Split anatomy helpers into a small independent test base; keep actual gameplay/anatomy/equipment/input/save checks. Other accepted weapon output assets become authoritative rather than remaining vulnerable to legacy regeneration scripts.
+
+Route all future evidence to ignored tmp/review/; ignore archives, cleaned images and exports. Consolidate current docs/handoffs, retire superseded art-review guides, remove dead local links and preserve lore/planned mechanics plus historical decision text. Git history remains the recovery mechanism for previously tracked content; discarded ignored/untracked files were not copied elsewhere. Provide a compact source ZIP that excludes history/cache/source experiments and prove it can import/load on a fresh directory.
+
+Git working-tree deletion does not remove reachable blobs from old commits. The initial cleanup left Git delivery to the owner; on 2026-10-13 the owner subsequently authorized logical commits and an ordinary push to the existing repository. Force-pushing, destructive history rewriting and external data cleanup remain outside this scope. A shallow clone after delivery or a fresh clean repository are separate options for history size. Godot export templates/standalone executable validation are separate from the source ZIP.
+
+See [repository cleanup](../maintenance/repository-cleanup.md) for scope, measured sizes, verification and limitations. Future changes should keep current runtime assets and small purposeful generation sources; never resume the deleted trial chain by default.

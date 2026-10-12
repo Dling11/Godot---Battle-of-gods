@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="RecipeDefinition" format=3 uid="uid://wae8fv1045ln"]
+
+[ext_resource type="Script" uid="uid://ddkkkbe8622gd" path="res://data/crafting/recipes/recipe_definition.gd" id="1_recipe"]
+[ext_resource type="Script" uid="uid://bll3k2id0v40j" path="res://data/items/materials/material_stack_definition.gd" id="2_stack"]
+[ext_resource type="Resource" uid="uid://co68leshraied" path="res://data/items/materials/forest/root_fiber.tres" id="3_fiber"]
+[ext_resource type="Resource" uid="uid://dduabducj38a" path="res://data/items/materials/forest/forsaken_cloth.tres" id="4_cloth"]
+
+[sub_resource type="Resource" id="Cost_fiber"]
+script = ExtResource("2_stack")
+material = ExtResource("3_fiber")
+quantity = 6
+
+[sub_resource type="Resource" id="Cost_cloth"]
+script = ExtResource("2_stack")
+material = ExtResource("4_cloth")
+quantity = 3
+
+[resource]
+script = ExtResource("1_recipe")
+recipe_id = &"forest_rootfiber_wraps"
+display_name = "Rootfiber Wraps"
+description = "Layered root-fiber and cloth protection intended for the first Forest equipment set."
+region_id = &"forest"
+category = 0
+output_id = &"forest_rootfiber_wraps"
+ingredients = Array[ExtResource("2_stack")]([SubResource("Cost_fiber"), SubResource("Cost_cloth")])
+unlock_id = &"forest_rootfiber_wraps"

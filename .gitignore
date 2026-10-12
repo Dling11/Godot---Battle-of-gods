@@ -1,0 +1,28 @@
+# Godot-generated cache and imported resources
+.godot/
+tmp/
+
+# Generated review captures and retired snapshots never belong in the game.
+art_source/review/
+art_source/archive/
+art_source/cleaned/
+
+# Exported builds
+builds/
+exports/
+
+# Local editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# Python asset-tool caches are derived and never belong to runtime content
+__pycache__/
+*.py[cod]

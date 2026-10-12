@@ -1,0 +1,27 @@
+[gd_resource type="Resource" load_steps=5 format=3]
+[ext_resource type="Script" path="res://data/weapons/weapon_family_pose_definition.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/characters/playable/king/greatsword_v2_cardinal_carry/up/run_body.png" id="2"]
+[ext_resource type="Texture2D" path="res://assets/characters/playable/king/greatsword_v2_cardinal_carry/up/run_hands.png" id="3"]
+[ext_resource type="Texture2D" path="res://assets/characters/playable/king/huge_greatsword_proof/greatsword.png" id="4"]
+[resource]
+script = ExtResource("1")
+body_atlas = ExtResource("2")
+hand_atlas = ExtResource("3")
+weapon_texture = ExtResource("4")
+primary_hands = PackedVector2Array(102, 67.161285, 102, 67.161285, 102, 67.161285, 102, 67.161285, 102, 67.161285, 102, 67.161285, 102, 67.161285, 102, 67.161285)
+secondary_hands = PackedVector2Array(106.949745, 72.11103, 106.949745, 72.11103, 106.949745, 72.11103, 106.949745, 72.11103, 106.949745, 72.11103, 106.949745, 72.11103, 106.949745, 72.11103, 106.949745, 72.11103)
+weapon_primary_grip = Vector2(15, 113)
+weapon_tip = Vector2(15, 0)
+mirror_cutting_edge = false
+phase_windows = PackedVector2Array(0, 3, 4, 5, 6, 7)
+weapon_behind_body = PackedByteArray(1, 1, 1, 1, 1, 1, 1, 1)
+single_hand_poses = PackedByteArray(1, 1, 1, 1, 1, 1, 1, 1)
+stowed_poses = PackedByteArray(1, 1, 1, 1, 1, 1, 1, 1)
+lift_pixels = PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0)
+interpolate_weapon = false
+linked_recovery_pose = -1
+allow_rest = true
+
+identity_regions = Array[Rect2]([Rect2(83, 38, 25, 24), Rect2(84, 38, 25, 24), Rect2(86, 37, 25, 24), Rect2(90, 37, 25, 24), Rect2(91, 37, 25, 24), Rect2(90, 36, 25, 24), Rect2(92, 37, 25, 24), Rect2(89, 37, 25, 24)])
+
+identity_source_region = Rect2(83, 38, 25, 24)

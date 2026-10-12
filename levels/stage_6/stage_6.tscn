@@ -1,0 +1,259 @@
+[gd_scene load_steps=33 format=3]
+
+[ext_resource type="Script" path="res://levels/stage_6/stage_6_flow.gd" id="1_flow"]
+[ext_resource type="PackedScene" path="res://entities/player/player.tscn" id="2_player"]
+[ext_resource type="TileSet" path="res://assets/environment/forest/stage_6/tiles/elder_ascent_ground_tileset.tres" id="3_tiles"]
+[ext_resource type="Script" path="res://environment/ground/authored_ground.gd" id="4_ground"]
+[ext_resource type="Resource" path="res://data/environment/layouts/stage_6_elder_ascent_ground.tres" id="5_layout"]
+[ext_resource type="PackedScene" path="res://environment/props/stage_6_waterfall/stage_6_upper_terrace_waterfall.tscn" id="6_waterfall"]
+[ext_resource type="PackedScene" path="res://environment/props/ancient_tree/ancient_tree.tscn" id="7_tree"]
+[ext_resource type="PackedScene" path="res://environment/props/ruined_statue/ruined_statue.tscn" id="8_statue"]
+[ext_resource type="PackedScene" path="res://ui/combat_hud.tscn" id="9_hud"]
+[ext_resource type="PackedScene" path="res://ui/character_menu.tscn" id="10_menu"]
+[ext_resource type="PackedScene" path="res://ui/pause_menu.tscn" id="11_pause"]
+[ext_resource type="Script" path="res://gameplay/presentation/combat_feedback_presenter.gd" id="12_feedback"]
+[ext_resource type="PackedScene" path="res://ui/world/damage_number.tscn" id="13_number"]
+[ext_resource type="PackedScene" path="res://gameplay/presentation/hit_burst.tscn" id="14_burst"]
+[ext_resource type="AudioStream" path="res://assets/audio/sfx/sword_hit.wav" id="15_sword_hit"]
+[ext_resource type="AudioStream" path="res://assets/audio/sfx/player_hurt_impact.wav" id="16_hurt"]
+[ext_resource type="AudioStream" path="res://assets/audio/sfx/player_ability_hit.ogg" id="17_ability_hit"]
+[ext_resource type="Texture2D" path="res://assets/environment/forest/stage_6/props/modular_cliffs/cliff_straight_256x160.png" id="18_cliff_straight"]
+[ext_resource type="Texture2D" path="res://assets/environment/forest/stage_6/props/modular_cliffs/cliff_outer_corner_192x224.png" id="19_cliff_outer"]
+[ext_resource type="Texture2D" path="res://assets/environment/forest/stage_6/props/modular_cliffs/cliff_inner_corner_224x208.png" id="20_cliff_inner"]
+[ext_resource type="Texture2D" path="res://assets/environment/forest/stage_6/props/modular_cliffs/rocky_outcrop_208x208.png" id="21_outcrop"]
+[ext_resource type="Texture2D" path="res://assets/environment/forest/stage_6/props/modular_cliffs/boulder_cluster_192x176.png" id="22_boulders"]
+[ext_resource type="Texture2D" path="res://assets/environment/forest/stage_6/props/modular_cliffs/cliff_ramp_192x224.png" id="23_ramp"]
+[ext_resource type="Script" path="res://levels/test_arena/arena_navigation.gd" id="24_navigation"]
+[ext_resource type="Script" path="res://gameplay/encounters/encounter_controller.gd" id="25_encounter"]
+[ext_resource type="Resource" path="res://data/encounters/stage_6_wave_1.tres" id="26_wave1"]
+[ext_resource type="Resource" path="res://data/encounters/stage_6_wave_2.tres" id="27_wave2"]
+[ext_resource type="Resource" path="res://data/encounters/stage_6_wave_3.tres" id="28_wave3"]
+[ext_resource type="Resource" path="res://data/encounters/stage_6_wave_4.tres" id="29_wave4"]
+[ext_resource type="Resource" path="res://data/encounters/stage_6_wave_5.tres" id="30_wave5"]
+[ext_resource type="PackedScene" path="res://gameplay/encounters/stage_portal.tscn" id="31_portal"]
+[ext_resource type="PackedScene" path="res://gameplay/encounters/summon_effect.tscn" id="32_summon"]
+
+[sub_resource type="RectangleShape2D" id="cliff_blocker"]
+size = Vector2(1536, 64)
+
+[node name="Stage6" type="Node" node_paths=PackedStringArray("player", "combat_hud", "character_menu", "encounter_controller")]
+script = ExtResource("1_flow")
+player = NodePath("World/Actors/Player")
+combat_hud = NodePath("UI/CombatHUD")
+character_menu = NodePath("UI/CharacterMenu")
+encounter_controller = NodePath("Services/EncounterController")
+
+[node name="World" type="Node2D" parent="."]
+
+[node name="Level" type="Node2D" parent="World"]
+
+[node name="Ground" type="TileMapLayer" parent="World/Level"]
+z_index = -10
+tile_set = ExtResource("3_tiles")
+script = ExtResource("4_ground")
+map_size = Vector2i(24, 20)
+layout = ExtResource("5_layout")
+
+[node name="Actors" type="Node2D" parent="World"]
+y_sort_enabled = true
+
+[node name="Player" parent="World/Actors" instance=ExtResource("2_player")]
+position = Vector2(768, 1160)
+movement_bounds = Rect2(56, 392, 1424, 832)
+
+[node name="Camera2D" type="Camera2D" parent="World/Actors/Player"]
+position = Vector2(0, -8)
+limit_left = 0
+limit_top = 0
+limit_right = 1536
+limit_bottom = 1280
+
+[node name="UpperTerrace" type="Node2D" parent="World/Actors"]
+
+[node name="AncientTreeFarWest" parent="World/Actors/UpperTerrace" instance=ExtResource("7_tree")]
+position = Vector2(120, 242)
+scale = Vector2(0.9, 0.9)
+
+[node name="AncientTreeWest" parent="World/Actors/UpperTerrace" instance=ExtResource("7_tree")]
+position = Vector2(342, 224)
+scale = Vector2(1.08, 1.08)
+
+[node name="AncientTreeCenterWest" parent="World/Actors/UpperTerrace" instance=ExtResource("7_tree")]
+position = Vector2(580, 246)
+scale = Vector2(0.84, 0.84)
+
+[node name="AncientTreeCenterEast" parent="World/Actors/UpperTerrace" instance=ExtResource("7_tree")]
+position = Vector2(956, 238)
+scale = Vector2(0.9, 0.9)
+
+[node name="AncientTreeEast" parent="World/Actors/UpperTerrace" instance=ExtResource("7_tree")]
+position = Vector2(1190, 222)
+scale = Vector2(1.08, 1.08)
+
+[node name="AncientTreeFarEast" parent="World/Actors/UpperTerrace" instance=ExtResource("7_tree")]
+position = Vector2(1412, 244)
+scale = Vector2(0.88, 0.88)
+
+[node name="RockyOutcropWest" type="Sprite2D" parent="World/Actors/UpperTerrace"]
+position = Vector2(490, 224)
+texture = ExtResource("21_outcrop")
+
+[node name="BouldersCenter" type="Sprite2D" parent="World/Actors/UpperTerrace"]
+position = Vector2(770, 222)
+texture = ExtResource("22_boulders")
+
+[node name="RockyOutcropEast" type="Sprite2D" parent="World/Actors/UpperTerrace"]
+position = Vector2(1060, 228)
+scale = Vector2(-0.84, 0.84)
+texture = ExtResource("21_outcrop")
+
+[node name="CliffLine" type="Node2D" parent="World/Actors/UpperTerrace"]
+
+[node name="WestOuterCorner" type="Sprite2D" parent="World/Actors/UpperTerrace/CliffLine"]
+position = Vector2(82, 342)
+texture = ExtResource("19_cliff_outer")
+
+[node name="StraightWestA" type="Sprite2D" parent="World/Actors/UpperTerrace/CliffLine"]
+position = Vector2(232, 350)
+texture = ExtResource("18_cliff_straight")
+
+[node name="StraightWestB" type="Sprite2D" parent="World/Actors/UpperTerrace/CliffLine"]
+position = Vector2(488, 350)
+texture = ExtResource("18_cliff_straight")
+
+[node name="CenterWestCorner" type="Sprite2D" parent="World/Actors/UpperTerrace/CliffLine"]
+position = Vector2(670, 352)
+texture = ExtResource("20_cliff_inner")
+
+[node name="CenterEastCorner" type="Sprite2D" parent="World/Actors/UpperTerrace/CliffLine"]
+position = Vector2(866, 352)
+scale = Vector2(-1, 1)
+texture = ExtResource("20_cliff_inner")
+
+[node name="StraightEastA" type="Sprite2D" parent="World/Actors/UpperTerrace/CliffLine"]
+position = Vector2(1048, 350)
+texture = ExtResource("18_cliff_straight")
+
+[node name="StraightEastB" type="Sprite2D" parent="World/Actors/UpperTerrace/CliffLine"]
+position = Vector2(1304, 350)
+texture = ExtResource("18_cliff_straight")
+
+[node name="EastOuterCorner" type="Sprite2D" parent="World/Actors/UpperTerrace/CliffLine"]
+position = Vector2(1454, 342)
+scale = Vector2(-1, 1)
+texture = ExtResource("19_cliff_outer")
+
+[node name="Waterfall" parent="World/Actors/UpperTerrace" instance=ExtResource("6_waterfall")]
+position = Vector2(768, 410)
+
+[node name="TerraceStatueWest" parent="World/Actors" instance=ExtResource("8_statue")]
+position = Vector2(448, 752)
+scale = Vector2(0.78, 0.78)
+
+[node name="TerraceStatueEast" parent="World/Actors" instance=ExtResource("8_statue")]
+position = Vector2(1088, 752)
+scale = Vector2(-0.78, 0.78)
+
+[node name="VoidCollision" type="StaticBody2D" parent="World"]
+collision_mask = 6
+
+[node name="UpperCliffBoundary" type="CollisionShape2D" parent="World/VoidCollision"]
+position = Vector2(768, 352)
+shape = SubResource("cliff_blocker")
+
+[node name="NavigationRegion2D" type="NavigationRegion2D" parent="World"]
+script = ExtResource("24_navigation")
+navigation_bounds = Rect2(56, 392, 1424, 832)
+navigation_agent_radius = 11.0
+
+[node name="Projectiles" type="Node2D" parent="World"]
+
+[node name="Effects" type="Node2D" parent="World"]
+
+[node name="AmberMotes" type="CPUParticles2D" parent="World/Effects"]
+z_index = 16
+position = Vector2(768, 750)
+amount = 42
+lifetime = 5.5
+preprocess = 5.5
+emission_shape = 3
+emission_rect_extents = Vector2(650, 430)
+direction = Vector2(0.2, -1)
+spread = 50.0
+gravity = Vector2(0, -1.5)
+initial_velocity_min = 2.0
+initial_velocity_max = 7.0
+scale_amount_min = 1.0
+scale_amount_max = 2.0
+color = Color(1, 0.73, 0.24, 0.52)
+
+[node name="Services" type="Node" parent="."]
+
+[node name="EncounterController" type="Node" parent="Services" node_paths=PackedStringArray("player", "actors", "spawn_points_root", "portal_parent", "portal_spawn_point", "effects_parent", "projectiles_parent")]
+script = ExtResource("25_encounter")
+player = NodePath("../../World/Actors/Player")
+actors = NodePath("../../World/Actors")
+spawn_points_root = NodePath("../../SpawnPoints")
+waves = Array[Resource]([ExtResource("26_wave1"), ExtResource("27_wave2"), ExtResource("28_wave3"), ExtResource("29_wave4"), ExtResource("30_wave5")])
+portal_scene = ExtResource("31_portal")
+portal_parent = NodePath("../../World/Effects")
+portal_spawn_point = NodePath("../../SpawnPoints/StageExit")
+portal_target_scene = "res://levels/sanctuary/sanctuary.tscn"
+portal_tier = 0
+summon_effect_scene = ExtResource("32_summon")
+effects_parent = NodePath("../../World/Effects")
+projectiles_parent = NodePath("../../World/Projectiles")
+auto_start = false
+inter_wave_delay = 1.75
+max_active_enemies = 5
+
+[node name="CombatFeedback" type="Node" parent="Services" node_paths=PackedStringArray("player", "effects_parent", "camera")]
+script = ExtResource("12_feedback")
+player = NodePath("../../World/Actors/Player")
+effects_parent = NodePath("../../World/Effects")
+camera = NodePath("../../World/Actors/Player/Camera2D")
+damage_number_scene = ExtResource("13_number")
+hit_burst_scene = ExtResource("14_burst")
+sword_hit_sound = ExtResource("15_sword_hit")
+ability_hit_sound = ExtResource("17_ability_hit")
+player_hurt_sound = ExtResource("16_hurt")
+
+[node name="SpawnPoints" type="Node2D" parent="."]
+
+[node name="West" type="Marker2D" parent="SpawnPoints"]
+position = Vector2(180, 660)
+
+[node name="NorthWest" type="Marker2D" parent="SpawnPoints"]
+position = Vector2(350, 500)
+
+[node name="NorthEast" type="Marker2D" parent="SpawnPoints"]
+position = Vector2(1186, 500)
+
+[node name="East" type="Marker2D" parent="SpawnPoints"]
+position = Vector2(1356, 660)
+
+[node name="SouthWest" type="Marker2D" parent="SpawnPoints"]
+position = Vector2(360, 1060)
+
+[node name="SouthEast" type="Marker2D" parent="SpawnPoints"]
+position = Vector2(1176, 1060)
+
+[node name="StageExit" type="Marker2D" parent="SpawnPoints"]
+position = Vector2(768, 650)
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="CombatHUD" parent="UI" instance=ExtResource("9_hud")]
+
+[node name="CharacterMenu" parent="UI" node_paths=PackedStringArray("player") instance=ExtResource("10_menu")]
+player = NodePath("../../World/Actors/Player")
+
+[node name="PauseMenu" parent="UI" instance=ExtResource("11_pause")]
+
+[connection signal="enemy_spawned" from="Services/EncounterController" to="UI/CombatHUD" method="show_spawn_direction"]
+[connection signal="portal_prompt_changed" from="Services/EncounterController" to="UI/CombatHUD" method="show_interaction_prompt"]
+[connection signal="portal_sealed" from="Services/EncounterController" to="UI/CombatHUD" method="show_portal_sealed"]
+[connection signal="reinforcement_announced" from="Services/EncounterController" to="UI/CombatHUD" method="show_reinforcement_warning"]
+[connection signal="stage_cleared" from="Services/EncounterController" to="UI/CombatHUD" method="show_stage_clear"]
+[connection signal="wave_changed" from="Services/EncounterController" to="UI/CombatHUD" method="show_wave"]
+[connection signal="wave_cleared" from="Services/EncounterController" to="UI/CombatHUD" method="show_wave_clear"]

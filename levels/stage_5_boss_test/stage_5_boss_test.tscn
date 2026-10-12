@@ -1,0 +1,138 @@
+[gd_scene load_steps=22 format=3]
+
+[ext_resource type="Script" path="res://levels/stage_5_boss_test/stage_5_boss_test.gd" id="1"]
+[ext_resource type="PackedScene" path="res://entities/player/player.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://entities/enemies/stage_5_boss/stage_5_boss.tscn" id="3"]
+[ext_resource type="PackedScene" path="res://ui/combat_hud.tscn" id="4"]
+[ext_resource type="Script" path="res://gameplay/presentation/combat_feedback_presenter.gd" id="5"]
+[ext_resource type="PackedScene" path="res://ui/world/damage_number.tscn" id="6"]
+[ext_resource type="PackedScene" path="res://gameplay/presentation/hit_burst.tscn" id="7"]
+[ext_resource type="AudioStream" path="res://assets/audio/sfx/sword_hit.wav" id="8"]
+[ext_resource type="AudioStream" path="res://assets/audio/sfx/player_hurt_impact.wav" id="9"]
+[ext_resource type="AudioStream" path="res://assets/audio/sfx/player_ability_hit.ogg" id="10"]
+[ext_resource type="Script" path="res://entities/enemies/stage_5_boss/stage_5_boss_landing_feedback.gd" id="11"]
+[ext_resource type="PackedScene" path="res://ui/boss/boss_health_hud.tscn" id="12"]
+[ext_resource type="TileSet" path="res://assets/environment/forest/stage_5/tiles/stage_5_decay_ground_tileset.tres" id="13_tileset"]
+[ext_resource type="Script" path="res://environment/ground/authored_ground.gd" id="14_ground"]
+[ext_resource type="Resource" path="res://data/environment/layouts/stage_5_boss_basin_ground.tres" id="15_layout"]
+[ext_resource type="PackedScene" path="res://environment/props/stage_5_broken_shrine/stage_5_broken_shrine.tscn" id="17_shrine"]
+[ext_resource type="Script" path="res://levels/test_arena/arena_navigation.gd" id="18_navigation"]
+[ext_resource type="PackedScene" path="res://environment/props/stage_5_tall_dead_tree/stage_5_tall_dead_tree.tscn" id="19_tall_tree"]
+[ext_resource type="PackedScene" path="res://environment/props/stage_5_dead_tree_snag/stage_5_dead_tree_snag.tscn" id="20_snag"]
+[ext_resource type="PackedScene" path="res://environment/props/stage_5_fallen_log/stage_5_fallen_log.tscn" id="21_fallen_log"]
+[ext_resource type="PackedScene" path="res://environment/props/stage_5_uprooted_log/stage_5_uprooted_log.tscn" id="22_uprooted_log"]
+
+[node name="Stage5BossTest" type="Node" node_paths=PackedStringArray("player", "boss", "combat_hud", "boss_hud", "state_label")]
+script = ExtResource("1")
+player = NodePath("World/Actors/Player")
+boss = NodePath("World/Actors/Stage5Boss")
+combat_hud = NodePath("UI/CombatHUD")
+boss_hud = NodePath("UI/BossHealthHUD")
+state_label = NodePath("UI/StateLabel")
+
+[node name="World" type="Node2D" parent="."]
+
+[node name="Level" type="Node2D" parent="World"]
+
+[node name="Ground" type="TileMapLayer" parent="World/Level"]
+z_index = -10
+tile_set = ExtResource("13_tileset")
+script = ExtResource("14_ground")
+map_size = Vector2i(15, 9)
+layout = ExtResource("15_layout")
+
+[node name="Actors" type="Node2D" parent="World"]
+y_sort_enabled = true
+
+[node name="Player" parent="World/Actors" instance=ExtResource("2")]
+position = Vector2(250, 355)
+movement_bounds = Rect2(48, 72, 864, 416)
+
+[node name="Camera2D" type="Camera2D" parent="World/Actors/Player"]
+position = Vector2(0, -8)
+limit_left = 0
+limit_top = 0
+limit_right = 960
+limit_bottom = 540
+
+[node name="Stage5Boss" parent="World/Actors" instance=ExtResource("3")]
+position = Vector2(690, 270)
+arena_bounds = Rect2(48, 72, 864, 416)
+
+[node name="BrokenShrineNorth" parent="World/Actors" instance=ExtResource("17_shrine")]
+position = Vector2(480, 185)
+
+[node name="TallDeadTreeNorthWest" parent="World/Actors" instance=ExtResource("19_tall_tree")]
+position = Vector2(104, 226)
+scale = Vector2(0.76, 0.76)
+
+[node name="DeadTreeSnagNorthEast" parent="World/Actors" instance=ExtResource("20_snag")]
+position = Vector2(856, 215)
+scale = Vector2(-0.78, 0.78)
+
+[node name="FallenLogNorthWest" parent="World/Actors" instance=ExtResource("21_fallen_log")]
+position = Vector2(262, 166)
+scale = Vector2(0.72, 0.72)
+
+[node name="FallenLogSouthEast" parent="World/Actors" instance=ExtResource("21_fallen_log")]
+position = Vector2(696, 498)
+scale = Vector2(-0.72, 0.72)
+
+[node name="UprootedLogWest" parent="World/Actors" instance=ExtResource("22_uprooted_log")]
+position = Vector2(132, 492)
+scale = Vector2(0.64, 0.64)
+
+[node name="NavigationRegion2D" type="NavigationRegion2D" parent="World"]
+script = ExtResource("18_navigation")
+navigation_bounds = Rect2(48, 72, 864, 416)
+navigation_agent_radius = 18.0
+
+[node name="Effects" type="Node2D" parent="World" groups=["boss_effects"]]
+
+[node name="Services" type="Node" parent="."]
+
+[node name="CombatFeedback" type="Node" parent="Services" node_paths=PackedStringArray("player", "effects_parent", "camera")]
+script = ExtResource("5")
+player = NodePath("../../World/Actors/Player")
+effects_parent = NodePath("../../World/Effects")
+camera = NodePath("../../World/Actors/Player/Camera2D")
+damage_number_scene = ExtResource("6")
+hit_burst_scene = ExtResource("7")
+sword_hit_sound = ExtResource("8")
+ability_hit_sound = ExtResource("10")
+player_hurt_sound = ExtResource("9")
+
+[node name="BossLandingFeedback" type="Node" parent="Services" node_paths=PackedStringArray("boss", "camera")]
+script = ExtResource("11")
+boss = NodePath("../../World/Actors/Stage5Boss")
+camera = NodePath("../../World/Actors/Player/Camera2D")
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="CombatHUD" parent="UI" instance=ExtResource("4")]
+
+[node name="BossHealthHUD" parent="UI" instance=ExtResource("12")]
+
+[node name="StateLabel" type="Label" parent="UI"]
+offset_left = 310.0
+offset_top = 80.0
+offset_right = 650.0
+offset_bottom = 102.0
+theme_override_colors/font_color = Color(0.8, 0.86, 0.72, 1)
+theme_override_colors/font_outline_color = Color(0.02, 0.03, 0.02, 1)
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 11
+text = "STATE: SPAWNING"
+horizontal_alignment = 1
+
+[node name="Help" type="Label" parent="UI"]
+offset_left = 240.0
+offset_top = 510.0
+offset_right = 720.0
+offset_bottom = 534.0
+theme_override_colors/font_color = Color(0.72, 0.76, 0.68, 1)
+theme_override_colors/font_outline_color = Color(0.02, 0.03, 0.02, 1)
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 10
+text = "WASD MOVE  |  CLICK ATTACK  |  1-4 SKILLS  |  F9 UNLIMITED  |  R RESTART  |  F8 EXIT"
+horizontal_alignment = 1

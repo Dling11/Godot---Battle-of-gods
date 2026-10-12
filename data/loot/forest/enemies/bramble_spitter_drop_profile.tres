@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="DropProfileDefinition" format=3 uid="uid://terbmisjeuwn"]
+
+[ext_resource type="Script" uid="uid://dl3k32mipxq87" path="res://data/loot/drop_profile_definition.gd" id="1_profile"]
+[ext_resource type="Script" uid="uid://bjfif5kirqwdc" path="res://data/loot/material_drop_entry_definition.gd" id="2_entry"]
+[ext_resource type="Resource" uid="uid://elkww58s4uf3" path="res://data/items/materials/forest/barbed_seed.tres" id="3_seed"]
+[ext_resource type="Resource" uid="uid://32r3ksqif6tb" path="res://data/items/materials/forest/thorn_sap.tres" id="4_sap"]
+
+[sub_resource type="Resource" id="Drop_seed"]
+script = ExtResource("2_entry")
+material = ExtResource("3_seed")
+chance = 0.25
+bad_luck_protection_key = &"forest_barbed_seed_misses"
+guaranteed_after_misses = 6
+
+[sub_resource type="Resource" id="Drop_sap"]
+script = ExtResource("2_entry")
+material = ExtResource("4_sap")
+chance = 0.1
+bad_luck_protection_key = &"forest_thorn_sap_misses"
+guaranteed_after_misses = 12
+
+[resource]
+script = ExtResource("1_profile")
+profile_id = &"forest_bramble_spitter_drops"
+source_enemy_id = &"bramble_spitter"
+region_id = &"forest"
+common_drops = Array[ExtResource("2_entry")]([SubResource("Drop_seed")])
+optional_secondary = Array[ExtResource("2_entry")]([SubResource("Drop_sap")])

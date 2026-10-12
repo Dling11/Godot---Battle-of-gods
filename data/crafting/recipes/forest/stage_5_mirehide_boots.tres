@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="RecipeDefinition" format=3 uid="uid://0vr8lthwgv3w"]
+
+[ext_resource type="Script" uid="uid://ddkkkbe8622gd" path="res://data/crafting/recipes/recipe_definition.gd" id="1_recipe"]
+[ext_resource type="Script" uid="uid://bll3k2id0v40j" path="res://data/items/materials/material_stack_definition.gd" id="2_stack"]
+[ext_resource type="Resource" path="res://data/items/materials/forest/armored_hog_hide.tres" id="3_hide"]
+[ext_resource type="Resource" uid="uid://b1iggmtrfklf0" path="res://data/items/materials/forest/mire_membrane.tres" id="4_membrane"]
+[ext_resource type="Resource" uid="uid://co68leshraied" path="res://data/items/materials/forest/root_fiber.tres" id="5_fiber"]
+
+[sub_resource type="Resource" id="Cost_hide"]
+script = ExtResource("2_stack")
+material = ExtResource("3_hide")
+quantity = 5
+
+[sub_resource type="Resource" id="Cost_membrane"]
+script = ExtResource("2_stack")
+material = ExtResource("4_membrane")
+quantity = 4
+
+[sub_resource type="Resource" id="Cost_fiber"]
+script = ExtResource("2_stack")
+material = ExtResource("5_fiber")
+quantity = 4
+
+[resource]
+script = ExtResource("1_recipe")
+recipe_id = &"forest_stage_5_mirehide_boots"
+display_name = "Mirehide Boots"
+description = "Seal tough hide with mire membrane and rootfiber for steady movement through ruined ground."
+region_id = &"forest"
+tier = 2
+category = 0
+output_id = &"forest_mirehide_boots"
+ingredients = Array[ExtResource("2_stack")]([SubResource("Cost_hide"), SubResource("Cost_membrane"), SubResource("Cost_fiber")])
+unlock_id = &"forest_core_gear_crafting"
+gold_cost = 200

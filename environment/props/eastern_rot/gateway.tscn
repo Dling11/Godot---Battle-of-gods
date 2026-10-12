@@ -1,0 +1,39 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" path="res://assets/environment/forest/eastern_rot_renewal/gateway.png" id="1_mgojv"]
+[ext_resource type="Script" path="res://gameplay/navigation/navigation_cutout.gd" id="2_hl64t"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u5u7s"]
+size = Vector2(16, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fdbsc"]
+size = Vector2(16, 20)
+
+[node name="EasternGateway" type="Node2D" unique_id=1822485398]
+texture_filter = 1
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1607257480]
+position = Vector2(0, -59)
+texture = ExtResource("1_mgojv")
+
+[node name="WestPillar" type="StaticBody2D" parent="." unique_id=1592890412]
+position = Vector2(-44, -3)
+collision_mask = 0
+
+[node name="Footprint" type="CollisionShape2D" parent="WestPillar" unique_id=1083444086]
+shape = SubResource("RectangleShape2D_u5u7s")
+
+[node name="NavigationCutout" type="Node" parent="WestPillar" unique_id=1123200411 groups=["navigation_cutout"]]
+script = ExtResource("2_hl64t")
+derive_from_collision_shapes = true
+
+[node name="EastPillar" type="StaticBody2D" parent="." unique_id=1786552585]
+position = Vector2(44, -3)
+collision_mask = 0
+
+[node name="Footprint" type="CollisionShape2D" parent="EastPillar" unique_id=1213884345]
+shape = SubResource("RectangleShape2D_fdbsc")
+
+[node name="NavigationCutout" type="Node" parent="EastPillar" unique_id=1819661665 groups=["navigation_cutout"]]
+script = ExtResource("2_hl64t")
+derive_from_collision_shapes = true

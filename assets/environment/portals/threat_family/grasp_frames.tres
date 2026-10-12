@@ -1,0 +1,67 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://1oep2otlcike"]
+
+[ext_resource type="Texture2D" uid="uid://df2fjajs5oy42" path="res://assets/environment/portals/threat_family/grasp.png" id="1_mfddm"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_84gcg"]
+atlas = ExtResource("1_mfddm")
+region = Rect2(0, 0, 192, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qlg84"]
+atlas = ExtResource("1_mfddm")
+region = Rect2(192, 0, 192, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7q8y4"]
+atlas = ExtResource("1_mfddm")
+region = Rect2(384, 0, 192, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f2ep5"]
+atlas = ExtResource("1_mfddm")
+region = Rect2(576, 0, 192, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yodv3"]
+atlas = ExtResource("1_mfddm")
+region = Rect2(768, 0, 192, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mtajc"]
+atlas = ExtResource("1_mfddm")
+region = Rect2(960, 0, 192, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rhcnb"]
+atlas = ExtResource("1_mfddm")
+region = Rect2(1152, 0, 192, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gqj8o"]
+atlas = ExtResource("1_mfddm")
+region = Rect2(1344, 0, 192, 160)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_84gcg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qlg84")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7q8y4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f2ep5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yodv3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mtajc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rhcnb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gqj8o")
+}],
+"loop": 1,
+"name": &"active",
+"speed": 8.0
+}]

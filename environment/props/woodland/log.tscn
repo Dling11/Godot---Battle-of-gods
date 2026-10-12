@@ -1,0 +1,25 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://environment/props/woodland/woodland_prop.gd" id="1_5slmm"]
+[ext_resource type="Texture2D" path="res://assets/environment/forest/grove_renewal/log.png" id="2_triyt"]
+[ext_resource type="Script" path="res://gameplay/navigation/navigation_cutout.gd" id="3_k2tiv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_peuiw"]
+size = Vector2(48, 18)
+
+[node name="Log" type="StaticBody2D" unique_id=10685504]
+texture_filter = 1
+collision_mask = 0
+script = ExtResource("1_5slmm")
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1640037393]
+position = Vector2(0, -13)
+texture = ExtResource("2_triyt")
+
+[node name="Footprint" type="CollisionShape2D" parent="." unique_id=1277212167]
+position = Vector2(0, -2)
+shape = SubResource("RectangleShape2D_peuiw")
+
+[node name="NavigationCutout" type="Node" parent="." unique_id=1537293214 groups=["navigation_cutout"]]
+script = ExtResource("3_k2tiv")
+derive_from_collision_shapes = true

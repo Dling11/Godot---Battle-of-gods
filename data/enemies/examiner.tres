@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="ExaminerDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/enemies/examiner_definition.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+enemy_id = &"examiner"
+display_name = "The Examiner"
+maximum_health = 1800.0
+armor_rating = 38.0
+magic_resistance_rating = 38.0
+move_speed = 66.0
+acceleration = 620.0
+movement_footprint_radius = 12.0
+crowd_separation_radius = 44.0
+attack_range = 72.0
+attack_damage = 60.0
+wind_up_seconds = 0.42
+active_seconds = 0.12
+recovery_seconds = 0.52
+spawn_seconds = 0.72
+experience_reward = 0
+coin_reward = 0
+crowd_control_tier = 2
+stagger_interrupt_limit = 2
+stagger_resistance_seconds = 1.4
+sweep_damage = 72.0
+sweep_wind_up_seconds = 0.46
+judgment_charge_damage = 82.0
+judgment_charge_wind_up_seconds = 0.72
+judgment_charge_travel_seconds = 0.24
+judgment_charge_impact_seconds = 0.12
+judgment_charge_recovery_seconds = 0.48
+judgment_charge_distance = 188.0
+judgment_charge_cooldown_seconds = 3.8
+ground_judgment_damage = 110.0
+ground_judgment_wind_up_seconds = 0.82
+ground_judgment_active_seconds = 0.14
+ground_judgment_recovery_seconds = 0.68
+ground_judgment_cooldown_seconds = 7.6
+refutation_damage = 40.0
+axiom_damage = 90.0
