@@ -1,0 +1,415 @@
+{
+  "version": 3,
+  "mode": "generated_complete_cels",
+  "integrated_weapons": true,
+  "alpha_threshold": 180,
+  "cell_size": [
+    192,
+    128
+  ],
+  "scale": [
+    0.5,
+    0.5
+  ],
+  "foot_plane": 94,
+  "lanes": {
+    "side": {
+      "source": "res://art_source/generated/characters/king/twinsteel_running_complete_2026_10_13/right-source.png",
+      "sha256": "c5dea6f271076e1b72d3816eefe1ab68e6e2bdc5934ef767247c724f50a75112",
+      "density": 0.2295409181636726,
+      "keys": [
+        {
+          "key": 0,
+          "bounds": [
+            72,
+            233,
+            382,
+            480
+          ],
+          "head_center_x": 209,
+          "head_fraction": 0.4,
+          "accepted_complete_cel_sha256": "030964cf37abd32441ea4960473105f6b339ae9840ace833ff9a8ad99fde1711"
+        },
+        {
+          "key": 1,
+          "bounds": [
+            475,
+            232,
+            770,
+            479
+          ],
+          "head_center_x": 602,
+          "head_fraction": 0.4,
+          "accepted_complete_cel_sha256": "78bc88884a14c8d8bd7a77ebb244131dda62e57280d34e15af862852fc13acbe"
+        },
+        {
+          "key": 2,
+          "bounds": [
+            834,
+            225,
+            1138,
+            483
+          ],
+          "head_center_x": 966,
+          "head_fraction": 0.4,
+          "accepted_complete_cel_sha256": "fecc822655e2f90acb89639a1436fc1f1953c2d918ecd18d2cfc7b2abe9e9ea7"
+        },
+        {
+          "key": 3,
+          "bounds": [
+            1224,
+            221,
+            1523,
+            478
+          ],
+          "head_center_x": 1364,
+          "head_fraction": 0.4,
+          "accepted_complete_cel_sha256": "a22cd01c7fdd546009ac17906dd8f296f8410989778150325045541e9b0459b3"
+        },
+        {
+          "key": 4,
+          "bounds": [
+            72,
+            688,
+            378,
+            935
+          ],
+          "head_center_x": 207,
+          "head_fraction": 0.4,
+          "accepted_complete_cel_sha256": "09640fa70a477863db050af52b15c86c1931362c63df89fbe9dcaff4368f1205"
+        },
+        {
+          "key": 5,
+          "bounds": [
+            462,
+            688,
+            761,
+            935
+          ],
+          "head_center_x": 600,
+          "head_fraction": 0.4,
+          "accepted_complete_cel_sha256": "7faefe761e6e88ea36051d608420b3e43373f41aea18de02a1494745dc65d3e6"
+        },
+        {
+          "key": 6,
+          "bounds": [
+            843,
+            688,
+            1132,
+            942
+          ],
+          "head_center_x": 967,
+          "head_fraction": 0.4,
+          "accepted_complete_cel_sha256": "8a3e16a3631cb1c71a5ba6a1f507c7bdf8b99db13638b3f3840cee37fa981b07"
+        },
+        {
+          "key": 7,
+          "bounds": [
+            1209,
+            682,
+            1514,
+            939
+          ],
+          "head_center_x": 1345,
+          "head_fraction": 0.4,
+          "accepted_complete_cel_sha256": "7f2a092afd063eaa5f7c12d4caaf3f6eaf4d38c4f3b699ed06e8f75353e02a12"
+        }
+      ],
+      "normalization": {
+        "mode": "standing_head_landmark",
+        "standing_clip": "res://assets/characters/playable/king/shared_bodies/dual_carry_v3/side/idle.tres",
+        "standing_head_height": 23,
+        "source_head_span": 100.20000000000002,
+        "body_height_range": [
+          55,
+          61
+        ]
+      }
+    },
+    "up": {
+      "source": "res://art_source/generated/characters/king/twinsteel_running_complete_2026_10_13/up-source.png",
+      "sha256": "2bd34fc2a49298ae432ce761f6530b62451f6eb82ed72730b4d165a6d96a1fa9",
+      "density": 0.16319000993330496,
+      "keys": [
+        {
+          "key": 0,
+          "bounds": [
+            48,
+            96,
+            353,
+            487
+          ],
+          "head_center_x": 209,
+          "head_fraction": 0.36,
+          "accepted_complete_cel_sha256": "b93bf1efc7e0ece78bd47cd30cbe6f73a9409f941879428790b2a500784e060a",
+          "protected_anatomy_sha256": "ce714eecf5d2f4203a368843cdd78b73f065a83d3051b801edaaec05fb8e0ff2"
+        },
+        {
+          "key": 1,
+          "bounds": [
+            436,
+            95,
+            737,
+            487
+          ],
+          "head_center_x": 594,
+          "head_fraction": 0.36,
+          "accepted_complete_cel_sha256": "2908272a1be450e0c11274737be25b31e57430ae3e22f2dcfbb2204455ada089",
+          "protected_anatomy_sha256": "ee0c194425d20e3cbdf9e1b42f1e5aae007bb87edc3cb7b759b9e4829151bdd8"
+        },
+        {
+          "key": 2,
+          "bounds": [
+            806,
+            95,
+            1120,
+            489
+          ],
+          "head_center_x": 978,
+          "head_fraction": 0.36,
+          "accepted_complete_cel_sha256": "88e738a209ce3a709a28c551492c02df9e78785049687579a9497f907ad5c616",
+          "protected_anatomy_sha256": "0d37d6ef35a968e64f7d770c7b87e6326985a450453c961c2f16cbdd58b3e2ba"
+        },
+        {
+          "key": 3,
+          "bounds": [
+            1202,
+            94,
+            1500,
+            497
+          ],
+          "head_center_x": 1369,
+          "head_fraction": 0.36,
+          "accepted_complete_cel_sha256": "322c8025ee5249283f680add2c0e8fbb9180c453c4b3822a860d9b6829b6dc8a",
+          "protected_anatomy_sha256": "dcda7348895ff3fabef38ca22aec0ba8e2f3a03d3128dff7edde04d419c268d2"
+        },
+        {
+          "key": 4,
+          "bounds": [
+            42,
+            567,
+            342,
+            954
+          ],
+          "head_center_x": 208,
+          "head_fraction": 0.36,
+          "accepted_complete_cel_sha256": "bb87c508456e56d5259c77caefbf7b354ddf6635ab81ec10b3c291e4316bb275",
+          "protected_anatomy_sha256": "27b0b377d609ac5adec750dddf04abd182abd0cfa4074fef2c97eabf139908a9"
+        },
+        {
+          "key": 5,
+          "bounds": [
+            419,
+            566,
+            727,
+            954
+          ],
+          "head_center_x": 594,
+          "head_fraction": 0.36,
+          "accepted_complete_cel_sha256": "81458869e5e97e8bdaac39eda44022e3ee8d06432c9986933b70db35e50c624d",
+          "protected_anatomy_sha256": "a74bd897a0c08b6c6606eecc8ff116e0ca8dde83ced9d735facea86501ee15af"
+        },
+        {
+          "key": 6,
+          "bounds": [
+            802,
+            566,
+            1111,
+            952
+          ],
+          "head_center_x": 977,
+          "head_fraction": 0.36,
+          "accepted_complete_cel_sha256": "6e8ec75603b69197b9eb1f075d2830fb27e210870a8bddd68de4d3b3e3960f0e",
+          "protected_anatomy_sha256": "0c128cb80570e682a0fb61e2a6defcfd7992b14de0479ae6cede50f2bb79b06b"
+        },
+        {
+          "key": 7,
+          "bounds": [
+            1193,
+            566,
+            1505,
+            969
+          ],
+          "head_center_x": 1366,
+          "head_fraction": 0.36,
+          "accepted_complete_cel_sha256": "29816a37da7baac15c4c17c05960caa7caa96c964f44983d39bb9742a5470e1d",
+          "protected_anatomy_sha256": "0fff451105a4b9ef1af53970173d941efd516903ee378d55eb91d1eb28d61f01"
+        }
+      ],
+      "normalization": {
+        "mode": "standing_head_landmark",
+        "standing_clip": "res://assets/characters/playable/king/shared_bodies/dual_carry_v3/up/idle.tres",
+        "standing_head_height": 23,
+        "source_head_span": 140.94,
+        "body_height_range": [
+          61,
+          67
+        ]
+      },
+      "weapon_removal_mask": {
+        "path": "res://art_source/generated/characters/king/twinsteel_running_complete_2026_10_13/up-weapon-removal-mask.png",
+        "sha256": "40892b6e5f2d1f511c485a8e10cef9d33ce0d6b06815ba242e39223107da914c"
+      },
+      "blade_directions": [
+        [
+          -0.37460659,
+          -0.92718385
+        ],
+        [
+          0.37460659,
+          -0.92718385
+        ]
+      ]
+    },
+    "down": {
+      "source": "res://art_source/generated/characters/king/twinsteel_running_complete_2026_10_13/down-source.png",
+      "sha256": "78b88ebbcf7d4e1c7c27a6c0981c3ca20a024d1096047cb42b9f07546c68b1d6",
+      "density": 0.18248175182481752,
+      "keys": [
+        {
+          "key": 0,
+          "bounds": [
+            38,
+            88,
+            361,
+            435
+          ],
+          "head_center_x": 210,
+          "head_fraction": 0.4,
+          "accepted_complete_cel_sha256": "662c45a148dddb4344fcd17e0a8dbaa152827b81cb83d5599986577786c86142",
+          "protected_anatomy_sha256": "aa1547a9da71ced95132fe0d9e48cb9a88a7de5e41adf920c1ef65be9178bbd4"
+        },
+        {
+          "key": 1,
+          "bounds": [
+            431,
+            88,
+            732,
+            419
+          ],
+          "head_center_x": 586,
+          "head_fraction": 0.4,
+          "accepted_complete_cel_sha256": "06af3788066447bc4219d6f38db72ff2b5b7b80abcba908302fb08227b61b9a9",
+          "protected_anatomy_sha256": "0878d2ca87262e9136fd43688e11a30fdace145e15c66cba54d784455388a0a6"
+        },
+        {
+          "key": 2,
+          "bounds": [
+            801,
+            89,
+            1115,
+            431
+          ],
+          "head_center_x": 956,
+          "head_fraction": 0.4,
+          "accepted_complete_cel_sha256": "f168f842c9c2989299326850495356855cab7850e7df3f63790d93977273bb80",
+          "protected_anatomy_sha256": "b27c6dfeea39afb087fbf9987e6317ddee0b422b00c0bf3ce382fc49fa8077cf"
+        },
+        {
+          "key": 3,
+          "bounds": [
+            1176,
+            94,
+            1496,
+            434
+          ],
+          "head_center_x": 1339,
+          "head_fraction": 0.4,
+          "accepted_complete_cel_sha256": "9966a75371a37cef474daf9d8642f534d6e155b72d0ff40b8f54655647845893",
+          "protected_anatomy_sha256": "0fc83ea724526b88f7d9994bbfa4af057aa4b31b80215fca8eaa474ad2ff9de3"
+        },
+        {
+          "key": 4,
+          "bounds": [
+            44,
+            585,
+            371,
+            936
+          ],
+          "head_center_x": 207,
+          "head_fraction": 0.4,
+          "accepted_complete_cel_sha256": "f8e15c700de9ff3f69649d31db92e7f65e6481daec5e48be7ad0e72c1fbe2750",
+          "protected_anatomy_sha256": "d018fe0d9d5aa9eb40e11ee52216d66b505dab2eb6df997f71b06b5ed8e438ef"
+        },
+        {
+          "key": 5,
+          "bounds": [
+            433,
+            586,
+            750,
+            929
+          ],
+          "head_center_x": 586,
+          "head_fraction": 0.4,
+          "accepted_complete_cel_sha256": "c842788cc03d5e9d2a6e5fbaf37970d870657f0cb3f0f9f618261f3815cb6809",
+          "protected_anatomy_sha256": "9f7bc152e56a8fde526f4445c420077762ae7fd86ce2efcec2895f8432b65409"
+        },
+        {
+          "key": 6,
+          "bounds": [
+            812,
+            586,
+            1114,
+            918
+          ],
+          "head_center_x": 951,
+          "head_fraction": 0.4,
+          "accepted_complete_cel_sha256": "1542b5b0c2ae65937061a0e24d6e610c4396110f699c055bd1c058fc74ca81b1",
+          "protected_anatomy_sha256": "61000927bc71459c657bd4d458d050a067028a0e244bf5950a0abaecd14c7aa4"
+        },
+        {
+          "key": 7,
+          "bounds": [
+            1174,
+            588,
+            1496,
+            939
+          ],
+          "head_center_x": 1345,
+          "head_fraction": 0.4,
+          "accepted_complete_cel_sha256": "65bf220392b53e2d00f7924441ff447165fc736623885a4cb5aa964ad062de4c",
+          "protected_anatomy_sha256": "52836f84ba3925a74e2cac39430dd58835204349b9b7f3f371e9a2682b97dd54"
+        }
+      ],
+      "normalization": {
+        "mode": "standing_head_landmark",
+        "standing_clip": "res://assets/characters/playable/king/shared_bodies/dual_carry_v3/down/idle.tres",
+        "standing_head_height": 25,
+        "source_head_span": 137,
+        "body_height_range": [
+          59,
+          66
+        ]
+      },
+      "weapon_removal_mask": {
+        "path": "res://art_source/generated/characters/king/twinsteel_running_complete_2026_10_13/down-weapon-removal-mask.png",
+        "sha256": "7f8e940312bf33a6eb3fb1d67894bc8012a928c41274acfb90ee90fd4b7f8148"
+      },
+      "blade_directions": [
+        [
+          -0.82903757,
+          0.5591929
+        ],
+        [
+          0.82903757,
+          0.5591929
+        ]
+      ]
+    }
+  },
+  "weapon_scale_contract": {
+    "texture": "res://assets/characters/playable/king/dual_twinsteel/twinsteel.png",
+    "sha256": "c13e5ed3d12fb0a4791afa49355caedbecf140289bf290e2d9aafdfb29a4af8b",
+    "grip": [
+      8,
+      50
+    ],
+    "tip": [
+      8,
+      0
+    ],
+    "mode": "fixed_native_weapon_bake",
+    "scale": 1,
+    "generated_removal_sha256": "402ba66d6b1316e8a5156200fb37ba9ad803cf30ee0379f49dcd4e06f4c32ec3"
+  }
+}

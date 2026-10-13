@@ -2,7 +2,9 @@
 
 Updated 2026-10-13. Current sources and contracts are authoritative; historical generation trials and archive-dependent tooling were removed (Decision197). See PROJECT_CONTEXT.md and docs/maintenance/repository-cleanup.md.
 
-Implemented: campaignI–VI, renewed Sanctuary services, four weapon families and five current techniques. Royal Greatsword is approved; current Twinsteel carry awaits owner review. Later stages/domain rewards/scythe and proposals below are not completion claims. Cleanup changes no balance, combat, lore or progression rule.
+Implemented: campaignI–VI, renewed Sanctuary services, four weapon families and five current techniques. Royal Greatsword and current Twinsteel running/attacks are owner-approved. Later stages/domain rewards/scythe and proposals below are not completion claims. Cleanup changes no balance, combat, lore or progression rule.
+
+Twinsteel has complete generated cardinal running poses with natural stepping, moving arms and clearly held blades; running plus corrected vertical weapon size are owner-approved (2026-10-14). Native reference proportions/colors guide generation without reused head/body anatomy fragments. Fresh complete attack artwork is installed for diagonal → return → rising cross → hop-spin → crossing finish in every direction, with20 new white/ivory slash frames. Sequence/timings/damage/reach remain unchanged (Decision201).
 
 ## High Concept
 

@@ -3,7 +3,6 @@ extends "res://tests/sanctuary_test_base.gd"
 ## Regression for true carry grips and real travel-driven walking.
 const PLAYER = preload("res://entities/player/player.tscn")
 const ITEM = preload("res://data/items/equipment/king_twinsteel.tres")
-const LIB := "res://assets/characters/playable/king/body_library/v1/"
 const OUT := "res://tmp/review/combat/king_dual_carry_motion_2026_10_12/"
 const DIRECTIONS := [Vector2.LEFT,Vector2.RIGHT,Vector2.UP,Vector2.DOWN]
 const ACTIONS := [&"player_move_left",&"player_move_right",&"player_move_up",&"player_move_down"]
@@ -42,6 +41,7 @@ func _run() -> void:
 		var before_far: Vector2=rig.offhand_sprite.to_global(rig.definition.offhand.grip)
 		Input.action_release(ACTIONS[index])
 		check(actor.request_primary_attack(),"Walking cannot enter an attack")
+		check(not rig.weapon_rig.visible and not rig.offhand_rig.visible,"Walking-to-attack entry duplicates baked swords")
 		check(rig.body_sprite.texture.get_image().get_data()==before_body.get_data(),"Attack entry flashes a different walking body")
 		check(rig.weapon_sprite.to_global(rig.definition.weapon_primary_grip).distance_to(before_main)<.01,"Attack entry detaches near grip")
 		check(rig.offhand_sprite.to_global(rig.definition.offhand.grip).distance_to(before_far)<.01,"Attack entry detaches far grip")
@@ -77,36 +77,21 @@ func _verify_sources() -> void:
 		var direction: Vector2=Vector2.RIGHT if view=="side" else (Vector2.UP if view=="up" else Vector2.DOWN)
 		var clip: Resource=profile.run_for(direction)
 		check(clip.has_valid_layout() and clip.pose_count==8,"Invalid gait layout")
-		var idle:Resource=profile.idle_for(direction)
-		check(clip.body_atlas.resource_path=="res://assets/characters/playable/king/shared_bodies/dual_carry_v3/"+view+"/run_body.png","Incorrect authored carry selection")
+		check(clip.body_atlas.resource_path=="res://assets/characters/playable/king/shared_bodies/dual_carry_v3/"+view+"/run_body.png","Incorrect generated run selection")
+		check(not clip.allow_rest and not clip.interpolate_weapon and not clip.interpolate_blade_angles,"Gait introduces floating interpolation")
 		for key in 8:
-			check(clip.identity_regions[key]==idle.identity_regions[0] and clip.lift_pixels[key]==0,"Walking alters upper anatomy metadata or lift")
-		check(not clip.allow_rest and not clip.interpolate_weapon and not clip.interpolate_blade_angles,"Gait introduces floating interpolation or a rest tween")
-		for key in 8:
+			check(clip.lift_pixels[key]==0,"Added disconnected bob")
+			check(clip.primary_visible_poses[key]==0 and clip.offhand.visible_poses[key]==0,"Drawn swords receive extra rigid overlays")
 			var origin:=Vector2i(key%4*192,key/4*128)
 			var body: Image=clip.body_atlas.get_image().get_region(Rect2i(origin,Vector2i(192,128)))
-			var mask: Image=clip.hand_atlas.get_image().get_region(Rect2i(origin,Vector2i(192,128)))
-			var expected_mask:=Image.create(192,128,false,Image.FORMAT_RGBA8)
-			var head: Rect2=clip.identity_regions[key]
-			var next: int=(key+1)%8
-			for hand in [0,1]:
-				var grip: Vector2=clip.primary_hands[key] if hand==0 else clip.offhand.hands[key]
-				var following: Vector2=clip.primary_hands[next] if hand==0 else clip.offhand.hands[next]
+			check(clip.hand_atlas.get_image().get_region(Rect2i(origin,Vector2i(192,128))).is_invisible(),"Pasted hand fragment")
+			for grip in [clip.primary_hands[key],clip.offhand.hands[key]]:
 				var pixel:=body.get_pixelv(Vector2i(grip))
-				check(pixel.a>.65 and pixel.r>.18 and pixel.r<.8 and pixel.r>pixel.g*1.35 and pixel.g>pixel.b*1.25,"Blade misses drawn leather palm")
-				check(grip.distance_to(following)<=(5.0 if view=="side" else (9.0 if view=="up" else 12.0)),"Blade jumps between unrelated source regions at cyclic seam")
-				if view=="side": check(grip.y>=head.end.y+4,"Side blade attached to shoulder/face instead of glove")
-				else: check(grip==idle.primary_hands[0] if hand==0 else grip==idle.offhand.hands[0],"Vertical blade leaves approved carry palm")
-				check(grip.y<=77,"Vertical blade picked a boot")
-				var box:=Rect2i(Vector2i(grip)-Vector2i(5,5),Vector2i(11,11))
-				expected_mask.blit_rect(body,box,box.position)
-			check(mask.get_data()==expected_mask.get_data(),"Closed-palm mask redraws/truncates source fist")
-			check(clip.weapon_behind_body[key]==(1 if view=="up" else 0) and clip.offhand.behind_body[key]==(0 if view=="down" else 1),"Camera-relative sword depth changed")
-		if view=="side":
-			check(clip.offhand.texture.get_image().get_region(Rect2i(0,43,16,19)).is_invisible(),"Hidden rear handle returned to side gait")
+				check(pixel.a>.9 and pixel.r>.18 and pixel.r>pixel.g*1.3 and pixel.g>pixel.b*1.2,"Registered palm misses connected leather glove")
 
 func _assert_rendered_grips(rig: Node2D) -> void:
 	var clip: Resource=rig.definition
+	check(not rig.weapon_rig.visible and not rig.offhand_rig.visible,"Complete walking cels are duplicated by rigid swords")
 	var center:=Vector2(clip.cell_size)*.5
 	check(rig.weapon_sprite.to_global(clip.weapon_primary_grip).distance_to(rig.to_global(clip.primary_hands[rig.pose_index]-center))<.01,"Rendered primary sword slips off its current cel")
 	check(rig.offhand_sprite.to_global(clip.offhand.grip).distance_to(rig.to_global(clip.offhand.hands[rig.pose_index]-center))<.01,"Rendered rear sword slips off its current cel")

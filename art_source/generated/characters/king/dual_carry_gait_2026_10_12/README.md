@@ -1,5 +1,7 @@
 # Twinsteel steady carry source — 2026-10-12
 
+2026-10-13: this is historical provenance for the owner-rejected fixed-upper gait, superseded by Decision 199. It is no longer a build input. Current tools/build_king_twinsteel_carry.gd uses complete canonical body_library/v1 walking cels through tools/king_twinsteel_walk.gd. The retired helper described below is intentionally removed; do not restore it to rebuild current walking.
+
 Built-in `image_gen.imagegen` generated `gait_source.png` with a transparent background and three inspected approved reference images: frozen `side_relaxed_body.png`, frozen `down_relaxed_body.png`, and the existing `dual_v2/up/idle_body.png`. Original output: `C:/Users/Administrator/.codex/generated_images/01a0eed4-5878-7032-a315-e493f92ce97a/exec-acf3ff49-e978-4388-9684-af8ed281da80.png`. The project copy is the reproducible source; no runtime dependency uses the Codex directory.
 
 Generation brief: three rows of eight complete King stepping poses, RIGHT profile / DOWN front / UP back, transparent clear gutters, no weapons, labels, guides or floor. Keep the referenced small King, dark hair, red scarf, blue vest, brown gloves/boots and black outlines. Calm head/chest, closed fists beside the waist, actual alternating stepping legs rather than a sliding whole sprite. This records the generation requirements; it is not a verbatim transcript of the tool prompt.
@@ -9,3 +11,5 @@ Generation brief: three rows of eight complete King stepping poses, RIGHT profil
 The new complete carry cels are a distinct motion variant, not a claim of exact frozen full-gait equality. Native connected-anatomy, unchanged complete upper pixels, meaningful foot poses, margins/soles, real grips and actual movement gates complement native gameplay verification. Owner motion approval remains necessary. See [Decision196](../../../../../docs/decisions/196-steady-twinsteel-carry-with-frozen-upper-anatomy.md).
 
 2026-10-13 cleanup: rebuild only the current carry with `godot --headless --path . --script res://tools/build_king_twinsteel_carry.gd`. It reads production poses, this gait input and the frozen native references, without archived profiles. Historical comparison sheets were deleted. Evidence goes to ignored `tmp/review/`.
+
+Current running has since been superseded by Decision 200: fresh complete source sheets in ../twinsteel_running_complete_2026_10_13/. This earlier leg sheet is not a current rebuild input.

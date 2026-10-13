@@ -1,5 +1,33 @@
 # Changelog
 
+## 2026-10-14 — Twinsteel attack acceptance
+
+The owner accepts the installed all-direction complete attack pass. Record Decision201 as accepted, close its active review issue and preserve current running/rest/attacks. Route the next milestone to the selected Iron Reaper's side-motion preview before cardinal/equipment implementation. Documentation-only update; no runtime/art/balance changes or new test claims.
+
+## 2026-10-14 — Fresh complete Twinsteel attacks in every direction
+
+Install120 newly generated whole action poses across five cuts and three authored cardinal views; LEFT mirrors RIGHT. Keep approved running/rest, fixed standing-size steel and all combat/equipment/save rules. Add192×192 action padding at sole126 with the unchanged world foot origin/half scale. Complete moving fists cover offline baked blades; inherited entry/released ready/queued recovery use the existing presenter. Generate20 white/ivory slash frames in five separate strips and replace the three directional FX atlases with one shared floor-projected raster. Regenerate source guide crossings that concealed body connections; no anatomical fragments or runtime reconstruction are introduced. Retain20 selected sheets/prompts/source hashes/recipe/registration, remove unused vertical slash files and document Decision201.
+
+Verification:1346 new source/anatomy/blade/gutter/rebuild assertions;511 approved-running assertions;1194 real-input/wall/handoff;735 shared-body;214 headless combat and244 native combat/UI/effects;100 native idle/retrieval;198 native four-facing capture assertions. All873 project resources load. Of315 King assets recorded at task start,46 authorized action/FX assets change,2 unused FX files retire and267 remain exact. Native186-frame60fps preview and non-saving training are available. New attacks await owner visual approval; no new weapon/balance/crafting system is claimed.
+
+## 2026-10-14 — Twinsteel vertical running sword-size continuity
+
+The owner accepts the running body/gait and clarifies that the front/back swords shrink. Preserve body/stride/head/hand/boot texels and side art; generate a weapon-only removal plate, retain compact masks and bake the existing standing-size steel into all16 vertical frames at fixed unit size. Recipe hashes lock accepted body art; tests verify unmodified anatomy and visible full-length blade tips. No gameplay/runtime reconstruction changes. Focused verification passes511 anatomy/weapon-size,1194 real-input,735 shared-body,214 equipment/combat and70 native capture checks; all868 resources load. Native blade-carry review remains pending.
+
+## 2026-10-13 — Twinsteel running anatomy size correction
+
+Match whole generated running cels to occupied standing head dimensions instead of a fixed total crown-to-foot height. The previous full-height target shrank vertical anatomy despite passing height checks. Recipe v2 applies one uniform density per direction (UP+12.1%, DOWN+9.6%, SIDE+0.9%), fixed half-scale/sole, measured references without pixel reuse and calibrated extended-pose bounds. Add standing-size regressions; preserve full pose motion, attack/rest art, other weapons and gameplay. Pass439 complete-cel/standing-size,1194 real-input and735 shared-body assertions,70 native capture assertions and868 resource loads. All637 other protected assets remain exact;10 rebuild outputs are deterministic. Corrected native preview and limits are recorded in the source README and continuation.
+
+
+## 2026-10-13 — Fresh complete Twinsteel running generation
+
+The owner rejects head/neck/body reuse and asks for a new complete four-direction run. Generate eight full-body/two-blade RIGHT, UP and DOWN cels, mirror LEFT, normalize whole sprites at fixed per-lane density/half scale/sole and retain individual prompts/source hashes. Replace the canonical-body-input baker with complete source ownership; transparent hand atlas and existing visibility flags hide duplicate rigid blades. Keep attack/proud-idle/other-family art and gameplay unchanged. Replace obsolete pixel-reuse checks with source reproducibility, complete connectivity, two blade lanes, fixed sole/alpha/gutters and actual movement/handoffs. Focused checks: 391 anatomy, 1194 real-input, 735 shared-body, 214 gameplay, 100 native idle and 70 native capture assertions; 868 resources and 10 frozen atlases validate. Nine walk assets change; all 637 other protected assets remain exact; 10 outputs rebuild identically. Update current contracts/handoff to Decision 200, superseding 199. Owner motion approval remains pending.
+
+
+## 2026-10-13 — Twinsteel natural walking correction
+
+The owner rejected fixed-arm locomotion and undersized up/down feet. Replace the waist-strip leg scaling/frozen upper-body baker with complete canonical walking cels at native density. Translate whole poses by their authored identity landmarks, register moving leather palms, bake two rigid sword attachments/masks and correct a side cycle attachment jump. Keep all attack/rest art, other weapon assets, character scale, gameplay clocks and movement rules unchanged. Remove the obsolete steady-carry helper/endpoints rewrite and replace its fixed-body tests with complete anatomy and motion checks. Focused checks pass: 271 anatomy, 995 real-input gait/walls/handoffs, 711 shared-body, 214 equipment/combat and 100 native idle/retrieval assertions; all 868 resources load. Nine walking assets changed; the other 637 protected assets match the cleanup manifest. Native four-direction preview is available under ignored tmp/review/. Owner motion approval remains pending (Decision 199).
+
 ## 2026-10-13 — Fresh repository baseline
 
 The owner selected Dling11/Godot---Battle-of-gods so normal clones omit the original multi-gigabyte art history. Start a new root history from the cleaned tracked project, retain the original repository and local metadata separately, and keep the current project folder/gameplay/art/save files in place. Update clone instructions and continuation routing; validate the published baseline using an ordinary clone (Decision 198).

@@ -1,6 +1,6 @@
 # Roadmap
 
-Updated 2026-10-13.
+Updated 2026-10-14.
 
 ## Completed
 
@@ -9,18 +9,19 @@ Updated 2026-10-13.
 - Authored stage biomes, life/obstacles, threat-sensitive stage gates, reward chests, quiet loading and randomized campfire home backgrounds.
 - Enemy pressure/control mechanics, Rotcaller campaign placement and Stage VI Crag Bear route; separate Examiner Lab trial.
 - Four normal weapon families; accepted Greatsword V2 heavy combo, current axe cardinal cuts and Twinsteel V2 attacks/proud idle.
-- Frozen complete King anatomy references; distinct current Twinsteel steady-carry variant.
+- Frozen complete King anatomy references; fresh COMPLETE Twinsteel running generation with two held swords (Decision 200).
+- Fresh complete Twinsteel attacks in all directions, fixed-size held blades and new white-slash frames; owner-accepted2026-10-14 (Decision201).
 
 - Repository cleanup complete: about 6.50 GB of obsolete source/derived content removed; current source about 54 MiB, packaged playable project44.4 MiB. All646 protected assets unchanged, all 134 active smoke scripts pass assertions, all 868 resources load. Fixture teardown warnings remain separately tracked (Decision 197).
 
 ## Current work
 
-Owner motion review of current Twinsteel carry. Cleanup is finished; preserve current approved art and use the compact sources/handoffs.
+The owner accepts complete Twinsteel running/vertical blade size and the all-direction attack redraw (2026-10-14):120 complete generated poses, fixed-size held blades and20 fresh white-slash frames. Current five-cut timing/gameplay and approved running/rest remain protected (Decision201). Cleanup is finished. Iron Reaper is selected; motion/equipment implementation has not started.
 
 ## Next
 
-1. Owner reviews current Twinsteel motion in the actual Lab.
-2. Implement selected Iron Reaper only after design/motion approval.
+1. Preview selected Iron Reaper's left/right full-body combo against approved King proportions and readable blade grips; review motion before implementation.
+2. After motion approval, build Iron Reaper's cardinal attacks, running, idle and normal equipment/Bag presentation.
 3. Finalize campaign weapon acquisition/crafting and compare roles against single enemies/hordes.
 4. Measure crowded combat, cold loading and target-device performance before optimization.
 5. Extend stages/biomes and earned divine/domain mechanics using canonical stage/reward authority.

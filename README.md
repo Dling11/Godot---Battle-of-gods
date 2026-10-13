@@ -33,11 +33,15 @@ This repository starts from the cleaned project on 2026-10-13. It does not inclu
 | Non-saving debug kit | F9 |
 | Combat Lab after debug kit | F7 |
 
+Twinsteel's fresh complete five-cut attacks are installed for RIGHT/LEFT/UP/DOWN. Test F5 → F9 → F7 → Weapons → Twinsteel, then hold LMB to chain; Tab opens the Bag. Direct non-saving launch: tools/launch_king_twinsteel_training.ps1. Rebuild/source instructions are in [the current attack-source README](art_source/generated/characters/king/twinsteel_attacks_complete_2026_10_14/README.md). Running/rest and the new attacks are owner-approved.
+
 Controller movement, attack, dodge and skill-slot selection are also supported. HUD/modal clicks are consumed by UI. Debug tools suppress saves/rewards. In Lab, use Weapons or Tab Bag to equip Sword, Iron Beard, Royal Greatsword or Twinsteel. King can jump over obstacles with Skill3 when the landing is clear; skills1/5 retain their authored range across intervening obstacles.
 
 ## Current art
 
-Royal Greatsword V2 and its heavy four-cut sequence are the accepted baseline. Twinsteel selects shared_bodies/dual_carry_v3; its remodeled carry is awaiting owner review. Iron Beard retains the five-cut chop/rise/head-push/jump/spin combo. Frozen complete King references keep palette, scale and anatomy consistent across weapons. Sanctuary is temporarily complete and its map stays hidden.
+Royal Greatsword V2 and its heavy four-cut sequence are the accepted baseline. Twinsteel selects shared_bodies/dual_carry_v3; its complete running and attacks are owner-approved. Iron Beard retains the five-cut chop/rise/head-push/jump/spin combo. Frozen complete King references keep palette, scale and anatomy consistent across weapons. Sanctuary is temporarily complete and its map stays hidden.
+
+Twinsteel now uses freshly generated complete running poses, with connected anatomy and two held swords in every facing. Test F5 → F9 → F7 → Weapons → Twinsteel, or tools/launch_king_twinsteel_training.ps1 for the isolated non-saving Lab. WASD moves; held left click attacks; Tab opens the Bag. Source sheets, prompts and the deterministic bake recipe are in art_source/generated/characters/king/twinsteel_running_complete_2026_10_13/.
 
 ## Project structure
 
@@ -45,7 +49,7 @@ Royal Greatsword V2 and its heavy four-cut sequence are the accepted baseline. T
 - autoload/, data/, entities/, environment/, gameplay/, levels/, ui/: current systems/content.
 - tools/: current launchers, deterministic Twinsteel carry rebuild, map baking, audio helpers and resource/packaging checks. tools/editor supplies the isolated-scene backdrop required by asset scenes.
 - tests/: maintained gameplay/data/asset regressions, not historical art-comparison fixtures.
-- art_source/: current Twinsteel stepping source, small identity references and licensed audio originals.
+- art_source/: current complete Twinsteel running sources/prompts, small identity references and licensed audio originals.
 - docs/: current design contracts/decisions/maintenance.
 - tmp/: ignored test logs/captures; exports/: ignored distribution packages.
 

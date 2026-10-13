@@ -1,5 +1,7 @@
 # Decision196 — Steady Twinsteel carry with frozen upper anatomy
 
+Superseded by [Decision 199](199-twinsteel-complete-body-walking.md) on 2026-10-13 after the owner rejected fixed upper motion and undersized vertical feet. The historical rationale below is not the current walking contract.
+
 2026-10-12. Status: installed for owner motion review. Owner rejects the grip-only walking pass as insufficient and explicitly authorizes remodeling running/idle and correcting cut, missing or wobbling frames. Supersedes Decision195's exact shared full-gait selection for Twinsteel only; its frozen-reference/identity protections remain. Iron Reaper stays deferred. No commits or pushes.
 
 Reviewing native idle → walk → idle beside accepted Greatsword exposes a pose mismatch, not just bad grip detection: Twinsteel replaces the entire upper carry pose at movement start, and vertical swords drop much farther during travel. A correct palm coordinate over a changing chest/head cannot by itself solve that visual transition.

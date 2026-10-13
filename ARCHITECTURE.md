@@ -2,9 +2,11 @@
 
 Updated 2026-10-13. Current sources and contracts are authoritative; historical generation trials and archive-dependent tooling were removed (Decision197). See PROJECT_CONTEXT.md and docs/maintenance/repository-cleanup.md.
 
-Current Twinsteel carry is rebuilt by tools/build_king_twinsteel_carry.gd from production resources plus its retained source. Other weapon authority/presentation and saved IDs are unchanged. tests/king_art_test_base.gd supplies geometry helpers independently of obsolete art fixtures.
+Current Twinsteel running is rebuilt offline by tools/build_king_twinsteel_carry.gd and tools/king_twinsteel_walk.gd from complete generated cels and recipe v3. Standing-head calibration retains one body density per direction, fixed192x128 cells/half scale/sole94. For UP/DOWN, hash-checked generated removal masks clear short steel only; the existing16x62 Twinsteel raster is inverse sampled at unit scale around the moving closed fists, then unchanged anatomy covers its grips. Every accepted complete cel and protected anatomy cutout has a recipe hash; registration distinguishes anatomy bounds from blade extents. Runtime cels still own both blades, the hand atlas is empty and additional rigs stay hidden. Entry inherits body/visibility. Running side art/rest, authority, collision, actual-distance playback and saves remain unchanged (Decision200). Decision201 replaces the separate Twinsteel attack presentation as described below.
 
 ## Runtime Composition
+
+Twinsteel attack generation is offline: build_king_twinsteel_attacks.gd delegates complete-pose registration/steel composition to king_twinsteel_attack_baker.gd and effect packing to king_twinsteel_slash_baker.gd. Fifteen source boards provide120 poses;13 keys per clip include unchanged ready/recovery branches. Padded192×192 cells/sole126 share the exact world foot plane with192×128 run/rest/sole94 at half scale. Whole generated bodies contain both unit-size blades; additional rigs are hidden for generated keys. The existing presenter inherits complete entry textures/visibility and observes authoritative phase durations. dual_v2_swing uses one5×4 raster atlas, side mirroring and vertical floor-plane projection. No source generation, anatomy solving or blade baking runs per frame (Decision201).
 
 - Earthsplitter's sword selector uses explicit clipped 512px atlas regions, preserving its existing frame order/registration while preventing adjacent-row samples on rotated pixel-snapped quads. The ground presenter and combat authority are unchanged by this correction.
 

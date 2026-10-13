@@ -4,7 +4,11 @@ Updated 2026-10-13. Current sources and contracts are authoritative; historical 
 
 Keep complete approved native anatomy, real palm grips, fixed density/origin and camera depth. New motion needs separate owner review; frozen-reference hashes remain immutable. Captures/logs use ignored tmp/review/, never tracked archive/review folders.
 
+King running must retain complete boots, connected anatomy and clearly held weapons. Generate every FULL Twinsteel pose together; references guide identity/palette/proportions without supplying pasted head/body anatomy. Calibrate one isotropic body density per direction against standing anatomy; total pose height is insufficient. Weapon extent is measured separately: fix short steel with the fixed-size existing weapon raster, never resize accepted anatomy. UP/DOWN recipe v3 uses generated steel-removal masks and offline unit-size weapon composition; retained body pixels cover both grips. Integrated cels hide runtime rigid overlays and need no hand patch. Preserve fixed half scale/sole94, test body hashes and blade lengths, and review actual input/walls/handoffs at gameplay scale (Decision200).
+
 ## Scope
+
+Fresh Twinsteel attacks follow the same complete-pose rule (Decision201). Measure source anatomy, remove registration rods only when they do not conceal body connections, then bake rigid standing-size steel behind genuine moving fists. Regenerate a bad complete source pose/sheet instead of repairing it with reference body fragments. Attack-only192×192 padding/sole126 preserves the192×128/sole94 world origin; never scale King to fit a raised weapon. A shared generated slash atlas keeps palette and contours consistent through cardinal camera projections.
 
 These conventions apply to Godot 4.x GDScript, scenes, resources, and game assets. Prefer consistency with an established local pattern when it is clearly intentional; record any durable convention change here.
 

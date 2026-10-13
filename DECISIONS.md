@@ -2,11 +2,17 @@
 
 Current code/contracts are authoritative. Earlier decisions document history; removed art/tool/archive paths are not supported setup or build instructions. Recover historical material from the original repository only when needed.
 
+- [201 — Fresh complete Twinsteel attacks](docs/decisions/201-generate-complete-twinsteel-attacks.md): all four facings,120 new whole poses, fixed-size baked steel, padded action cells and20 generated slash frames; unchanged gameplay and approved running/rest. New attacks owner-accepted2026-10-14.
+
+- [200 — Generate complete Twinsteel running cels](docs/decisions/200-generate-complete-twinsteel-running-cels.md): fresh whole character/two-blade run poses, native references as visual guidance only, fixed full-cel normalization; supersedes199 for running. Running and corrected vertical swords are owner-approved2026-10-14.
+
+- [199 — Twinsteel complete-body walking](docs/decisions/199-twinsteel-complete-body-walking.md): historical canonical-body gait replacing 196; superseded by 200 after the owner rejected head/body reuse.
+
 - [198 — Start a fresh repository from the cleaned project](docs/decisions/198-start-fresh-repository-from-cleaned-project.md): owner-created Dling11/Godot---Battle-of-gods, clean root history, same game folder, separate original metadata/repository and measured ordinary clone.
 
 - [197 — Delete retired content and preserve production assets](docs/decisions/197-delete-retired-content-preserve-production-assets.md): owner-authorized folder cleanup, current-only rebuilds/tests, ignored evidence, lightweight packaging and explicit Git-history boundary.
 
-- [196 — Steady Twinsteel carry with frozen upper anatomy](docs/decisions/196-steady-twinsteel-carry-with-frozen-upper-anatomy.md): distinct complete-cel walking variant fixes rejected idle/run pose mismatch; exact approved upper carry, registered stepping legs and matched blade endpoints. Frozen references/other weapons/contacts/rest/gameplay protected; owner motion review pending.
+- [196 — Steady Twinsteel carry with frozen upper anatomy](docs/decisions/196-steady-twinsteel-carry-with-frozen-upper-anatomy.md): historical fixed-upper/leg-strip candidate, rejected by the owner and superseded by 199; identity and protected-attack/rest boundaries remain.
 
 - [195 — Reuse complete King bodies across weapons](docs/decisions/195-reuse-complete-king-bodies-across-weapons.md): fix equipped axe with approved whole poses, share exact gait across all four weapons, freeze full-body references and reject same-height torso drift; Greatsword/gameplay protected. Installed for owner visual review.
 

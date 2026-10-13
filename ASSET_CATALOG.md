@@ -16,7 +16,7 @@ Updated 2026-10-13. This catalog names current owners. The production graph and 
 | Gates/chests | gameplay/encounters, gameplay/loot and current referenced portal/chest assets |
 | Title/loading/HUD/Bag | ui and assets/ui; randomized campfire trio, quiet transition, compact portrait/centered paper doll |
 | Sound and attribution | assets/audio plus preserved license files; original CC0 contact pack under art_source/audio |
-| Current regeneration | art_source/generated/characters/king/dual_carry_gait_2026_10_12, small King references, current Twinsteel builder |
+| Current regeneration | Complete Twinsteel running/attack source sheets and prompts, hash recipes/registration; current walk/attack/slash builders; immutable body_library/v1 supplies visual guidance only. Attack pass uses20 selected source sheets,15 clips and one white-slash atlas; unused vertical Twinsteel slash duplicates are retired |
 
 Runtime raster density/palette/origins/import settings remain. Frozen complete body references are immutable; reviewed motion variants use separate resources. No new frame is authored or visually approved by cleanup. The pre-cleanup production hash manifest is docs/maintenance/active-assets-2026-10-13.json.
 

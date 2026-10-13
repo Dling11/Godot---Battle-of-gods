@@ -1,8 +1,7 @@
 # Known Issues
 
-Updated 2026-10-13. Historical fixed bugs and rejected art trials were removed from this active list. Runtime code remains the authority.
+Updated 2026-10-14. Historical fixed bugs and rejected art trials were removed from this active list. Runtime code remains the authority.
 
-- **Twinsteel carry motion:** current dual_carry_v3 is installed and technically checked, but owner motion approval remains pending. Steady upper anatomy is deliberately calmer than arm-swinging locomotion.
 - **Weapon acquisition/balance:** debug equipment availability does not establish campaign crafting/unlock rules. Compare reach, damage, knockback, recovery and incoming pressure before retuning. Iron Reaper is selected but not implemented.
 - **Performance:** prior short desktop samples are not phone/cold-load/stress guarantees. Keep event/phase-driven presentation; profile crowded fights and skill1 feedback on target devices.
 - **Campaign completeness:** production route reaches VI. StagesVII onward, divine/domain rewards and Stage XX routing are not implemented; Examiner remains an isolated Lab trial.

@@ -1,8 +1,6 @@
 extends "res://gameplay/presentation/axe_swing_trail.gd"
 
 ## Complete raster ribbons observe authoritative contact phases. No hits here.
-const Up = preload("res://assets/characters/playable/king/dual_v2/slash_up.png")
-const Down = preload("res://assets/characters/playable/king/dual_v2/slash_down.png")
 const Dust = preload("res://assets/characters/playable/king/huge_greatsword_proof/impact.png")
 const Impact = preload("res://gameplay/presentation/weapon_impact_presenter.gd")
 var pose_presenter: Node2D
@@ -37,9 +35,8 @@ func _phase(phase: int,duration: float) -> void:
 func _set_frame(value: float) -> void:
 	_frame = clampi(int(value),0,3)
 	if not is_instance_valid(slash_sprite): return
-	var direction := _attack.get_attack_direction()
 	var region := slash_sprite.texture as AtlasTexture
-	region.atlas = atlas if absf(direction.x)>absf(direction.y) or _row==3 else (Up if direction.y<0 else Down)
+	region.atlas = atlas
 	region.region = Rect2(_frame*192,_row*192,192,192)
 	slash_sprite.show()
 	_update_anchor()

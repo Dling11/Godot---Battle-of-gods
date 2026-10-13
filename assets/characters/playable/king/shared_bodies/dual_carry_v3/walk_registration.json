@@ -1,0 +1,722 @@
+[
+	{
+		"body_bounds": "Rect2i(65, 38, 71, 57)",
+		"composite_bounds": "Rect2i(65, 38, 71, 57)",
+		"density": 0.229540918163673,
+		"fixed_weapon_scale": false,
+		"head_center_x": 209.0,
+		"integrated_weapons": true,
+		"key": 0,
+		"mode": "generated_complete_cels",
+		"normalization": {
+			"body_height_range": [
+				55.0,
+				61.0
+			],
+			"mode": "standing_head_landmark",
+			"source_head_span": 100.2,
+			"standing_clip": "res://assets/characters/playable/king/shared_bodies/dual_carry_v3/side/idle.tres",
+			"standing_head_height": 23.0
+		},
+		"source": "res://art_source/generated/characters/king/twinsteel_running_complete_2026_10_13/right-source.png",
+		"source_bounds": [
+			72.0,
+			233.0,
+			382.0,
+			480.0
+		],
+		"source_sha256": "c5dea6f271076e1b72d3816eefe1ab68e6e2bdc5934ef767247c724f50a75112",
+		"view": "side",
+		"weapon_length": 0
+	},
+	{
+		"body_bounds": "Rect2i(67, 38, 68, 57)",
+		"composite_bounds": "Rect2i(67, 38, 68, 57)",
+		"density": 0.229540918163673,
+		"fixed_weapon_scale": false,
+		"head_center_x": 602.0,
+		"integrated_weapons": true,
+		"key": 1,
+		"mode": "generated_complete_cels",
+		"normalization": {
+			"body_height_range": [
+				55.0,
+				61.0
+			],
+			"mode": "standing_head_landmark",
+			"source_head_span": 100.2,
+			"standing_clip": "res://assets/characters/playable/king/shared_bodies/dual_carry_v3/side/idle.tres",
+			"standing_head_height": 23.0
+		},
+		"source": "res://art_source/generated/characters/king/twinsteel_running_complete_2026_10_13/right-source.png",
+		"source_bounds": [
+			475.0,
+			232.0,
+			770.0,
+			479.0
+		],
+		"source_sha256": "c5dea6f271076e1b72d3816eefe1ab68e6e2bdc5934ef767247c724f50a75112",
+		"view": "side",
+		"weapon_length": 0
+	},
+	{
+		"body_bounds": "Rect2i(66, 36, 70, 59)",
+		"composite_bounds": "Rect2i(66, 36, 70, 59)",
+		"density": 0.229540918163673,
+		"fixed_weapon_scale": false,
+		"head_center_x": 966.0,
+		"integrated_weapons": true,
+		"key": 2,
+		"mode": "generated_complete_cels",
+		"normalization": {
+			"body_height_range": [
+				55.0,
+				61.0
+			],
+			"mode": "standing_head_landmark",
+			"source_head_span": 100.2,
+			"standing_clip": "res://assets/characters/playable/king/shared_bodies/dual_carry_v3/side/idle.tres",
+			"standing_head_height": 23.0
+		},
+		"source": "res://art_source/generated/characters/king/twinsteel_running_complete_2026_10_13/right-source.png",
+		"source_bounds": [
+			834.0,
+			225.0,
+			1138.0,
+			483.0
+		],
+		"source_sha256": "c5dea6f271076e1b72d3816eefe1ab68e6e2bdc5934ef767247c724f50a75112",
+		"view": "side",
+		"weapon_length": 0
+	},
+	{
+		"body_bounds": "Rect2i(64, 36, 68, 59)",
+		"composite_bounds": "Rect2i(64, 36, 68, 59)",
+		"density": 0.229540918163673,
+		"fixed_weapon_scale": false,
+		"head_center_x": 1364.0,
+		"integrated_weapons": true,
+		"key": 3,
+		"mode": "generated_complete_cels",
+		"normalization": {
+			"body_height_range": [
+				55.0,
+				61.0
+			],
+			"mode": "standing_head_landmark",
+			"source_head_span": 100.2,
+			"standing_clip": "res://assets/characters/playable/king/shared_bodies/dual_carry_v3/side/idle.tres",
+			"standing_head_height": 23.0
+		},
+		"source": "res://art_source/generated/characters/king/twinsteel_running_complete_2026_10_13/right-source.png",
+		"source_bounds": [
+			1224.0,
+			221.0,
+			1523.0,
+			478.0
+		],
+		"source_sha256": "c5dea6f271076e1b72d3816eefe1ab68e6e2bdc5934ef767247c724f50a75112",
+		"view": "side",
+		"weapon_length": 0
+	},
+	{
+		"body_bounds": "Rect2i(65, 38, 71, 57)",
+		"composite_bounds": "Rect2i(65, 38, 71, 57)",
+		"density": 0.229540918163673,
+		"fixed_weapon_scale": false,
+		"head_center_x": 207.0,
+		"integrated_weapons": true,
+		"key": 4,
+		"mode": "generated_complete_cels",
+		"normalization": {
+			"body_height_range": [
+				55.0,
+				61.0
+			],
+			"mode": "standing_head_landmark",
+			"source_head_span": 100.2,
+			"standing_clip": "res://assets/characters/playable/king/shared_bodies/dual_carry_v3/side/idle.tres",
+			"standing_head_height": 23.0
+		},
+		"source": "res://art_source/generated/characters/king/twinsteel_running_complete_2026_10_13/right-source.png",
+		"source_bounds": [
+			72.0,
+			688.0,
+			378.0,
+			935.0
+		],
+		"source_sha256": "c5dea6f271076e1b72d3816eefe1ab68e6e2bdc5934ef767247c724f50a75112",
+		"view": "side",
+		"weapon_length": 0
+	},
+	{
+		"body_bounds": "Rect2i(65, 38, 68, 57)",
+		"composite_bounds": "Rect2i(65, 38, 68, 57)",
+		"density": 0.229540918163673,
+		"fixed_weapon_scale": false,
+		"head_center_x": 600.0,
+		"integrated_weapons": true,
+		"key": 5,
+		"mode": "generated_complete_cels",
+		"normalization": {
+			"body_height_range": [
+				55.0,
+				61.0
+			],
+			"mode": "standing_head_landmark",
+			"source_head_span": 100.2,
+			"standing_clip": "res://assets/characters/playable/king/shared_bodies/dual_carry_v3/side/idle.tres",
+			"standing_head_height": 23.0
+		},
+		"source": "res://art_source/generated/characters/king/twinsteel_running_complete_2026_10_13/right-source.png",
+		"source_bounds": [
+			462.0,
+			688.0,
+			761.0,
+			935.0
+		],
+		"source_sha256": "c5dea6f271076e1b72d3816eefe1ab68e6e2bdc5934ef767247c724f50a75112",
+		"view": "side",
+		"weapon_length": 0
+	},
+	{
+		"body_bounds": "Rect2i(69, 36, 65, 59)",
+		"composite_bounds": "Rect2i(69, 36, 65, 59)",
+		"density": 0.229540918163673,
+		"fixed_weapon_scale": false,
+		"head_center_x": 967.0,
+		"integrated_weapons": true,
+		"key": 6,
+		"mode": "generated_complete_cels",
+		"normalization": {
+			"body_height_range": [
+				55.0,
+				61.0
+			],
+			"mode": "standing_head_landmark",
+			"source_head_span": 100.2,
+			"standing_clip": "res://assets/characters/playable/king/shared_bodies/dual_carry_v3/side/idle.tres",
+			"standing_head_height": 23.0
+		},
+		"source": "res://art_source/generated/characters/king/twinsteel_running_complete_2026_10_13/right-source.png",
+		"source_bounds": [
+			843.0,
+			688.0,
+			1132.0,
+			942.0
+		],
+		"source_sha256": "c5dea6f271076e1b72d3816eefe1ab68e6e2bdc5934ef767247c724f50a75112",
+		"view": "side",
+		"weapon_length": 0
+	},
+	{
+		"body_bounds": "Rect2i(65, 36, 70, 59)",
+		"composite_bounds": "Rect2i(65, 36, 70, 59)",
+		"density": 0.229540918163673,
+		"fixed_weapon_scale": false,
+		"head_center_x": 1345.0,
+		"integrated_weapons": true,
+		"key": 7,
+		"mode": "generated_complete_cels",
+		"normalization": {
+			"body_height_range": [
+				55.0,
+				61.0
+			],
+			"mode": "standing_head_landmark",
+			"source_head_span": 100.2,
+			"standing_clip": "res://assets/characters/playable/king/shared_bodies/dual_carry_v3/side/idle.tres",
+			"standing_head_height": 23.0
+		},
+		"source": "res://art_source/generated/characters/king/twinsteel_running_complete_2026_10_13/right-source.png",
+		"source_bounds": [
+			1209.0,
+			682.0,
+			1514.0,
+			939.0
+		],
+		"source_sha256": "c5dea6f271076e1b72d3816eefe1ab68e6e2bdc5934ef767247c724f50a75112",
+		"view": "side",
+		"weapon_length": 0
+	},
+	{
+		"body_bounds": "Rect2i(70, 31, 50, 64)",
+		"composite_bounds": "Rect2i(63, 15, 68, 80)",
+		"density": 0.163190009933305,
+		"fixed_weapon_scale": true,
+		"head_center_x": 209.0,
+		"integrated_weapons": true,
+		"key": 0,
+		"mode": "generated_complete_cels",
+		"normalization": {
+			"body_height_range": [
+				61.0,
+				67.0
+			],
+			"mode": "standing_head_landmark",
+			"source_head_span": 140.94,
+			"standing_clip": "res://assets/characters/playable/king/shared_bodies/dual_carry_v3/up/idle.tres",
+			"standing_head_height": 23.0
+		},
+		"source": "res://art_source/generated/characters/king/twinsteel_running_complete_2026_10_13/up-source.png",
+		"source_bounds": [
+			48.0,
+			96.0,
+			353.0,
+			487.0
+		],
+		"source_sha256": "2bd34fc2a49298ae432ce761f6530b62451f6eb82ed72730b4d165a6d96a1fa9",
+		"view": "up",
+		"weapon_length": 50
+	},
+	{
+		"body_bounds": "Rect2i(71, 31, 49, 64)",
+		"composite_bounds": "Rect2i(63, 15, 68, 80)",
+		"density": 0.163190009933305,
+		"fixed_weapon_scale": true,
+		"head_center_x": 594.0,
+		"integrated_weapons": true,
+		"key": 1,
+		"mode": "generated_complete_cels",
+		"normalization": {
+			"body_height_range": [
+				61.0,
+				67.0
+			],
+			"mode": "standing_head_landmark",
+			"source_head_span": 140.94,
+			"standing_clip": "res://assets/characters/playable/king/shared_bodies/dual_carry_v3/up/idle.tres",
+			"standing_head_height": 23.0
+		},
+		"source": "res://art_source/generated/characters/king/twinsteel_running_complete_2026_10_13/up-source.png",
+		"source_bounds": [
+			436.0,
+			95.0,
+			737.0,
+			487.0
+		],
+		"source_sha256": "2bd34fc2a49298ae432ce761f6530b62451f6eb82ed72730b4d165a6d96a1fa9",
+		"view": "up",
+		"weapon_length": 50
+	},
+	{
+		"body_bounds": "Rect2i(68, 30, 52, 65)",
+		"composite_bounds": "Rect2i(63, 15, 68, 80)",
+		"density": 0.163190009933305,
+		"fixed_weapon_scale": true,
+		"head_center_x": 978.0,
+		"integrated_weapons": true,
+		"key": 2,
+		"mode": "generated_complete_cels",
+		"normalization": {
+			"body_height_range": [
+				61.0,
+				67.0
+			],
+			"mode": "standing_head_landmark",
+			"source_head_span": 140.94,
+			"standing_clip": "res://assets/characters/playable/king/shared_bodies/dual_carry_v3/up/idle.tres",
+			"standing_head_height": 23.0
+		},
+		"source": "res://art_source/generated/characters/king/twinsteel_running_complete_2026_10_13/up-source.png",
+		"source_bounds": [
+			806.0,
+			95.0,
+			1120.0,
+			489.0
+		],
+		"source_sha256": "2bd34fc2a49298ae432ce761f6530b62451f6eb82ed72730b4d165a6d96a1fa9",
+		"view": "up",
+		"weapon_length": 50
+	},
+	{
+		"body_bounds": "Rect2i(69, 29, 49, 66)",
+		"composite_bounds": "Rect2i(63, 13, 68, 82)",
+		"density": 0.163190009933305,
+		"fixed_weapon_scale": true,
+		"head_center_x": 1369.0,
+		"integrated_weapons": true,
+		"key": 3,
+		"mode": "generated_complete_cels",
+		"normalization": {
+			"body_height_range": [
+				61.0,
+				67.0
+			],
+			"mode": "standing_head_landmark",
+			"source_head_span": 140.94,
+			"standing_clip": "res://assets/characters/playable/king/shared_bodies/dual_carry_v3/up/idle.tres",
+			"standing_head_height": 23.0
+		},
+		"source": "res://art_source/generated/characters/king/twinsteel_running_complete_2026_10_13/up-source.png",
+		"source_bounds": [
+			1202.0,
+			94.0,
+			1500.0,
+			497.0
+		],
+		"source_sha256": "2bd34fc2a49298ae432ce761f6530b62451f6eb82ed72730b4d165a6d96a1fa9",
+		"view": "up",
+		"weapon_length": 50
+	},
+	{
+		"body_bounds": "Rect2i(69, 32, 49, 63)",
+		"composite_bounds": "Rect2i(63, 17, 68, 78)",
+		"density": 0.163190009933305,
+		"fixed_weapon_scale": true,
+		"head_center_x": 208.0,
+		"integrated_weapons": true,
+		"key": 4,
+		"mode": "generated_complete_cels",
+		"normalization": {
+			"body_height_range": [
+				61.0,
+				67.0
+			],
+			"mode": "standing_head_landmark",
+			"source_head_span": 140.94,
+			"standing_clip": "res://assets/characters/playable/king/shared_bodies/dual_carry_v3/up/idle.tres",
+			"standing_head_height": 23.0
+		},
+		"source": "res://art_source/generated/characters/king/twinsteel_running_complete_2026_10_13/up-source.png",
+		"source_bounds": [
+			42.0,
+			567.0,
+			342.0,
+			954.0
+		],
+		"source_sha256": "2bd34fc2a49298ae432ce761f6530b62451f6eb82ed72730b4d165a6d96a1fa9",
+		"view": "up",
+		"weapon_length": 50
+	},
+	{
+		"body_bounds": "Rect2i(68, 31, 50, 64)",
+		"composite_bounds": "Rect2i(63, 16, 68, 79)",
+		"density": 0.163190009933305,
+		"fixed_weapon_scale": true,
+		"head_center_x": 594.0,
+		"integrated_weapons": true,
+		"key": 5,
+		"mode": "generated_complete_cels",
+		"normalization": {
+			"body_height_range": [
+				61.0,
+				67.0
+			],
+			"mode": "standing_head_landmark",
+			"source_head_span": 140.94,
+			"standing_clip": "res://assets/characters/playable/king/shared_bodies/dual_carry_v3/up/idle.tres",
+			"standing_head_height": 23.0
+		},
+		"source": "res://art_source/generated/characters/king/twinsteel_running_complete_2026_10_13/up-source.png",
+		"source_bounds": [
+			419.0,
+			566.0,
+			727.0,
+			954.0
+		],
+		"source_sha256": "2bd34fc2a49298ae432ce761f6530b62451f6eb82ed72730b4d165a6d96a1fa9",
+		"view": "up",
+		"weapon_length": 50
+	},
+	{
+		"body_bounds": "Rect2i(68, 32, 50, 63)",
+		"composite_bounds": "Rect2i(63, 16, 68, 79)",
+		"density": 0.163190009933305,
+		"fixed_weapon_scale": true,
+		"head_center_x": 977.0,
+		"integrated_weapons": true,
+		"key": 6,
+		"mode": "generated_complete_cels",
+		"normalization": {
+			"body_height_range": [
+				61.0,
+				67.0
+			],
+			"mode": "standing_head_landmark",
+			"source_head_span": 140.94,
+			"standing_clip": "res://assets/characters/playable/king/shared_bodies/dual_carry_v3/up/idle.tres",
+			"standing_head_height": 23.0
+		},
+		"source": "res://art_source/generated/characters/king/twinsteel_running_complete_2026_10_13/up-source.png",
+		"source_bounds": [
+			802.0,
+			566.0,
+			1111.0,
+			952.0
+		],
+		"source_sha256": "2bd34fc2a49298ae432ce761f6530b62451f6eb82ed72730b4d165a6d96a1fa9",
+		"view": "up",
+		"weapon_length": 50
+	},
+	{
+		"body_bounds": "Rect2i(68, 29, 51, 66)",
+		"composite_bounds": "Rect2i(63, 13, 68, 82)",
+		"density": 0.163190009933305,
+		"fixed_weapon_scale": true,
+		"head_center_x": 1366.0,
+		"integrated_weapons": true,
+		"key": 7,
+		"mode": "generated_complete_cels",
+		"normalization": {
+			"body_height_range": [
+				61.0,
+				67.0
+			],
+			"mode": "standing_head_landmark",
+			"source_head_span": 140.94,
+			"standing_clip": "res://assets/characters/playable/king/shared_bodies/dual_carry_v3/up/idle.tres",
+			"standing_head_height": 23.0
+		},
+		"source": "res://art_source/generated/characters/king/twinsteel_running_complete_2026_10_13/up-source.png",
+		"source_bounds": [
+			1193.0,
+			566.0,
+			1505.0,
+			969.0
+		],
+		"source_sha256": "2bd34fc2a49298ae432ce761f6530b62451f6eb82ed72730b4d165a6d96a1fa9",
+		"view": "up",
+		"weapon_length": 50
+	},
+	{
+		"body_bounds": "Rect2i(65, 32, 59, 63)",
+		"composite_bounds": "Rect2i(42, 32, 112, 63)",
+		"density": 0.182481751824818,
+		"fixed_weapon_scale": true,
+		"head_center_x": 210.0,
+		"integrated_weapons": true,
+		"key": 0,
+		"mode": "generated_complete_cels",
+		"normalization": {
+			"body_height_range": [
+				59.0,
+				66.0
+			],
+			"mode": "standing_head_landmark",
+			"source_head_span": 137.0,
+			"standing_clip": "res://assets/characters/playable/king/shared_bodies/dual_carry_v3/down/idle.tres",
+			"standing_head_height": 25.0
+		},
+		"source": "res://art_source/generated/characters/king/twinsteel_running_complete_2026_10_13/down-source.png",
+		"source_bounds": [
+			38.0,
+			88.0,
+			361.0,
+			435.0
+		],
+		"source_sha256": "78b88ebbcf7d4e1c7c27a6c0981c3ca20a024d1096047cb42b9f07546c68b1d6",
+		"view": "down",
+		"weapon_length": 50
+	},
+	{
+		"body_bounds": "Rect2i(68, 34, 55, 61)",
+		"composite_bounds": "Rect2i(42, 34, 112, 61)",
+		"density": 0.182481751824818,
+		"fixed_weapon_scale": true,
+		"head_center_x": 586.0,
+		"integrated_weapons": true,
+		"key": 1,
+		"mode": "generated_complete_cels",
+		"normalization": {
+			"body_height_range": [
+				59.0,
+				66.0
+			],
+			"mode": "standing_head_landmark",
+			"source_head_span": 137.0,
+			"standing_clip": "res://assets/characters/playable/king/shared_bodies/dual_carry_v3/down/idle.tres",
+			"standing_head_height": 25.0
+		},
+		"source": "res://art_source/generated/characters/king/twinsteel_running_complete_2026_10_13/down-source.png",
+		"source_bounds": [
+			431.0,
+			88.0,
+			732.0,
+			419.0
+		],
+		"source_sha256": "78b88ebbcf7d4e1c7c27a6c0981c3ca20a024d1096047cb42b9f07546c68b1d6",
+		"view": "down",
+		"weapon_length": 50
+	},
+	{
+		"body_bounds": "Rect2i(68, 32, 57, 63)",
+		"composite_bounds": "Rect2i(42, 32, 112, 63)",
+		"density": 0.182481751824818,
+		"fixed_weapon_scale": true,
+		"head_center_x": 956.0,
+		"integrated_weapons": true,
+		"key": 2,
+		"mode": "generated_complete_cels",
+		"normalization": {
+			"body_height_range": [
+				59.0,
+				66.0
+			],
+			"mode": "standing_head_landmark",
+			"source_head_span": 137.0,
+			"standing_clip": "res://assets/characters/playable/king/shared_bodies/dual_carry_v3/down/idle.tres",
+			"standing_head_height": 25.0
+		},
+		"source": "res://art_source/generated/characters/king/twinsteel_running_complete_2026_10_13/down-source.png",
+		"source_bounds": [
+			801.0,
+			89.0,
+			1115.0,
+			431.0
+		],
+		"source_sha256": "78b88ebbcf7d4e1c7c27a6c0981c3ca20a024d1096047cb42b9f07546c68b1d6",
+		"view": "down",
+		"weapon_length": 50
+	},
+	{
+		"body_bounds": "Rect2i(67, 33, 58, 62)",
+		"composite_bounds": "Rect2i(42, 33, 112, 62)",
+		"density": 0.182481751824818,
+		"fixed_weapon_scale": true,
+		"head_center_x": 1339.0,
+		"integrated_weapons": true,
+		"key": 3,
+		"mode": "generated_complete_cels",
+		"normalization": {
+			"body_height_range": [
+				59.0,
+				66.0
+			],
+			"mode": "standing_head_landmark",
+			"source_head_span": 137.0,
+			"standing_clip": "res://assets/characters/playable/king/shared_bodies/dual_carry_v3/down/idle.tres",
+			"standing_head_height": 25.0
+		},
+		"source": "res://art_source/generated/characters/king/twinsteel_running_complete_2026_10_13/down-source.png",
+		"source_bounds": [
+			1176.0,
+			94.0,
+			1496.0,
+			434.0
+		],
+		"source_sha256": "78b88ebbcf7d4e1c7c27a6c0981c3ca20a024d1096047cb42b9f07546c68b1d6",
+		"view": "down",
+		"weapon_length": 50
+	},
+	{
+		"body_bounds": "Rect2i(67, 31, 59, 64)",
+		"composite_bounds": "Rect2i(42, 31, 112, 64)",
+		"density": 0.182481751824818,
+		"fixed_weapon_scale": true,
+		"head_center_x": 207.0,
+		"integrated_weapons": true,
+		"key": 4,
+		"mode": "generated_complete_cels",
+		"normalization": {
+			"body_height_range": [
+				59.0,
+				66.0
+			],
+			"mode": "standing_head_landmark",
+			"source_head_span": 137.0,
+			"standing_clip": "res://assets/characters/playable/king/shared_bodies/dual_carry_v3/down/idle.tres",
+			"standing_head_height": 25.0
+		},
+		"source": "res://art_source/generated/characters/king/twinsteel_running_complete_2026_10_13/down-source.png",
+		"source_bounds": [
+			44.0,
+			585.0,
+			371.0,
+			936.0
+		],
+		"source_sha256": "78b88ebbcf7d4e1c7c27a6c0981c3ca20a024d1096047cb42b9f07546c68b1d6",
+		"view": "down",
+		"weapon_length": 50
+	},
+	{
+		"body_bounds": "Rect2i(69, 32, 57, 63)",
+		"composite_bounds": "Rect2i(42, 32, 112, 63)",
+		"density": 0.182481751824818,
+		"fixed_weapon_scale": true,
+		"head_center_x": 586.0,
+		"integrated_weapons": true,
+		"key": 5,
+		"mode": "generated_complete_cels",
+		"normalization": {
+			"body_height_range": [
+				59.0,
+				66.0
+			],
+			"mode": "standing_head_landmark",
+			"source_head_span": 137.0,
+			"standing_clip": "res://assets/characters/playable/king/shared_bodies/dual_carry_v3/down/idle.tres",
+			"standing_head_height": 25.0
+		},
+		"source": "res://art_source/generated/characters/king/twinsteel_running_complete_2026_10_13/down-source.png",
+		"source_bounds": [
+			433.0,
+			586.0,
+			750.0,
+			929.0
+		],
+		"source_sha256": "78b88ebbcf7d4e1c7c27a6c0981c3ca20a024d1096047cb42b9f07546c68b1d6",
+		"view": "down",
+		"weapon_length": 50
+	},
+	{
+		"body_bounds": "Rect2i(71, 34, 55, 61)",
+		"composite_bounds": "Rect2i(42, 34, 112, 62)",
+		"density": 0.182481751824818,
+		"fixed_weapon_scale": true,
+		"head_center_x": 951.0,
+		"integrated_weapons": true,
+		"key": 6,
+		"mode": "generated_complete_cels",
+		"normalization": {
+			"body_height_range": [
+				59.0,
+				66.0
+			],
+			"mode": "standing_head_landmark",
+			"source_head_span": 137.0,
+			"standing_clip": "res://assets/characters/playable/king/shared_bodies/dual_carry_v3/down/idle.tres",
+			"standing_head_height": 25.0
+		},
+		"source": "res://art_source/generated/characters/king/twinsteel_running_complete_2026_10_13/down-source.png",
+		"source_bounds": [
+			812.0,
+			586.0,
+			1114.0,
+			918.0
+		],
+		"source_sha256": "78b88ebbcf7d4e1c7c27a6c0981c3ca20a024d1096047cb42b9f07546c68b1d6",
+		"view": "down",
+		"weapon_length": 50
+	},
+	{
+		"body_bounds": "Rect2i(65, 31, 59, 64)",
+		"composite_bounds": "Rect2i(42, 31, 112, 64)",
+		"density": 0.182481751824818,
+		"fixed_weapon_scale": true,
+		"head_center_x": 1345.0,
+		"integrated_weapons": true,
+		"key": 7,
+		"mode": "generated_complete_cels",
+		"normalization": {
+			"body_height_range": [
+				59.0,
+				66.0
+			],
+			"mode": "standing_head_landmark",
+			"source_head_span": 137.0,
+			"standing_clip": "res://assets/characters/playable/king/shared_bodies/dual_carry_v3/down/idle.tres",
+			"standing_head_height": 25.0
+		},
+		"source": "res://art_source/generated/characters/king/twinsteel_running_complete_2026_10_13/down-source.png",
+		"source_bounds": [
+			1174.0,
+			588.0,
+			1496.0,
+			939.0
+		],
+		"source_sha256": "78b88ebbcf7d4e1c7c27a6c0981c3ca20a024d1096047cb42b9f07546c68b1d6",
+		"view": "down",
+		"weapon_length": 50
+	}
+]
