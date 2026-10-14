@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="WeaponDefinition" load_steps=7 format=3]
+[ext_resource type="Script" path="res://data/weapons/weapon_definition.gd" id="1"]
+[ext_resource type="Resource" path="res://data/weapons/families/iron_reaper/combo.tres" id="2"]
+[ext_resource type="Resource" path="res://data/weapons/families/iron_reaper/presentation.tres" id="3"]
+[ext_resource type="Resource" path="res://data/weapons/audio/scythe_contact.tres" id="4"]
+[ext_resource type="Resource" path="res://data/weapons/audio/scythe_finisher.tres" id="5"]
+[sub_resource type="ConvexPolygonShape2D" id="sweep"]
+points = PackedVector2Array(2,-14,38,-66,98,-56,130,0,98,56,38,66,2,14)
+[resource]
+script = ExtResource("1")
+weapon_id = &"weapon_king_iron_reaper"
+display_name = "Iron Reaper"
+uses_integrated_visual = true
+family_presentation = ExtResource("3")
+melee_hitbox_shape = SubResource("sweep")
+combo = ExtResource("2")
+hit_audio = ExtResource("4")
+combo_hit_audio = Array[Resource]([null,null,null,ExtResource("5")])
+attack_movement_ratios = PackedFloat32Array(0.4,0.0,0.65)
+damage = 25.0
+basic_damage_minimum = 10.0
+basic_damage_maximum = 12.0
+knockback_strength = 40.0
+basic_stagger_seconds = 0.09

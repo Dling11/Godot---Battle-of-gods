@@ -5,7 +5,7 @@ extends SceneTree
 const LAB = preload("res://levels/combat_lab/combat_lab.tscn")
 const ROOTLING = preload("res://entities/enemies/rootling/rootling.tscn")
 const HOG = preload("res://entities/enemies/armored_hog/armored_hog.tscn")
-const ITEMS := [preload("res://data/items/equipment/king_signature_sword.tres"),preload("res://data/items/equipment/king_iron_beard_axe.tres"),preload("res://data/items/equipment/king_twinsteel.tres"),preload("res://data/items/equipment/king_royal_greatsword_v2.tres")]
+const ITEMS := [preload("res://data/items/equipment/king_signature_sword.tres"),preload("res://data/items/equipment/king_iron_beard_axe.tres"),preload("res://data/items/equipment/king_twinsteel.tres"),preload("res://data/items/equipment/king_royal_greatsword_v2.tres"),preload("res://data/items/equipment/king_iron_reaper.tres")]
 const OUT := "res://tmp/review/combat/weapon_impact_closure_2026_10_07/"
 var evidence_path := OUT
 var checks := 0
@@ -18,9 +18,11 @@ var resolved_push: Dictionary = {}
 var phase_seconds: Array[float] = []
 var control_rows: Array[Dictionary] = []
 var moving_rows: Array[Dictionary] = []
+var weapon_filter := ""
 
 func _initialize() -> void:
 	for argument in OS.get_cmdline_user_args():
+		if argument.begins_with("--weapon="): weapon_filter = argument.trim_prefix("--weapon=")
 		if argument.begins_with("--output=res://tmp/review/"):
 			evidence_path = argument.trim_prefix("--output=").trim_suffix("/")+"/"
 	_run.call_deferred()
@@ -53,6 +55,7 @@ func _run() -> void:
 		accepted.append({"target":target.get_parent().get_instance_id(),"damage":info.amount,"raw":info.raw_amount,"knockback":info.knockback_strength,"stagger":info.stagger_seconds,"type":info.damage_type}))
 	actor.attack_component.phase_changed.connect(func(_phase: int,seconds: float) -> void: phase_seconds.append(seconds))
 	for item: EquipmentDefinition in ITEMS:
+		if not weapon_filter.is_empty() and String(item.item_id) != weapon_filter: continue
 		check(actor.equip_owned_weapon(item),"Cannot equip "+item.display_name)
 		for target_count in [1,8]:
 			await _controlled(item,ROOTLING,target_count)
@@ -112,7 +115,9 @@ func _controlled(item: EquipmentDefinition,scene: PackedScene,count: int) -> voi
 		var audio_before := feedback._weapon_impact_index
 		check(actor.request_primary_attack(),"Controlled enemy strike was rejected")
 		await _until_idle()
-		check(accepted.size()==count,"Actual enemy contact was missing or duplicated")
+		var release := weapon.combo.returning_attack(step)
+		var contacts_per_target := 2 if release != null else 1
+		check(accepted.size()==count*contacts_per_target,"Actual enemy contact was missing or duplicated")
 		check(feedback._weapon_impact_index==audio_before+1,"Horde impact audio multiplied per target")
 		check(phase_seconds.size()==3,"Actual enemy exchange lost a phase")
 		if phase_seconds.size()==3:
@@ -122,14 +127,20 @@ func _controlled(item: EquipmentDefinition,scene: PackedScene,count: int) -> voi
 		var max_push := 0.0
 		var expected := WeaponCombatReadout.step_range(weapon,step)
 		for hit in accepted:
-			check(not seen.has(hit.target),"Two blades awarded duplicate enemy damage")
-			seen[hit.target] = true
+			var previous: int = seen.get(hit.target,0)
+			check(previous<contacts_per_target,"Weapon awarded extra enemy damage on a contact leg")
+			seen[hit.target] = previous+1
 			check(hit.type==DamageInfo.DamageType.PHYSICAL,"Basic damage lost physical typing")
-			check(hit.raw>=expected.x-.01 and hit.raw<=expected.y+.01,"Real enemy raw damage disagrees with Bag")
+			var share: float = (release.outward_damage_share if previous==0 else 1.0-release.outward_damage_share) if release != null else 1.0
+			check(hit.raw>=expected.x*share-.01 and hit.raw<=expected.y*share+.01,"Real enemy raw damage disagrees with Bag/flight share")
 			var enemy := instance_from_id(hit.target) as Node2D
 			check(enemy!=null and is_equal_approx(hit.damage,enemy.health_component.resolve_damage(hit.raw,DamageInfo.DamageType.PHYSICAL)),"Authored enemy mitigation was bypassed")
 			var actual_push: float = resolved_push.get(hit.target,0.0)
-			check(is_equal_approx(actual_push,hit.knockback*enemy.definition.knockback_multiplier()),"Authored enemy knockback resistance was bypassed")
+			var rule := weapon.combo.contact_rule(step)
+			if rule != null and rule.light_pull_distance > 0 and enemy.knockback_component.accepts_light_pressure():
+				check(actual_push <= 2.0 * rule.light_pull_distance / enemy.knockback_component.duration_seconds + 0.01, "Hook exceeds its bounded light-target impulse")
+			else:
+				check(is_equal_approx(actual_push,hit.knockback*enemy.definition.knockback_multiplier()),"Authored enemy knockback resistance was bypassed")
 			damage_sum += hit.damage
 			max_push = maxf(max_push,actual_push)
 		cuts.append({"step":step+1,"targets_hit":accepted.size(),"total_damage":damage_sum,"maximum_resolved_push":max_push,"phase_seconds":phase_seconds.duplicate(),"raw_expected":str(expected),"shared_impact_cues":feedback._weapon_impact_index-audio_before})

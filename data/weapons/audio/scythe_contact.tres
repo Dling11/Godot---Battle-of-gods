@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="WeaponHitAudioDefinition" load_steps=4 format=3]
+[ext_resource type="Script" path="res://data/weapons/weapon_hit_audio_definition.gd" id="1"]
+[ext_resource type="AudioStream" path="res://assets/audio/sfx/player/iron_reaper/contact_1.wav" id="2"]
+[ext_resource type="AudioStream" path="res://assets/audio/sfx/player/iron_reaper/contact_2.wav" id="3"]
+[resource]
+script = ExtResource("1")
+variations = Array[AudioStream]([ExtResource("2"), ExtResource("3")])
+pitch = 0.92
+volume_db = -5.0

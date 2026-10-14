@@ -18,7 +18,7 @@ func _run() -> void:
 		return
 	if (
 		not KingCatalog.has_valid_layout()
-		or KingCatalog.weapons.size() != 5
+		or KingCatalog.weapons.size() != 6
 		or KingCatalog.default_weapon.weapon_definition != KingSword
 		or KingSword.weapon_id != &"weapon_king_signature_sword"
 		or not KingSword.uses_integrated_visual

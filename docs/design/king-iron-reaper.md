@@ -1,0 +1,39 @@
+# Iron Reaper — playable returning scythe
+
+2026-10-14. Decision206 preserves owner-approved running in every direction and regenerates all attacks/idle to match that appearance. The new idle makes one small upward toss/catch, then settles. The owner accepts this appearance. Decision207 improves swing momentum and recoil; Decision208 fixes attack-circle drift and clipped white strokes, accepted by the owner. Decision209 now quickens cadence, adds24 new white effect frames and dedicated scythe sound; quicker motion/live mix review remains open.
+
+## Play
+
+F5 → F9 test kit → F7 Combat Lab → Weapons → Iron Reaper · Scythe. WASD moves, hold LMB to repeat, Space queues dodge, Tab opens the Bag. tools/launch_king_iron_reaper.ps1 opens the real Lab with four Rootlings. Pass -GodotPath on another PC. Review suppresses saves/rewards; earned acquisition remains pending.
+
+## Rules
+
+Sweep → return hook → throw/linger/recall/catch → final reap. Cut clocks0.43/0.42/1.22/0.52s, total2.59s. Basic10–12 Physical; multipliers1/1/1.2/1.8 give50–60 total and21.2 base DPS if both released legs connect. Estimates exclude crits, defenses, buffs, hitstop, misses and the wounded bonus. Skill power remains25.
+
+Normal sweeps reach130px; final reap136px. Third cut travels124px with50px hurt radius. Its0.90s active window contains0.27s outward,0.36s stationary spinning and0.27s recall. Each target takes at most one65% share outward/while lingering and one35% share on recall. It is not a repeated-damage field. Solid terrain shortens outward travel; recall homes to King's current position and ignores terrain. Equipment attack speed scales the entire sequence, including the pause; movement speed does not.
+
+Cut2 pulls Light targets up to24px with28px initial stand-off through collision-aware decaying velocity. Heavier tiers retain normal resistance. Cut4 adds25% ordinary damage strictly below40% pre-hit HP, including bosses, without execution or armor bypass. Skills and other equipment never inherit these rules.
+
+Movement ratios during windup/contact/recovery0.4/0/0.65. Collision-bounded steps4/3/−3/6px include a small third-cut recoil. Existing dodge/skill buffering until recovery remains. Explicit interruption, defeat, equipment replacement and scene teardown remove released damage and visuals. Four dedicated recorded air cues mark sweep/hook/throw/reap. Two dry meat/wood contact variants and a heavier meat/wood/stone final contact replace shared recordings. Hordes retain one contact cue per cut.
+
+## Art and rebuild
+
+120 new complete body-only poses supply sweep/return/throw/reap/idle in SIDE/UP/DOWN; LEFT mirrors SIDE. The approved side-run source guides every new board. Head/collar calibration uses one isotropic density per board and the approved running palette. Every generated actor keeps connected anatomy; no old attack body or reference head/neck/chest is transplanted. Overhead gloves can occlude hair without triggering per-cel enlargement. Review torso/boots/grips and motion as well as head/height.
+
+One unchanged rigid128×192 scythe follows source palms at unit scale in every action and flight. A direction hint does not claim a visible second grip.18 padded256×256 body clips keep half scale/body offset−16 and two transparent hand atlases. Decision209 supplies24 new main white frames,8 per cut, with complete emergence/peak/carry/fade. Circular flight/spark frames remain unchanged.13 current protection hashes retain all unchanged running/steel/icon/orbit/spark files and explicitly authorize the new slash/combo/audio-route resources;532 other King assets remain exact. The owner explicitly supersedes the older90-action-cell guard.
+
+Decision207 preserves every approved anatomy pixel while authoring full sweep/return shaft arcs, small whole-cel weight shifts and relative pose exposure. The first cut loads high/back, snaps through, overshoots and recoils; the hook reverses upward. The hurl winds back and absorbs its catch. The final reap loads overhead, lifts11 world pixels and holds a compressed landing. Running/idle, gameplay clocks, combat values and physical steps remain exact. Released steel accelerates outward and brakes/aligns into the authored catch hand; raster attachment does not change contact authority.
+
+Decision208 registers each complete attack stance to native(128,158) using support-sole landmarks, preserving original pixels and grip alignment. Occluded supports are annotated projections. Extra effort translation is limited to2 native pixels; jump lift is separate from the ground circle. Cached stable row/view layouts fit every complete white frame inside the actual collision-pivot space, including its existing(0,−16) origin, while the contact mask remains a guard. Decision209 refits every row against all8 new frames:96 native ribbon/view comparisons retain full paint and have no opaque overflow. Running/idle, circle, collision and per-hit rules stay exact.
+
+Idle flicks the weapon upward, waits with an open palm, catches and returns to quiet carry. Its single0.4s cosmetic arc rises22 world pixels. The short physics tween runs after whole-pose updates and ends on catch/interruption/teardown. There is no gameplay query or damage.
+
+Rebuild: Godot --headless --path . --script res://tools/build_king_iron_reaper.gd, then editor import. The unified baker also packs the current24-frame FX source. Rebuild the seven audio clips with tools/build_iron_reaper_audio.gd. The unified baker is current; the previous returning entry delegates forward. Sources, exact prompts, registration and protected hashes: art_source/generated/characters/king/iron_reaper_style_unified_2026_10_14/. Approved running/canonical steel/flight-FX provenance stays under iron_reaper_returning_2026_10_14. Old complete/oversized/side-preview sources remain historical provenance. Current FX source/exact prompt/packing/authorized guard changes: art_source/generated/characters/king/iron_reaper_cadence_2026_10_14/. CC0 sound source and manifest: art_source/audio/iron_reaper_2026_10_14/. Source art/audio stays excluded from game import/export.
+
+## Evidence and remaining work
+
+Current verification is in CONTINUE_WEAPONS.md. It covers real F9/F7/Weapons/Bag, directional cuts, moving-distance gait, held input, hook collision, campaign carry, swept damage shares/deduplication, four directions at baseline/+50% attack speed, linger timing, solid walls, moving-owner recall and recovery dodge cancellation. Native running/idle/combo captures and real Rootling/horde/Hog comparison complement these checks. Earlier version counts and timings are historical.
+
+The owner accepts appearance, momentum and ground/full-ribbon correction. The owner accepts the quicker Decision209 motion and recorded cut/contact sound. The quiet flight-spin layer and bottom glove-color follow-up await listening/visual review; final balance remains open. Warm eight-enemy desktop measurements do not certify phones, cold loading or large hordes. Existing gameplay fixture teardown warnings remain separately tracked. Next after owner acceptance: earned recipes/acquisition, campaign balance and target-device profiling. Preserve other accepted weapons and the temporarily complete Sanctuary.
+
+Quiet spin/glove follow-up: one flight-owned quiet looping air/metal-rustle layer matches attack speed, fades during recall and stops on catch/cancellation. Seven approved recordings stay exact. Only96 bare-hand color pixels change in down throw/reap; all original silhouettes and other artwork remain exact. Sources/prompts/material masks are under iron_reaper_gloves_2026_10_14 and the current style folder; spin source/manifest/rebuild are under art_source/audio/iron_reaper_2026_10_14 and tools/build_iron_reaper_spin_audio.gd.299 native audio/flight and281 grounding assertions pass;922 resources load.

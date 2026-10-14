@@ -1,6 +1,6 @@
 # Active Asset Catalog
 
-Updated 2026-10-13. This catalog names current owners. The production graph and Godot resource checks determine actual dependencies; folder/version names do not establish whether an asset is obsolete. Historical models/source sheets/recordings and all archives were deleted by owner request.
+Updated 2026-10-14. This catalog names current owners. The production graph and Godot resource checks determine actual dependencies; folder/version names do not establish whether an asset is obsolete. Historical models/source sheets/recordings and all archives were deleted by owner request.
 
 | Content | Current owner |
 |---|---|
@@ -8,6 +8,7 @@ Updated 2026-10-13. This catalog names current owners. The production graph and 
 | Iron Beard | data/weapons/families/iron_beard/presentation.tres; shared_bodies/axe |
 | Royal Greatsword | data/weapons/families/royal_greatsword_v2/presentation.tres; accepted referenced carry/combo/FX dependencies |
 | Twinsteel | data/weapons/families/twinsteel_v2/presentation.tres; shared_bodies/dual_carry_v3 and canonical blade/FX |
+| Iron Reaper playable family | assets/characters/playable/king/iron_reaper:18 current complete body clips, fixed128×192 rigid steel, two empty overlays,24 main white ribbons,8 spin arcs,8 ground sparks and Bag icon. Current120-pose attack/idle sources, exact prompts, grip recipe and motion-authoring.json under iron_reaper_style_unified_2026_10_14; Decision207 translates complete approved poses without changing anatomy/palette and authors full shaft arcs/exposure. Approved running/canonical steel/flight-FX provenance remains under iron_reaper_returning_2026_10_14. Old action sources are historical only. Decision208 adds support-root landmarks and cached ribbon_layout.tres from ribbon-layout.json; Decision209 replaces the white atlas with24 generated frames from iron_reaper_cadence_2026_10_14 and refits all rows/views; complete actor geometry remains unchanged. Follow-up glove-continuity.json remaps96 missing-glove color pixels from a generated brown material reference under iron_reaper_gloves_2026_10_14. Dedicated seven-clip scythe audio lives under assets/audio/sfx/player/iron_reaper with CC0 source/manifest under art_source/audio/iron_reaper_2026_10_14. Source art excluded from game import/export; old runtime spin clips retired (Decision206) |
 | Frozen King body reference | assets/characters/playable/king/body_library/v1/contract.json |
 | King techniques | data/abilities/king and gameplay/abilities/king; assets/vfx/abilities/king |
 | Enemy families | entities/enemies and their referenced assets/characters/enemies, VFX/audio/materials |

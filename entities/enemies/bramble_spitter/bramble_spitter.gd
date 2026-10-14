@@ -94,6 +94,7 @@ func _physics_process(delta: float) -> void:
 			velocity = velocity.move_toward(Vector2.ZERO, definition.acceleration * delta)
 			_apply_knockback_velocity()
 			move_and_slide()
+			_applied_knockback_velocity = knockback_component.remaining_after_slide(self, _applied_knockback_velocity)
 			_tick_attack(delta)
 
 
@@ -138,6 +139,7 @@ func _process_positioning(delta: float) -> void:
 	velocity = velocity.move_toward(direction.normalized() * definition.move_speed, definition.acceleration * delta)
 	_apply_knockback_velocity()
 	move_and_slide()
+	_applied_knockback_velocity = knockback_component.remaining_after_slide(self, _applied_knockback_velocity)
 
 
 func _begin_retreat(offset: Vector2) -> void:
@@ -163,6 +165,7 @@ func _process_retreat_motion(delta: float, offset: Vector2) -> void:
 	)
 	_apply_knockback_velocity()
 	move_and_slide()
+	_applied_knockback_velocity = knockback_component.remaining_after_slide(self, _applied_knockback_velocity)
 
 
 func _begin_shot() -> void:
@@ -180,6 +183,7 @@ func _process_stagger(delta: float) -> void:
 	velocity = velocity.move_toward(Vector2.ZERO, definition.acceleration * delta)
 	_apply_knockback_velocity()
 	move_and_slide()
+	_applied_knockback_velocity = knockback_component.remaining_after_slide(self, _applied_knockback_velocity)
 	if not stagger_component.is_staggered():
 		_enter(State.POSITIONING, 0.0)
 

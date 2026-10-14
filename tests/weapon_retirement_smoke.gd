@@ -20,7 +20,7 @@ func _run() -> void:
 	saves.suppress_autosave_for_debug_session()
 	inventory.reset_inventory()
 	check(inventory.KingCatalog.has_valid_layout(),"Retired catalog is invalid")
-	check(inventory.KingCatalog.weapons.size()==5,"Catalog still exposes the redundant Greatsword")
+	check(inventory.KingCatalog.weapons.size()==6,"Catalog still exposes the redundant Greatsword")
 	check(inventory.KingCatalog.find_weapon(&"weapon_king_royal_greatsword")==null,"V1 remains selectable")
 	check(inventory.KingCatalog.find_weapon(CURRENT.item_id)==CURRENT,"Approved Greatsword disappeared")
 	for version in [1,2]:

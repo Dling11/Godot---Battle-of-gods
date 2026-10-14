@@ -41,15 +41,23 @@ static func base_dps(weapon: WeaponDefinition) -> float:
 
 static func summary(weapon: WeaponDefinition) -> String:
 	var damage := base_range(weapon)
-	return "BASE ROLL %d–%d  •  %s\n%d HITS / %.2fs  •  %.1f BASE DPS\nSKILL POWER %d" % [
+	var has_return := false
+	if weapon.combo != null:
+		for step in steps(weapon): has_return = has_return or weapon.combo.returning_attack(step) != null
+	return "BASE ROLL %d–%d  •  %s\n%d %s / %.2fs  •  %.1f BASE DPS\nSKILL POWER %d" % [
 		damage.x, damage.y, DamageInfo.type_name(weapon.damage_type),
-		steps(weapon), duration(weapon), base_dps(weapon), weapon.damage,
+		steps(weapon), "CUTS" if has_return else "HITS", duration(weapon), base_dps(weapon), weapon.damage,
 	]
 
 
 static func combo_description(weapon: WeaponDefinition) -> String:
 	var ranges := PackedStringArray()
+	var released := PackedStringArray()
 	for step in steps(weapon):
 		var damage := step_range(weapon, step)
 		ranges.append("%.1f–%.1f" % [damage.x, damage.y])
-	return "Damage per hit: %s.\nBase DPS: full combo before buffs or defenses." % " / ".join(ranges)
+		if weapon.combo != null and weapon.combo.returning_attack(step) != null:
+			released.append("Cut %d total includes outward and return hits; both must connect." % (step+1))
+	var description := "Damage per hit: %s.\nBase DPS: full combo before buffs or defenses." % " / ".join(ranges)
+	if not released.is_empty(): description = description.replace("Damage per hit:","Damage per cut:") + "\n" + "\n".join(released)
+	return description

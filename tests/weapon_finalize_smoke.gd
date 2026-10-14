@@ -131,7 +131,7 @@ func _run() -> void:
 		await capture(["sword_bag.png","axe_bag.png","dual_bag.png","greatsword_bag.png"][index])
 		menu.close_menu()
 		rows.append({"item":item.display_name,"base_roll":str(WeaponCombatReadout.base_range(weapon)),"combo_seconds":WeaponCombatReadout.duration(weapon),"base_dps":WeaponCombatReadout.base_dps(weapon),"chain_damage":str(WeaponCombatReadout.chain_range(weapon))})
-	check(actor.weapon_catalog.weapons.size()==5 and actor.weapon_catalog.find_weapon(&"weapon_king_royal_greatsword")==null,"Retired Greatsword remains in the playable catalog")
+	check(actor.weapon_catalog.weapons.size()==6 and actor.weapon_catalog.find_weapon(&"weapon_king_royal_greatsword")==null,"Retired Greatsword remains in the playable catalog")
 	# Unchanged Varkuun equipment still uses the optional legacy audio fallback.
 	var legacy_item := actor.weapon_catalog.find_weapon(&"weapon_varkuun_edge_essence")
 	check(actor.equip_owned_weapon(legacy_item),"Cannot equip the unchanged campaign weapon")

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="EquipmentDefinition" load_steps=4 format=3]
+[ext_resource type="Script" path="res://data/items/equipment_definition.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/characters/playable/king/iron_reaper/weapon.png" id="2"]
+[ext_resource type="Resource" path="res://data/weapons/king_iron_reaper.tres" id="3"]
+[resource]
+script = ExtResource("1")
+item_id = &"weapon_king_iron_reaper"
+display_name = "Iron Reaper · Scythe"
+rarity = 6
+icon = ExtResource("2")
+show_combo_details = true
+compatible_classes = PackedStringArray("warrior")
+weapon_definition = ExtResource("3")
+preview_power = 25
+lore = "A broad iron crescent for gathering the scattered. Sweep, hook, cast the iron outward, then catch its return and reap."
+synergy_name = "Hook and Reap"
+synergy_description = "Broad sweep · return hook · throw and catch · finishing reap.\nSecond cut draws Light enemies inward; heavier enemies resist.\nThird cut throws the scythe, pauses while spinning, then recalls it. Each target can take 65% damage outward and 35% on return, once per leg. Terrain shortens the throw. Attack speed quickens the entire sequence.\nFinal cut deals +25% damage below 40% HP, never an automatic execution.\nHold LMB to continue; Space queues dodge."

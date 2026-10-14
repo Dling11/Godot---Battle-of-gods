@@ -83,6 +83,7 @@ func _physics_process(delta: float) -> void:
 	velocity = velocity.move_toward(Vector2.ZERO, definition.acceleration * delta)
 	_apply_knockback_velocity()
 	move_and_slide()
+	_applied_knockback_velocity = knockback_component.remaining_after_slide(self, _applied_knockback_velocity)
 	_tick_attack(delta)
 
 
@@ -110,6 +111,7 @@ func _process_chase(delta: float) -> void:
 	velocity = velocity.move_toward(direction.normalized() * definition.move_speed, definition.acceleration * delta)
 	_apply_knockback_velocity()
 	move_and_slide()
+	_applied_knockback_velocity = knockback_component.remaining_after_slide(self, _applied_knockback_velocity)
 
 
 func _tick_attack(delta: float) -> void:
@@ -134,6 +136,7 @@ func _process_stagger(delta: float) -> void:
 	velocity = velocity.move_toward(Vector2.ZERO, definition.acceleration * delta)
 	_apply_knockback_velocity()
 	move_and_slide()
+	_applied_knockback_velocity = knockback_component.remaining_after_slide(self, _applied_knockback_velocity)
 	if not stagger_component.is_staggered():
 		_enter(State.CHASE, 0.0)
 

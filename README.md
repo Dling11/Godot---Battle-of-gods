@@ -1,6 +1,6 @@
 # Battle of Gods
 
-A Godot pixel action prototype with a renewed Sanctuary, six campaign stages, four weapon families, five current King techniques, crafting/material exchange and an isolated Combat Lab. Later story arcs, scythe and Stage XX campaign routing remain planned.
+A Godot pixel action prototype with a renewed Sanctuary, six campaign stages, five equipable weapon families, five current King techniques, crafting/material exchange and an isolated Combat Lab. Earned weapon-family acquisition, later story arcs and Stage XX routing remain planned.
 
 ## Setup
 
@@ -35,7 +35,9 @@ This repository starts from the cleaned project on 2026-10-13. It does not inclu
 
 Twinsteel's fresh complete five-cut attacks are installed for RIGHT/LEFT/UP/DOWN. Test F5 → F9 → F7 → Weapons → Twinsteel, then hold LMB to chain; Tab opens the Bag. Direct non-saving launch: tools/launch_king_twinsteel_training.ps1. Rebuild/source instructions are in [the current attack-source README](art_source/generated/characters/king/twinsteel_attacks_complete_2026_10_14/README.md). Running/rest and the new attacks are owner-approved.
 
-Controller movement, attack, dodge and skill-slot selection are also supported. HUD/modal clicks are consumed by UI. Debug tools suppress saves/rewards. In Lab, use Weapons or Tab Bag to equip Sword, Iron Beard, Royal Greatsword or Twinsteel. King can jump over obstacles with Skill3 when the landing is clear; skills1/5 retain their authored range across intervening obstacles.
+Controller movement, attack, dodge and skill-slot selection are also supported. HUD/modal clicks are consumed by UI. Debug tools suppress saves/rewards. In Lab, use Weapons or Tab Bag to equip Sword, Iron Beard, Royal Greatsword, Twinsteel or Iron Reaper. King can jump over obstacles with Skill3 when the landing is clear; skills1/5 retain their authored range across intervening obstacles.
+
+Iron Reaper now throws its scythe, pauses while spinning with trails/ground sparks, then recalls and catches it; attack speed scales the whole sequence. Owner-approved running stays exact. All attacks now use fresh complete bodies matching that running appearance, with fixed straight steel and fuller eight-frame white sweeps. Idle makes one small upward toss/catch, then settles. Attacks use authored sweep/return arcs, anticipation and recoil, with hand-aligned throw/catch and a stronger final-reap landing (Decision207). Decision208 centers attack stances over the ground circle and displays full white strokes inside real contact space. Decision209 adds quicker2.59s cadence,24 freshly generated white effect frames and dedicated recorded scythe swing/contact sounds while preserving all character poses and locomotion. Play: F5 → F9 test kit → F7 Combat Lab → Weapons → Iron Reaper · Scythe. WASD moves, held LMB chains cuts, Space dodges, Tab opens the Bag. Alternatively run tools/launch_king_iron_reaper.ps1 (-GodotPath on another PC) for the actual Lab with the scythe equipped and four Rootlings. Debug testing suppresses autosave/rewards. Rebuild: Godot --headless --path . --script res://tools/build_king_iron_reaper.gd, then an editor import. [Weapon rules and art](docs/design/king-iron-reaper.md). Original motion viewer remains an offline study.
 
 ## Current art
 

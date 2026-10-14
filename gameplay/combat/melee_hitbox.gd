@@ -16,6 +16,7 @@ var _enabled := false
 var _uses_radial_direction := false
 var _radial_origin := Vector2.ZERO
 var _random := RandomNumberGenerator.new()
+var _contact_rule: MeleeContactRuleDefinition
 
 
 func _ready() -> void:
@@ -41,7 +42,8 @@ func activate(
 	critical_chance_ratio := 0.0,
 	critical_damage_multiplier := 1.5,
 	stun_seconds := 0.0,
-	damage_type := DamageInfo.DamageType.PHYSICAL
+	damage_type := DamageInfo.DamageType.PHYSICAL,
+	contact_rule: MeleeContactRuleDefinition = null
 ) -> void:
 	_resolve_damage_roll(damage, critical_chance_ratio, critical_damage_multiplier)
 	_source = source
@@ -50,6 +52,7 @@ func activate(
 	_stagger_seconds = maxf(stagger_seconds, 0.0)
 	_stun_seconds = maxf(stun_seconds, 0.0)
 	_damage_type = DamageInfo.normalize_type(damage_type)
+	_contact_rule = contact_rule
 	_uses_radial_direction = false
 	_hit_targets.clear()
 	_set_enabled(true)
@@ -65,7 +68,8 @@ func activate_radial(
 	critical_chance_ratio := 0.0,
 	critical_damage_multiplier := 1.5,
 	stun_seconds := 0.0,
-	damage_type := DamageInfo.DamageType.PHYSICAL
+	damage_type := DamageInfo.DamageType.PHYSICAL,
+	contact_rule: MeleeContactRuleDefinition = null
 ) -> void:
 	_resolve_damage_roll(damage, critical_chance_ratio, critical_damage_multiplier)
 	_source = source
@@ -74,6 +78,7 @@ func activate_radial(
 	_stagger_seconds = maxf(stagger_seconds, 0.0)
 	_stun_seconds = maxf(stun_seconds, 0.0)
 	_damage_type = DamageInfo.normalize_type(damage_type)
+	_contact_rule = contact_rule
 	_uses_radial_direction = true
 	_radial_origin = origin
 	_hit_targets.clear()
@@ -120,6 +125,8 @@ func _try_hit(area: Area2D) -> void:
 		_stun_seconds,
 		_damage_type
 	)
+	if _contact_rule != null:
+		_contact_rule.apply_to_hit(info, hurtbox)
 	if hurtbox.receive_hit(info):
 		hit_landed.emit(hurtbox, info)
 

@@ -129,6 +129,7 @@ func _process_chase(delta: float) -> void:
 	)
 	_apply_knockback()
 	move_and_slide()
+	_applied_knockback_velocity = knockback_component.remaining_after_slide(self, _applied_knockback_velocity)
 
 
 func _process_attack_state(delta: float) -> void:
@@ -137,6 +138,7 @@ func _process_attack_state(delta: float) -> void:
 	)
 	_apply_knockback()
 	move_and_slide()
+	_applied_knockback_velocity = knockback_component.remaining_after_slide(self, _applied_knockback_velocity)
 	_state_time_remaining -= delta
 	if _state_time_remaining > 0.0:
 		return
@@ -184,6 +186,7 @@ func _process_stagger(delta: float) -> void:
 	)
 	_apply_knockback()
 	move_and_slide()
+	_applied_knockback_velocity = knockback_component.remaining_after_slide(self, _applied_knockback_velocity)
 	if not stagger_component.is_staggered():
 		_enter(State.CHASE, 0.0)
 

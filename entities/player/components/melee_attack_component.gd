@@ -25,6 +25,7 @@ var committed_animation_key := ""
 var committed_vow_finisher := false
 var committed_damage_type := DamageInfo.DamageType.PHYSICAL
 var committed_perfect_counter := false
+var released_attack: Node2D
 
 
 func _ready() -> void:
@@ -47,6 +48,7 @@ func set_weapon_definition(next_weapon: WeaponDefinition) -> bool:
 		or collision_shape == null
 	):
 		return false
+	_clear_released_attack()
 	weapon = next_weapon
 	reset_combo()
 	collision_shape.shape = next_weapon.melee_hitbox_shape
@@ -83,6 +85,7 @@ func get_attack_direction() -> Vector2:
 
 
 func cancel_attack() -> void:
+	_clear_released_attack()
 	reset_combo()
 	if hitbox != null:
 		hitbox.deactivate()
@@ -106,15 +109,23 @@ func _advance_phase() -> void:
 			_enter_phase(Phase.ACTIVE, _scaled_duration(_step_duration(Phase.ACTIVE)))
 			var damage := weapon.roll_basic_damage(_random) * committed_damage_multiplier * (weapon.combo.damage_multipliers[combo_step] if _has_combo() else 1.0)
 			var knockback := weapon.knockback_strength * (weapon.combo.knockback_multipliers[combo_step] if _has_combo() else 1.0)
-			if _has_combo() and weapon.combo.is_radial(combo_step):
-				hitbox.activate_radial(damage,owner,(owner as Node2D).global_position,knockback,weapon.basic_stagger_seconds,weapon.critical_chance_ratio,weapon.critical_damage_multiplier,0.0,committed_damage_type)
+			var rule := weapon.combo.contact_rule(combo_step) if _has_combo() else null
+			var release := weapon.combo.returning_attack(combo_step) if _has_combo() else null
+			if release != null:
+				_start_released_attack(release, damage, knockback)
+			elif _has_combo() and weapon.combo.is_radial(combo_step):
+				hitbox.activate_radial(damage,owner,(owner as Node2D).global_position,knockback,weapon.basic_stagger_seconds,weapon.critical_chance_ratio,weapon.critical_damage_multiplier,0.0,committed_damage_type,rule)
 			else:
 				hitbox.activate(
 					damage, owner, _attack_direction, knockback,
 					weapon.basic_stagger_seconds, weapon.critical_chance_ratio,
-					weapon.critical_damage_multiplier, 0.0, committed_damage_type
+					weapon.critical_damage_multiplier, 0.0, committed_damage_type, rule
 				)
 		Phase.ACTIVE:
+			# Finish the last swept segment before entering the authored catch.
+			if is_instance_valid(released_attack) and not released_attack.is_queued_for_deletion():
+				released_attack._physics_process(maxf(released_attack.duration - released_attack._elapsed, 0.0))
+			_clear_released_attack()
 			hitbox.deactivate()
 			_enter_phase(Phase.RECOVERY, _scaled_duration(_step_duration(Phase.RECOVERY)))
 		Phase.RECOVERY:
@@ -130,6 +141,30 @@ func _enter_phase(next_phase: Phase, duration_seconds: float) -> void:
 	phase = next_phase
 	_phase_time_remaining = maxf(duration_seconds, 0.0001)
 	phase_changed.emit(phase, duration_seconds)
+
+func _start_released_attack(definition: ReturningWeaponDefinition, damage: float, knockback: float) -> void:
+	_clear_released_attack()
+	var flight := preload("res://gameplay/combat/returning_weapon_attack.gd").new()
+	flight.source = owner as Node2D
+	flight.tuning = definition
+	flight.direction = _attack_direction
+	flight.duration = _scaled_duration(_step_duration(Phase.ACTIVE))
+	flight.damage = damage
+	flight.knockback = knockback
+	flight.stagger = weapon.basic_stagger_seconds
+	flight.critical_chance = weapon.critical_chance_ratio
+	flight.critical_multiplier = weapon.critical_damage_multiplier
+	flight.damage_type = committed_damage_type
+	flight.hit_landed.connect(_on_hit_landed)
+	released_attack = flight
+	(owner as Node2D).get_parent().add_child(flight)
+
+func _clear_released_attack() -> void:
+	if is_instance_valid(released_attack): released_attack.cancel()
+	released_attack = null
+
+func _exit_tree() -> void:
+	_clear_released_attack()
 
 
 func _on_hit_landed(target: HurtboxComponent, info: DamageInfo) -> void:

@@ -8,6 +8,9 @@ var raw_amount: float
 var source: Node
 var direction: Vector2
 var knockback_strength: float
+## Light targets may convert the ordinary impulse into a bounded inward pull.
+var light_pull_distance := 0.0
+var pull_standoff_distance := 28.0
 var stagger_seconds: float
 ## Explicit hard control. Ordinary flinch duration and raw damage never imply stun.
 var stun_seconds: float

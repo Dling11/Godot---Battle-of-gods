@@ -1,10 +1,12 @@
 # Art Direction
 
-Updated 2026-10-13. Current sources and contracts are authoritative; historical generation trials and archive-dependent tooling were removed (Decision197). See PROJECT_CONTEXT.md and docs/maintenance/repository-cleanup.md.
+Updated 2026-10-14. Current sources and contracts are authoritative; historical generation trials and archive-dependent tooling were removed (Decision197). See PROJECT_CONTEXT.md and docs/maintenance/repository-cleanup.md.
 
 ## Visual Promise
 
 ### Current approved baseline
+
+Iron Reaper running is owner-approved in all four directions. Decision206 regenerates every attack/idle as complete connected actors in that running appearance; the owner accepts this appearance. Decision207 preserves those pixels and improves full swing/return arcs, anticipation, fast commitment, overshoot, recoil and final-reap loading/landing; Decision208 additionally fixes ground-pivot drift and clips no painted swing stroke: complete attack stances align to the foot circle, while stable whole-ribbon fits respect actual contact space. The owner accepts these corrections. Decision209 replaces only white slash art with24 fuller generated emergence/cut/tail frames, registered as complete effects with safe gutters and stable row/view fits. Faster motion and new sound are the current review. Keep one density per board, the exact approved run palette, comparable head/torso proportions and a single unchanged rigid straight scythe in all states. Old attack-cell preservation is explicitly superseded by the owner. Stronger white crescents match larger damage fans; detached spin uses generated circular ribbons/ground sparks and faint whole-steel trails. Evaluate head/torso/boot proportions and handoff in actual motion, not only standing height.
 
 The renewed Sanctuary is installed: gray-stone/timber workshop, blue-roof lodge, connected planting walls, small purposeful NPC workstations, generated courier steps, canopy occlusion and restrained service markers. Eira stands to the right of her lectern; Orren V2 supplies the NPC scale/outline reference. Preserve these production resources.
 
@@ -17,6 +19,8 @@ Battle of Gods is a readable retro pixel-action game set in an ancient world sha
 The active forest direction is **luminous dark fantasy**: living greens and warm natural light sit beside old stone, restrained violet divinity, and deep shadow. Darkness comes from history, danger, and atmosphere rather than making the whole screen black.
 
 The planned Sanctuary follows the same world language. It is a small safe settlement reclaimed around an ancient divine fountain, not a modern town or a cheerful cartoon village.
+
+Iron Reaper uses the owner's chosen running identity across fresh SIDE, UP/BACK and DOWN/FRONT attacks/idle (Decision206). Generate whole connected actors; visual references never supply pasted heads/torso. One fixed rigid scythe follows authored palms in every state. Idle makes one upward toss/catch, then stays calm. Retain a single calibrated whole-board density, crisp palette/outline and safe blade gutters. Production256×256 cells/sole158/half scale retain King's existing world foot plane. Larger canvas padding must not resize anatomy. Exact LEFT mirror preserves side pixels. White ribbons remain separate and floor-projected; their contact mask fades to transparent at actual melee edges.
 
 ## Priorities
 

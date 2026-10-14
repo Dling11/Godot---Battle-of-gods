@@ -1,6 +1,11 @@
 class_name SwordComboDefinition
 extends Resource
 
+## Empty entries retain the ordinary weapon hit; rules do not change skill hits.
+@export var contact_rules: Array[MeleeContactRuleDefinition] = []
+@export var returning_attacks: Array[ReturningWeaponDefinition] = []
+
+
 ## One immutable, character-authored chain. The attack component owns progress.
 @export var animation_keys := PackedStringArray(["attack", "return_cut", "heavy_cleave"])
 @export var windups := PackedFloat32Array([0.19, 0.15, 0.26])
@@ -13,6 +18,12 @@ extends Resource
 @export var hitbox_shapes: Array[Shape2D] = []
 ## Radial steps push each accepted target away from the wielder.
 @export var radial_steps := PackedByteArray()
+
+func contact_rule(step: int) -> MeleeContactRuleDefinition:
+	return contact_rules[step] if step >= 0 and step < contact_rules.size() else null
+
+func returning_attack(step: int) -> ReturningWeaponDefinition:
+	return returning_attacks[step] if step >= 0 and step < returning_attacks.size() else null
 
 func hitbox_shape(step: int, fallback: Shape2D) -> Shape2D:
 	return hitbox_shapes[step] if step>=0 and step<hitbox_shapes.size() and hitbox_shapes[step]!=null else fallback

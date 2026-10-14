@@ -1,0 +1,20 @@
+[
+  {
+    "path": "assets/characters/playable/king/iron_reaper/slash.png",
+    "before": "3ee2f3c2b817801c59df4f606e08058ab3fa829b46dd2fcbeb580e42999a8bd6",
+    "after": "9e0be8f4cb59b68ddea996e5f04eeef7e913cfe033ec462ebe74e03cad705e21",
+    "reason": "Owner requests quicker scythe, more generated white frames, dedicated scythe sounds (Decision209)"
+  },
+  {
+    "path": "data/weapons/families/iron_reaper/combo.tres",
+    "before": "f7603ff96110602081a0324d6d1379b669fa0134f941d36cbbb20d61154683ac",
+    "after": "2acb774702bf834c5d4efb3a9fb74dce959b146790ad77240a6700193918dd6a",
+    "reason": "Owner requests quicker scythe, more generated white frames, dedicated scythe sounds (Decision209)"
+  },
+  {
+    "path": "data/weapons/king_iron_reaper.tres",
+    "before": "b9cf3f361ddadaf4e3799bef24a655c819a988b59c199006d6bbf1b3cbee64e7",
+    "after": "f16b55f225ee8e5a2a9af79bdb1b4cc8dfb270b22a4384d47ebbb876702fb733",
+    "reason": "Owner requests quicker scythe, more generated white frames, dedicated scythe sounds (Decision209)"
+  }
+]

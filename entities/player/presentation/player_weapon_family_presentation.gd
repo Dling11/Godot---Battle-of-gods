@@ -104,7 +104,7 @@ func _equip(weapon: WeaponDefinition) -> void:
 		actor.add_child(impacts)
 	_audio = AudioStreamPlayer2D.new()
 	_audio.bus = &"SFX"
-	_audio.volume_db = -12
+	_audio.volume_db = profile.swing_volume_db
 	add_child(_audio)
 	_last_position = actor.global_position
 	set_physics_process(true)
@@ -186,7 +186,7 @@ func _phase(phase: int, duration: float) -> void:
 	_clear_plant()
 	presenter._on_phase(phase, duration)
 	if phase == MeleeAttackComponent.Phase.ACTIVE and DisplayServer.get_name() != "headless":
-		_audio.stream = Sounds[profile.sound_index(actor.attack_component.combo_step)]
+		_audio.stream = profile.swing_sound(actor.attack_component.combo_step, Sounds)
 		_audio.pitch_scale = profile.sound_pitch(actor.attack_component.combo_step)
 		_audio.play()
 

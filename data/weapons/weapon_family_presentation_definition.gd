@@ -27,6 +27,13 @@ const PoseDefinition = preload("res://data/weapons/weapon_family_pose_definition
 @export var return_follow_through_step := -1
 @export var sound_indices := PackedInt32Array([0,1,2,2,1])
 @export var sound_pitches := PackedFloat32Array([0.88,0.88,0.78,0.88,0.88])
+## Optional per-cut air sounds. Empty retains the established family sounds.
+@export var swing_sounds: Array[AudioStream] = []
+@export var swing_volume_db := -12.0
+
+func swing_sound(step: int, fallback: Array) -> AudioStream:
+	if swing_sounds.is_empty(): return fallback[sound_index(step)]
+	return swing_sounds[clampi(step,0,swing_sounds.size()-1)]
 
 func sound_index(step: int) -> int:
 	return clampi(sound_indices[clampi(step,0,sound_indices.size()-1)],0,2)
@@ -50,6 +57,8 @@ func run_for(direction: Vector2) -> PoseDefinition:
 	return running_poses
 
 func is_valid_profile() -> bool:
+	for stream in swing_sounds:
+		if stream == null: return false
 	if not swing_full_frame_rows.is_empty():
 		if swing_full_frame_rows.size()!=swing_rows: return false
 		for flag in swing_full_frame_rows:

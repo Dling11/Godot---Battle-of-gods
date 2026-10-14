@@ -1,0 +1,60 @@
+{
+	"clips": [
+		{
+			"duration": 0.13421768707483,
+			"file": "sweep.wav",
+			"peak_dbfs": -4.01318907667051,
+			"rms_dbfs": -16.152071323695,
+			"sha256": "ae52b402961d95e579a262ebc10f8b1b70d26af4989520afa4b4aaf2dac86790"
+		},
+		{
+			"duration": 0.123219954648526,
+			"file": "hook.wav",
+			"peak_dbfs": -4.01318907667051,
+			"rms_dbfs": -17.929983354903,
+			"sha256": "dd7e2ab6767a4806a73fcb448fffaf4bae7a04614d8564e025007cebb2472304"
+		},
+		{
+			"duration": 0.127596371882086,
+			"file": "throw.wav",
+			"peak_dbfs": -4.01318907667051,
+			"rms_dbfs": -17.701375278868,
+			"sha256": "5df906f19be2198dc0736fe8cb304e11687796aad6e75e0e6c5366f50d0ec34a"
+		},
+		{
+			"duration": 0.143310657596372,
+			"file": "reap.wav",
+			"peak_dbfs": -4.01318907667051,
+			"rms_dbfs": -16.8927604887908,
+			"sha256": "bae9d9ecba85ac7e5456314b8cc1a8b8edfcdbb63541218984038d3035497b36"
+		},
+		{
+			"duration": 0.467301587301587,
+			"file": "contact_1.wav",
+			"peak_dbfs": -4.01318907667051,
+			"rms_dbfs": -25.7235140721517,
+			"sha256": "c5009743ace62b7d64b6ac7fc855d76bd2433392fccaed92c869fcf9b6e2fc75"
+		},
+		{
+			"duration": 0.463514739229025,
+			"file": "contact_2.wav",
+			"peak_dbfs": -4.01318907667051,
+			"rms_dbfs": -22.7528434958462,
+			"sha256": "6bfae093af2a68786196cc026a3e99af08e1550222b1cf6e3eabf32f72b59782"
+		},
+		{
+			"duration": 0.463514739229025,
+			"file": "reap_contact.wav",
+			"peak_dbfs": -4.01318907667051,
+			"rms_dbfs": -22.491677954937,
+			"sha256": "8634a0a84e13a876ba36db3a9af1d4c3041a8c819e08af39b4420df5d4692e1b"
+		}
+	],
+	"contact_source": "Impact by Iwan qubodup Gabovitch, CC0; retained weapon_contact_2026_10_06 pack",
+	"format": "mono PCM16",
+	"processing": "Trim silence; offline pitch/time resample and bounded smooth tails; normal 85% meat/15% wood; final 65% Meat02/20% wood/30% stone; normalized -4dBFS; no runtime DSP",
+	"rate": 44100,
+	"source_archive_sha256": "7980215241b739a787dcf26f660ce510bb237900968789395a86911619795693",
+	"source_url": "https://opengameart.org/content/swishes-sound-pack",
+	"swing_source": "Swishes Sound Pack by artisticdude, CC0"
+}

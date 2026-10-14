@@ -97,6 +97,7 @@ func _physics_process(delta: float) -> void:
 		velocity = velocity.move_toward(direction.normalized() * definition.move_speed, definition.acceleration * delta)
 		_apply_knockback_velocity()
 		move_and_slide()
+		_applied_knockback_velocity = knockback_component.remaining_after_slide(self, _applied_knockback_velocity)
 		return
 	if state == State.LEAP:
 		_leap_elapsed += delta
@@ -104,6 +105,7 @@ func _physics_process(delta: float) -> void:
 		var desired := _leap_origin.lerp(_leap_target, progress)
 		velocity = (desired - global_position) / maxf(delta, 0.001)
 		move_and_slide()
+		_applied_knockback_velocity = knockback_component.remaining_after_slide(self, _applied_knockback_velocity)
 		if progress >= 1.0:
 			velocity = Vector2.ZERO
 			_enter(State.ACTIVE, definition.active_seconds)
@@ -112,6 +114,7 @@ func _physics_process(delta: float) -> void:
 	velocity = velocity.move_toward(Vector2.ZERO, definition.acceleration * delta)
 	_apply_knockback_velocity()
 	move_and_slide()
+	_applied_knockback_velocity = knockback_component.remaining_after_slide(self, _applied_knockback_velocity)
 	_state_time -= delta
 	if _state_time > 0.0:
 		return
@@ -136,6 +139,7 @@ func _process_stagger(delta: float) -> void:
 	velocity = velocity.move_toward(Vector2.ZERO, definition.acceleration * delta)
 	_apply_knockback_velocity()
 	move_and_slide()
+	_applied_knockback_velocity = knockback_component.remaining_after_slide(self, _applied_knockback_velocity)
 	if not stagger_component.is_staggered():
 		_enter(State.CHASE, 0.0)
 

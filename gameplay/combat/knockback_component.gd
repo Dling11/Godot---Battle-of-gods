@@ -40,6 +40,15 @@ func accepts_light_pressure() -> bool:
 	return _strength_multiplier >= 1.0
 
 
+func remaining_after_slide(actor: CharacterBody2D, applied: Vector2) -> Vector2:
+	## move_and_slide removes blocked normal velocity. Subtracting that old
+	## impulse next frame creates a false velocity in the opposite direction.
+	if applied.is_zero_approx(): return Vector2.ZERO
+	for index in actor.get_slide_collision_count():
+		applied = applied.slide(actor.get_slide_collision(index).get_normal())
+	return applied
+
+
 func apply_pressure(direction: Vector2, strength: float) -> void:
 	if accepts_light_pressure():
 		_on_damaged(DamageInfo.new(0.0, null, direction, strength))
@@ -47,9 +56,20 @@ func apply_pressure(direction: Vector2, strength: float) -> void:
 
 func _on_damaged(info: DamageInfo) -> void:
 	var resolved_strength := info.knockback_strength * _strength_multiplier
-	if resolved_strength <= 0.0 or info.direction.is_zero_approx():
+	var direction := info.direction
+	if info.light_pull_distance > 0.0 and accepts_light_pressure() and is_instance_valid(info.source) and info.source is Node2D and health_component.get_parent() is Node2D:
+		var actor := health_component.get_parent() as Node2D
+		var inward := (info.source as Node2D).global_position - actor.global_position
+		var distance := minf(info.light_pull_distance, maxf(inward.length() - info.pull_standoff_distance, 0.0))
+		# Include one full physics tick in the bound: parent movement can sample
+		# the impulse before this child's decay. Continuous-time integration alone
+		# would overshoot distance/stand-off by a few pixels at 60Hz.
+		var tick := 1.0 / Engine.physics_ticks_per_second
+		resolved_strength = distance / (duration_seconds * 0.5 + tick)
+		direction = inward.normalized()
+	if resolved_strength <= 0.0 or direction.is_zero_approx():
 		return
-	velocity = info.direction * resolved_strength
+	velocity = direction * resolved_strength
 	_deceleration = resolved_strength / duration_seconds
 	set_physics_process(true)
 	knockback_started.emit(velocity)

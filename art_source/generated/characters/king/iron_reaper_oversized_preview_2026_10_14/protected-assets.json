@@ -1,0 +1,2130 @@
+[
+  {
+    "path": "assets/characters/playable/king/axe_flow/swing.png",
+    "sha256": "f077d732818b3f2ab85825d9e9469f3f076ff2a7636cd9c2caafb0d9a1180348"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_flow/swing.png.import",
+    "sha256": "43022d81c4066332f50f732ac3bedc2128ce3062f689ddaa9f5afac37b4f3400"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_flow/down/idle_body.png",
+    "sha256": "22b1300ab59c810a5bdb5e4b7d423eeac0e2a45d2064ab0eef2fe0f909599564"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_flow/down/idle_body.png.import",
+    "sha256": "85f19660c7b5e8d77b96f52b0e2b5d5813c5b430994c4899a113c34406edb558"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_flow/down/idle_hands.png",
+    "sha256": "15c7ebcc6adec7333d592a1723dd373049f14390f5b3e13cd45583f684e2d1b0"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_flow/down/idle_hands.png.import",
+    "sha256": "6dbcec25d74f2f06f34c4f91451f1f62b58a198ba64ef4657f23b3fbbd29f61f"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_flow/down/idle.tres",
+    "sha256": "563e536212cc25b381cd0bb427cbbbc4937d65f97554cbffa738b37fd9c69810"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_flow/down/run_body.png",
+    "sha256": "c20aa4a18f7e62752b0bac1e69c58bf924d9565486c79ba1097d9cd97da745fe"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_flow/down/run_body.png.import",
+    "sha256": "6ee72cc5280eda1342c7073db4037b69b1082f5b4d41791d1ecf9d99eab41bf0"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_flow/down/run_hands.png",
+    "sha256": "8df9360a66b70ab63774c276e57ed13b832c6d9083dd88cf9eb276ba8042a758"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_flow/down/run_hands.png.import",
+    "sha256": "c2702511a22173145cda6337a99002f2ab49fe6d02b02e76a7d52be3ae16e08b"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_flow/down/run.tres",
+    "sha256": "90972e4666e352567b0cecec056bd52437b66b575b54592a699b5b8efa650c29"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_flow/side/chop_body.png",
+    "sha256": "2c17622f87c8390d6cf66a35e54025f4f2a40b5e2a394659081e90629047a5d9"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_flow/side/chop_body.png.import",
+    "sha256": "67a83a694c466c6717b448be0dffedda16ff9764ad269317aea6abfb379a03a0"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_flow/side/chop_hands.png",
+    "sha256": "da8b65c67b5352ccd2a5b2b1d48ef7b53f28464865d42387b196366a9d28ba0b"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_flow/side/chop_hands.png.import",
+    "sha256": "93f731237866d987c7ec7e6593f9721048ba5c6bb830e7a846db842994d3419d"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_flow/side/chop.tres",
+    "sha256": "1d3da9118b768c602d15d7659bc4b55512adb1e2270752ad2b900c91bfd85e1d"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_flow/side/rise_body.png",
+    "sha256": "890f6c20a74c381da3a97f405f70272f86fcd9665977d9e2d98677a989e6f2a5"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_flow/side/rise_body.png.import",
+    "sha256": "3ac4197fff154350121ada758fd5d3bada071d79595730d34940d40af222b3f6"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_flow/side/rise_hands.png",
+    "sha256": "226b647b5a2c36dc0c3d9c12a81bd5ef36a1589b84f285eecd2b49ee2ff055b5"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_flow/side/rise_hands.png.import",
+    "sha256": "b19d0a699162b5f70230cabf419bd91b8d9568aa7c66c31bae2831266aa08c5e"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_flow/side/rise.tres",
+    "sha256": "5f030a044a1697fa50efbe5a42666bb55a4106b684b494e59eba3841ed60af99"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_flow/side/slam_body.png",
+    "sha256": "8995660c8895b733757fb55ea3d01d52669f11318f802987b5dfb6ef55fac719"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_flow/side/slam_body.png.import",
+    "sha256": "91b02e984fb528575bf35abca962ef57e67e03a4a06e67ce45e5a32304437f6b"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_flow/side/slam_hands.png",
+    "sha256": "1c4f62fca59cf0fbafb32bca521ccfaaa298153a7f78910a070b2fdc48f2973a"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_flow/side/slam_hands.png.import",
+    "sha256": "3e658f8bdef1236703ef993fcad9ceb8f893fdef5ffd0397012e16c8763d0b28"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_flow/side/slam.tres",
+    "sha256": "49ef5b27746dcd1ec13c0360bb602390df844e309dcd59165d02f3f9e680d2da"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_flow/side/spin_body.png",
+    "sha256": "cb9dd9c6b0ec24ad92cf73cb7f5e1b75ab12d5b9f333e0abc9363430e4b1ea05"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_flow/side/spin_body.png.import",
+    "sha256": "d8d6429f633f45549e5e67954001a766caa5480e5d6e594fa3a5ee676bc48edd"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_flow/side/spin_hands.png",
+    "sha256": "e32d722fe97ae96e5830a8486567d71b79f66717a5ccb48980c8b8b5ef31dcf6"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_flow/side/spin_hands.png.import",
+    "sha256": "1a70c298830d5c5a546f3ee96a87ea4f42c8edd9cbdb65f9ba445d61a3ebd297"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_flow/side/spin.tres",
+    "sha256": "c279aaf1d7ce0c58ad0175a824ef81f6f128f94969c766aa14fceb588b8818bb"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_flow/side/thrust_body.png",
+    "sha256": "9374c1a47289f6ad00883df76fe7ce5cffec7622644e820fc3f5bf7c43af5332"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_flow/side/thrust_body.png.import",
+    "sha256": "5cc49c92b2e94b947591199180ad84cb82f429ea104687b5fd6bd337c0e34bd1"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_flow/side/thrust_hands.png",
+    "sha256": "89f5912b16fa49afea5c8bc21f9f02edb1337f522ce514154f73833298fde8d1"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_flow/side/thrust_hands.png.import",
+    "sha256": "3743bd2db8aa01e9c4405f5062cbe5a734f0123cfdcba1f6e0414033ffb977d9"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_flow/side/thrust.tres",
+    "sha256": "5d81be327ff39a0501745962d1f6cbe0017d20b424f79e0e38913f25406a25d3"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_flow/up/idle_body.png",
+    "sha256": "181b030a6ca9412c8cbc0bd143a14eb5cff1a523cea55573ca332b22e693c14e"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_flow/up/idle_body.png.import",
+    "sha256": "1274ad8797812f6644e4b6a0664d9a9c649c777e7d982c925dcd51851e9360c8"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_flow/up/idle_hands.png",
+    "sha256": "36a3e22bec12cd21aca624ac1bba90ccbf94ea27e2458e12540f2a527d8632e0"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_flow/up/idle_hands.png.import",
+    "sha256": "879e7f4b0866b87097b5a0bd4843411427bb46cd9e7e9ae371729baf4bedc070"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_flow/up/idle.tres",
+    "sha256": "13367914c4a4dfcf9c2dbaf77f43af3442481f1343568fc38f35e04b3773ca84"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_flow/up/run_body.png",
+    "sha256": "9658c63402e7fe6b5bc06160c86167935b0d5b5cfd3517815c2917375e213f6d"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_flow/up/run_body.png.import",
+    "sha256": "73cef80d41e150d56970eb6616a1edf84efbdd590a4cd69ee66b6c9e7cc02f3e"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_flow/up/run_hands.png",
+    "sha256": "8df9360a66b70ab63774c276e57ed13b832c6d9083dd88cf9eb276ba8042a758"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_flow/up/run_hands.png.import",
+    "sha256": "b7663105968799cf8c4ab49606bd82145f66beaffdfdd05aac876244b4caea2f"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_flow/up/run.tres",
+    "sha256": "279b25ae4ad0e27cf3b3e86e79b7cbf03a895d3c47fddd115605621f437eb5f9"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_proof/iron_beard.png",
+    "sha256": "5a7584636d0a3c406922b780a0483f3c1dad81a02501001d600903906ecc54fe"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_proof/iron_beard.png.import",
+    "sha256": "946fcbb5217843037d245ba08af1605ab955208c85e968cf967f78af9cf20afb"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_proof_v3/carry_body.png",
+    "sha256": "845e5074c933159b5b20eb66616b6c8846677ecd63ba177418f9ba74654c1291"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_proof_v3/carry_body.png.import",
+    "sha256": "041ab899134922580bd2e1f0e66f5670881296bcffa69eaf040cb1f3005bcd47"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_proof_v3/carry_hands.png",
+    "sha256": "39ff3e541ac27a056e03ae364dc525508be3a48b66e84452052b8a347c8d25f4"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_proof_v3/carry_hands.png.import",
+    "sha256": "5548a1b442bc29dd77654069ccf15875cbcd261b7ef92285e3130e0dce2ec82f"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_proof_v3/carry.tres",
+    "sha256": "7d97b8552b0bf57c0657cb67026ca7327948cb89610a3a49042926aa4d5725f2"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_proof_v3/swing.png",
+    "sha256": "91e2443bc9f949f21b758b0468c707da25b10a07db6047a94b9d8a533f9d627c"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_proof_v3/swing.png.import",
+    "sha256": "f455ce3923b260de1aa8582c62ba0ad9768157c60f8a16ccad5fabf2fbfdbdb2"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_vertical_v2/presentation.tres",
+    "sha256": "c49e3e8e02f336295dc9322c52696be8b04f1f5c99a429328b7045c297a6ed14"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_vertical_v2/down/chop_body.png",
+    "sha256": "f23eab6d93d658a85dc7827fa062f7e85db03d27bb120f2fd745bf5374543447"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_vertical_v2/down/chop_body.png.import",
+    "sha256": "a059f1f1649b850756d6c133226f00e9d2f8651b6dcb6c5691da924debdfe13f"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_vertical_v2/down/chop_hands.png",
+    "sha256": "8fa9a74f04704827434d740fa2f79e6973f383bc1d8fc9c257a87f0fef338016"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_vertical_v2/down/chop_hands.png.import",
+    "sha256": "ebcba704fa3d06a2774b924302a1867e6a84a258627c260c697912792332dfa4"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_vertical_v2/down/chop.tres",
+    "sha256": "6c7db62cc67bc7d1c71573934d563b4fbf8c23fa77353ca034c4bf62f05db9a2"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_vertical_v2/down/rise_body.png",
+    "sha256": "12a1af3a03e8a39163d3d406cd45270444bde008f3a1965c7d5728e1d12c080b"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_vertical_v2/down/rise_body.png.import",
+    "sha256": "f3ca57eb5e69a0976b60c47390216df1273b0a3b89a46a1b046d9ee0bc5fe5cb"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_vertical_v2/down/rise_hands.png",
+    "sha256": "b6a9ebac0b3cab9ec4fa509dbb372fb8adf8935adc6a32c7e8dc41a4264615c5"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_vertical_v2/down/rise_hands.png.import",
+    "sha256": "fb4e697d773bbd763e96db7a5d7ba17915e1b03d56956c730a25bb3b9a73d2c0"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_vertical_v2/down/rise.tres",
+    "sha256": "607a16deb02eebf1fdbd77a119b5b9de250c4b6ded93c5c07fb4dbe7ed269b6e"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_vertical_v2/down/slam_body.png",
+    "sha256": "0e2522981a3e5dca765f6d54d9c8c65338e6c73596b6361ec69820883a91c1bc"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_vertical_v2/down/slam_body.png.import",
+    "sha256": "6a61c0a07e7676bfb80f29e064a5f6eb21916e28969b6756f2278a537ffbf54c"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_vertical_v2/down/slam_hands.png",
+    "sha256": "2884b5a899e2f90c890aea5819d69dd050d3b6cfd3bd17d920c3fc9bdccede6d"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_vertical_v2/down/slam_hands.png.import",
+    "sha256": "a20f444aef219bdf6eb930110f3335439416aa6a24096c4c66985fa49f334355"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_vertical_v2/down/slam.tres",
+    "sha256": "ab1cf9204dfa6b0fb47e774313afb74efc62e0621e2c7a11c84567fc64e151dd"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_vertical_v2/down/spin_body.png",
+    "sha256": "c495244d812dca6f10a60551a5cd1f3bfb5cc68a42e8cb4fa5b2774e27c90bd8"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_vertical_v2/down/spin_body.png.import",
+    "sha256": "5d288c83863a71f00a6b07f65f22ac119f04fe2cee232796fd2c9d3d85562add"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_vertical_v2/down/spin_hands.png",
+    "sha256": "7b59fc1bd50375387bb723bffd00797fe4d8e042133fa3655650cb2b29b7a9f2"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_vertical_v2/down/spin_hands.png.import",
+    "sha256": "2363453f8ebe21053747e2fc4776236de8db66709a67f6d9155e0434efcbdc15"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_vertical_v2/down/spin.tres",
+    "sha256": "677a8d25783b029fcf1dcad35757f0681af59be3faa5b5f4c3512f17aa6c7434"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_vertical_v2/down/swing.png",
+    "sha256": "b90bebe98473c95198dc8a90e21bc480b681dbad2c2e67b01aab8e137e586bd9"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_vertical_v2/down/swing.png.import",
+    "sha256": "01bffe38fde72dd670c381751c28ba67122d29d8bccdb6d9e43450b109f6015c"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_vertical_v2/down/thrust_body.png",
+    "sha256": "249345cc11c78c2bc9291d99acfcff8049188681e55dcc3cd7ba7186baf7ba19"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_vertical_v2/down/thrust_body.png.import",
+    "sha256": "c364fad3aa9cbe294c8892615b9215ba00c678cec4f1c31d86799a88f63ac30a"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_vertical_v2/down/thrust_hands.png",
+    "sha256": "40a885f00176fa0f3f4b8b8075683318f257f29dd508f2ae73d75556a4541eaa"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_vertical_v2/down/thrust_hands.png.import",
+    "sha256": "c3ab0e941c15653534f326ce4bdaff96b08e4cdb8f39d12f48d754f026c4a4c3"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_vertical_v2/down/thrust.tres",
+    "sha256": "2ed74a552714ae70cabd06807788f23248ecfdd6441a3a0276eace7ea5277206"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_vertical_v2/up/chop_body.png",
+    "sha256": "2ad08c6955b4a8d1c82034d7f0b127cd2f673a9a6368e8913c20cb8b68933a8a"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_vertical_v2/up/chop_body.png.import",
+    "sha256": "f697b8564db5fed12846c6282120c42620742ed6088a9edcb3dd46e7bd31ce2a"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_vertical_v2/up/chop_hands.png",
+    "sha256": "f0caf075cf274701e6e4d8d9f7529b1ea99cfff0a26f6cac7e5cb4602b1c7f75"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_vertical_v2/up/chop_hands.png.import",
+    "sha256": "ee69bf72f85415c7b76e9c6d08f920055918bc9bfe97e08700b6856b555fc292"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_vertical_v2/up/chop.tres",
+    "sha256": "c509f0935dbd978f64390b6a21ed464883921d2fb4e2fab6b169f2b7781639a1"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_vertical_v2/up/rise_body.png",
+    "sha256": "1d4f0c19ee2a7c05eb8e7dc9dded81a3523b53ab08eb10ffd299ac24bdfc0e50"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_vertical_v2/up/rise_body.png.import",
+    "sha256": "0a9227b08ab8f5a7def83cf34beea14f4aad998c4b9c678f5392a03fe302f8ea"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_vertical_v2/up/rise_hands.png",
+    "sha256": "1b04300ded8cdc0f831a8f65a952aa81438a17e864bad4d6f4ef4cd3b4d70a3b"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_vertical_v2/up/rise_hands.png.import",
+    "sha256": "3867683b72d38ac7de8488ff859cc3b04eb44f6183744b76d6c6e12a1ae44082"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_vertical_v2/up/rise.tres",
+    "sha256": "a0764d406be0813754204f3e1d53cf104691c2772e04638f3edcac159c966f2b"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_vertical_v2/up/slam_body.png",
+    "sha256": "a5519202041a91a032432f4728f3504ab4062e732169e7ff4f80c70b78d5f8ac"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_vertical_v2/up/slam_body.png.import",
+    "sha256": "74ee7e68fd0f797631b6c216a00e3e834d23b4ea6a9940726bdb1edad45e56e5"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_vertical_v2/up/slam_hands.png",
+    "sha256": "15f5cc3388c5efc9e7e380de1cde694cf8b318d7389c4b5eae4af3a14c0ab1be"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_vertical_v2/up/slam_hands.png.import",
+    "sha256": "54ab7c77987040a5c6a6ee25b991b13000f79f544fde229289af51317e94f4ad"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_vertical_v2/up/slam.tres",
+    "sha256": "650f2b3a53430451f9edfc519f5c706f5f59fe08c394c64ebd737be184601876"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_vertical_v2/up/spin_body.png",
+    "sha256": "0aec22a459823a50cd134e41487e703920a1051393856c3ede4264d722973ab5"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_vertical_v2/up/spin_body.png.import",
+    "sha256": "cbecc86c085ae72d21d8f4188dd3bbffa1e8da8ed26956f7cd477639661fbf7d"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_vertical_v2/up/spin_hands.png",
+    "sha256": "4e23185138b0de7ee886597bc51ea741a416d41a60d92a387666b066270e7e6f"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_vertical_v2/up/spin_hands.png.import",
+    "sha256": "42bf1a1bb3a14f36b30652ba736fd30c169d08155f2915fbfe4d5da248c8682f"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_vertical_v2/up/spin.tres",
+    "sha256": "ff0ddacaab46780c922eb6dd2d9adb7e852bc4ba44492d4fa0919efb23d8c707"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_vertical_v2/up/swing.png",
+    "sha256": "b3d4de0694a288266aa2a75130c9855ae64c53c249bc8a6731d7697ad762c439"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_vertical_v2/up/swing.png.import",
+    "sha256": "9b9b6cc9c07bc36ae0052dc50f244b43429871ccf51b5d033d249ac54bb5ee07"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_vertical_v2/up/thrust_body.png",
+    "sha256": "562bc1384d87ff03f6c395a34e73f003e5722f6208625bafde34ac4446e98d60"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_vertical_v2/up/thrust_body.png.import",
+    "sha256": "0a3821faac43e31afc6139e5a8fc1886ab72c06b16d02313efc53bc540cc87e3"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_vertical_v2/up/thrust_hands.png",
+    "sha256": "a56b3e14d5e45d9935cec0540305828259cf6c1b73b02d6714adfc21d2dad80b"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_vertical_v2/up/thrust_hands.png.import",
+    "sha256": "1e3650dfd092ae43cc301e4315d1e400363f01e5bb3d685a96ea763c776dd722"
+  },
+  {
+    "path": "assets/characters/playable/king/axe_vertical_v2/up/thrust.tres",
+    "sha256": "78b226b4ad5e578c75d27b8d0bca3b2177ea753b948b8ab89169139c3a8d5b11"
+  },
+  {
+    "path": "assets/characters/playable/king/body_library/v1/contract.json",
+    "sha256": "88ce3b9485646ba2230495325b79373e7b3a0faa2362acfff11d4559cb95521d"
+  },
+  {
+    "path": "assets/characters/playable/king/body_library/v1/down_ready_body.png",
+    "sha256": "817a9e1b59d6de16d937536c83f36183ebe26237f65021c0d6788ca1ab44cbf5"
+  },
+  {
+    "path": "assets/characters/playable/king/body_library/v1/down_ready_body.png.import",
+    "sha256": "deaafee16cdb1f98a1f8eb32b107a6a945d38cc6575da7ac59e2a23f0bcc2811"
+  },
+  {
+    "path": "assets/characters/playable/king/body_library/v1/down_ready_hands.png",
+    "sha256": "2a2bb92f4f2a71f86d9678b9c482bdcef36f825b0a07a262f563be7e2b2c2da1"
+  },
+  {
+    "path": "assets/characters/playable/king/body_library/v1/down_ready_hands.png.import",
+    "sha256": "2686686a015c48f39df5260ba5eac49a0a29c77c3fc7132d544b4dad6acb52b0"
+  },
+  {
+    "path": "assets/characters/playable/king/body_library/v1/down_ready.tres",
+    "sha256": "98983fc196ee2c9b17d5cd31fe4a13673fd7e239aaae28459d835c2c7f1c8303"
+  },
+  {
+    "path": "assets/characters/playable/king/body_library/v1/down_relaxed_body.png",
+    "sha256": "7feb6ee0c6d542be382bdab9f800a6a8a47360fb933eee47a4b656780208ba49"
+  },
+  {
+    "path": "assets/characters/playable/king/body_library/v1/down_relaxed_body.png.import",
+    "sha256": "38a75ec39a32a434f8a248a998a68705e87eb402823dc2f7dce308f9d268a35f"
+  },
+  {
+    "path": "assets/characters/playable/king/body_library/v1/down_relaxed_hands.png",
+    "sha256": "1f9b8e38353a982aed78b9bf0250afaadb4f52a4f7d35aa302c823afa54c0576"
+  },
+  {
+    "path": "assets/characters/playable/king/body_library/v1/down_relaxed_hands.png.import",
+    "sha256": "a9346195f9287392ae8f88aec3ee339add04bc93f510035cfe4bc5b193a68abf"
+  },
+  {
+    "path": "assets/characters/playable/king/body_library/v1/down_relaxed.tres",
+    "sha256": "84ac856ca9310b41ef8f6bbab90c28f6d93f0aaf4e15b21621948dda2a03c763"
+  },
+  {
+    "path": "assets/characters/playable/king/body_library/v1/down_run_body.png",
+    "sha256": "6d3e612bff1c072d79f08b40f895a31ed5a9141f8c29cbcd7444f21229d264fd"
+  },
+  {
+    "path": "assets/characters/playable/king/body_library/v1/down_run_body.png.import",
+    "sha256": "416081f958e9cac66eb488f69ee82efb1e276fb4856818bb95831c95ed2bcd4b"
+  },
+  {
+    "path": "assets/characters/playable/king/body_library/v1/down_run_hands.png",
+    "sha256": "8df9360a66b70ab63774c276e57ed13b832c6d9083dd88cf9eb276ba8042a758"
+  },
+  {
+    "path": "assets/characters/playable/king/body_library/v1/down_run_hands.png.import",
+    "sha256": "5bc5ac6cd359c102fa4a517b9bd6d29231b8190f5ef5fc20e1c903301cd05aa8"
+  },
+  {
+    "path": "assets/characters/playable/king/body_library/v1/down_run.tres",
+    "sha256": "0af4991bbdf7ee285cb8af856d2dee49e26f917f32942faf605fcd86507c81ae"
+  },
+  {
+    "path": "assets/characters/playable/king/body_library/v1/README.md",
+    "sha256": "c66cce68596d3771844d13d3c518128f016bdd75290a257659fde4b885d7c8af"
+  },
+  {
+    "path": "assets/characters/playable/king/body_library/v1/side_axe_ready_body.png",
+    "sha256": "808c61da64d50a88a67a39b9305d13db4aa9dc570b86e6594762446a7d825cfd"
+  },
+  {
+    "path": "assets/characters/playable/king/body_library/v1/side_axe_ready_body.png.import",
+    "sha256": "44bc27a46db25fd3054c67712a580d572d3ce4ee8ad2a97bd02f660fb72aa582"
+  },
+  {
+    "path": "assets/characters/playable/king/body_library/v1/side_ready_body.png",
+    "sha256": "a5b4c983dd5ebce926d0504eabfb246620096b660fd7bcbc1546b38f3cb14134"
+  },
+  {
+    "path": "assets/characters/playable/king/body_library/v1/side_ready_body.png.import",
+    "sha256": "d01135e843f87179568054d95c44479899b21569601bd3d9758e7d16f9b2bf1d"
+  },
+  {
+    "path": "assets/characters/playable/king/body_library/v1/side_ready_hands.png",
+    "sha256": "d007d0690a1652723c5d7cf6c6ba5ef8f6acf8a6cc13af3bce55f2abecacd25c"
+  },
+  {
+    "path": "assets/characters/playable/king/body_library/v1/side_ready_hands.png.import",
+    "sha256": "61352cfb360633e51433dbb12bbff6070808f12db97cd1cff970116d352bece3"
+  },
+  {
+    "path": "assets/characters/playable/king/body_library/v1/side_ready.tres",
+    "sha256": "00c1d33b751455bb182380ada9fa6ee5f586b1c675fcab5c2a0ac5920579d823"
+  },
+  {
+    "path": "assets/characters/playable/king/body_library/v1/side_relaxed_body.png",
+    "sha256": "7a0bb0d0171383b1bb3c5dbe3264e350da8c7c5b247cb4e9eb3bcd2b31dc62fa"
+  },
+  {
+    "path": "assets/characters/playable/king/body_library/v1/side_relaxed_body.png.import",
+    "sha256": "586cb55eed62fe24bad7f05f774ef92df605260acdf9084336fceaa43f2d19dd"
+  },
+  {
+    "path": "assets/characters/playable/king/body_library/v1/side_relaxed_hands.png",
+    "sha256": "d2719042cdcd493aaf33b63fd472bc9414dc43732dab1064df1cf99f6582d475"
+  },
+  {
+    "path": "assets/characters/playable/king/body_library/v1/side_relaxed_hands.png.import",
+    "sha256": "5d9f174d238ad4c15f9763d328d60b4dad93951f6e25969f0874b3096432f8df"
+  },
+  {
+    "path": "assets/characters/playable/king/body_library/v1/side_relaxed.tres",
+    "sha256": "74f58af42fc98a4775a4e7ce6dd967ca6e66bca3fddbba267539001e1b8403e4"
+  },
+  {
+    "path": "assets/characters/playable/king/body_library/v1/side_run_body.png",
+    "sha256": "42ab29cce07aeb3584265c83ea2b91cd5d35bcf97296baf05984102fa19693b2"
+  },
+  {
+    "path": "assets/characters/playable/king/body_library/v1/side_run_body.png.import",
+    "sha256": "b755912e53d99cfb96a7287a919983404598542a8993a801169df4bf2bf2c328"
+  },
+  {
+    "path": "assets/characters/playable/king/body_library/v1/side_run_hands.png",
+    "sha256": "4d97f957815921f958b337544da18b38ec5f9b0748c3ecd411a70328d6198aa4"
+  },
+  {
+    "path": "assets/characters/playable/king/body_library/v1/side_run_hands.png.import",
+    "sha256": "49ed84310e6618f310328b248c50e7afd36b774a37bb461db765ba8460f38e62"
+  },
+  {
+    "path": "assets/characters/playable/king/body_library/v1/side_run.tres",
+    "sha256": "52b78475945d0e6ec793048f912b24df4eb141f24da52caa90fd0a63e3b9b4b3"
+  },
+  {
+    "path": "assets/characters/playable/king/body_library/v1/up_ready_body.png",
+    "sha256": "481129bba5c5193e1c3dfb07baf40c341b75fe0e7ef2b5a66db8b36f1c909700"
+  },
+  {
+    "path": "assets/characters/playable/king/body_library/v1/up_ready_body.png.import",
+    "sha256": "9a5058ff83292a75112cddc49f97fc728d7d9bedf379020bde4a4b5e0297a821"
+  },
+  {
+    "path": "assets/characters/playable/king/body_library/v1/up_ready_hands.png",
+    "sha256": "f54c3e7f83495da946b02d316bdd5a7701e55555eb903ae0ea633ed7adb3776b"
+  },
+  {
+    "path": "assets/characters/playable/king/body_library/v1/up_ready_hands.png.import",
+    "sha256": "e6d01332646af12046864e7cde5c6c411a3b55133a9162e3e00b1f049f8947a8"
+  },
+  {
+    "path": "assets/characters/playable/king/body_library/v1/up_ready.tres",
+    "sha256": "420e125cd59f4ff5f18bf81c59c4609302f58be8fd0a634c665aee3fab5e9cff"
+  },
+  {
+    "path": "assets/characters/playable/king/body_library/v1/up_relaxed_body.png",
+    "sha256": "37823e19d371f38f46a80ebd71c8786eb368bb53e28e63ab0c1710eafc643aa3"
+  },
+  {
+    "path": "assets/characters/playable/king/body_library/v1/up_relaxed_body.png.import",
+    "sha256": "e873e09098e847c7b9a27a232cfa8997ee22fb2e97ce76b8366b8115d72be4f4"
+  },
+  {
+    "path": "assets/characters/playable/king/body_library/v1/up_relaxed_hands.png",
+    "sha256": "4845ad9fcc16993cabc5375b0bb01838ff16d3bc7d0927c283d860cc4a647e9e"
+  },
+  {
+    "path": "assets/characters/playable/king/body_library/v1/up_relaxed_hands.png.import",
+    "sha256": "01829f2a717dc2a10d0c6554a79df8024ee5e86e78b02238c55e137c06a79a35"
+  },
+  {
+    "path": "assets/characters/playable/king/body_library/v1/up_relaxed.tres",
+    "sha256": "249f497fa15cd6933d37ef550257d90d737e0e5d2f21154418356c8e985054a4"
+  },
+  {
+    "path": "assets/characters/playable/king/body_library/v1/up_run_body.png",
+    "sha256": "b4af8f5cd8e8419e9920b237e683754131315931bd8a81b6461589cc74a636de"
+  },
+  {
+    "path": "assets/characters/playable/king/body_library/v1/up_run_body.png.import",
+    "sha256": "6f96802053766d81c6f3f78d9ad945c04711b9bb2aedf2569ea0cb4b89f3cf6f"
+  },
+  {
+    "path": "assets/characters/playable/king/body_library/v1/up_run_hands.png",
+    "sha256": "8df9360a66b70ab63774c276e57ed13b832c6d9083dd88cf9eb276ba8042a758"
+  },
+  {
+    "path": "assets/characters/playable/king/body_library/v1/up_run_hands.png.import",
+    "sha256": "ca0e4f45d924d093c06678b33738d64c899f1151c37d65a6957f86fe1fa9876c"
+  },
+  {
+    "path": "assets/characters/playable/king/body_library/v1/up_run.tres",
+    "sha256": "ec8942ca5f4d2b02d8e4e996c4d753dd58e500c58ea469e91c415ef1dff15eee"
+  },
+  {
+    "path": "assets/characters/playable/king/dual_identity_lock/down/idle_body.png",
+    "sha256": "7feb6ee0c6d542be382bdab9f800a6a8a47360fb933eee47a4b656780208ba49"
+  },
+  {
+    "path": "assets/characters/playable/king/dual_identity_lock/down/idle_body.png.import",
+    "sha256": "4fc2dd415de40ad70c6e7f3c3c0b053015dcdc56f6de10ea11c8092058e1ab0d"
+  },
+  {
+    "path": "assets/characters/playable/king/dual_identity_lock/down/idle_hands.png",
+    "sha256": "1f9b8e38353a982aed78b9bf0250afaadb4f52a4f7d35aa302c823afa54c0576"
+  },
+  {
+    "path": "assets/characters/playable/king/dual_identity_lock/down/idle_hands.png.import",
+    "sha256": "725ba496bc845cdd7d4c72c35835b8dd50d8b738b8c860496919f78207b7f781"
+  },
+  {
+    "path": "assets/characters/playable/king/dual_identity_lock/down/idle.tres",
+    "sha256": "85c8f007283e0e384d8a09c530ed18c5d8789c4ca7ec1a5858f53639dddbc3f0"
+  },
+  {
+    "path": "assets/characters/playable/king/dual_twinsteel/twinsteel_side_rear.png",
+    "sha256": "67cfa1bf11664e8de47282c2282b17fcaa746ba55b2cec6e8455a7c73f9b78c9"
+  },
+  {
+    "path": "assets/characters/playable/king/dual_twinsteel/twinsteel_side_rear.png.import",
+    "sha256": "651cccdc45a49ff6c78a1a6fc3831ac3f9f337cee2cc5a467c98d9f16a24bb66"
+  },
+  {
+    "path": "assets/characters/playable/king/dual_twinsteel/twinsteel.png",
+    "sha256": "c13e5ed3d12fb0a4791afa49355caedbecf140289bf290e2d9aafdfb29a4af8b"
+  },
+  {
+    "path": "assets/characters/playable/king/dual_twinsteel/twinsteel.png.import",
+    "sha256": "6c728d80e9fd55fdcfeff50c57d1f7a6995e4c2901e7efe0cbbf19e0b7334c84"
+  },
+  {
+    "path": "assets/characters/playable/king/dual_v2/idle_body.png",
+    "sha256": "7a0bb0d0171383b1bb3c5dbe3264e350da8c7c5b247cb4e9eb3bcd2b31dc62fa"
+  },
+  {
+    "path": "assets/characters/playable/king/dual_v2/idle_body.png.import",
+    "sha256": "76ce75175ca657d282ecf717dd44a12d5bfa6c2a94e037ff5b35a1b1f2f7cf79"
+  },
+  {
+    "path": "assets/characters/playable/king/dual_v2/idle_hands.png",
+    "sha256": "d2719042cdcd493aaf33b63fd472bc9414dc43732dab1064df1cf99f6582d475"
+  },
+  {
+    "path": "assets/characters/playable/king/dual_v2/idle_hands.png.import",
+    "sha256": "9fd8b55e3dca498e9211e6d941c798f8b9ce5f298385c50fb99db91187506da4"
+  },
+  {
+    "path": "assets/characters/playable/king/dual_v2/idle.tres",
+    "sha256": "d05b01d4b2488539cb176ae43c1cd1bf5672d6bc8e6daa9fe873f42bbbddfa35"
+  },
+  {
+    "path": "assets/characters/playable/king/dual_v2/slash.png",
+    "sha256": "c87e89d353f14cce5c3015b488476b708af6c235778137a85249d2a6539b0189"
+  },
+  {
+    "path": "assets/characters/playable/king/dual_v2/slash.png.import",
+    "sha256": "90aafa6fa8a8ed5a49be13abec791caabd906557a99d3e0848d11485d42ae509"
+  },
+  {
+    "path": "assets/characters/playable/king/dual_v2/down/idle_body.png",
+    "sha256": "ae5dd3751976f2d8b10077ecb13f3c254f9606b8e85876b17ae4c6b9f182d577"
+  },
+  {
+    "path": "assets/characters/playable/king/dual_v2/down/idle_body.png.import",
+    "sha256": "263a4742610b8e0ad9dc04d002e57f0c9e115509fb2ea79b393f317291137cf8"
+  },
+  {
+    "path": "assets/characters/playable/king/dual_v2/down/idle_hands.png",
+    "sha256": "78f57fe344bf33fb437a420a427340edd0366ec35758d5336051c4cdd70e37cd"
+  },
+  {
+    "path": "assets/characters/playable/king/dual_v2/down/idle_hands.png.import",
+    "sha256": "ea3d2b481563835d1e83dae58b333425658b0006af31e0f75532f1174ccd9e15"
+  },
+  {
+    "path": "assets/characters/playable/king/dual_v2/down/idle.tres",
+    "sha256": "78429b57917857be6c56fc51ef2a5e1ecda78d6953a582be8fae52dbcb27ec59"
+  },
+  {
+    "path": "assets/characters/playable/king/dual_v2/up/idle_body.png",
+    "sha256": "37823e19d371f38f46a80ebd71c8786eb368bb53e28e63ab0c1710eafc643aa3"
+  },
+  {
+    "path": "assets/characters/playable/king/dual_v2/up/idle_body.png.import",
+    "sha256": "3e8f93f93f8072bda55dd26f059bebc542a1c7be3c6f80f2ca06843e22fb200f"
+  },
+  {
+    "path": "assets/characters/playable/king/dual_v2/up/idle_hands.png",
+    "sha256": "4845ad9fcc16993cabc5375b0bb01838ff16d3bc7d0927c283d860cc4a647e9e"
+  },
+  {
+    "path": "assets/characters/playable/king/dual_v2/up/idle_hands.png.import",
+    "sha256": "51e1db966b1fcc7361b04013045ee957cfa33c01f4a7fe12610313497bc24987"
+  },
+  {
+    "path": "assets/characters/playable/king/dual_v2/up/idle.tres",
+    "sha256": "6f3aeffb1d1d97ded79fa3ec64a5b58585132cf074f79f753d939a2c78cb095b"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword/king_greatsword_portrait_96x96.png",
+    "sha256": "65cd9177a6f66c3aa769a049a19e3a5c55592924f8cc8a9a3e80d140e8177219"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword/king_greatsword_portrait_96x96.png.import",
+    "sha256": "0d65d33ca7acad36544b9313303a4c97ba944cef6b4c15ab8df95c161a373e82"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_confidence_v2/axe_run_body.png",
+    "sha256": "97615b007de280ee8a8c2c29d2125a6940085329263caf9bb783a62c8154cbba"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_confidence_v2/axe_run_body.png.import",
+    "sha256": "26c18d22e1f81c88acda461544b3bc2050bca80cccabf5ddaa908d5229dba9f2"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_confidence_v2/axe_run_hands.png",
+    "sha256": "8df9360a66b70ab63774c276e57ed13b832c6d9083dd88cf9eb276ba8042a758"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_confidence_v2/axe_run_hands.png.import",
+    "sha256": "517cce5a5689db91fbee487149431739fb4280d849dd7e7fa16f0c290a1b8761"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_confidence_v2/axe_run.tres",
+    "sha256": "924562d77dff86c1eeac13ea8ab40ed7c959557802650ad8ac5ca57b8e22e9db"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_confidence_v2/idle_body.png",
+    "sha256": "27f5ba80e204751c105658ba61a18ef5df4e2860e599431bc37e25bc5603e79b"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_confidence_v2/idle_body.png.import",
+    "sha256": "3a6750d719e40d5076f7339112a41db642e9621e5561e40153704dc9cd6275af"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_confidence_v2/idle_hands.png",
+    "sha256": "b7bad9ec3fe5e3e63d8ab7c75f7da02d9e6314943da1b53784eb6e0a2339047b"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_confidence_v2/idle_hands.png.import",
+    "sha256": "30219e3d058152ab0f8e1b9d552604a3bce9dc29382ed4061cc2ced19906a305"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_confidence_v2/idle.tres",
+    "sha256": "acfc4ff3899135a5fe6cbbf8799d12dd53133cd1763a29aaf2537cdf008e2ad9"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/front_body.png",
+    "sha256": "a0ca8666b78951e109b7b39541c85a8806e08b1b7efef0dc1049db81e1213123"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/front_body.png.import",
+    "sha256": "1837f3ca347ab10054d75738cb8628125e4c55b4dcfd3ccd4dab3f7b4368d255"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/front_hands.png",
+    "sha256": "5074cbed5d3a8a3141ffc11044502d89536529d2baa737300d10b2782e37c942"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/front_hands.png.import",
+    "sha256": "31322368e65ffe8b9c1773ca27f63320488dbad71fda67d4f3c372ab03f3604c"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/front.tres",
+    "sha256": "adf68428a1cbf7a8719152eb0846d3b355b3ab2b7767284a5825b59146d7f275"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/jump_body.png",
+    "sha256": "bdefc02c3bf383459fc85e89047ddc201228b85ec051984317577571caf88760"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/jump_body.png.import",
+    "sha256": "564e6cbd29785d035949ceefe8377af284b3670cead88f012cc45cbebcc956e5"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/jump_hands.png",
+    "sha256": "f971c89248c7a02056d96a99c6aa68502a6073955597def4c5536eeadc977c2f"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/jump_hands.png.import",
+    "sha256": "2f598fab52d936e245003a244021754f2d1810c120c8b172cd08c1cc2cc4f196"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/jump.tres",
+    "sha256": "d21e6c8a361e45bb9aae73b36e6bb1ca14c3a0293c87e5171f98a403ebe6bb35"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/landing.png",
+    "sha256": "31ec95d4557f68260043135c4cb2512add35fd8d447e9b051957d7559a90a9d8"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/landing.png.import",
+    "sha256": "dbfdef7b4bfa54b9846b1d6cc87ba1485321460f7a44c5c386b713200ca29023"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/return_body.png",
+    "sha256": "b930bab89bbbbf00f66f2df6beb56c602a1787d27e76226708472fa0b390a57e"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/return_body.png.import",
+    "sha256": "f41c20fac123102271d8d9edde7e12532bf80c71df3ac0704c4eff2096d0f310"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/return_hands.png",
+    "sha256": "e85966840f8aa4bef609b7694bbfb24b1086c742a54bd91de068e66d97273b87"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/return_hands.png.import",
+    "sha256": "b27cb6b145705506d24cb9a6ecc0f1301a2d8b5ca0710977898ad893aab699db"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/return.tres",
+    "sha256": "415fff817f228dd1524238409f5f371bc828bcf18ec4be64e9b83174fd7af9e3"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/slash.png",
+    "sha256": "176ecaad6e7c24b6f9cb6af995b52bd9f8973ad46fd6b891bd126afbd2a7c4d2"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/slash.png.import",
+    "sha256": "19dd4c315c5525182639edfb47f82de87e20fa7d06a7f31f5ccbacc9d8f5ef59"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/spin_body.png",
+    "sha256": "9a3910e5218b7a66fe8336e3ca92776f90fb3e25bc2ceaf265f618af7a1d12ed"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/spin_body.png.import",
+    "sha256": "a875562ffe8082b73fc9438dc7b8edc304a783a54222e69a52a1fdf706471100"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/spin_hands.png",
+    "sha256": "4ef536073be4c9c585561a44a633271c7c5ad9ff49f0165299632b48fd59cef2"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/spin_hands.png.import",
+    "sha256": "a0f7729105b85fe440f6027ad16ca7558d1eaf17d1cd6d3c59a534c8fce0ee7e"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/spin.tres",
+    "sha256": "2600e6c613d34dc48e6c3fb09a9f431704fbfb1638c3a43b2a9c2f1d95a4f284"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/vertical_landing.png",
+    "sha256": "dbc364048ad5a52332cffd9bfba0c457adcd469adfbfdea8498a351a39534569"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/vertical_landing.png.import",
+    "sha256": "1259fbfe8b329514f27fdf1a658f0ad5507f571506e6b8b907e8ec635d6626f2"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/vertical_slash.png",
+    "sha256": "e5941d7e7fae9764e9e3dc68c4bdb22769d4c136fa4d853e499ca6ac4e80472d"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/vertical_slash.png.import",
+    "sha256": "c95c28dcfa08a5090a4c3d627960ac865282bdbab654a499a93f6fbde5f4bde3"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/down/front_body.png",
+    "sha256": "7649de0ca4dd3c7eb91f5ed2d58c5634aad4d92a97f16cc34c7d78be562c2c49"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/down/front_body.png.import",
+    "sha256": "dfe5ae96a017035f01fbe416885ca0f57ee8e9e7b9fc1cbc28a2bd45ffb35c1e"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/down/front_hands.png",
+    "sha256": "80b8bbaa4587ff43f8d4884307ed812caa85af3665aebfc6c7cc97c1ca816587"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/down/front_hands.png.import",
+    "sha256": "1599a48e40db84b18d2f3723f84fd59e90c5c19d11b8436f03388c798068811a"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/down/front.tres",
+    "sha256": "cb30e32d437b38a3d8227cedfdc7334b8ae63d9f62dd791a2fff10357fcf8cfd"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/down/jump_body.png",
+    "sha256": "06ecac2bf92f3e410a5cb5e909eb85e223cd821b95d10ef99da7d17aa8927958"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/down/jump_body.png.import",
+    "sha256": "6df5bea2156773a1e36d93b972a88f350899d996902e6b4cd021c2fa07232bf2"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/down/jump_hands.png",
+    "sha256": "34b1225e62ee649edacc008a86d9ee75505753e6ac9099986288b52f0706e375"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/down/jump_hands.png.import",
+    "sha256": "743285da023dbc8485528b916901baaf4aaa5de55619dbd23d518fbecec6d34a"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/down/jump.tres",
+    "sha256": "9c9e7698831298201c6e046365c67c2b0ae26fb7981812633cb1763bc8d17a6a"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/down/return_body.png",
+    "sha256": "a13f12ef3fcf6fe5d644f55301617e3e6300cfaf7bc735a7eaf2cc8256616b29"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/down/return_body.png.import",
+    "sha256": "2d6513c935bc59500e5136ead79b95ab78c9738ae52e18f15a32a810e2578b4d"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/down/return_hands.png",
+    "sha256": "09726dbecb8f96373f8927f0fea7c468197c0e4dd04ccf5035dce2d071fb7154"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/down/return_hands.png.import",
+    "sha256": "a3443d940b3ef73af8a46a3c40e9dc23e57e8fedc873de1297afba26a41d02ee"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/down/return.tres",
+    "sha256": "93268961fa478c427b372dddacc4e1172f3e85474530a0a477f7d91e5ee26446"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/down/spin_body.png",
+    "sha256": "f6ef773c595d4ea7714ccc2c40fe8efbf89b6636f0fda9d4ef33afc832742c55"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/down/spin_body.png.import",
+    "sha256": "deca41b948fd7264a034974a11ae476da052e8e686cee8b4a72b3c673fb12fa2"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/down/spin_hands.png",
+    "sha256": "c2e783575bf15a8a59e3021b2e351f080eed3ad3659b9fb2711bae5776b49080"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/down/spin_hands.png.import",
+    "sha256": "86c3301c3704a12062b2a751a7b0ea9647047516d73ed745e31543c4f53fb75a"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/down/spin.tres",
+    "sha256": "1259f07d72e6075b5eff9e1489fe2a71ae4f9ed426ecf80029404c9d357f094f"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/up/front_body.png",
+    "sha256": "6df8440f25796c0bda987179201b94c700f5fc618ca498b3747a51b15c8e9b39"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/up/front_body.png.import",
+    "sha256": "f0930ea831b9b67d11354ef67364d10629c235c5ee11e0f3dc32290106f0aec0"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/up/front_hands.png",
+    "sha256": "3c99161f0999210aa8d7889fe5d3df17e0a139c492f06ef823bb1da9d134a911"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/up/front_hands.png.import",
+    "sha256": "553a70de580b45c9293cc86dcebb3261cb971972727e83581cd549a287b4eb00"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/up/front.tres",
+    "sha256": "19318e44599b76101a26299b9da1a4c45a6f2c8a58ed4dc15d06f42cc9312a8b"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/up/jump_body.png",
+    "sha256": "bd071f4a604e071413ba3b6be2c8a423ffa85ebc8cf5cfc3c7409f2ab1b36a3c"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/up/jump_body.png.import",
+    "sha256": "c4bc9b27e34c947304f04b12a04cfc471c738ed6cbdfb5cfefed946657feabcd"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/up/jump_hands.png",
+    "sha256": "6c3336fefa9481bb7e193ca58e75631e4774ac4b21b830609f5ba0dab65d6865"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/up/jump_hands.png.import",
+    "sha256": "07d99421b136e188a745ca27150e0d2c0731fd8bd61f61345163bac2351092fb"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/up/jump.tres",
+    "sha256": "378dd023ef7dc4e5213d573d8ca57dc00c7e24faddeb413ae639b4128acfacdb"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/up/return_body.png",
+    "sha256": "cc7ca0ee71ccd761edcbb8b6888d4b603e41d14221b646cee10c6d9e2de5628b"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/up/return_body.png.import",
+    "sha256": "f091bdbef8d7f1ba6c341e16a5d41f9247d65ef85a8349139722e4e026db4aad"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/up/return_hands.png",
+    "sha256": "4aa7ac7ab96141e87b6dde48b59780cd787cf1f1ab8f3e4470364224d7824a8e"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/up/return_hands.png.import",
+    "sha256": "ee9bf748d8dd9b04c7c8275b1baac95abe221361997cb2449ebb3bf9ba32d795"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/up/return.tres",
+    "sha256": "de75293e7ac1f8319c3e07594a62048d33e77e9446eba0f8e04abe4d040b2d1f"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/up/spin_body.png",
+    "sha256": "2ed285d93e64737aeaba7a4154406d2531d34abc2b555cd678356bd19a2c7275"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/up/spin_body.png.import",
+    "sha256": "4cd3022998dfc8aa41626a353c5fe97317d0a63ce98017488ec8d70f83d9dac1"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/up/spin_hands.png",
+    "sha256": "3cca1a5a4c90262b80224f1daef9830ffb71b4ca4d0a85e725632d872cd24314"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/up/spin_hands.png.import",
+    "sha256": "443d551abbdfaadb218339e648a60e99bc9fe70e1420c49487622b6f6a8b2aa6"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_front_combo_preview/up/spin.tres",
+    "sha256": "f0b5b1ff661bfc631ae202bcf06c393aab7a377450a3c23fa319ac8acee2ff77"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_readability/side/run_body.png",
+    "sha256": "42ab29cce07aeb3584265c83ea2b91cd5d35bcf97296baf05984102fa19693b2"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_readability/side/run_body.png.import",
+    "sha256": "808e354ba34f04a7fffdd709873692fcd04d9ea139a50640152a270e5607307e"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_readability/side/run_hands.png",
+    "sha256": "4d97f957815921f958b337544da18b38ec5f9b0748c3ecd411a70328d6198aa4"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_readability/side/run_hands.png.import",
+    "sha256": "f66b449bb5d22a3f2b574dcfb9e84d41e334f799fe9340cce8827679055889b3"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_readability/side/run.tres",
+    "sha256": "885e50588baa8fadcb9ba24aadafdb4551c8371a3a4dab4433c2ccd97b58ee97"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_v2_cardinal_carry/down/idle_body.png",
+    "sha256": "817a9e1b59d6de16d937536c83f36183ebe26237f65021c0d6788ca1ab44cbf5"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_v2_cardinal_carry/down/idle_body.png.import",
+    "sha256": "84ed5a9893b258aa72a7cd2f0ea917b5dd9e9f0add205bc26e2307a631b9148f"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_v2_cardinal_carry/down/idle_hands.png",
+    "sha256": "2a2bb92f4f2a71f86d9678b9c482bdcef36f825b0a07a262f563be7e2b2c2da1"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_v2_cardinal_carry/down/idle_hands.png.import",
+    "sha256": "406f9fa276a208efefbd5c03c105517b555fac08486318c065ab7f82ce08386e"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_v2_cardinal_carry/down/idle.tres",
+    "sha256": "705f6db16e084358a91656b0a4775089d4c9b5fdce1c7654a019c3816dd4ee40"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_v2_cardinal_carry/down/run_body.png",
+    "sha256": "6d3e612bff1c072d79f08b40f895a31ed5a9141f8c29cbcd7444f21229d264fd"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_v2_cardinal_carry/down/run_body.png.import",
+    "sha256": "fa708b0009a1f76067fc66f4cbb44d0fe5d9048ed7aa11199d6ebe9d9ed3790b"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_v2_cardinal_carry/down/run_hands.png",
+    "sha256": "8df9360a66b70ab63774c276e57ed13b832c6d9083dd88cf9eb276ba8042a758"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_v2_cardinal_carry/down/run_hands.png.import",
+    "sha256": "47f5815f7585aff7ac5635cd3ee79eca3e739240d241408c7e2c3c2b68055149"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_v2_cardinal_carry/down/run.tres",
+    "sha256": "9fab2ee2e2fdc2b1468efc6c670de17c052c9e3335675c6909edd5f773b3eaf3"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_v2_cardinal_carry/up/idle_body.png",
+    "sha256": "481129bba5c5193e1c3dfb07baf40c341b75fe0e7ef2b5a66db8b36f1c909700"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_v2_cardinal_carry/up/idle_body.png.import",
+    "sha256": "7fe0b4f8a41dee0f5fff8c7bb7731a90a612b9715f392581b02b3c3dd1282387"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_v2_cardinal_carry/up/idle_hands.png",
+    "sha256": "f54c3e7f83495da946b02d316bdd5a7701e55555eb903ae0ea633ed7adb3776b"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_v2_cardinal_carry/up/idle_hands.png.import",
+    "sha256": "3b657c54c6fe90e7eb3df60f593c3042c48ef9b25fc4987ec3fbe7cdc5296d40"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_v2_cardinal_carry/up/idle.tres",
+    "sha256": "00ebf4acd6d4510c41183c72c491d5b75740ebe4e6db0e000bbb68caaa9efc75"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_v2_cardinal_carry/up/run_body.png",
+    "sha256": "b4af8f5cd8e8419e9920b237e683754131315931bd8a81b6461589cc74a636de"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_v2_cardinal_carry/up/run_body.png.import",
+    "sha256": "e22cdb1abc2219f694d5cdfc3841699420e9cef9922b9ef5ca892ca0c5e6fb67"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_v2_cardinal_carry/up/run_hands.png",
+    "sha256": "8df9360a66b70ab63774c276e57ed13b832c6d9083dd88cf9eb276ba8042a758"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_v2_cardinal_carry/up/run_hands.png.import",
+    "sha256": "ac9294fda543213c046af385700c160b393767ce623b2ad6e52827e9d5af43d6"
+  },
+  {
+    "path": "assets/characters/playable/king/greatsword_v2_cardinal_carry/up/run.tres",
+    "sha256": "9d7dbd658b2211bf8a507d835ac1912756de386c928ff23056650a4866d95b26"
+  },
+  {
+    "path": "assets/characters/playable/king/huge_greatsword_proof/greatsword.png",
+    "sha256": "5077162899cf254e05aff546d3973d2162094d84e386bb011ee85e5b2a9899c6"
+  },
+  {
+    "path": "assets/characters/playable/king/huge_greatsword_proof/greatsword.png.import",
+    "sha256": "295af17687700b5b4a6cd7e98b57e0217169455f20dd6ce52007fa496c0ff9f1"
+  },
+  {
+    "path": "assets/characters/playable/king/huge_greatsword_proof/impact.png",
+    "sha256": "9e97d74e5385343b4f08d7213542a088e3b8c0f67abc798a5504485fe51277bf"
+  },
+  {
+    "path": "assets/characters/playable/king/huge_greatsword_proof/impact.png.import",
+    "sha256": "30a00952bb5dd661875204a5ed4ddffbcef5c1abeaec167281ddc30ae896321d"
+  },
+  {
+    "path": "assets/characters/playable/king/portraits/king_portrait_96x96.png",
+    "sha256": "873e51cc94bf12ff4ab8c92bafdcb4e7f1c56d9b2c191f2415b20d0cb1680918"
+  },
+  {
+    "path": "assets/characters/playable/king/portraits/king_portrait_96x96.png.import",
+    "sha256": "0f8b5baf2abf5d80124280d207abbc6f3773c02dfecac9bbd07fc87b60b2a17f"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/down/chop_body.png",
+    "sha256": "324bc79ef19c7fdd125cb10c00e343594fb613f4ff26cd6cbcfbae55f0597783"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/down/chop_body.png.import",
+    "sha256": "3b1dd674451c832fd29519f003d11771680e70a5502d17544a55f0cdaf073aff"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/down/chop_hands.png",
+    "sha256": "72e02be1191626aa5e60dc6815a057e1b8d7867e5b7988ec12cd3860e4c76937"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/down/chop_hands.png.import",
+    "sha256": "d7eeb595e5d805695261902c9d44c91fbf6e5ad29c11e9d234a2d1ad120ad69e"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/down/chop.tres",
+    "sha256": "f2c6bd6e29e379aa2d2e70cbd0b0b314e8b884421b8aa147478336076540f08c"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/down/idle_body.png",
+    "sha256": "89350b41303dbd43bcf1263d4c066d936041788375d2ea862c8861e29d3f5901"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/down/idle_body.png.import",
+    "sha256": "3822b64e4064ff581e15181c8e183489ae52e27d62def1a8e4f5e84d337a262e"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/down/idle_hands.png",
+    "sha256": "0094822c0c96719b1be3cba2c3bc2c265d27860b1eeb50c9191b6ef1467b579e"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/down/idle_hands.png.import",
+    "sha256": "7fbc319001da644c049cd0ace2cef5c69215777802cf4361c5d20e16c13ee0d1"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/down/idle.tres",
+    "sha256": "4bb2028b41ca838dcea00add3b7c4aa7d75784502e64400116e2da837a88ff7c"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/down/rise_body.png",
+    "sha256": "54bd00cddf3fe780844b24f44603741e968759d4696b53f277cdb814e0e1b40e"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/down/rise_body.png.import",
+    "sha256": "9c52da0025871112f6f7f93601147356c3dff232f582ef0b9be2cb5d07ff4be2"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/down/rise_hands.png",
+    "sha256": "b51b7053933ca6fd903d01643978118b35b8dae45bf687db03b3e152314dd3ee"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/down/rise_hands.png.import",
+    "sha256": "5f5eecf41045d99f93943f98135420a009edd11cc33230f2c409373ed3b683c2"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/down/rise.tres",
+    "sha256": "88549aa42d0bf4c6ac7916ce3340a0a58a1e4e27e2f87159122cdaa344779e26"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/down/run_hands.png",
+    "sha256": "8df9360a66b70ab63774c276e57ed13b832c6d9083dd88cf9eb276ba8042a758"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/down/run_hands.png.import",
+    "sha256": "f0ca5c9273fff6515f8597c27e04835fc809a485ed0a8c0d502eadd9b37ae1b2"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/down/run.tres",
+    "sha256": "466f35f7ad31a27994002f5eca9a9c4586713b6e6355feac069f7de0962babe7"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/down/slam_body.png",
+    "sha256": "026fb72e72182e74ae195346376d0775a0d76051f9d6542e49a8b9510e622294"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/down/slam_body.png.import",
+    "sha256": "7cc18f3d6079153af1adcda58dfec1c5cfe9dc3cf2b53c70e9afe11ef15119a9"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/down/slam_hands.png",
+    "sha256": "144e9fc2dc3d91fec98b12ff7921435eb07710c08778d29c1c072bca6f08fa53"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/down/slam_hands.png.import",
+    "sha256": "3a07e8229924ca641242fd915c12bd5c65928f18d387ff7dec93294c8bcfa029"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/down/slam.tres",
+    "sha256": "082fb86b46ef0d4bade92878b9956093dd10ad571c2947e3ef0a179d3967daf5"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/down/spin_body.png",
+    "sha256": "36eadd341ac33fb3be163b3c2575700a922a9b90450103714dee1c57dc57b0cc"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/down/spin_body.png.import",
+    "sha256": "a5411cc6a13ae559afbd73ccf7b20e33ad3eda8ab74b3b414a6601db8281e950"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/down/spin_hands.png",
+    "sha256": "075feb49a5ab3037edfc0797001ae9ef715860c4aa8f4b0373a5d55bb73e0b7e"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/down/spin_hands.png.import",
+    "sha256": "313a9576bebcf5fef2b176f730636f5e119086824c3e5577e104bae2d9d9ee6b"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/down/spin.tres",
+    "sha256": "0313c283a080bab4dad0badf339cdb4c6e2c64af7219705420d0a3a9d3352d76"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/down/thrust_body.png",
+    "sha256": "e3aff5f3210f92385d21cb6fa681b519746f2faa8f672729024022f44bcd12b4"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/down/thrust_body.png.import",
+    "sha256": "d5eafce5a0efbfb46a5bc94391d5312f9198bfee38f9b85d357ce16f7cdf8d20"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/down/thrust_hands.png",
+    "sha256": "9f678d010be227d83e9a7fc9d5ce3617faa2f96b914faebf64afe192840feb33"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/down/thrust_hands.png.import",
+    "sha256": "5dbe526979cd7279972716da13055cf4cde774c7186b9e627deab772523ff9ec"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/down/thrust.tres",
+    "sha256": "663d8472ca1124d8b23648c2c7bbceec243c904405ab948ee1adc4274f6b6343"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/side/chop_body.png",
+    "sha256": "de0a937c1005682d649f020392f42b4285d227afae948e137a6d6545a26310c8"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/side/chop_body.png.import",
+    "sha256": "c3fd30e77ae60dfc1c9ce341b235d22c6613ff58a316e2cf1ffbd64cea3a5e49"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/side/chop_hands.png",
+    "sha256": "2f87c29f4b4c0294947cc3f1134ea41bb3c3c9af8b4300947a67e21f14c2d10f"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/side/chop_hands.png.import",
+    "sha256": "4a766dc656eb48a83be9f843f45152b50314649df48e21f9a4ea9781ae7d9e12"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/side/chop.tres",
+    "sha256": "cf7c4f573a1e932113dcf5de5a81e7b1758789a39bd7b8849d39ff27d6314cd9"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/side/idle_hands.png",
+    "sha256": "c26a0f153b25df2240ec9992656db10ab795737497785ad76427bab5582f6fb3"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/side/idle_hands.png.import",
+    "sha256": "150d3aa5b5ff0c60e8a33352318f4764de1e4351125d690a79c8391cb66e4fd4"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/side/idle.tres",
+    "sha256": "3dea3ae535e30662020553e831f8507bf8edf178eaf4abb7c7dddd39dbf558cc"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/side/rise_body.png",
+    "sha256": "9881a044ad1470ae4a4ded938d4ef4ee9ed2a71d510b178ef31f8d967935b6d9"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/side/rise_body.png.import",
+    "sha256": "d2c707b4aa6e99a58246d576bebe7027fc7cbf13a1139ebad0ae411a0b9faf6e"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/side/rise_hands.png",
+    "sha256": "447d51c3e5f719652ee4e5ee568dfcf035c0141b579734712ae9f8641f9bb871"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/side/rise_hands.png.import",
+    "sha256": "484978e6378dbf442f8b183262e2b7a064bc29bd7fc866cbd431ad8ea3786d66"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/side/rise.tres",
+    "sha256": "51711552c0cf88bdff6bb203e308e740cd35091ad72bdf78e9b3de47a06edb5a"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/side/run_hands.png",
+    "sha256": "8df9360a66b70ab63774c276e57ed13b832c6d9083dd88cf9eb276ba8042a758"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/side/run_hands.png.import",
+    "sha256": "d1f697dd7d4b940c710cad0189ee963281749e973a03965c53e2922481d34de7"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/side/run.tres",
+    "sha256": "70879192e243586a9f21dd0d2a2ec59da74c9d99a7de39d2b399e68a84d4e2da"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/side/slam_body.png",
+    "sha256": "49e96d7c6ffe81aff2dee9122ad3e05f9b44d42991edae87d776c86411751fa1"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/side/slam_body.png.import",
+    "sha256": "226e175e0b68c8fda1cc2d14534c5f03cf17e45b67654a721aa56cc4522a8ba9"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/side/slam_hands.png",
+    "sha256": "bf7308fbf1b08d2238524bb43fbb603fa09e80cc4669ba45211226ec06b5a49d"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/side/slam_hands.png.import",
+    "sha256": "63e3c49acd6c1966e1eb1c0b8ff3811a33bb3a3ccab5bff2111a2b2a3c7d02df"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/side/slam.tres",
+    "sha256": "16789edfc24c2a570ec8087e1e5d3bee150e8848b1db69f9b5a85bb44d809350"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/side/spin_body.png",
+    "sha256": "68c1ac65c1e72e75dd11a95f3de12fd718829a052ef67dbab4d059eac055bfc5"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/side/spin_body.png.import",
+    "sha256": "5f40310c1b908795fa2fcb887d2fdd4a64f3f9fdeb302fc189653fbc9e716025"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/side/spin_hands.png",
+    "sha256": "06e183f87d74573d9bc86e8ea325e39e795752572ca6971974ccb92898261150"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/side/spin_hands.png.import",
+    "sha256": "5e2a5b9202996f202c9cc4bbc8def349507dc788c3f2e5afe95a8738cba6b044"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/side/spin.tres",
+    "sha256": "b074a151052f5fdfdadb1c842d36526246e0e146a5619f3fa05663a19b4f1a24"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/side/thrust_body.png",
+    "sha256": "bdaff868f469fbe60772c086871428f05237d94f7f9a6e4fea6b9cc9213862ce"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/side/thrust_body.png.import",
+    "sha256": "f02a6c8c2455eb31abc2fbcf612f172ea3e399426049d42c1fdf64f57781fc29"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/side/thrust_hands.png",
+    "sha256": "03686c07ec7e4dfa246b6326e500f8e2ae7d7aa3615acd6bc9dd800203a71d61"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/side/thrust_hands.png.import",
+    "sha256": "c257d1d5cb00bca309f20c66b8817ab58aa48fb8052d8012693adb2fb7260886"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/side/thrust.tres",
+    "sha256": "886dbaf5cb4003fdd3fd0c8689a5ed89c7e34d971b0a2450f78b80bafe69d7c0"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/up/chop_body.png",
+    "sha256": "f90968028cca17343d81bb05bc0c5680e59b72cc77e7c941af03d3d298fb3d65"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/up/chop_body.png.import",
+    "sha256": "81e0db04a51ab6879d86e6360122772329c40790e31c8bcbb0de582c48108e6f"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/up/chop_hands.png",
+    "sha256": "f1e27845945629f3b1bd00d22871878b27453494da58347d301572a07750c8a7"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/up/chop_hands.png.import",
+    "sha256": "179917655cc8041dceeda0501df91bc89958ae765cadeea3e18f82e2a29ae778"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/up/chop.tres",
+    "sha256": "9182605a44a9c08b049aa23ceadd29453b836c2d94dce817422e844fb04849c8"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/up/idle_hands.png",
+    "sha256": "97731d06f893135a322963fddbd3af2f656dda0df56787a00fa76f5877e83621"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/up/idle_hands.png.import",
+    "sha256": "52fc8c609e647b09d50815b0884d8fb314df4bf8c167c92e3e7152a8c7aaba9e"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/up/idle.tres",
+    "sha256": "296efaf0ab240d713ad0fee8c8bcb294ab0309cb51853e158e712c5f9b4f9b5d"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/up/rise_body.png",
+    "sha256": "0ea87ec5d158692083a8b7c6ca4b106ddf030446fa610ae114d282edaff4a1a7"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/up/rise_body.png.import",
+    "sha256": "9f4d9aac31c9bedd459ed7f98320db7a7f3cb67f3372458b91a881227b4f6cc0"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/up/rise_hands.png",
+    "sha256": "26620e2419843ac59d376c8c94f04c61c2e57295b12f1fb363912064c9a4f3cc"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/up/rise_hands.png.import",
+    "sha256": "43ee8c5876b6d11268b374ffceb94a5f7305d91708cb6ee6fca417ce33a737e6"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/up/rise.tres",
+    "sha256": "1b0d8be25cbdc641b354e75f01448edd76c281a717b3968cea22a47e167c3d8d"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/up/run_hands.png",
+    "sha256": "8df9360a66b70ab63774c276e57ed13b832c6d9083dd88cf9eb276ba8042a758"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/up/run_hands.png.import",
+    "sha256": "2b27f9d753fa9908452025fecffc5588eaa8c64e70c4d7a9d2127fad869130d9"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/up/run.tres",
+    "sha256": "671b534282553c00fe2403d2d25e4d5bd56e94e6d6914c1b63833729512aff7a"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/up/slam_body.png",
+    "sha256": "4659295a898e24d0fa49eab0204ff79cdb84f9a064c8330c48fb59a82d182ca5"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/up/slam_body.png.import",
+    "sha256": "145e73ce6fe1dd33273032750841919b12feee619fee0ce2b9d5ea2f94ec580a"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/up/slam_hands.png",
+    "sha256": "07efb4e3f396282e75f7327f8950f6f03c4f3be068d9e40b727ae0b3b8df9582"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/up/slam_hands.png.import",
+    "sha256": "99fdda46ddc79d09443b33625dfaeff700f3980073d5f79e9fc2f9b82f3358f2"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/up/slam.tres",
+    "sha256": "f13dd94ea1c556ea9288bdd10f50bc96038a589798796c15e0f795488688c9c0"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/up/spin_body.png",
+    "sha256": "94293a55c70b62ab7a835676df5b1213e64aaf7f4bf1a23c39751edb0ddbda56"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/up/spin_body.png.import",
+    "sha256": "0eb49878b5183d5e8ec4469558ee90c09de6dac2cb1571306c276a12f180a917"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/up/spin_hands.png",
+    "sha256": "ee0c2fa3fb66793ece954803f948dbb757a485219f706abb93412d5b67c27669"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/up/spin_hands.png.import",
+    "sha256": "223de8093175b85ad3ca39b72b5432b67cf57b3092c78f02fa0e7550a5bebfce"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/up/spin.tres",
+    "sha256": "72a5d5197561efcd42d49f536bcf30433541bdc4a77cfafe8a82dca7ef7d8855"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/up/thrust_body.png",
+    "sha256": "326c237bdd3a0d3fa83eeaf077b19c49ced893f2484151fcb72d9095eb85680a"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/up/thrust_body.png.import",
+    "sha256": "8e9a5debfac6411502b81ae567e96d711eb0a6ec7271aeeb921b31e172e9d158"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/up/thrust_hands.png",
+    "sha256": "4ef4709e41e1c1216375118e371df40ba94b1a712017f3de8d44f5b218a8ee3d"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/up/thrust_hands.png.import",
+    "sha256": "26dec23c02f15f495a2c5b6e92f4b9ef39aa7dd2722bce8e7de58fa06c03f54a"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/axe/up/thrust.tres",
+    "sha256": "afe8f7deeef36cd650794f7b7652698b166437761097a7c1bfac64c05daf3043"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/walk_registration.json",
+    "sha256": "b3062a19ed8b137e88c13460da8757427a4bb374b1cb5b047ed2c07396d463c8"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/down/cross_finish_body.png",
+    "sha256": "5c46f0f8e358f9d447cf947ff5268ca7f5e12cf2eeb481bd62f696107da151ee"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/down/cross_finish_body.png.import",
+    "sha256": "b3b59adaf6e0e8c5f83c9a167221d4fdab652773b9ce5a02bb432c947182dd75"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/down/cross_finish_hands.png",
+    "sha256": "4f0a9db812eeb465b4fce6889a305ce6a71aba4f75078a910755f54c882e5ed9"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/down/cross_finish_hands.png.import",
+    "sha256": "3f3a376955c455e43f73cefdd5476ba3488385442f02f4063b92ac5eeaca5402"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/down/cross_finish.tres",
+    "sha256": "6fcff99131ee140eb731932a834bc074ac92afda31a3b3adca3765644cce0e3d"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/down/diagonal_body.png",
+    "sha256": "cb598cb467ef6f762182922f9357fb7d70026373d2fca4bf6773da41c9a172cc"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/down/diagonal_body.png.import",
+    "sha256": "9c319ae3740029a59541b09de705242115fcf249e5adaf9714b383c152fc52c2"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/down/diagonal_hands.png",
+    "sha256": "4f0a9db812eeb465b4fce6889a305ce6a71aba4f75078a910755f54c882e5ed9"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/down/diagonal_hands.png.import",
+    "sha256": "ee6d56f93e84a63da7644ff9699a22ccb21d0ccb18c7d4a44d05de47c8658fb3"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/down/diagonal.tres",
+    "sha256": "81f712ba403675acc444882321ec46c9efa6158b4c66386bd5431cef727267af"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/down/hop_spin_body.png",
+    "sha256": "419071e0da9c24a6abf73e43a6ddae5925f122d193c781deb500da60d7e01fe4"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/down/hop_spin_body.png.import",
+    "sha256": "d8183b372ab5de9c2f504dad7a19f953183a7891d24f22c71e791669255158e9"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/down/hop_spin_hands.png",
+    "sha256": "4f0a9db812eeb465b4fce6889a305ce6a71aba4f75078a910755f54c882e5ed9"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/down/hop_spin_hands.png.import",
+    "sha256": "8d3a98b0b8b4b6f2d272b74f7514e22df190ec589b696a93cbaf9e3296e58d49"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/down/hop_spin.tres",
+    "sha256": "0ba90bac0089b064601204c148b4aa5421181635aa24acc883b6657bd1cc3052"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/down/idle_hands.png",
+    "sha256": "f799df813e1300c3d885b9fdcd29a84eee3f6454c212100fe161c003ce20f0a8"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/down/idle_hands.png.import",
+    "sha256": "218dc95a3f8d20a66f09d7efc2742f66a93a358dc7b0cd3e4feec0dccdea6bcd"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/down/idle.tres",
+    "sha256": "e90ce8f9ae57f7ec8713a91127bfd1ef74a7fa62f403b50c1fd9d066028bb053"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/down/return_body.png",
+    "sha256": "c93bf955f38d423979d289439c4adda9640c499bcff9c0bd77d02a8f8bbd52ce"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/down/return_body.png.import",
+    "sha256": "fede73b7c38e2d22d0a5a54b49e6b1ce914eab19ea70e8458f3da37170319a3d"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/down/return_hands.png",
+    "sha256": "4f0a9db812eeb465b4fce6889a305ce6a71aba4f75078a910755f54c882e5ed9"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/down/return_hands.png.import",
+    "sha256": "b1231b0832b3e30756a39d86ef73e7fbd12276cd283e20ab3412c5da37ef65b6"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/down/return.tres",
+    "sha256": "20036545a0108e4912b97f0300ed26c2f1d922ba28bc465adb25fc195f0e7857"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/down/rising_cross_body.png",
+    "sha256": "c8f770a8f3b2f1675ea77b6f32073443c0f96656625553150aa87de0a36a2e4a"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/down/rising_cross_body.png.import",
+    "sha256": "20179b940487aaab4659d4df15bfec6258ecf6ed46154172de8d5e30664272a2"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/down/rising_cross_hands.png",
+    "sha256": "4f0a9db812eeb465b4fce6889a305ce6a71aba4f75078a910755f54c882e5ed9"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/down/rising_cross_hands.png.import",
+    "sha256": "bb83718f55a9be86af46b7c2c310197642c5bd5f5a4cb8d8d279e1ea77ce2a79"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/down/rising_cross.tres",
+    "sha256": "20aa3155be1975a5a8e5c228447e12bf009828a71b81b9aa6e8e30a4aa27c0f3"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/down/run_body.png",
+    "sha256": "c7bff0b9e3a8800a223e7e9ff40adfa3487a06fab946089db845a4ed519a7e8b"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/down/run_body.png.import",
+    "sha256": "c71674a9875631b6a27df6ac25aed9c80446ca5c7b20e7cfd5b466f77b0ec64a"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/down/run_hands.png",
+    "sha256": "8df9360a66b70ab63774c276e57ed13b832c6d9083dd88cf9eb276ba8042a758"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/down/run_hands.png.import",
+    "sha256": "5a656ff80ff1f5668ff4de832eea819f13f3f554f25ae90a9866df64f8c7f106"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/down/run.tres",
+    "sha256": "c31d6cbd59004fad3d1815e433ba3e455e9c41a4fb76c75972af1af78f0f4e12"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/side/cross_finish_body.png",
+    "sha256": "456a67991203cd66c89580698666eb62c20dc8ea5e3e1ab5e6baa2e837e6d28b"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/side/cross_finish_body.png.import",
+    "sha256": "62c295bed442ff15c6999b11e73d9895fb31ee1bf54e57a4a8bb52167e114e39"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/side/cross_finish_hands.png",
+    "sha256": "341a685609224b9db56e67562034decfae975ed28230e22d217d7367f5b1f4a3"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/side/cross_finish_hands.png.import",
+    "sha256": "13f480e4748c0e283e7cb8be29618dfa8a9a4ba8fdf1c7576be88189504d4e57"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/side/cross_finish.tres",
+    "sha256": "3a24dbb2252997d987e200f66246048c36be571f37248a1d15806905564e674e"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/side/diagonal_body.png",
+    "sha256": "0cc1259b6c36f1320ec76654e322e58988991870b92c89baaac8df5cdc2aeffa"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/side/diagonal_body.png.import",
+    "sha256": "3ab96f8fa150ec9eb2229249029da4f08820f2719ee31df0bddb972d12d74eca"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/side/diagonal_hands.png",
+    "sha256": "341a685609224b9db56e67562034decfae975ed28230e22d217d7367f5b1f4a3"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/side/diagonal_hands.png.import",
+    "sha256": "fd42a7bcfccc1ccf0f100d09c242ba312ad506605441c8a0cc29dea16d46361d"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/side/diagonal.tres",
+    "sha256": "e182c44a147c26346f4fe09b581357ad38f1fc72d2b2d96e38b56daec9707132"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/side/hop_spin_body.png",
+    "sha256": "b3901329bd173f7ae230a7fabef001cc03862167ecec8b4e83a70d5918a8d591"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/side/hop_spin_body.png.import",
+    "sha256": "7ddd7cd9c072a45456c2155f50553a1e876f42b489bd25ab64bee1bde6886c3c"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/side/hop_spin_hands.png",
+    "sha256": "341a685609224b9db56e67562034decfae975ed28230e22d217d7367f5b1f4a3"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/side/hop_spin_hands.png.import",
+    "sha256": "4560168a5fc369107a7e09c4310088967e11d48b0eeaabcf907e7f9b5e3f4972"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/side/hop_spin.tres",
+    "sha256": "f172cf9188465225aa0d27d23cf5dd62cbb16a34c11cbdd76a4d547752d7abc7"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/side/idle_hands.png",
+    "sha256": "af1dc0e0294ecf04f0a1b5cab626755438b653f78fb6e7b5c6053cccaef67d8c"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/side/idle_hands.png.import",
+    "sha256": "f9839dd2c08c4deca8088588581eca33debcfaa61c3c5e43e94423775d92dd48"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/side/idle.tres",
+    "sha256": "bcfac174eee4711be9feddfc8142aa189a244fd3bdf725b438e504773ba8c314"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/side/return_body.png",
+    "sha256": "e920f4ba3c57eb4589d72d1e9f2255bc742001d0994da9caf54504daf4d00d6d"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/side/return_body.png.import",
+    "sha256": "7ab65400c7e96ad7dca7f0f89fd6776b20a4e3f5d46143dd4d461032c2cfee79"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/side/return_hands.png",
+    "sha256": "341a685609224b9db56e67562034decfae975ed28230e22d217d7367f5b1f4a3"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/side/return_hands.png.import",
+    "sha256": "1695198cf89334afb6be97e57424b7af483b6bc773d12c4ada22480c0766a119"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/side/return.tres",
+    "sha256": "5315bd8d512354efea4d0fc25f080333851165db96d5ecc63d434e1a89e253b9"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/side/rising_cross_body.png",
+    "sha256": "ecfc736489f279c098f95297b228816bb4f921afbe78e0490ec1f54df9aa08bd"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/side/rising_cross_body.png.import",
+    "sha256": "372e575eaae13983d882d6989f28e374b90c5c0b8c4845068c222b9374e768be"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/side/rising_cross_hands.png",
+    "sha256": "341a685609224b9db56e67562034decfae975ed28230e22d217d7367f5b1f4a3"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/side/rising_cross_hands.png.import",
+    "sha256": "a5311bb0e5b3e85c5859a39a8ed08c1f3fd65bcee786f8dbd2d621e8ad5d765e"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/side/rising_cross.tres",
+    "sha256": "984b9a55af97f19a742279a2c0a7b23aa71e5fba801eea023999537adc703d01"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/side/run_body.png",
+    "sha256": "5de67e729b37acfc99df5bc41d4fd505f4e161878f7eccd97935189a4ac24071"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/side/run_body.png.import",
+    "sha256": "7904d8e88fda0a5d1075781fc493b04ed13052fc3031ff1acd7eb1127eba9f43"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/side/run_hands.png",
+    "sha256": "8df9360a66b70ab63774c276e57ed13b832c6d9083dd88cf9eb276ba8042a758"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/side/run_hands.png.import",
+    "sha256": "5458898a873190ea3f72e3d42cb7b49d1d7ba8bad2e2336b1e80f155ed53263e"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/side/run.tres",
+    "sha256": "c1ab377c35389e5bf99f72918cfc5f542f2bb5e5297406284704b3a611b6d17c"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/up/cross_finish_body.png",
+    "sha256": "9a3e4cd98f5da9a7f60cd5a281b024a6ebde5db57dda265ea6a9d9d76056c514"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/up/cross_finish_body.png.import",
+    "sha256": "dfb1f24313ccca89e57be5bda2f64934d4ed3511a0e5042d473b1e337bb7d14d"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/up/cross_finish_hands.png",
+    "sha256": "ba8791f33384e2685a5e046d5c2f53562715b75cf3f14c30f81eb64091de7d7c"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/up/cross_finish_hands.png.import",
+    "sha256": "3d0baab2ce5acc025b156b211b1092a3e355042f39abba74f23f1324ac450d9d"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/up/cross_finish.tres",
+    "sha256": "6f0308733f523d259a370b0d93f73e068c4715b3585b609c4b8507ad8b62fdaa"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/up/diagonal_body.png",
+    "sha256": "43fd62b0ae57d13a289d8608c78fac1772b257fb70f1ae84cd5b87f84127cab8"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/up/diagonal_body.png.import",
+    "sha256": "05e9709565e550b80ad9ac2325bbedc08d161a1656da1368e756623db7dd9334"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/up/diagonal_hands.png",
+    "sha256": "ba8791f33384e2685a5e046d5c2f53562715b75cf3f14c30f81eb64091de7d7c"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/up/diagonal_hands.png.import",
+    "sha256": "945649c3d6633142c54b2e12fdfe009ebb5cdbbe7bae70c21e334046d0a18340"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/up/diagonal.tres",
+    "sha256": "09d8c9c2a0b025af3c61497bc2c022286d98e6bfc7aab01fbb90c22496414ec0"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/up/hop_spin_body.png",
+    "sha256": "978eb52f67a403917e30c334cd4399222c83eeeccc0cf29f7d6a28312f829b6c"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/up/hop_spin_body.png.import",
+    "sha256": "854bf402c78978adc03c95f7922ae81ce84239a03995413efee9954bb26b7e41"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/up/hop_spin_hands.png",
+    "sha256": "ba8791f33384e2685a5e046d5c2f53562715b75cf3f14c30f81eb64091de7d7c"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/up/hop_spin_hands.png.import",
+    "sha256": "5a6a9f384acbc8f687575aee7847a75d8d3ae6096c27058cfb1ea5be6cf380f1"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/up/hop_spin.tres",
+    "sha256": "fce123c11e7eef134ad6afcc2b4d3b8d4b19103cb34049898e891a241436a628"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/up/idle_hands.png",
+    "sha256": "b06252210949ce2860d550e1f7501c5ad52548b9dbf790f7dfe5029ab4b24c38"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/up/idle_hands.png.import",
+    "sha256": "19c9542d775d3ad538d5dd3aa1f1294436d064793ca6f9dcdded9bb0cda56b7a"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/up/idle.tres",
+    "sha256": "ab6ff3298f4930bb59a22e1747efecc204ac19b3e85089b136b27a15b4767161"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/up/return_body.png",
+    "sha256": "f20ca6875472bf29256c12019a49a355b44a1792826dc74b44c2c47a64def979"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/up/return_body.png.import",
+    "sha256": "9cf991e04b9fdc444152c470bf44339cee51797e00e748d89119042cad37ac24"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/up/return_hands.png",
+    "sha256": "ba8791f33384e2685a5e046d5c2f53562715b75cf3f14c30f81eb64091de7d7c"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/up/return_hands.png.import",
+    "sha256": "f8eec4264fe9b40b69c8263f860ddec323b44e3090ce663449819ea3bc536c28"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/up/return.tres",
+    "sha256": "1dbba5e46b93f85617edad4b8cf2d6cfce133509da5853fc2d3fbf69ef2d9211"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/up/rising_cross_body.png",
+    "sha256": "796c3df9b1a715d920f0cfa76b813e48d67303b2acc932cde7875702e2fa2fe4"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/up/rising_cross_body.png.import",
+    "sha256": "680abd77c034634dfe63a8e7ac0e29b71664c498261e8c670be4d594a90c8c24"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/up/rising_cross_hands.png",
+    "sha256": "ba8791f33384e2685a5e046d5c2f53562715b75cf3f14c30f81eb64091de7d7c"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/up/rising_cross_hands.png.import",
+    "sha256": "ddabe359e92f6c8d6cb55db5186dc51d78f97f648d2251e0703239322daacae9"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/up/rising_cross.tres",
+    "sha256": "9e8df283c05f25eb12e4aec00d68b16d09d5732cb12f5c9613c397bc0536f901"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/up/run_body.png",
+    "sha256": "23f0cad329ebe76570b56bfd6fbdeb9b9444d1d4d81ed5509005cfa11a11e684"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/up/run_body.png.import",
+    "sha256": "1b5ba4f64a44ec3527d33412880034ef6d54cd244dc3f2237179ebedb8ecc095"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/up/run_hands.png",
+    "sha256": "8df9360a66b70ab63774c276e57ed13b832c6d9083dd88cf9eb276ba8042a758"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/up/run_hands.png.import",
+    "sha256": "b995258ce5099ec1bcc8167f6075d4e20995b845a7231c423f43e5d95804afd5"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/dual_carry_v3/up/run.tres",
+    "sha256": "701d5c4eb1169cf3e3751e314f6447e75172eeb95edef72af528b9cd28a1e88b"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/sword/down_idle.png",
+    "sha256": "05332fa58f3fee0b42cb649c2efe7df17cafd085e8231c82c28e1814d13d0459"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/sword/down_idle.png.import",
+    "sha256": "2db6f96db63cc87c452de5025cc50f9d67ee0caf963e52986dc819431938d02e"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/sword/down_walk.png",
+    "sha256": "b28751eefef0fdad27d0ce350175fa3f408dc0b1a0e4d9067a10058e6f18c660"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/sword/down_walk.png.import",
+    "sha256": "db213be6aaa1ebdef6cd135b49bf8f88a985dd6152db789473e5ce8e89c83c70"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/sword/frames.tres",
+    "sha256": "869d24f025370c604bcfe567da4583977d708684b8a7fa6fa4bc1177761f2d8c"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/sword/left_idle.png",
+    "sha256": "d2fb8d22dadc103c71fc46b4947f2e2b1f1bbe9aa9b01b38711782087159e54e"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/sword/left_idle.png.import",
+    "sha256": "e2a51f88faf0c22aa7f9be1052a34efa4ce08ff71a4f9636830b8ba12acf2d8b"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/sword/left_walk.png",
+    "sha256": "c84db84b36d4dcbd6a6486e4a8d6e77851c889c458bd419d2d62890d58168d03"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/sword/left_walk.png.import",
+    "sha256": "93159c0e7a15b1a6cfa31d14af5e1ae933e00d4a865cc338972862cdd288b24b"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/sword/side_idle.png",
+    "sha256": "80ca8544fb08aeebdcae996eb8bad7dc982889e4c99fe351d937c3265dd6465f"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/sword/side_idle.png.import",
+    "sha256": "d90de9d9f3ce1ea3906324fb534f7e280ec336f7845e1244f886cc3f8ba5c6f0"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/sword/side_walk.png",
+    "sha256": "6ce05dc69c6e09b80e6fad05db82e5db8fe976a4caf6cbe55ee2f8971e861334"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/sword/side_walk.png.import",
+    "sha256": "7e4de03057a954d03e6304d2ea799b268656c92de6dd6c56ec4fdddc16f10769"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/sword/up_idle.png",
+    "sha256": "e088eab88ef6073841b29ffc615f579425d6832e2b06888be6eee6db59ebb6d5"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/sword/up_idle.png.import",
+    "sha256": "61f1179db13eb3de290e8f30a122ff91a4d1f8d2035486b810d7737d9ba63003"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/sword/up_walk.png",
+    "sha256": "f930a8c2d1b3ef94c992fd7bbb4cd74921a3682333f57309f37cf8abde42076b"
+  },
+  {
+    "path": "assets/characters/playable/king/shared_bodies/sword/up_walk.png.import",
+    "sha256": "ade9ebed333f68009be361d49e1ca9aa29cb797ffd198a64b348d035c9cdcd39"
+  },
+  {
+    "path": "assets/characters/playable/king/spellward/attack.png",
+    "sha256": "c87688e853f80a90dbc8730a8f76296b94d56cbedf038f1f761b6c2c3ecd7c3e"
+  },
+  {
+    "path": "assets/characters/playable/king/spellward/attack.png.import",
+    "sha256": "a6fa63bbf4d6a65abaf60bdd357df275730bde793197282e68b7ce4f184cf609"
+  },
+  {
+    "path": "assets/characters/playable/king/spellward/dash.png",
+    "sha256": "9b32aa011494357a6d2c94e85c6007f870cd96114797a378279a5d8f70e81d1a"
+  },
+  {
+    "path": "assets/characters/playable/king/spellward/dash.png.import",
+    "sha256": "01e4a4ca42c724f4dd43f15f8f6cd0fe3b7117920c69f9600578ff6b75b8ff9f"
+  },
+  {
+    "path": "assets/characters/playable/king/spellward/defeat.png",
+    "sha256": "6395f5003a202ac8df8d34bacc19d6fe658b15263444aa86a9c8c29faba7727a"
+  },
+  {
+    "path": "assets/characters/playable/king/spellward/defeat.png.import",
+    "sha256": "c9e8f744c8aa1f3b6d5b4d6bc2502318a2b3a231736aef2fbec0ca6f560e29e7"
+  },
+  {
+    "path": "assets/characters/playable/king/spellward/heavy_cleave.png",
+    "sha256": "37bcb43df97f0d6bae4de16cb26c7c8c7d5f29636b86e72c2c5dfae64b377e13"
+  },
+  {
+    "path": "assets/characters/playable/king/spellward/heavy_cleave.png.import",
+    "sha256": "88346b254b9d1af17ba3100a27c9dc1e741c67de9bd482e5a302f935cf8cfdac"
+  },
+  {
+    "path": "assets/characters/playable/king/spellward/hurt.png",
+    "sha256": "05e0d084d75f3f3c411f66300199504fd1dfc91b641e0d692521fb266495cec8"
+  },
+  {
+    "path": "assets/characters/playable/king/spellward/hurt.png.import",
+    "sha256": "f9054852eed8e6c9d5d1d0ec4ba58d4426cfaa023f5ca1495bde1b301fb9b5df"
+  },
+  {
+    "path": "assets/characters/playable/king/spellward/idle.png",
+    "sha256": "fc8ab4f08107dc78bc304035e2186f025871cf4f7a4d6c06c718f627d66453c3"
+  },
+  {
+    "path": "assets/characters/playable/king/spellward/idle.png.import",
+    "sha256": "d4ac040ddc95f026340f902ef9f30373fe54c3f763ea1a9b19cf9c3411811cce"
+  },
+  {
+    "path": "assets/characters/playable/king/spellward/interact.png",
+    "sha256": "fc8ab4f08107dc78bc304035e2186f025871cf4f7a4d6c06c718f627d66453c3"
+  },
+  {
+    "path": "assets/characters/playable/king/spellward/interact.png.import",
+    "sha256": "d2807ecf4f3b35173f2baf6787975b63b54ddc53f3b8858f6dd026b1d1cadcbb"
+  },
+  {
+    "path": "assets/characters/playable/king/spellward/return_cut.png",
+    "sha256": "45915d0335637cacae3f27e80305fb19de3a7a183ea173e3cf61330025b5dd1e"
+  },
+  {
+    "path": "assets/characters/playable/king/spellward/return_cut.png.import",
+    "sha256": "ef21782c08bdcacc2292a147e7043f996eb35f64c8d12b7e8db3c5ace4680c2f"
+  },
+  {
+    "path": "assets/characters/playable/king/spellward/spellward_frames.tres",
+    "sha256": "d823dc5d406c69b6b66e1f594311685332b96e0f9ceb05f79e184bc90ab89268"
+  },
+  {
+    "path": "assets/characters/playable/king/spellward/stagger.png",
+    "sha256": "66b2c56dd1b779f5df53d96fc6c25401e0ee158af82cc4cf9fa5a5ed282984c5"
+  },
+  {
+    "path": "assets/characters/playable/king/spellward/stagger.png.import",
+    "sha256": "2cadd9563281566de938638cb550edf6216e64f5ee43f9fbf2c6052fc8b4312e"
+  },
+  {
+    "path": "assets/characters/playable/king/spellward/walk_side.png",
+    "sha256": "626747b0c73e2d6d4435fcc4a4dfcf50beb3fcee327f85b99023c3c62edf6486"
+  },
+  {
+    "path": "assets/characters/playable/king/spellward/walk_side.png.import",
+    "sha256": "3448c16e505078eb7ab6fae3b5d75ff7b4dda417887b308a96bed5a74099e901"
+  },
+  {
+    "path": "assets/characters/playable/king/spellward/walk.png",
+    "sha256": "77aaade862d9fed24a59d2f102fe17328b877539414245ebad09972cc9b75b42"
+  },
+  {
+    "path": "assets/characters/playable/king/spellward/walk.png.import",
+    "sha256": "b3a6bdef88e3568711e9b33a696890dfb97bbdd1365102f360bbd1a4726878ed"
+  }
+]

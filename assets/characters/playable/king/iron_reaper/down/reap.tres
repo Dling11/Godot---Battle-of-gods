@@ -1,0 +1,38 @@
+[gd_resource type="Resource" load_steps=5 format=3]
+[ext_resource type="Script" path="res://data/weapons/weapon_family_pose_definition.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/characters/playable/king/iron_reaper/down/reap_body.png" id="2"]
+[ext_resource type="Texture2D" path="res://assets/characters/playable/king/iron_reaper/down/../attack_hands.png" id="3"]
+[ext_resource type="Texture2D" path="res://assets/characters/playable/king/iron_reaper/down/../rigid_weapon.png" id="4"]
+[resource]
+script = ExtResource("1")
+body_atlas = ExtResource("2")
+hand_atlas = ExtResource("3")
+weapon_texture = ExtResource("4")
+cell_size = Vector2i(256, 256)
+columns = 4
+pose_count = 13
+pose_order = PackedInt32Array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12)
+primary_hands = PackedVector2Array(135.0, 129.0, 124.0, 138.0, 121.0, 126.0, 127.0, 112.0, 126.0, 120.0, 146.0, 152.0, 139.0, 157.0, 155.0, 156.0, 139.0, 136.0, 135.0, 129.0, 135.0, 129.0, 155.0, 156.0, 139.0, 136.0)
+secondary_hands = PackedVector2Array(135.0, 117.0, 136.0, 138.0, 126.071418762207, 115.124305725098, 128.045867919922, 100.04566192627, 133.713455200195, 110.807464599609, 148.083786010742, 163.817687988281, 129.807464599609, 164.713455200195, 143.262222290039, 158.494934082031, 133.0, 146.392303466797, 145.875686645508, 123.928581237793, 135.0, 117.0, 143.262222290039, 158.494934082031, 133.0, 146.392303466797)
+weapon_primary_grip = Vector2(40, 112)
+weapon_handle_axis = Vector2(0, -1)
+weapon_tip = Vector2(90, 82)
+mirror_cutting_edge = false
+lift_pixels = PackedFloat32Array(0.0, 0.0, -3.0, -15.0, -22.0, -7.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0)
+weapon_behind_body = PackedByteArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
+primary_visible_poses = PackedByteArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
+stowed_poses = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+released_poses = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+ground_clipped_poses = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+single_hand_poses = PackedByteArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
+phase_windows = PackedVector2Array(0, 3, 4, 6, 7, 10)
+queued_recovery_window = Vector2(11, 12)
+pose_weights = PackedFloat32Array(0.3, 0.4, 1.0, 1.8, 0.4, 0.55, 1.45, 1.3, 0.9, 0.5, 0.3, 1.25, 0.75)
+allow_rest = false
+rest_start_pose = 1
+rest_transition_end_pose = 4
+rest_transition_seconds = 1.1
+rest_loop_window = Vector2(5, 7)
+rest_loop_seconds = 3.6
+retrieval_end_pose = 0
+interpolate_blade_angles = true

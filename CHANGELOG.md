@@ -1,5 +1,59 @@
 # Changelog
 
+## 2026-10-14 — Quiet scythe spin and consistent bottom-facing gloves
+
+Keep the owner-approved seven cut/contact recordings exact. Add one quiet looping flight voice from retained CC0 swishes and a faint late metal rustle; use attack-speed pitch, a short positional fade envelope and owner-lifetime cleanup. Restore brown gloves in the bottom-facing open release and overhead reap through generated color reference and bounded source masks.96 original hand-color pixels change; all silhouettes, other body/pose/run/idle art, timings and rules remain exact. Source/prompt/material and audio manifests are retained; focused results are in CONTINUE_WEAPONS.md.
+
+
+## 2026-10-14 — Quicker scythe, eight-frame white cuts and recorded sound
+
+The owner accepts centering/full-stroke correction and requests more speed/white frames/better sound. Shorten Iron Reaper from3.12s to2.59s, retaining its stationary throw pause and all body/run/idle/steel art. Generate24 new white/ivory raster frames with exact prompt/source/packing provenance; fit all8 per row into actual contact space without clipping. Add optional family-owned air-stream data, dedicated scythe cut/throw/reap recordings and separate dry/final accepted contacts from credited CC0 packs. Other families retain previous streams/gain. Update Bag cadence/DPS automatically from combat data and record three explicitly authorized preservation-hash changes. Decision209 owns current rules/source contracts.
+
+Production1635, native gameplay545, grounding281 (160 samples, peak1.36px), motion160, returning242, held46, legacy weapon/audio/Bag301, real-enemy347 and native capture14 checks pass;921 resources load. All96 ribbon/view renders have zero painted clipping/opaque overflow, and16 native checks verify family-owned air playback.40 current actor/pose/run/idle/steel/icon/flight-FX files and532 other King assets remain exact. Existing fixture teardown warnings remain separate. Quicker feel/live mix, campaign balance/acquisition and target-device profiling remain open.
+
+## 2026-10-14 — Complete scythe swing ribbons and centered stances
+
+Fix runtime white-stroke clipping with stable row/view layouts fitted inside the actual contact polygons, including the existing collision-pivot offset. Preserve the white source frames and retain the mask as a guard. Register complete attack actors from their stance support midpoint, limit extra effort translation and keep jump lift separate. Preserve all approved anatomy pixels, running/idle, the ground circle, gameplay and other families. Decision208 records source support projections and fit provenance.
+
+Production1634, grounding281 (160 directional samples, peak1.36 world pixels), native gameplay337, motion160, returning250 and native capture14 checks pass;917 resources load. All48 white frame/view comparisons have zero painted clipping and zero opaque overflow. Existing fixture teardown warnings remain separate; owner visual review remains open.
+
+## 2026-10-14 — Iron Reaper swing weight and catch continuity
+
+The owner accepts the scythe's appearance and requests stronger motion. Replace folded/static shaft directions with authored high-to-low sweep and rising return arcs in every view. Add whole-cel anticipation, forward commitment, overshoot and recoil while preserving every approved anatomy pixel. Reweight pose exposures inside unchanged phase clocks; strengthen the final reap's load/jump/landing. Align released steel to the launch/catch hands and accelerate/brake its spin. Keep running, simple idle, fixed steel, combat authority, timing, damage, reach, collision steps, FX and other families unchanged. Decision207 records the motion recipe and review boundary.
+
+Production1512, motion160, native gameplay181, returning250, held46, idle28 and native capture14 checks pass. Existing fixture teardown warnings remain separate; owner judgement of motion and target-device profiling remain open.
+
+## 2026-10-14 — Iron Reaper action identity and upward idle toss
+
+Keep owner-approved running in every direction exact. Generate120 fresh complete attack/idle poses matching that running appearance; use its exact palette, whole-board head/collar calibration and unchanged rigid scythe in all actions. Replace the floating side orbit with one small upward toss/catch, then quiet carry. Correct tween ordering so pose updates cannot overwrite airborne steel. Preserve13 running/steel/FX/rule hashes and532 previous King assets; explicitly supersede the old90-action guard. Update current docs and source/prompt provenance in Decision206.
+
+Production1152, idle28, native gameplay181, returning250, held-input46 and native capture14 checks pass;913 resources load. Capture all four runs/idles/combos from native Godot. Existing54-instance gameplay-fixture teardown warning remains tracked separately. New attacks/idle await owner review; balance and target-device performance were not retuned or re-profiled by this art pass.
+
+## 2026-10-14 — Returning scythe, straight carry and larger white arcs
+
+Replace rejected Iron Reaper run/idle/local-spin with72 newly generated complete bodies and one fixed straight steel sprite. Improve alternating boot contact/passing poses without cropped anatomy or per-frame size changes. Preserve90 accepted other action cels and532 prior King assets. Third cut winds back, throws, pauses while spinning with generated circular trails/ground sparks, recalls and catches one-handed. Entire0.96s flight/linger and surrounding combo scale with attack speed. Swept authority accepts65% outward/35% return damage once per target per leg, respects outbound walls and cleans up on interruption/scene exit. Basic dodge/skill recovery buffering remains. Larger generated white sweeps match130/136px fans. Update Bag totals/cut labels and current docs; retire local-spin clips, old effect row and obsolete intermediate production bake.
+
+Decision205 records rules/source contracts; source prompts and recipe are retained. Production rebuild1382 checks passes, including fixed shaft/whole-body gutters and preservation. Returning four-direction/two-speed/linger/damage/wall/catch checks,15 specialty,46 held-input,181 native gameplay,301 legacy weapon/audio/Bag and347 real-enemy assertions pass;911 project resources load. Eight-moving-enemy samples:40 contacts and4 cues per chain, first/repeat p95≈14.35/14.19ms on this warm AMD Compatibility desktop. New running/idle/throw still require owner visual judgement; campaign acquisition/balance and phone/cold/large-horde profiling remain open. Existing54-instance fixture teardown warning is tracked separately.
+
+
+## 2026-10-14 — Playable oversized Iron Reaper
+
+Finish the owner-accepted oversized scythe as normal catalog/Bag/Combat Lab equipment. Retain accepted side sources and generate64 complete vertical action poses plus48 full running/idle poses;144 source actors total, exact LEFT mirror, neutral16-frame ribbons and full scythe icon. Calibrate whole-board anatomy, preserve world foot origin with256×256 cells/sole158/half scale, trim unused padding and share two empty overlays. Configure dry cut contacts and a stronger final-hit cue. Add data-owned per-cut Light hook and wounded-target reap rules, preserving skills, previous weapon art and earned-acquisition boundaries. Native testing finds/fixes blocked-impulse rebound and discrete-tick pull overshoot. Soft contact masks keep white effects inside real hit shapes; actual game review launcher replaces the standalone preview as the play entry.
+
+Verification:1216 baker/preservation (532 previous King assets exact),15 contact rules,131 headless/185 native gameplay,46 held-input,301 native legacy-weapon/audio/Bag,39 retirement/catalog/50 typed-damage and enemy regressions,1553 five-family comparisons plus final297 scythe assertions,905 resources.14 capture assertions and537 native rendered frames produce four in-game GIFs. Runtime family1.48MiB; new source28.05MiB excluded from game packaging. Warm desktop moving-eight-Rootling p95≈14.3/14.4ms; phone/cold/large-horde certification and campaign acquisition/balance remain future work. Existing fixture teardown warnings stay separately tracked. Decision204 and complete handoff/rules/source provenance are recorded.
+
+## 2026-10-14 — Oversized Iron Reaper study and specialty proposal
+
+The owner likes the original detail and asks for a much larger scythe. Generate a separate32-pose complete actor/oversized polearm set; keep the four-cut motion and proposed clock. Regenerate clipped tips and source overlaps, use two-column spin/reap sheets, clean shared matte fringe, trace whole-standing calibration and publish padded352×288 cells/sole216. Generalize the current offline builder/viewer rather than clone them; fix old-sole metadata shifting the actor downward, validate complete builds before enabling a variant and add V original/oversized comparison at matched3× review scale. Preserve the original scythe art and current playable families. Document Hook and Reap as a proposed crowd-control specialty only.
+
+Verification:752 build/calibration/gutter/preservation checks;52 controls for each variant;209 native frames cover all32 poses in both directions;875 project resources load. Five enlarged atlases rebuild byte-identically, all532 current King assets and ten original scythe source/preview files remain exact. Selected new source6.44MiB and captures stay outside lightweight playable packaging. Owner size/motion judgment, scythe combat/pulls/finisher bonuses/cardinal/equipment/audio/acquisition remain pending.
+
+## 2026-10-14 — Iron Reaper side combo preview
+
+Recover the owner's exact selected concept and generate32 complete two-handed King/scythe poses across broad sweep, return hook, turning cut and finishing reap; LEFT mirrors RIGHT. Generate16 neutral white effect frames. Register complete actor components across uneven source grids, fixed standing-head density, traced boot soles and padded preview cells. Add reproducible offline builder, standalone non-saving native viewer with pause/step/cut/effect/half-speed controls and portable launcher. Preserve production weapon/combat/save rules; record Decision202.
+
+Verification:738 builder/source/gutter/preservation checks,46 controls and native209-frame capture covering all32 poses in both directions. All532 snapshotted King assets remain unchanged. Owner motion judgment, vertical art, running/idle, playable equipment, damage/reach/audio and crafting remain pending.
+
 ## 2026-10-14 — Twinsteel attack acceptance
 
 The owner accepts the installed all-direction complete attack pass. Record Decision201 as accepted, close its active review issue and preserve current running/rest/attacks. Route the next milestone to the selected Iron Reaper's side-motion preview before cardinal/equipment implementation. Documentation-only update; no runtime/art/balance changes or new test claims.

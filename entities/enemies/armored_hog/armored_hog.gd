@@ -103,6 +103,7 @@ func _process_chase(delta: float) -> void:
 	velocity = movement_component.calculate_velocity(velocity, steering, definition.move_speed, definition.acceleration, delta)
 	_apply_knockback()
 	move_and_slide()
+	_applied_knockback_velocity = knockback_component.remaining_after_slide(self, _applied_knockback_velocity)
 	_hoofbeat_remaining -= delta
 	if _hoofbeat_remaining <= 0.0:
 		hoofbeat.emit()
@@ -113,6 +114,7 @@ func _process_charge(delta: float) -> void:
 	var previous_position := global_position
 	velocity = _charge_direction * definition.charge_speed
 	move_and_slide()
+	_applied_knockback_velocity = knockback_component.remaining_after_slide(self, _applied_knockback_velocity)
 	_charge_remaining -= previous_position.distance_to(global_position)
 	_hoofbeat_remaining -= delta
 	if _hoofbeat_remaining <= 0.0:
@@ -128,6 +130,7 @@ func _process_stagger(delta: float) -> void:
 	velocity = movement_component.calculate_velocity(velocity, Vector2.ZERO, definition.move_speed, definition.acceleration, delta)
 	_apply_knockback()
 	move_and_slide()
+	_applied_knockback_velocity = knockback_component.remaining_after_slide(self, _applied_knockback_velocity)
 	if not stagger_component.is_staggered():
 		_enter(State.CHASE, 0.0)
 

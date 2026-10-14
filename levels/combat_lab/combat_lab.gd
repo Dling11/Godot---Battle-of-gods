@@ -96,6 +96,21 @@ func _ready() -> void:
 
 	if "--molten-crash-review" in OS.get_cmdline_user_args():
 		king_review.call_deferred("open_review")
+	for argument in OS.get_cmdline_user_args():
+		if argument.begins_with("--weapon-review="):
+			call_deferred("open_weapon_review", StringName(argument.trim_prefix("--weapon-review=")))
+
+
+func open_weapon_review(item_id: StringName) -> void:
+	var item := player.weapon_catalog.find_weapon(item_id)
+	if item == null: return
+	player.apply_debug_testing_preset()
+	player.equip_owned_weapon(item)
+	clear_simulation()
+	enemy_selector.select(1)
+	_on_roster_selected(1)
+	review_tabs.current_tab = review_tabs.get_tab_idx_from_control(review_tabs.get_node("Weapons"))
+	spawn_selected(4)
 
 func show_skills_tab() -> void:
 	review_tabs.current_tab = 1

@@ -1,6 +1,22 @@
 # Decisions Index
 
+- [209 — Iron Reaper cadence, ribbons and sound](docs/decisions/209-iron-reaper-cadence-ribbons-and-sound.md): owner accepts centering; quicker2.59s chain,24 new white effect frames and dedicated scythe swing/contact audio. Complete actor art, running/idle, grounding and other families stay exact.
+
+- [208 — Complete Iron Reaper ribbons and ground pivot](docs/decisions/208-iron-reaper-complete-ribbons-and-ground-pivot.md): fit all white frames inside real contact space, preserve the full painted strokes, register complete attack stances to the ground circle and separate jump lift. Running/idle/art/combat stay exact; native48-frame and160-stance coverage passes.
+
+- [207 — Iron Reaper swing momentum](docs/decisions/207-iron-reaper-swing-momentum.md): preserve accepted appearance/run/idle, author full swing and return arcs, whole-cel weight shifts, fast commits and landing/catch recoil. Released steel aligns with real hand transforms; gameplay remains exact. Motion review remains open.
+
+- [206 — Unify Iron Reaper actions with approved running](docs/decisions/206-unify-iron-reaper-actions-with-approved-running.md): preserve all approved running, regenerate120 complete attack/idle poses in that identity, use unchanged rigid steel everywhere and one small upward idle toss/catch. Supersedes205's old action-cell guard and side-spin idle; combat rules remain exact. New actions await owner review.
+
+- [205 — Returning Iron Reaper and rigid carry](docs/decisions/205-returning-iron-reaper-and-rigid-carry.md): fresh complete running/idle/throw bodies, fixed straight steel, attack-speed-scaled throw/linger/recall/catch, generated trails/sparks and enlarged matching reach. Supersedes204's locomotion and local spin; owner motion review remains open.
+
+- [204 — Playable oversized Iron Reaper](docs/decisions/204-finish-playable-iron-reaper.md): complete cardinal family/equipment, Hook and Reap, bounded collision-aware pull, neutral contact-masked ribbons, audio/Bag and real-enemy validation. Earned acquisition remains next.
+
 Current code/contracts are authoritative. Earlier decisions document history; removed art/tool/archive paths are not supported setup or build instructions. Recover historical material from the original repository only when needed.
+
+- [203 — Oversized Iron Reaper study](docs/decisions/203-preview-oversized-iron-reaper.md):32 complete enlarged-weapon poses, data-owned cell/sole registration and V size comparison; current King families/original study protected. Hook and Reap remains a specialty proposal.
+
+- [202 — Iron Reaper side-motion preview](docs/decisions/202-preview-iron-reaper-side-combo.md): selected hook silhouette,32 fresh complete two-handed poses and16 white effect frames; exact side mirror and standalone non-saving review. Motion approval/cardinal/equipment implementation remain pending.
 
 - [201 — Fresh complete Twinsteel attacks](docs/decisions/201-generate-complete-twinsteel-attacks.md): all four facings,120 new whole poses, fixed-size baked steel, padded action cells and20 generated slash frames; unchanged gameplay and approved running/rest. New attacks owner-accepted2026-10-14.
 

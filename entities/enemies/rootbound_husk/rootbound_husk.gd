@@ -80,6 +80,7 @@ func _physics_process(delta: float) -> void:
 	velocity = velocity.move_toward(Vector2.ZERO, definition.acceleration * delta)
 	_apply_knockback_velocity()
 	move_and_slide()
+	_applied_knockback_velocity = knockback_component.remaining_after_slide(self, _applied_knockback_velocity)
 	_set_moving(false)
 	_tick_attack(delta)
 
@@ -106,6 +107,7 @@ func _process_chase(delta: float) -> void:
 	velocity = velocity.move_toward(direction.normalized() * definition.move_speed, definition.acceleration * delta)
 	_apply_knockback_velocity()
 	move_and_slide()
+	_applied_knockback_velocity = knockback_component.remaining_after_slide(self, _applied_knockback_velocity)
 	_set_moving(not velocity.is_zero_approx())
 
 

@@ -1,0 +1,38 @@
+[gd_resource type="Resource" load_steps=5 format=3]
+[ext_resource type="Script" path="res://data/weapons/weapon_family_pose_definition.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/characters/playable/king/iron_reaper/down/throw_body.png" id="2"]
+[ext_resource type="Texture2D" path="res://assets/characters/playable/king/iron_reaper/down/../attack_hands.png" id="3"]
+[ext_resource type="Texture2D" path="res://assets/characters/playable/king/iron_reaper/down/../rigid_weapon.png" id="4"]
+[resource]
+script = ExtResource("1")
+body_atlas = ExtResource("2")
+hand_atlas = ExtResource("3")
+weapon_texture = ExtResource("4")
+cell_size = Vector2i(256, 256)
+columns = 4
+pose_count = 13
+pose_order = PackedInt32Array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12)
+primary_hands = PackedVector2Array(135.0, 129.0, 128.0, 138.0, 119.0, 112.0, 119.0, 111.0, 155.0, 129.0, 154.0, 127.0, 153.0, 127.0, 135.0, 138.0, 127.0, 136.0, 135.0, 129.0, 135.0, 129.0, 135.0, 138.0, 127.0, 136.0)
+secondary_hands = PackedVector2Array(135.0, 117.0, 139.817687988281, 135.916229248047, 127.485282897949, 103.514717102051, 122.105827331543, 99.4088897705078, 161.882919311523, 138.829818725586, 142.0, 127.0, 164.276306152344, 122.895751953125, 138.105834960938, 149.591110229492, 138.276306152344, 140.104248046875, 143.847320556641, 120.892913818359, 135.0, 117.0, 138.105834960938, 149.591110229492, 138.276306152344, 140.104248046875)
+weapon_primary_grip = Vector2(40, 112)
+weapon_handle_axis = Vector2(0, -1)
+weapon_tip = Vector2(90, 82)
+mirror_cutting_edge = false
+lift_pixels = PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+weapon_behind_body = PackedByteArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
+primary_visible_poses = PackedByteArray(1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1)
+stowed_poses = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+released_poses = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+ground_clipped_poses = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+single_hand_poses = PackedByteArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
+phase_windows = PackedVector2Array(0, 3, 4, 6, 7, 10)
+queued_recovery_window = Vector2(11, 12)
+pose_weights = PackedFloat32Array(0.25, 0.45, 0.75, 1.55, 0.9, 1.2, 0.9, 0.7, 1.2, 0.6, 0.3, 0.8, 1.2)
+allow_rest = false
+rest_start_pose = 1
+rest_transition_end_pose = 4
+rest_transition_seconds = 1.1
+rest_loop_window = Vector2(5, 7)
+rest_loop_seconds = 3.6
+retrieval_end_pose = 0
+interpolate_blade_angles = true

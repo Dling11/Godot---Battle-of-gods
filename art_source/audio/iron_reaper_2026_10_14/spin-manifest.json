@@ -1,0 +1,13 @@
+{
+	"duration": 0.3,
+	"peak_dbfs": -4.01318901092837,
+	"processing": "Offline two alternating windowed air grains, very quiet late metal tail, cyclic low-pass, DC removal; PCM16 mono44100; no runtime DSP",
+	"runtime_peak_volume_db": -24,
+	"runtime_sha256": "0a590686e30eaf54b34245e723ef9ef3c698906f5823c8bc3adb2a9a0b4ebacb",
+	"seam_step": 0.0000406920735258609,
+	"source": "Retained artisticdude CC0 swish-6/9 plus very quiet late qubodup CC0 metal rustle; approved audio unchanged",
+	"source_urls": [
+		"https://opengameart.org/content/swishes-sound-pack",
+		"https://opengameart.org/content/impact"
+	]
+}

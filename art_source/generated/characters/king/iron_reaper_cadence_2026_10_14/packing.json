@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "source_sha256": "4dcc6746728c9814ed22b3061454c688abfa2f42782b90f316e1499a851d3270",
+  "density": 0.86,
+  "alpha_threshold": 240,
+  "x_edges": [
+    0,
+    280,
+    530,
+    790,
+    1080,
+    1350,
+    1600,
+    1820,
+    2048
+  ],
+  "x_anchors": [
+    150,
+    405,
+    665,
+    930,
+    1205,
+    1460,
+    1715,
+    1925
+  ],
+  "y_edges": [
+    0,
+    256,
+    500,
+    768
+  ],
+  "y_anchors": [
+    144,
+    393,
+    623
+  ],
+  "note": "Explicit complete-effect registration fixes the generated uneven cell spacing; uniform density, binary-alpha import removes translucent haze, entire return row vertically reflected to reverse the arc. No partial strokes cut at nominal grid edges."
+}

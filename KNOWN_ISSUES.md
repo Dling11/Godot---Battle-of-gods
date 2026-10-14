@@ -1,8 +1,11 @@
 # Known Issues
 
+Resolved2026-10-14: Iron Reaper is playable in all directions; solid-wall pull rebound and discrete-tick distance overshoot are corrected. Emphasized white effects stay inside real contact polygons. See Decision204.
+
 Updated 2026-10-14. Historical fixed bugs and rejected art trials were removed from this active list. Runtime code remains the authority.
 
-- **Weapon acquisition/balance:** debug equipment availability does not establish campaign crafting/unlock rules. Compare reach, damage, knockback, recovery and incoming pressure before retuning. Iron Reaper is selected but not implemented.
+- **Iron Reaper review:** the owner accepts complete action appearance, momentum and Decision208 centering/full-stroke correction. Decision209 adds2.59s cadence,24 new white frames and dedicated scythe sounds while preserving complete body/run/idle art and grounding. All96 native new-ribbon/view comparisons retain paint with zero opaque overflow;160 stance probes still peak at1.36 world pixels. The owner accepts the quicker pass and recorded cuts. The new quiet spin layer and96-pixel glove-color follow-up await listening/visual review; campaign balance remains open. Existing basic-attack dodge/skill requests wait for recovery.
+- **Weapon acquisition/balance:** F9/Combat Lab grants are session-only. Iron Reaper is equipable but has no earned recipe/drop route yet. Five-family single/horde/armored comparison passes; its desktop moving-eight-enemy measurements do not certify phone, cold-load or very large horde performance.
 - **Performance:** prior short desktop samples are not phone/cold-load/stress guarantees. Keep event/phase-driven presentation; profile crowded fights and skill1 feedback on target devices.
 - **Campaign completeness:** production route reaches VI. StagesVII onward, divine/domain rewards and Stage XX routing are not implemented; Examiner remains an isolated Lab trial.
 - **Progression/economy:** later skill forms are Lab experiments; campaign unlock/persistence and Nema/Umi resource/gold pacing need full fresh-save measurements. Accessories and later gear remain incomplete.

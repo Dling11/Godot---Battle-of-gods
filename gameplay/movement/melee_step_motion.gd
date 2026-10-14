@@ -23,11 +23,12 @@ func _phase(phase: int,duration: float) -> void:
 	if phase==MeleeAttackComponent.Phase.WIND_UP:
 		_elapsed = 0
 		_duration = maxf(duration,0.0001)
-		_distance = maxf(step_distances[attack.combo_step],0) if attack.combo_step<step_distances.size() else 0.0
+		var signed_distance := step_distances[attack.combo_step] if attack.combo_step<step_distances.size() else 0.0
+		_distance = absf(signed_distance)
 		_issued = 0
 		actual_distance = 0
 		blocked = false
-		_direction = attack.get_attack_direction()
+		_direction = attack.get_attack_direction() * signf(signed_distance)
 		set_physics_process(_distance>0)
 	elif phase==MeleeAttackComponent.Phase.ACTIVE:
 		if not blocked: _advance(1.0)

@@ -1,0 +1,15 @@
+# 205 — Returning Iron Reaper and rigid carry
+
+Current presentation update: [Decision206](206-unify-iron-reaper-actions-with-approved-running.md) preserves approved running and replaces all attacks/idle in that appearance. The old action-cell guard and side-orbit idle below are historical; the combat/flight rules remain current.
+
+2026-10-14. Implemented for owner review; supersedes Decision204's rejected running/idle and local third-cut spin. The owner requests straight complete running steel, consistent King proportions, a thrown spinning scythe with recoil/one-hand catch, idle flourish and larger white effects. Attack speed is the explicit scaling choice. A later insertion asks for a pause at range, spinning trails and ground metal sparks.
+
+Keep four beats: sweep → return hook → throw/linger/recall/catch → final reap. Retain accepted action cels for cuts1/2/4, other weapon families and skill rules. Generate72 complete body poses for three running, idle and throw views; LEFT mirrors RIGHT. Separate only the entire rigid weapon from complete anatomy. One128×192 steel sprite at unit grip scale/half presentation scale prevents bending and size changes across carry, idle and flight. Register new actors from the upper body with one density per board; moving boots do not resize/reanchor every frame. No cropped reference anatomy is reused.
+
+ReturningWeaponDefinition is optional per combo step. MeleeAttackComponent spawns ReturningWeaponAttack during ACTIVE instead of its local hitbox, snapshots damage/type/critical/control values and owns cancellation. Swept queries use the ordinary MeleeHitbox damage route. One hit per target per leg:65% outward/linger,35% recall, summing to advertised third-cut damage. Linger never repeatedly damages the same target. Solid terrain shortens outward travel; recall follows King and ignores terrain so equipment cannot be lost. Scene exit, explicit cancellation and defeat retire the node. Existing basic-attack dodge/skill buffering until recovery is preserved.
+
+Third ACTIVE is0.96s:0.288s outward,0.384s stationary spin,0.288s recall. Attack speed shortens the entire windup/flight/linger/catch/recovery; movement speed does not. Generated white arcs, two faint whole-steel trails and generated floor sparks observe the same progress. Idle spinning is cosmetic and has no hitbox.
+
+Cuts1/2 reach130px, cut4 reaches136px with matching larger masked ribbons. Released center travels124px with50px hurt radius. Baseline chain3.12s,50–60 total Physical damage if both legs connect,17.6 nominal DPS before modifiers. Bag distinguishes four cuts from five possible contacts. Existing Light hook and wounded reap remain unchanged.
+
+The production baker reads current sources directly, preserves90 accepted action-cel hashes and532 previous King asset hashes, publishes18 clips, and removes retired local-spin clips/effect row. New prompts, sources and traced-grip recipes: art_source/generated/characters/king/iron_reaper_returning_2026_10_14/. Native checks/previews are evidence, not owner visual approval or final campaign balance.

@@ -1,5 +1,11 @@
 # Audio Attribution
 
+## Iron Reaper swing and contact suite (2026-10-14)
+
+Four air cuts in `sfx/player/iron_reaper/` derive from **Swishes Sound Pack** by artisticdude, [primary source and CC0 dedication](https://opengameart.org/content/swishes-sound-pack). Source recordings swish-7/9/6/8 supply sweep/hook/throw/reap. Original downloaded archive and extracted recordings remain in `art_source/audio/iron_reaper_2026_10_14/`; source art/audio is excluded from game imports. The source pack was retrieved2026-10-14.
+
+Two dry contacts and a heavier final contact derive from the retained **Impact** recordings by Iwan qubodup Gabovitch, [primary source and CC0 dedication](https://opengameart.org/content/impact). Normal85% meat/15% wood; final65% Meat02/20% wood/30% stone. `tools/build_iron_reaper_audio.gd` trims, resamples, mixes and fades recordings offline to mono44.1kHz PCM16, peak about−4dBFS. Runtime gains−10dB air/−5dB contact/−4dB final; existing bounded pitch variation applies to contacts. Exact hashes, durations and RMS are in the source manifest. Follow-up: spin.wav is a quiet0.30s loop made offline from retained swish-6/9 plus very low late metal rustle from the same credited Impact pack. tools/build_iron_reaper_spin_audio.gd writes only this clip, spin-manifest.json and its audition; the seven approved cuts/contacts remain byte-identical. One positional voice fades−42→−24→−52dB over the existing flight and matches attack speed. Other families retain their existing sounds. No external audio service, runtime DSP or per-enemy cue multiplication is added.
+
 ## King sword / axe / Twinsteel accepted hits (2026-10-06)
 
 - Runtime: `sfx/player/weapon_contact/contact_1.wav`, `contact_2.wav`, `contact_3.wav`.

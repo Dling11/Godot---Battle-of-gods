@@ -1,0 +1,40 @@
+[gd_resource type="Resource" script_class="SwordComboDefinition" load_steps=11 format=3]
+[ext_resource type="Script" path="res://data/weapons/sword_combo_definition.gd" id="1"]
+[ext_resource type="Script" path="res://data/weapons/melee_contact_rule_definition.gd" id="2_rule"]
+[ext_resource type="Script" path="res://data/weapons/returning_weapon_definition.gd" id="3_release"]
+[ext_resource type="PackedScene" path="res://gameplay/presentation/iron_reaper_flight.tscn" id="4_flight"]
+[sub_resource type="ConvexPolygonShape2D" id="sweep"]
+points = PackedVector2Array(2,-14,38,-66,98,-56,130,0,98,56,38,66,2,14)
+[sub_resource type="CircleShape2D" id="spin"]
+radius = 50.0
+[sub_resource type="ConvexPolygonShape2D" id="reap"]
+points = PackedVector2Array(2,-14,44,-52,110,-44,136,0,110,44,44,52,2,14)
+[sub_resource type="Resource" id="returning"]
+script = ExtResource("3_release")
+reach = 124.0
+contact_radius = 50.0
+outbound_fraction = 0.3
+linger_fraction = 0.4
+outward_damage_share = 0.65
+presentation = ExtResource("4_flight")
+[sub_resource type="Resource" id="hook_rule"]
+script = ExtResource("2_rule")
+light_pull_distance = 24.0
+pull_standoff_distance = 28.0
+[sub_resource type="Resource" id="reap_rule"]
+script = ExtResource("2_rule")
+wounded_health_ratio = 0.4
+wounded_damage_multiplier = 1.25
+[resource]
+script = ExtResource("1")
+animation_keys = PackedStringArray("attack","return_cut","attack","heavy_cleave")
+windups = PackedFloat32Array(0.14,0.13,0.18,0.20)
+contacts = PackedFloat32Array(0.15,0.15,0.90,0.16)
+recoveries = PackedFloat32Array(0.14,0.14,0.14,0.16)
+damage_multipliers = PackedFloat32Array(1.0,1.0,1.2,1.8)
+knockback_multipliers = PackedFloat32Array(0.5,0.4,0.8,1.6)
+continue_seconds = 0.9
+hitbox_shapes = Array[Shape2D]([SubResource("sweep"),SubResource("sweep"),SubResource("spin"),SubResource("reap")])
+radial_steps = PackedByteArray(0,0,0,0)
+contact_rules = Array[ExtResource("2_rule")]([null,SubResource("hook_rule"),null,SubResource("reap_rule")])
+returning_attacks = Array[ExtResource("3_release")]([null,null,SubResource("returning"),null])
