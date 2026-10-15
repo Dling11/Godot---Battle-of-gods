@@ -1,0 +1,271 @@
+{
+  "date": "2026-10-15",
+  "decision": 213,
+  "status": "owner_approved",
+  "owner_message": "now thats an axe you know what this would do",
+  "scope": "Current axe art/motion: running, idle, complete attacks, proportions, canonical steel/grips/carry, ordinary overhead jump and continuous spin.",
+  "not_closed": [
+    "earned acquisition",
+    "campaign balance",
+    "target-device profiling",
+    "existing test fixture teardown warning"
+  ],
+  "files": [
+    {
+      "path": "assets/audio/sfx/player/iron_beard/chop.wav",
+      "sha256": "bc0980c3c500dbabccc1d1130bfcf643f363580c7a89b0846758b95d5d0cf6af"
+    },
+    {
+      "path": "assets/audio/sfx/player/iron_beard/contact_1.wav",
+      "sha256": "9fe57b513a1279f5033cdd32e6ddd427bd5fc83267c90dc8ecf161cf7601d367"
+    },
+    {
+      "path": "assets/audio/sfx/player/iron_beard/contact_2.wav",
+      "sha256": "85bf885f70f7c9f1b2a2ab8ee7d2064f6cca79a8a98a71591e14bb69073e9d81"
+    },
+    {
+      "path": "assets/audio/sfx/player/iron_beard/contact_3.wav",
+      "sha256": "06f8e65405f03fd699292e97b7a77038a8c7b02faa25aa2cd376166cda252158"
+    },
+    {
+      "path": "assets/audio/sfx/player/iron_beard/push.wav",
+      "sha256": "93867d042999a7d0d3566cbb84bd8ec47037a569e9a92b7d1a8f538c84f982a7"
+    },
+    {
+      "path": "assets/audio/sfx/player/iron_beard/rise.wav",
+      "sha256": "2ca11785db42aa2d08e0b60480fcd61e674d1113e0316a827dda3f678cd0169a"
+    },
+    {
+      "path": "assets/audio/sfx/player/iron_beard/slam_contact.wav",
+      "sha256": "899e8eef948f4e43e524968f53136694099e46d5112c567fc91c0ba942503087"
+    },
+    {
+      "path": "assets/audio/sfx/player/iron_beard/slam.wav",
+      "sha256": "275eb23ffcc722823cc8849fe484c29fe1f390414151666dde05c5ba4ec6a82b"
+    },
+    {
+      "path": "assets/audio/sfx/player/iron_beard/spin.wav",
+      "sha256": "bf9d27d2465c179cd9857a1ab41debff5753ea4de7a9b03203bf4f2842dd4639"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/down/chop_body.png",
+      "sha256": "c79a6a21231f3cb895b38671004a2191290f8332eb8f54297780f99df5ef492d"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/down/chop.tres",
+      "sha256": "500f6b73eac70c599486940782a620e25532c859530b7b93131a587038e878a9"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/down/idle_body.png",
+      "sha256": "18b94d438896436542aac01437dd16c35dfd3e8fbc84e6b77ddf1a5213f93880"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/down/idle.tres",
+      "sha256": "0dd7433dbcc6192959686c24822cbceecc7670b78aa249d23b8c0c731b5473c6"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/down/rise_body.png",
+      "sha256": "c31c40c25c39a6cb4d0db3ab62246b32028251510b22f70ad206e7132b778a2d"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/down/rise.tres",
+      "sha256": "77b8e3bb17855f4a5bf46df04d365b3000bf860e6c008af6471137d7003f9250"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/down/run.tres",
+      "sha256": "32e00006e2da79023afd1da22a8d465b6a9e8e3dd1ec5a8f9314d63c04add58d"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/down/slam_body.png",
+      "sha256": "866288322a926778625234d4e6746fd73447ca7db8f477118f363bcae68fcba0"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/down/slam.tres",
+      "sha256": "24d2a92bc9cbbd9d4e94178be290db558581ec271c886085a55db55d75161e8d"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/down/spin_body.png",
+      "sha256": "ddbc02e2cbf9952af695fd355a041ce94fcceee85ea0571b329bc013ac7425cb"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/down/spin.tres",
+      "sha256": "c8d2e87e39207dd5b7d897f794bbe5f49a16ad571717835aef177866116ad351"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/down/thrust_body.png",
+      "sha256": "d3cd128763b80ff1d60e4d556704f48962d86b09be410a425a23fca1edff7131"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/down/thrust.tres",
+      "sha256": "c9923eb3fc0b65981774b36218b2bf67f28398cc32983f6decbe3c213da7c5c2"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/iron_beard_canonical.png",
+      "sha256": "30fbf770ecdd0e69119e0f1570c2aef3629445d1910ea66d9275cf93006ac9c1"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/side/chop_body.png",
+      "sha256": "116aa6dedaf68d5c6f09c4c9dbd87b718c0e9634ffdc67c23f080f6e1a08f829"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/side/chop.tres",
+      "sha256": "2c86c68fb11884829607017d8983944141bea5921c535ba40451862fe18705d2"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/side/idle_body.png",
+      "sha256": "e812262913f6850817d2dda5ba3d14948102538b84f01f20c6054ca0a5d3f8ae"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/side/idle.tres",
+      "sha256": "03484b30361159ccfcdd049e6305a4504929369418b8e3bdf0fb2f2988da639e"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/side/rise_body.png",
+      "sha256": "b41b1a7a08e7d9644ec77efaf726447b11501a4fd226a6c7cdd3f5428faa3c27"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/side/rise.tres",
+      "sha256": "b6f504bab4ab4fb51d7730c12721865d1974ecb18e9543cb67e84f9d461af5f4"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/side/run.tres",
+      "sha256": "f6e89b053d123b23158f044f0fbd0f594e5d3d7b17a52b18d3c03e7150c97925"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/side/slam_body.png",
+      "sha256": "a13548db572d9d66cb1237ed0b08d11c27598d2e4d2a911a40dd0d508b78cd96"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/side/slam.tres",
+      "sha256": "e74679948dcea6a4788d88603ab50dd43ae4c8e10b91968ed9726a09971426eb"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/side/spin_body.png",
+      "sha256": "04e2f83b7eb5353ec52acfd4f98ae2626438db52dfe38072f1fad736a56fd63d"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/side/spin.tres",
+      "sha256": "46e5914ffddbfd73ec30c07828f7af5ee2b6b1eb9f0687f5447f603cc8bcab0e"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/side/thrust_body.png",
+      "sha256": "a65d820adc287e6224b2a56f5f32750bd9011d4e7e52ce2db5dd86ce9b20fcff"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/side/thrust.tres",
+      "sha256": "e2409398304f3347db7c3893453764e8e3659f1e71a23c9c358abd6261b90c16"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/slash.png",
+      "sha256": "3ca10a8653c4f2f4a65503fcffa56b92b003e27f6a30c741efc4ad0430337cde"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/up/chop_body.png",
+      "sha256": "5293f46d67ba5e2c8badd568494716a9411b07da81741762a0d072b96a4fbe10"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/up/chop.tres",
+      "sha256": "2d482e4aad2a258de0d819bb929c432de032e4f66b75b4cd03697184404a5b88"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/up/idle_body.png",
+      "sha256": "385a301adbfead03ef343d36afe7e6dba26734dae76dcf3542b6ae8def33bc28"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/up/idle.tres",
+      "sha256": "9070b2b7fecb04f4e2cbc31213fcbc03cc4de859109a831f4c3c40cca6c8f835"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/up/rise_body.png",
+      "sha256": "1b467067aea774fc9423aa6878049c10f9cda198c26e20f756c930d9227edcf3"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/up/rise.tres",
+      "sha256": "0fb057f2a5c73b9a9e7ee48eb96a16f018ea48eabb8e731980c2bcd73dfeb620"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/up/run.tres",
+      "sha256": "262e89a41ab77682871646744f437724dc5cf0469750a5deaca5df3d9abe490c"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/up/slam_body.png",
+      "sha256": "7361403ce1a7b9f82e7a02e613118ff566d9837eb2c6f6ae92fb6c2bc27084da"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/up/slam.tres",
+      "sha256": "cd99988e253dc5ad8f834a71c5db8c93ff7e4844270265e7bdabe61c49142d2a"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/up/spin_body.png",
+      "sha256": "cf01f12c6f4cec853ef472b99c535477275f26a8979f294cefff9b2d2ee379ba"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/up/spin.tres",
+      "sha256": "a6ae23aba374acbed01ad0ecc6d2302b71359f96fb5d32064d9d5c2a19acd68c"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/up/thrust_body.png",
+      "sha256": "076744270a041ccd3c2ca2a84b0a9a19baa0898da1c26b0501daba6c7bb34e47"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/up/thrust.tres",
+      "sha256": "c2ae2f33d66d78dc21b0df69336b18a63fa1377107cfdfba98dd113c0179e3e7"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_reaper/attack_hands.png",
+      "sha256": "4f8be0b10c1d0add0c81b6674a9edc3099b1f4791f81ab4e3fbaa06cf8143e70"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_reaper/down/run_body.png",
+      "sha256": "9d035c4cdd4cbb8fce5bdce946cf8c29a5b618e454693455ae23f017f796422f"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_reaper/locomotion_hands.png",
+      "sha256": "44296e4bb43c3edc6142098e1334d415fc81ebe89a6590aec9717870e8e2ab9b"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_reaper/side/run_body.png",
+      "sha256": "c2236aaf45680515c040edbe02ea8a25da6039e77f613ed17598339da3d5109d"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_reaper/up/run_body.png",
+      "sha256": "c0e527a252e44416241f95ed887988004e214e0bc341eaf85fb888f36710bc59"
+    },
+    {
+      "path": "assets/ui/inventory/weapons/iron_beard_canonical.png",
+      "sha256": "50e1bcfe7a22ed0c616f6c934d817a7477b1b76484398b2277434dd12fc93612"
+    },
+    {
+      "path": "data/items/equipment/king_iron_beard_axe.tres",
+      "sha256": "4a93fab00adc142f4dff089e124a9dbab300fb5f1845a9dc18b274dfe4384df5"
+    },
+    {
+      "path": "data/weapons/audio/axe_unified_contact.tres",
+      "sha256": "cb1d9b257a997d997be8892bf56922701d8943dcd46e83d29a4386b210b2428b"
+    },
+    {
+      "path": "data/weapons/audio/axe_unified_finisher.tres",
+      "sha256": "36169e35544da9e4963ac753d7241d7a971782e0c9e9f01a43ed0d692a3e42cb"
+    },
+    {
+      "path": "data/weapons/families/iron_beard/combo.tres",
+      "sha256": "bdb951ec3f70a76cb0ac031fb38c8d832bf9c8f6984514dfaf1d6dfe3e0c2768"
+    },
+    {
+      "path": "data/weapons/families/iron_beard/presentation.tres",
+      "sha256": "64b3a4915f288d30dcf0f25d2c1cd4852b04bf9215b6e0808522d84a99790000"
+    },
+    {
+      "path": "data/weapons/families/iron_beard/ribbon_layout.tres",
+      "sha256": "5af097b0d8090312c373665976d94827b7d40c57312d158d1be0e39f17c6cb2c"
+    },
+    {
+      "path": "data/weapons/king_iron_beard_axe.tres",
+      "sha256": "f46fa60a0c9a3eb19c0800470538d4bb8e6c45c71e31ebe1f0282c47d261335e"
+    },
+    {
+      "path": "gameplay/presentation/axe_unified_swing.tscn",
+      "sha256": "6e80abffc5807b025e812f01bcfe8c6efc9112eaf45b114996dd2ea120f2597d"
+    }
+  ]
+}

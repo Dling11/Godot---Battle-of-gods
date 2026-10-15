@@ -1,0 +1,15 @@
+{
+  "production": 724,
+  "originalAssetsProtected": 370,
+  "rigChecks": 1200,
+  "rigSamples": 272,
+  "headlessGameplayChecks": 171,
+  "bodyAtlasesPixelIdentical": 18,
+  "oldGripToPommel": 29.832867780352593,
+  "newGripToPommel": 20.39816648009988,
+  "sameGripToEdge": 31.144823004794876,
+  "noNewVisibleGodotWindow": true,
+  "sourceMode": "built-in image edit",
+  "nativeAfter": "pending owner review",
+  "resources": 952
+}

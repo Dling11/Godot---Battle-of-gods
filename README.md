@@ -1,5 +1,7 @@
 # Battle of Gods
 
+Iron Beard now has running-compatible complete attack bodies, ordinary two-hand overhead landing and an eight-direction blade-led spin (Decision213).212's accepted canonical axe/grips/back carry and running/idle remain exact. Play F5 → F9 → F7 → Weapons → Iron Beard, or tools/launch_king_axe_training.ps1; WASD/held LMB/Space/Tab/Escape. Build tools/build_king_axe_unified.gd → king_axe_technique_baker.gd, then editor import. Current source/prompts: art_source/generated/characters/king/iron_beard_motion_2026_10_15/. Owner approves this art/motion pass on2026-10-15; preserve it as the baseline. Debug sessions do not save rewards.
+
 A Godot pixel action prototype with a renewed Sanctuary, six campaign stages, five equipable weapon families, five current King techniques, crafting/material exchange and an isolated Combat Lab. Earned weapon-family acquisition, later story arcs and Stage XX routing remain planned.
 
 ## Setup

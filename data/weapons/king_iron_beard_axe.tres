@@ -1,8 +1,9 @@
-[gd_resource type="Resource" script_class="WeaponDefinition" load_steps=6 format=3]
+[gd_resource type="Resource" script_class="WeaponDefinition" load_steps=7 format=3]
 [ext_resource type="Script" path="res://data/weapons/weapon_definition.gd" id="1"]
 [ext_resource type="Resource" path="res://data/weapons/families/iron_beard/combo.tres" id="2"]
 [ext_resource type="Resource" path="res://data/weapons/families/iron_beard/presentation.tres" id="3"]
-[ext_resource type="Resource" path="res://data/weapons/audio/axe_contact.tres" id="4_audio"]
+[ext_resource type="Resource" path="res://data/weapons/audio/axe_unified_contact.tres" id="4_audio"]
+[ext_resource type="Resource" path="res://data/weapons/audio/axe_unified_finisher.tres" id="5_audio"]
 [sub_resource type="ConvexPolygonShape2D" id="shape"]
 points = PackedVector2Array(2,-14,20,-40,56,-34,72,0,56,34,20,40,2,14)
 [resource]
@@ -14,6 +15,7 @@ family_presentation = ExtResource("3")
 melee_hitbox_shape = SubResource("shape")
 combo = ExtResource("2")
 hit_audio = ExtResource("4_audio")
+combo_hit_audio = Array[Resource]([null,null,null,ExtResource("5_audio"),null])
 damage = 25.0
 basic_damage_minimum = 14.0
 basic_damage_maximum = 16.0

@@ -1,6 +1,6 @@
 # Roadmap
 
-Updated 2026-10-14.
+Updated 2026-10-15.
 
 ## Completed
 
@@ -11,16 +11,17 @@ Updated 2026-10-14.
 - Five normal equipment families, including playable oversized Iron Reaper and its Hook and Reap specialty; accepted previous family art remains protected.
 - Frozen complete King anatomy references; fresh COMPLETE Twinsteel running generation with two held swords (Decision 200).
 - Fresh complete Twinsteel attacks in all directions, fixed-size held blades and new white-slash frames; owner-accepted2026-10-14 (Decision201).
+- Iron Beard canonical axe/grips/carry, running-compatible complete attacks, normal overhead jump and continuous blade-led turn; owner-approved2026-10-15 (Decision213).
 
 - Repository cleanup complete: about 6.50 GB of obsolete source/derived content removed; current source about 54 MiB, packaged playable project44.4 MiB. All646 protected assets unchanged, all 134 active smoke scripts pass assertions, all 868 resources load. Fixture teardown warnings remain separately tracked (Decision 197).
 
 ## Current work
 
-Iron Reaper running, complete action appearance, momentum and Decision208 centering/full-stroke correction are owner-accepted. Decision209 adds quicker2.59s cadence,24 new generated white frames and dedicated recorded scythe swing/contact sounds. Complete actor geometry/pose/run/idle/steel stay exact; only96 missing-glove color pixels change in the focused follow-up. Faster cadence raises base DPS to21.2 without changing per-hit rules or reach. The owner accepts the quicker pass and recorded audio. A quiet flight-spin layer and two bottom-facing glove-color corrections are the focused follow-up; see CONTINUE_WEAPONS.md. Debug availability does not establish earned acquisition or final balance.
+Iron Beard's Decision213 art/motion review is accepted. Preserve its current implementation as the baseline while moving to remaining families individually when requested. Earned acquisition, campaign balance and device profiling remain separate work.
 
 ## Next
 
-1. Review the playable Iron Reaper and preserve accepted weapon art.
+1. Migrate remaining families individually to the accepted scythe appearance, preserving the approved Iron Beard baseline.
 2. Define and implement earned weapon recipes/acquisition with Nema and stage rewards.
 3. Refine weapon roles using the real-enemy comparison; only retune with explicit gameplay intent.
 4. Profile cold loading, larger fights and target-device performance before optimization.

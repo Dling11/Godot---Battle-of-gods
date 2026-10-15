@@ -1,5 +1,7 @@
 # Game Design
 
+Iron Beard (Decision213) keeps chop → rising return → axe-head push → jump slam → turning cleave and3.19s gameplay. Corrected complete attack bodies match running proportions. Jump is a normal two-handed overhead head-first strike; spin carries the blade around a continuous full turn.212's canonical single-bit axe, back carry and running/idle remain exact. Damage/reach/multipliers/knockback/movement commitment,40 white frames, audio and saves stay unchanged. Owner approves this axe art/motion on2026-10-15; campaign balance/acquisition remain separate.
+
 Updated 2026-10-14. Current sources and contracts are authoritative; historical generation trials and archive-dependent tooling were removed (Decision197). See PROJECT_CONTEXT.md and docs/maintenance/repository-cleanup.md.
 
 Implemented: campaignI–VI, renewed Sanctuary, five weapon families and five current techniques. Greatsword and current Twinsteel running/attacks are owner-approved; oversized Iron Reaper is accepted and installed. Later stages/domain rewards and earned family acquisition remain planned.

@@ -1,5 +1,11 @@
 # Decisions Index
 
+- [213 — Axe body scale and ordinary jump](docs/decisions/213-axe-body-scale-and-ordinary-jump.md): retain accepted canonical axe/carry; regenerate complete running-sized bodies, remove head reversal and correct blade-led full turn.
+
+- [212 — One canonical axe and back carry](docs/decisions/212-one-canonical-axe-and-back-carry.md): owner rejects211; one fixed-size single-bit axe, complete guide bodies, exact running BODY and explicit back stow.
+
+- [211 — Axe-specific complete techniques](docs/decisions/211-axe-specific-complete-techniques.md): replace borrowed scythe attack bodies/rotated axe overlays with102 generated complete axe actors; preserve carry/FX/audio/gameplay. Native owner motion review pending.
+
 - [209 — Iron Reaper cadence, ribbons and sound](docs/decisions/209-iron-reaper-cadence-ribbons-and-sound.md): owner accepts centering; quicker2.59s chain,24 new white effect frames and dedicated scythe swing/contact audio. Complete actor art, running/idle, grounding and other families stay exact.
 
 - [208 — Complete Iron Reaper ribbons and ground pivot](docs/decisions/208-iron-reaper-complete-ribbons-and-ground-pivot.md): fit all white frames inside real contact space, preserve the full painted strokes, register complete attack stances to the ground circle and separate jump lift. Running/idle/art/combat stay exact; native48-frame and160-stance coverage passes.
@@ -261,3 +267,10 @@ Current Sanctuary baseline: [Decision165](docs/decisions/165-finalize-sanctuary-
 ## New Decisions
 
 Record future decisions as individual files under `docs/decisions/` using `NNN-short-title.md`, then add one row to this index. New ADRs should contain status, context, alternatives, decision, and consequences.
+
+| ID | Decision | Summary |
+|---|---|---|
+| 210 | [Iron Beard in the accepted scythe identity](docs/decisions/210-iron-beard-scythe-identity.md) | Axe-first complete actor migration, fixed head-first steel,40 white frames and dedicated audio; other families preserved |
+| 211 | [Axe-specific complete techniques](docs/decisions/211-axe-specific-complete-techniques.md) | Complete actor/weapon attacks, hidden extra rigs, unchanged carry and combat |
+| 212 | [One canonical axe and back carry](docs/decisions/212-one-canonical-axe-and-back-carry.md) | Fixed weapon geometry, source grips, accepted running BODY, correct back depth |
+| 213 | [Axe body scale and ordinary jump](docs/decisions/213-axe-body-scale-and-ordinary-jump.md) | Full-body calibration, normal overhead landing, continuous blade-led spin, accepted carry exact |

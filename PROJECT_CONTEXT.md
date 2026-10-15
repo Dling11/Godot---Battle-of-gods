@@ -1,12 +1,12 @@
 # Project Context
 
-Updated 2026-10-14. Read this, ROADMAP.md and KNOWN_ISSUES.md first. Implemented code/scenes are runtime truth. Cleanup and fresh-history boundaries remain in Decisions197/198 and docs/maintenance/repository-cleanup.md / repository-migration.md. Current repository: Dling11/Godot---Battle-of-gods; earlier deliveries stay in Dling11/godot-practice-first-game.
+Updated 2026-10-15. Read this, ROADMAP.md and KNOWN_ISSUES.md first. Implemented code/scenes are runtime truth. Cleanup and fresh-history boundaries remain in Decisions197/198 and docs/maintenance/repository-cleanup.md / repository-migration.md. Current repository: Dling11/Godot---Battle-of-gods; earlier deliveries stay in Dling11/godot-practice-first-game.
 
 ## Current playable state
 
 Godot 4.7.2 standard, Compatibility renderer, 960×540 logical viewport. F5 opens the randomized campfire title. Continue/New Journey enters the renewed Sanctuary. Campaign reaches Stage VI; later arcs and Stage XX routing are planned.
 
-King has five weapon families through the normal catalog/Bag: signature Sword, Iron Beard axe, Royal Greatsword V2, Twinsteel V2 and Iron Reaper scythe. Preserve owner-approved Greatsword/Twinsteel and current axe/sword art. Iron Reaper uses the owner's chosen running appearance in all directions, with fresh matching complete attacks and a simple upward idle toss/catch (Decision206). Five current techniques and ten equipped slots remain unchanged. Campaign weapon acquisition is separate from the non-saving debug kit.
+King has five weapon families through normal catalog/Bag: Sword, Iron Beard, Royal Greatsword V2, Twinsteel V2 and Iron Reaper.212 establishes the canonical fixed-size axe/back carry;213 supplies corrected complete running-sized attacks and normal jump/spin. Accepted scythe running BODY pixels and other families stay exact. Five techniques/ten slots and separate non-saving debug grants remain.
 
 Sanctuary is temporarily complete. Eira opens training to the right of her lectern; Nema crafts; Umi sells/reconstructs materials; Orren's workshop requires F at the door. Map remains hidden. Compact portrait HP/XP and centered paper-doll Bag are current. Do not resume house/map work by default.
 
@@ -14,9 +14,9 @@ F9 grants a session-only non-saving review kit. F7 opens the actual Combat Lab; 
 
 ## Current priority
 
-The owner accepts Iron Reaper appearance, momentum and Decision208 centering/full-stroke correction. Decision209 now quickens its four-cut chain to2.59s (from3.12s), doubles main white ribbons to24 generated frames and gives it dedicated scythe air/contact sounds. Body geometry, all running/idle, fixed steel and ground registration remain exact; the focused glove follow-up changes only96 hand-color pixels. Damage/reach/Hook/Reap stay unchanged; faster cadence raises the data-driven Bag estimate to21.2 base DPS. The throw retains a0.36s stationary spin inside its0.90s active window, all scaled by attack speed.
+The owner approves Decision213's Iron Beard pass on2026-10-15: "now thats an axe you know what this would do". Preserve current running/idle, complete attacks, proportions, canonical axe/grips/back carry and normal jump/spin as the accepted baseline. Do not restart axe redesign by default. Remaining family migrations come next when requested; F9/F7/Bag select the current21 clips.
 
-Current implementation, source/rebuild contracts and evidence are in CONTINUE_WEAPONS.md and Decision209. The owner accepts the quicker motion and recorded cuts. The focused follow-up adds a quiet flight-spin layer and fixes bare-hand colors in two bottom-facing poses. Review the new spin mix via tools/launch_king_iron_reaper.ps1 or F5 → F9 → F7 → Weapons. Then earned recipes/acquisition, campaign balance and cold/phone profiling. Preserve accepted other weapons and temporarily complete Sanctuary.
+Current source/prompts/recipe/approval snapshot: art_source/generated/characters/king/iron_beard_motion_2026_10_15/;212's canonical source still supplies weapon/idle. Builder delegates to king_axe_technique_baker.gd. Combat3.19s, FX/audio, saves and other families stay exact. The owner permits visible Godot again. Art/motion approval does not close campaign balance, earned acquisition or device profiling.
 
 ## Read next by task
 

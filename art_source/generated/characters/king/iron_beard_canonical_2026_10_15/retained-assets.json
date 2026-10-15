@@ -1,0 +1,62 @@
+[
+  {
+    "path": "assets/characters/playable/king/iron_reaper/side/run_body.png",
+    "sha256": "c2236aaf45680515c040edbe02ea8a25da6039e77f613ed17598339da3d5109d"
+  },
+  {
+    "path": "assets/characters/playable/king/iron_reaper/up/run_body.png",
+    "sha256": "c0e527a252e44416241f95ed887988004e214e0bc341eaf85fb888f36710bc59"
+  },
+  {
+    "path": "assets/characters/playable/king/iron_reaper/down/run_body.png",
+    "sha256": "9d035c4cdd4cbb8fce5bdce946cf8c29a5b618e454693455ae23f017f796422f"
+  },
+  {
+    "path": "data/weapons/families/iron_beard/combo.tres",
+    "sha256": "bdb951ec3f70a76cb0ac031fb38c8d832bf9c8f6984514dfaf1d6dfe3e0c2768"
+  },
+  {
+    "path": "data/weapons/families/iron_beard/ribbon_layout.tres",
+    "sha256": "5af097b0d8090312c373665976d94827b7d40c57312d158d1be0e39f17c6cb2c"
+  },
+  {
+    "path": "assets/characters/playable/king/iron_beard_unified/slash.png",
+    "sha256": "3ca10a8653c4f2f4a65503fcffa56b92b003e27f6a30c741efc4ad0430337cde"
+  },
+  {
+    "path": "assets/audio/sfx/player/iron_beard/chop.wav",
+    "sha256": "bc0980c3c500dbabccc1d1130bfcf643f363580c7a89b0846758b95d5d0cf6af"
+  },
+  {
+    "path": "assets/audio/sfx/player/iron_beard/contact_1.wav",
+    "sha256": "9fe57b513a1279f5033cdd32e6ddd427bd5fc83267c90dc8ecf161cf7601d367"
+  },
+  {
+    "path": "assets/audio/sfx/player/iron_beard/contact_2.wav",
+    "sha256": "85bf885f70f7c9f1b2a2ab8ee7d2064f6cca79a8a98a71591e14bb69073e9d81"
+  },
+  {
+    "path": "assets/audio/sfx/player/iron_beard/contact_3.wav",
+    "sha256": "06f8e65405f03fd699292e97b7a77038a8c7b02faa25aa2cd376166cda252158"
+  },
+  {
+    "path": "assets/audio/sfx/player/iron_beard/push.wav",
+    "sha256": "93867d042999a7d0d3566cbb84bd8ec47037a569e9a92b7d1a8f538c84f982a7"
+  },
+  {
+    "path": "assets/audio/sfx/player/iron_beard/rise.wav",
+    "sha256": "2ca11785db42aa2d08e0b60480fcd61e674d1113e0316a827dda3f678cd0169a"
+  },
+  {
+    "path": "assets/audio/sfx/player/iron_beard/slam.wav",
+    "sha256": "275eb23ffcc722823cc8849fe484c29fe1f390414151666dde05c5ba4ec6a82b"
+  },
+  {
+    "path": "assets/audio/sfx/player/iron_beard/slam_contact.wav",
+    "sha256": "899e8eef948f4e43e524968f53136694099e46d5112c567fc91c0ba942503087"
+  },
+  {
+    "path": "assets/audio/sfx/player/iron_beard/spin.wav",
+    "sha256": "bf9d27d2465c179cd9857a1ab41debff5753ea4de7a9b03203bf4f2842dd4639"
+  }
+]

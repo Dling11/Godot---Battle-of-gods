@@ -1,5 +1,7 @@
 # Style Guide
 
+Decision213: matching head width cannot certify full anatomy. Compare chest/waist/leg/boot spans and standing guards to accepted running before importing a new action; crouches may bend joints without changing body scale. Use one density per complete sheet, never per-part/per-pose compensation. Explicit action maps may exclude missing/bad source poses and hold a genuine pose inside unchanged clocks. Colored guide caps and warm face/hair are not semantic proof of head ends or palms; trace genuine grips and annotate occlusion. Never reverse weapon head/grip to repair camera orientation. Related overhead cuts share cutting-edge handedness; validate a spin's actual weapon headings and leading edge.212's unit canonical steel, whole-component extraction, same-cel finger depth, binary-alpha paint hashes and carry-depth rules remain.
+
 Updated 2026-10-14. Current sources and contracts are authoritative; historical generation trials and archive-dependent tooling were removed (Decision197). See PROJECT_CONTEXT.md and docs/maintenance/repository-cleanup.md.
 
 Keep complete approved native anatomy, real palm grips, fixed density/origin and camera depth. New motion needs separate owner review; frozen-reference hashes remain immutable. Captures/logs use ignored tmp/review/, never tracked archive/review folders.
@@ -341,3 +343,5 @@ Explicitly duplicate each external slot Resource when constructing a mutable pla
 Per-cut modifiers belong in optional combo contact-rule resources. Activation resets absent rules; each accepted target receives a fresh DamageInfo before defenses. Pulls use target control eligibility, conservative discrete-tick impulse bounds and existing solid-body movement. After move_and_slide, remove only impulse components that survived collision; subtracting a blocked normal creates false rebound.
 
 Whole-actor generated clips include anatomy, grips and steel. Never transplant reference heads/torso or resize individual parts. Use immutable visual references, hash-owned connected sources and one standing-density calibration per board; padding changes preserve world sole. Share empty overlays of identical dimensions. Hidden rig anchors are scaffolding and must not be described as traced palms. Complete raster contact effects should fade against actual contact shapes; emphasized white pixels need native with/without-FX boundary checks. Native-only audio/capture tests require a rendered window.
+
+For weapon fit corrections, distinguish shaft cross-section from shaft length and from head size. Validate all three independently against the existing fist. A shaft-only generated import may preserve the original weapon head outside an explicit mask; it must not resize King or alter contact reach.

@@ -1,0 +1,3446 @@
+{
+  "version": 1,
+  "method": "Whole generated actor and axe cels; no anatomical transplants. Baked weapon hides separate rig in drawn attack keys.",
+  "cell": [
+    256,
+    256
+  ],
+  "sole": [
+    128,
+    158
+  ],
+  "scale": 0.5,
+  "source_alpha": 240,
+  "boards": {
+    "side": {
+      "source": "side-source.png",
+      "sha256": "aa30b7964762854e16a0dc10dbf3810ed4830396f276f3307837ff90945774e7",
+      "density": 0.4230769230769231,
+      "calibration": {
+        "hair_span": 52,
+        "target_hair_span": 22
+      },
+      "keys": [
+        {
+          "index": 0,
+          "bounds": [
+            35,
+            38,
+            161,
+            158
+          ],
+          "component_pixels": 10127,
+          "ground": [
+            95.5,
+            195
+          ],
+          "boots": [
+            [
+              50,
+              160,
+              32,
+              35
+            ],
+            [
+              108,
+              161,
+              34,
+              31
+            ]
+          ],
+          "primary": [
+            81.5,
+            134
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 1,
+          "bounds": [
+            239,
+            29,
+            125,
+            167
+          ],
+          "component_pixels": 8936,
+          "ground": [
+            305,
+            195
+          ],
+          "boots": [
+            [
+              324,
+              158,
+              39,
+              33
+            ],
+            [
+              249,
+              159,
+              35,
+              36
+            ]
+          ],
+          "primary": [
+            312,
+            105.5
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 2,
+          "bounds": [
+            451,
+            32,
+            121,
+            164
+          ],
+          "component_pixels": 9414,
+          "ground": [
+            510,
+            195
+          ],
+          "boots": [
+            [
+              454,
+              159,
+              37,
+              36
+            ],
+            [
+              533,
+              158,
+              29,
+              33
+            ]
+          ],
+          "primary": [
+            553.5,
+            84.5
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 3,
+          "bounds": [
+            631,
+            58,
+            172,
+            136
+          ],
+          "component_pixels": 9401,
+          "ground": [
+            686,
+            193
+          ],
+          "boots": [
+            [
+              631,
+              156,
+              35,
+              37
+            ],
+            [
+              707,
+              159,
+              33,
+              32
+            ]
+          ],
+          "primary": [
+            719,
+            136
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 4,
+          "bounds": [
+            827,
+            71,
+            175,
+            124
+          ],
+          "component_pixels": 8593,
+          "ground": [
+            884.75,
+            195
+          ],
+          "boots": [
+            [
+              827,
+              160,
+              35,
+              35
+            ],
+            [
+              908,
+              161,
+              34,
+              30
+            ]
+          ],
+          "primary": [
+            911,
+            146
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 5,
+          "bounds": [
+            1023,
+            91,
+            169,
+            106
+          ],
+          "component_pixels": 7530,
+          "ground": [
+            1075.5,
+            193
+          ],
+          "boots": [
+            [
+              1023,
+              161,
+              27,
+              32
+            ],
+            [
+              1102,
+              173,
+              25,
+              18
+            ]
+          ],
+          "primary": [
+            1106.5,
+            159.5
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 6,
+          "bounds": [
+            1220,
+            57,
+            156,
+            139
+          ],
+          "component_pixels": 9024,
+          "ground": [
+            1283.25,
+            195
+          ],
+          "boots": [
+            [
+              1230,
+              159,
+              33,
+              36
+            ],
+            [
+              1302,
+              159,
+              36,
+              33
+            ]
+          ],
+          "primary": [
+            1290.5,
+            111.5
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 7,
+          "bounds": [
+            1409,
+            39,
+            152,
+            157
+          ],
+          "component_pixels": 9535,
+          "ground": [
+            1470.25,
+            195
+          ],
+          "boots": [
+            [
+              1427,
+              161,
+              31,
+              34
+            ],
+            [
+              1483,
+              172,
+              30,
+              20
+            ]
+          ],
+          "primary": [
+            1457.5,
+            134.5
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 8,
+          "bounds": [
+            32,
+            251,
+            169,
+            137
+          ],
+          "component_pixels": 9285,
+          "ground": [
+            92,
+            388
+          ],
+          "boots": [
+            [
+              107,
+              354,
+              36,
+              32
+            ],
+            [
+              43,
+              354,
+              32,
+              34
+            ]
+          ],
+          "primary": [
+            102.5,
+            326.5
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 9,
+          "bounds": [
+            226,
+            252,
+            179,
+            136
+          ],
+          "component_pixels": 9721,
+          "ground": [
+            286.75,
+            387
+          ],
+          "boots": [
+            [
+              233,
+              351,
+              30,
+              36
+            ],
+            [
+              308,
+              351,
+              35,
+              33
+            ]
+          ],
+          "primary": [
+            311.5,
+            326.5
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 10,
+          "bounds": [
+            444,
+            254,
+            155,
+            135
+          ],
+          "component_pixels": 8747,
+          "ground": [
+            503.5,
+            388
+          ],
+          "boots": [
+            [
+              524,
+              353,
+              34,
+              35
+            ],
+            [
+              451,
+              355,
+              30,
+              33
+            ]
+          ],
+          "primary": [
+            541,
+            313.5
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 11,
+          "bounds": [
+            623,
+            229,
+            161,
+            165
+          ],
+          "component_pixels": 9338,
+          "ground": [
+            689.75,
+            393
+          ],
+          "boots": [
+            [
+              710,
+              357,
+              37,
+              34
+            ],
+            [
+              634,
+              360,
+              34,
+              33
+            ]
+          ],
+          "primary": [
+            718,
+            301
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 12,
+          "bounds": [
+            824,
+            208,
+            160,
+            186
+          ],
+          "component_pixels": 9399,
+          "ground": [
+            895.25,
+            393
+          ],
+          "boots": [
+            [
+              911,
+              357,
+              38,
+              34
+            ],
+            [
+              844,
+              361,
+              33,
+              32
+            ]
+          ],
+          "primary": [
+            909,
+            293.5
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 13,
+          "bounds": [
+            1028,
+            221,
+            129,
+            173
+          ],
+          "component_pixels": 8515,
+          "ground": [
+            1092.5,
+            393
+          ],
+          "boots": [
+            [
+              1036,
+              358,
+              35,
+              35
+            ],
+            [
+              1114,
+              358,
+              35,
+              33
+            ]
+          ],
+          "primary": [
+            1139,
+            280.5
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 14,
+          "bounds": [
+            1224,
+            254,
+            159,
+            135
+          ],
+          "component_pixels": 9084,
+          "ground": [
+            1275.75,
+            388
+          ],
+          "boots": [
+            [
+              1226,
+              353,
+              33,
+              35
+            ],
+            [
+              1293,
+              354,
+              32,
+              30
+            ]
+          ],
+          "primary": [
+            1300.5,
+            330
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 15,
+          "bounds": [
+            1415,
+            232,
+            150,
+            157
+          ],
+          "component_pixels": 9602,
+          "ground": [
+            1473.75,
+            388
+          ],
+          "boots": [
+            [
+              1429,
+              353,
+              32,
+              35
+            ],
+            [
+              1485,
+              355,
+              35,
+              31
+            ]
+          ],
+          "primary": [
+            1461.5,
+            327.5
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 16,
+          "bounds": [
+            34,
+            428,
+            156,
+            156
+          ],
+          "component_pixels": 9962,
+          "ground": [
+            94.75,
+            583
+          ],
+          "boots": [
+            [
+              48,
+              548,
+              34,
+              35
+            ],
+            [
+              107,
+              549,
+              35,
+              31
+            ]
+          ],
+          "primary": [
+            81.5,
+            522.5
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 17,
+          "bounds": [
+            230,
+            446,
+            168,
+            138
+          ],
+          "component_pixels": 9571,
+          "ground": [
+            303.5,
+            583
+          ],
+          "boots": [
+            [
+              318,
+              542,
+              35,
+              35
+            ],
+            [
+              258,
+              548,
+              27,
+              35
+            ]
+          ],
+          "primary": [
+            312,
+            520
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 18,
+          "bounds": [
+            438,
+            447,
+            145,
+            136
+          ],
+          "component_pixels": 8697,
+          "ground": [
+            492,
+            583
+          ],
+          "boots": [
+            [
+              458,
+              546,
+              30,
+              37
+            ],
+            [
+              498,
+              548,
+              26,
+              31
+            ]
+          ],
+          "primary": [
+            525,
+            517.5
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 19,
+          "bounds": [
+            621,
+            453,
+            187,
+            126
+          ],
+          "component_pixels": 8925,
+          "ground": [
+            675.25,
+            578
+          ],
+          "boots": [
+            [
+              621,
+              543,
+              33,
+              35
+            ],
+            [
+              697,
+              544,
+              32,
+              32
+            ]
+          ],
+          "primary": [
+            719,
+            499.5
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 20,
+          "bounds": [
+            812,
+            456,
+            211,
+            128
+          ],
+          "component_pixels": 9603,
+          "ground": [
+            868,
+            583
+          ],
+          "boots": [
+            [
+              813,
+              546,
+              33,
+              37
+            ],
+            [
+              890,
+              546,
+              33,
+              30
+            ]
+          ],
+          "primary": [
+            922.5,
+            505.5
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 21,
+          "bounds": [
+            1043,
+            450,
+            155,
+            134
+          ],
+          "component_pixels": 9493,
+          "ground": [
+            1098.5,
+            583
+          ],
+          "boots": [
+            [
+              1119,
+              549,
+              34,
+              32
+            ],
+            [
+              1044,
+              550,
+              34,
+              33
+            ]
+          ],
+          "primary": [
+            1125,
+            513.5
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 22,
+          "bounds": [
+            1220,
+            447,
+            162,
+            137
+          ],
+          "component_pixels": 9259,
+          "ground": [
+            1278,
+            583
+          ],
+          "boots": [
+            [
+              1230,
+              548,
+              32,
+              35
+            ],
+            [
+              1294,
+              549,
+              32,
+              30
+            ]
+          ],
+          "primary": [
+            1305,
+            523
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 23,
+          "bounds": [
+            1407,
+            427,
+            153,
+            157
+          ],
+          "component_pixels": 9767,
+          "ground": [
+            1464.75,
+            583
+          ],
+          "boots": [
+            [
+              1420,
+              548,
+              31,
+              35
+            ],
+            [
+              1476,
+              549,
+              36,
+              31
+            ]
+          ],
+          "primary": [
+            1450.5,
+            522.5
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 24,
+          "bounds": [
+            55,
+            685,
+            110,
+            106
+          ],
+          "component_pixels": 6061,
+          "ground": [
+            108.75,
+            790
+          ],
+          "boots": [
+            [
+              112,
+              747,
+              52,
+              42
+            ],
+            [
+              65,
+              758,
+              29,
+              32
+            ]
+          ],
+          "primary": [
+            137,
+            722
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 25,
+          "bounds": [
+            238,
+            614,
+            126,
+            174
+          ],
+          "component_pixels": 10283,
+          "ground": [
+            324.5,
+            788
+          ],
+          "boots": [
+            [
+              282,
+              751,
+              32,
+              37
+            ],
+            [
+              338,
+              741,
+              26,
+              30
+            ]
+          ],
+          "primary": [
+            303.5,
+            672.5
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 26,
+          "bounds": [
+            432,
+            606,
+            126,
+            162
+          ],
+          "component_pixels": 9693,
+          "ground": [
+            507.25,
+            767
+          ],
+          "boots": [
+            [
+              464,
+              725,
+              34,
+              42
+            ],
+            [
+              516,
+              709,
+              35,
+              40
+            ]
+          ],
+          "primary": [
+            506.5,
+            626
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 27,
+          "bounds": [
+            645,
+            603,
+            105,
+            182
+          ],
+          "component_pixels": 8011,
+          "ground": [
+            720.75,
+            784
+          ],
+          "boots": [
+            [
+              720,
+              738,
+              27,
+              46
+            ],
+            [
+              699,
+              730,
+              18,
+              23
+            ]
+          ],
+          "primary": [
+            731.5,
+            669
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 28,
+          "bounds": [
+            829,
+            680,
+            165,
+            113
+          ],
+          "component_pixels": 7998,
+          "ground": [
+            885.75,
+            790
+          ],
+          "boots": [
+            [
+              832,
+              757,
+              33,
+              33
+            ],
+            [
+              910,
+              766,
+              26,
+              19
+            ]
+          ],
+          "primary": [
+            914,
+            752
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 29,
+          "bounds": [
+            1044,
+            686,
+            171,
+            107
+          ],
+          "component_pixels": 8036,
+          "ground": [
+            1102,
+            791
+          ],
+          "boots": [
+            [
+              1045,
+              761,
+              33,
+              30
+            ],
+            [
+              1129,
+              768,
+              27,
+              19
+            ]
+          ],
+          "primary": [
+            1135.5,
+            754
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 30,
+          "bounds": [
+            1243,
+            652,
+            139,
+            140
+          ],
+          "component_pixels": 8339,
+          "ground": [
+            1300.5,
+            790
+          ],
+          "boots": [
+            [
+              1257,
+              754,
+              33,
+              36
+            ],
+            [
+              1314,
+              753,
+              27,
+              30
+            ]
+          ],
+          "primary": [
+            1323,
+            734.5
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 31,
+          "bounds": [
+            1412,
+            632,
+            153,
+            159
+          ],
+          "component_pixels": 9737,
+          "ground": [
+            1473.75,
+            790
+          ],
+          "boots": [
+            [
+              1428,
+              755,
+              33,
+              35
+            ],
+            [
+              1485,
+              757,
+              36,
+              30
+            ]
+          ],
+          "primary": [
+            1462.5,
+            726.5
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        }
+      ]
+    },
+    "up": {
+      "source": "up-source.png",
+      "sha256": "fa0feaacee642f9ff9f22696127ea506347dd66f0a0fdb0037a969dad9d9fba7",
+      "density": 0.44,
+      "calibration": {
+        "hair_span": 50,
+        "target_hair_span": 22
+      },
+      "keys": [
+        {
+          "index": 0,
+          "bounds": [
+            42,
+            78,
+            168,
+            135
+          ],
+          "component_pixels": 9398,
+          "ground": [
+            103.5,
+            212
+          ],
+          "boots": [
+            [
+              112,
+              181,
+              28,
+              31
+            ],
+            [
+              69,
+              178,
+              24,
+              28
+            ]
+          ],
+          "primary": [
+            138,
+            146.5
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 1,
+          "bounds": [
+            255,
+            89,
+            164,
+            123
+          ],
+          "component_pixels": 9066,
+          "ground": [
+            303,
+            211
+          ],
+          "boots": [
+            [
+              258,
+              182,
+              30,
+              29
+            ],
+            [
+              321,
+              177,
+              24,
+              28
+            ]
+          ],
+          "primary": [
+            339,
+            151
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 2,
+          "bounds": [
+            455,
+            48,
+            109,
+            166
+          ],
+          "component_pixels": 8495,
+          "ground": [
+            498,
+            213
+          ],
+          "boots": [
+            [
+              456,
+              184,
+              28,
+              29
+            ],
+            [
+              514,
+              179,
+              24,
+              27
+            ]
+          ],
+          "primary": [
+            499.5,
+            94
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 3,
+          "bounds": [
+            639,
+            27,
+            90,
+            184
+          ],
+          "component_pixels": 8151,
+          "ground": [
+            682.25,
+            211
+          ],
+          "boots": [
+            [
+              639,
+              182,
+              27,
+              29
+            ],
+            [
+              700,
+              180,
+              24,
+              27
+            ]
+          ],
+          "primary": [
+            686,
+            88.5
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 4,
+          "bounds": [
+            805,
+            55,
+            100,
+            155
+          ],
+          "component_pixels": 6677,
+          "ground": [
+            860.5,
+            209
+          ],
+          "boots": [
+            [
+              815,
+              179,
+              29,
+              30
+            ],
+            [
+              879,
+              179,
+              25,
+              29
+            ]
+          ],
+          "primary": [
+            863.5,
+            151
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 5,
+          "bounds": [
+            989,
+            104,
+            142,
+            109
+          ],
+          "component_pixels": 6778,
+          "ground": [
+            1010,
+            212
+          ],
+          "boots": [
+            [
+              996,
+              178,
+              28,
+              34
+            ]
+          ],
+          "primary": [
+            1040,
+            149
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 6,
+          "bounds": [
+            1171,
+            76,
+            147,
+            137
+          ],
+          "component_pixels": 8079,
+          "ground": [
+            1218,
+            212
+          ],
+          "boots": [
+            [
+              1181,
+              180,
+              23,
+              32
+            ],
+            [
+              1231,
+              178,
+              25,
+              27
+            ]
+          ],
+          "primary": [
+            1248,
+            135.5
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 7,
+          "bounds": [
+            1357,
+            86,
+            155,
+            128
+          ],
+          "component_pixels": 8387,
+          "ground": [
+            1421.5,
+            213
+          ],
+          "boots": [
+            [
+              1385,
+              183,
+              22,
+              30
+            ],
+            [
+              1434,
+              180,
+              26,
+              29
+            ]
+          ],
+          "primary": [
+            1448.5,
+            141.5
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 8,
+          "bounds": [
+            43,
+            287,
+            165,
+            125
+          ],
+          "component_pixels": 8510,
+          "ground": [
+            106.75,
+            410
+          ],
+          "boots": [
+            [
+              67,
+              381,
+              26,
+              29
+            ],
+            [
+              120,
+              381,
+              27,
+              28
+            ]
+          ],
+          "primary": [
+            141.5,
+            363.5
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 9,
+          "bounds": [
+            248,
+            295,
+            157,
+            121
+          ],
+          "component_pixels": 8225,
+          "ground": [
+            264.5,
+            408
+          ],
+          "boots": [
+            [
+              249,
+              376,
+              31,
+              32
+            ]
+          ],
+          "primary": [
+            303,
+            358
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 10,
+          "bounds": [
+            446,
+            238,
+            116,
+            178
+          ],
+          "component_pixels": 8054,
+          "ground": [
+            501.5,
+            415
+          ],
+          "boots": [
+            [
+              457,
+              384,
+              28,
+              31
+            ],
+            [
+              520,
+              383,
+              24,
+              28
+            ]
+          ],
+          "primary": [
+            518.5,
+            308
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 11,
+          "bounds": [
+            632,
+            225,
+            124,
+            186
+          ],
+          "component_pixels": 9124,
+          "ground": [
+            687.75,
+            410
+          ],
+          "boots": [
+            [
+              647,
+              380,
+              26,
+              30
+            ],
+            [
+              704,
+              377,
+              23,
+              28
+            ]
+          ],
+          "primary": [
+            694,
+            289.5
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 12,
+          "bounds": [
+            802,
+            220,
+            134,
+            192
+          ],
+          "component_pixels": 9237,
+          "ground": [
+            866.5,
+            411
+          ],
+          "boots": [
+            [
+              821,
+              379,
+              29,
+              32
+            ],
+            [
+              885,
+              381,
+              25,
+              29
+            ]
+          ],
+          "primary": [
+            869,
+            284.5
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 13,
+          "bounds": [
+            985,
+            276,
+            173,
+            136
+          ],
+          "component_pixels": 9310,
+          "ground": [
+            1044,
+            411
+          ],
+          "boots": [
+            [
+              1000,
+              379,
+              28,
+              32
+            ],
+            [
+              1060,
+              374,
+              28,
+              30
+            ]
+          ],
+          "primary": [
+            1080.5,
+            332
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 14,
+          "bounds": [
+            1184,
+            285,
+            153,
+            127
+          ],
+          "component_pixels": 8565,
+          "ground": [
+            1234.75,
+            411
+          ],
+          "boots": [
+            [
+              1194,
+              380,
+              28,
+              31
+            ],
+            [
+              1250,
+              374,
+              23,
+              27
+            ]
+          ],
+          "primary": [
+            1271.5,
+            356
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 15,
+          "bounds": [
+            1359,
+            292,
+            161,
+            122
+          ],
+          "component_pixels": 8526,
+          "ground": [
+            1422.25,
+            413
+          ],
+          "boots": [
+            [
+              1434,
+              383,
+              27,
+              30
+            ],
+            [
+              1385,
+              383,
+              24,
+              27
+            ]
+          ],
+          "primary": [
+            1452,
+            346.5
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 16,
+          "bounds": [
+            40,
+            477,
+            168,
+            128
+          ],
+          "component_pixels": 9173,
+          "ground": [
+            107.25,
+            604
+          ],
+          "boots": [
+            [
+              68,
+              575,
+              25,
+              29
+            ],
+            [
+              121,
+              570,
+              26,
+              30
+            ]
+          ],
+          "primary": [
+            137,
+            541
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 17,
+          "bounds": [
+            254,
+            477,
+            93,
+            128
+          ],
+          "component_pixels": 6442,
+          "ground": [
+            303,
+            604
+          ],
+          "boots": [
+            [
+              318,
+              570,
+              29,
+              34
+            ],
+            [
+              261,
+              570,
+              25,
+              30
+            ]
+          ],
+          "primary": [
+            304,
+            544.5
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 18,
+          "bounds": [
+            446,
+            457,
+            96,
+            168
+          ],
+          "component_pixels": 8127,
+          "ground": [
+            503,
+            624
+          ],
+          "boots": [
+            [
+              465,
+              590,
+              25,
+              34
+            ],
+            [
+              516,
+              594,
+              25,
+              29
+            ]
+          ],
+          "primary": [
+            499.5,
+            504.5
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 19,
+          "bounds": [
+            631,
+            421,
+            97,
+            199
+          ],
+          "component_pixels": 8938,
+          "ground": [
+            685.25,
+            619
+          ],
+          "boots": [
+            [
+              643,
+              589,
+              26,
+              30
+            ],
+            [
+              702,
+              586,
+              25,
+              29
+            ]
+          ],
+          "primary": [
+            685.5,
+            492.5
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 20,
+          "bounds": [
+            811,
+            421,
+            93,
+            206
+          ],
+          "component_pixels": 8831,
+          "ground": [
+            864,
+            626
+          ],
+          "boots": [
+            [
+              822,
+              595,
+              28,
+              31
+            ],
+            [
+              881,
+              584,
+              22,
+              29
+            ]
+          ],
+          "primary": [
+            869.5,
+            500
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 21,
+          "bounds": [
+            987,
+            438,
+            99,
+            189
+          ],
+          "component_pixels": 8740,
+          "ground": [
+            1045.5,
+            626
+          ],
+          "boots": [
+            [
+              1003,
+              595,
+              28,
+              31
+            ],
+            [
+              1063,
+              583,
+              22,
+              29
+            ]
+          ],
+          "primary": [
+            1048,
+            504
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 22,
+          "bounds": [
+            1176,
+            476,
+            99,
+            130
+          ],
+          "component_pixels": 6728,
+          "ground": [
+            1230.75,
+            605
+          ],
+          "boots": [
+            [
+              1189,
+              572,
+              25,
+              30
+            ],
+            [
+              1246,
+              574,
+              28,
+              31
+            ]
+          ],
+          "primary": [
+            1230.5,
+            549
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 23,
+          "bounds": [
+            1356,
+            479,
+            157,
+            128
+          ],
+          "component_pixels": 8707,
+          "ground": [
+            1422.25,
+            605
+          ],
+          "boots": [
+            [
+              1434,
+              576,
+              27,
+              29
+            ],
+            [
+              1385,
+              577,
+              24,
+              28
+            ]
+          ],
+          "primary": [
+            1448,
+            539.5
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 24,
+          "bounds": [
+            41,
+            686,
+            157,
+            126
+          ],
+          "component_pixels": 8826,
+          "ground": [
+            102.25,
+            811
+          ],
+          "boots": [
+            [
+              60,
+              780,
+              28,
+              31
+            ],
+            [
+              117,
+              781,
+              27,
+              30
+            ]
+          ],
+          "primary": [
+            132,
+            748
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 25,
+          "bounds": [
+            253,
+            672,
+            101,
+            146
+          ],
+          "component_pixels": 8067,
+          "ground": [
+            312,
+            818
+          ],
+          "boots": [
+            [
+              268,
+              786,
+              30,
+              32
+            ],
+            [
+              329,
+              782,
+              24,
+              29
+            ]
+          ],
+          "primary": [
+            314,
+            696.5
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 26,
+          "bounds": [
+            426,
+            635,
+            124,
+            169
+          ],
+          "component_pixels": 8918,
+          "ground": [
+            490.25,
+            803
+          ],
+          "boots": [
+            [
+              494,
+              765,
+              26,
+              38
+            ],
+            [
+              462,
+              765,
+              23,
+              37
+            ]
+          ],
+          "primary": [
+            497.5,
+            683
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 27,
+          "bounds": [
+            630,
+            651,
+            101,
+            173
+          ],
+          "component_pixels": 7927,
+          "ground": [
+            684.5,
+            823
+          ],
+          "boots": [
+            [
+              639,
+              790,
+              26,
+              31
+            ],
+            [
+              704,
+              793,
+              26,
+              30
+            ]
+          ],
+          "primary": [
+            695.5,
+            712
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 28,
+          "bounds": [
+            810,
+            669,
+            100,
+            157
+          ],
+          "component_pixels": 6626,
+          "ground": [
+            862,
+            825
+          ],
+          "boots": [
+            [
+              814,
+              793,
+              29,
+              32
+            ],
+            [
+              883,
+              790,
+              25,
+              33
+            ]
+          ],
+          "primary": [
+            864,
+            766.5
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 29,
+          "bounds": [
+            984,
+            720,
+            102,
+            102
+          ],
+          "component_pixels": 5323,
+          "ground": [
+            1042.25,
+            821
+          ],
+          "boots": [
+            [
+              996,
+              791,
+              30,
+              30
+            ],
+            [
+              1062,
+              784,
+              23,
+              32
+            ]
+          ],
+          "primary": [
+            1042,
+            762.5
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 30,
+          "bounds": [
+            1158,
+            694,
+            168,
+            127
+          ],
+          "component_pixels": 9160,
+          "ground": [
+            1223.5,
+            820
+          ],
+          "boots": [
+            [
+              1181,
+              789,
+              27,
+              31
+            ],
+            [
+              1240,
+              782,
+              25,
+              29
+            ]
+          ],
+          "primary": [
+            1259.5,
+            747
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 31,
+          "bounds": [
+            1360,
+            691,
+            152,
+            124
+          ],
+          "component_pixels": 8280,
+          "ground": [
+            1420.5,
+            814
+          ],
+          "boots": [
+            [
+              1378,
+              783,
+              29,
+              31
+            ],
+            [
+              1436,
+              781,
+              25,
+              29
+            ]
+          ],
+          "primary": [
+            1449.5,
+            746.5
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        }
+      ]
+    },
+    "down": {
+      "source": "down-source.png",
+      "sha256": "475add89e2649c9f30138196876d1de59a910eee6c1c1e14be930e424e623cab",
+      "density": 0.3492063492063492,
+      "calibration": {
+        "hair_span": 63,
+        "target_hair_span": 22
+      },
+      "keys": [
+        {
+          "index": 0,
+          "bounds": [
+            23,
+            46,
+            164,
+            160
+          ],
+          "component_pixels": 11667,
+          "ground": [
+            96,
+            204
+          ],
+          "boots": [
+            [
+              106,
+              171,
+              29,
+              33
+            ],
+            [
+              58,
+              175,
+              27,
+              27
+            ]
+          ],
+          "primary": [
+            82.5,
+            149
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 1,
+          "bounds": [
+            217,
+            41,
+            175,
+            164
+          ],
+          "component_pixels": 12304,
+          "ground": [
+            288.25,
+            203
+          ],
+          "boots": [
+            [
+              305,
+              165,
+              32,
+              38
+            ],
+            [
+              241,
+              164,
+              29,
+              30
+            ]
+          ],
+          "primary": [
+            309.5,
+            71.5
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 2,
+          "bounds": [
+            435,
+            12,
+            125,
+            193
+          ],
+          "component_pixels": 11799,
+          "ground": [
+            490.25,
+            203
+          ],
+          "boots": [
+            [
+              508,
+              167,
+              27,
+              36
+            ],
+            [
+              444,
+              162,
+              30,
+              32
+            ]
+          ],
+          "primary": [
+            481.5,
+            50.5
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 4,
+          "bounds": [
+            785,
+            53,
+            158,
+            163
+          ],
+          "component_pixels": 11084,
+          "ground": [
+            828.5,
+            198
+          ],
+          "boots": [
+            [
+              815,
+              163,
+              27,
+              35
+            ]
+          ],
+          "primary": [
+            867.5,
+            154.5
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 5,
+          "bounds": [
+            984,
+            71,
+            152,
+            146
+          ],
+          "component_pixels": 10586,
+          "ground": [
+            1013.5,
+            201
+          ],
+          "boots": [
+            [
+              997,
+              165,
+              33,
+              36
+            ]
+          ],
+          "primary": [
+            1055.5,
+            155.5
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 6,
+          "bounds": [
+            1174,
+            86,
+            138,
+            129
+          ],
+          "component_pixels": 8479,
+          "ground": [
+            1295.5,
+            201
+          ],
+          "boots": [
+            [
+              1280,
+              166,
+              31,
+              35
+            ]
+          ],
+          "primary": [
+            1253,
+            168
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 7,
+          "bounds": [
+            1363,
+            44,
+            166,
+            162
+          ],
+          "component_pixels": 11737,
+          "ground": [
+            1437.75,
+            205
+          ],
+          "boots": [
+            [
+              1448,
+              170,
+              28,
+              35
+            ],
+            [
+              1400,
+              175,
+              27,
+              27
+            ]
+          ],
+          "primary": [
+            1440.5,
+            146
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 16,
+          "bounds": [
+            39,
+            430,
+            137,
+            180
+          ],
+          "component_pixels": 10950,
+          "ground": [
+            93.25,
+            594
+          ],
+          "boots": [
+            [
+              40,
+              556,
+              32,
+              38
+            ],
+            [
+              115,
+              553,
+              31,
+              35
+            ]
+          ],
+          "primary": [
+            92,
+            515
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 17,
+          "bounds": [
+            240,
+            437,
+            130,
+            173
+          ],
+          "component_pixels": 10109,
+          "ground": [
+            328,
+            590
+          ],
+          "boots": [
+            [
+              313,
+              554,
+              30,
+              36
+            ]
+          ],
+          "primary": [
+            296.5,
+            533
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 18,
+          "bounds": [
+            415,
+            435,
+            145,
+            177
+          ],
+          "component_pixels": 11593,
+          "ground": [
+            491.5,
+            601
+          ],
+          "boots": [
+            [
+              484,
+              588,
+              15,
+              13
+            ]
+          ],
+          "primary": [
+            497.5,
+            528
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 19,
+          "bounds": [
+            624,
+            431,
+            113,
+            187
+          ],
+          "component_pixels": 10616,
+          "ground": [
+            673,
+            611
+          ],
+          "boots": [
+            [
+              665,
+              601,
+              16,
+              10
+            ]
+          ],
+          "primary": [
+            676.5,
+            531
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 20,
+          "bounds": [
+            805,
+            431,
+            121,
+            193
+          ],
+          "component_pixels": 10960,
+          "ground": [
+            860.5,
+            621
+          ],
+          "boots": [
+            [
+              853,
+              609,
+              15,
+              12
+            ]
+          ],
+          "primary": [
+            862,
+            534
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 21,
+          "bounds": [
+            997,
+            431,
+            139,
+            181
+          ],
+          "component_pixels": 11712,
+          "ground": [
+            1035,
+            601
+          ],
+          "boots": [
+            [
+              998,
+              559,
+              36,
+              42
+            ],
+            [
+              1045,
+              582,
+              18,
+              17
+            ]
+          ],
+          "primary": [
+            1064,
+            530.5
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 22,
+          "bounds": [
+            1185,
+            443,
+            149,
+            160
+          ],
+          "component_pixels": 10644,
+          "ground": [
+            1248.5,
+            601
+          ],
+          "boots": [
+            [
+              1276,
+              560,
+              35,
+              41
+            ],
+            [
+              1186,
+              552,
+              35,
+              34
+            ]
+          ],
+          "primary": [
+            1248.5,
+            526.5
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 23,
+          "bounds": [
+            1383,
+            431,
+            135,
+            179
+          ],
+          "component_pixels": 10933,
+          "ground": [
+            1436.75,
+            594
+          ],
+          "boots": [
+            [
+              1384,
+              557,
+              32,
+              37
+            ],
+            [
+              1458,
+              553,
+              31,
+              35
+            ]
+          ],
+          "primary": [
+            1436,
+            515.5
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 24,
+          "bounds": [
+            29,
+            626,
+            156,
+            184
+          ],
+          "component_pixels": 11895,
+          "ground": [
+            93.25,
+            809
+          ],
+          "boots": [
+            [
+              112,
+              772,
+              30,
+              37
+            ],
+            [
+              42,
+              772,
+              35,
+              31
+            ]
+          ],
+          "primary": [
+            113.5,
+            727.5
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 25,
+          "bounds": [
+            231,
+            614,
+            158,
+            179
+          ],
+          "component_pixels": 12725,
+          "ground": [
+            305,
+            793
+          ],
+          "boots": [
+            [
+              309,
+              756,
+              21,
+              37
+            ],
+            [
+              279,
+              751,
+              23,
+              29
+            ]
+          ],
+          "primary": [
+            311.5,
+            638.5
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 26,
+          "bounds": [
+            438,
+            624,
+            118,
+            183
+          ],
+          "component_pixels": 10372,
+          "ground": [
+            488.25,
+            806
+          ],
+          "boots": [
+            [
+              487,
+              763,
+              21,
+              43
+            ],
+            [
+              468,
+              763,
+              22,
+              30
+            ]
+          ],
+          "primary": [
+            480.5,
+            648
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 28,
+          "bounds": [
+            806,
+            672,
+            143,
+            148
+          ],
+          "component_pixels": 10512,
+          "ground": [
+            854.5,
+            814
+          ],
+          "boots": [
+            [
+              807,
+              774,
+              31,
+              33
+            ],
+            [
+              880,
+              804,
+              13,
+              10
+            ]
+          ],
+          "primary": [
+            876.5,
+            766.5
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 29,
+          "bounds": [
+            1001,
+            703,
+            134,
+            123
+          ],
+          "component_pixels": 8881,
+          "ground": [
+            1067.75,
+            813
+          ],
+          "boots": [
+            [
+              1002,
+              778,
+              33,
+              35
+            ],
+            [
+              1100,
+              778,
+              34,
+              35
+            ]
+          ],
+          "primary": [
+            1051,
+            787
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 30,
+          "bounds": [
+            1199,
+            673,
+            134,
+            142
+          ],
+          "component_pixels": 8524,
+          "ground": [
+            1252.5,
+            813
+          ],
+          "boots": [
+            [
+              1273,
+              777,
+              32,
+              36
+            ],
+            [
+              1199,
+              775,
+              34,
+              32
+            ]
+          ],
+          "primary": [
+            1234,
+            757.5
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 31,
+          "bounds": [
+            1367,
+            644,
+            161,
+            164
+          ],
+          "component_pixels": 11748,
+          "ground": [
+            1437.5,
+            807
+          ],
+          "boots": [
+            [
+              1454,
+              772,
+              31,
+              35
+            ],
+            [
+              1389,
+              779,
+              33,
+              24
+            ]
+          ],
+          "primary": [
+            1413.5,
+            756.5
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        }
+      ]
+    },
+    "turn": {
+      "source": "turn-source.png",
+      "sha256": "3a8b6d7e5b604369b6a3ae39a541997e938f4cae974f8607577551d40fe734df",
+      "density": 0.22448979591836735,
+      "calibration": {
+        "hair_span": 98,
+        "target_hair_span": 22
+      },
+      "keys": [
+        {
+          "index": 0,
+          "bounds": [
+            219,
+            19,
+            425,
+            288
+          ],
+          "component_pixels": 38021,
+          "ground": [
+            347.5,
+            303
+          ],
+          "boots": [
+            [
+              385,
+              229,
+              74,
+              62
+            ],
+            [
+              239,
+              242,
+              68,
+              61
+            ]
+          ],
+          "primary": [
+            443,
+            149.5
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 1,
+          "bounds": [
+            842,
+            60,
+            393,
+            266
+          ],
+          "component_pixels": 35077,
+          "ground": [
+            962,
+            303
+          ],
+          "boots": [
+            [
+              871,
+              235,
+              62,
+              68
+            ],
+            [
+              994,
+              252,
+              56,
+              46
+            ]
+          ],
+          "primary": [
+            1007,
+            219
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 2,
+          "bounds": [
+            258,
+            339,
+            356,
+            246
+          ],
+          "component_pixels": 31871,
+          "ground": [
+            367.25,
+            567
+          ],
+          "boots": [
+            [
+              261,
+              504,
+              71,
+              63
+            ],
+            [
+              408,
+              516,
+              60,
+              51
+            ]
+          ],
+          "primary": [
+            404,
+            478.5
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 3,
+          "bounds": [
+            747,
+            342,
+            359,
+            248
+          ],
+          "component_pixels": 32519,
+          "ground": [
+            900.25,
+            575
+          ],
+          "boots": [
+            [
+              906,
+              504,
+              65,
+              71
+            ],
+            [
+              850,
+              555,
+              24,
+              13
+            ]
+          ],
+          "primary": [
+            933,
+            485
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 4,
+          "bounds": [
+            64,
+            623,
+            431,
+            233
+          ],
+          "component_pixels": 35676,
+          "ground": [
+            382.25,
+            852
+          ],
+          "boots": [
+            [
+              290,
+              791,
+              63,
+              61
+            ],
+            [
+              409,
+              792,
+              68,
+              60
+            ]
+          ],
+          "primary": [
+            264.5,
+            734.5
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 5,
+          "bounds": [
+            809,
+            613,
+            366,
+            265
+          ],
+          "component_pixels": 31890,
+          "ground": [
+            1040,
+            875
+          ],
+          "boots": [
+            [
+              1074,
+              819,
+              58,
+              56
+            ],
+            [
+              951,
+              804,
+              52,
+              54
+            ]
+          ],
+          "primary": [
+            975,
+            723.5
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 6,
+          "bounds": [
+            168,
+            864,
+            376,
+            300
+          ],
+          "component_pixels": 36100,
+          "ground": [
+            394.5,
+            1160
+          ],
+          "boots": [
+            [
+              420,
+              1099,
+              61,
+              61
+            ],
+            [
+              312,
+              1093,
+              53,
+              55
+            ]
+          ],
+          "primary": [
+            339.5,
+            974.5
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        },
+        {
+          "index": 7,
+          "bounds": [
+            833,
+            906,
+            402,
+            258
+          ],
+          "component_pixels": 33413,
+          "ground": [
+            959,
+            1160
+          ],
+          "boots": [
+            [
+              882,
+              1090,
+              61,
+              70
+            ],
+            [
+              983,
+              1074,
+              45,
+              51
+            ]
+          ],
+          "primary": [
+            1059.5,
+            1000
+          ],
+          "primary_note": "Source glove region annotation; baked full-actor weapons do not consume this hidden rigid overlay."
+        }
+      ]
+    },
+    "down-rise": {
+      "source": "down-rise-source.png",
+      "sha256": "1350ccfda10e7adc83793fd3e92155659b066161ec5a42555977c32a118ef19f",
+      "density": 0.23157894736842105,
+      "calibration": {
+        "hair_span": 95,
+        "target_hair_span": 22
+      },
+      "keys": [
+        {
+          "index": 0,
+          "bounds": [
+            156,
+            52,
+            264,
+            316
+          ],
+          "component_pixels": 31683,
+          "ground": [
+            302,
+            327
+          ],
+          "boots": [
+            [
+              324,
+              257,
+              61,
+              70
+            ],
+            [
+              240,
+              266,
+              19,
+              16
+            ]
+          ],
+          "primary": [
+            277.5,
+            226.5
+          ],
+          "primary_note": "Baked source glove annotation; no separate visible rig."
+        },
+        {
+          "index": 1,
+          "bounds": [
+            590,
+            114,
+            334,
+            268
+          ],
+          "component_pixels": 34233,
+          "ground": [
+            793,
+            343
+          ],
+          "boots": [
+            [
+              836,
+              270,
+              66,
+              73
+            ],
+            [
+              697,
+              278,
+              40,
+              42
+            ]
+          ],
+          "primary": [
+            712.5,
+            246
+          ],
+          "primary_note": "Baked source glove annotation; no separate visible rig."
+        },
+        {
+          "index": 2,
+          "bounds": [
+            139,
+            423,
+            304,
+            286
+          ],
+          "component_pixels": 34774,
+          "ground": [
+            309.25,
+            687
+          ],
+          "boots": [
+            [
+              337,
+              624,
+              60,
+              63
+            ],
+            [
+              244,
+              634,
+              15,
+              16
+            ]
+          ],
+          "primary": [
+            312.5,
+            563
+          ],
+          "primary_note": "Baked source glove annotation; no separate visible rig."
+        },
+        {
+          "index": 3,
+          "bounds": [
+            628,
+            406,
+            302,
+            315
+          ],
+          "component_pixels": 39785,
+          "ground": [
+            789.75,
+            718
+          ],
+          "boots": [
+            [
+              685,
+              635,
+              67,
+              83
+            ],
+            [
+              829,
+              627,
+              64,
+              72
+            ]
+          ],
+          "primary": [
+            767,
+            549
+          ],
+          "primary_note": "Baked source glove annotation; no separate visible rig."
+        },
+        {
+          "index": 4,
+          "bounds": [
+            196,
+            741,
+            279,
+            410
+          ],
+          "component_pixels": 40142,
+          "ground": [
+            307,
+            1147
+          ],
+          "boots": [
+            [
+              216,
+              1062,
+              63,
+              85
+            ],
+            [
+              337,
+              1063,
+              59,
+              65
+            ]
+          ],
+          "primary": [
+            262.5,
+            891
+          ],
+          "primary_note": "Baked source glove annotation; no separate visible rig."
+        },
+        {
+          "index": 5,
+          "bounds": [
+            672,
+            784,
+            257,
+            361
+          ],
+          "component_pixels": 38988,
+          "ground": [
+            772.75,
+            1142
+          ],
+          "boots": [
+            [
+              676,
+              1064,
+              68,
+              78
+            ],
+            [
+              808,
+              1062,
+              55,
+              63
+            ]
+          ],
+          "primary": [
+            838.5,
+            923.5
+          ],
+          "primary_note": "Baked source glove annotation; no separate visible rig."
+        },
+        {
+          "index": 6,
+          "bounds": [
+            182,
+            1202,
+            254,
+            285
+          ],
+          "component_pixels": 33848,
+          "ground": [
+            283.25,
+            1484
+          ],
+          "boots": [
+            [
+              330,
+              1406,
+              67,
+              70
+            ],
+            [
+              185,
+              1457,
+              36,
+              27
+            ]
+          ],
+          "primary": [
+            291,
+            1350.5
+          ],
+          "primary_note": "Baked source glove annotation; no separate visible rig."
+        },
+        {
+          "index": 7,
+          "bounds": [
+            682,
+            1174,
+            251,
+            319
+          ],
+          "component_pixels": 37371,
+          "ground": [
+            786.75,
+            1490
+          ],
+          "boots": [
+            [
+              685,
+              1410,
+              66,
+              80
+            ],
+            [
+              824,
+              1410,
+              63,
+              67
+            ]
+          ],
+          "primary": [
+            798,
+            1336
+          ],
+          "primary_note": "Baked source glove annotation; no separate visible rig."
+        }
+      ]
+    }
+  },
+  "invalid_source_keys": {
+    "down": [
+      3,
+      27
+    ]
+  },
+  "actions": [
+    "chop",
+    "rise",
+    "thrust",
+    "slam",
+    "spin"
+  ],
+  "phase_windows": [
+    [
+      0,
+      3
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      7,
+      10
+    ]
+  ],
+  "queued_recovery": [
+    11,
+    12
+  ],
+  "weights": [
+    0.6,
+    0.75,
+    1.25,
+    1.4,
+    0.55,
+    1.05,
+    0.75,
+    0.7,
+    0.9,
+    1.1,
+    0.6,
+    0.9,
+    1.1
+  ],
+  "jump_lift": [
+    0,
+    0,
+    0,
+    -14,
+    -24,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "combat_sha256": "bdb951ec3f70a76cb0ac031fb38c8d832bf9c8f6984514dfaf1d6dfe3e0c2768",
+  "front_rise": "Separate complete sheet; first atlas peak lost its head."
+}

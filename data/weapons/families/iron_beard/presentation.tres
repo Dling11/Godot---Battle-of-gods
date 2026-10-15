@@ -1,16 +1,21 @@
-[gd_resource type="Resource" script_class="WeaponFamilyPresentationDefinition" load_steps=13 format=3]
+[gd_resource type="Resource" script_class="WeaponFamilyPresentationDefinition" load_steps=18 format=3]
 [ext_resource type="Script" path="res://data/weapons/weapon_family_presentation_definition.gd" id="1"]
-[ext_resource type="Resource" path="res://assets/characters/playable/king/shared_bodies/axe/side/chop.tres" id="2"]
-[ext_resource type="Resource" path="res://assets/characters/playable/king/shared_bodies/axe/side/idle.tres" id="3"]
-[ext_resource type="Resource" path="res://assets/characters/playable/king/shared_bodies/axe/side/run.tres" id="4"]
-[ext_resource type="Texture2D" path="res://assets/characters/playable/king/axe_flow/swing.png" id="5"]
-[ext_resource type="Resource" path="res://assets/characters/playable/king/shared_bodies/axe/up/chop.tres" id="6"]
-[ext_resource type="Resource" path="res://assets/characters/playable/king/shared_bodies/axe/up/idle.tres" id="7"]
-[ext_resource type="Resource" path="res://assets/characters/playable/king/shared_bodies/axe/up/run.tres" id="8"]
-[ext_resource type="Resource" path="res://assets/characters/playable/king/shared_bodies/axe/down/chop.tres" id="9"]
-[ext_resource type="Resource" path="res://assets/characters/playable/king/shared_bodies/axe/down/idle.tres" id="10"]
-[ext_resource type="Resource" path="res://assets/characters/playable/king/shared_bodies/axe/down/run.tres" id="11"]
-[ext_resource type="PackedScene" path="res://gameplay/presentation/axe_identity_lock_swing.tscn" id="12"]
+[ext_resource type="Resource" path="res://assets/characters/playable/king/iron_beard_unified/side/chop.tres" id="2"]
+[ext_resource type="Resource" path="res://assets/characters/playable/king/iron_beard_unified/side/idle.tres" id="3"]
+[ext_resource type="Resource" path="res://assets/characters/playable/king/iron_beard_unified/side/run.tres" id="4"]
+[ext_resource type="Texture2D" path="res://assets/characters/playable/king/iron_beard_unified/slash.png" id="5"]
+[ext_resource type="Resource" path="res://assets/characters/playable/king/iron_beard_unified/up/chop.tres" id="6"]
+[ext_resource type="Resource" path="res://assets/characters/playable/king/iron_beard_unified/up/idle.tres" id="7"]
+[ext_resource type="Resource" path="res://assets/characters/playable/king/iron_beard_unified/up/run.tres" id="8"]
+[ext_resource type="Resource" path="res://assets/characters/playable/king/iron_beard_unified/down/chop.tres" id="9"]
+[ext_resource type="Resource" path="res://assets/characters/playable/king/iron_beard_unified/down/idle.tres" id="10"]
+[ext_resource type="Resource" path="res://assets/characters/playable/king/iron_beard_unified/down/run.tres" id="11"]
+[ext_resource type="PackedScene" path="res://gameplay/presentation/axe_unified_swing.tscn" id="12"]
+[ext_resource type="AudioStream" path="res://assets/audio/sfx/player/iron_beard/chop.wav" id="13"]
+[ext_resource type="AudioStream" path="res://assets/audio/sfx/player/iron_beard/rise.wav" id="14"]
+[ext_resource type="AudioStream" path="res://assets/audio/sfx/player/iron_beard/push.wav" id="15"]
+[ext_resource type="AudioStream" path="res://assets/audio/sfx/player/iron_beard/slam.wav" id="16"]
+[ext_resource type="AudioStream" path="res://assets/audio/sfx/player/iron_beard/spin.wav" id="17"]
 [resource]
 script = ExtResource("1")
 attack_poses = ExtResource("2")
@@ -24,9 +29,11 @@ downward_idle_poses = ExtResource("10")
 downward_running_poses = ExtResource("11")
 swing_atlas = ExtResource("5")
 swing_rows = 5
-swing_origins = PackedVector2Array(64,64,64,64,44,64,64,64,64,64)
+swing_origins = PackedVector2Array(128,128,128,128,128,128,128,128,128,128)
 swing_texel_scale = 1.1
 swing_full_frame_rows = PackedByteArray(1,1,1,1,1)
 sound_indices = PackedInt32Array(0,1,0,2,2)
-sound_pitches = PackedFloat32Array(1,1,0.9,1,0.85)
+sound_pitches = PackedFloat32Array(1,1,1,1,1)
+swing_sounds = Array[AudioStream]([ExtResource("13"),ExtResource("14"),ExtResource("15"),ExtResource("16"),ExtResource("17")])
+swing_volume_db = -10.0
 swing_scene = ExtResource("12")

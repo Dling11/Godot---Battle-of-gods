@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "source": "source.png",
+  "source_sha256": "89dd8ca0e00837242ea6d5f74ee74252259a7fe827837245651e90d401309e06",
+  "alpha_threshold": 240,
+  "source_component_bounds": [
+    249,
+    202,
+    729,
+    760
+  ],
+  "source_grip": [
+    805.221331750272,
+    676.3318492134165
+  ],
+  "source_edge": [
+    422,
+    679
+  ],
+  "source_butt": [
+    924.1642419601837,
+    897.3549004594181
+  ],
+  "density": 0.08126914024108041,
+  "rotation": 0.1034360903084881,
+  "canvas": [
+    80,
+    80
+  ],
+  "primary_grip": [
+    48,
+    45
+  ],
+  "cutting_edge": [
+    17,
+    42
+  ],
+  "handle_axis": [
+    4,
+    10
+  ],
+  "butt": [
+    56,
+    64
+  ],
+  "palette_reference": "assets/characters/playable/king/axe_proof/iron_beard.png",
+  "output": "assets/characters/playable/king/iron_beard_unified/iron_beard_compact.png",
+  "icon": "assets/ui/inventory/weapons/iron_beard_compact.png",
+  "notes": "Built-in edit of current axe. Whole-weapon uniform registration preserves31.145px grip-to-edge distance and orientation; only the generated lower haft is shorter. New grip/tip have extra transparent padding. Current body cels/hand positions/combat remain exact."
+}

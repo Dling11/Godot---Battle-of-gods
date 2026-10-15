@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "source": "source.png",
+  "source_sha256": "48ce87c6001519a926f19e0b6160fbdc102db222af6b669bb39970d378bfdaf6",
+  "alpha_threshold": 240,
+  "source_component_bounds": [
+    9,
+    9,
+    1143,
+    1317
+  ],
+  "source_grip": [
+    785.5073529411765,
+    621.5189873417721
+  ],
+  "source_butt": [
+    1049.8141606875345,
+    1219.5710793976189
+  ],
+  "density": 0.045626226655816796,
+  "rotation": 0.1792874143410068,
+  "canvas": [
+    80,
+    80
+  ],
+  "primary_grip": [
+    47,
+    41
+  ],
+  "cutting_edge": [
+    16,
+    38
+  ],
+  "handle_axis": [
+    4,
+    10
+  ],
+  "butt": [
+    54,
+    70
+  ],
+  "palette_reference": "assets/characters/playable/king/axe_proof/iron_beard.png",
+  "output": "assets/characters/playable/king/iron_beard_unified/iron_beard_slim.png",
+  "icon": "assets/ui/inventory/weapons/iron_beard_slim.png",
+  "original_offset": [
+    8,
+    8
+  ],
+  "shaft_edit_polygon": [
+    [
+      34,
+      24
+    ],
+    [
+      43,
+      24
+    ],
+    [
+      57,
+      60
+    ],
+    [
+      57,
+      67
+    ],
+    [
+      38,
+      67
+    ],
+    [
+      34,
+      39
+    ],
+    [
+      31,
+      30
+    ]
+  ],
+  "notes": "Owner clarified WIDTH only. Generated shaft/red wrap are imported through explicit shaft-only polygon; original head and full grip-to-cap length retained. Whole rigid raster, no runtime pieces. Old grip/edge/cap landmarks translate by8px padding. Shortened compact trial is superseded. Finalization widens only the lower edit boundary to include the former thick shaft outline; this removes8 detached dark pixels without touching the head or changing source/registration."
+}

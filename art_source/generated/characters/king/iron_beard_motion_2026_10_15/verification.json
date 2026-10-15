@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-15",
+  "decision": 213,
+  "status": "Implemented; owner art/motion approval recorded2026-10-15",
+  "engine": "Godot4.7.2 Compatibility native renderer",
+  "production": {
+    "checks": 799,
+    "failures": 0
+  },
+  "poses": {
+    "checks": 1591,
+    "failures": 0,
+    "directional_samples": 336,
+    "published_complete_actors": 69,
+    "views": {
+      "side": 30,
+      "up": 15,
+      "down": 16,
+      "turn": 8
+    },
+    "standing_guard_native_height": {
+      "side": 55,
+      "up": 54,
+      "down": 56,
+      "turn": 57
+    }
+  },
+  "native_gameplay": {
+    "checks": 840,
+    "failures": 0,
+    "slash_samples": 160,
+    "clipped_paint": 0,
+    "outside_contact": 0,
+    "existing_fixture_exit_leaks": 54,
+    "note": "Last follow-up holds the same side landing through contact; final native capture rerun below."
+  },
+  "native_motion_final": {
+    "checks": 15,
+    "failures": 0,
+    "views": [
+      "right",
+      "left",
+      "up",
+      "down"
+    ],
+    "run_attack_zoom": 2,
+    "recording": "Actual Player and registered effects; scripted camera/input for frame review, not performance certification"
+  },
+  "held_attack": {
+    "checks": 46,
+    "failures": 0
+  },
+  "resources": {
+    "checked": 953,
+    "failures": 0
+  },
+  "protected_files": [
+    25,
+    370
+  ],
+  "protected_changes": [],
+  "preview": {
+    "path": "tmp/review/axe_motion_2026_10_15/axe-four-direction-native.gif",
+    "bytes": 2666184,
+    "frames": 100,
+    "fps": 20,
+    "seconds": 5,
+    "source": "Actual Godot native frames, timestamp sampling, nearest2x, same zoom/foot alignment in run/idle/attacks"
+  },
+  "owner_native_approval": "approved2026-10-15",
+  "interactive_lab": {
+    "pid": 15676,
+    "weapon": "Iron Beard",
+    "save_suppressed": true
+  },
+  "approval_manifest": "approval.json"
+}

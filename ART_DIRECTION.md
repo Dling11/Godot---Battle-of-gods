@@ -1,5 +1,7 @@
 # Art Direction
 
+Decision213 retains212's accepted canonical axe/grips/carry and corrects compressed attack anatomy. New whole actors match running-compatible chest/waist/legs/boots; guards54–57px. Hair width alone missed212's short2.1-head-width source proportions. Jump is a normal two-hand head-first overhead chop, with the same blade face as the first cut. Turn advances body and weapon through eight45-degree headings with planted/stepping feet. Running/idle/steel remain exact. No anatomical transplants, per-pose resizing or runtime head reversal. Owner approves this axe art/motion on2026-10-15; preserve the current baseline.
+
 Updated 2026-10-14. Current sources and contracts are authoritative; historical generation trials and archive-dependent tooling were removed (Decision197). See PROJECT_CONTEXT.md and docs/maintenance/repository-cleanup.md.
 
 ## Visual Promise
@@ -186,3 +188,5 @@ An asset becomes `active_runtime` only when:
 7. Relevant scenes, generators, and tests load without errors.
 
 2026-10-13 maintenance: previous generation/comparison commands were retired; current output assets remain authoritative. New captures use ignored tmp/review/. See docs/maintenance/repository-cleanup.md.
+
+Iron Beard WIDTH clarification (Decision210): preserve original head and full handle length, narrow the wooden shaft and red grip to fit the existing closed fist. The32%-short trial misunderstood the request and is superseded. Current wrapped width is about45% thinner; King’s body remains exact. Review thickness and length independently beside unchanged poses.

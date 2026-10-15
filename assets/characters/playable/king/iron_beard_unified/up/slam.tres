@@ -1,0 +1,38 @@
+[gd_resource type="Resource" load_steps=5 format=3]
+[ext_resource type="Script" path="res://data/weapons/weapon_family_pose_definition.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/characters/playable/king/iron_beard_unified/up/slam_body.png" id="2"]
+[ext_resource type="Texture2D" path="res://assets/characters/playable/king/iron_reaper/attack_hands.png" id="3"]
+[ext_resource type="Texture2D" path="res://assets/characters/playable/king/iron_beard_unified/iron_beard_canonical.png" id="4"]
+[resource]
+script = ExtResource("1")
+body_atlas = ExtResource("2")
+hand_atlas = ExtResource("3")
+weapon_texture = ExtResource("4")
+cell_size = Vector2i(256, 256)
+columns = 4
+pose_count = 13
+pose_order = PackedInt32Array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12)
+primary_hands = PackedVector2Array(128, 131, 145, 134, 145, 134, 134, 103, 134, 103, 133, 112, 133, 112, 132, 110, 143, 127, 128, 131, 128, 131, 132, 110, 143, 127)
+secondary_hands = PackedVector2Array(133.07143, 141.87569, 143, 137, 143, 137, 135, 105, 135, 105, 132, 118, 132, 118, 132, 118, 140, 132, 133.07143, 141.87569, 133.07143, 141.87569, 132, 118, 140, 132)
+weapon_primary_grip = Vector2(44, 44)
+weapon_handle_axis = Vector2(0, 1)
+weapon_tip = Vector2(29, 24)
+mirror_cutting_edge = false
+lift_pixels = PackedFloat32Array(0, 0, 0, -24, -8, 0, 0, 0, 0, 0, 0, 0, 0)
+weapon_behind_body = PackedByteArray(0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1)
+primary_visible_poses = PackedByteArray(1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0)
+single_hand_poses = PackedByteArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
+stowed_poses = PackedByteArray(1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0)
+released_poses = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+ground_clipped_poses = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+phase_windows = PackedVector2Array(0, 3, 4, 6, 7, 10)
+queued_recovery_window = Vector2(11, 12)
+pose_weights = PackedFloat32Array(0.55, 0.75, 1.1, 1.25, 0.6, 1, 0.8, 0.8, 1, 1, 0.65, 0.9, 1)
+allow_rest = false
+rest_start_pose = 4
+rest_transition_end_pose = -1
+rest_transition_seconds = 0.48
+rest_loop_window = Vector2(-1, -1)
+rest_loop_seconds = 3.0
+retrieval_end_pose = 3
+interpolate_blade_angles = false

@@ -1,0 +1,54 @@
+[
+  {
+    "path": "assets/characters/playable/king/iron_beard_unified/side/run.tres",
+    "sha256": "586caee537d6ed4424825bb9de9c44bcb413b9dcf81ac27743f006d16f899d33"
+  },
+  {
+    "path": "assets/characters/playable/king/iron_beard_unified/side/idle.tres",
+    "sha256": "ea94d5894583e4455ffa9f09354fb6125443c5ddbc4049f048276d3df3992a7b"
+  },
+  {
+    "path": "assets/characters/playable/king/iron_beard_unified/side/idle_body.png",
+    "sha256": "cfaf54f746ae067f86a466ed75a102f33593ecef55bee27d4a040e189844e124"
+  },
+  {
+    "path": "assets/characters/playable/king/iron_beard_unified/up/run.tres",
+    "sha256": "1c23fc9f4a6e3f73abdde534e6a96620f08bfef8ad6ac0c09f05ba482768dd29"
+  },
+  {
+    "path": "assets/characters/playable/king/iron_beard_unified/up/idle.tres",
+    "sha256": "2b9394a9cff0aa64cf99f2471613ce1b191803551c62ea94b65c9a8a569885d7"
+  },
+  {
+    "path": "assets/characters/playable/king/iron_beard_unified/up/idle_body.png",
+    "sha256": "838ee7187d15507ebf23ef093531261270a5c675aaf3218875fabadfcd5dced1"
+  },
+  {
+    "path": "assets/characters/playable/king/iron_beard_unified/down/run.tres",
+    "sha256": "2ed14cc23fd7dcedbf08de762e5877962626bb9eac039fd546a36cbe876966a9"
+  },
+  {
+    "path": "assets/characters/playable/king/iron_beard_unified/down/idle.tres",
+    "sha256": "d41cbb7db361d32f960afddb75ff3bd9a3d2bec85a8870007e10521ef7c26788"
+  },
+  {
+    "path": "assets/characters/playable/king/iron_beard_unified/down/idle_body.png",
+    "sha256": "1a2f65e5c8c1d9b7ebda9b023bdd17b775785efc6a95d3f425c1c4bc8af83deb"
+  },
+  {
+    "path": "assets/characters/playable/king/iron_beard_unified/iron_beard_slim.png",
+    "sha256": "5f2f2b0b12501212f3abab2bbabe061a7a76329d79e37264546bf597f5fb9fab"
+  },
+  {
+    "path": "assets/characters/playable/king/iron_beard_unified/slash.png",
+    "sha256": "3ca10a8653c4f2f4a65503fcffa56b92b003e27f6a30c741efc4ad0430337cde"
+  },
+  {
+    "path": "data/weapons/families/iron_beard/combo.tres",
+    "sha256": "bdb951ec3f70a76cb0ac031fb38c8d832bf9c8f6984514dfaf1d6dfe3e0c2768"
+  },
+  {
+    "path": "data/weapons/families/iron_beard/ribbon_layout.tres",
+    "sha256": "5af097b0d8090312c373665976d94827b7d40c57312d158d1be0e39f17c6cb2c"
+  }
+]
