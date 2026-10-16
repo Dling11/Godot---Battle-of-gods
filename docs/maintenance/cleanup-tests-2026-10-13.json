@@ -840,8 +840,8 @@
       "completion_marker": true
     },
     {
-      "script": "king_dual_v2_idle_smoke",
-      "log": "king_dual_v2_idle_smoke.log",
+      "script": "king_twinsteel_idle_smoke",
+      "log": "king_twinsteel_idle_smoke.log",
       "exit": 0,
       "errors": [],
       "tail": [
@@ -856,8 +856,8 @@
       "completion_marker": true
     },
     {
-      "script": "king_greatsword_v2_gameplay_smoke",
-      "log": "king_greatsword_v2_gameplay_smoke.log",
+      "script": "king_greatsword_gameplay_smoke",
+      "log": "king_greatsword_gameplay_smoke.log",
       "exit": 0,
       "errors": [],
       "tail": [

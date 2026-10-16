@@ -1,5 +1,7 @@
 # King targeting and terrain
 
+Decision223 retention note: raw generation/review paths described below are historical provenance. Bulk source collections and image builders are deleted; current runtime assets and compact references/validation metadata remain. Future trials use temporary ignored staging and are cleared after publishing.
+
 Implemented 2026-10-03, Decision177. This supersedes earlier terrain-clipped Earthsplitter/Worldsplitter and wall-stopped Pursuit descriptions.
 
 | Action | Reach and obstacles |

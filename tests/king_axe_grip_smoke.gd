@@ -1,8 +1,8 @@
-extends "res://tests/sanctuary_test_base.gd"
+extends "res://tests/king_production_art_contract.gd"
 ## Complete axe techniques plus retained thin rigid carry. Headless-safe.
 const PROFILE = preload("res://data/weapons/families/iron_beard/presentation.tres")
 const Presenter = preload("res://gameplay/presentation/weapon_family_pose_presenter.gd")
-const SOURCE := "res://art_source/generated/characters/king/iron_beard_motion_2026_10_15/"
+const AUDIT := "res://art_source/reference/characters/king/axe-motion.json"
 var samples: Array[Dictionary] = []
 func _run() -> void:
 	var steel: Resource = PROFILE.attack_poses
@@ -17,11 +17,10 @@ func _run() -> void:
 		for x in 80:
 			if image.get_pixel(x,y).a>.95: low=mini(low,x); high=maxi(high,x)
 		check(high-low+1>=2 and high-low+1<=6 and absf((low+high)*.5-44)<1.5,"Straight narrow shaft bends or changes width")
-	var registration: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(SOURCE+"registration.json"))
+	var registration: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(AUDIT))
 	check(registration.count==69,"Incomplete accepted whole-actor bake")
 	check(registration.weapon_sha256==FileAccess.get_sha256(steel.weapon_texture.resource_path),"Attack template differs from carry axe")
-	for entry: Dictionary in JSON.parse_string(FileAccess.get_file_as_string(SOURCE+"retained-assets.json")):
-		check(FileAccess.get_sha256("res://"+entry.path)==entry.sha256,"Accepted running/contact asset changed: "+str(entry.path))
+	verify_production_baseline(["assets/characters/playable/king/iron_beard_unified/","data/weapons/families/iron_beard/"])
 	for record: Dictionary in registration.actors:
 		var values: Array=record.canonical_basis
 		var basis:=Transform2D(Vector2(values[0],values[1]),Vector2(values[2],values[3]),Vector2(values[4],values[5]))

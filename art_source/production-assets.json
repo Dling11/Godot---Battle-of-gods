@@ -1,0 +1,3270 @@
+{
+  "purpose": "Current installed production assets after cleanup. Owner accepts Decision224 running; corrected middle-handle grasp and lower carry await grip review. All other artwork and gameplay remain protected.",
+  "files": [
+    {
+      "path": "assets/audio/ambience/hollow_wind_loop.mp3",
+      "bytes": 945984,
+      "sha256": "b8962b2e82563d6a864c3215147e975633af5f27205f07cd2d3639584d6e715b"
+    },
+    {
+      "path": "assets/audio/ambience/hollow_wood_creak.mp3",
+      "bytes": 31826,
+      "sha256": "0c4d6a13af047d6581c93d0d610d2e7c7bf456b78963a2ea9c374bfe6618e7ba"
+    },
+    {
+      "path": "assets/audio/ambience/woodland_birds_loop.mp3",
+      "bytes": 1444193,
+      "sha256": "cec0999fe4d153388f87cfd476cc24f0533673130fc2812ff3d7143e7e6d275d"
+    },
+    {
+      "path": "assets/audio/ambience/woodland_bird_call.mp3",
+      "bytes": 74360,
+      "sha256": "81a7061cf52fd28a0cabbe250cb9c09e706a3c42dae6f568c004b8dc590249df"
+    },
+    {
+      "path": "assets/audio/music/boss/examiner/examiner_ethereal_vocal_loop.mp3",
+      "bytes": 505021,
+      "sha256": "22f768fd8d5aef58a28caa114206be8a8f03d633aab702def77e681caaa136bf"
+    },
+    {
+      "path": "assets/audio/music/boss/varkuun_battle_rpg_theme_loop.ogg",
+      "bytes": 4630302,
+      "sha256": "9a63f74305f5cbce8374a72a027a645c07c97663255aba0b817bc1f70c432ed5"
+    },
+    {
+      "path": "assets/audio/music/cathedral_in_the_forest.ogg",
+      "bytes": 2947211,
+      "sha256": "b9e05a1fcd5869b63193515e2a9c1bd578906a78e628e307f19527d387262593"
+    },
+    {
+      "path": "assets/audio/music/dead_forest_dark_place.ogg",
+      "bytes": 1758616,
+      "sha256": "c78a433139ace4a050b5d4a1b9b94bcf1f04d059345c849c7c234a2fe0eda102"
+    },
+    {
+      "path": "assets/audio/music/expedition_dark_forest.mp3",
+      "bytes": 1942315,
+      "sha256": "c9e83d01741e97a462c44963aff81645a9c2aa3a7a33e5849114a1399d1b0914"
+    },
+    {
+      "path": "assets/audio/music/miniboss/rootbound_husk_basilisk_miniboss_loop.ogg",
+      "bytes": 657516,
+      "sha256": "3ca99a4fdc962bbb7a2ef314f0eaafd153cae2ff2220aadd32071348bae5d6b2"
+    },
+    {
+      "path": "assets/audio/sfx/abilities/king/king_skill_4_explosion.wav",
+      "bytes": 54728,
+      "sha256": "bf5cdfa7d75cb30a91b0aeeaa5ab66e08e32db455f51c517e2ba33b7d82c4004"
+    },
+    {
+      "path": "assets/audio/sfx/abilities/king/king_skill_4_first_impact.wav",
+      "bytes": 24740,
+      "sha256": "e6b4bbef1e42a96eeb688d66ffb76ad599ccc6278b03d07b591951fa18a22f7d"
+    },
+    {
+      "path": "assets/audio/sfx/abilities/king/king_skill_4_formation.wav",
+      "bytes": 42380,
+      "sha256": "789ee43304b642b92d86c22d68e96108fe3fba4bc424aa6005c0c6f0d3d3ce2d"
+    },
+    {
+      "path": "assets/audio/sfx/abilities/king/riftbreak_ground_slam.wav",
+      "bytes": 45908,
+      "sha256": "85d156569959df0282ce04d63f2224bfdab6738c43bcbbc1b4bfd32c82fcd7fe"
+    },
+    {
+      "path": "assets/audio/sfx/abilities/king/sovereign_pursuit_landing.wav",
+      "bytes": 49436,
+      "sha256": "a72d25ac6206e949f208d71ec2984ed5d93b35dabec243ee38d0c7f7fcaf8e24"
+    },
+    {
+      "path": "assets/audio/sfx/abilities/king/sovereign_pursuit_launch.wav",
+      "bytes": 21212,
+      "sha256": "45e7f597bd0db9d927e22e5273fe602ff1970483f0f27d1423215a95fecf5e8e"
+    },
+    {
+      "path": "assets/audio/sfx/abilities/king/worldsplitter_contact.wav",
+      "bytes": 60022,
+      "sha256": "6cf4efaf7be55abb1ce94aaf360544abb90e0a0d8e445f4f604abaaf25844c55"
+    },
+    {
+      "path": "assets/audio/sfx/abilities/king/worldsplitter_descent.wav",
+      "bytes": 37970,
+      "sha256": "caf2f25fde3d889f7318bbf69f8b7c75d5fd38542aa4824f28b52895ab947f87"
+    },
+    {
+      "path": "assets/audio/sfx/abilities/king/worldsplitter_gather.wav",
+      "bytes": 40616,
+      "sha256": "ed9b47a214667d23799ebfe06796a734e348c05fac74918a539562c7453f80f0"
+    },
+    {
+      "path": "assets/audio/sfx/abilities/king/worldsplitter_light_shards.wav",
+      "bytes": 42380,
+      "sha256": "5062aec1dfc6a112c8191de88882d5da9b9a00dc88ddd280db7d79d8bf9c6ec3"
+    },
+    {
+      "path": "assets/audio/sfx/abilities/king/worldsplitter_rupture.wav",
+      "bytes": 82952,
+      "sha256": "7a26a24e03ce4356f41fd74e95e28db97955b274baa8be4e6d1c603928fd58d1"
+    },
+    {
+      "path": "assets/audio/sfx/bramble_impact.wav",
+      "bytes": 83546,
+      "sha256": "679184e2a0c37e68450f8f2b511daca8ce187af306789215197dc73c0193386e"
+    },
+    {
+      "path": "assets/audio/sfx/bramble_spit.wav",
+      "bytes": 116662,
+      "sha256": "fea5d8f0049a71b0a73b3086271fc18d0b5d733965b53fbfe550b6de26b1bef9"
+    },
+    {
+      "path": "assets/audio/sfx/characters/disciples/examiner/ascendant/awakening.wav",
+      "bytes": 132344,
+      "sha256": "bda2fd807c61a30aad32356517d7e6b231275e553629780d90e81885831fa207"
+    },
+    {
+      "path": "assets/audio/sfx/characters/disciples/examiner/ascendant/guard_break.wav",
+      "bytes": 66194,
+      "sha256": "fb5a537c98d46b98625f95e3c8b84d0d9253554e1100ab2d77394837de8609e4"
+    },
+    {
+      "path": "assets/audio/sfx/characters/disciples/examiner/ascendant/seal_charge.wav",
+      "bytes": 617444,
+      "sha256": "e23c38a8761aced374d0adc8863d99c84cc8ed883c690efd15a9fc05965ecc8a"
+    },
+    {
+      "path": "assets/audio/sfx/characters/disciples/examiner/ascendant/sun_impact.wav",
+      "bytes": 75014,
+      "sha256": "a54d4af47d08cbc6c14bfe2f2c0f9d037cb0f57ef18ada8a8e2eb4751ece8e8b"
+    },
+    {
+      "path": "assets/audio/sfx/characters/disciples/examiner/ascendant/sun_release.wav",
+      "bytes": 61784,
+      "sha256": "bf6e4cfe2a89b55931bdaa69d98e22610fb718e576bf443519f8999e50e3e535"
+    },
+    {
+      "path": "assets/audio/sfx/characters/disciples/examiner/firmament/crimson_gather.wav",
+      "bytes": 335204,
+      "sha256": "12c808bbc5fc016f54b0e1f00396a17c4702bfc5c297362202d02cc8c54f75e9"
+    },
+    {
+      "path": "assets/audio/sfx/characters/disciples/examiner/firmament/crimson_release.wav",
+      "bytes": 83834,
+      "sha256": "23a469b7d0357989ef1b2f64ca2e24af7f6bd4dab42b3cee5894a5ddfd92f397"
+    },
+    {
+      "path": "assets/audio/sfx/characters/disciples/examiner/firmament/sun_gather.wav",
+      "bytes": 485144,
+      "sha256": "786b09b1c78a68afb6f8dd4ca76b8f1cf5d5583ecc77e45b0fc3595d7ff37d3c"
+    },
+    {
+      "path": "assets/audio/sfx/characters/disciples/examiner/rework/examiner_axiom_cut.wav",
+      "bytes": 37088,
+      "sha256": "d59048d71c5277f45186b52ed6f7b5666f5c7ee6dd3def317736cf13f4cab8d6"
+    },
+    {
+      "path": "assets/audio/sfx/characters/disciples/examiner/rework/examiner_axiom_prepare.wav",
+      "bytes": 79424,
+      "sha256": "b20950fe2b57290fa1ce380a17ecf6b8a655898ac362fa963155baf81a89c6fb"
+    },
+    {
+      "path": "assets/audio/sfx/characters/disciples/examiner/rework/examiner_charge_dash.wav",
+      "bytes": 27386,
+      "sha256": "42a2a6b9b5a84c288418e700c2ac872d634f721506b9d1edfab7925801587f76"
+    },
+    {
+      "path": "assets/audio/sfx/characters/disciples/examiner/rework/examiner_charge_impact.wav",
+      "bytes": 48554,
+      "sha256": "3d21f0effec4df3d4418d720ccbd8a91b5eac6fc4abca9a953033971e427ac5b"
+    },
+    {
+      "path": "assets/audio/sfx/characters/disciples/examiner/rework/examiner_charge_prepare.wav",
+      "bytes": 63548,
+      "sha256": "0d9b62737ae42269372a02c50deabfdc60c15a8f564076cbaf479a5ba02c8496"
+    },
+    {
+      "path": "assets/audio/sfx/characters/disciples/examiner/rework/examiner_descent_charge.wav",
+      "bytes": 335204,
+      "sha256": "b261dbc58ddbfbcf44bf9f75f0ef0336ef8c6b0e07257a6f897097c2c35e6cb3"
+    },
+    {
+      "path": "assets/audio/sfx/characters/disciples/examiner/rework/examiner_descent_chime.wav",
+      "bytes": 110294,
+      "sha256": "e2268173dfd1ad556c41f58156739bb5f4c2024cb966175ade7d0b47d32161b2"
+    },
+    {
+      "path": "assets/audio/sfx/characters/disciples/examiner/rework/examiner_descent_fall.wav",
+      "bytes": 13274,
+      "sha256": "2c2c81262c2cf82a1b3ac9f25fa74717c5628b3d9d2b246dbed9728ebec41ef8"
+    },
+    {
+      "path": "assets/audio/sfx/characters/disciples/examiner/rework/examiner_descent_impact.wav",
+      "bytes": 154394,
+      "sha256": "a2ca041ac8a9c3b3a4c4b4e33b95539c05f29d0fd9a56688d14aa9b6a25aa9f8"
+    },
+    {
+      "path": "assets/audio/sfx/characters/disciples/examiner/rework/examiner_descent_launch.wav",
+      "bytes": 37970,
+      "sha256": "63d2ece7c53cf2e142d3b3757e9108a1041c7112cbfb42d4011069ccaa191501"
+    },
+    {
+      "path": "assets/audio/sfx/characters/disciples/examiner/rework/examiner_refutation.wav",
+      "bytes": 37088,
+      "sha256": "91989360912407e6b2e63ebce38fad2476f82597fce35bacbed2a8f6c66af75f"
+    },
+    {
+      "path": "assets/audio/sfx/characters/disciples/examiner/rework/examiner_slam_impact.wav",
+      "bytes": 97064,
+      "sha256": "eda3ec8c6ece96fb10630798bceb58351804454aa97b6a479c8d995a3c445314"
+    },
+    {
+      "path": "assets/audio/sfx/characters/disciples/examiner/rework/examiner_slam_prepare.wav",
+      "bytes": 72368,
+      "sha256": "6c3774eefefc1c1d787cc6f4773c34ee9d4933a8f2cad3f677ce0fae3826b440"
+    },
+    {
+      "path": "assets/audio/sfx/characters/disciples/examiner/rework/examiner_step.wav",
+      "bytes": 12392,
+      "sha256": "bde16e8004cf9cb5fc62d8e38f004147b41649556392b576c297696c4de75a06"
+    },
+    {
+      "path": "assets/audio/sfx/characters/disciples/examiner/rework/examiner_sweep.wav",
+      "bytes": 37088,
+      "sha256": "a20a287c798eebd83c23f2e14a5296236b71708de2708296ee642eb8cbb54c2e"
+    },
+    {
+      "path": "assets/audio/sfx/characters/disciples/examiner/rework/examiner_thrust.wav",
+      "bytes": 24740,
+      "sha256": "a7fa520f9d1c1dfacd864f937d65a29ca0d63e96757b62ae1f8de0acf89c62d9"
+    },
+    {
+      "path": "assets/audio/sfx/enemies/armored_hog/armored_hog_brace.wav",
+      "bytes": 45908,
+      "sha256": "0de78b83aee09d20d0e210b78a6ea8308db94a06208abf47d95df9619c2110dc"
+    },
+    {
+      "path": "assets/audio/sfx/enemies/armored_hog/armored_hog_crash.wav",
+      "bytes": 40616,
+      "sha256": "d87f3a0366ffd553d77dcf3837eb35a2dc512833b739871dfdb93dab8f0a6fc2"
+    },
+    {
+      "path": "assets/audio/sfx/enemies/armored_hog/armored_hog_hoof.wav",
+      "bytes": 14156,
+      "sha256": "06cb72811e92a3f7a741e5f8538eedf0b10a2711ad4e437314145fe3f60a8c6e"
+    },
+    {
+      "path": "assets/audio/sfx/enemies/armored_hog/armored_hog_snort.ogg",
+      "bytes": 9540,
+      "sha256": "14b874678ef92e52168e1b96da4aee08e3c7e259d06337dd098e1eacaa25b370"
+    },
+    {
+      "path": "assets/audio/sfx/enemies/crag_bear/crag_bear_claw_swipe.wav",
+      "bytes": 33560,
+      "sha256": "e4d4171ccf78aa388aced82734c12159256526ac294aed88200c957974565e40"
+    },
+    {
+      "path": "assets/audio/sfx/enemies/crag_bear/crag_bear_ground_slam.wav",
+      "bytes": 54728,
+      "sha256": "416791889c735ff79bf0f23cdf5b1dfbdd7896c62a66b54ee93fe754c5d19b53"
+    },
+    {
+      "path": "assets/audio/sfx/enemies/crag_bear/crag_bear_growl_a.ogg",
+      "bytes": 13818,
+      "sha256": "1b94b4cbed6880c8ab1a3bffe675000290c2df089fa6403ec21d3f5a69d84356"
+    },
+    {
+      "path": "assets/audio/sfx/enemies/crag_bear/crag_bear_growl_b.ogg",
+      "bytes": 15539,
+      "sha256": "106d6c11a39fa0462a3dc45561692075e8a3a63eea107205d2b3fb053988677e"
+    },
+    {
+      "path": "assets/audio/sfx/enemies/rootbound_husk/rootbound_husk_root_creak.wav",
+      "bytes": 63548,
+      "sha256": "21ca51540690e8d09482d816ebf0ecc78d7086991c2e56848de9cd4b30c3ab3b"
+    },
+    {
+      "path": "assets/audio/sfx/enemies/rootbound_husk/rootbound_husk_root_eruption.wav",
+      "bytes": 45908,
+      "sha256": "d4ba5c994eabb7101c72114ab32a2a474c306b6c6199950ea5f3fe1a74793ddf"
+    },
+    {
+      "path": "assets/audio/sfx/enemies/varkuun/varkuun_defeat.wav",
+      "bytes": 249128,
+      "sha256": "ac7afb86566808f2d5b2ebf58dc3b68a0d1c2cd64cd8135d09a8d56af62928d7"
+    },
+    {
+      "path": "assets/audio/sfx/enemies/varkuun/varkuun_descent.wav",
+      "bytes": 391152,
+      "sha256": "81407959da1004e752951a37134b2a088b30c5203a90f2ae7220c08c39768d44"
+    },
+    {
+      "path": "assets/audio/sfx/enemies/varkuun/varkuun_hurt.wav",
+      "bytes": 90720,
+      "sha256": "22d83560604f25fea0b03b4710ed86c5afc739bdbb24b5e96b614803b02c07fd"
+    },
+    {
+      "path": "assets/audio/sfx/enemies/varkuun/varkuun_jump_impact.wav",
+      "bytes": 98696,
+      "sha256": "e7de86bd7f37918832849c1d4e8cff5e1db447e9e89949b0d9031cae67d6272f"
+    },
+    {
+      "path": "assets/audio/sfx/enemies/varkuun/varkuun_jump_launch.wav",
+      "bytes": 20892,
+      "sha256": "0513a86d428d9ed8601e93b8554580a5932c6c1a82d39d81a8f48883f1807a67"
+    },
+    {
+      "path": "assets/audio/sfx/enemies/varkuun/varkuun_landing.wav",
+      "bytes": 119860,
+      "sha256": "ad900417a3c91c030acf369f60dfb9a8ea50830f66e23b9bed627f7658b08d5d"
+    },
+    {
+      "path": "assets/audio/sfx/enemies/varkuun/varkuun_lunge.wav",
+      "bytes": 52906,
+      "sha256": "123883f006ce55feecbff11eea5f87c4493df4399989983037144570a23723c1"
+    },
+    {
+      "path": "assets/audio/sfx/enemies/varkuun/varkuun_phase.ogg",
+      "bytes": 76383,
+      "sha256": "2817da4f5df69ff993baffd6594a2f2a069f85ee2a02019f97db2246e350a76b"
+    },
+    {
+      "path": "assets/audio/sfx/enemies/varkuun/varkuun_root_prison.ogg",
+      "bytes": 47237,
+      "sha256": "fde725a4249cf9374b696c1454c2bd9e70bad870597621ab93a83348a02c1add"
+    },
+    {
+      "path": "assets/audio/sfx/enemies/varkuun/varkuun_slap.wav",
+      "bytes": 103368,
+      "sha256": "19a56499a8b46bdea815eb9aa7554e7aa5f4d3cd1f7f49f403c327d77fecc6c4"
+    },
+    {
+      "path": "assets/audio/sfx/enemies/varkuun/varkuun_step.ogg",
+      "bytes": 9715,
+      "sha256": "33c9bef5e8aeb1069455699a34a0c5e1ef1787fd3f61594b0859d7e6bb9f9dec"
+    },
+    {
+      "path": "assets/audio/sfx/enemy_arrival.wav",
+      "bytes": 44144,
+      "sha256": "fc036b5230b42953bd24fcfb8879eb19f47b05cfd80244fad479e2d1e2165db6"
+    },
+    {
+      "path": "assets/audio/sfx/mireling_land.wav",
+      "bytes": 99070,
+      "sha256": "2219772fd3a123cd5a9c1837c0b3b5b8df6c92739907e904cf1d3385e076d982"
+    },
+    {
+      "path": "assets/audio/sfx/mireling_leap.wav",
+      "bytes": 49566,
+      "sha256": "c190101f421fbcb2f364d3766e2c8ab5dbc9ee16bdab77e6fb84b666362d3fc7"
+    },
+    {
+      "path": "assets/audio/sfx/npcs/rootweaver/rootweaver_rootforge_strike.wav",
+      "bytes": 30032,
+      "sha256": "82c621c33902a87486764f9e79a7c11b3601a507b86f07808fc6d6cab9a1d69f"
+    },
+    {
+      "path": "assets/audio/sfx/player/greatsword/cleave.wav",
+      "bytes": 33560,
+      "sha256": "09619e5b276bd858bc008a16310391a90b2b791aedd00661550709adc6b075d3"
+    },
+    {
+      "path": "assets/audio/sfx/player/greatsword/cut.wav",
+      "bytes": 21212,
+      "sha256": "07e6aaa16ecfb14db814cc8caa5dea9e09c362e696c0ba41df28be36c0fcccbe"
+    },
+    {
+      "path": "assets/audio/sfx/player/greatsword/resolve.wav",
+      "bytes": 44144,
+      "sha256": "da3bd5f52cd9b6b07457006a4e30dfd6059f3479505ebdda48de809b7034458b"
+    },
+    {
+      "path": "assets/audio/sfx/player/greatsword/return.wav",
+      "bytes": 19448,
+      "sha256": "ccfe4e2aaabb7fb89cd1014185e67431dcb3e88603300bcfc63f1097e0683625"
+    },
+    {
+      "path": "assets/audio/sfx/player/greatsword/step.wav",
+      "bytes": 7100,
+      "sha256": "4075220e92d080d6aa589f0947f1b50ca52ee7be63204c634e567c4610fe218f"
+    },
+    {
+      "path": "assets/audio/sfx/player/greatsword_heavy/contact_1.wav",
+      "bytes": 26504,
+      "sha256": "eb1b0e27ad48210326b4803913e33889728b5e2b4b721ba3ca1535dcb6228301"
+    },
+    {
+      "path": "assets/audio/sfx/player/greatsword_heavy/contact_2.wav",
+      "bytes": 26504,
+      "sha256": "4665366e91c3e23e04af17c647e1f99616c1dd273113622f644a5f9199d9c007"
+    },
+    {
+      "path": "assets/audio/sfx/player/greatsword_heavy/contact_3.wav",
+      "bytes": 26504,
+      "sha256": "ff2903739c26a65a445eaf3929c35e5eb2fe1afd0c3b977f68218a65a59f1207"
+    },
+    {
+      "path": "assets/audio/sfx/player/greatsword_heavy/ground.wav",
+      "bytes": 23858,
+      "sha256": "2c694a30fc1623afd835de0d86fed155aafb7f592e19d4569edb0f872b3adac5"
+    },
+    {
+      "path": "assets/audio/sfx/player/greatsword_heavy/smash.wav",
+      "bytes": 35324,
+      "sha256": "764f96a900c526157df48530554462460752fa9a018818487177bbeb4a68fc46"
+    },
+    {
+      "path": "assets/audio/sfx/player/iron_beard/chop.wav",
+      "bytes": 15514,
+      "sha256": "bc0980c3c500dbabccc1d1130bfcf643f363580c7a89b0846758b95d5d0cf6af"
+    },
+    {
+      "path": "assets/audio/sfx/player/iron_beard/contact_1.wav",
+      "bytes": 41260,
+      "sha256": "9fe57b513a1279f5033cdd32e6ddd427bd5fc83267c90dc8ecf161cf7601d367"
+    },
+    {
+      "path": "assets/audio/sfx/player/iron_beard/contact_2.wav",
+      "bytes": 40926,
+      "sha256": "85bf885f70f7c9f1b2a2ab8ee7d2064f6cca79a8a98a71591e14bb69073e9d81"
+    },
+    {
+      "path": "assets/audio/sfx/player/iron_beard/contact_3.wav",
+      "bytes": 41260,
+      "sha256": "06f8e65405f03fd699292e97b7a77038a8c7b02faa25aa2cd376166cda252158"
+    },
+    {
+      "path": "assets/audio/sfx/player/iron_beard/push.wav",
+      "bytes": 11010,
+      "sha256": "93867d042999a7d0d3566cbb84bd8ec47037a569e9a92b7d1a8f538c84f982a7"
+    },
+    {
+      "path": "assets/audio/sfx/player/iron_beard/rise.wav",
+      "bytes": 12982,
+      "sha256": "2ca11785db42aa2d08e0b60480fcd61e674d1113e0316a827dda3f678cd0169a"
+    },
+    {
+      "path": "assets/audio/sfx/player/iron_beard/slam.wav",
+      "bytes": 15934,
+      "sha256": "275eb23ffcc722823cc8849fe484c29fe1f390414151666dde05c5ba4ec6a82b"
+    },
+    {
+      "path": "assets/audio/sfx/player/iron_beard/slam_contact.wav",
+      "bytes": 40926,
+      "sha256": "899e8eef948f4e43e524968f53136694099e46d5112c567fc91c0ba942503087"
+    },
+    {
+      "path": "assets/audio/sfx/player/iron_beard/spin.wav",
+      "bytes": 25622,
+      "sha256": "bf9d27d2465c179cd9857a1ab41debff5753ea4de7a9b03203bf4f2842dd4639"
+    },
+    {
+      "path": "assets/audio/sfx/player/iron_reaper/contact_1.wav",
+      "bytes": 41260,
+      "sha256": "c5009743ace62b7d64b6ac7fc855d76bd2433392fccaed92c869fcf9b6e2fc75"
+    },
+    {
+      "path": "assets/audio/sfx/player/iron_reaper/contact_2.wav",
+      "bytes": 40926,
+      "sha256": "6bfae093af2a68786196cc026a3e99af08e1550222b1cf6e3eabf32f72b59782"
+    },
+    {
+      "path": "assets/audio/sfx/player/iron_reaper/hook.wav",
+      "bytes": 10912,
+      "sha256": "dd7e2ab6767a4806a73fcb448fffaf4bae7a04614d8564e025007cebb2472304"
+    },
+    {
+      "path": "assets/audio/sfx/player/iron_reaper/reap.wav",
+      "bytes": 12684,
+      "sha256": "bae9d9ecba85ac7e5456314b8cc1a8b8edfcdbb63541218984038d3035497b36"
+    },
+    {
+      "path": "assets/audio/sfx/player/iron_reaper/reap_contact.wav",
+      "bytes": 40926,
+      "sha256": "8634a0a84e13a876ba36db3a9af1d4c3041a8c819e08af39b4420df5d4692e1b"
+    },
+    {
+      "path": "assets/audio/sfx/player/iron_reaper/spin.wav",
+      "bytes": 26504,
+      "sha256": "0a590686e30eaf54b34245e723ef9ef3c698906f5823c8bc3adb2a9a0b4ebacb"
+    },
+    {
+      "path": "assets/audio/sfx/player/iron_reaper/sweep.wav",
+      "bytes": 11882,
+      "sha256": "ae52b402961d95e579a262ebc10f8b1b70d26af4989520afa4b4aaf2dac86790"
+    },
+    {
+      "path": "assets/audio/sfx/player/iron_reaper/throw.wav",
+      "bytes": 11298,
+      "sha256": "5df906f19be2198dc0736fe8cb304e11687796aad6e75e0e6c5366f50d0ec34a"
+    },
+    {
+      "path": "assets/audio/sfx/player/weapon_contact/contact_1.wav",
+      "bytes": 41260,
+      "sha256": "e730fda5861a30a5de03ae252068e8e401ecd9eeb0fd69cddee952792af01627"
+    },
+    {
+      "path": "assets/audio/sfx/player/weapon_contact/contact_2.wav",
+      "bytes": 40926,
+      "sha256": "a3eb511ea9d37dd9db621a7e7455bc7197d92afc15cc69a38ae7d64e0a731f92"
+    },
+    {
+      "path": "assets/audio/sfx/player/weapon_contact/contact_3.wav",
+      "bytes": 41260,
+      "sha256": "589377e01d30362c1e63b1206aeb3f13f7ed20d0c1b319b73ba9b83fc9b0f9fc"
+    },
+    {
+      "path": "assets/audio/sfx/player_ability_hit.ogg",
+      "bytes": 20300,
+      "sha256": "4c7643dbcd813eb614a56451652987d37ba587fac3309303aa0ab9a27d3a7e71"
+    },
+    {
+      "path": "assets/audio/sfx/player_dash_grounded.wav",
+      "bytes": 16802,
+      "sha256": "63824a67667cbd094b0cd1649e76592ca63e4f9d17cf9836b9c99273b225bc4b"
+    },
+    {
+      "path": "assets/audio/sfx/player_hurt_impact.wav",
+      "bytes": 16802,
+      "sha256": "609d76b7e32b90842bc8551309cf30c515565e057a46c8b77d08210f3a4e9775"
+    },
+    {
+      "path": "assets/audio/sfx/rootling_root_jab.wav",
+      "bytes": 27386,
+      "sha256": "cab5638f988be2978ac3d6e46baad2847664b6046c97604b58a4fe5193922cfd"
+    },
+    {
+      "path": "assets/audio/sfx/sword_hit.wav",
+      "bytes": 138926,
+      "sha256": "89202f82cfac83bdadbf41c88998cd5f60c00609a53c1ae769c00bf1031cd272"
+    },
+    {
+      "path": "assets/audio/sfx/sword_swing.wav",
+      "bytes": 39384,
+      "sha256": "2e4064e294d136e06c40cc562df969493907e6873f39895ca86b4a6b2e034c6e"
+    },
+    {
+      "path": "assets/audio/sfx/thrall_claw.wav",
+      "bytes": 101078,
+      "sha256": "58318528da572fc30eb50487aa733a6dc7f9c06d2ca5141dae8ab57aac022c96"
+    },
+    {
+      "path": "assets/audio/sfx/ui/player_action_denied.mp3",
+      "bytes": 17680,
+      "sha256": "44a841aa0ba60bd90366b34ba087c5af264e8cb11ced98a87a214df7867df2b6"
+    },
+    {
+      "path": "assets/audio/sfx/ui/player_level_up_chime.wav",
+      "bytes": 72368,
+      "sha256": "35088e04befbd5dc6edb7e97717e4b4c46ad81c1c2ee30bb0060d584d9007f40"
+    },
+    {
+      "path": "assets/characters/enemies/bramble_spitter/bramble_spitter_attack_sheet_64x56.png",
+      "bytes": 51444,
+      "sha256": "d7d0cf82b4bdfdb138ececc538ebe78a5e912df01f189940bf8e7cd6da81bb3b"
+    },
+    {
+      "path": "assets/characters/enemies/bramble_spitter/bramble_spitter_locomotion_sheet_48x48.png",
+      "bytes": 51326,
+      "sha256": "d789f813a45a4ac7c5803c999d7ed299f882735f6c489f8ab5dc8d2762fd186c"
+    },
+    {
+      "path": "assets/characters/enemies/bramble_spitter/bramble_spitter_sprite_frames.tres",
+      "bytes": 13836,
+      "sha256": "082169b2f2adad55f41bce687f11a7cc7d2b0c5bb027de32d6c03f69084f9593"
+    },
+    {
+      "path": "assets/characters/enemies/bramble_spitter/bramble_thorn_seed_sheet_24x24.png",
+      "bytes": 5351,
+      "sha256": "a7971d9e41398abdcf36a18b6972dbcf7739d3367156ae0fff879efea452014b"
+    },
+    {
+      "path": "assets/characters/enemies/bramble_spitter/bramble_thorn_seed_sprite_frames.tres",
+      "bytes": 1695,
+      "sha256": "e90894c9cb11bc58fd5fa5aeaadca624c81a9f95939ebecf1bfa9363e8049e90"
+    },
+    {
+      "path": "assets/characters/enemies/examiner/examiner_axiom_divide_sheet_192x160.png",
+      "bytes": 222132,
+      "sha256": "63dc1d7a05b1e202aaeebfab7a45e3536418b0ce07905cf971a51e1e9733f5f6"
+    },
+    {
+      "path": "assets/characters/enemies/examiner/examiner_divine_descent_land_sheet_192x160.png",
+      "bytes": 232578,
+      "sha256": "5f2223783ec7ade23adfca1254830872f44d158e7974b2e06c2be4a2f1c6c8bf"
+    },
+    {
+      "path": "assets/characters/enemies/examiner/examiner_divine_descent_launch_sheet_192x160.png",
+      "bytes": 219256,
+      "sha256": "14f51af449163bb7c1bf08845bcb3d69db3b66fd593654ae38ff164e2f5c2b47"
+    },
+    {
+      "path": "assets/characters/enemies/examiner/examiner_ground_judgment_sheet_192x160.png",
+      "bytes": 269841,
+      "sha256": "8adc418f641d40610cff40a6eccfe0224b9870036eb71ce1d1b0b3a4b4911965"
+    },
+    {
+      "path": "assets/characters/enemies/examiner/examiner_judgment_charge_sheet_192x160.png",
+      "bytes": 230951,
+      "sha256": "071390ea52daa402b8abc3f7498fd8e09ccf163f76d8748a90d9992842dbb380"
+    },
+    {
+      "path": "assets/characters/enemies/examiner/examiner_locomotion_sheet_192x160.png",
+      "bytes": 196498,
+      "sha256": "8a79b79a454b4ab716e1a9f2936896cf1e3ce0f7be89d99305af778f23ce8ab0"
+    },
+    {
+      "path": "assets/characters/enemies/examiner/examiner_reaction_withdraw_sheet_192x160.png",
+      "bytes": 245435,
+      "sha256": "892d6ab8f2a6dc6aad0eaa7463c218eed69c4d96489e761de8ae9809a787f76f"
+    },
+    {
+      "path": "assets/characters/enemies/examiner/examiner_refutation_sheet_192x160.png",
+      "bytes": 223322,
+      "sha256": "5e06103d927867ca430323ec1dcbbb71f5968638619b7957ec2a7a871c431ee7"
+    },
+    {
+      "path": "assets/characters/enemies/examiner/examiner_sprite_frames.tres",
+      "bytes": 71777,
+      "sha256": "1f9586594222b82d629c4cca1aafe749ad93c7d4945159a805a5925ff13e5bf7"
+    },
+    {
+      "path": "assets/characters/enemies/examiner/examiner_sweep_sheet_192x160.png",
+      "bytes": 261325,
+      "sha256": "a62a12f6ee501fc370e731be5de942a7d2a2507f56cbef08b6f4b29ddf4cf669"
+    },
+    {
+      "path": "assets/characters/enemies/examiner/examiner_thrust_sheet_192x160.png",
+      "bytes": 233859,
+      "sha256": "16f1d3c2293986c40db72e16fe7b6a94baee848671957881016fb9800e9b45af"
+    },
+    {
+      "path": "assets/characters/enemies/examiner/examiner_walk_sheet_192x160.png",
+      "bytes": 89269,
+      "sha256": "0ec5996e9a692ac344570020190485a08279da89c923a3748becbe12418f99d5"
+    },
+    {
+      "path": "assets/characters/enemies/forsaken_thrall/forsaken_thrall_claw_attack_sheet_64x48.png",
+      "bytes": 25808,
+      "sha256": "022157460f0ed637424ebe0bfab4eb4910a1a5eca7bf63e27c0bcaa38073f581"
+    },
+    {
+      "path": "assets/characters/enemies/forsaken_thrall/forsaken_thrall_locomotion_sheet_24x32.png",
+      "bytes": 5450,
+      "sha256": "59ce93cb890b07df704e61fc9d292cc1292f5271a9240c1bab91fda9bed2b100"
+    },
+    {
+      "path": "assets/characters/enemies/forsaken_thrall/forsaken_thrall_sprite_frames.tres",
+      "bytes": 9006,
+      "sha256": "0b5340b3caab3d4d10d514f9594202e3ee0a2e4978f376520bb8a7e90c94040e"
+    },
+    {
+      "path": "assets/characters/enemies/mireling/mireling_action_sheet_48x32.png",
+      "bytes": 27817,
+      "sha256": "c5bd8398fb0e943c71de4e48fc2f64a07dd6eb43ffb671ec740891c5a3601bde"
+    },
+    {
+      "path": "assets/characters/enemies/mireling/mireling_sprite_frames.tres",
+      "bytes": 11229,
+      "sha256": "0a7d14dfdfd76587534316976f84fb8780140a8da5c86249163c4e3f3d424cc9"
+    },
+    {
+      "path": "assets/characters/enemies/mireling/mireling_walk_sheet_32x32.png",
+      "bytes": 16626,
+      "sha256": "457a757f78c37850299a1ab6c88845513f82e55508cc8ed7506eac7bebbf1a47"
+    },
+    {
+      "path": "assets/characters/enemies/portraits/bramble_spitter_portrait_96x96.png",
+      "bytes": 12757,
+      "sha256": "7a2c78ef03f40f2aa5c43e45ab8bef5bc50a2155d1c11da9587f8f68f61c5027"
+    },
+    {
+      "path": "assets/characters/enemies/portraits/crag_bear_portrait_96x96.png",
+      "bytes": 17018,
+      "sha256": "f202079368e300498e3d64e7863cf2a2a8ac228548ae3655481101bd825bc7e6"
+    },
+    {
+      "path": "assets/characters/enemies/portraits/forsaken_thrall_portrait_96x96.png",
+      "bytes": 11534,
+      "sha256": "94c39dd29cb22dd54f84883b8bc1ee1b1105653a52d9de79c07c6b651586203c"
+    },
+    {
+      "path": "assets/characters/enemies/portraits/mireling_portrait_96x96.png",
+      "bytes": 6981,
+      "sha256": "891389ffd7cbf11a9c9e8c63216f6516fe7d9577820047e72c5c9316ff240d9d"
+    },
+    {
+      "path": "assets/characters/enemies/portraits/rootbound_husk_portrait_96x96.png",
+      "bytes": 17513,
+      "sha256": "4a44c14c6035db035a89df9bdcc4092a6a64e6cb0652a92548a23b62e2cac0d6"
+    },
+    {
+      "path": "assets/characters/enemies/portraits/rootling_portrait_96x96.png",
+      "bytes": 12083,
+      "sha256": "e549e109879f97e3d456671f426221af3f9c9b623103c56eef882e96c2838207"
+    },
+    {
+      "path": "assets/characters/enemies/portraits/stage_5_boss_portrait_96x96.png",
+      "bytes": 20365,
+      "sha256": "9e1d6edf46116af2a0a937b9f638f0aff0601b339731d3cf898f6c3c83f37521"
+    },
+    {
+      "path": "assets/characters/enemies/rootbound_husk/rootbound_husk_reaction_sheet_64x64.png",
+      "bytes": 90107,
+      "sha256": "b00674a2c4d28dc387a530933f2242822550f662cfe1b0108d8bb2a633477792"
+    },
+    {
+      "path": "assets/characters/enemies/rootbound_husk/rootbound_husk_root_attack_body_sheet_96x64.png",
+      "bytes": 144153,
+      "sha256": "21b83b3f0509c7c2e06f4ebe52ff605ad326041836bd5b4004ed517d780d4c49"
+    },
+    {
+      "path": "assets/characters/enemies/rootbound_husk/rootbound_husk_root_spear_vfx_sheet_128x64.png",
+      "bytes": 37412,
+      "sha256": "bb8b72427513a0657a08dc3b0b829f464cbede10eaded3999c5a16c20e5d808f"
+    },
+    {
+      "path": "assets/characters/enemies/rootbound_husk/rootbound_husk_root_spear_vfx_sprite_frames.tres",
+      "bytes": 1528,
+      "sha256": "729d84bf0caf8271ebcaf3aabf1888d7ca45c36ddc325fc4928a707e24ede533"
+    },
+    {
+      "path": "assets/characters/enemies/rootbound_husk/rootbound_husk_sprite_frames.tres",
+      "bytes": 16940,
+      "sha256": "84c654213f1b8503f61f2250fff72c92ec7db2d1a2ba36c5b5c64c28be127682"
+    },
+    {
+      "path": "assets/characters/enemies/rootbound_husk/rootbound_husk_walk_sheet_72x64.png",
+      "bytes": 88926,
+      "sha256": "a5b35ff9e709704107c7197dbcf06fca5a644fb861c1da5ba9edea6d1c84f7fd"
+    },
+    {
+      "path": "assets/characters/enemies/rootling/rootling_reaction_sheet_32x32.png",
+      "bytes": 16311,
+      "sha256": "0e452d0fb4db6b25864b7dc9cfa3bf752323c8b5095b2bcd4a6d296f2d5e1548"
+    },
+    {
+      "path": "assets/characters/enemies/rootling/rootling_root_jab_vfx_sheet_48x48.png",
+      "bytes": 10061,
+      "sha256": "48cef46108e0d17e289de5a47de236eb6c1b549b7d3400ee6bf234602680f61e"
+    },
+    {
+      "path": "assets/characters/enemies/rootling/rootling_walk_sheet_32x32.png",
+      "bytes": 20693,
+      "sha256": "11cce85d9503d0da69ea63bde50da8149552ad2ee0719ef6a966f5f7bb3463b7"
+    },
+    {
+      "path": "assets/characters/enemies/rotcaller/actions.png",
+      "bytes": 42694,
+      "sha256": "d533d543e479152d9e7830d5034c1c9e7135c4560585588805777ec892e6a6b0"
+    },
+    {
+      "path": "assets/characters/enemies/rotcaller/rotcaller_frames.tres",
+      "bytes": 9413,
+      "sha256": "ce52733f4aa92d4bd83a3c940b1d759b74bb6d69b2a01f589e7965ae1f29d46e"
+    },
+    {
+      "path": "assets/characters/enemies/rotcaller/walk.png",
+      "bytes": 46677,
+      "sha256": "79f2fa2c8ec3c392ce88b28c9d88d3e49f3f9989e1925f91eab1d3e633f8b055"
+    },
+    {
+      "path": "assets/characters/enemies/stage_4_armored_hog/armored_hog_charge_sheet_64x48.png",
+      "bytes": 51170,
+      "sha256": "9ff5ca5e05cc2d4ddab32238984e6598131aff0bd4c3f6afa1d2e9c759d1c4d7"
+    },
+    {
+      "path": "assets/characters/enemies/stage_4_armored_hog/armored_hog_locomotion_sheet_64x48.png",
+      "bytes": 57695,
+      "sha256": "d42ca4b8d93bce767001704f36fcbdc96569280b7e23ee12b218a62ae7672c15"
+    },
+    {
+      "path": "assets/characters/enemies/stage_4_armored_hog/armored_hog_reaction_sheet_64x48.png",
+      "bytes": 54489,
+      "sha256": "293d366dfeb7b6a0e74a88503469a31500bdf9505be1cdaafe919841c6dcda8a"
+    },
+    {
+      "path": "assets/characters/enemies/stage_4_armored_hog/armored_hog_sprite_frames.tres",
+      "bytes": 15507,
+      "sha256": "2c8f4bb780fcb84c06ee3f2781eac14f05c2415d0ea0262c9c15cde3d6d22cdb"
+    },
+    {
+      "path": "assets/characters/enemies/stage_5_boss/stage_5_boss_basic_attack_sheet_144x112.png",
+      "bytes": 300795,
+      "sha256": "43233b572b997c5bb81803648fd710f2cb31e8a5c64d12852e25655b90d4c031"
+    },
+    {
+      "path": "assets/characters/enemies/stage_5_boss/stage_5_boss_idle_sheet_112x96.png",
+      "bytes": 151134,
+      "sha256": "8b1a817e8d2aee54a8bb698703874ef18eda6493a12fc81b697207634553347c"
+    },
+    {
+      "path": "assets/characters/enemies/stage_5_boss/stage_5_boss_jump_body_sheet_144x112.png",
+      "bytes": 255803,
+      "sha256": "5bcfc5a9f15b1383e80bc5aeb62e5c92b77ee42a59546e595cf16dd37f2aa191"
+    },
+    {
+      "path": "assets/characters/enemies/stage_5_boss/stage_5_boss_jump_impact_sheet_192x112.png",
+      "bytes": 48682,
+      "sha256": "8ee3c7a7de061153c99991d9411623f1df9be8fdbcafe31df06d64cc4899ece2"
+    },
+    {
+      "path": "assets/characters/enemies/stage_5_boss/stage_5_boss_jump_spikes_sheet_192x112.png",
+      "bytes": 36272,
+      "sha256": "6adfc4fab49edc45b7ce2fe8bb2cd6eec45bb8f42d7cc427022fefba0274e3bd"
+    },
+    {
+      "path": "assets/characters/enemies/stage_5_boss/stage_5_boss_reaction_sheet_144x112.png",
+      "bytes": 320312,
+      "sha256": "a2e6497ffb9edbd1ac41795560c0cec2235eb839562ce173841d31135b665f7b"
+    },
+    {
+      "path": "assets/characters/enemies/stage_5_boss/stage_5_boss_root_execution_sheet_192x192.png",
+      "bytes": 65369,
+      "sha256": "d8878588ed9574a4015d6ed028964c8d67c72268f03e2d2ec8b228463173c857"
+    },
+    {
+      "path": "assets/characters/enemies/stage_5_boss/stage_5_boss_root_prison_sheet_128x112.png",
+      "bytes": 24437,
+      "sha256": "9efea0f120535229f2771965e4f691436ccbd70ff696c02ed21a79b5f5e9a7cf"
+    },
+    {
+      "path": "assets/characters/enemies/stage_5_boss/stage_5_boss_slap_sheet_144x112.png",
+      "bytes": 233844,
+      "sha256": "81be5c8f3104c5b63137570d457d2d3c99b78f40792335517c0affb591ecaa38"
+    },
+    {
+      "path": "assets/characters/enemies/stage_5_boss/stage_5_boss_walk_sheet_112x96.png",
+      "bytes": 214409,
+      "sha256": "909a22bb2323db7e4d1bf4f8d774901adf8586b7624b3e11086d6a10b2935e4f"
+    },
+    {
+      "path": "assets/characters/enemies/stage_6_crag_bear/crag_bear_basic_attack_v2_sheet_96x64.png",
+      "bytes": 120760,
+      "sha256": "780c32c319de4d6c9eddf715278c803a9708d10f5c2c7723ad5115ad62fff8ad"
+    },
+    {
+      "path": "assets/characters/enemies/stage_6_crag_bear/crag_bear_body_slam_v2_sheet_96x80.png",
+      "bytes": 129210,
+      "sha256": "aa96b19b411a5707dfcb168147b32a34e2840411f4c9b4136cfd5c8aef80e249"
+    },
+    {
+      "path": "assets/characters/enemies/stage_6_crag_bear/crag_bear_locomotion_sheet_64x48.png",
+      "bytes": 54885,
+      "sha256": "9b38b8f411a01e87319402b725b03851606b88a4b93ae924f7d42ce1825a15c9"
+    },
+    {
+      "path": "assets/characters/enemies/stage_6_crag_bear/crag_bear_reaction_sheet_64x48.png",
+      "bytes": 50654,
+      "sha256": "87b9c9278e5714ed87ea531b3afd8ab36f84fde850290a5f654a3f61e4568b67"
+    },
+    {
+      "path": "assets/characters/enemies/stage_6_crag_bear/crag_bear_sprite_frames.tres",
+      "bytes": 22762,
+      "sha256": "5760a423972d851d9eba70eb7e8882e0ccc8b4608a6dcf69af4d7fae6b1a66f8"
+    },
+    {
+      "path": "assets/characters/npcs/armskeeper/renewal/idle_work_v2.png",
+      "bytes": 34252,
+      "sha256": "8ac1218b5b3d14b5c6c4794b4d1092165153ca26011634c7f406e125312ceb95"
+    },
+    {
+      "path": "assets/characters/npcs/armskeeper/renewal/portrait.png",
+      "bytes": 14382,
+      "sha256": "ac278dd42c13557625300f007e3f1470b38373dee3f96250dd935a4ae91bfb8d"
+    },
+    {
+      "path": "assets/characters/npcs/armskeeper/renewal/sprite_frames.tres",
+      "bytes": 1912,
+      "sha256": "52e3ff029b02ecbbfa2431a28736438d3cd959d4ac6b672395baf1dccb48bcef"
+    },
+    {
+      "path": "assets/characters/npcs/courier/idle.png",
+      "bytes": 14752,
+      "sha256": "56d506c849663f13f972af8c550164c7c221c74753ec2ea2e9f6416b5cd115c2"
+    },
+    {
+      "path": "assets/characters/npcs/courier/portrait.png",
+      "bytes": 4097,
+      "sha256": "3256f4172ef84b05608ea60728e0e64f1116f18f338d3e40a2b0db387f87d943"
+    },
+    {
+      "path": "assets/characters/npcs/courier/walk_v2.png",
+      "bytes": 60200,
+      "sha256": "e8bd149232064f6c00ed9545ec08434799b5995b09045ece9dc6bb505cbe37cd"
+    },
+    {
+      "path": "assets/characters/npcs/rootweaver/renewal/idle_work.png",
+      "bytes": 36156,
+      "sha256": "fe3e81cfde21c35634b705b43317b3dd1cef7b3c669706adc2342f23e125c5d1"
+    },
+    {
+      "path": "assets/characters/npcs/rootweaver/renewal/portrait.png",
+      "bytes": 14110,
+      "sha256": "96c93a4e393c1526bb91d002d2a812c99f42ad64dacdb29ef2d949961da45465"
+    },
+    {
+      "path": "assets/characters/npcs/rootweaver/renewal/sprite_frames.tres",
+      "bytes": 1912,
+      "sha256": "b275329e66cfa29ea798679749a45265a3978f50a1593661779564ba14ae62c7"
+    },
+    {
+      "path": "assets/characters/npcs/skillkeeper/renewal/idle_read.png",
+      "bytes": 31875,
+      "sha256": "412d12ec0c93dca8ba01fe01e49562182c0723813858a45084a4dca61667ea81"
+    },
+    {
+      "path": "assets/characters/npcs/skillkeeper/renewal/portrait.png",
+      "bytes": 13450,
+      "sha256": "a28e9853f600ac572307f3471c6739d6509b2f1f587fb12ce95ccdb8e7f38c8a"
+    },
+    {
+      "path": "assets/characters/npcs/skillkeeper/renewal/sprite_frames.tres",
+      "bytes": 1910,
+      "sha256": "eda275edee50d029b1754ab7a8d5ccc8744f14b11570d7bfd4afd01352bea0f3"
+    },
+    {
+      "path": "assets/characters/npcs/umi/renewal/idle_work.png",
+      "bytes": 45565,
+      "sha256": "4f39341758763b6fbf829f0e2689ef8e14e17e18840fbffbe842f70f0a2695b2"
+    },
+    {
+      "path": "assets/characters/npcs/umi/renewal/portrait.png",
+      "bytes": 14256,
+      "sha256": "2ad770ed3580def364fe7dd43cd2a31fbe80c2c86aba98ec706fe4253277fb88"
+    },
+    {
+      "path": "assets/characters/npcs/umi/renewal/sprite_frames.tres",
+      "bytes": 1905,
+      "sha256": "e51f06a6cecfdb0188870f5f5fea7364c350da411184fa00ab1c393cf1a81852"
+    },
+    {
+      "path": "assets/characters/playable/king/body_library/baseline/contract.json",
+      "bytes": 2674,
+      "sha256": "bc7708fc8413c32e6b53206c0a63b6ff4f9e102bdf043f61a73f14e394da8702"
+    },
+    {
+      "path": "assets/characters/playable/king/body_library/baseline/down_ready.tres",
+      "bytes": 2296,
+      "sha256": "c56ceb5a9949ff63d4e14e0beb2557a0fe368ae60cfcc6d54933e2004338ee9d"
+    },
+    {
+      "path": "assets/characters/playable/king/body_library/baseline/down_ready_body.png",
+      "bytes": 15353,
+      "sha256": "817a9e1b59d6de16d937536c83f36183ebe26237f65021c0d6788ca1ab44cbf5"
+    },
+    {
+      "path": "assets/characters/playable/king/body_library/baseline/down_ready_hands.png",
+      "bytes": 1800,
+      "sha256": "2a2bb92f4f2a71f86d9678b9c482bdcef36f825b0a07a262f563be7e2b2c2da1"
+    },
+    {
+      "path": "assets/characters/playable/king/body_library/baseline/down_relaxed.tres",
+      "bytes": 2899,
+      "sha256": "fd30fef7ea76966abed35877ec8017bb14341c4eadc82bd35070cd8cb67a4891"
+    },
+    {
+      "path": "assets/characters/playable/king/body_library/baseline/down_relaxed_body.png",
+      "bytes": 19523,
+      "sha256": "7feb6ee0c6d542be382bdab9f800a6a8a47360fb933eee47a4b656780208ba49"
+    },
+    {
+      "path": "assets/characters/playable/king/body_library/baseline/down_relaxed_hands.png",
+      "bytes": 2146,
+      "sha256": "1f9b8e38353a982aed78b9bf0250afaadb4f52a4f7d35aa302c823afa54c0576"
+    },
+    {
+      "path": "assets/characters/playable/king/body_library/baseline/down_run.tres",
+      "bytes": 2374,
+      "sha256": "b6eb3ae6b84198277ad17e7915dea09e21ca673a1842c7d346a2cb7e40c2a99b"
+    },
+    {
+      "path": "assets/characters/playable/king/body_library/baseline/down_run_body.png",
+      "bytes": 36550,
+      "sha256": "6d3e612bff1c072d79f08b40f895a31ed5a9141f8c29cbcd7444f21229d264fd"
+    },
+    {
+      "path": "assets/characters/playable/king/body_library/baseline/down_run_hands.png",
+      "bytes": 855,
+      "sha256": "8df9360a66b70ab63774c276e57ed13b832c6d9083dd88cf9eb276ba8042a758"
+    },
+    {
+      "path": "assets/characters/playable/king/body_library/baseline/README.md",
+      "bytes": 1158,
+      "sha256": "c66cce68596d3771844d13d3c518128f016bdd75290a257659fde4b885d7c8af"
+    },
+    {
+      "path": "assets/characters/playable/king/body_library/baseline/side_axe_ready_body.png",
+      "bytes": 14652,
+      "sha256": "808c61da64d50a88a67a39b9305d13db4aa9dc570b86e6594762446a7d825cfd"
+    },
+    {
+      "path": "assets/characters/playable/king/body_library/baseline/side_ready.tres",
+      "bytes": 2020,
+      "sha256": "c02acc36abe9e58b07a3abffd6505cbd8f82a106e4d2f8d1e8d0d35be592d923"
+    },
+    {
+      "path": "assets/characters/playable/king/body_library/baseline/side_ready_body.png",
+      "bytes": 39359,
+      "sha256": "a5b4c983dd5ebce926d0504eabfb246620096b660fd7bcbc1546b38f3cb14134"
+    },
+    {
+      "path": "assets/characters/playable/king/body_library/baseline/side_ready_hands.png",
+      "bytes": 2223,
+      "sha256": "d007d0690a1652723c5d7cf6c6ba5ef8f6acf8a6cc13af3bce55f2abecacd25c"
+    },
+    {
+      "path": "assets/characters/playable/king/body_library/baseline/side_relaxed.tres",
+      "bytes": 2875,
+      "sha256": "c4d80a388481f39131d25655b27829a6ef2c0ba6f031b7637efc181d09d8c34f"
+    },
+    {
+      "path": "assets/characters/playable/king/body_library/baseline/side_relaxed_body.png",
+      "bytes": 21825,
+      "sha256": "7a0bb0d0171383b1bb3c5dbe3264e350da8c7c5b247cb4e9eb3bcd2b31dc62fa"
+    },
+    {
+      "path": "assets/characters/playable/king/body_library/baseline/side_relaxed_hands.png",
+      "bytes": 2131,
+      "sha256": "d2719042cdcd493aaf33b63fd472bc9414dc43732dab1064df1cf99f6582d475"
+    },
+    {
+      "path": "assets/characters/playable/king/body_library/baseline/side_run.tres",
+      "bytes": 2211,
+      "sha256": "83af0b889374e7208ccaa67d12ae64e44f19b42ce6212bccf585ac15632b5d5d"
+    },
+    {
+      "path": "assets/characters/playable/king/body_library/baseline/side_run_body.png",
+      "bytes": 38211,
+      "sha256": "42ab29cce07aeb3584265c83ea2b91cd5d35bcf97296baf05984102fa19693b2"
+    },
+    {
+      "path": "assets/characters/playable/king/body_library/baseline/side_run_hands.png",
+      "bytes": 2572,
+      "sha256": "4d97f957815921f958b337544da18b38ec5f9b0748c3ecd411a70328d6198aa4"
+    },
+    {
+      "path": "assets/characters/playable/king/body_library/baseline/up_ready.tres",
+      "bytes": 2292,
+      "sha256": "c4075385946634458bfd39084dae547b77d6b87b4abd2da5c0bde2943e60ab29"
+    },
+    {
+      "path": "assets/characters/playable/king/body_library/baseline/up_ready_body.png",
+      "bytes": 14889,
+      "sha256": "481129bba5c5193e1c3dfb07baf40c341b75fe0e7ef2b5a66db8b36f1c909700"
+    },
+    {
+      "path": "assets/characters/playable/king/body_library/baseline/up_ready_hands.png",
+      "bytes": 1681,
+      "sha256": "f54c3e7f83495da946b02d316bdd5a7701e55555eb903ae0ea633ed7adb3776b"
+    },
+    {
+      "path": "assets/characters/playable/king/body_library/baseline/up_relaxed.tres",
+      "bytes": 2927,
+      "sha256": "952defcf4d6d468e888e84825c01d647a6fea64d41df2d8cfcd7b454f3348179"
+    },
+    {
+      "path": "assets/characters/playable/king/body_library/baseline/up_relaxed_body.png",
+      "bytes": 18095,
+      "sha256": "37823e19d371f38f46a80ebd71c8786eb368bb53e28e63ab0c1710eafc643aa3"
+    },
+    {
+      "path": "assets/characters/playable/king/body_library/baseline/up_relaxed_hands.png",
+      "bytes": 2142,
+      "sha256": "4845ad9fcc16993cabc5375b0bb01838ff16d3bc7d0927c283d860cc4a647e9e"
+    },
+    {
+      "path": "assets/characters/playable/king/body_library/baseline/up_run.tres",
+      "bytes": 2374,
+      "sha256": "9ce2a2ae63d41c0ae999f6fd3699213076707e09fe2589fb14a14d8b157b94f9"
+    },
+    {
+      "path": "assets/characters/playable/king/body_library/baseline/up_run_body.png",
+      "bytes": 34376,
+      "sha256": "b4af8f5cd8e8419e9920b237e683754131315931bd8a81b6461589cc74a636de"
+    },
+    {
+      "path": "assets/characters/playable/king/body_library/baseline/up_run_hands.png",
+      "bytes": 855,
+      "sha256": "8df9360a66b70ab63774c276e57ed13b832c6d9083dd88cf9eb276ba8042a758"
+    },
+    {
+      "path": "assets/characters/playable/king/greatsword/king_greatsword_portrait_96x96.png",
+      "bytes": 16300,
+      "sha256": "65cd9177a6f66c3aa769a049a19e3a5c55592924f8cc8a9a3e80d140e8177219"
+    },
+    {
+      "path": "assets/characters/playable/king/greatsword_unified/attack_hands.png",
+      "bytes": 9251,
+      "sha256": "9342fcd3eb816671f8d38243744f6c7ddaaf1f11eed58740a67ba9681d964e80"
+    },
+    {
+      "path": "assets/characters/playable/king/greatsword_unified/down/front.tres",
+      "bytes": 2462,
+      "sha256": "d18034a35ea99a0a84874b854812ba7a17a4b35c69d278400cc385ebebb984ce"
+    },
+    {
+      "path": "assets/characters/playable/king/greatsword_unified/down/front_body.png",
+      "bytes": 125823,
+      "sha256": "0c32bfdcd98847abde7693b090f49d4cbf63ac7f8abd70d1b731f11431933a22"
+    },
+    {
+      "path": "assets/characters/playable/king/greatsword_unified/down/idle.tres",
+      "bytes": 2305,
+      "sha256": "ed7028aa736260279b6fd267f97aa44f3505276622dd87af26d74b1f5d42b1e3"
+    },
+    {
+      "path": "assets/characters/playable/king/greatsword_unified/down/idle_body.png",
+      "bytes": 138592,
+      "sha256": "6a31469fed43a3a239498f4a47982d493498b50ebd265018ca50c8da94d357f8"
+    },
+    {
+      "path": "assets/characters/playable/king/greatsword_unified/down/return.tres",
+      "bytes": 2022,
+      "sha256": "b8f6f0b3de9f0867eb4f515611488ad4d294f1e95781c5b77e663c4b70437ee2"
+    },
+    {
+      "path": "assets/characters/playable/king/greatsword_unified/down/return_body.png",
+      "bytes": 130865,
+      "sha256": "4ac138e575f887029065df9349b9e8eb7674355af9d54211fbe7830e3c9b44a1"
+    },
+    {
+      "path": "assets/characters/playable/king/greatsword_unified/down/run.tres",
+      "bytes": 1665,
+      "sha256": "d9eb3f73cc5de0aff644e2c8d85722d2465657651cd7e498bf8c231eaf28f199"
+    },
+    {
+      "path": "assets/characters/playable/king/greatsword_unified/down/run_body.png",
+      "bytes": 76815,
+      "sha256": "9d02eea07456cf11248b5fee9e433690650e7aac686d02ebfcacefd85675d73d"
+    },
+    {
+      "path": "assets/characters/playable/king/greatsword_unified/down/slam.tres",
+      "bytes": 2025,
+      "sha256": "5aebef331cbedac262b3f6ecc7e35bfc9351feb631c19bc7cedad17497e101e1"
+    },
+    {
+      "path": "assets/characters/playable/king/greatsword_unified/down/slam_body.png",
+      "bytes": 122549,
+      "sha256": "3059a493ef3db71ff399fe88dc5250e697636cc6080192acae1503461a740d5f"
+    },
+    {
+      "path": "assets/characters/playable/king/greatsword_unified/down/spin.tres",
+      "bytes": 2175,
+      "sha256": "49c35243427ad8c94110ea8d8df4244e2827d86143f092efccaee205c69643fc"
+    },
+    {
+      "path": "assets/characters/playable/king/greatsword_unified/down/spin_body.png",
+      "bytes": 149964,
+      "sha256": "c41dbbfdd623cd905b9c8ee9f9e820738f79f9d0d969b07d2e272a32151a5849"
+    },
+    {
+      "path": "assets/characters/playable/king/greatsword_unified/landing.png",
+      "bytes": 24256,
+      "sha256": "6906a4ee541492914eb08ca70a2003292f6bae69ad0117177bcb258ee6c545ca"
+    },
+    {
+      "path": "assets/characters/playable/king/greatsword_unified/locomotion_hands.png",
+      "bytes": 4665,
+      "sha256": "eedffd7dd8a56d51a64cf3d2d3422694700b4be4affcb8513eeedee9aeb4d492"
+    },
+    {
+      "path": "assets/characters/playable/king/greatsword_unified/ribbon_layout.tres",
+      "bytes": 682,
+      "sha256": "bba55d43d6bad22b018e07e3208305fd999a638d405ebe6471b35261fd74ac42"
+    },
+    {
+      "path": "assets/characters/playable/king/greatsword_unified/side/front.tres",
+      "bytes": 2462,
+      "sha256": "18a25a77d8fe8a7ed3ee9855905ba5b57d550418bf47b581738f5070972c3dab"
+    },
+    {
+      "path": "assets/characters/playable/king/greatsword_unified/side/front_body.png",
+      "bytes": 131826,
+      "sha256": "4b574baa49b8a56450df50e7e91087056278e9b25757b5d14d5ea7093f5e4689"
+    },
+    {
+      "path": "assets/characters/playable/king/greatsword_unified/side/idle.tres",
+      "bytes": 2324,
+      "sha256": "cbfad49e03c4e7a08d1de52baaab5a22bfa027e88c56b265aa377e553c232b8a"
+    },
+    {
+      "path": "assets/characters/playable/king/greatsword_unified/side/idle_body.png",
+      "bytes": 130168,
+      "sha256": "f2f6fcbca905b43f538dcb1e3cc3f200d13a4920b581762edfb9abc27cc9de6b"
+    },
+    {
+      "path": "assets/characters/playable/king/greatsword_unified/side/return.tres",
+      "bytes": 2022,
+      "sha256": "9c15aa727e4d01fbb8b63d589253cd1b8ec453c45afff57c21f124f5a6619b87"
+    },
+    {
+      "path": "assets/characters/playable/king/greatsword_unified/side/return_body.png",
+      "bytes": 141667,
+      "sha256": "cbe9b8a9b9053f005cd3eeec543f32a0afd9cb844241f7eb8a5747c08d152a3a"
+    },
+    {
+      "path": "assets/characters/playable/king/greatsword_unified/side/run.tres",
+      "bytes": 1665,
+      "sha256": "115969a439592896dd242b60b78804c571bc4545f64e5d884ade469153458721"
+    },
+    {
+      "path": "assets/characters/playable/king/greatsword_unified/side/run_body.png",
+      "bytes": 76844,
+      "sha256": "233c9954835ff93d7dfed35db6ed964c64895498d4b2fc0b1485808828afbc95"
+    },
+    {
+      "path": "assets/characters/playable/king/greatsword_unified/side/slam.tres",
+      "bytes": 2063,
+      "sha256": "b2681f869dcf45afd172d52ae2c9308681867c39efe9cc964797fed1376a6141"
+    },
+    {
+      "path": "assets/characters/playable/king/greatsword_unified/side/slam_body.png",
+      "bytes": 128442,
+      "sha256": "4dbacd6996fc21e093762fd6bb1cfe38c575117d9b93cdb2d31429587d487a1b"
+    },
+    {
+      "path": "assets/characters/playable/king/greatsword_unified/side/spin.tres",
+      "bytes": 2175,
+      "sha256": "c73a3cd9e5b2e72cb6abbf2b4c2c9ac51ae08137a7f767e9c7bc5843e8ac3756"
+    },
+    {
+      "path": "assets/characters/playable/king/greatsword_unified/side/spin_body.png",
+      "bytes": 161116,
+      "sha256": "f4aeadfe419fb21c8465da743d47f436da5f58a98143bd6c4ab33fab0f5f52a3"
+    },
+    {
+      "path": "assets/characters/playable/king/greatsword_unified/slash.png",
+      "bytes": 120980,
+      "sha256": "08fa022317a1a93e5259b9a790d572b3c55833db4dc61436ec304f9744c42e43"
+    },
+    {
+      "path": "assets/characters/playable/king/greatsword_unified/spin_slash.png",
+      "bytes": 133975,
+      "sha256": "cc6599e385531e47e943de3f9d3d26cb398d524bf5bca5630f19ca658298e92c"
+    },
+    {
+      "path": "assets/characters/playable/king/greatsword_unified/up/front.tres",
+      "bytes": 2454,
+      "sha256": "863457c579a0ba6b07ee0162765b82d9398c2aa54fd9d090ae90ce6bd182f719"
+    },
+    {
+      "path": "assets/characters/playable/king/greatsword_unified/up/front_body.png",
+      "bytes": 125309,
+      "sha256": "cda587e783db21caef827d3f76e3c9ef184b5c715d19b9e92756d097c76a0bc1"
+    },
+    {
+      "path": "assets/characters/playable/king/greatsword_unified/up/idle.tres",
+      "bytes": 2324,
+      "sha256": "9733dd04b7e37fc2d681423030bb54960a434b1983254ae0f89ebff67f4776b5"
+    },
+    {
+      "path": "assets/characters/playable/king/greatsword_unified/up/idle_body.png",
+      "bytes": 128636,
+      "sha256": "a806ecc631d84c63f5ac7a3752a626abb7b6c9f2faad716c887d9aa5eaa71f61"
+    },
+    {
+      "path": "assets/characters/playable/king/greatsword_unified/up/return.tres",
+      "bytes": 2020,
+      "sha256": "0ba267ff73ae9b27ada9ec7c9ee9e99858a771e94b31ed19c05bd85dc63313c5"
+    },
+    {
+      "path": "assets/characters/playable/king/greatsword_unified/up/return_body.png",
+      "bytes": 131186,
+      "sha256": "741f7a77d1635489d622cc5561a269e4a6635422f7360b270e4d87eda6cd3910"
+    },
+    {
+      "path": "assets/characters/playable/king/greatsword_unified/up/run.tres",
+      "bytes": 1663,
+      "sha256": "7f22b8f8e154d9cd4033c3b997f8715f2c43a1a00c729ba591caef27711850c3"
+    },
+    {
+      "path": "assets/characters/playable/king/greatsword_unified/up/run_body.png",
+      "bytes": 73195,
+      "sha256": "787bd679323f8cc2c3eab589b29b01a3fcccb18b86c6004f330bc99044e0c845"
+    },
+    {
+      "path": "assets/characters/playable/king/greatsword_unified/up/slam.tres",
+      "bytes": 2023,
+      "sha256": "57bf1579c8f951ad6aada123e4c8f9b04a4fea4adb0227c345a03c710c568a1e"
+    },
+    {
+      "path": "assets/characters/playable/king/greatsword_unified/up/slam_body.png",
+      "bytes": 112511,
+      "sha256": "22cef752a8e53c8c9fed1c7f5efc33316c8aafea60286ac17f973499b78a94b3"
+    },
+    {
+      "path": "assets/characters/playable/king/greatsword_unified/up/spin.tres",
+      "bytes": 2173,
+      "sha256": "34c586f2532c5db2bbd96e5b4b066f478247c0070c8ad2a0ed85db2647dc31ff"
+    },
+    {
+      "path": "assets/characters/playable/king/greatsword_unified/up/spin_body.png",
+      "bytes": 148031,
+      "sha256": "0872db077f837f5b5c15bfbbec9d3f2f892dc825281231fad7d9cf088e5723b9"
+    },
+    {
+      "path": "assets/characters/playable/king/greatsword_unified/vertical_landing.png",
+      "bytes": 62348,
+      "sha256": "65bc53641397592cbc3a5b4fcef332476dc3685bee5e8b1a60f16a0d94698d01"
+    },
+    {
+      "path": "assets/characters/playable/king/greatsword_unified/vertical_slash.png",
+      "bytes": 79406,
+      "sha256": "11e8231fa833e03e1de45287bc5548ab4330b497ac543e256f7786a46d3f3d62"
+    },
+    {
+      "path": "assets/characters/playable/king/greatsword_unified/greatsword.png",
+      "bytes": 5257,
+      "sha256": "5077162899cf254e05aff546d3973d2162094d84e386bb011ee85e5b2a9899c6"
+    },
+    {
+      "path": "assets/characters/playable/king/greatsword_unified/impact.png",
+      "bytes": 65162,
+      "sha256": "9e97d74e5385343b4f08d7213542a088e3b8c0f67abc798a5504485fe51277bf"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/down/chop.tres",
+      "bytes": 2771,
+      "sha256": "500f6b73eac70c599486940782a620e25532c859530b7b93131a587038e878a9"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/down/chop_body.png",
+      "bytes": 44659,
+      "sha256": "c79a6a21231f3cb895b38671004a2191290f8332eb8f54297780f99df5ef492d"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/down/idle.tres",
+      "bytes": 1972,
+      "sha256": "0dd7433dbcc6192959686c24822cbceecc7670b78aa249d23b8c0c731b5473c6"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/down/idle_body.png",
+      "bytes": 15062,
+      "sha256": "18b94d438896436542aac01437dd16c35dfd3e8fbc84e6b77ddf1a5213f93880"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/down/rise.tres",
+      "bytes": 2197,
+      "sha256": "77b8e3bb17855f4a5bf46df04d365b3000bf860e6c008af6471137d7003f9250"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/down/rise_body.png",
+      "bytes": 44976,
+      "sha256": "c31c40c25c39a6cb4d0db3ab62246b32028251510b22f70ad206e7132b778a2d"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/down/run.tres",
+      "bytes": 1969,
+      "sha256": "32e00006e2da79023afd1da22a8d465b6a9e8e3dd1ec5a8f9314d63c04add58d"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/down/slam.tres",
+      "bytes": 2196,
+      "sha256": "24d2a92bc9cbbd9d4e94178be290db558581ec271c886085a55db55d75161e8d"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/down/slam_body.png",
+      "bytes": 48459,
+      "sha256": "866288322a926778625234d4e6746fd73447ca7db8f477118f363bcae68fcba0"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/down/spin.tres",
+      "bytes": 2338,
+      "sha256": "c8d2e87e39207dd5b7d897f794bbe5f49a16ad571717835aef177866116ad351"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/down/spin_body.png",
+      "bytes": 56703,
+      "sha256": "ddbc02e2cbf9952af695fd355a041ce94fcceee85ea0571b329bc013ac7425cb"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/down/thrust.tres",
+      "bytes": 2199,
+      "sha256": "c9923eb3fc0b65981774b36218b2bf67f28398cc32983f6decbe3c213da7c5c2"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/down/thrust_body.png",
+      "bytes": 40915,
+      "sha256": "d3cd128763b80ff1d60e4d556704f48962d86b09be410a425a23fca1edff7131"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/iron_beard_canonical.png",
+      "bytes": 2138,
+      "sha256": "30fbf770ecdd0e69119e0f1570c2aef3629445d1910ea66d9275cf93006ac9c1"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/side/chop.tres",
+      "bytes": 2771,
+      "sha256": "2c86c68fb11884829607017d8983944141bea5921c535ba40451862fe18705d2"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/side/chop_body.png",
+      "bytes": 56711,
+      "sha256": "116aa6dedaf68d5c6f09c4c9dbd87b718c0e9634ffdc67c23f080f6e1a08f829"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/side/idle.tres",
+      "bytes": 1972,
+      "sha256": "03484b30361159ccfcdd049e6305a4504929369418b8e3bdf0fb2f2988da639e"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/side/idle_body.png",
+      "bytes": 13794,
+      "sha256": "e812262913f6850817d2dda5ba3d14948102538b84f01f20c6054ca0a5d3f8ae"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/side/rise.tres",
+      "bytes": 2197,
+      "sha256": "b6f504bab4ab4fb51d7730c12721865d1974ecb18e9543cb67e84f9d461af5f4"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/side/rise_body.png",
+      "bytes": 55223,
+      "sha256": "b41b1a7a08e7d9644ec77efaf726447b11501a4fd226a6c7cdd3f5428faa3c27"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/side/run.tres",
+      "bytes": 1969,
+      "sha256": "f6e89b053d123b23158f044f0fbd0f594e5d3d7b17a52b18d3c03e7150c97925"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/side/slam.tres",
+      "bytes": 2200,
+      "sha256": "e74679948dcea6a4788d88603ab50dd43ae4c8e10b91968ed9726a09971426eb"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/side/slam_body.png",
+      "bytes": 52346,
+      "sha256": "a13548db572d9d66cb1237ed0b08d11c27598d2e4d2a911a40dd0d508b78cd96"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/side/spin.tres",
+      "bytes": 2338,
+      "sha256": "46e5914ffddbfd73ec30c07828f7af5ee2b6b1eb9f0687f5447f603cc8bcab0e"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/side/spin_body.png",
+      "bytes": 56466,
+      "sha256": "04e2f83b7eb5353ec52acfd4f98ae2626438db52dfe38072f1fad736a56fd63d"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/side/thrust.tres",
+      "bytes": 2199,
+      "sha256": "e2409398304f3347db7c3893453764e8e3659f1e71a23c9c358abd6261b90c16"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/side/thrust_body.png",
+      "bytes": 51372,
+      "sha256": "a65d820adc287e6224b2a56f5f32750bd9011d4e7e52ce2db5dd86ce9b20fcff"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/slash.png",
+      "bytes": 304974,
+      "sha256": "3ca10a8653c4f2f4a65503fcffa56b92b003e27f6a30c741efc4ad0430337cde"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/up/chop.tres",
+      "bytes": 2762,
+      "sha256": "2d482e4aad2a258de0d819bb929c432de032e4f66b75b4cd03697184404a5b88"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/up/chop_body.png",
+      "bytes": 43401,
+      "sha256": "5293f46d67ba5e2c8badd568494716a9411b07da81741762a0d072b96a4fbe10"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/up/idle.tres",
+      "bytes": 1970,
+      "sha256": "9070b2b7fecb04f4e2cbc31213fcbc03cc4de859109a831f4c3c40cca6c8f835"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/up/idle_body.png",
+      "bytes": 13317,
+      "sha256": "385a301adbfead03ef343d36afe7e6dba26734dae76dcf3542b6ae8def33bc28"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/up/rise.tres",
+      "bytes": 2195,
+      "sha256": "0fb057f2a5c73b9a9e7ee48eb96a16f018ea48eabb8e731980c2bcd73dfeb620"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/up/rise_body.png",
+      "bytes": 42252,
+      "sha256": "1b467067aea774fc9423aa6878049c10f9cda198c26e20f756c930d9227edcf3"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/up/run.tres",
+      "bytes": 1967,
+      "sha256": "262e89a41ab77682871646744f437724dc5cf0469750a5deaca5df3d9abe490c"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/up/slam.tres",
+      "bytes": 2198,
+      "sha256": "cd99988e253dc5ad8f834a71c5db8c93ff7e4844270265e7bdabe61c49142d2a"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/up/slam_body.png",
+      "bytes": 45636,
+      "sha256": "7361403ce1a7b9f82e7a02e613118ff566d9837eb2c6f6ae92fb6c2bc27084da"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/up/spin.tres",
+      "bytes": 2336,
+      "sha256": "a6ae23aba374acbed01ad0ecc6d2302b71359f96fb5d32064d9d5c2a19acd68c"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/up/spin_body.png",
+      "bytes": 53818,
+      "sha256": "cf01f12c6f4cec853ef472b99c535477275f26a8979f294cefff9b2d2ee379ba"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/up/thrust.tres",
+      "bytes": 2197,
+      "sha256": "c2ae2f33d66d78dc21b0df69336b18a63fa1377107cfdfba98dd113c0179e3e7"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_beard_unified/up/thrust_body.png",
+      "bytes": 38725,
+      "sha256": "076744270a041ccd3c2ca2a84b0a9a19baa0898da1c26b0501daba6c7bb34e47"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_reaper/attack_hands.png",
+      "bytes": 4157,
+      "sha256": "4f8be0b10c1d0add0c81b6674a9edc3099b1f4791f81ab4e3fbaa06cf8143e70"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_reaper/down/idle.tres",
+      "bytes": 1884,
+      "sha256": "3bd8c2c2e2992cbbbc368d87b99d7c846e7e7697b79cbe3755f14a5359e0f39e"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_reaper/down/idle_body.png",
+      "bytes": 25290,
+      "sha256": "4c40761fd05156bbad21162434055ad011eef5494bd518edff8cac7d6be90853"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_reaper/down/reap.tres",
+      "bytes": 2493,
+      "sha256": "93fd567cf54daeb157c3c26ca7a739ed396cd0676a69857bee673d1558afb4d7"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_reaper/down/reap_body.png",
+      "bytes": 37043,
+      "sha256": "698562b37f035f5fd0323f32e42913405d71ff1d46c8a5cf4d8d756964d47045"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_reaper/down/return.tres",
+      "bytes": 2508,
+      "sha256": "3ae00b6d3d6d3def7a5310031e00b7f43ab63ab5daaf153370059f9458840ed7"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_reaper/down/return_body.png",
+      "bytes": 39461,
+      "sha256": "5d544c65505ba131ab2690c3326b170bfc57d18cc50e807c890bdec467f5b90a"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_reaper/down/run.tres",
+      "bytes": 1884,
+      "sha256": "be1c30b552fac891e04ef4f91fe54cac2da6aef59e67f6e220256a0314565e97"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_reaper/down/run_body.png",
+      "bytes": 23366,
+      "sha256": "9d035c4cdd4cbb8fce5bdce946cf8c29a5b618e454693455ae23f017f796422f"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_reaper/down/sweep.tres",
+      "bytes": 2896,
+      "sha256": "7e3197827c14dd812628c3f42e273d06a961e392a554046a7a5c2e1d9dc1936a"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_reaper/down/sweep_body.png",
+      "bytes": 41846,
+      "sha256": "17cf4671404bfc97b2da6f4d2f541b90ad66a4326134dda0e537175faa8da9d9"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_reaper/down/throw.tres",
+      "bytes": 2485,
+      "sha256": "0d192ea3d05db8d7def412d498511b9904757957262a5891a53257d57b5d5750"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_reaper/down/throw_body.png",
+      "bytes": 41064,
+      "sha256": "5098bfc211db38a769e4130311fe75cdf73e9680da4bb164ff0fe03d1e3d032b"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_reaper/locomotion_hands.png",
+      "bytes": 2125,
+      "sha256": "44296e4bb43c3edc6142098e1334d415fc81ebe89a6590aec9717870e8e2ab9b"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_reaper/orbit.png",
+      "bytes": 76812,
+      "sha256": "8d8a2bad3bde4f1b3a1d7bab443a3c4d2355bc54810dcf2d77ad40dbacc76ccb"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_reaper/rigid_weapon.png",
+      "bytes": 5382,
+      "sha256": "d22748d9e88462fa19c3345640030ecb23176d2019309163be4f409ff72f0309"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_reaper/side/idle.tres",
+      "bytes": 1884,
+      "sha256": "a746985c9cdfb9f25484c899e4193a2e8b382ce583e25fba6fd6da3cc79ac97a"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_reaper/side/idle_body.png",
+      "bytes": 25722,
+      "sha256": "3edb216e5a03e415df46717edaeb68aeab6a993a738d7b36867c82101e51ecb3"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_reaper/side/reap.tres",
+      "bytes": 2493,
+      "sha256": "b719307d085d5d713e21e79f97cbe3dafa94629f47b185c1427e2038c40e8788"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_reaper/side/reap_body.png",
+      "bytes": 42034,
+      "sha256": "05807879cf43fe431e0e9bfb63fb321c6eac4d07c26d5b72634b0b96388804a9"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_reaper/side/return.tres",
+      "bytes": 2485,
+      "sha256": "f8f301f809795de2d609c3ab6a80c82d99240730b0e101ba1a792fe5f54d9ad2"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_reaper/side/return_body.png",
+      "bytes": 38304,
+      "sha256": "6843b6fb1a973f56040f6f0a7f39a0d852fd68ca44f8ed7f9a837b111d567803"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_reaper/side/run.tres",
+      "bytes": 1884,
+      "sha256": "f05a2687abf772ab3d83df8dff8c0dfbb4926abf577d1630736798b4c346a517"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_reaper/side/run_body.png",
+      "bytes": 24717,
+      "sha256": "c2236aaf45680515c040edbe02ea8a25da6039e77f613ed17598339da3d5109d"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_reaper/side/sweep.tres",
+      "bytes": 2896,
+      "sha256": "dcec699c271ca51c197276df8323831432336040acf2e94d7da23ac488a24079"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_reaper/side/sweep_body.png",
+      "bytes": 39608,
+      "sha256": "cbf1f8d8641d771ce73ad8750a751a869fca8fc09d8811bf1c3711b5575cfcde"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_reaper/side/throw.tres",
+      "bytes": 2480,
+      "sha256": "fbad17ef90086345fcfbcaf19edf345710224b0ef9df77e860735ff9e3d209b5"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_reaper/side/throw_body.png",
+      "bytes": 41993,
+      "sha256": "364a6b7115f6c755221b9bc2aaae6e84b99687025142d3dd1d46de3069dcf984"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_reaper/slash.png",
+      "bytes": 262478,
+      "sha256": "9e0be8f4cb59b68ddea996e5f04eeef7e913cfe033ec462ebe74e03cad705e21"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_reaper/sparks.png",
+      "bytes": 5885,
+      "sha256": "19e77e1bdb0c905c2d77debe9d0170e195760af3789be196e7ad1f137e755408"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_reaper/up/idle.tres",
+      "bytes": 1878,
+      "sha256": "a30e0b8020a1abd77fa9fbc2dddc02cf1a00368116b6c5133fd239d3240f411d"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_reaper/up/idle_body.png",
+      "bytes": 25258,
+      "sha256": "b84c00a9aeae39ab1744db022b0ddee34657699aded2bedc29403cac336906c0"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_reaper/up/reap.tres",
+      "bytes": 2486,
+      "sha256": "4d734af08110a586885295902bece357dc48fcb5c116afa1f216d5edbbadd02b"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_reaper/up/reap_body.png",
+      "bytes": 41213,
+      "sha256": "8305a8cc4c58fe180fbc1955d188d211e61f07c0e0c02bc83cd23b583697ee0c"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_reaper/up/return.tres",
+      "bytes": 2502,
+      "sha256": "ba68186fff5465f4db835ff80cc83e0655c21226260261b16ab1eb696c64facf"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_reaper/up/return_body.png",
+      "bytes": 41596,
+      "sha256": "69c445e0c53d7ecf82bfbeefa849507a17f1deda41335d37c1d42b9fcddd8e05"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_reaper/up/run.tres",
+      "bytes": 1878,
+      "sha256": "25f8e32efdca5e0b78105d196504d56c191f08ca924429be097423dd5e5ac8db"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_reaper/up/run_body.png",
+      "bytes": 22835,
+      "sha256": "c0e527a252e44416241f95ed887988004e214e0bc341eaf85fb888f36710bc59"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_reaper/up/sweep.tres",
+      "bytes": 2882,
+      "sha256": "e23717147cd2e62f86b8badf388ed1944b3cad474fa97c03ac4494d630fe9fed"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_reaper/up/sweep_body.png",
+      "bytes": 41422,
+      "sha256": "eb3e488f1af84750f3b7f3340f90e45320604b261d730663089d176bf35e1ab6"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_reaper/up/throw.tres",
+      "bytes": 2477,
+      "sha256": "b03992db28dcf1b76a71de3d1306744131841da0d8dbb642966499e0f27d04be"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_reaper/up/throw_body.png",
+      "bytes": 39772,
+      "sha256": "46932af9c1043e682c2632a09817283ebd783ec77654f1785401d96f322720b2"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_reaper/weapon.png",
+      "bytes": 9724,
+      "sha256": "72cc982036d292c54dc12e5f8b866570716b37bb050510d21c050c6a5e279ea7"
+    },
+    {
+      "path": "assets/characters/playable/king/portraits/king_portrait_96x96.png",
+      "bytes": 12805,
+      "sha256": "873e51cc94bf12ff4ab8c92bafdcb4e7f1c56d9b2c191f2415b20d0cb1680918"
+    },
+    {
+      "path": "assets/characters/playable/king/shared_bodies/sword/down_idle.png",
+      "bytes": 4747,
+      "sha256": "05332fa58f3fee0b42cb649c2efe7df17cafd085e8231c82c28e1814d13d0459"
+    },
+    {
+      "path": "assets/characters/playable/king/shared_bodies/sword/down_walk.png",
+      "bytes": 31931,
+      "sha256": "b28751eefef0fdad27d0ce350175fa3f408dc0b1a0e4d9067a10058e6f18c660"
+    },
+    {
+      "path": "assets/characters/playable/king/shared_bodies/sword/frames.tres",
+      "bytes": 75774,
+      "sha256": "869d24f025370c604bcfe567da4583977d708684b8a7fa6fa4bc1177761f2d8c"
+    },
+    {
+      "path": "assets/characters/playable/king/shared_bodies/sword/left_idle.png",
+      "bytes": 6033,
+      "sha256": "d2fb8d22dadc103c71fc46b4947f2e2b1f1bbe9aa9b01b38711782087159e54e"
+    },
+    {
+      "path": "assets/characters/playable/king/shared_bodies/sword/left_walk.png",
+      "bytes": 30373,
+      "sha256": "c84db84b36d4dcbd6a6486e4a8d6e77851c889c458bd419d2d62890d58168d03"
+    },
+    {
+      "path": "assets/characters/playable/king/shared_bodies/sword/side_idle.png",
+      "bytes": 6053,
+      "sha256": "80ca8544fb08aeebdcae996eb8bad7dc982889e4c99fe351d937c3265dd6465f"
+    },
+    {
+      "path": "assets/characters/playable/king/shared_bodies/sword/side_walk.png",
+      "bytes": 29689,
+      "sha256": "6ce05dc69c6e09b80e6fad05db82e5db8fe976a4caf6cbe55ee2f8971e861334"
+    },
+    {
+      "path": "assets/characters/playable/king/shared_bodies/sword/up_idle.png",
+      "bytes": 5270,
+      "sha256": "e088eab88ef6073841b29ffc615f579425d6832e2b06888be6eee6db59ebb6d5"
+    },
+    {
+      "path": "assets/characters/playable/king/shared_bodies/sword/up_walk.png",
+      "bytes": 29894,
+      "sha256": "f930a8c2d1b3ef94c992fd7bbb4cd74921a3682333f57309f37cf8abde42076b"
+    },
+    {
+      "path": "assets/characters/playable/king/spellward/attack.png",
+      "bytes": 131120,
+      "sha256": "c87688e853f80a90dbc8730a8f76296b94d56cbedf038f1f761b6c2c3ecd7c3e"
+    },
+    {
+      "path": "assets/characters/playable/king/spellward/dash.png",
+      "bytes": 30298,
+      "sha256": "9b32aa011494357a6d2c94e85c6007f870cd96114797a378279a5d8f70e81d1a"
+    },
+    {
+      "path": "assets/characters/playable/king/spellward/defeat.png",
+      "bytes": 25119,
+      "sha256": "6395f5003a202ac8df8d34bacc19d6fe658b15263444aa86a9c8c29faba7727a"
+    },
+    {
+      "path": "assets/characters/playable/king/spellward/heavy_cleave.png",
+      "bytes": 109123,
+      "sha256": "37bcb43df97f0d6bae4de16cb26c7c8c7d5f29636b86e72c2c5dfae64b377e13"
+    },
+    {
+      "path": "assets/characters/playable/king/spellward/hurt.png",
+      "bytes": 30016,
+      "sha256": "05e0d084d75f3f3c411f66300199504fd1dfc91b641e0d692521fb266495cec8"
+    },
+    {
+      "path": "assets/characters/playable/king/spellward/idle.png",
+      "bytes": 35351,
+      "sha256": "fc8ab4f08107dc78bc304035e2186f025871cf4f7a4d6c06c718f627d66453c3"
+    },
+    {
+      "path": "assets/characters/playable/king/spellward/interact.png",
+      "bytes": 35351,
+      "sha256": "fc8ab4f08107dc78bc304035e2186f025871cf4f7a4d6c06c718f627d66453c3"
+    },
+    {
+      "path": "assets/characters/playable/king/spellward/return_cut.png",
+      "bytes": 123937,
+      "sha256": "45915d0335637cacae3f27e80305fb19de3a7a183ea173e3cf61330025b5dd1e"
+    },
+    {
+      "path": "assets/characters/playable/king/spellward/spellward_frames.tres",
+      "bytes": 68025,
+      "sha256": "d823dc5d406c69b6b66e1f594311685332b96e0f9ceb05f79e184bc90ab89268"
+    },
+    {
+      "path": "assets/characters/playable/king/spellward/stagger.png",
+      "bytes": 14887,
+      "sha256": "66b2c56dd1b779f5df53d96fc6c25401e0ee158af82cc4cf9fa5a5ed282984c5"
+    },
+    {
+      "path": "assets/characters/playable/king/spellward/walk.png",
+      "bytes": 66587,
+      "sha256": "77aaade862d9fed24a59d2f102fe17328b877539414245ebad09972cc9b75b42"
+    },
+    {
+      "path": "assets/characters/playable/king/spellward/walk_side.png",
+      "bytes": 59415,
+      "sha256": "626747b0c73e2d6d4435fcc4a4dfcf50beb3fcee327f85b99023c3c62edf6486"
+    },
+    {
+      "path": "assets/characters/playable/king/sword_unified/action_hands.png",
+      "bytes": 4144,
+      "sha256": "074196faa9193315d6574b91f9263bfbabf04ba5521b8efa7789f905fd1bfa2e"
+    },
+    {
+      "path": "assets/characters/playable/king/sword_unified/down/cut.tres",
+      "bytes": 2481,
+      "sha256": "8a2fbf68faf374c11e81e2103e92960095bdbe6cb5db370a915189f4f09cab9b"
+    },
+    {
+      "path": "assets/characters/playable/king/sword_unified/down/cut_body.png",
+      "bytes": 78187,
+      "sha256": "39645fe734d979313848e266fa2dbb7b7c6f8b7c01e65ded1e293d64fb7ce925"
+    },
+    {
+      "path": "assets/characters/playable/king/sword_unified/down/finish.tres",
+      "bytes": 2181,
+      "sha256": "af17df76dae3f50a7add60c0160dea3972a0b9d740e59bd5d67d6332cdc707aa"
+    },
+    {
+      "path": "assets/characters/playable/king/sword_unified/down/finish_body.png",
+      "bytes": 81019,
+      "sha256": "6d0e26c0812611ec87bddbc12f0105b6b619a52bbdf6c4e79ed789400447df85"
+    },
+    {
+      "path": "assets/characters/playable/king/sword_unified/down/idle.tres",
+      "bytes": 2245,
+      "sha256": "b661d9a2475aa131c1e65c21cfbd0050965b6517f8a1dabd9b42b7ff1807594e"
+    },
+    {
+      "path": "assets/characters/playable/king/sword_unified/down/idle_body.png",
+      "bytes": 77687,
+      "sha256": "e927a141eac5e1aecca9f1d3b55d359194a630a53fbcd608c4e98ab3b6bd9308"
+    },
+    {
+      "path": "assets/characters/playable/king/sword_unified/down/return.tres",
+      "bytes": 2189,
+      "sha256": "6b16ae46c1c1f29059143f138a983fa484428253786f9fb0a0b85e64fd3827ec"
+    },
+    {
+      "path": "assets/characters/playable/king/sword_unified/down/return_body.png",
+      "bytes": 81183,
+      "sha256": "9482c6652eeb6088c908c3a0386724b03ad481581930052d2c90cf5812f47807"
+    },
+    {
+      "path": "assets/characters/playable/king/sword_unified/down/run.tres",
+      "bytes": 1631,
+      "sha256": "e54f93d0d97e4276896b96f008fda6f873bc0918b1ab3424ef31d51bbc4bf15a"
+    },
+    {
+      "path": "assets/characters/playable/king/sword_unified/down/run_body.png",
+      "bytes": 36677,
+      "sha256": "45c8989b63267938208452de6ddec7cb6fa40c9af02d6f2da2f6c2bbed63025a"
+    },
+    {
+      "path": "assets/characters/playable/king/sword_unified/ribbon_layout.tres",
+      "bytes": 586,
+      "sha256": "00aecfc58fd34bd1c7445aeb98618556790c26ff3abb2f30c77a7dc4a9168787"
+    },
+    {
+      "path": "assets/characters/playable/king/sword_unified/run_hands.png",
+      "bytes": 2112,
+      "sha256": "7ef4e27069369d9b6e7a340bffccd7b11fced892feef18774868915cedc71472"
+    },
+    {
+      "path": "assets/characters/playable/king/sword_unified/side/cut.tres",
+      "bytes": 2491,
+      "sha256": "474288c18969e75a4e3f9b12028c32cf4281ff6901cb7f94f271c3266dfeca28"
+    },
+    {
+      "path": "assets/characters/playable/king/sword_unified/side/cut_body.png",
+      "bytes": 80325,
+      "sha256": "2804d168c6ff398c6ee8ecd12b8245480f8d73c39ebf565d31abc8053ca24a81"
+    },
+    {
+      "path": "assets/characters/playable/king/sword_unified/side/finish.tres",
+      "bytes": 2167,
+      "sha256": "628617d22b66f5a75d5b29d6ec473da9f253cfd8e528d24af04e58c42837b193"
+    },
+    {
+      "path": "assets/characters/playable/king/sword_unified/side/finish_body.png",
+      "bytes": 80663,
+      "sha256": "8e8bdc8ed3d89e9afef0d7692937f03164f047e661cb9d7c491c92b4a41be371"
+    },
+    {
+      "path": "assets/characters/playable/king/sword_unified/side/idle.tres",
+      "bytes": 2240,
+      "sha256": "8b360cc354c12f3d69703f02838157d0ca10c5789c9126f89808f7a840cb6ba8"
+    },
+    {
+      "path": "assets/characters/playable/king/sword_unified/side/idle_body.png",
+      "bytes": 73043,
+      "sha256": "fab7e3302a281c33844412826fb5b38de14d87d3c2226c98b5191c53fe0a027f"
+    },
+    {
+      "path": "assets/characters/playable/king/sword_unified/side/return.tres",
+      "bytes": 2191,
+      "sha256": "d3b86b8b9a11f9351b00888757548936c2e4d62d9be4d68401cf82e4b5e5bbb5"
+    },
+    {
+      "path": "assets/characters/playable/king/sword_unified/side/return_body.png",
+      "bytes": 81840,
+      "sha256": "b87669c5c5311c4cb0882e436554470cc8d51bf20f99ee26294f776b060f1c34"
+    },
+    {
+      "path": "assets/characters/playable/king/sword_unified/side/run.tres",
+      "bytes": 1631,
+      "sha256": "2514e80d42bf78111da68944ea36349c61a8fea11f63dceebf1965dd29347153"
+    },
+    {
+      "path": "assets/characters/playable/king/sword_unified/side/run_body.png",
+      "bytes": 35062,
+      "sha256": "74e7bd43331edc62d8cfbddb37463a1c8a378f74b8a745756e4eb79f8ccc552f"
+    },
+    {
+      "path": "assets/characters/playable/king/sword_unified/slash.png",
+      "bytes": 143541,
+      "sha256": "9369c7bb70c2069e7139d8940fa819e4766452fd00fb63e42667fea2868854ee"
+    },
+    {
+      "path": "assets/characters/playable/king/sword_unified/sword.png",
+      "bytes": 1289,
+      "sha256": "eb27932807dee93a80377d34f146b8b9263ffa759ea275ae2249231dba8cdd4d"
+    },
+    {
+      "path": "assets/characters/playable/king/sword_unified/sword_icon.png",
+      "bytes": 1728,
+      "sha256": "1db69090bf8ed9214aa54a4758d2c7b57f391fe5f3c23b36c6c4493808da538a"
+    },
+    {
+      "path": "assets/characters/playable/king/sword_unified/up/cut.tres",
+      "bytes": 2484,
+      "sha256": "de909cbbd4a8ff658fd6acf8173a651940dbb1c7811e1b64733de13958a63c9d"
+    },
+    {
+      "path": "assets/characters/playable/king/sword_unified/up/cut_body.png",
+      "bytes": 73964,
+      "sha256": "cab7ec1206a0d29842a727d0493cd7997ec3549fdd0bc628dc1d65f523da2c10"
+    },
+    {
+      "path": "assets/characters/playable/king/sword_unified/up/finish.tres",
+      "bytes": 2183,
+      "sha256": "32ee4e66013ce7634a15424c5bc59ec3efe0523641156ec5f37d482629e52330"
+    },
+    {
+      "path": "assets/characters/playable/king/sword_unified/up/finish_body.png",
+      "bytes": 75881,
+      "sha256": "998c719dd305544a44116e018cd6786b4a6c5c6ed2c05084168935ebbdc0753e"
+    },
+    {
+      "path": "assets/characters/playable/king/sword_unified/up/idle.tres",
+      "bytes": 2242,
+      "sha256": "56fedb3a657fa9853ed7f5f11150829416f49c7644a1380b88043223d1c5fc35"
+    },
+    {
+      "path": "assets/characters/playable/king/sword_unified/up/idle_body.png",
+      "bytes": 73391,
+      "sha256": "faef55830089695ede64fc0c3ad824890cf53b5c0850553da76d9b7386f67159"
+    },
+    {
+      "path": "assets/characters/playable/king/sword_unified/up/return.tres",
+      "bytes": 2194,
+      "sha256": "c2d975fef632f20920afc1b30d1ed6b4dd69b2e56e09a1fb41bd718ec7ebd44a"
+    },
+    {
+      "path": "assets/characters/playable/king/sword_unified/up/return_body.png",
+      "bytes": 74108,
+      "sha256": "963a7296381b3f124149933f9d9bf250a12027d89e40ee7e0fcfcca113082c78"
+    },
+    {
+      "path": "assets/characters/playable/king/sword_unified/up/run.tres",
+      "bytes": 1629,
+      "sha256": "57ddee104e8a933719cb58039189c32c12a22c1ebd443962e332213d371ed073"
+    },
+    {
+      "path": "assets/characters/playable/king/sword_unified/up/run_body.png",
+      "bytes": 35137,
+      "sha256": "b12147928ee2d4d255c143c9a797701a8fac5ddd0e4e3af948f374cb8097aa18"
+    },
+    {
+      "path": "assets/characters/playable/king/twinsteel_unified/action_hands.png",
+      "bytes": 4144,
+      "sha256": "074196faa9193315d6574b91f9263bfbabf04ba5521b8efa7789f905fd1bfa2e"
+    },
+    {
+      "path": "assets/characters/playable/king/twinsteel_unified/down/cross_finish.tres",
+      "bytes": 3130,
+      "sha256": "3a7725a58a5e95280cf0b7d0f7a2e376c69609f80346fbd190fba28d433e0556"
+    },
+    {
+      "path": "assets/characters/playable/king/twinsteel_unified/down/cross_finish_body.png",
+      "bytes": 96585,
+      "sha256": "d44b3974ddfa80092affc1ee873bf0c955d1df79dc0d3c2a69f4b83299ff574b"
+    },
+    {
+      "path": "assets/characters/playable/king/twinsteel_unified/down/diagonal.tres",
+      "bytes": 3637,
+      "sha256": "73192dc3350c99b1a3f91df9473925e03a1b348a09ca3ee1a4394302ed910bb1"
+    },
+    {
+      "path": "assets/characters/playable/king/twinsteel_unified/down/diagonal_body.png",
+      "bytes": 84821,
+      "sha256": "4ec75eb1a52d022f01d76706c65087bcbb0e945bd7dc0f5367ce26ad2f61dcd4"
+    },
+    {
+      "path": "assets/characters/playable/king/twinsteel_unified/down/hop_spin.tres",
+      "bytes": 3056,
+      "sha256": "3e744b4cd0d89ca5bb0879c2732ef1426a1871bc280b0b814aa330c4e3015bf2"
+    },
+    {
+      "path": "assets/characters/playable/king/twinsteel_unified/down/hop_spin_body.png",
+      "bytes": 81064,
+      "sha256": "b7f10eab2573e7f4d32e5709b3cd4338f6ecb7dc5d60b315f737b71767ccc122"
+    },
+    {
+      "path": "assets/characters/playable/king/twinsteel_unified/down/idle.tres",
+      "bytes": 3173,
+      "sha256": "9bb952d15d0d744e9fccc418787d6c25e3d90f20b1c09291695d7be5fd88ffb3"
+    },
+    {
+      "path": "assets/characters/playable/king/twinsteel_unified/down/idle_body.png",
+      "bytes": 96566,
+      "sha256": "bce4573ad927f80b4589f6a94ffc5b9091e7606a6e77a5e104c7b8825fa66a13"
+    },
+    {
+      "path": "assets/characters/playable/king/twinsteel_unified/down/return.tres",
+      "bytes": 3029,
+      "sha256": "36b2ab22a855a16543b77c21871ab1aacaf3ed263822e1a1253c1e9cd020dc38"
+    },
+    {
+      "path": "assets/characters/playable/king/twinsteel_unified/down/return_body.png",
+      "bytes": 89037,
+      "sha256": "4e85d3b34362f49607aa93f5098a873498562df68b023d8feb569ee43dcddacc"
+    },
+    {
+      "path": "assets/characters/playable/king/twinsteel_unified/down/rising_cross.tres",
+      "bytes": 3072,
+      "sha256": "7255b1b4deab00cef216975f7ffe3ac20729ee5feddd22c4d30170706a7b6362"
+    },
+    {
+      "path": "assets/characters/playable/king/twinsteel_unified/down/rising_cross_body.png",
+      "bytes": 91419,
+      "sha256": "de6fdd858ce6d2dc28d7d535e9bfaf43eb7ea8ff0466c4be64219492f111f469"
+    },
+    {
+      "path": "assets/characters/playable/king/twinsteel_unified/down/run.tres",
+      "bytes": 2270,
+      "sha256": "55fdb40b871fb3bc1ce6b2fe10aa1a7027004e2e6ce35214494c4e38dce94d96"
+    },
+    {
+      "path": "assets/characters/playable/king/twinsteel_unified/down/run_body.png",
+      "bytes": 46527,
+      "sha256": "b0699b96fcaf49c0e1b7305f8ddaa14332705fb6077e22011e8e3166209a5db0"
+    },
+    {
+      "path": "assets/characters/playable/king/twinsteel_unified/ribbon_layout.tres",
+      "bytes": 791,
+      "sha256": "b57dabb13bf398735929c3c4cb19a6b71cd1412bcb0302082bc13b1fb3a951f2"
+    },
+    {
+      "path": "assets/characters/playable/king/twinsteel_unified/run_hands.png",
+      "bytes": 2112,
+      "sha256": "7ef4e27069369d9b6e7a340bffccd7b11fced892feef18774868915cedc71472"
+    },
+    {
+      "path": "assets/characters/playable/king/twinsteel_unified/side/cross_finish.tres",
+      "bytes": 3112,
+      "sha256": "7e1f4d3a0e9aa6f33e7ea20a6747ffd8e4a52b7989ab94d6ae2319b1c8cb88d3"
+    },
+    {
+      "path": "assets/characters/playable/king/twinsteel_unified/side/cross_finish_body.png",
+      "bytes": 89983,
+      "sha256": "43b350d905fedc0e65247fa1204a1d0d90e5b5d8e82e41799f49debaa9d83848"
+    },
+    {
+      "path": "assets/characters/playable/king/twinsteel_unified/side/diagonal.tres",
+      "bytes": 3709,
+      "sha256": "f9a2987e81ea1af37a319e1afb97c59e1d542580aef12bd80f49ab90337c3087"
+    },
+    {
+      "path": "assets/characters/playable/king/twinsteel_unified/side/diagonal_body.png",
+      "bytes": 88822,
+      "sha256": "9cf639be1f519be14c6b8c6769cc27d59391ee333626fe003e304ccab827d94f"
+    },
+    {
+      "path": "assets/characters/playable/king/twinsteel_unified/side/hop_spin.tres",
+      "bytes": 3104,
+      "sha256": "fa65ed579cdc91d3249d30cfbc3f0fe36174cb14c6558ad4beab61659b07940b"
+    },
+    {
+      "path": "assets/characters/playable/king/twinsteel_unified/side/hop_spin_body.png",
+      "bytes": 81201,
+      "sha256": "63e6844ae902cb2fbf4dc24fb4bf738da06dfd53c04437d3a24724f2aed8678f"
+    },
+    {
+      "path": "assets/characters/playable/king/twinsteel_unified/side/idle.tres",
+      "bytes": 3191,
+      "sha256": "6fd95bf538ae6942e08590d4b956a77fd3c149380e43ef6aee2d4ef1259a095f"
+    },
+    {
+      "path": "assets/characters/playable/king/twinsteel_unified/side/idle_body.png",
+      "bytes": 93370,
+      "sha256": "d314fd5ab1c6e84978bcf7968742c2ee3b2032e383d215048afa5c0ad74c40c8"
+    },
+    {
+      "path": "assets/characters/playable/king/twinsteel_unified/side/return.tres",
+      "bytes": 3138,
+      "sha256": "22ef4ff8ee437ade751a601f17feee11ee66da760250b4ca52d700e31a12858d"
+    },
+    {
+      "path": "assets/characters/playable/king/twinsteel_unified/side/return_body.png",
+      "bytes": 89352,
+      "sha256": "67e8b25722c7cb03fe294fa2d655972962ad5e1930ea03c5ea8fb1bbbe3bd6bc"
+    },
+    {
+      "path": "assets/characters/playable/king/twinsteel_unified/side/rising_cross.tres",
+      "bytes": 3114,
+      "sha256": "e18a772944e31824f3bdc39879dc54a5635c772d27f5143a8e97cc7253a1965b"
+    },
+    {
+      "path": "assets/characters/playable/king/twinsteel_unified/side/rising_cross_body.png",
+      "bytes": 89144,
+      "sha256": "cc5814b4d71ff09638098b50153caf83a647494768f58f7542ad3782f1f70951"
+    },
+    {
+      "path": "assets/characters/playable/king/twinsteel_unified/side/run.tres",
+      "bytes": 2302,
+      "sha256": "b43e16550ffdc13138cbd2d31522d3cce8bb05e7bf3d27f7761332d9d3acb7a1"
+    },
+    {
+      "path": "assets/characters/playable/king/twinsteel_unified/side/run_body.png",
+      "bytes": 40000,
+      "sha256": "ed6299fe34bd3897c0ba6735194c8b1a9ddd5690e5c975168c38150488ea84cc"
+    },
+    {
+      "path": "assets/characters/playable/king/twinsteel_unified/slash.png",
+      "bytes": 303469,
+      "sha256": "2187495ab9395f301663ba7cd48e90f3e0298a10d37981ab6614e931d57568bd"
+    },
+    {
+      "path": "assets/characters/playable/king/twinsteel_unified/twinsteel.png",
+      "bytes": 1181,
+      "sha256": "4dddb394b6f759c0945d2e40006cd7573f50f93e5670c4a92c47fb24cebc244e"
+    },
+    {
+      "path": "assets/characters/playable/king/twinsteel_unified/twinsteel_pair.png",
+      "bytes": 3123,
+      "sha256": "a00d4c326c52110c27325d1404bafb5237f07232995a702766c9aeea91090dea"
+    },
+    {
+      "path": "assets/characters/playable/king/twinsteel_unified/up/cross_finish.tres",
+      "bytes": 3123,
+      "sha256": "6a23db51b57e6fc32a11e74aa93dfebfe89bb25f47cf6b6e2efb9486b20a0ab6"
+    },
+    {
+      "path": "assets/characters/playable/king/twinsteel_unified/up/cross_finish_body.png",
+      "bytes": 95781,
+      "sha256": "52ced04efd2ea5f8b7a603fe49323b02ecfeede398aa5655e06026cf00385062"
+    },
+    {
+      "path": "assets/characters/playable/king/twinsteel_unified/up/diagonal.tres",
+      "bytes": 3706,
+      "sha256": "f9ea899cff31a3803148cfa8f5985dae8b8328f07c4ce8dddaebbfb5c24b524d"
+    },
+    {
+      "path": "assets/characters/playable/king/twinsteel_unified/up/diagonal_body.png",
+      "bytes": 99150,
+      "sha256": "d44bf64bb66514c28ac7a11fabbfe318069c39bc7d17ce7b4a643b689d231cfa"
+    },
+    {
+      "path": "assets/characters/playable/king/twinsteel_unified/up/hop_spin.tres",
+      "bytes": 3112,
+      "sha256": "a3ebe43b4fa6ac60d4b8e7b74e27b93f47c220e22ffba362c0545606c04a8992"
+    },
+    {
+      "path": "assets/characters/playable/king/twinsteel_unified/up/hop_spin_body.png",
+      "bytes": 94686,
+      "sha256": "48e8e5c9970be0196e6809871ae7693e8bece6d826ae01d4a2f9fdd4f17cae26"
+    },
+    {
+      "path": "assets/characters/playable/king/twinsteel_unified/up/idle.tres",
+      "bytes": 3158,
+      "sha256": "6bb238cf26a604d5e05f6f16c57e117db35321f89ebde132a103f5ddb4ae1dba"
+    },
+    {
+      "path": "assets/characters/playable/king/twinsteel_unified/up/idle_body.png",
+      "bytes": 94475,
+      "sha256": "da3ed5aec8f824b4f2f794cfe91fd2e13800fb2d087f512278d9739b3817d83c"
+    },
+    {
+      "path": "assets/characters/playable/king/twinsteel_unified/up/return.tres",
+      "bytes": 3093,
+      "sha256": "d1e7159d06d1871796ae0b8c60cd80f6a2df7abf401e4d47a3e36e53564aeea5"
+    },
+    {
+      "path": "assets/characters/playable/king/twinsteel_unified/up/return_body.png",
+      "bytes": 93190,
+      "sha256": "d2a5113a6232b06864176ed17befceaf6f02c0d252fe6f80dd10ed6d021e3224"
+    },
+    {
+      "path": "assets/characters/playable/king/twinsteel_unified/up/rising_cross.tres",
+      "bytes": 3124,
+      "sha256": "303e5527ab2b09a046cd919cd742092d387cd4a85c448be1e763396846a44f46"
+    },
+    {
+      "path": "assets/characters/playable/king/twinsteel_unified/up/rising_cross_body.png",
+      "bytes": 99363,
+      "sha256": "dc30c2a7e9b1ab0302515192f96dcb83ffa1a92bcc13b7e0f5ef705ecb05d00e"
+    },
+    {
+      "path": "assets/characters/playable/king/twinsteel_unified/up/run.tres",
+      "bytes": 2268,
+      "sha256": "8a3c19b56e88ffb1163ba9b3411cfcad768bde831c59801ed27dcd80f1b3eb12"
+    },
+    {
+      "path": "assets/characters/playable/king/twinsteel_unified/up/run_body.png",
+      "bytes": 45031,
+      "sha256": "7d766b44cd49d2670e6e2b266bcacfb4fb1197c8217459963ef763e77d03090e"
+    },
+    {
+      "path": "assets/environment/arenas/divine_order/court_of_first_measure/court_slate_floor.png",
+      "bytes": 461552,
+      "sha256": "9df8ba0c0a6273da7f6d9fa1b194bebc5adb684d5bfd259f274c784a93bce6e2"
+    },
+    {
+      "path": "assets/environment/arenas/divine_order/court_of_first_measure/examiner_divine_descent_circle_512.png",
+      "bytes": 425164,
+      "sha256": "9a0470b3550dc96ad00d8a6a6d1073a0553636f1cbd863dac4c98b956b08cf3f"
+    },
+    {
+      "path": "assets/environment/forest/dead_forest_renewal/ash.png",
+      "bytes": 12442,
+      "sha256": "64ec79cb168b4e3f202fdd71ff424a942d1c8ea9d20455340728738f41b665c6"
+    },
+    {
+      "path": "assets/environment/forest/dead_forest_renewal/bracken.png",
+      "bytes": 1324,
+      "sha256": "9ed68f5f8a46e46d1e1f5d4e2eaee78f4e68f79601040721a8fa9ee6f598f490"
+    },
+    {
+      "path": "assets/environment/forest/dead_forest_renewal/dead_ground_32.png",
+      "bytes": 54819,
+      "sha256": "3bfceea98a0507e941e3c5ef222cf82bc709d3182cbc5e8469291080bf83e8ef"
+    },
+    {
+      "path": "assets/environment/forest/dead_forest_renewal/dead_ground_tileset.tres",
+      "bytes": 887,
+      "sha256": "497a21a18b6893d78517de9bbecada70171a68b62e5af60218e7609fad268490"
+    },
+    {
+      "path": "assets/environment/forest/dead_forest_renewal/gateway.png",
+      "bytes": 26279,
+      "sha256": "12b2eff79b1aad83f82c9d51ba3cbab88b1db56fd896b69d432283f1faf09e00"
+    },
+    {
+      "path": "assets/environment/forest/dead_forest_renewal/log.png",
+      "bytes": 3597,
+      "sha256": "6514e3c31adbaea44306f4b11a1dd8b9256ab6e4666c4d29b1536864af51ab92"
+    },
+    {
+      "path": "assets/environment/forest/dead_forest_renewal/rubble.png",
+      "bytes": 2920,
+      "sha256": "cd0232218368c9399b8371ef5e6124edff6bc21fc7f14d771c7f252f88429a9c"
+    },
+    {
+      "path": "assets/environment/forest/dead_forest_renewal/snag.png",
+      "bytes": 6984,
+      "sha256": "d518ca97df5577095e56fafa10561599078d585c09548879d302b970f19f1d9a"
+    },
+    {
+      "path": "assets/environment/forest/dead_forest_renewal/stump.png",
+      "bytes": 3343,
+      "sha256": "10b3ef10e346127d4d224896b64107a0df14b399f06e6b0b5c65a6d1859dec79"
+    },
+    {
+      "path": "assets/environment/forest/eastern_rot_renewal/alder.png",
+      "bytes": 19335,
+      "sha256": "1c9318aef0133e08aff9c7b4874b9f5ac140b1afe6a21148a983e1aa0e73710e"
+    },
+    {
+      "path": "assets/environment/forest/eastern_rot_renewal/eastern_rot_tileset.tres",
+      "bytes": 1826,
+      "sha256": "18ed304cfad399d60a78c7392265ee67a6a654a7bfb9e85af9c11dec22dabb34"
+    },
+    {
+      "path": "assets/environment/forest/eastern_rot_renewal/fallen_root.png",
+      "bytes": 3853,
+      "sha256": "0b6ce39fa801a6f163dd177ed8f06e17dd73c534f5dddd42eb907f8c3feffdf4"
+    },
+    {
+      "path": "assets/environment/forest/eastern_rot_renewal/fern.png",
+      "bytes": 1290,
+      "sha256": "4df69c6befd1bbf23b08e6d8c44648164c17ea55ee6eca971cfda708efebabe5"
+    },
+    {
+      "path": "assets/environment/forest/eastern_rot_renewal/fungal_ash.png",
+      "bytes": 14401,
+      "sha256": "cfd9079e330e8bfb5e64ab1d79d6c0c03d792b19cee9f4753eb20e62ef5eca75"
+    },
+    {
+      "path": "assets/environment/forest/eastern_rot_renewal/fungi.png",
+      "bytes": 1107,
+      "sha256": "fa53c0e7b5f362dde8e9de37ad0e358415c677268901406e55f5af697e4c7198"
+    },
+    {
+      "path": "assets/environment/forest/eastern_rot_renewal/gateway.png",
+      "bytes": 29120,
+      "sha256": "3dc7395f6052c1fcf66cfb09ee1da61d78d0f8cd30a2634f34804f7701d68c79"
+    },
+    {
+      "path": "assets/environment/forest/eastern_rot_renewal/rubble.png",
+      "bytes": 2826,
+      "sha256": "3fd397fc8ec1033da1d3ee3496dbdde6541169a11d554fc09eb2d32cf0800831"
+    },
+    {
+      "path": "assets/environment/forest/eastern_rot_renewal/stump.png",
+      "bytes": 3120,
+      "sha256": "8a3a04343f1f904a89fb58f3d90e0c1624f45968f11ff36c67bd3aa44f660807"
+    },
+    {
+      "path": "assets/environment/forest/eastern_rot_renewal/transition_32.png",
+      "bytes": 38365,
+      "sha256": "908f7477472b65f8a3f11e7f2997f592132f00c4ef4b4cf4b88781e6cfab88cb"
+    },
+    {
+      "path": "assets/environment/forest/grove_renewal/boulder.png",
+      "bytes": 2942,
+      "sha256": "e8fd87b777cd93c0d442a9450f29981b33e02ce64d4e60d20033f4a2b130bc7f"
+    },
+    {
+      "path": "assets/environment/forest/grove_renewal/fern.png",
+      "bytes": 1832,
+      "sha256": "e052f58871c31b9c5d6e36144eec421a0ee5e4bc78d2fc0d734320760f5c3749"
+    },
+    {
+      "path": "assets/environment/forest/grove_renewal/fir.png",
+      "bytes": 15114,
+      "sha256": "50aac9f8057e8be9fbda6177906313d1a28c27c95dbe9a1baca79d99e8570382"
+    },
+    {
+      "path": "assets/environment/forest/grove_renewal/ground_32.png",
+      "bytes": 66384,
+      "sha256": "8138fa9aadbe20d63d1291d66a4ff47b2f63e2caaf743314754766030d443022"
+    },
+    {
+      "path": "assets/environment/forest/grove_renewal/grove_ground_tileset.tres",
+      "bytes": 876,
+      "sha256": "1a42ab07a3bd3d1d19a9b1aecea604773d73dad9b038f7a1ce9bc74f9af559bc"
+    },
+    {
+      "path": "assets/environment/forest/grove_renewal/log.png",
+      "bytes": 3852,
+      "sha256": "16b44b7c1b986be9fb307fc9b256982d96195167888b4ac61ea72e73a4ecf146"
+    },
+    {
+      "path": "assets/environment/forest/grove_renewal/masonry.png",
+      "bytes": 3844,
+      "sha256": "b8bce295cd4a60d6616964260a7c6792a950989dd1dc4271514c6235e4e075f3"
+    },
+    {
+      "path": "assets/environment/forest/grove_renewal/mushrooms.png",
+      "bytes": 1207,
+      "sha256": "15622738dbc9c7cdfa391fa7c4575e433eac8b0562f869f7ee88f55b14d99286"
+    },
+    {
+      "path": "assets/environment/forest/grove_renewal/oak.png",
+      "bytes": 20265,
+      "sha256": "023b964c339d76609cb6bdfac546304126415f26b36a71fea54feb3023dbf11c"
+    },
+    {
+      "path": "assets/environment/forest/grove_renewal/waystone.png",
+      "bytes": 4249,
+      "sha256": "de5e61936f47e2a2e74766b31ad6592b19e579b721ad78cc8b7ed1b36598a221"
+    },
+    {
+      "path": "assets/environment/forest/hollow_renewal/blighted_ash.png",
+      "bytes": 22910,
+      "sha256": "f5c2fa3f39a9f82612b9c1be5338701ebfff3404d32a448e18415974c19f7297"
+    },
+    {
+      "path": "assets/environment/forest/hollow_renewal/fallen_root.png",
+      "bytes": 3660,
+      "sha256": "c5e207369eafdef1ee73445991414b3af597fbe2bfe3e62c9404560287524573"
+    },
+    {
+      "path": "assets/environment/forest/hollow_renewal/fungi.png",
+      "bytes": 1148,
+      "sha256": "40c686abb55af8dfd0097824ab892adeb6eb1cb8ffe4863c7cee50bfb8968e53"
+    },
+    {
+      "path": "assets/environment/forest/hollow_renewal/hollow_ground_tileset.tres",
+      "bytes": 1821,
+      "sha256": "808599b0249515279ae428bb92b99333f74fd0bf64c166826e9b28d5705dd448"
+    },
+    {
+      "path": "assets/environment/forest/hollow_renewal/masonry.png",
+      "bytes": 3308,
+      "sha256": "a29427bc3781f1f7fa8e7b88758eb204d7f614f7286aeb93393c4cdbd4aeadda"
+    },
+    {
+      "path": "assets/environment/forest/hollow_renewal/memory_tablet.png",
+      "bytes": 2206,
+      "sha256": "8742bcd35291dbe0e8b54b99be03c7aea4159e3fb986a348dd47f686fdc38343"
+    },
+    {
+      "path": "assets/environment/forest/hollow_renewal/rootbound_32.png",
+      "bytes": 41205,
+      "sha256": "c9dff19b38f1307b88e198c5ddd7533ce4e0812cb27b5e0424c67abdc406903c"
+    },
+    {
+      "path": "assets/environment/forest/hollow_renewal/root_elm.png",
+      "bytes": 20304,
+      "sha256": "e0943e5017b1eb27a775cc9f4bd6d77ef8b235811e57ec1a3c66dc1d9c760967"
+    },
+    {
+      "path": "assets/environment/forest/hollow_renewal/root_mound.png",
+      "bytes": 3019,
+      "sha256": "74d484d8aeb130354faa55bffab5b945b655586f5f99266e531984cae1981c66"
+    },
+    {
+      "path": "assets/environment/forest/hollow_renewal/seal.png",
+      "bytes": 25210,
+      "sha256": "f2ba9206c1154684b2fd484ee3a959a66ba80ddf7fc8ecbecafee94e3a2e4bbe"
+    },
+    {
+      "path": "assets/environment/forest/hollow_renewal/transition_32.png",
+      "bytes": 38331,
+      "sha256": "65270fb09b58d6728391f14503a7b4f4e85534e281e27f0aa6eb29f373680ea0"
+    },
+    {
+      "path": "assets/environment/forest/shared/props/ancient_tree_base.png",
+      "bytes": 8578,
+      "sha256": "ffe2578aee7f969f3ce1f3e2e294216216b39f152f7c937a4b9406ea6cfd7674"
+    },
+    {
+      "path": "assets/environment/forest/shared/props/ancient_tree_canopy.png",
+      "bytes": 8662,
+      "sha256": "9644a2548e67051789567f2e07749d5e8b9bcd5c214b934f17abc0e76c0682a6"
+    },
+    {
+      "path": "assets/environment/forest/shared/props/ruined_shrine_statue.png",
+      "bytes": 7746,
+      "sha256": "8e99dabf120138caa4329d546ff2adec742dac486c0ac27e004e77fbbd25a112"
+    },
+    {
+      "path": "assets/environment/forest/stage_5/props/stage_5_broken_shrine_320x192.png",
+      "bytes": 96098,
+      "sha256": "dbf1308711806c23191be94536b3df20011c57c4fc475f8e0bb7c5314536d798"
+    },
+    {
+      "path": "assets/environment/forest/stage_5/props/stage_5_dead_tree_snag_128x160.png",
+      "bytes": 28603,
+      "sha256": "c490ae3f6db778b9b2aabda2fae45e93a2239f596033e7ac7dc7b61a01f5594f"
+    },
+    {
+      "path": "assets/environment/forest/stage_5/props/stage_5_fallen_log_192x96.png",
+      "bytes": 29564,
+      "sha256": "1996cf92e638fde9db0062e95209d8b23bcb2d66db8edb3ee96a9ba053b011a8"
+    },
+    {
+      "path": "assets/environment/forest/stage_5/props/stage_5_tall_dead_tree_144x192.png",
+      "bytes": 38244,
+      "sha256": "598be94dac4ccfec181f6e7ee03fa2113cc60afcc35d83bbe99905ff0b984c26"
+    },
+    {
+      "path": "assets/environment/forest/stage_5/props/stage_5_tiny_carrion_remains_48x32.png",
+      "bytes": 1761,
+      "sha256": "88a2a7668c5873ed5597ca9fc8869573647cf09b425fdfca6f1214362cb9d425"
+    },
+    {
+      "path": "assets/environment/forest/stage_5/props/stage_5_uprooted_log_192x128.png",
+      "bytes": 28223,
+      "sha256": "c9edce167318350ded30d9ab67925c752eb27d1216f105006db777fa65d9ad3d"
+    },
+    {
+      "path": "assets/environment/forest/stage_5/tiles/stage_5_decay_ground_atlas_4x4.png",
+      "bytes": 135912,
+      "sha256": "d8b52dc8adeaa41363dd147ea5ae9bc5a7f153984cb877cbe177b914d965134f"
+    },
+    {
+      "path": "assets/environment/forest/stage_5/tiles/stage_5_decay_ground_tileset.tres",
+      "bytes": 624,
+      "sha256": "1b0dd333163266c25b9af43e3161505315fa5ae8d109d8417aac1894b3dc26d2"
+    },
+    {
+      "path": "assets/environment/forest/stage_6/props/modular_cliffs/boulder_cluster_192x176.png",
+      "bytes": 32694,
+      "sha256": "b9fc294d4ae8a54e8d9800517cc16707a0102c41afc8e7aef6fa83dd0085164d"
+    },
+    {
+      "path": "assets/environment/forest/stage_6/props/modular_cliffs/cliff_inner_corner_224x208.png",
+      "bytes": 47727,
+      "sha256": "c23cb2dc68113b8c21efeda9f13a2d83dc93de1bd1385e06988f3abd86595276"
+    },
+    {
+      "path": "assets/environment/forest/stage_6/props/modular_cliffs/cliff_outer_corner_192x224.png",
+      "bytes": 44496,
+      "sha256": "fcb428a3dc1b97d3ef15cb6527d8692166f557164f302ceb3ceca187e803dec7"
+    },
+    {
+      "path": "assets/environment/forest/stage_6/props/modular_cliffs/cliff_ramp_192x224.png",
+      "bytes": 47157,
+      "sha256": "d5d8b921829c4f641e7de7730345d482c80f5a794ae8d3ff7ab17c5858f12b07"
+    },
+    {
+      "path": "assets/environment/forest/stage_6/props/modular_cliffs/cliff_straight_256x160.png",
+      "bytes": 43964,
+      "sha256": "f26be5fd74f0cedf4f5ce2936e894c4e2815d170d10d5e35dd6d9a5d2955ce38"
+    },
+    {
+      "path": "assets/environment/forest/stage_6/props/modular_cliffs/rocky_outcrop_208x208.png",
+      "bytes": 43609,
+      "sha256": "4b9a74bffa835c61f3bd6f237bf932a449cc2535d3fe1fc6fcbe99267df22291"
+    },
+    {
+      "path": "assets/environment/forest/stage_6/tiles/elder_ascent_ground_atlas_4x4.png",
+      "bytes": 102130,
+      "sha256": "6f9bce2a5e076fe67d3aa89c14780780cc89b759ddee7e7fee32bf9caaa8eb26"
+    },
+    {
+      "path": "assets/environment/forest/stage_6/tiles/elder_ascent_ground_tileset.tres",
+      "bytes": 595,
+      "sha256": "a11f56517d34652bf114c946638d9b32270a998ca1c7a8e0512bc5fd61594487"
+    },
+    {
+      "path": "assets/environment/forest/stage_6/waterfall/upper_terrace_waterfall_4f_192x256.png",
+      "bytes": 58603,
+      "sha256": "c0341aee72d8a42fa0647a5d7326fb4c44be0caf7b96f7767f1f4f9105316491"
+    },
+    {
+      "path": "assets/environment/forest/thorns_renewal/birch.png",
+      "bytes": 19921,
+      "sha256": "066a2e3eb665c3e6c27bc2ca03cb41532a6a49473fc4e7055740c947e3f8b913"
+    },
+    {
+      "path": "assets/environment/forest/thorns_renewal/bramble.png",
+      "bytes": 4650,
+      "sha256": "93c3795d5322b95a72d6626a1ec3d9ac5c368ab32327aad146cac5f60f8553eb"
+    },
+    {
+      "path": "assets/environment/forest/thorns_renewal/flowers.png",
+      "bytes": 1035,
+      "sha256": "951988cad8559c083ca3fadd089ae4e06de766569b3f79070ea391f0e115e3e1"
+    },
+    {
+      "path": "assets/environment/forest/thorns_renewal/root.png",
+      "bytes": 4307,
+      "sha256": "6cc36383d271f5d175c3bffedc1e31dc208f9644a7f7d5088d3e7e54eb146df5"
+    },
+    {
+      "path": "assets/environment/forest/thorns_renewal/shrine.png",
+      "bytes": 7223,
+      "sha256": "9b0bb65e20ba47de17ff984f9377c43afb3e6a2bd731ec52c3a2355e1be80216"
+    },
+    {
+      "path": "assets/environment/forest/thorns_renewal/stones.png",
+      "bytes": 2586,
+      "sha256": "07a252d3af2a6bfe8f6fbe38fe0a18901675377d3bf260c25d979342e45f2a7d"
+    },
+    {
+      "path": "assets/environment/forest/thorns_renewal/thorn_fern.png",
+      "bytes": 1893,
+      "sha256": "7c5646050406ec5575bb948beeb86fe8531d947cf9f55adbef2c59e177498892"
+    },
+    {
+      "path": "assets/environment/forest/thorns_renewal/thorn_tree.png",
+      "bytes": 19713,
+      "sha256": "cd79469151c8c4a936128a799f4b3082c04e415ed89ad0d0f97cca1246875590"
+    },
+    {
+      "path": "assets/environment/portals/generated/stage_abyssal_veil_lightning_fx_16x_256x224.png",
+      "bytes": 269087,
+      "sha256": "0cdb3d6df91647b792ef5a2cade2753aa438120906af0c162088f1322eb637e1"
+    },
+    {
+      "path": "assets/environment/portals/threat_family/calm.png",
+      "bytes": 161283,
+      "sha256": "32649a6dcf35e2ae1388555c7c8a47ba4acb94dd2cf14481c7c3015cd79ed5c6"
+    },
+    {
+      "path": "assets/environment/portals/threat_family/calm_frames.tres",
+      "bytes": 1817,
+      "sha256": "31f46d3861bc5e28c1f8a658c0ddfc47c35c167dc2ec08d49d58655c4a287e33"
+    },
+    {
+      "path": "assets/environment/portals/threat_family/divine.png",
+      "bytes": 170206,
+      "sha256": "32ba51d13ab6ef9edc709e09d10994136786d88bc320cd786a85d7eb3516cdb9"
+    },
+    {
+      "path": "assets/environment/portals/threat_family/divine_frames.tres",
+      "bytes": 1820,
+      "sha256": "d4bdbf90212d18d5114550b29ab9d09a8d55cf886a5f7ac625d4dff9a3135277"
+    },
+    {
+      "path": "assets/environment/portals/threat_family/grasp.png",
+      "bytes": 196985,
+      "sha256": "f5d947d2a5ea291fe6d26357d5c3a783bc44980ad57dd2c9a1e6fa9b042d7b85"
+    },
+    {
+      "path": "assets/environment/portals/threat_family/grasp_frames.tres",
+      "bytes": 1818,
+      "sha256": "53fdbe84c616fd44dfe7e2a53ab39f3ac8b018c6b7df72ba048be0ea97395731"
+    },
+    {
+      "path": "assets/environment/portals/threat_family/maw.png",
+      "bytes": 194815,
+      "sha256": "e1335c41c828dc762a426380f76fca4b156d005c054ecf4d98bdc0e51317c148"
+    },
+    {
+      "path": "assets/environment/portals/threat_family/maw_frames.tres",
+      "bytes": 1816,
+      "sha256": "6ccebd3507311c55b628a9be82233639b0b83d8e03a1a22b12f6aba2ad130b10"
+    },
+    {
+      "path": "assets/environment/portals/threat_family/ominous.png",
+      "bytes": 164602,
+      "sha256": "fc8c1a033d1d4642059dab0fb08ce5143aa7498b74e34c86805b5b336d7c0c1b"
+    },
+    {
+      "path": "assets/environment/portals/threat_family/ominous_frames.tres",
+      "bytes": 1821,
+      "sha256": "c9c0ae9484f44ece493bc7d9b32cc761b0b184ee856e9c1fd826fd49c91bab57"
+    },
+    {
+      "path": "assets/environment/portals/threat_family/unknowable.png",
+      "bytes": 176620,
+      "sha256": "9f329c73ef397e817315f8295ae3b135ae8437e193e25c21c659c9c4d186db44"
+    },
+    {
+      "path": "assets/environment/portals/threat_family/unknowable_frames.tres",
+      "bytes": 1824,
+      "sha256": "bdec6f1dbf3a208d69d5f5b70d2cc7fec74e45a31ab477d846a798a974c406f5"
+    },
+    {
+      "path": "assets/environment/sanctuary/courtyards/swallow.png",
+      "bytes": 5692,
+      "sha256": "9974b0547ebf3c3746cc828bd84db6e37dfbc162a78fd245116f84a8dc7af2e2"
+    },
+    {
+      "path": "assets/environment/sanctuary/landmarks/angel_expedition_portal_ground_192x192.png",
+      "bytes": 8050,
+      "sha256": "d341898f662416bcfbb6929a1d760e0af7f0f5e82ca319ba4fc39a72caa961b9"
+    },
+    {
+      "path": "assets/environment/sanctuary/landmarks/divine_fountain_112x96.png",
+      "bytes": 10641,
+      "sha256": "0dff1338e8881e7ca6e4ef3fb9291409312467c6862be1661af74e2029add89c"
+    },
+    {
+      "path": "assets/environment/sanctuary/landmarks/generated/angel_expedition_portal_static_192x256.png",
+      "bytes": 75023,
+      "sha256": "33ce0226c5b10420e4d089d0e8c125a1e6af95f6b8bada2b62c9c93b3b1d8f11"
+    },
+    {
+      "path": "assets/environment/sanctuary/landmarks/generated/sanctuary_portal_energy_4x_44x112.png",
+      "bytes": 61667,
+      "sha256": "1c61194e1c0b7e48aad30dbbb95158ba5ffed8919ef8f2e1f742d707ed562b84"
+    },
+    {
+      "path": "assets/environment/sanctuary/orthographic/nema.png",
+      "bytes": 59558,
+      "sha256": "d071b2481ac640c9e1d0d595bafa1b8cd6a183bf41e7b4b4b740ed0ed0e9172c"
+    },
+    {
+      "path": "assets/environment/sanctuary/orthographic/umi.png",
+      "bytes": 43383,
+      "sha256": "d6a8bce9555268fe70268082cd6af5cbe3b72396e849d4a78c0cb3569fb9f8ef"
+    },
+    {
+      "path": "assets/environment/sanctuary/refuge_review/ground_32.png",
+      "bytes": 50849,
+      "sha256": "588845ddbb39f23f2d5426e0de0042282f23b4b91adc20322e394945ae774e59"
+    },
+    {
+      "path": "assets/environment/sanctuary/refuge_review/orren_workshop.png",
+      "bytes": 72702,
+      "sha256": "92f6a9190ddd659020e7224df1f06a9be6ddc88e6faab7be705c4159bef36f37"
+    },
+    {
+      "path": "assets/environment/sanctuary/refuge_review/trainer_lodge.png",
+      "bytes": 74696,
+      "sha256": "b572c75d002d336cf68ed6865b5fad2ea8ea910c86114505e1aaec53f937626d"
+    },
+    {
+      "path": "assets/gameplay/loot/stage_clear_chest/renewed/forest_closed.png",
+      "bytes": 3758,
+      "sha256": "c9983fb64098e37852dbaaa3b9d54147529c554b3ea528cd3fae08ec8913cda8"
+    },
+    {
+      "path": "assets/gameplay/loot/stage_clear_chest/renewed/forest_open.png",
+      "bytes": 4368,
+      "sha256": "eeeed0ba817d5aaa4515f8c7b625bbdd781e3f573aaffcd94b828ec7692b50ed"
+    },
+    {
+      "path": "assets/gameplay/loot/stage_clear_chest/renewed/rootbound_closed.png",
+      "bytes": 6163,
+      "sha256": "132de019fe879c1da2bb900338243071b1416a02bef8e5c186264c84d6d25bc8"
+    },
+    {
+      "path": "assets/gameplay/loot/stage_clear_chest/renewed/rootbound_open.png",
+      "bytes": 7095,
+      "sha256": "5d8a22e9ac571d1e7fff385858f9b9485659ed51c37b108841910efc7e3bb265"
+    },
+    {
+      "path": "assets/gameplay/loot/stage_clear_chest/renewed/varkuun_closed.png",
+      "bytes": 7062,
+      "sha256": "4e0ce03e3f2cf401125a647fb572415b091077dbaceacaacbcaca5786761bf5a"
+    },
+    {
+      "path": "assets/gameplay/loot/stage_clear_chest/renewed/varkuun_open.png",
+      "bytes": 7839,
+      "sha256": "072de5a907413ec2cec72708f2de3ab6e75b3ed74275a1f84fd3d9e20bff7d5f"
+    },
+    {
+      "path": "assets/items/equipment/forest/stage_5_core/heartwood_plate_64x64.png",
+      "bytes": 3432,
+      "sha256": "6a8c77a8abbc98cb0c13ee4cb48c306b16b4551a2972aa93f5ad123087948b32"
+    },
+    {
+      "path": "assets/items/equipment/forest/stage_5_core/mirebound_leggings_64x64.png",
+      "bytes": 2680,
+      "sha256": "e95e968e37e3ace521d12e06fd3312c15efcbb0374a362682d795990a73eeb9c"
+    },
+    {
+      "path": "assets/items/equipment/forest/stage_5_core/mirehide_boots_64x64.png",
+      "bytes": 2979,
+      "sha256": "16a66183a243984618790a91491fff4596eebbb2cc2f3d2c68dc3117878e0e02"
+    },
+    {
+      "path": "assets/items/equipment/forest/stage_5_core/old_bark_helm_64x64.png",
+      "bytes": 2848,
+      "sha256": "19c25e51a11c9c1cdfd1c7c8dd7ca4cf8c8ce984c7f623e4d34d77f9de3fbd26"
+    },
+    {
+      "path": "assets/items/equipment/forest/stage_5_core/rootfiber_gloves_64x64.png",
+      "bytes": 2962,
+      "sha256": "c66c7c7807e45645353f383301a386488f0542adb411a8c461657d8af2e18569"
+    },
+    {
+      "path": "assets/items/equipment/forest/stage_5_core/varkuun_edge_essence_64x64.png",
+      "bytes": 1567,
+      "sha256": "4ef41cb21bf1aeabbb6c567c5beb07fc2437695936d7456472dc9d9381f8c987"
+    },
+    {
+      "path": "assets/items/materials/forest/armored_hog_hide_24x24.png",
+      "bytes": 1052,
+      "sha256": "116fd9b5a80c4dd3ebe9124815c03e63390c21b053a09759099078c67da0fa0c"
+    },
+    {
+      "path": "assets/items/materials/forest/barbed_seed_24x24.png",
+      "bytes": 946,
+      "sha256": "176fd0e89db90dcd8f6d678bb80eb4d34df0e56a2b7afce0741f04e36e42ed3c"
+    },
+    {
+      "path": "assets/items/materials/forest/crag_iron_24x24.png",
+      "bytes": 860,
+      "sha256": "8616589c1da9e6874009a26fb36e9d25ec4b6bbd4da5bcb632486920be91784b"
+    },
+    {
+      "path": "assets/items/materials/forest/echo_claw_24x24.png",
+      "bytes": 858,
+      "sha256": "422320aa2f3bf0965a53b0dc1e0b18aa3f6cc119d9a22e70d5570414a52f8ae5"
+    },
+    {
+      "path": "assets/items/materials/forest/forsaken_cloth_24x24.png",
+      "bytes": 998,
+      "sha256": "544770326ccff709f6fef79c170472863ad9f27ddfe2372dd7cc7fbdf776ac21"
+    },
+    {
+      "path": "assets/items/materials/forest/husk_heartwood_24x24.png",
+      "bytes": 1010,
+      "sha256": "66b229389dd362a9fa6910c6a660dc5079ee1acc95a8ddd6d7403c8e94bc9935"
+    },
+    {
+      "path": "assets/items/materials/forest/living_bark_plate_24x24.png",
+      "bytes": 965,
+      "sha256": "e5a2c8e14b3b940cbb47280b2c6da6c7a0b11249a55ab0119f01896ea4e53609"
+    },
+    {
+      "path": "assets/items/materials/forest/mire_membrane_24x24.png",
+      "bytes": 843,
+      "sha256": "dd280e6330dca6f85d75268599b2557bcd094fd8dcad644fdc39ca8fe35cfd0b"
+    },
+    {
+      "path": "assets/items/materials/forest/mire_resin_24x24.png",
+      "bytes": 724,
+      "sha256": "31d8118c1fb41bf2c00e63bbd571c229056cf6497b56b36cdfac956c670dfa04"
+    },
+    {
+      "path": "assets/items/materials/forest/rootbound_core_24x24.png",
+      "bytes": 1050,
+      "sha256": "b94a3f2755f335073089c0cc3e7e6c5332c8bfc4877449c928b1d1b3fa83118a"
+    },
+    {
+      "path": "assets/items/materials/forest/root_fiber_24x24.png",
+      "bytes": 756,
+      "sha256": "1f1d8f58f4d506e9d7880e57925fa388ae5e05a9ec92d283c8225ff1927b9e9c"
+    },
+    {
+      "path": "assets/items/materials/forest/thorn_sap_24x24.png",
+      "bytes": 487,
+      "sha256": "bcf0ec971965504efa5eb1cd46f4e7d2a1e1269448fa321a6884915a627060dd"
+    },
+    {
+      "path": "assets/items/materials/forest/varkuun_core_24x24.png",
+      "bytes": 622,
+      "sha256": "6a71e6b517c2a315d1d7f2708c820afa0811e692deb6e5c1f6c58f0077b413fe"
+    },
+    {
+      "path": "assets/items/materials/forest/weathered_fittings_24x24.png",
+      "bytes": 860,
+      "sha256": "335921ab5fa84839d11b5e60cb5c62535b3deed14b6633fc47770ac0939ad83b"
+    },
+    {
+      "path": "assets/items/materials/forest/young_heartwood_24x24.png",
+      "bytes": 810,
+      "sha256": "99d9cf8afe5b6f4928d30524b8d4f3d8ce787560f1be61719e79c8711a9dc6e2"
+    },
+    {
+      "path": "assets/ui/hud/eclipse_bind/eclipse_dash_24.png",
+      "bytes": 865,
+      "sha256": "9a32629f68baae37d7289da9e7467bfff5ea5206b5d1b6f0181a8013da572a93"
+    },
+    {
+      "path": "assets/ui/hud/eclipse_bind/eclipse_frame_compact_720x104.png",
+      "bytes": 15325,
+      "sha256": "c14a0649accc1e09769082968c58a67dbac7e453abbbfd03e79d6af10cfb9b5f"
+    },
+    {
+      "path": "assets/ui/icons/actions/icon_action_auto_all_24.svg",
+      "bytes": 459,
+      "sha256": "d75dc3917c0f5d8ea156f75a6a05048ae73fd7dc862fbac337b7e9c49a4b3f4c"
+    },
+    {
+      "path": "assets/ui/icons/actions/icon_action_auto_skill_24.svg",
+      "bytes": 415,
+      "sha256": "a2b7991f0c9556863943e2f566081cd08a6ac80de6437b01740d9cc1a09fa57e"
+    },
+    {
+      "path": "assets/ui/icons/actions/icon_action_move_arrows_1_24.svg",
+      "bytes": 461,
+      "sha256": "7ea8a9109f6dacaa2c8623fbeafe0faaf831cf76542a2ae35e713821f0bfc5ca"
+    },
+    {
+      "path": "assets/ui/icons/actions/icon_action_move_arrows_2_24.svg",
+      "bytes": 461,
+      "sha256": "bb0b2b18b9981b35cdfb46cfcdfebbe15a035eb15ec3821fead6e135214656a8"
+    },
+    {
+      "path": "assets/ui/icons/combat/basic_attack_icon.tres",
+      "bytes": 264,
+      "sha256": "df011e2c2aeb5756dbed2339770956be49cd1fb9ca219a3bc5557277f9fe41fd"
+    },
+    {
+      "path": "assets/ui/icons/combat/combat_action_atlas_bc_6x1_24.png",
+      "bytes": 2386,
+      "sha256": "dd75d92e5d2813b73bd8fdc3944632280caba55cbfb704c1d8f7558b242e3ff7"
+    },
+    {
+      "path": "assets/ui/icons/combat/king_greatsword_skills_24.png",
+      "bytes": 6139,
+      "sha256": "5c5fae37ec3c372da487e0909cb7661f24467f72b86b5fa441b3594cb41defa7"
+    },
+    {
+      "path": "assets/ui/icons/combat/king_skill_1_icon.tres",
+      "bytes": 267,
+      "sha256": "f79af52a4eb66bf66f34858d6960915425bea5eb132e93f88d00b6d36f6e2078"
+    },
+    {
+      "path": "assets/ui/icons/combat/king_skill_2_icon.tres",
+      "bytes": 268,
+      "sha256": "bb84581e2c0fae102d95ea7fbf6ba9d5490f7a80c28b94e80e58bde81eb705de"
+    },
+    {
+      "path": "assets/ui/icons/combat/king_skill_3_icon.tres",
+      "bytes": 268,
+      "sha256": "d0aa18f62d069671d10a151827792e46a95a394e175a890742c3c34aff210519"
+    },
+    {
+      "path": "assets/ui/icons/combat/king_skill_4_icon.tres",
+      "bytes": 268,
+      "sha256": "8e9949fb99f8532b4c70569fdb538dcbde4f860843f414d331891c5a14cd3c72"
+    },
+    {
+      "path": "assets/ui/icons/combat/unbroken_vow_icon.tres",
+      "bytes": 254,
+      "sha256": "7504d188273216a06d2a6362b0860715536841a718c7a68234161cdd6a5d3c4c"
+    },
+    {
+      "path": "assets/ui/icons/economy/icon_currency_coin_16x16.png",
+      "bytes": 158,
+      "sha256": "564f89498a4cc09b1230358cf6229a4a9cea1ff15822b1cb95cae40209de6c61"
+    },
+    {
+      "path": "assets/ui/icons/interactions/icon_interaction_portal_16x16.png",
+      "bytes": 155,
+      "sha256": "a2dae18d0ce73fa9d70c8c584d4fbe0c55e45948da37d5128fa03648690db2bd"
+    },
+    {
+      "path": "assets/ui/icons/interactions/icon_interaction_talk_16x16.png",
+      "bytes": 140,
+      "sha256": "44c1a3735adfd618ecd5521443e90c718e9471590d17e425d8aec6bddde0c06d"
+    },
+    {
+      "path": "assets/ui/icons/states/icon_slot_locked_16x16.png",
+      "bytes": 155,
+      "sha256": "2c46c1771226b27e4fb14288f668e424904b6b731d9a30840ed4da41c4f37473"
+    },
+    {
+      "path": "assets/ui/icons/status/icon_status_experience_16x16.png",
+      "bytes": 141,
+      "sha256": "95fdc95ead40f5cc522d5406bcd65acbc935b103c4ecd1af6695e1687fd90b5d"
+    },
+    {
+      "path": "assets/ui/icons/status/icon_status_health_16x16.png",
+      "bytes": 140,
+      "sha256": "8afb476fef698dae5a3251a80eb0d47d58aeb6f5c32921e27a8db81a159d41bf"
+    },
+    {
+      "path": "assets/ui/inventory/centered_paperdoll_frame.png",
+      "bytes": 36053,
+      "sha256": "6e31e8bb978c3fb16d1d287d4c7c54591fe1c26d6c7b192cc7116635eb9fb2ce"
+    },
+    {
+      "path": "assets/ui/inventory/slot_amulet.png",
+      "bytes": 917,
+      "sha256": "6d5f2d559a25ee4a696668df4c36ed2785d53bbcf7eccfd314fd252251c2c9c3"
+    },
+    {
+      "path": "assets/ui/inventory/slot_boots.png",
+      "bytes": 1126,
+      "sha256": "c8429bbe5657692f8b1a0a5d1941a4bc29088f1ebb9f2f2f30a8cc219a89afd2"
+    },
+    {
+      "path": "assets/ui/inventory/slot_bracer.png",
+      "bytes": 1150,
+      "sha256": "88ac49f84048ef4db802d29b9b6b4e26022dd3d2414824c04bc937c7a52387e5"
+    },
+    {
+      "path": "assets/ui/inventory/slot_gloves.png",
+      "bytes": 1115,
+      "sha256": "15e0e8f4f695facd7cf18f5d0cb22483c7b53793e85062cd9094477bb234b1c1"
+    },
+    {
+      "path": "assets/ui/inventory/slot_head.png",
+      "bytes": 1122,
+      "sha256": "13ffe500a68c5f03b2c302d1b03210bb9d500a9ad21e7e8eb0ac3232ef08e926"
+    },
+    {
+      "path": "assets/ui/inventory/slot_leggings.png",
+      "bytes": 1206,
+      "sha256": "08fb068c1a31ae63387c2e7837e527ca4a86f5d214d04d2334283e06cda15bce"
+    },
+    {
+      "path": "assets/ui/inventory/slot_plate.png",
+      "bytes": 1172,
+      "sha256": "d6288f29fe41ea0be6f90ce32448351a83ce76cbcde2d2bee4adf60194e53c3e"
+    },
+    {
+      "path": "assets/ui/inventory/slot_ring.png",
+      "bytes": 1063,
+      "sha256": "e2172fe844ba99d7eb268133ad650a8bdbc4cae71f5c5fde05b5e04eec39641e"
+    },
+    {
+      "path": "assets/ui/inventory/slot_talisman.png",
+      "bytes": 1178,
+      "sha256": "02155ddc6ba84cf383e465d82c20dd79118079b8fbf02375962130b42cec60f9"
+    },
+    {
+      "path": "assets/ui/inventory/slot_weapon.png",
+      "bytes": 942,
+      "sha256": "2430fc6fb2ed8e3029bd18e142c1e1f3c17b4949ed5003bc68b8e16a56bd0813"
+    },
+    {
+      "path": "assets/ui/inventory/weapons/iron_beard_canonical.png",
+      "bytes": 1540,
+      "sha256": "50e1bcfe7a22ed0c616f6c934d817a7477b1b76484398b2277434dd12fc93612"
+    },
+    {
+      "path": "assets/ui/player_readability/portrait_link_compact.png",
+      "bytes": 19422,
+      "sha256": "973f9a1a6bb00700630586e52771631ab1b4e9bf9add9a8b3ee90530e94dfb47"
+    },
+    {
+      "path": "assets/ui/player_readability/satchel.png",
+      "bytes": 1488,
+      "sha256": "8ff89fa546e6a41171041ac29c0dd452756bbc6e7e9366a399157729cd765db4"
+    },
+    {
+      "path": "assets/ui/quiet_transition/background.png",
+      "bytes": 439995,
+      "sha256": "a772218ea3f670d57c949d355f548870ef31cb14d1afae68f7e0980ff6b728a1"
+    },
+    {
+      "path": "assets/ui/quiet_transition/seal.png",
+      "bytes": 47896,
+      "sha256": "b7b7569787257de79021579b1d054e77f94cc116d8759ac5de5ad2feb3341ea5"
+    },
+    {
+      "path": "assets/ui/quiet_transition/seal_frames.tres",
+      "bytes": 1801,
+      "sha256": "e4c584f636f9d91e81d8f2028ef333eaf77ba4dea100430c139dcf0159e7d9e1"
+    },
+    {
+      "path": "assets/ui/sanctuary_theme/map_paper.png",
+      "bytes": 216008,
+      "sha256": "089fe6c40cb6ef10d35875df15b8e955836f3d402287f85273700e68e7758c46"
+    },
+    {
+      "path": "assets/ui/sanctuary_theme/panel.png",
+      "bytes": 78349,
+      "sha256": "f7bad6f035d9e5a4610a196d16678b7f2f81e7d32a2c2c1a32cfa46416becb47"
+    },
+    {
+      "path": "assets/ui/targeting/aim_cursor.png",
+      "bytes": 438,
+      "sha256": "b4843ba3cbb0cfde9acd7c04657c6a04f38c72a9c0c9cc51a1bd86cc58cc924d"
+    },
+    {
+      "path": "assets/ui/targeting/interact.png",
+      "bytes": 480,
+      "sha256": "12afb7313299b456a93830608701456b77d6d285563ed27bf070c78c1ae475ff"
+    },
+    {
+      "path": "assets/ui/targeting/pointer.png",
+      "bytes": 776,
+      "sha256": "e53cbe02b76cee15b445d58c7951b7c329a4afd0ad66abb11f1135b8c4852493"
+    },
+    {
+      "path": "assets/ui/targeting/selected.png",
+      "bytes": 592,
+      "sha256": "fcc9caec90a5e0f42276cdab24bf519104a35ab769ccf012241a8041294f76f4"
+    },
+    {
+      "path": "assets/ui/themes/battle_of_gods_theme.tres",
+      "bytes": 4142,
+      "sha256": "5a1e8557c06584315cd743ea6e39d2c8e9a6c4362617340e91dcfb1543e9491b"
+    },
+    {
+      "path": "assets/ui/title/trio/a.png",
+      "bytes": 907659,
+      "sha256": "aaf3c1bb4a3f72d66e4795a7e8f14865f7dd4042fcd8f032b864219c7fc68923"
+    },
+    {
+      "path": "assets/ui/title/trio/b.png",
+      "bytes": 891839,
+      "sha256": "54ed0f2b3f59a00443737ec762c23304d6e131aaf6c15d8b05976d174d480488"
+    },
+    {
+      "path": "assets/ui/title/trio/c.png",
+      "bytes": 927107,
+      "sha256": "1cc8d0db94e27c46db183e41bbce865e23b37160fee48d1baf3819ffc68d932a"
+    },
+    {
+      "path": "assets/vfx/abilities/king/earthsplitter/pressure_v2.png",
+      "bytes": 580908,
+      "sha256": "e402a77a376cea9d7d6751446a2bbb6ea4b61d0c942eb6e71beeb36f67a503fa"
+    },
+    {
+      "path": "assets/vfx/abilities/king/earthsplitter/rupture.png",
+      "bytes": 310391,
+      "sha256": "39d354b0d0a40da0773cbb5a514117b5f1e1442ed198e721cdea180b5a5d962e"
+    },
+    {
+      "path": "assets/vfx/abilities/king/earthsplitter/sword.png",
+      "bytes": 517958,
+      "sha256": "610c2d2c52b67498d0d9c160e6dc869efc289b6c8aa5434469e4fbceed56a0df"
+    },
+    {
+      "path": "assets/vfx/abilities/king/greatsword/steel_impact_192x192.png",
+      "bytes": 71926,
+      "sha256": "87b147134538493083bba3acd23d982a0b8d71cdedfb9d86b6e0bce0ceedf28a"
+    },
+    {
+      "path": "assets/vfx/abilities/king/greatsword/white_slash_96x96.png",
+      "bytes": 16916,
+      "sha256": "e0da40035ac881f28cdcefbd3340a3b87bb972ff378e306473b3120cd122ad89"
+    },
+    {
+      "path": "assets/vfx/abilities/king/king_skill_4_sword_sink.gdshader",
+      "bytes": 209,
+      "sha256": "a2a783aa50acde545533f75bc6339fd9f44763ac1fbb3818d197d42635eb1644"
+    },
+    {
+      "path": "assets/vfx/abilities/king/molten_crash/aftershock.png",
+      "bytes": 162358,
+      "sha256": "f60e9100abda8fab3c78097dc15a9690ea513ca3c3b6b2a34d279b4a46a1ec98"
+    },
+    {
+      "path": "assets/vfx/abilities/king/molten_crash/burst.png",
+      "bytes": 521681,
+      "sha256": "cf8b5043e4129378fcd4f0101cfc4f00c9482a56456ce408c8e2e4f654400f7a"
+    },
+    {
+      "path": "assets/vfx/abilities/king/molten_crash/caldera_core.png",
+      "bytes": 429324,
+      "sha256": "17fca4991d39971dd4f6ea05a861d0ee802deca894f9e4069408b7be972d2903"
+    },
+    {
+      "path": "assets/vfx/abilities/king/molten_crash/sword.png",
+      "bytes": 297182,
+      "sha256": "3af938c0c636b45a9cb3badb9f7a22e5fae199543d79cb16294f478803f05787"
+    },
+    {
+      "path": "assets/vfx/abilities/king/sovereign_pursuit_review/landing.png",
+      "bytes": 63820,
+      "sha256": "ce729ef30eacbdcaf4ad4403700ad1ad2b147a50f71612f678316e649f6fd2c4"
+    },
+    {
+      "path": "assets/vfx/abilities/king/sovereign_pursuit_review/landing_frames.tres",
+      "bytes": 3116,
+      "sha256": "de284da0472e378f7a4ad5b3b902dc97008491f2bd9b23e2fdcea05f4beacd8b"
+    },
+    {
+      "path": "assets/vfx/abilities/king/sovereign_pursuit_review/travel.png",
+      "bytes": 31241,
+      "sha256": "12d7effc9a5c33d9407594cfd841e09b77669a9196a87f7181dde9167cdeeb67"
+    },
+    {
+      "path": "assets/vfx/abilities/king/sovereign_pursuit_review/travel_frames.tres",
+      "bytes": 1623,
+      "sha256": "db0d9087406d69aa0f6aa7455149dcb5a3e4c1b7de7b433113deb9946338ea5a"
+    },
+    {
+      "path": "assets/vfx/abilities/king/unbroken_vow_test/barrier.png",
+      "bytes": 11405,
+      "sha256": "5cc9e00580ca08c5d3d9e9d3b9fe463e36514f3a977d8ce70a2a824f79df7fae"
+    },
+    {
+      "path": "assets/vfx/abilities/king/unbroken_vow_test/body_down.png",
+      "bytes": 34052,
+      "sha256": "5453df2e1571d18c89142db969c6575cdf9eb97587ca7692584f757bd5a4956a"
+    },
+    {
+      "path": "assets/vfx/abilities/king/worldsplitter/detailed/sword.png",
+      "bytes": 212147,
+      "sha256": "4ff3de14187d106f3330a2f32f1ba87288116c53114d28f6e7ac12991c8c6671"
+    },
+    {
+      "path": "assets/vfx/abilities/king/worldsplitter/summoned/impact.png",
+      "bytes": 329868,
+      "sha256": "89e02306cb9b669b58126609e91a7e5ed9497fb87597316639050ce2df139806"
+    },
+    {
+      "path": "assets/vfx/abilities/king/worldsplitter/summoned/summon.png",
+      "bytes": 128480,
+      "sha256": "154d0226aa83f45e4d28a0f593709563851d56ab3b80db2987a2e733e4628822"
+    },
+    {
+      "path": "assets/vfx/combat/critical_impact/frames.tres",
+      "bytes": 877,
+      "sha256": "e182ee8a7532dff5a02bdb805caa8331820aac8b0c0d355c90fe9314493be5a6"
+    },
+    {
+      "path": "assets/vfx/combat/critical_impact/impact.png",
+      "bytes": 2894,
+      "sha256": "8b56ddaf5ebfef23aab5a658de16e59cd65d90f6c37f5ec0bf27890b07ad35ba"
+    },
+    {
+      "path": "assets/vfx/divine_order/examiner/axiom_beam.png",
+      "bytes": 194750,
+      "sha256": "dbc3827081790fe12615bc1376c08bf6377972b944552f9abfa0c6356a0ae39a"
+    },
+    {
+      "path": "assets/vfx/divine_order/examiner/court_danger.gdshader",
+      "bytes": 880,
+      "sha256": "58260f1165c476b9874275b3a5300c8862253d01c912ce0ccb50abd4abfe59ab"
+    },
+    {
+      "path": "assets/vfx/divine_order/examiner/danger_circle.png",
+      "bytes": 82560,
+      "sha256": "2cee05ed97247ecd204aa12d36b1d3f98765919fd47ceeaaa567efc89a4c9cee"
+    },
+    {
+      "path": "assets/vfx/divine_order/examiner/danger_lane.png",
+      "bytes": 31876,
+      "sha256": "f846215b2f71b5ef31648d071b8df7463e6f306f3eb670dad38ba58d93421d7f"
+    },
+    {
+      "path": "assets/vfx/divine_order/examiner/energy.png",
+      "bytes": 121289,
+      "sha256": "4874bb60d66a04d4fdc14cf7661b80c7467931fbf2583e90fd3d46013290ecbd"
+    },
+    {
+      "path": "assets/vfx/divine_order/examiner/impact.png",
+      "bytes": 291596,
+      "sha256": "06732d9a2029ebc39f60fb57afba4a38a4a823fe3d6c30942301e51964692373"
+    },
+    {
+      "path": "assets/vfx/divine_order/examiner/sun.png",
+      "bytes": 158764,
+      "sha256": "c58509a5aecb6b71a8486403e9e53e4e5c76afe842dad3d0673878f7fbcb82b3"
+    },
+    {
+      "path": "assets/vfx/divine_order/examiner/sun_loop.png",
+      "bytes": 654035,
+      "sha256": "5e604e32f814e03e4c7d1bb904da6a46d3eaf1e579016973f79a6fc928df7267"
+    },
+    {
+      "path": "assets/vfx/divine_order/examiner/sweep.png",
+      "bytes": 120885,
+      "sha256": "564ce0890e08b543c4350ce1a617d74ae7ea95df03ec984158f3adcbcffca3c0"
+    },
+    {
+      "path": "assets/vfx/generic_enemy_arrival/frames.tres",
+      "bytes": 952,
+      "sha256": "8ecd0942eb1f5e139428435769c166fc48f40c39727746afeeb434df2d5240cc"
+    },
+    {
+      "path": "assets/vfx/generic_enemy_arrival/ground.png",
+      "bytes": 3630,
+      "sha256": "9bbb64cf2e95d6e32854cc102c89428575fbe2951e80de054fd9a417d5c734d4"
+    }
+  ]
+}

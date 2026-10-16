@@ -8,6 +8,8 @@ func _initialize() -> void:
 
 
 func _run() -> void:
+	root.get_node("SaveService").configure_storage_path_for_testing("user://encounter_wave_structure_smoke.json")
+	root.get_node("SaveService").suppress_autosave_for_debug_session()
 	var arena := ArenaScene.instantiate()
 	var controller: EncounterController = arena.get_node("GameplayServices/EncounterController")
 	controller.auto_start = false

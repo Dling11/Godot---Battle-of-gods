@@ -1,5 +1,7 @@
 # Examiner Special Arena — Court of the First Measure
 
+Decision223 retention note: raw generation/review paths described below are historical provenance. Bulk source collections and image builders are deleted; current runtime assets and compact references/validation metadata remain. Future trials use temporary ignored staging and are cleared after publishing.
+
 ## Status
 
 Accepted high-level direction plus a debug-only F7 combat proof. The working title remains provisional. The proof now includes synchronized action audio, a phase-aware two-layer theme, short transition dialogue, and the complete Divine Descent cover lesson. Production Stage VII travel, outcomes, reward/save authority, final modular raster kit, and final numerical mix remain open.

@@ -6,7 +6,7 @@
 
 [ext_resource type="Resource" path="res://data/items/equipment/king_iron_beard_axe.tres" id="5_axe"]
 [ext_resource type="Resource" path="res://data/items/equipment/king_twinsteel.tres" id="6_twinsteel"]
-[ext_resource type="Resource" path="res://data/items/equipment/king_royal_greatsword_v2.tres" id="7_greatsword_v2"]
+[ext_resource type="Resource" path="res://data/items/equipment/king_royal_greatsword.tres" id="7_greatsword_v2"]
 [ext_resource type="Resource" path="res://data/items/equipment/king_iron_reaper.tres" id="8_reaper"]
 [resource]
 script = ExtResource("1_script")

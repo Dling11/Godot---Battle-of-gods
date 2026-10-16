@@ -1,7 +1,7 @@
 extends SceneTree
 
 ## Offline acceptance gate for reuse of a named complete body, not a resizer.
-const LIB := "res://assets/characters/playable/king/body_library/v1/"
+const LIB := "res://assets/characters/playable/king/body_library/baseline/"
 
 func _initialize() -> void:
 	var candidate := ""

@@ -1,5 +1,7 @@
 # Worldsplitter — upright descent
 
+Decision223 retention note: raw generation/review paths described below are historical provenance. Bulk source collections and image builders are deleted; current runtime assets and compact references/validation metadata remain. Future trials use temporary ignored staging and are cleared after publishing.
+
 **Current terrain/aim correction (2026-10-03,Decision177):** Slot1/5 keep full authored reach through scenery; Slot3 flies over any intervening obstacle to clear, real-foot/nav/bounds-valid ground. Silver/slate/violet circles and hardware pointers replace gold/blue targeting and use actor feet/render-frame aim. This supersedes earlier terrain-aware/clipped or LOS-stopped descriptions below. Current rule/validation: king-targeting-and-terrain.md.
 
 **Current correction (Decision 164, 2026-10-02):** Eira training gates are now Level8/10, both reachable by cap10; previous10/15 statements below are historical. Decision162 and worldsplitter-fractured-light.md own the current fresh-sword/radial-blast presentation. Saved ranks remain compatible; no damage/cooldown/art changed in the curriculum pass.

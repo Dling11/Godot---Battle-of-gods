@@ -2,7 +2,7 @@ extends SceneTree
 
 const LAB = preload("res://levels/combat_lab/combat_lab.tscn")
 const TARGET = preload("res://entities/training/training_target.tscn")
-const ITEMS := [preload("res://data/items/equipment/king_signature_sword.tres"),preload("res://data/items/equipment/king_iron_beard_axe.tres"),preload("res://data/items/equipment/king_twinsteel.tres"),preload("res://data/items/equipment/king_royal_greatsword_v2.tres")]
+const ITEMS := [preload("res://data/items/equipment/king_signature_sword.tres"),preload("res://data/items/equipment/king_iron_beard_axe.tres"),preload("res://data/items/equipment/king_twinsteel.tres"),preload("res://data/items/equipment/king_royal_greatsword.tres")]
 const OUT := "res://tmp/review/combat/weapon_impact_closure_2026_10_07/"
 var evidence_path := OUT
 var checks := 0
@@ -60,7 +60,7 @@ func _run() -> void:
 		check(weapon.hit_audio != null and weapon.hit_audio.variations.size()==3,"Missing dry contact pool")
 		check(is_equal_approx(weapon.damage,25.0),"Basic tuning changed skill power")
 		check(item.show_combo_details and item.get_stat_summary().contains("BASE DPS"),"Bag omits combo DPS")
-		check(is_equal_approx(WeaponCombatReadout.duration(weapon),[1.91,3.19,2.20,2.34][index]),"Readout duration disagrees with accepted phase data")
+		check(is_equal_approx(WeaponCombatReadout.duration(weapon),[1.76,3.19,2.20,2.16][index]),"Readout duration disagrees with accepted phase data")
 		var targets: Array[Node2D] = []
 		for side in [-1,1]:
 			var target: Node2D = TARGET.instantiate()

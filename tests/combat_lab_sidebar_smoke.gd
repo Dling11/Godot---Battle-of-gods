@@ -80,7 +80,8 @@ func _run() -> void:
 	await capture("04_buff.png")
 	lab.review_tabs.current_tab = 0
 	await process_frame
-	check(not review.buff_test.opened and not actor.is_cinematic_locked() and actor.get_node("VisualRoot/Body").visible, "Changing tabs stranded preview state")
+	var family := actor.get_node("WeaponFamilyPresentation")
+	check(not review.buff_test.opened and not actor.is_cinematic_locked() and family.presenter.visible and not actor.get_node("VisualRoot/Body").visible, "Changing tabs stranded preview state")
 	check(lab._ai_enabled and lab.review_tabs.current_tab == 0, "Changing tabs did not restore AI or retained the wrong tab")
 	lab.set_enemy_ai_enabled(false)
 	check(review.buff_test.open(), "Could not reopen preview with AI already paused")

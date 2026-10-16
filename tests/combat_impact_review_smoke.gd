@@ -88,12 +88,15 @@ func _run() -> void:
 		sprite.get_parent().queue_free()
 	_longer_reach = true
 	_apply_player_profile()
-	check(is_equal_approx(actor.attack_component.weapon.get_melee_forward_reach_pixels(),42.0), "42px comparison not applied")
-	check(is_equal_approx(actor.attack_component.weapon.get_melee_half_width_pixels(),22.0), "Reach comparison altered width")
+	check(is_equal_approx(actor.attack_component.weapon.get_melee_forward_reach_pixels(),70.0), "Current sword reach comparison not applied")
+	check(is_equal_approx(actor.attack_component.weapon.get_melee_half_width_pixels(),36.0), "Reach comparison altered width")
+	check(is_equal_approx(actor.attack_component.weapon.combo.hitbox_shapes[0].points[3].x,70.0), "Reach comparison changes only the readout")
+	check(is_equal_approx(actor.attack_component.weapon.combo.hitbox_shapes[1].points[3].x,70.0), "Shared fan is scaled twice")
 	_longer_reach = false
 	_apply_player_profile()
-	check(is_equal_approx(actor.attack_component.weapon.get_melee_forward_reach_pixels(),36.0), "Authored reach did not restore")
-	check(is_equal_approx(load("res://data/weapons/king_signature_sword.tres").get_melee_forward_reach_pixels(),36.0), "Review mutated shared weapon shape")
+	check(is_equal_approx(actor.attack_component.weapon.get_melee_forward_reach_pixels(),60.0), "Authored reach did not restore")
+	check(is_equal_approx(load("res://data/weapons/king_signature_sword.tres").get_melee_forward_reach_pixels(),60.0), "Review mutated shared weapon shape")
+	check(is_equal_approx(load("res://data/weapons/families/sword/combo.tres").hitbox_shapes[0].points[3].x,60.0), "Review mutated shared per-cut shape")
 	target.queue_free()
 	await process_frame
 	var foe: Rootling = load("res://entities/enemies/rootling/rootling.tscn").instantiate()

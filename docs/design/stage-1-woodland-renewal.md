@@ -1,5 +1,7 @@
 # Stage I woodland renewal — review pass
 
+Decision223 retention note: raw generation/review paths described below are historical provenance. Bulk source collections and image builders are deleted; current runtime assets and compact references/validation metadata remain. Future trials use temporary ignored staging and are cleared after publishing.
+
 2026-10-02. Implemented in the normal Forgotten Grove scene; owner accepted the current visual direction on2026-10-03; precise combat feel/economy and phone profiling remain open. This is the Stage I pilot requested before extending the direction to II–VI. See Decision 167.
 
 Current audio update (Decision171,2026-10-03): normal I–IV now use the attributed Dark Forest Theme recording, distinct from Sanctuary. Stage I art remains the accepted baseline. See [current campaign and next work](stage-5-renewal-and-combat-polish.md).

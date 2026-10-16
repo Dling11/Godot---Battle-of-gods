@@ -3,12 +3,13 @@ extends "res://tests/sanctuary_test_base.gd"
 const LAB = preload("res://levels/combat_lab/combat_lab.tscn")
 const ITEM = preload("res://data/items/equipment/king_twinsteel.tres")
 const AXE = preload("res://data/items/equipment/king_iron_beard_axe.tres")
-const GREAT = preload("res://data/items/equipment/king_royal_greatsword_v2.tres")
+const GREAT = preload("res://data/items/equipment/king_royal_greatsword.tres")
 const TARGET = preload("res://entities/training/training_target.tscn")
 const OUT := "res://tmp/review/combat/king_twinsteel_gameplay_2026_10_05/"
 var evidence_path := OUT
 var starts: Array[int] = []
 var contacts: Array[Dictionary] = []
+var ribbon_rows: Array[Dictionary] = []
 
 func _initialize() -> void:
 	for argument in OS.get_cmdline_user_args():
@@ -19,6 +20,7 @@ func _initialize() -> void:
 func _run() -> void:
 	DirAccess.make_dir_recursive_absolute(ProjectSettings.globalize_path(evidence_path))
 	root.size=Vector2i(1280,720)
+	root.content_scale_size=root.size # Native pixel probes use this viewport's canvas coordinates.
 	root.get_node("SaveService").configure_storage_path_for_testing("user://twinsteel_gameplay_smoke.json")
 	root.get_node("SaveService").suppress_autosave_for_debug_session()
 	var inventory := root.get_node("WeaponInventory")
@@ -67,17 +69,17 @@ func _run() -> void:
 		await physics_frame
 		check(family.presenter._running and family.presenter.definition==family.profile.run_for(direction) and family.presenter.pose_index!=old_pose,"Normal Player glides or uses the wrong running view")
 		if absf(direction.x)>0:
-			var main_guard: Vector2 = family.presenter.weapon_sprite.to_global(Vector2(8,41))
-			var off_guard: Vector2 = family.presenter.offhand_sprite.to_global(Vector2(8,41))
+			var main_guard: Vector2 = family.presenter.weapon_sprite.to_global(Vector2(8,47))
+			var off_guard: Vector2 = family.presenter.offhand_sprite.to_global(Vector2(8,47))
 			var main_texture: Texture2D = family.presenter.weapon_sprite.texture
 			var off_texture: Texture2D = family.presenter.offhand_sprite.texture
-			check(not main_texture.get_image().get_region(Rect2i(0,43,16,19)).is_invisible() and off_texture.get_image().get_region(Rect2i(0,43,16,19)).is_invisible(),"Normal side run exposes the far handle or removes the held near handle")
+			check(main_texture.get_size()==Vector2(16,68) and off_texture==main_texture,"Running substitutes or shrinks the new fixed-size blades")
 			await capture("training_run_right.png" if direction.x>0 else "training_run_left.png")
 			check(actor.request_primary_attack(),"Attack from side running rejected")
-			check(family.presenter.weapon_sprite.to_global(Vector2(8,41)).distance_to(main_guard)<.01 and family.presenter.offhand_sprite.to_global(Vector2(8,41)).distance_to(off_guard)<.01,"Run-to-attack entry changes the held blade offsets")
-			check(family.presenter.weapon_sprite.texture==main_texture and family.presenter.offhand_sprite.texture==off_texture,"Run-to-attack opening flashes the hidden rear handle")
+			check(family.presenter.weapon_sprite.to_global(Vector2(8,47)).distance_to(main_guard)<.01 and family.presenter.offhand_sprite.to_global(Vector2(8,47)).distance_to(off_guard)<.01,"Run-to-attack entry changes the held blade offsets")
+			check(family.presenter.weapon_sprite.texture==main_texture and family.presenter.offhand_sprite.texture==off_texture,"Run-to-attack opening changes canonical steel")
 			await until_active(attack)
-			check(family.presenter.weapon_sprite.texture==family.presenter.definition.weapon_texture and family.presenter.offhand_sprite.texture==family.presenter.definition.offhand.texture and not family.presenter.weapon_sprite.texture.get_image().get_region(Rect2i(0,43,16,19)).is_invisible() and not family.presenter.offhand_sprite.texture.get_image().get_region(Rect2i(0,43,16,19)).is_invisible(),"Attack fails to restore both complete swords after its carry entry")
+			check(family.presenter.weapon_sprite.texture==family.presenter.definition.weapon_texture and family.presenter.offhand_sprite.texture==family.presenter.definition.offhand.texture and not family.presenter.weapon_sprite.texture.get_image().get_region(Rect2i(0,49,16,19)).is_invisible() and not family.presenter.offhand_sprite.texture.get_image().get_region(Rect2i(0,49,16,19)).is_invisible(),"Attack fails to restore both complete swords after its carry entry")
 			actor._clear_buffered_action()
 			attack.cancel_attack()
 		actor.velocity=Vector2.ZERO
@@ -93,7 +95,7 @@ func _run() -> void:
 			check(family.presenter.definition==(root_clip if step==0 else root_clip.follow_up_clips[step-1]),"Normal chain misses its authored directional cel")
 			check(family.trail.z_index==(0 if direction==Vector2.UP else 3),"Upward white arcs obscure the body")
 			if direction==Vector2.RIGHT and step==3: await capture("training_spin.png")
-			if step in [0,4] and DisplayServer.get_name()!="headless":
+			if DisplayServer.get_name()!="headless":
 				await physics_frame
 				await physics_frame
 				await verify_slash(family,direction,step)
@@ -102,10 +104,11 @@ func _run() -> void:
 				await until_step(attack,step+1)
 		await until_idle(attack)
 		check(starts==[0,1,2,3,4] and actor._buffered_action==Player.BufferedAction.NONE,"Normal five-cut chain drops/repeats input")
+	await verify_afterimage(actor,family)
 	actor._set_facing_direction(Vector2.RIGHT)
 	var front := make_target(lab,actor.global_position+Vector2(52,0))
 	var rear := make_target(lab,actor.global_position+Vector2(-45,0))
-	var outside := make_target(lab,actor.global_position+Vector2(110,0))
+	var outside := make_target(lab,actor.global_position+Vector2(140,0))
 	await physics_frame
 	contacts.clear()
 	attack.reset_combo()
@@ -186,7 +189,7 @@ func _run() -> void:
 	stage.queue_free()
 	await process_frame
 	check(inventory.can_restore_snapshot(old_snapshot) and inventory.restore_snapshot(old_snapshot),"Pre-Twinsteel inventory snapshots stopped restoring")
-	FileAccess.open(evidence_path+"validation.json",FileAccess.WRITE).store_string(JSON.stringify({"checks":checks,"failures":failures,"training":true,"normal_stage":1,"skills":5,"art_modified_by_test":false},"\t")+"\n")
+	FileAccess.open(evidence_path+"validation.json",FileAccess.WRITE).store_string(JSON.stringify({"checks":checks,"failures":failures,"training":true,"normal_stage":1,"skills":5,"art_modified_by_test":false,"ribbons":ribbon_rows},"\t")+"\n")
 	print("TWINSTEEL_GAMEPLAY checks=%d failures=%d"%[checks,failures])
 	quit(1 if failures else 0)
 
@@ -231,27 +234,71 @@ func capture(file: String) -> void:
 	await RenderingServer.frame_post_draw
 	check(root.get_texture().get_image().save_png(evidence_path+file)==OK,"Native capture failed")
 
+func verify_afterimage(actor: Player,family: Node) -> void:
+	var attack:=actor.attack_component
+	for bonus in [0.0,.5]:
+		attack.set_equipment_attack_speed_bonus(bonus)
+		for direction in [Vector2.RIGHT,Vector2.LEFT,Vector2.UP,Vector2.DOWN]:
+			actor._set_facing_direction(direction)
+			attack.reset_combo()
+			check(actor.request_primary_attack(),"Released afterimage attack cannot start")
+			await until_active(attack)
+			var deadline:=Time.get_ticks_msec()+1500
+			while attack.phase==MeleeAttackComponent.Phase.ACTIVE and Time.get_ticks_msec()<deadline: await physics_frame
+			check(attack.phase==MeleeAttackComponent.Phase.RECOVERY and family.trail.slash_sprite.visible,"Paint disappears at the contact boundary instead of following through")
+			await create_timer(.085).timeout
+			check(not family.trail.slash_sprite.visible,"Residual white stroke persists into released guard")
+			await until_idle(attack)
+			check(actor.request_primary_attack(),"Cancellation sample cannot start")
+			await until_active(attack)
+			actor._clear_buffered_action()
+			attack.cancel_attack()
+			check(not family.trail.slash_sprite.visible,"Cancelled cut leaves a frozen afterimage")
+			await physics_frame
+	attack.set_equipment_attack_speed_bonus(0.0)
+
 func verify_slash(family: Node,direction: Vector2,step: int) -> void:
-	# Freeze the same production Player pose for a with/without FX pair.
-	# An atlas containing white pixels does not prove its runtime visibility.
-	paused=true
-	var trail: Node2D = family.trail
-	check(trail.visible and trail._row==step and trail._frame>=0,"Actual attack has no active directional trail")
+	if DisplayServer.get_name()=="headless": return
 	var label := "right" if direction==Vector2.RIGHT else ("left" if direction==Vector2.LEFT else ("up" if direction==Vector2.UP else "down"))
-	var prefix := "opening_cut" if step==0 else "final_slash"
-	await capture(prefix+"_"+label+".png")
-	var with_fx := root.get_texture().get_image()
-	trail.hide()
-	await process_frame
-	await RenderingServer.frame_post_draw
-	var without_fx := root.get_texture().get_image()
-	var bright_pixels := 0
-	for y in with_fx.get_height():
-		for x in with_fx.get_width():
-			var a := with_fx.get_pixel(x,y)
-			var b := without_fx.get_pixel(x,y)
-			if minf(a.r,minf(a.g,a.b))>.55 and a.r+a.g+a.b-b.r-b.g-b.b>.4: bright_pixels+=1
-	check(bright_pixels>30,"White "+prefix+" is absent from actual "+label+" rendering")
-	print("TWINSTEEL_EFFECT ",prefix," ",label," bright_pixels=",bright_pixels)
-	trail.show()
+	paused=true
+	var trail: Node2D=family.trail
+	for frame in 12:
+		trail._set_frame(frame)
+		await process_frame
+		await RenderingServer.frame_post_draw
+		var masked:=root.get_texture().get_image()
+		trail.slash_sprite.material=null
+		await process_frame
+		await RenderingServer.frame_post_draw
+		var raw:=root.get_texture().get_image()
+		trail.slash_sprite.material=trail.contact_mask
+		trail.hide()
+		await process_frame
+		await RenderingServer.frame_post_draw
+		var none:=root.get_texture().get_image()
+		var bright:=0
+		var outside:=0
+		var clipped:=0
+		var inverse:=trail.get_global_transform_with_canvas().affine_inverse()
+		var area:=Rect2()
+		var transform: Transform2D=trail.slash_sprite.get_global_transform_with_canvas()
+		for corner in [Vector2(-128,-128),Vector2(128,-128),Vector2(-128,128),Vector2(128,128)]:
+			var point: Vector2=transform*corner
+			area=Rect2(point,Vector2.ONE) if area.size==Vector2.ZERO else area.expand(point)
+		var scan:=Rect2i(area.grow(2)).intersection(Rect2i(Vector2i.ZERO,masked.get_size()))
+		for y in range(scan.position.y,scan.end.y):
+			for x in range(scan.position.x,scan.end.x):
+				var a:=masked.get_pixel(x,y)
+				var b:=none.get_pixel(x,y)
+				var c:=raw.get_pixel(x,y)
+				if minf(a.r,minf(a.g,a.b))>.55 and a.r+a.g+a.b-b.r-b.g-b.b>.4:
+					bright+=1
+					if not Geometry2D.is_point_in_polygon(inverse*Vector2(x+.5,y+.5),trail._points): outside+=1
+				if c.r+c.g+c.b-b.r-b.g-b.b>.4 and c.r+c.g+c.b-a.r-a.g-a.b>.2: clipped+=1
+		check(bright>0,"Missing Twinsteel painted stroke %s/%d/%d"%[label,step,frame])
+		check(outside==0,"Twinsteel stroke exceeds real contact")
+		check(clipped==0,"Twinsteel contact mask cuts painted stroke")
+		ribbon_rows.append({"view":label,"cut":step,"frame":frame,"bright":bright,"outside":outside,"clipped":clipped})
+		trail.show()
+	print("TWINSTEEL_RIBBONS ",label," cut=",step," frames=12")
 	paused=false

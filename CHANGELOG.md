@@ -1,5 +1,117 @@
 # Changelog
 
+## 2026-10-16 — Natural middle-handle Sword carry
+
+Owner finds the exposed hilt grasp too close to the pommel and asks to lower the sword. Restore middle-leather grasp (10,66), retract the full-size sword four source pixels and lower the carry from 15 to 10 degrees. Keep foreground hilt/glove depth, all eight complete running poses, real palm anchors and stride unchanged. The handle now extends behind the glove toward the pommel. No regeneration, body edits, gameplay or other-family changes.
+
+All 64 grip checks, 571 art checks and 1,233 native gameplay checks pass. Rear-handle paint joins guard/pommel visibility regression coverage. Only two of 653 protected production files change; original saves remain exact. Actual equipped-player left/right preview is available. Owner grip review remains pending; no commit/push.
+
+## 2026-10-16 — Expose the Sword running hilt
+
+The owner provisionally accepts the new horizontal run and circles a partially hidden handle. Correct the offline weapon depth: canonical hilt/guard in front of the forearm, existing closed glove over the grip, run-only grasp (10,70). Preserve all eight complete poses, their hand anchors, stride, original sword size and every other action/family. Only the side atlas and run resource change among 653 protected production files; 651 remain identical. No generation or runtime controller change.
+
+All 64 hilt/run checks, 571 Sword art checks, 1,233 native gameplay checks and 919 resource loads pass. The size regression now measures fixed steel landmarks, independently of the pose's grasp point. Original profile/backup/cosmetic hashes remain exact. Native left/right grip preview is available; owner hilt review remains pending. No commit/push.
+
+## 2026-10-16 — Sword compact side-running guard
+
+Decision 224 replaces the rejected horizontal arm-pump carry with eight new complete running poses and a compact 15-degree forward guard. Preserve the original 20×80 sword at unit scale, existing palette, head/body registration and connected anatomy. Grip travel reduces from 18px to 2px. Up/down, idle, attacks, sounds, movement/combat and other families remain exact. Only the side run PNG/resource change; a small prompt/calibration audit records the installation. Automatic approval review rejected temporary PNG deletion with "blocked by policy"; raw staging remains ignored under tmp/sword_side_guard_2026_10_16, outside Git and runtime dependencies.
+
+Side-run 56, Sword art 571, native gameplay 1,233, held-input 46 and 919 resource-load checks pass with no failures. Of 653 protected production files, 651 remain identical and only the two intended side-run files change. A native motion GIF is available; owner visual acceptance remains pending. No commit/push.
+
+
+## 2026-10-16 — Keep only essential art support
+
+Decision223 follows owner clarification: delete art_source/generated permanently from the working tree (305 files) and18 dependent image-builder/helper files/sidecars, freeing113.3MiB of source. Keep installed artwork and only about1.6MiB of compact references, hashes/numeric motion data and licensed audio. Retarget source tests to production PNG/resources, frames/grips/grounding;16 affected checks pass and918 resources load. No runtime art/gameplay/save changes. Add ignore, boundary regression and project rules for temporary generation staging/cleanup. Current source about56MiB; raw-image rebaking intentionally retired. No commit/push.
+
+
+## 2026-10-16 — Weapon closeout and obsolete-content deletion
+
+Decision222 removes822 obsolete source/runtime/code files (156.8MiB), including rejected generations, old weapon folders, preview builders and Greatsword archives. Canonicalize Greatsword/Twinsteel resources, swings, launchers and tests; retain saved IDs/migration. Share small offline raster helpers and flatten Reaper production rebuilding. All527 retained runtime raster/audio bytes and ten frozen body atlases remain exact; current source is about169MiB. All five builders,147 active scripts,923 resource loads and fresh ZIP import/title/five-weapon attacks pass. Fix stale fixture expectations and isolate encounter-wave saving; restore/verify original profile/backup/cosmetic bytes. Nine fixture teardown warnings and device profiling remain open. Temporary verification-copy deletion was automatically blocked; ignored cache/artifacts remain outside Git/package. No commit/push.
+
+
+## 2026-10-16 — Slightly quicker Sword swings and recovery
+
+Owner clarifies the speed request means sword attacks, not movement/running. In Sword’s own combo resource, retain.19/.15/.26 windups, use.105/.105/.12 contact windows (14–17% faster active motion) and.27/.24/.32 recovery. Full chain1.76s versus1.91s gives8.5% more attacks over time and23.75 nominal base DPS instead of21.8848. Damage per hit, reach/control, raster frames, sounds, running/movement and other weapons remain exact. The existing presentation observes authoritative phase events.
+
+Only sword/combo.tres changes at runtime;646/647 current guarded files stay exact. Production bake1566, art/continuity2159, native gameplay1233 and real-enemy229 checks pass. Real single/eight Rootlings and Armored Hog confirm timing/damage/control; moving eight-enemy samples retain24 contacts/3 impact cues per chain. Native four-direction preview and fresh non-saving training are available. Owner feel and final campaign balance remain open.
+
+
+## 2026-10-16 — Correct the clarified running sword flip
+
+Owner clarifies the reported upward blade is RUNNING left/right. SIDE stride3 was registered toward a scarf highlight instead of the true blue guide tip. Measure the original closed fist to the visible tip and correct only that blade heading to about10° forward/down; LEFT mirrors it. Freeze/reapply the landmark during initial source tracing. All8 complete bodies, palms, roots and densities and7 other composed cels stay exact. Only SIDE run.tres/run_body.png change;645/647 guarded current files remain exact, including attacks, UP/DOWN, idle, FX, other equipment and combat/audio.2159 source/anatomy/continuity checks and1233 native gameplay checks pass; the old contract reproduces faulty key3 and the corrected contract has none. Fresh running-only native GIF and training are available. Earlier attack cleanup is separate from this clarified report; owner motion review remains open.
+
+
+## 2026-10-16 — Correct isolated left/right sword lift
+
+Remove whole side opening2/overhead return13 from playback, align return contacts11→10→12 with the genuine rising fist and bridge side preload headings into the front cut. This removes isolated upright contact flashes without changing anatomy or steel size. LEFT mirrors the fixed sequence. Only six SIDE clip/atlas files change;641 of647 guarded assets/data/audio remain exact, including UP/DOWN, FX, running, idle, other families and combat rules.2130 art/source/motion checks and1233 native gameplay checks pass. New motion checks reproduce three old violations and clear them after the correction. Fresh actual-player footage/training is available; owner visual review remains pending.
+
+
+## 2026-10-16 — Sword crossing swings, effort and fuller white strokes
+
+Decision221 replaces weak raised-UP actions with72 newly generated complete attack poses, explicit north-crossing choreography, continuous unit-steel headings and weighted load/fast commitment/follow-through/recoil. Preserve220 running/standing/inspection/steel/icon, gameplay timing/damage/reach/audio and all accepted other families. Saturated guide classification protects pink anatomy highlights.36 new complete effects give1.54/2.12/1.98 times earlier peak white coverage inside the same contact fans.
+
+1569 offline,2129 art/preservation,1233 native gameplay and46 held-input checks pass; sword style passes and1008 resources load.144 frame/view samples preserve paint with zero clipping/overflow; every cut has a substantial visible white core.627 of647 guarded prior files stay exact;20 intended action/FX files change. Four-direction actual-player preview and fresh non-saving training window are available. Owner feel review remains pending; no commit/push.
+
+
+## 2026-10-16 — Default Sword complete family refresh
+
+Owner accepts Twinsteel219; record49-file approval and preserve it. Decision220 moves the default starter into the current complete King appearance: fresh cardinal run/actions/inspection idle, fixed20×80 single steel/Bag icon,15 padded clips and36 generated full white strokes.114 authored actors/113 published; regenerate SIDE idle and true north attacks, exclude the guide-crossed DOWN anticipation whole. Same-view scythe body/crown/mass calibration and stable run roots preserve proportions; no anatomical transplants.
+
+Keep starter identity/ownership,10–12 Physical basics,25 Skill Power, damage/knockback/flinch and1.91s clocks. Enlarge real frontal reach to60px and68px finish, with85/35/90% phase movement and collision-resolved2/−1/3px steps. Cache complete FX fits directly from actual combo polygons. Reuse unchanged12-key/brief afterimage presentation through a Sword-owned scene; no tail damage. Existing dry impacts and lighter-pitched retained air cues serve the family. Legacy Sword/skill/reaction/Varkuun assets remain live and exact. Correct the isolated reach review’s stale labels/per-cut shape handling and explicitly isolate typed shape arrays before trials.
+
+890 offline/1465 art/1221 native gameplay/581 shared-body/46 held-input/49 isolated impact-review/229 real-enemy checks pass; style/catalog/Bag tests pass and1008 resources load. All144 native white samples preserve paint without clipping/overflow. Native coverage includes actual gait/walls/entry, idle retrieval, controls, baseline/+50% speed tail cancellation, all5 skills, hit/dodge/swap/snapshot and StageI.528 of530 pre-task assets/data remain exact; only two intended starter routes change, with Greatsword51/Twinsteel49 approval files protected. Moving-eight warm desktop p95≈14.17/14.38/14.59ms baseline/first/repeat,24 contacts/3 impact cues; no phone/cold/stress claim. Exact prompts/recipe/provenance/proof: sword_unified_2026_10_16. New motion awaits owner review; no commit/push.
+
+
+
+## 2026-10-16 — Twinsteel scythe-scale bodies and continuous paired cuts
+
+Decision219 replaces218 after owner review finds smaller anatomy, run wobble, backward buffered frames and small loose slashes. Generate150 new complete actors against accepted same-view scythe reference; calibrate body/crown/torso mass with one density per board and register whole running crowns independently of moving boots. Keep canonical16×68 paired steel/icon unchanged. Correct down run4's duplicate guide colors at its real fists; record genuine spin-palm occlusion. Forward queued follow-through, alternating hands, small hop/landing and signed return recoil replace the reverse transition/constant slide.
+
+Broaden real front reach72→88px, spin58→72px radius and finish80→100px. Keep9–11 basics/multipliers and each cut/full-chain2.20s total; move anticipation time into contacts.60 newly generated complete white frames replace40; cached contact fits include all12 keys per cut,8 ACTIVE plus4 brief non-damaging recovery afterimages. Cancellation/new windup clears tails. Existing audio/IDs/saves and accepted other weapons stay exact.
+
+Verification:1365 offline,548 walk/art,1475 action/art,1194 actual gait/wall/handoff,96 native idle,1004 native Lab/Bag/StageI/gameplay,581 shared-body,46 held-input,365 real-enemy checks;983 resources load. All240 native masked/unmasked effect samples retain paint without clipping/overflow. Native tests include released tail/cancel at base/+50% attack speed in four directions.480 of527 pre-task files remain exact;47 intended Twinsteel outputs/data change; all51 Greatsword approval files remain exact. Moving-eight-enemy warm desktop p95≈14.31ms baseline/14.86ms first chain/14.49ms repeat,40 contacts/5 impact cues per chain; no phone/cold/stress claim. Current source/prompts/recipe/proof: twinsteel_momentum_2026_10_16; owner appearance/motion approval and balance remain open. No commit/push.
+
+
+
+## 2026-10-16 — Twinsteel complete running, attacks and held idle
+
+Decision218 replaces the owner-authorized Twinsteel artwork with150 newly generated complete actors,21 unified256px clips, a fixed16×68 silver pair/Bag icon, a moving-arm jog, new five-cut body motion and quiet held flourish/rest. Forty complete white frames use source-aware packing and cached fits to unchanged contacts; regenerate the bad side idle and isolate the finisher source. Retire Twinsteel planting-dust code. Preserve all timing/damage/range/control/audio/IDs and478 of479 pre-task file hashes; only the intended family route differs. Greatsword217 is now owner-approved and all51 approval files remain exact.
+
+Verification:516 walking/art,1371 attack/art,1194 actual gait/wall/handoff,96 native idle/retrieval,700 native Lab/Bag/StageI/gameplay,581 shared-body,46 held-input and365 native real-enemy checks;982 resources load. All160 native masked/unmasked ribbon samples retain paint with zero overflow. Warm shared desktop eight-enemy p95:16.78ms baseline,17.29ms first chain,17.24ms repeat;40 contacts/5 impact cues per chain. This does not certify phone/cold/large-horde performance. Current source/prompts/proof: twinsteel_unified_2026_10_16; owner art/motion review remains open. No commit/push.
+
+
+## 2026-10-16 — Huge Greatsword shoulder rest
+
+Owner selects B. Decision217 installs complete side/rear/front lift/shoulder-rest actors (LEFT mirrored) with unchanged30×140 unit-size steel. Preserve ready0–3, running/attacks/faster spin/FX/audio/IDs and other weapons.16-key idle settles in1.05s, gives slow7.5s glances and retrieves from neutral11 in.28s. Exclude SIDE9–11 missing-hand sources. Share the existing empty attack overlay; retire216's unused grounded-brace flag/branch/old rest emitter. No runtime IK or anatomical transplants.
+
+519 build checks/151 actor registrations/120 effect slots; six idle outputs reproduce without drift.1376 asset/source/ready/protection assertions,472 native F9/F7/Bag/four-facing gameplay and Stage I checks,650 shared-body,100 native Twinsteel idle and28 scythe idle checks pass. All958 resources load;417 protected prior files outside the six idle outputs remain exact. Native fixture retains its54-instance exit warning; owner feel, balance and device profiling remain separate. Source/exact prompts/recipe/contract/proof: greatsword_shoulder_idle_2026_10_16.130-frame/20fps/6.5s four-view native GIF/captures stay ignored. No commit/push.
+
+## 2026-10-16 — Greatsword idle motion concepts
+
+Owner clarifies the old hop is the desired personality. Generate three fresh complete twelve-actor boards: hop/one-hand overhead lift/deep plant/folded arms, shoulder rest and sentinel rest. Pack whole connected components at one density per board, preserve A's authored aerial displacement and validate all36 source actors fit padded cells. Three90-frame/20fps/4.5s GIF motion studies decode through their last frame. Source/exact prompts/registration/rebuild recipe live under greatsword_idle_concepts_2026_10_16; captures/GIFs stay ignored. These are concepts awaiting choice, not final production proportions or seamless retrieval loops. Current game idle, faster spin, attacks/running, audio and other weapons remain unchanged. No new gameplay/performance claim.
+
+## 2026-10-16 — Quicker Greatsword spin
+
+Shorten only spin wind-up/contact/recovery from.18/.28/.18s to.14/.18/.14s: .64s→.46s, complete chain2.34s→2.16s. Body and sixteen white-slash drawings follow the same authoritative phases and equipment attack speed. Hold the last slash cel until authority leaves ACTIVE, fixing an early tween-hide at the physics boundary. Per-hit damage/range/knockback, other cuts, steel/art/audio and other weapons remain unchanged. Faster nominal chains raise sustained DPS about8.3%; campaign balance remains open. Record the intentional combat-hash override in the current offline recipe.
+
+452 native gameplay checks pass, including all four directions at base/+50% attack speed, actual phase timing/body-slash progression, targets/buffering/Bag/idle retrieval and Stage I.839 asset/source/audio,46 held-input and957 resource checks pass; approved axe64/scythe43 guards hold. Native fixture still reports54 ObjectDB instances at exit; this is separate from passing assertions. The owner rejects216's bracing idle in favor of the original plant/crossed-arms character; idle restoration remains open. No new art generation, fresh full ribbon audit or performance certification.
+
+## 2026-10-16 — Greatsword grounded idle, rear run, hair and spin
+
+Decision216 replaces diagonal UP running with eight complete strict-rear actors and flying idle with twelve new complete blade-support/proud poses. Lower the unchanged huge blade at its authored glove, keep body displacement zero, plant it upright with3px burial, then fold arms/slow glance. Add one optional grounded_blade_brace flag; other family defaults remain. Match hair using scythe material colors without changing accepted SIDE/DOWN run geometry. Sixteen new broad white drawings follow actual directional steel headings, using whole-stroke packing/registration and all-pixel contact fits; no damage/time expansion.648 native checks include128 zero-clip/overflow samples, grounded support/upright length/retrieval and actual four-facing weapon-swap comparisons.839 assets/source/audio checks pass; current source verification records remaining regressions/warnings.53-instance native fixture teardown warning remains. Owner appearance/motion approval is pending.
+
+## 2026-10-15 — Greatsword running, complete effects and heavy metal
+
+Decision215 adds24 generated complete two-hand run poses; preserves King identity/palette with one density and the unchanged huge blade. Fix nominal-grid effect cropping by assigning full original components before resampling, including strokes crossing cell boundaries; recompute cleave pivots. Generate16 compact side/overhead floor frames, lower flash/ground scale, alpha, lifetime and camera pulse. Install three recorded-metal contacts, stronger smash and quieter floor debris, processed offline from retained CC0 recordings; no per-enemy voice multiplication. Retire the unused old finisher and forward the old audio build entry. Stable V2 identity,214 actions/proud idle,2.34s gameplay and approved axe remain.
+
+687 asset/source/audio assertions,650 shared-body checks,524 native gameplay checks (96 slash/view samples: zero clipped paint/overflow),297 real-enemy checks,46 held-input and39 migration checks pass. Four-view run/combo GIFs come from actual Godot captures. Existing54-instance fixture warning remains; appearance/listening approval and device profiling are separate.
+
+## 2026-10-15 — Greatsword complete heavy motion
+
+Decision214 replaces Greatsword body/effect presentation with fresh complete side/rear/front actors, eight turning headings and proud planted idle in the accepted scythe identity. Retain accepted whole running bodies and fixed30×140 steel; register genuine palms, full support roots and384px padded cells without anatomical transplants. Correct rear-hand occlusion, front/back swing headings and centered DOWN landing. Add eight-frame white ribbons, separate vertical cleaves and world-anchored ground bursts. Share empty masks and retire three unreferenced old runtime folders. Stable V2 identity,2.34s gameplay, damage/reach/control/audio and approved axe remain.
+
+Native gameplay/carry/Bag, source/padding, held-input, shared-body, real-enemy and retained-resource checks pass; final counts are in the new source verification.json. Refresh shared-body regression to use actual declared cell sizes/current complete actors, preserving frozen Sword/library checks. Existing54-instance fixture warning remains. Owner visual/motion review is pending.
+
 ## 2026-10-15 — Iron Beard owner approval
 
 Owner accepts Decision213's axe artwork/motion: "now thats an axe you know what this would do". Record the accepted asset snapshot under iron_beard_motion_2026_10_15/approval.json; preserve running/idle, complete attacks, proportions, canonical steel/grips/carry and normal jump/spin. Close the visual review in current docs. Gameplay/assets are unchanged by this approval record; campaign balance/acquisition remain open.

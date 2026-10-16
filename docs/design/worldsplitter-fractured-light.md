@@ -1,5 +1,7 @@
 # Worldsplitter — summoned swords and radial shatter
 
+Decision223 retention note: raw generation/review paths described below are historical provenance. Bulk source collections and image builders are deleted; current runtime assets and compact references/validation metadata remain. Future trials use temporary ignored staging and are cleared after publishing.
+
 Current runtime: Decision 162, 2026-09-27. This supersedes Decision 161's rejected single-blade extraction cycle. The owner clarified that repeated strikes mean NEW summoned swords, not the same sword bouncing out of the ground.
 
 ## Rank rules

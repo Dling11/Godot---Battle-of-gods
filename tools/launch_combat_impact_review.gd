@@ -67,7 +67,8 @@ func open_review() -> void:
 	_button(column,"Crit test: 50%" if _showcase_crit else "Crit: weapon rate",func() -> void:
 		_showcase_crit = not _showcase_crit
 		reset_review())
-	_button(column,"Reach test: 42px" if _longer_reach else "Reach: current 36px",func() -> void:
+	var authored_reach:=_baseline_weapon.get_melee_forward_reach_pixels()
+	_button(column,"Reach test: %dpx"%roundi(authored_reach*7.0/6.0) if _longer_reach else "Reach: current %dpx"%roundi(authored_reach),func() -> void:
 		_longer_reach = not _longer_reach
 		reset_review())
 	_button(column,"Counter prototype: ON" if _counter_enabled else "Counter prototype: OFF",func() -> void:
@@ -90,8 +91,20 @@ func _apply_player_profile() -> void:
 	if _longer_reach:
 		weapon.melee_hitbox_shape = weapon.melee_hitbox_shape.duplicate(true)
 		var points: PackedVector2Array = weapon.melee_hitbox_shape.points
-		for index in points.size(): points[index].x *= 42.0/36.0
+		for index in points.size(): points[index].x *= 7.0/6.0
 		weapon.melee_hitbox_shape.points = points
+		# Current families own per-cut geometry. Scale isolated copies as well;
+		# otherwise the readout changes while ACTIVE still uses the old fan.
+		if weapon.combo!=null:
+			weapon.combo=weapon.combo.duplicate(true) as SwordComboDefinition
+			weapon.combo.hitbox_shapes=weapon.combo.hitbox_shapes.duplicate()
+			for step in weapon.combo.hitbox_shapes.size():
+				if not weapon.combo.hitbox_shapes[step] is ConvexPolygonShape2D: continue
+				var shape:=weapon.combo.hitbox_shapes[step].duplicate(true) as ConvexPolygonShape2D
+				var cut_points:=shape.points
+				for index in cut_points.size(): cut_points[index].x *= 7.0/6.0
+				shape.points=cut_points
+				weapon.combo.hitbox_shapes[step]=shape
 	actor.set_weapon_definition(weapon)
 	for ability: AbilityComponent in actor.get_all_ability_components():
 		ability.definition = _baseline_definitions[ability.get_instance_id()].duplicate(true)

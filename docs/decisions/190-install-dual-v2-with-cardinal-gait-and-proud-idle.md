@@ -13,4 +13,4 @@ Owner follow-up: keep approved attacks and current silhouette; avoid increasingl
 
 Preserve original dual/side/heavy assets and snapshot mutable definitions. Use fresh sibling runtime resources and a dedicated raster observer, keeping accepted cuts/role/audio while correcting the opening fan. Verify complete cells and actual queued/released endpoints: resource duplication alone can share image storage, so copy immutable raster pixels before destructive remapping.
 
-[Current play, rules, sources and proof](../design/king-dual-v2-cardinal.md).
+[Current play, rules, sources and proof](../design/king-twinsteel-motion.md).

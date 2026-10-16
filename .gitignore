@@ -6,6 +6,7 @@ tmp/
 art_source/review/
 art_source/archive/
 art_source/cleaned/
+art_source/generated/
 
 # Exported builds
 builds/

@@ -1,0 +1,48 @@
+[gd_resource type="Resource" load_steps=7 format=3]
+[ext_resource type="Script" path="res://data/weapons/weapon_family_pose_definition.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/characters/playable/king/twinsteel_unified/up/idle_body.png" id="2"]
+[ext_resource type="Texture2D" path="res://assets/characters/playable/king/twinsteel_unified/action_hands.png" id="3"]
+[ext_resource type="Texture2D" path="res://assets/characters/playable/king/twinsteel_unified/twinsteel.png" id="4"]
+[ext_resource type="Script" path="res://data/weapons/offhand_pose_definition.gd" id="5"]
+[sub_resource type="Resource" id="offhand"]
+script = ExtResource("5")
+texture = ExtResource("4")
+grip = Vector2(8,56)
+tip = Vector2(8,0)
+handle_axis = Vector2(0,1)
+hands = PackedVector2Array(142, 135, 142, 135, 142, 135, 142, 135, 142, 135, 144, 136, 145, 131, 149, 130, 143, 116, 144, 117, 144, 117, 144, 116, 144, 117, 145, 117, 144, 117, 144, 117)
+axes = PackedVector2Array(138.04, 139.5, 138.04, 139.5, 138.04, 139.5, 138.04, 139.5, 138.04, 139.5, 138.064, 136.873, 140.3, 134.73, 143.09, 131.034, 138.2, 119.6, 140.444, 121.833, 140.444, 121.833, 140.141, 120.594, 139.338, 120.777, 140.946, 121.423, 140.565, 121.92, 139.338, 120.777)
+behind_body = PackedByteArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
+visible_poses = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+[resource]
+script = ExtResource("1")
+body_atlas = ExtResource("2")
+hand_atlas = ExtResource("3")
+weapon_texture = ExtResource("4")
+offhand = SubResource("offhand")
+cell_size = Vector2i(256,256)
+columns = 4
+pose_count = 16
+pose_order = PackedInt32Array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15)
+primary_hands = PackedVector2Array(113, 134, 113, 134, 113, 134, 113, 134, 113, 136, 110, 136, 111, 135, 107, 133, 113, 135, 113, 137, 113, 137, 113, 136, 112, 135, 113, 135, 113, 135, 112, 135)
+secondary_hands = PackedVector2Array(116.96, 138.5, 116.96, 138.5, 116.96, 138.5, 116.96, 138.5, 116.96, 140.5, 115.998, 136.162, 116.921, 135.972, 112.738, 134.753, 118.562, 132.75, 118.94, 136.151, 118.94, 136.151, 118.837, 134.61, 117.821, 133.545, 118.871, 133.764, 118.562, 132.75, 117.821, 133.545)
+weapon_primary_grip = Vector2(8,56)
+weapon_tip = Vector2(8,0)
+weapon_handle_axis = Vector2(0,1)
+mirror_cutting_edge = false
+lift_pixels = PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+weapon_behind_body = PackedByteArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
+primary_visible_poses = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+single_hand_poses = PackedByteArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
+stowed_poses = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+released_poses = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+ground_clipped_poses = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+phase_windows = PackedVector2Array(0,3,4,7,8,15)
+allow_rest = true
+rest_start_pose = 4
+rest_transition_end_pose = 10
+rest_transition_seconds = 1.0
+rest_loop_window = Vector2(10,15)
+rest_loop_seconds = 6.6
+retrieval_start_pose = 10
+retrieval_end_pose = 3

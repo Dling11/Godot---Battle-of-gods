@@ -73,7 +73,8 @@ func retrieve_from_rest(ready: Callable) -> bool:
 	_rest_timer.stop()
 	_drawing = true
 	_pose_tween = create_tween().set_process_mode(Tween.TWEEN_PROCESS_PHYSICS)
-	_pose_tween.tween_method(_advance_pose,float(idle_definition.pose_count-1),float(idle_definition.retrieval_end_pose)+0.001,0.28)
+	var start_pose := idle_definition.retrieval_start_pose if idle_definition.retrieval_start_pose>=0 else idle_definition.pose_count-1
+	_pose_tween.tween_method(_advance_pose,float(start_pose),float(idle_definition.retrieval_end_pose)+0.001,0.28)
 	_pose_tween.tween_callback(func() -> void:
 		_drawing = false
 		_resting = false

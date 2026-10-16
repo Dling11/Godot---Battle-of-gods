@@ -1,0 +1,45 @@
+{
+	"audition": "Three normal cuts, jump smash, then quieter floor debris. Speaker approval pending.",
+	"clips": [
+		{
+			"duration": 0.3,
+			"file": "contact_1.wav",
+			"peak_dbfs": -4.01318907667051,
+			"rms_dbfs": -22.7493772138356,
+			"sha256": "eb1b0e27ad48210326b4803913e33889728b5e2b4b721ba3ca1535dcb6228301"
+		},
+		{
+			"duration": 0.3,
+			"file": "contact_2.wav",
+			"peak_dbfs": -4.01318907667051,
+			"rms_dbfs": -23.0165993477699,
+			"sha256": "4665366e91c3e23e04af17c647e1f99616c1dd273113622f644a5f9199d9c007"
+		},
+		{
+			"duration": 0.3,
+			"file": "contact_3.wav",
+			"peak_dbfs": -4.01318907667051,
+			"rms_dbfs": -22.5836338034045,
+			"sha256": "ff2903739c26a65a445eaf3929c35e5eb2fe1afd0c3b977f68218a65a59f1207"
+		},
+		{
+			"duration": 0.4,
+			"file": "smash.wav",
+			"peak_dbfs": -4.01318907667051,
+			"rms_dbfs": -24.1003027495045,
+			"sha256": "764f96a900c526157df48530554462460752fa9a018818487177bbeb4a68fc46"
+		},
+		{
+			"duration": 0.27,
+			"file": "ground.wav",
+			"peak_dbfs": -4.01318907667051,
+			"rms_dbfs": -22.2534133045585,
+			"sha256": "2c694a30fc1623afd835de0d86fed155aafb7f592e19d4569edb0f872b3adac5"
+		}
+	],
+	"license": "CC0 1.0",
+	"processing": "Recorded metal mixed with body/wood; stronger metal/stone smash; offline resample, damp ring, fade and normalize peak -4dBFS; mono PCM16 44100Hz. Normal -6dB, finisher -4dB, ground -12dB at runtime. No procedural tone or runtime DSP.",
+	"source": "Impact by Iwan qubodup Gabovitch",
+	"source_archive_sha256": "98d72b55d6f78a32072439ed4d052fc43fdd80b8b409d18a9bb3150fc2ccd97b",
+	"source_url": "https://opengameart.org/content/impact"
+}

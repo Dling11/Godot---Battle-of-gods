@@ -1,0 +1,32 @@
+[gd_resource type="Resource" load_steps=5 format=3]
+[ext_resource type="Script" path="res://data/weapons/weapon_family_pose_definition.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/characters/playable/king/greatsword_unified/down/spin_body.png" id="2"]
+[ext_resource type="Texture2D" path="res://assets/characters/playable/king/greatsword_unified/attack_hands.png" id="3"]
+[ext_resource type="Texture2D" path="res://assets/characters/playable/king/greatsword_unified/greatsword.png" id="4"]
+[resource]
+script = ExtResource("1")
+body_atlas = ExtResource("2")
+hand_atlas = ExtResource("3")
+weapon_texture = ExtResource("4")
+cell_size = Vector2i(384,384)
+columns = 4
+pose_count = 16
+pose_order = PackedInt32Array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15)
+primary_hands = PackedVector2Array(192, 196, 189, 205, 189, 205, 189, 205, 189, 205, 175, 199, 169, 187, 177, 167, 190, 165, 212, 168, 218, 192, 210, 198, 189, 205, 189, 205, 189, 205, 189, 205)
+secondary_hands = PackedVector2Array(189, 198, 189, 203, 189, 203, 189, 203, 189, 203, 176, 198, 171, 186, 179, 168, 190, 167, 211, 170, 216, 191, 208, 196, 189, 203, 189, 203, 189, 203, 189, 203)
+weapon_primary_grip = Vector2(15,113)
+weapon_handle_axis = Vector2(0,1)
+weapon_tip = Vector2(15,0)
+mirror_cutting_edge = false
+lift_pixels = PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+weapon_behind_body = PackedByteArray(1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0)
+primary_visible_poses = PackedByteArray(1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+single_hand_poses = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+stowed_poses = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+released_poses = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+ground_clipped_poses = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+occluded_hand_poses = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+phase_windows = PackedVector2Array(0, 3, 4, 11, 12, 13)
+queued_recovery_window = Vector2(14,15)
+pose_weights = PackedFloat32Array(0.55, 1, 1.2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
+allow_rest = false

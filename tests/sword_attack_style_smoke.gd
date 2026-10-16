@@ -39,11 +39,11 @@ func _run() -> void:
 		_fail("The down-facing sword does not connect at the body and point away from the player's head.")
 		return
 	if (
-		not is_equal_approx(KingSword.get_melee_forward_reach_pixels(), 36.0)
-		or not is_equal_approx(KingSword.get_melee_half_width_pixels(), 22.0)
+		not is_equal_approx(KingSword.get_melee_forward_reach_pixels(), 60.0)
+		or not is_equal_approx(KingSword.get_melee_half_width_pixels(), 36.0)
 		or player.attack_component.collision_shape.shape != KingSword.melee_hitbox_shape
 	):
-		_fail("King's sword form is missing its tightened 36-reach by 44-wide contact fan.")
+		_fail("King's sword form is missing its current 60-reach by 72-wide contact fan.")
 		return
 	if KingSwordForm.normal_variant_count() != 3:
 		_fail("King's sword form must expose the approved three-swing visual sequence.")

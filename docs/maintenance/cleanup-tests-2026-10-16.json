@@ -1,0 +1,1770 @@
+{
+  "engine": "4.7.2.stable.official.ed1daf0bf",
+  "renderer": "Native Compatibility OpenGL, AMD Radeon",
+  "scope": "147 active test scripts; two concurrent native processes. First-pass stale fixture failures corrected and explicitly rerun. Timing samples under concurrent testing are not performance certification.",
+  "tests": 147,
+  "failed": 0,
+  "teardown_warning_fixtures": 9,
+  "results": [
+    {
+      "name": "king_sword_unified_smoke",
+      "exit": 0,
+      "seconds": 10.16,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "KING_SWORD_UNIFIED checks=1747 failures=0"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "king_twinsteel_walk_smoke",
+      "exit": 0,
+      "seconds": 6.07,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "TWINSTEEL_WALK checks=548 failures=0"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "king_twinsteel_attacks_smoke",
+      "exit": 0,
+      "seconds": 6.55,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "TWINSTEEL_ATTACKS checks=1475 failures=0"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "king_sword_gameplay_smoke",
+      "exit": 0,
+      "seconds": 46.6,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "SWORD_GAMEPLAY checks=1233 failures=0"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "king_twinsteel_gameplay_smoke",
+      "exit": 0,
+      "seconds": 33.28,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "TWINSTEEL_GAMEPLAY checks=1004 failures=0"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "king_greatsword_unified_assets_smoke",
+      "exit": 0,
+      "seconds": 4.54,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "GREATSWORD_UNIFIED_ASSETS checks=1170 failures=0"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "king_twinsteel_idle_smoke",
+      "exit": 0,
+      "seconds": 22.72,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "DUAL_V2_IDLE checks=96 failures=0"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "king_greatsword_gameplay_smoke",
+      "exit": 0,
+      "seconds": 36.15,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": true,
+      "lines": [
+        "GREATSWORD_FINAL: 452 checks, 0 failures"
+      ],
+      "run": "retests"
+    },
+    {
+      "name": "axe_trail_edge_smoke",
+      "exit": 0,
+      "seconds": 3.53,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "AXE_TRAIL_EDGE checks=45 failures=0"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "king_axe_cardinal_smoke",
+      "exit": 0,
+      "seconds": 32.9,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": true,
+      "lines": [
+        "AXE_GAMEPLAY checks=280 failures=0"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "weapon_retirement_smoke",
+      "exit": 0,
+      "seconds": 4.02,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "WEAPON_RETIREMENT: 39 checks, 0 failures"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "king_iron_reaper_gameplay_smoke",
+      "exit": 0,
+      "seconds": 22.3,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": true,
+      "lines": [
+        "IRON_REAPER_GAMEPLAY checks=197 failures=0"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "weapon_finalize_smoke",
+      "exit": 0,
+      "seconds": 21.81,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Weapon finalize smoke: 301 checks, 0 failures"
+      ],
+      "run": "retests"
+    },
+    {
+      "name": "ability_input_buffer_smoke",
+      "exit": 0,
+      "seconds": 6.59,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Short latest-intent combat buffer smoke test passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "armor_mitigation_smoke",
+      "exit": 0,
+      "seconds": 4.55,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Reusable armor mitigation and Varkuun armor smoke test passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "armored_hog_smoke",
+      "exit": 0,
+      "seconds": 5.03,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Armored Hog art, guard, charge, reaction, and audio smoke test passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "assisted_combat_targeting_smoke",
+      "exit": 0,
+      "seconds": 5.07,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Assisted combat targeting smoke test passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "audio_director_smoke",
+      "exit": 0,
+      "seconds": 5.59,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Audio director smoke test passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "auto_combat_smoke",
+      "exit": 0,
+      "seconds": 4.57,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Directional attack and optional auto-combat smoke test passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "basic_attack_repeat_smoke",
+      "exit": 0,
+      "seconds": 5.03,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Basic attack repeat cadence smoke test passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "biome_audio_smoke",
+      "exit": 0,
+      "seconds": 15.64,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "BIOME_AUDIO_RENDERED: 24 checks, 0 failures"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "boss_health_hud_smoke",
+      "exit": 0,
+      "seconds": 5.56,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Reusable top-screen boss HUD, delayed damage, phase thresholds, arena binding, and local-bar suppression passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "bramble_spitter_smoke",
+      "exit": 0,
+      "seconds": 8.61,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Bramble Spitter smoke test passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "character_menu_smoke",
+      "exit": 0,
+      "seconds": 6.05,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Character menu smoke test passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "combat_audio_smoke",
+      "exit": 0,
+      "seconds": 5.57,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Combat audio smoke test passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "combat_feedback_smoke",
+      "exit": 0,
+      "seconds": 5.54,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Combat feedback smoke test passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "combat_foot_aura_smoke",
+      "exit": 0,
+      "seconds": 5.04,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Combat footprint aura smoke test passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "combat_impact_review_smoke",
+      "exit": 0,
+      "seconds": 10.09,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "COMBAT_IMPACT_REVIEW checks=49 failures=0"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "combat_lab_sidebar_smoke",
+      "exit": 0,
+      "seconds": 10.12,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "COMBAT_LAB_SIDEBAR: 30 checks, 0 failures"
+      ],
+      "run": "retests"
+    },
+    {
+      "name": "weapon_enemy_comparison",
+      "exit": 0,
+      "seconds": 114.06,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "WEAPON_ENEMY_COMPARISON: 1603 checks, 0 failures"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "combat_lab_smoke",
+      "exit": 0,
+      "seconds": 6.59,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Combat Lab admin boundary, complete roster including Examiner trial, reward stripping, arena switching, AI, x1/x4/x8 spawning, clear, and invincibility passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "crafting_service_smoke",
+      "exit": 0,
+      "seconds": 4.04,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Atomic crafting service smoke test passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "combat_stage_horde_profile",
+      "exit": 0,
+      "seconds": 11.65,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [],
+      "run": "suite"
+    },
+    {
+      "name": "critical_hit_smoke",
+      "exit": 0,
+      "seconds": 5.05,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Varkuun Edge critical authority, feedback, and percentage caps passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "critical_feedback_visual_smoke",
+      "exit": 0,
+      "seconds": 8.64,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "CRITICAL_FEEDBACK_VISUAL checks=14 failures=0"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "critical_number_readability_smoke",
+      "exit": 0,
+      "seconds": 3.57,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "CRITICAL_NUMBER_READABILITY checks=6 failures=0"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "dash_attack_smoke",
+      "exit": 0,
+      "seconds": 5.58,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Buffered dash-to-basic-attack smoke test passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "debug_unlimited_skills_smoke",
+      "exit": 0,
+      "seconds": 4.58,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "F9 unlimited-skills debug smoke test passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "editor_preview_backdrop_smoke",
+      "exit": 0,
+      "seconds": 4.02,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Editor preview backdrop smoke test passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "earthsplitter_horde_feedback_smoke",
+      "exit": 0,
+      "seconds": 7.1,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "EARTHSPLITTER_HORDE {\"contact_ticks\":7,\"contacts\":8,\"draw_calls_peak\":226,\"form\":0,\"frame_max_ms\":121.534,\"frame_p50_ms\":13.295,\"frame_p95_ms\":15.463,\"global_pauses\":0,\"nodes_peak\":405,\"pass\":\"first\",\"paused_ms\":0.0,\"physics_peak_ms\":4.373,\"process_peak_ms\":116.16,\"targets\":8}"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "eira_curriculum_smoke",
+      "exit": 0,
+      "seconds": 8.1,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "EIRA_CURRICULUM: 91 checks, 0 failures"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "encounter_wave_structure_smoke",
+      "exit": 0,
+      "seconds": 5.08,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Encounter wave structure smoke test passed."
+      ],
+      "run": "final-retests"
+    },
+    {
+      "name": "encounter_reinforcement_smoke",
+      "exit": 0,
+      "seconds": 16.19,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Encounter reinforcement smoke test passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "enemy_crowd_control_smoke",
+      "exit": 0,
+      "seconds": 7.07,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Enemy Light stagger and Boss crowd-control resistance smoke test passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "enemy_arrival_review_smoke",
+      "exit": 0,
+      "seconds": 10.13,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "ENEMY_ARRIVAL_REVIEW checks=30 failures=0"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "enemy_footprint_smoke",
+      "exit": 0,
+      "seconds": 4.03,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Enemy footprint smoke test passed for five archetypes."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "enemy_crowd_separation_smoke",
+      "exit": 0,
+      "seconds": 7.11,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Enemy crowd separation smoke test passed. Minimum spacing: 21.52 px."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "enemy_health_bar_smoke",
+      "exit": 0,
+      "seconds": 4.07,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Enemy health bar smoke test passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "enemy_obstacle_behavior_smoke",
+      "exit": 0,
+      "seconds": 6.07,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Enemy obstacle behavior smoke test passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "environment_navigation_smoke",
+      "exit": 0,
+      "seconds": 8.1,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "STAGE_1_ENVIRONMENT: 183 checks, 0 failures"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "equipment_preview_smoke",
+      "exit": 0,
+      "seconds": 3.55,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "King equipment catalog smoke test passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "examiner_effects_smoke",
+      "exit": 0,
+      "seconds": 5.54,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Examiner VFX: all eight frames reachable, warning/contact timing and cleanup passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "examiner_ascendant_smoke",
+      "exit": 0,
+      "seconds": 7.1,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Examiner Ascendant: seal absorption/overflow/stun, cancel/failure, fixed Sun geometry, phase tuning, Crownfall, reset: PASS"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "examiner_firmament_smoke",
+      "exit": 0,
+      "seconds": 8.61,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Examiner Firmament: gate, break/timeout, 24 random meteors, local openings, dodge, prediction, pause/death cleanup: PASS"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "examiner_rain_movement_smoke",
+      "exit": 0,
+      "seconds": 8.62,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Rain movement simulation: 30 seeds, center/corner starts, 24 meteors, at most 6 armed; stationary/moving damage=[24000.0, 0.0]; failures=0"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "examiner_rework_smoke",
+      "exit": 0,
+      "seconds": 7.1,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Examiner rework: contact timing, directional continuity, physical charge collision, phase HUD, exact wards, and UI fit passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "examiner_tactics_victory_smoke",
+      "exit": 0,
+      "seconds": 13.18,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Examiner tactics/victory: eligible variety, committed link, seal reactions, lethal outro, skip/once, reset lifecycle: PASS"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "examiner_trial_smoke",
+      "exit": 0,
+      "seconds": 8.64,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Examiner physical attacks, facing, Divine Descent phases, exact pylon cover, finite damage, presentation/audio, court, and Axiom lanes passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "expedition_defeat_return_smoke",
+      "exit": 0,
+      "seconds": 6.06,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": true,
+      "lines": [],
+      "run": "suite"
+    },
+    {
+      "name": "examiner_worth_smoke",
+      "exit": 0,
+      "seconds": 10.63,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Examiner Worth: branch/commit, advancing step, guard meter, guard-break stun, Court geometry, Verdict mitigation/i-frames/immunity, timeout and cleanup: PASS"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "expedition_unlock_smoke",
+      "exit": 0,
+      "seconds": 3.53,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Expedition unlock smoke test passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "forsaken_thrall_smoke",
+      "exit": 0,
+      "seconds": 6.06,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Forsaken Thrall smoke test passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "generic_spawn_review_smoke",
+      "exit": 0,
+      "seconds": 14.64,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "GENERIC_SPAWN_REVIEW checks=61 failures=0"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "greatsword_blade_atlas_smoke",
+      "exit": 0,
+      "seconds": 3.52,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "GREATSWORD_BLADE_ATLAS checks=6 failures=0"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "hud_action_controls_smoke",
+      "exit": 0,
+      "seconds": 4.05,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "HUD action controls smoke test passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "iron_reaper_grounding_smoke",
+      "exit": 0,
+      "seconds": 6.61,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "IRON_REAPER_GROUNDING checks=281 failures=0"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "iron_reaper_idle_smoke",
+      "exit": 0,
+      "seconds": 16.16,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "IRON_REAPER_IDLE_SMOKE checks=28 failures=0"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "expedition_feedback_smoke",
+      "exit": 0,
+      "seconds": 78.46,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "EXPEDITION_FEEDBACK: 108 checks, 0 failures"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "iron_reaper_motion_smoke",
+      "exit": 0,
+      "seconds": 24.32,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "IRON_REAPER_MOTION checks=160 failures=0"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "king_axe_grip_smoke",
+      "exit": 0,
+      "seconds": 8.65,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "AXE_TECHNIQUE checks=1591 failures=0 samples=336"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "king_production_kit_smoke",
+      "exit": 0,
+      "seconds": 8.6,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "KING_PRODUCTION_KIT_SMOKE_FAILURES=0"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "king_dual_gait_smoke",
+      "exit": 0,
+      "seconds": 17.25,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "KING_DUAL_GAIT checks=1194 failures=0"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "king_shared_body_smoke",
+      "exit": 0,
+      "seconds": 8.61,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "KING_SHARED_BODY checks=581 failures=0"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "king_skill_4_smoke",
+      "exit": 0,
+      "seconds": 13.15,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "VOW_WORLDSPLITTER: 54 checks, 0 failures"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "king_skill_terrain_smoke",
+      "exit": 0,
+      "seconds": 10.15,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "KING_SKILL_TERRAIN checks=33 failures=0"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "king_targeting_art_smoke",
+      "exit": 0,
+      "seconds": 7.58,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "KING_TARGETING_ART checks=39 failures=0"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "king_vow_worldsplitter_smoke",
+      "exit": 0,
+      "seconds": 13.13,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "VOW_WORLDSPLITTER: 54 checks, 0 failures"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "loot_resolution_smoke",
+      "exit": 0,
+      "seconds": 8.63,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Loot chances, magnetic pickups, chest tiers, rollback, and claim smoke test passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "material_crafting_data_smoke",
+      "exit": 0,
+      "seconds": 4.57,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Material and crafting data smoke test passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "material_exchange_service_smoke",
+      "exit": 0,
+      "seconds": 4.58,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Metadata-driven material exchange service smoke test passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "material_inventory_snapshot_smoke",
+      "exit": 0,
+      "seconds": 4.08,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Material inventory snapshot smoke test passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "melee_combat_smoke",
+      "exit": 0,
+      "seconds": 6.1,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Melee combat smoke test passed."
+      ],
+      "run": "retests"
+    },
+    {
+      "name": "melee_contact_rules_smoke",
+      "exit": 0,
+      "seconds": 5.09,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "MELEE_CONTACT_RULES checks=15 failures=0"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "mireling_leap_dodge_smoke",
+      "exit": 0,
+      "seconds": 7.13,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Mireling leap dodge smoke test passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "mireling_smoke",
+      "exit": 0,
+      "seconds": 7.61,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Mireling smoke test passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "pause_menu_smoke",
+      "exit": 0,
+      "seconds": 4.07,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "In-stage pause menu smoke test passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "perfect_counter_smoke",
+      "exit": 0,
+      "seconds": 8.13,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "PERFECT_COUNTER checks=25 failures=0"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "player_control_scheme_smoke",
+      "exit": 0,
+      "seconds": 7.69,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Player control scheme and debug testing preset smoke test passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "player_evade_smoke",
+      "exit": 0,
+      "seconds": 8.07,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Player evade smoke test passed. Distance: 53.33 px"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "player_defeat_flow_smoke",
+      "exit": 0,
+      "seconds": 9.19,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Player defeat flow smoke test passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "player_interface_demo_smoke",
+      "exit": 0,
+      "seconds": 8.1,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "PLAYER_INTERFACE_DEMO: 14 checks, 0 failures"
+      ],
+      "run": "retests"
+    },
+    {
+      "name": "player_interface_readability_smoke",
+      "exit": 0,
+      "seconds": 9.08,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "PLAYER_INTERFACE_READABILITY: 87 checks, 0 failures"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "player_movement_smoke",
+      "exit": 0,
+      "seconds": 5.07,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Player movement smoke test passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "player_progression_smoke",
+      "exit": 0,
+      "seconds": 5.56,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Player progression smoke test passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "portal_interaction_smoke",
+      "exit": 0,
+      "seconds": 5.58,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Portal interaction smoke test passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "player_held_attack_smoke",
+      "exit": 0,
+      "seconds": 29.95,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "HELD_ATTACK checks=46 failures=0"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "portal_surface_stability_smoke",
+      "exit": 0,
+      "seconds": 12.16,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "PORTAL_SURFACE_STABILITY: 144 checks, 0 failures; {\"calm\":{\"changed_silhouette_pixels\":0,\"inner_motion_pixels\":[293,5211,3364],\"used\":\"[P: (66, 70), S: (60, 81)]\"},\"divine\":{\"changed_silhouette_pixels\":0,\"inner_motion_pixels\":[6277,7558,2240],\"used\":\"[P: (55, 37), S: (81, 113)]\"},\"grasp\":{\"changed_silhouette_pixels\":0,\"inner_motion_pixels\":[4190,7858,2748],\"used\":\"[P: (59, 50), S: (79, 101)]\"},\"maw\":{\"changed_silhouette_pixels\":0,\"inner_motion_pixels\":[2739,7188,1990],\"used\":\"[P: (58, 52), S: (75, 98)]\"},\"ominous\":{\"changed_silhouette_pixels\":0,\"inner_motion_pixels\":[1277,6332,3233],\"used\":\"[P: (64, 64), S: (64, 87)]\"},\"unknowable\":{\"changed_silhouette_pixels\":0,\"inner_motion_pixels\":[7703,8350,2765],\"used\":\"[P: (51, 34), S: (92, 116)]\"}}"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "pursuit_stage_landing_smoke",
+      "exit": 0,
+      "seconds": 13.69,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "PURSUIT_STAGE_LANDING checks=45 failures=0"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "quiet_ui_stability_smoke",
+      "exit": 0,
+      "seconds": 13.62,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "QUIET_UI_STABILITY: 27 checks, 0 failures; {\"loading\":{\"changed_silhouette_pixels\":0,\"moving_light_pixels\":5276,\"used\":\"[P: (14, 21), S: (89, 83)]\"}}"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "returning_weapon_smoke",
+      "exit": 0,
+      "seconds": 18.69,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "RETURNING_WEAPON_SMOKE checks=299 failures=0"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "rootbound_husk_smoke",
+      "exit": 0,
+      "seconds": 10.14,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Rootbound Husk mini-boss behavior smoke test passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "rootling_behavior_smoke",
+      "exit": 0,
+      "seconds": 4.57,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Rootling behavior smoke test passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "run_session_progression_smoke",
+      "exit": 0,
+      "seconds": 4.55,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Run session progression smoke test passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "runtime_archive_boundary_smoke",
+      "exit": 0,
+      "seconds": 3.52,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Runtime/archive boundary smoke test passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "safe_milestone_autosave_smoke",
+      "exit": 0,
+      "seconds": 5.02,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Safe milestone autosave smoke test passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "rotcaller_smoke",
+      "exit": 0,
+      "seconds": 16.69,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "ROTCaller: 47 checks, 0 failures"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "sanctuary_hub_smoke",
+      "exit": 0,
+      "seconds": 6.55,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "SANCTUARY_CLOSEOUT: 68 checks, 0 failures"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "sanctuary_skills_flow_smoke",
+      "exit": 0,
+      "seconds": 7.58,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "SANCTUARY_SKILLS_FLOW: 84 checks, 0 failures"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "save_disk_persistence_smoke",
+      "exit": 0,
+      "seconds": 3.53,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Save disk persistence smoke test passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "save_profile_snapshot_smoke",
+      "exit": 0,
+      "seconds": 3.53,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Save profile snapshot smoke test passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "sanctuary_workshop_interior_smoke",
+      "exit": 0,
+      "seconds": 11.65,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "SANCTUARY_WORKSHOP_INTERIOR: 60 checks, 0 failures"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "scene_transition_smoke",
+      "exit": 0,
+      "seconds": 7.07,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": true,
+      "lines": [
+        "Scene transition smoke test passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "sovereign_pursuit_charges_smoke",
+      "exit": 0,
+      "seconds": 6.6,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "SOVEREIGN_PURSUIT_CHARGES_FAILURES=0"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "sovereign_pursuit_trainer_smoke",
+      "exit": 0,
+      "seconds": 7.6,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "SOVEREIGN_PURSUIT_TRAINER_FAILURES=0"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "stage_2_encounter_smoke",
+      "exit": 0,
+      "seconds": 7.62,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Stage 2 encounter smoke test passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "stage_3_encounter_smoke",
+      "exit": 0,
+      "seconds": 8.1,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Stage 3 encounter smoke test passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "stage_3_pressure_smoke",
+      "exit": 0,
+      "seconds": 15.17,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "STAGE_3_PRESSURE: 10 checks, 0 failures"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "stage_4_encounter_smoke",
+      "exit": 0,
+      "seconds": 8.11,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Stage 4 encounter smoke test passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "stage_5_boss_audio_dialogue_smoke",
+      "exit": 0,
+      "seconds": 5.56,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Varkuun action/root audio, speaker-swapping conversation, single advance, and mouse Skip passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "stage_4_review_smoke",
+      "exit": 0,
+      "seconds": 11.68,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "STAGE_4_REVIEW: 18 checks, 0 failures"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "stage_5_boss_desperation_smoke",
+      "exit": 0,
+      "seconds": 6.64,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Stage 5 health-tier jump cadence, recurring 3/4/5 pursuit, varied locks, and prison handoff passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "stage_5_boss_portrait_asset_smoke",
+      "exit": 0,
+      "seconds": 4.58,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "PASS: Stage 5 boss portrait is a readable transparent 96x96 presentation asset."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "stage_5_boss_root_prison_smoke",
+      "exit": 0,
+      "seconds": 7.09,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Stage 5 root warning, capture, skill lock, struggle escape, world lock, and in-zone 300-damage execution passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "stage_5_defeat_sequence_smoke",
+      "exit": 0,
+      "seconds": 8.1,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Varkuun final quote and post-collapse delayed chest sequence passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "stage_5_boss_smoke",
+      "exit": 0,
+      "seconds": 11.67,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Stage 5 boss runtime attacks, bounded death frames, corpse fade, and world impact passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "stage_5_environment_smoke",
+      "exit": 0,
+      "seconds": 9.61,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "STAGE_5_RENEWAL: 139 checks, 0 failures"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "stage_5_review_smoke",
+      "exit": 0,
+      "seconds": 10.63,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "STAGE_5_REVIEW: 42 checks, 0 failures"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "stage_6_debug_access_smoke",
+      "exit": 0,
+      "seconds": 7.07,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": true,
+      "lines": [
+        "STAGE_6_DEBUG_ACCESS_SMOKE_PASSED"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "stage_6_crag_bear_smoke",
+      "exit": 0,
+      "seconds": 8.1,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "STAGE_6_CRAG_BEAR_SMOKE_PASSED"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "stage_6_environment_smoke",
+      "exit": 0,
+      "seconds": 5.58,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "STAGE_6_ENVIRONMENT_SMOKE_PASSED"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "stagger_resistance_smoke",
+      "exit": 0,
+      "seconds": 5.05,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "STAGGER_RESISTANCE_SMOKE_PASSED"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "stage_transition_presentation_smoke",
+      "exit": 0,
+      "seconds": 12.16,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": true,
+      "lines": [
+        "STAGE_PRESENTATION: 54 checks, 0 failures; real loading seal/King frames 6/12"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "stun_indicator_smoke",
+      "exit": 0,
+      "seconds": 8.08,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "STUN_INDICATOR_CHECKS=45 FAILURES=0"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "summon_effect_smoke",
+      "exit": 0,
+      "seconds": 11.11,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "ENEMY_ARRIVAL checks=40 failures=0"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "sword_attack_style_smoke",
+      "exit": 0,
+      "seconds": 5.56,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Sword attack style smoke test passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "title_continue_smoke",
+      "exit": 0,
+      "seconds": 6.05,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": true,
+      "lines": [
+        "Title Continue smoke test passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "thrall_statue_endpoint_smoke",
+      "exit": 0,
+      "seconds": 8.61,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Thrall statue endpoint smoke test passed. Longest stall: 1 frames."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "title_screen_smoke",
+      "exit": 0,
+      "seconds": 6.59,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": true,
+      "lines": [
+        "Title screen smoke test passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "title_trio_smoke",
+      "exit": 0,
+      "seconds": 7.09,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "TITLE_TRIO: 72 checks, 0 failures; restart history uses isolated cosmetic config"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "ui_theme_icon_smoke",
+      "exit": 0,
+      "seconds": 4.03,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "UI theme and named icon smoke test passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "typed_damage_smoke",
+      "exit": 0,
+      "seconds": 8.62,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "TYPED_DAMAGE checks=50 failures=0"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "umi_exchange_menu_smoke",
+      "exit": 0,
+      "seconds": 3.55,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Compact metadata-driven Umi exchange menu smoke test passed."
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "unbroken_vow_training_smoke",
+      "exit": 0,
+      "seconds": 6.06,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "VOW_TRAINING: 14 checks, 0 failures"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "unbroken_vow_test_smoke",
+      "exit": 0,
+      "seconds": 6.58,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "UNBROKEN_VOW_TEST_CHECKS=31 FAILURES=0"
+      ],
+      "run": "vow-final"
+    },
+    {
+      "name": "worldsplitter_activation_smoke",
+      "exit": 0,
+      "seconds": 12.13,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "WORLDSPLITTER_ACTIVATION: 16 checks, 0 failures"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "worldsplitter_training_smoke",
+      "exit": 0,
+      "seconds": 5.55,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "WORLDSPLITTER_TRAINING: 14 checks, 0 failures"
+      ],
+      "run": "suite"
+    },
+    {
+      "name": "worldsplitter_descent_smoke",
+      "exit": 0,
+      "seconds": 17.17,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "WORLDSPLITTER_DESCENT: 142 checks, 0 failures"
+      ],
+      "run": "suite"
+    }
+  ]
+}

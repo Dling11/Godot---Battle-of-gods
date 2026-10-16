@@ -5,7 +5,7 @@ extends SceneTree
 const LAB = preload("res://levels/combat_lab/combat_lab.tscn")
 const ROOTLING = preload("res://entities/enemies/rootling/rootling.tscn")
 const HOG = preload("res://entities/enemies/armored_hog/armored_hog.tscn")
-const ITEMS := [preload("res://data/items/equipment/king_signature_sword.tres"),preload("res://data/items/equipment/king_iron_beard_axe.tres"),preload("res://data/items/equipment/king_twinsteel.tres"),preload("res://data/items/equipment/king_royal_greatsword_v2.tres"),preload("res://data/items/equipment/king_iron_reaper.tres")]
+const ITEMS := [preload("res://data/items/equipment/king_signature_sword.tres"),preload("res://data/items/equipment/king_iron_beard_axe.tres"),preload("res://data/items/equipment/king_twinsteel.tres"),preload("res://data/items/equipment/king_royal_greatsword.tres"),preload("res://data/items/equipment/king_iron_reaper.tres")]
 const OUT := "res://tmp/review/combat/weapon_impact_closure_2026_10_07/"
 var evidence_path := OUT
 var checks := 0

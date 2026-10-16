@@ -1,5 +1,9 @@
 # Audio Attribution
 
+## Royal Greatsword recorded metal (2026-10-15)
+
+Five WAVs in sfx/player/greatsword_heavy derive from the retained **Impact** recordings by Iwan qubodup Gabovitch, [original source and CC0 dedication](https://opengameart.org/content/impact). Metal/Meat01/Wood supply three normal cuts; stronger Metal/Stone/Wood/Meat01 supplies the jump smash; quieter Metal/Stone/Wood supplies floor debris. Offline resample/damp/mix/fade/peak normalization to mono44.1kHz PCM16. Runtime normal−6dB, smash−4dB, floor−12dB; one hit voice per accepted cut. No new download, runtime DSP or per-enemy voice multiplication. Original archive/page/recordings remain under art_source/audio/weapon_contact_2026_10_06; exact hashes/processing under art_source/audio/greatsword_heavy_2026_10_15/manifest.json. build_greatsword_heavy_audio.gd is current; the older contact tool delegates forward. The superseded weapon_contact/greatsword_finisher.wav is retired; the earlier2026-10-07 section below documents historical processing only.
+
 ## Iron Reaper swing and contact suite (2026-10-14)
 
 Four air cuts in `sfx/player/iron_reaper/` derive from **Swishes Sound Pack** by artisticdude, [primary source and CC0 dedication](https://opengameart.org/content/swishes-sound-pack). Source recordings swish-7/9/6/8 supply sweep/hook/throw/reap. Original downloaded archive and extracted recordings remain in `art_source/audio/iron_reaper_2026_10_14/`; source art/audio is excluded from game imports. The source pack was retrieved2026-10-14.

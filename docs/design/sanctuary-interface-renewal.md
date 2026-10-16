@@ -1,5 +1,7 @@
 # Sanctuary interface
 
+Decision223 retention note: raw generation/review paths described below are historical provenance. Bulk source collections and image builders are deleted; current runtime assets and compact references/validation metadata remain. Future trials use temporary ignored staging and are cleared after publishing.
+
 2026-10-02. Current interface applies to normal Sanctuary under Decision165. See [closeout](sanctuary-closeout.md) and [HP, growth and bag](player-interface-readability.md). Prior reversible-theme/comparison instructions are archived.
 
 levels/sanctuary/town/sanctuary_interface.gd applies ui/themes/sanctuary_theme.gd to actual dialogue, inventory, crafting, exchange, expedition, pause and dynamically created technique controls. Generated nine-slice frames never own text, icons, requirements, actions or transactions. Nema/Umi service scenes reference current portraits directly.

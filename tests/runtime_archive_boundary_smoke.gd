@@ -12,6 +12,7 @@ const ACTIVE_PATHS := [
 ]
 
 const RETIRED_RUNTIME_PATHS := [
+	"res://art_source/generated",
 	"res://assets/characters/awakened",
 	"res://assets/characters/prototype",
 	"res://assets/characters/sprites_24x32",

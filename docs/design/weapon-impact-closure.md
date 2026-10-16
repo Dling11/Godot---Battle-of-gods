@@ -6,7 +6,7 @@
 
 Restart F5 → F9 → F7 → **Weapons**. Choose **Royal Greatsword**, **Iron Beard Axe**, **Twinsteel**, or **King's Sword**. F9 grants a session-only test kit and suppresses campaign autosaving. Tab opens the Bag; Escape closes it. Hold world left click to repeat the normal combo. The existing Lab enemy selector, Spawn 1/4/8 and AI toggle support moving-enemy comparisons.
 
-The direct `tools/launch_king_greatsword_v2_training.ps1` shortcut opens actual Combat Lab with the approved Greatsword and three paused Rootlings. Its compatibility shortcut `launch_king_greatsword_review.ps1` reaches the same training instead of retired V1 review code. Enable enemy AI to fight rather than inspect stationary targets.
+The direct `tools/launch_king_greatsword_training.ps1` shortcut opens actual Combat Lab with the approved Greatsword and three paused Rootlings. Its compatibility shortcut `launch_king_greatsword_review.ps1` reaches the same training instead of retired V1 review code. Enable enemy AI to fight rather than inspect stationary targets.
 
 ## Accepted Greatsword
 

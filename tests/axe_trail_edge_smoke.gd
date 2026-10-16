@@ -43,12 +43,12 @@ func _run() -> void:
 	await process_frame
 	await RenderingServer.frame_post_draw
 	check(view.get_texture().get_image().get_used_rect().size==Vector2i.ZERO,"Clear leaves contact light")
-	var art: Image = load("res://assets/characters/playable/king/axe_proof_v3/swing.png").get_image()
+	var art: Image = load("res://assets/characters/playable/king/iron_beard_unified/slash.png").get_image()
 	for row in 5:
-		for frame in 4:
+		for frame in 8:
 			var border_empty := true
-			for pixel in 128:
-				for point in [Vector2i(frame*128+pixel,row*128),Vector2i(frame*128+pixel,row*128+127),Vector2i(frame*128,row*128+pixel),Vector2i(frame*128+127,row*128+pixel)]:
+			for pixel in 256:
+				for point in [Vector2i(frame*256+pixel,row*256),Vector2i(frame*256+pixel,row*256+255),Vector2i(frame*256,row*256+pixel),Vector2i(frame*256+255,row*256+pixel)]:
 					if art.get_pixelv(point).a>0: border_empty = false
 			check(border_empty,"Raster frame touches atlas border")
 	var attack: MeleeAttackComponent = trail._attack

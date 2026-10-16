@@ -1,6 +1,6 @@
 extends SceneTree
 
-const CURRENT = preload("res://data/items/equipment/king_royal_greatsword_v2.tres")
+const CURRENT = preload("res://data/items/equipment/king_royal_greatsword.tres")
 const OUT := "res://tmp/review/combat/weapon_impact_closure_2026_10_07/"
 var checks := 0
 var failures := 0

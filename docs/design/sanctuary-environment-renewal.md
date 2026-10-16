@@ -1,5 +1,7 @@
 # Current Sanctuary environment
 
+Decision223 retention note: raw generation/review paths described below are historical provenance. Bulk source collections and image builders are deleted; current runtime assets and compact references/validation metadata remain. Future trials use temporary ignored staging and are cleared after publishing.
+
 2026-10-02. Decision165 promotes the renewed town to normal play and closes this pass temporarily. Current runtime/controls/recovery: [Sanctuary closeout](sanctuary-closeout.md). Previous staged proposals/comparisons are archived under art_source/archive/sanctuary_retired_2026_10_02/snapshots/docs/design/.
 
 The footprint remains1152x768, with36x24 ground cells at32px. Accepted Orren workshop/Eira lodge, corrected overhead Nema/Umi houses, lanterns, planters, benches, six planted trees and intentional intact wall runs compose the town. Separate ground footprints, roof/canopy reveal and clear service/building approaches remain gameplay requirements.

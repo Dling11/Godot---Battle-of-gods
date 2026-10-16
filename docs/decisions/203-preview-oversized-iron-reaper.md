@@ -10,4 +10,4 @@ Propose Hook and Reap as the scythe identity: long curved sweeps, a bounded Ligh
 
 Alternatives: scaling the complete rendered actor makes King larger and repeats the rejected proportion bug; enlarging a clipped atlas loses the blade; changing live equipment/combat during an art-size review merges unapproved mechanics with the visual request; removing the original side study loses the useful direct comparison before the new size is accepted.
 
-[Specialty proposal](../design/iron-reaper-specialty-proposal.md) · [Current side motion](../design/king-iron-reaper-side-preview.md).
+[Specialty proposal](../design/iron-reaper-specialty-proposal.md) · [Current side motion](../design/king-iron-reaper.md).

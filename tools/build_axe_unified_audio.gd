@@ -3,7 +3,7 @@ extends "res://tools/build_iron_reaper_audio.gd"
 ## Recorded material/air identity matched to the accepted scythe mix.
 ## Outputs belong only to the axe; other weapon recordings remain untouched.
 const AXE_OUTPUT := "res://assets/audio/sfx/player/iron_beard/"
-const AXE_SOURCE := "res://art_source/generated/characters/king/iron_beard_unified_2026_10_15/"
+const AXE_MANIFEST := "res://art_source/audio/iron_beard-manifest.json"
 const AXE_REVIEW := "res://tmp/review/iron_beard_unified_2026_10_15/"
 
 func _initialize() -> void:
@@ -30,7 +30,7 @@ func _initialize() -> void:
 		var data: PackedFloat32Array = clips[name_key]
 		write_wav(AXE_OUTPUT+name_key+".wav",data)
 		manifest.clips.append({"file":name_key+".wav","seconds":float(data.size())/sample_rate,"sha256":FileAccess.get_sha256(AXE_OUTPUT+name_key+".wav")})
-	FileAccess.open(AXE_SOURCE+"audio-manifest.json",FileAccess.WRITE).store_string(JSON.stringify(manifest,"\t")+"\n")
+	FileAccess.open(AXE_MANIFEST,FileAccess.WRITE).store_string(JSON.stringify(manifest,"\t")+"\n")
 	var audition := PackedFloat32Array()
 	audition.resize(sample_rate*4)
 	for index in 5:

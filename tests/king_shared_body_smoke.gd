@@ -1,12 +1,12 @@
-extends "res://tests/king_art_test_base.gd"
+extends "res://tests/king_production_art_contract.gd"
 
 ## Enforce exact approved bodies, not merely a plausible sprite height.
-const LIBRARY := "res://assets/characters/playable/king/body_library/v1/"
+const LIBRARY := "res://assets/characters/playable/king/body_library/baseline/"
 const KING_FRAMES := "res://assets/characters/playable/king/shared_bodies/sword/frames.tres"
 const ORIGINAL_FRAMES := "res://assets/characters/playable/king/spellward/spellward_frames.tres"
 const AXE_PROFILE := "res://data/weapons/families/iron_beard/presentation.tres"
-const DUAL_PROFILE := "res://data/weapons/families/twinsteel_v2/presentation.tres"
-const GREAT_PROFILE := "res://data/weapons/families/royal_greatsword_v2/presentation.tres"
+const DUAL_PROFILE := "res://data/weapons/families/twinsteel/presentation.tres"
+const GREAT_PROFILE := "res://data/weapons/families/royal_greatsword/presentation.tres"
 const PROOF := "res://tmp/review/combat/king_body_consistency_2026_10_11/"
 var proof := PROOF
 
@@ -18,6 +18,7 @@ func _initialize() -> void:
 
 func _run() -> void:
 	root.get_node("SaveService").suppress_autosave_for_debug_session()
+	verify_production_baseline([])
 	var view_names := ["side","up","down"]
 	var directions := [Vector2.RIGHT,Vector2.UP,Vector2.DOWN]
 	var stock: Array[Resource] = [load(AXE_PROFILE),load(DUAL_PROFILE),load(GREAT_PROFILE)]
@@ -26,41 +27,48 @@ func _run() -> void:
 		check(FileAccess.get_sha256(LIBRARY+key+"_body.png")==contract.poses[key].sha256,"Frozen whole body changed: "+key)
 	for index in 3:
 		var view: String = view_names[index]
-		var canonical: Resource = load(LIBRARY+view+"_run.tres")
 		for family in stock:
 			var gait: Resource = family.run_for(directions[index])
-			if family==stock[1]:
-				# Decision200: complete generated Twinsteel run, visual reference
-				# proportions only; canonical body pixels remain read-only.
-				var registration:Array=JSON.parse_string(FileAccess.get_file_as_string("res://assets/characters/playable/king/shared_bodies/dual_carry_v3/walk_registration.json"))
+			if family==stock[2]:
+				check(gait.pose_count==8,"Greatsword lost dedicated run frames")
+				verify_complete_clip(gait,Vector2i(384,384))
+				continue
+			if family==stock[0]:
+				# Decision212 retains complete accepted Reaper running actors for axe.
+				# Compare their real cell sizes, not an empty old 192x128 corner.
+				var approved: Resource=load("res://assets/characters/playable/king/iron_reaper/"+view+"/run.tres")
+				check(gait.pose_count==8 and gait.has_valid_layout(),"Invalid current complete gait")
 				for key in 8:
-					var record:Dictionary=registration[index*8+key]
-					check(record.mode=="generated_complete_cels" and record.integrated_weapons,"Twinsteel uses old transplanted anatomy")
-					check(gait.primary_visible_poses[key]==0 and gait.offhand.visible_poses[key]==0,"Duplicate drawn swords")
+					var cell: Image=gait.body_atlas.get_image().get_region(Rect2i(Vector2i(key%4,key/4)*gait.cell_size,gait.cell_size))
+					var native: Image=cell.get_region(Rect2i((gait.cell_size-Vector2i(256,256))/2,Vector2i(256,256)))
+					var original: Image=approved.body_atlas.get_image().get_region(Rect2i(Vector2i(key%4,key/4)*256,Vector2i(256,256)))
+					check(same_opaque(native,original),"Current weapon changed complete accepted running anatomy")
+					var used:=native.get_used_rect()
+					var seed:=used.position
+					for x in range(used.position.x,used.end.x):
+						if native.get_pixel(x,used.position.y).a>.8:
+							seed=Vector2i(x,used.position.y)
+							break
+					check(anatomy_connected(native,seed,used),"Complete running actor has disconnected anatomy")
+				continue
+			if family==stock[1]:
+				check(gait.pose_count==8,"Twinsteel lost complete stride frames")
+				verify_complete_clip(gait,Vector2i(256,256))
+				for key in gait.pose_count:
+					check(gait.offhand.visible_poses[key]==0,"Duplicate blade over complete Twinsteel")
 
-			else:
-				check(same_opaque(gait.body_atlas.get_image(),canonical.body_atlas.get_image()),"Weapon changed King's complete gait: "+gait.resource_path)
-			check(gait.pose_count==8 and gait.has_valid_layout(),"Shared body has invalid attachment layout")
-			for key in 8:
-				var cel: Image = gait.body_atlas.get_image().get_region(Rect2i(key%4*192,key/4*128,192,128))
-				check(anatomy_connected(cel,Vector2i(gait.identity_regions[key].get_center()),Rect2i(gait.identity_regions[key])),"Shared walking body is disconnected")
-				if gait.offhand!=null:
-					for grip in [gait.primary_hands[key],gait.offhand.hands[key]]:
-						var c := cel.get_pixelv(Vector2i(grip.round()))
-						check(c.a>.65 and c.r>.18 and c.r>c.g*1.3 and c.g>c.b*1.2,"Shared two-blade gait has a floating grip")
-		var master: Resource = load(LIBRARY+view+("_ready.tres" if view=="up" else "_relaxed.tres"))
 		var ready: Resource = stock[0].idle_for(directions[index])
-		check(same_opaque(ready.body_atlas.get_image().get_region(Rect2i(0,0,192,128)),master.body_atlas.get_image().get_region(Rect2i(0,0,192,128))),"Axe equipment body is not the canonical complete pose")
+		check(ready.has_valid_layout(),"Current axe has no complete ready pose")
 		var cuts: Resource = stock[0].attack_for(directions[index])
 		var poses: Array = [cuts]+Array(cuts.follow_up_clips)
 		for step in 5:
 			var clip: Resource = poses[step]
 			for key in clip.pose_count:
-				var box := Rect2i(key%4*192,key/4*128,192,128)
+				var box := Rect2i(Vector2i(key%4,key/4)*clip.cell_size,clip.cell_size)
 				var body: Image = clip.body_atlas.get_image().get_region(box)
-				var changed: bool = key==int(clip.phase_windows[2].y) or (step==0 and key==0) or (step==4 and key==clip.pose_count-1)
+				var changed: bool = clip.stowed_poses[key]==1
 				if changed:
-					check(same_opaque(body,ready.body_atlas.get_image().get_region(Rect2i(0,0,192,128))),"Axe recovery/entry changes King's standing anatomy")
+					check(same_opaque(body,ready.body_atlas.get_image().get_region(Rect2i(Vector2i.ZERO,ready.cell_size))),"Axe recovery/entry changes King's standing anatomy")
 				if not clip.identity_regions.is_empty():
 					check(anatomy_connected(body,Vector2i(clip.identity_regions[key].get_center()),Rect2i(clip.identity_regions[key])),"Axe attack head/body is disconnected: "+view+"/"+str(step)+"/"+str(key))
 	var frames: SpriteFrames = load(KING_FRAMES)
@@ -92,11 +100,6 @@ func _run() -> void:
 	var mutant := control.duplicate(); mutant.set_pixel(50,65,Color.RED)
 	mutant.save_png(proof+"rejected_same_height_body.png")
 	check(not same_opaque(control,mutant),"Body gate accepts a same-height foreign torso pixel")
-	FileAccess.open(proof+"body_checks.json",FileAccess.WRITE).store_string(JSON.stringify({"checks":checks,"failures":failures,"scope":"Exact canonical Sword/axe/Greatsword gait, fresh complete generated Twinsteel run, connected anatomy, Sword pixels/mirror/actions, DOWN axe registration, endpoints and immutable library"},"\t")+"\n")
+	FileAccess.open(proof+"body_checks.json",FileAccess.WRITE).store_string(JSON.stringify({"checks":checks,"failures":failures,"scope":"Immutable library/Sword; exact accepted Reaper gait for axe; hash-verified installed complete Greatsword and Twinsteel actors, connected running anatomy and current axe carry at declared cell sizes"},"\t")+"\n")
 	print("KING_SHARED_BODY checks=",checks," failures=",failures)
 	quit(1 if failures else 0)
-
-func _translate_cel(cel: Image,shift: Vector2i) -> Image:
-	var result := Image.create(192,128,false,Image.FORMAT_RGBA8)
-	result.blit_rect(cel,Rect2i(0,0,192,128),shift)
-	return result

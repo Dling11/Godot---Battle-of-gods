@@ -1,5 +1,7 @@
 # Stage II bramble renewal and outdoor audio
 
+Decision223 retention note: raw generation/review paths described below are historical provenance. Bulk source collections and image builders are deleted; current runtime assets and compact references/validation metadata remain. Future trials use temporary ignored staging and are cleared after publishing.
+
 Implemented 2026-10-03 under Decision168. All five world-life recommendations are approved; this is their first delivery after the accepted Stage I pilot. Current Decision171 adds IV/V renewal, campaign Rotcaller and new Dark Forest Theme music to normal I–IV. VI, the scout, reactions, exploration and Hunts remain planned. Stage II visual/mix acceptance and phone profiling remain open.
 
 ## Playable environment

@@ -1,0 +1,7 @@
+# Recorded heavy Greatsword contacts
+
+Current215 output: assets/audio/sfx/player/greatsword_heavy/. Source is the already retained **Impact** pack by Iwan qubodup Gabovitch, CC0: https://opengameart.org/content/impact . Archive/source page/original OGG and FLAC remain under ../weapon_contact_2026_10_06/; no new download or license inference.
+
+build_greatsword_heavy_audio.gd uses real recorded Metal, Stone, Wood and Meat01. Three metal/body/wood normal contacts have different offline pitches and damped metallic tails; jump uses stronger metal/stone/wood/body; floor uses quieter metal/stone/wood. Offline trim/resample/mix/fade/peak normalize to mono44100 PCM16, approximately−4dBFS. Runtime normal−6dB, finisher−4dB and floor−12dB. No synthesized tone or runtime DSP; one accepted-hit cue per cut, plus one floor cue per landing. No shared/other-family recordings change.
+
+manifest.json records processing, source archive hash, exact five runtime hashes, durations/peak/RMS and pending subjective listening review. Native weapon_finalize smoke verifies actual streams playing on SFX with correct gains/pitches, and real enemy tests verify no per-target audio multiplication. Audition: ignored tmp/review/greatsword_polish_2026_10_15/heavy-metal-audition.wav, three normals → stronger smash → quiet floor. Old build_greatsword_contact_audio.gd forwards to the current builder; old unused finisher is retired.

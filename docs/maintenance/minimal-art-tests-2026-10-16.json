@@ -1,0 +1,201 @@
+{
+  "date": "2026-10-16",
+  "decision": 223,
+  "scope": "Production art tests and native gameplay after removing raw generation sheets. Held-input rerun alone after competing native windows caused focus loss; Greatsword runtime-only test aligned with existing ready rig keys. Source-provenance/rebaking checks are intentionally retired.",
+  "tests": 16,
+  "failures": 0,
+  "results": [
+    {
+      "name": "king_sword_unified_smoke",
+      "exit": 0,
+      "seconds": 6.65,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "KING_SWORD_PRODUCTION checks=571 failures=0"
+      ],
+      "run": "source-minimal-tests"
+    },
+    {
+      "name": "king_twinsteel_walk_smoke",
+      "exit": 0,
+      "seconds": 5.55,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "TWINSTEEL_WALK checks=296 failures=0"
+      ],
+      "run": "source-minimal-tests"
+    },
+    {
+      "name": "king_twinsteel_attacks_smoke",
+      "exit": 0,
+      "seconds": 5.59,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "TWINSTEEL_ATTACKS checks=914 failures=0"
+      ],
+      "run": "source-minimal-tests"
+    },
+    {
+      "name": "king_sword_gameplay_smoke",
+      "exit": 0,
+      "seconds": 45.2,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "SWORD_GAMEPLAY checks=1233 failures=0"
+      ],
+      "run": "source-minimal-tests"
+    },
+    {
+      "name": "king_greatsword_unified_assets_smoke",
+      "exit": 0,
+      "seconds": 6.13,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "GREATSWORD_PRODUCTION_ASSETS checks=840 failures=0"
+      ],
+      "run": "source-minimal-retest"
+    },
+    {
+      "name": "king_twinsteel_gameplay_smoke",
+      "exit": 0,
+      "seconds": 33.43,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "TWINSTEEL_GAMEPLAY checks=1004 failures=0"
+      ],
+      "run": "source-minimal-tests"
+    },
+    {
+      "name": "king_greatsword_gameplay_smoke",
+      "exit": 0,
+      "seconds": 32.5,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": true,
+      "lines": [
+        "GREATSWORD_FINAL: 452 checks, 0 failures"
+      ],
+      "run": "source-minimal-tests"
+    },
+    {
+      "name": "king_axe_cardinal_smoke",
+      "exit": 0,
+      "seconds": 31.99,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": true,
+      "lines": [
+        "AXE_GAMEPLAY checks=280 failures=0"
+      ],
+      "run": "source-minimal-tests"
+    },
+    {
+      "name": "weapon_retirement_smoke",
+      "exit": 0,
+      "seconds": 3.55,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "WEAPON_RETIREMENT: 39 checks, 0 failures"
+      ],
+      "run": "source-minimal-tests"
+    },
+    {
+      "name": "king_iron_reaper_gameplay_smoke",
+      "exit": 0,
+      "seconds": 21.38,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": true,
+      "lines": [
+        "IRON_REAPER_GAMEPLAY checks=197 failures=0"
+      ],
+      "run": "source-minimal-tests"
+    },
+    {
+      "name": "weapon_finalize_smoke",
+      "exit": 0,
+      "seconds": 18.81,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Weapon finalize smoke: 301 checks, 0 failures"
+      ],
+      "run": "source-minimal-tests"
+    },
+    {
+      "name": "iron_reaper_grounding_smoke",
+      "exit": 0,
+      "seconds": 6.13,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "IRON_REAPER_GROUNDING checks=281 failures=0"
+      ],
+      "run": "source-minimal-tests"
+    },
+    {
+      "name": "king_axe_grip_smoke",
+      "exit": 0,
+      "seconds": 6.12,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "AXE_TECHNIQUE checks=1608 failures=0 samples=336"
+      ],
+      "run": "source-minimal-tests"
+    },
+    {
+      "name": "king_shared_body_smoke",
+      "exit": 0,
+      "seconds": 8.64,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "KING_SHARED_BODY checks=1289 failures=0"
+      ],
+      "run": "source-minimal-tests"
+    },
+    {
+      "name": "runtime_archive_boundary_smoke",
+      "exit": 0,
+      "seconds": 3.55,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "Runtime/archive boundary smoke test passed."
+      ],
+      "run": "source-minimal-tests"
+    },
+    {
+      "name": "player_held_attack_smoke",
+      "exit": 0,
+      "seconds": 28.47,
+      "timeout": false,
+      "script_error": false,
+      "teardown_warning": false,
+      "lines": [
+        "HELD_ATTACK checks=46 failures=0"
+      ],
+      "run": "source-minimal-held"
+    }
+  ]
+}

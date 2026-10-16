@@ -1,5 +1,7 @@
 # Stage 4 Armored Hog Content Contract
 
+Decision223 retention note: raw generation/review paths described below are historical provenance. Bulk source collections and image builders are deleted; current runtime assets and compact references/validation metadata remain. Future trials use temporary ignored staging and are cleared after publishing.
+
 ## Status
 
 Implemented and structurally verified. The approved stylized Armored Hog now joins every Stage 4 wave while the stage totals remain `6/8/10/12/14` and the live cap remains eight.

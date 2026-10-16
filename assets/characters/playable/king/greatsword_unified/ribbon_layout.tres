@@ -1,0 +1,9 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+[ext_resource type="Script" path="res://data/weapons/melee_ribbon_layout.gd" id="1"]
+[resource]
+script = ExtResource("1")
+rows = 4
+clearance_pixels = 5.0
+right = Array[Transform2D]([Transform2D(0.45,0,0,0.45,46,-4),Transform2D(0.44,0,0,0.44,42,-12),Transform2D(0.8,0,0,0.576,0,-8),Transform2D(0.5,0,0,0.5,0,0)])
+up = Array[Transform2D]([Transform2D(0,-0.45,0.45,0,-4,-46),Transform2D(0,-0.44,0.44,0,-12,-42),Transform2D(0.8,0,0,0.576,0,-8),Transform2D(0,-0.5,0.5,0,0,0)])
+down = Array[Transform2D]([Transform2D(0,0.45,-0.45,0,4,46),Transform2D(0,0.44,-0.44,0,12,42),Transform2D(0.8,0,0,0.576,0,-8),Transform2D(0,0.5,-0.5,0,0,0)])

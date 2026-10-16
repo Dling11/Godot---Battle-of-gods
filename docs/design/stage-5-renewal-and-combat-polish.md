@@ -1,5 +1,7 @@
 # Dead Forest renewal, campaign Rotcaller and combat polish
 
+Decision223 retention note: raw generation/review paths described below are historical provenance. Bulk source collections and image builders are deleted; current runtime assets and compact references/validation metadata remain. Future trials use temporary ignored staging and are cleared after publishing.
+
 2026-10-03 · Decision171. Owner approved Rotcaller beside Stage III's Rootlings, retained Husk, requested Stage IV/possibly V placement, more hordes, clearer animation/outline, different expedition music and a fix for Skill 1 crowd stutter. Loading/start/portal/spawn/control work follows Stage V.
 
 ## Implemented campaign

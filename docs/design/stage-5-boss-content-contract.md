@@ -1,5 +1,7 @@
 # Stage 5 Boss Content Contract
 
+Decision223 retention note: raw generation/review paths described below are historical provenance. Bulk source collections and image builders are deleted; current runtime assets and compact references/validation metadata remain. Future trials use temporary ignored staging and are cleared after publishing.
+
 ## Status
 
 Identity, standing/idle, walking, reaction, melee, jump, and root-prison families now drive both the F8 proof and the production Stage 5 encounter. Varkuun's display name, health-tier jump rules, entrance, portrait dialogue, named boss HUD, dedicated music, and real-recording action audio are implemented. The Stage V milestone reward remains unimplemented.

@@ -27,6 +27,6 @@ func _run() -> void:
 	lab.set_enemy_ai_enabled(false)
 	lab.spawn_selected(3)
 	lab.review_tabs.current_tab=lab.review_tabs.get_tab_count()-1
-	root.title="Battle of Gods — Twinsteel V2 / Combat Lab"
+	root.title="Battle of Gods — Twinsteel / Fresh paired-blade motion"
 	root.grab_focus()
 	print("TWINSTEEL_TRAINING_READY weapon=",lab.player.attack_component.weapon.weapon_id," bag=",lab.get_node("UI/CharacterMenu")!=null)

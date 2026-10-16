@@ -21,10 +21,11 @@ func _run() -> void:
 	root.add_child(opposite_target)
 	player.global_position = Vector2(100.0, 100.0)
 	center_target.global_position = Vector2(100.0, 118.0)
-	# This target sits inside King's greatsword 36-reach by 44-wide contact fan.
+	# This target overlaps the current starter Sword's 60px forward contact fan.
 	edge_target.global_position = Vector2(125.0, 120.0)
-	# This lane was covered by the old inherited 96-wide contact fan.
-	former_wide_edge_target.global_position = Vector2(143.0, 104.0)
+	# Outside the current 36px half-width plus the target's hurtbox radius,
+	# but still inside the retired inherited 96px-wide contact lane.
+	former_wide_edge_target.global_position = Vector2(150.0, 120.0)
 	opposite_target.global_position = Vector2(100.0, 60.0)
 	player.set_physics_process(false)
 	player._set_facing_direction(Vector2.DOWN)

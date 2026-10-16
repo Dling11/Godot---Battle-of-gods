@@ -127,7 +127,7 @@
       "sha256": "9fab2ee2e2fdc2b1468efc6c670de17c052c9e3335675c6909edd5f773b3eaf3"
     },
     {
-      "path": "assets/characters/playable/king/huge_greatsword_proof/greatsword.png",
+      "path": "assets/characters/playable/king/greatsword_unified/greatsword.png",
       "sha256": "5077162899cf254e05aff546d3973d2162094d84e386bb011ee85e5b2a9899c6"
     },
     {
@@ -271,7 +271,7 @@
       "sha256": "6df8440f25796c0bda987179201b94c700f5fc618ca498b3747a51b15c8e9b39"
     },
     {
-      "path": "assets/characters/playable/king/huge_greatsword_proof/impact.png",
+      "path": "assets/characters/playable/king/greatsword_unified/impact.png",
       "sha256": "9e97d74e5385343b4f08d7213542a088e3b8c0f67abc798a5504485fe51277bf"
     },
     {
@@ -647,7 +647,7 @@
       "sha256": "8df9360a66b70ab63774c276e57ed13b832c6d9083dd88cf9eb276ba8042a758"
     },
     {
-      "path": "assets/characters/playable/king/body_library/v1/down_run_body.png",
+      "path": "assets/characters/playable/king/body_library/baseline/down_run_body.png",
       "sha256": "6d3e612bff1c072d79f08b40f895a31ed5a9141f8c29cbcd7444f21229d264fd"
     },
     {
@@ -731,7 +731,7 @@
       "sha256": "8df9360a66b70ab63774c276e57ed13b832c6d9083dd88cf9eb276ba8042a758"
     },
     {
-      "path": "assets/characters/playable/king/body_library/v1/up_run_body.png",
+      "path": "assets/characters/playable/king/body_library/baseline/up_run_body.png",
       "sha256": "b4af8f5cd8e8419e9920b237e683754131315931bd8a81b6461589cc74a636de"
     },
     {
@@ -743,7 +743,7 @@
       "sha256": "97731d06f893135a322963fddbd3af2f656dda0df56787a00fa76f5877e83621"
     },
     {
-      "path": "assets/characters/playable/king/body_library/v1/up_ready_body.png",
+      "path": "assets/characters/playable/king/body_library/baseline/up_ready_body.png",
       "sha256": "481129bba5c5193e1c3dfb07baf40c341b75fe0e7ef2b5a66db8b36f1c909700"
     },
     {
@@ -819,7 +819,7 @@
       "sha256": "8df9360a66b70ab63774c276e57ed13b832c6d9083dd88cf9eb276ba8042a758"
     },
     {
-      "path": "assets/characters/playable/king/body_library/v1/side_run_body.png",
+      "path": "assets/characters/playable/king/body_library/baseline/side_run_body.png",
       "sha256": "42ab29cce07aeb3584265c83ea2b91cd5d35bcf97296baf05984102fa19693b2"
     },
     {
@@ -831,7 +831,7 @@
       "sha256": "c26a0f153b25df2240ec9992656db10ab795737497785ad76427bab5582f6fb3"
     },
     {
-      "path": "assets/characters/playable/king/body_library/v1/side_axe_ready_body.png",
+      "path": "assets/characters/playable/king/body_library/baseline/side_axe_ready_body.png",
       "sha256": "808c61da64d50a88a67a39b9305d13db4aa9dc570b86e6594762446a7d825cfd"
     },
     {

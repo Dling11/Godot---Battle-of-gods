@@ -1,5 +1,7 @@
 # Orren workshop interior
 
+Decision223 retention note: raw generation/review paths described below are historical provenance. Bulk source collections and image builders are deleted; current runtime assets and compact references/validation metadata remain. Future trials use temporary ignored staging and are cleared after publishing.
+
 2026-10-02. One current interior is part of normal Sanctuary under Decision165. Further rooms are deferred. See [closeout](sanctuary-closeout.md). Earlier oversized-room/comparison history is archived.
 
 Approach the workshop door and press F at the prompt. Walking alone never transfers. WASD walks, right-click routes around furniture, F inspects bench/forge/rack, and F at the south opening returns. The same Player, health, gear and services remain; no extra Orren shop or reward authority is added.

@@ -1,5 +1,7 @@
 # Player vitality, growth and bag readability
 
+Decision223 retention note: raw generation/review paths described below are historical provenance. Bulk source collections and image builders are deleted; current runtime assets and compact references/validation metadata remain. Future trials use temporary ignored staging and are cleared after publishing.
+
 2026-10-02. Owner provisionally passed Eira, described Nema as clear/accurate, and requested a Nema double-check followed by HP, level and bag improvements with generated artwork. The shared HUD/bag pass is implemented; Decision165 marks Sanctuary temporarily complete. Phone profiling and future balance remain open. King, accepted skills, workshop scale and F-required entry remain the baseline.
 
 ## Nema audit and correction

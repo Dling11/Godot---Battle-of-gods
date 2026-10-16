@@ -77,14 +77,14 @@ func _verify_sources() -> void:
 		var direction: Vector2=Vector2.RIGHT if view=="side" else (Vector2.UP if view=="up" else Vector2.DOWN)
 		var clip: Resource=profile.run_for(direction)
 		check(clip.has_valid_layout() and clip.pose_count==8,"Invalid gait layout")
-		check(clip.body_atlas.resource_path=="res://assets/characters/playable/king/shared_bodies/dual_carry_v3/"+view+"/run_body.png","Incorrect generated run selection")
+		check(clip.body_atlas.resource_path=="res://assets/characters/playable/king/twinsteel_unified/"+view+"/run_body.png","Incorrect generated run selection")
 		check(not clip.allow_rest and not clip.interpolate_weapon and not clip.interpolate_blade_angles,"Gait introduces floating interpolation")
 		for key in 8:
 			check(clip.lift_pixels[key]==0,"Added disconnected bob")
 			check(clip.primary_visible_poses[key]==0 and clip.offhand.visible_poses[key]==0,"Drawn swords receive extra rigid overlays")
-			var origin:=Vector2i(key%4*192,key/4*128)
-			var body: Image=clip.body_atlas.get_image().get_region(Rect2i(origin,Vector2i(192,128)))
-			check(clip.hand_atlas.get_image().get_region(Rect2i(origin,Vector2i(192,128))).is_invisible(),"Pasted hand fragment")
+			var origin:=Vector2i(key%4*256,key/4*256)
+			var body: Image=clip.body_atlas.get_image().get_region(Rect2i(origin,Vector2i(256,256)))
+			check(clip.hand_atlas.get_image().get_region(Rect2i(origin,Vector2i(256,256))).is_invisible(),"Pasted hand fragment")
 			for grip in [clip.primary_hands[key],clip.offhand.hands[key]]:
 				var pixel:=body.get_pixelv(Vector2i(grip))
 				check(pixel.a>.9 and pixel.r>.18 and pixel.r>pixel.g*1.3 and pixel.g>pixel.b*1.2,"Registered palm misses connected leather glove")

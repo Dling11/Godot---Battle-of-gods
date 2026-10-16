@@ -1,5 +1,25 @@
 # Decisions Index
 
+- [224 — Sword compact side-running guard](docs/decisions/224-sword-compact-side-running-guard.md): fresh complete eight-frame horizontal run, steady close-body grip and unchanged unit-size steel; all other directions/actions/gameplay remain exact. Owner review pending.
+
+- [223 — Keep only compact art support](docs/decisions/223-keep-only-compact-art-support.md): delete all bulk raw generation sheets/builders; preserve installed artwork, tiny references/metadata and licensed originals; stage future trials temporarily.
+
+- [222 — Close current weapons and delete obsolete content](docs/decisions/222-close-current-weapons-and-delete-obsolete-content.md): preserve the five current families, canonicalize current paths and remove retired art/build routes; stable save IDs remain.
+
+- [221 — Sword swing weight and fuller white strokes](docs/decisions/221-sword-swing-weight-and-white-strokes.md): fresh complete attack poses, actual UP crossing cuts and richer contact-fitted white art; preserve carry/steel/idle and all gameplay clocks/rules. Owner motion review pending.
+
+- [220 — Default Sword in the current King style](docs/decisions/220-default-sword-complete-family.md): complete cardinal running/actions/inspection idle, fixed steel/icon and36 full strokes; honest60/68px reach, original damage/1.91s clocks. Owner review pending.
+
+- [219 — Twinsteel scythe-scale anatomy and continuous paired cuts](docs/decisions/219-twinsteel-scythe-scale-and-continuous-cuts.md): replace218 shrink/wobble/reverse recovery; full actors, broader real AoE, forward combos and60 white frames. Owner-accepted2026-10-16.
+
+- [218 — Twinsteel complete family refresh](docs/decisions/218-twinsteel-complete-family-refresh.md): owner requests new slim complete running/actions/held idle and weapon artwork; fixed-size pair, full white strokes, unchanged gameplay. Superseded by219 after owner rejects scale/motion.
+
+- [217 — Huge Greatsword shoulder rest](docs/decisions/217-greatsword-huge-shoulder-rest.md): owner selects B; complete all-direction lift/rest poses, unit-size canonical blade, preserved ready/run/attacks and neutral-key retrieval. Supersedes216's rejected idle; owner-approved2026-10-16.
+
+- [216 — Grounded Greatsword idle, rear run, hair and spin](docs/decisions/216-greatsword-grounded-idle-rear-run-and-spin.md): complete grounded blade-support idle, true rear running, scoped hair material, sixteen blade-following white spin drawings; owner review pending.
+
+- [215 — Greatsword dedicated running and complete effects](docs/decisions/215-greatsword-running-effects-and-metal.md): own complete two-hand run, source-aware effect extraction, compact floor impact and recorded heavy metal; native owner review pending.
+
 - [213 — Axe body scale and ordinary jump](docs/decisions/213-axe-body-scale-and-ordinary-jump.md): retain accepted canonical axe/carry; regenerate complete running-sized bodies, remove head reversal and correct blade-led full turn.
 
 - [212 — One canonical axe and back carry](docs/decisions/212-one-canonical-axe-and-back-carry.md): owner rejects211; one fixed-size single-bit axe, complete guide bodies, exact running BODY and explicit back stow.
@@ -274,3 +294,6 @@ Record future decisions as individual files under `docs/decisions/` using `NNN-s
 | 211 | [Axe-specific complete techniques](docs/decisions/211-axe-specific-complete-techniques.md) | Complete actor/weapon attacks, hidden extra rigs, unchanged carry and combat |
 | 212 | [One canonical axe and back carry](docs/decisions/212-one-canonical-axe-and-back-carry.md) | Fixed weapon geometry, source grips, accepted running BODY, correct back depth |
 | 213 | [Axe body scale and ordinary jump](docs/decisions/213-axe-body-scale-and-ordinary-jump.md) | Full-body calibration, normal overhead landing, continuous blade-led spin, accepted carry exact |
+| 214 | [Complete heavy Greatsword motion](docs/decisions/214-greatsword-complete-heavy-motion.md) | New complete actors/proud idle, fixed huge steel, centered rear/front landings, eight-frame effects; owner review pending |
+
+| 215 | [Greatsword dedicated running, complete effects and recorded metal](docs/decisions/215-greatsword-running-effects-and-metal.md) | Own complete two-hand run, source-aware strokes, compact floor impact, recorded metal; native owner review pending |

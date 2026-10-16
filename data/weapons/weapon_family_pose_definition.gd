@@ -59,6 +59,8 @@ const OffhandDefinition = preload("res://data/weapons/offhand_pose_definition.gd
 @export var rest_transition_seconds := 0.48
 @export var rest_loop_window := Vector2(-1,-1)
 @export var rest_loop_seconds := 3.0
+## Optional neutral rest key; omit slow glance cels when retrieving to attack.
+@export_range(-1,63) var retrieval_start_pose := -1
 @export var retrieval_end_pose := 3
 ## Optional provenance regions for native identity checks; no per-frame use.
 @export var identity_regions: Array[Rect2] = []
@@ -74,6 +76,7 @@ func has_valid_layout() -> bool:
 			if flag>1: return false
 	if allow_rest:
 		if rest_start_pose<0 or rest_start_pose>=pose_count or retrieval_end_pose<0 or retrieval_end_pose>=pose_count or not is_finite(rest_transition_seconds) or rest_transition_seconds<=0: return false
+		if retrieval_start_pose < -1 or retrieval_start_pose>=pose_count or (retrieval_start_pose>=0 and retrieval_start_pose<=retrieval_end_pose): return false
 		if rest_transition_end_pose < -1 or rest_transition_end_pose >= pose_count or (rest_transition_end_pose>=0 and rest_transition_end_pose<rest_start_pose): return false
 		if rest_loop_window!=Vector2(-1,-1):
 			if not rest_loop_window.is_finite() or rest_loop_window.x<0 or rest_loop_window.y<rest_loop_window.x or rest_loop_window.y>=pose_count or rest_loop_window.x!=floorf(rest_loop_window.x) or rest_loop_window.y!=floorf(rest_loop_window.y) or not is_finite(rest_loop_seconds) or rest_loop_seconds<=0: return false

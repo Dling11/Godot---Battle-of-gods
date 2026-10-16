@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="WeaponFamilyPresentationDefinition" load_steps=13 format=3]
+[ext_resource type="Script" path="res://data/weapons/weapon_family_presentation_definition.gd" id="1"]
+[ext_resource type="Resource" path="res://assets/characters/playable/king/sword_unified/side/cut.tres" id="2"]
+[ext_resource type="Resource" path="res://assets/characters/playable/king/sword_unified/side/idle.tres" id="3"]
+[ext_resource type="Resource" path="res://assets/characters/playable/king/sword_unified/side/run.tres" id="4"]
+[ext_resource type="Resource" path="res://assets/characters/playable/king/sword_unified/up/cut.tres" id="5"]
+[ext_resource type="Resource" path="res://assets/characters/playable/king/sword_unified/up/idle.tres" id="6"]
+[ext_resource type="Resource" path="res://assets/characters/playable/king/sword_unified/up/run.tres" id="7"]
+[ext_resource type="Resource" path="res://assets/characters/playable/king/sword_unified/down/cut.tres" id="8"]
+[ext_resource type="Resource" path="res://assets/characters/playable/king/sword_unified/down/idle.tres" id="9"]
+[ext_resource type="Resource" path="res://assets/characters/playable/king/sword_unified/down/run.tres" id="10"]
+[ext_resource type="Texture2D" path="res://assets/characters/playable/king/sword_unified/slash.png" id="11"]
+[ext_resource type="PackedScene" path="res://gameplay/presentation/sword_swing.tscn" id="12"]
+[resource]
+script = ExtResource("1")
+attack_poses = ExtResource("2")
+idle_poses = ExtResource("3")
+running_poses = ExtResource("4")
+upward_attack_poses = ExtResource("5")
+upward_idle_poses = ExtResource("6")
+upward_running_poses = ExtResource("7")
+downward_attack_poses = ExtResource("8")
+downward_idle_poses = ExtResource("9")
+downward_running_poses = ExtResource("10")
+swing_atlas = ExtResource("11")
+swing_scene = ExtResource("12")
+step_distances = PackedFloat32Array(2,-1,3)
+swing_rows = 3
+swing_origins = PackedVector2Array(128,128,128,128,128,128)
+sound_indices = PackedInt32Array(0,1,2)
+sound_pitches = PackedFloat32Array(1.12,1.15,1.0)
+swing_volume_db = -13.0

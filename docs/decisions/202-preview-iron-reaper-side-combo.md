@@ -14,4 +14,4 @@ Alternatives: generating all cardinal art before approval risks repeating reject
 
 Before promotion, obtain owner side-motion judgment, then author UP/DOWN attacks and locomotion/idle against the same complete baseline. Genuine blade size/depth consistency, contact shapes, per-step damage/control/recovery, hit audio, Bag/icon art and earned acquisition remain future implementation work. Passing extraction/gutter/hash/control checks does not certify those systems or owner approval.
 
-[Design and launch](../design/king-iron-reaper-side-preview.md).
+[Design and launch](../design/king-iron-reaper.md).

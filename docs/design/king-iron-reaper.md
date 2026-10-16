@@ -1,6 +1,6 @@
 # Iron Reaper — playable returning scythe
 
-2026-10-14. Decision206 preserves owner-approved running in every direction and regenerates all attacks/idle to match that appearance. The new idle makes one small upward toss/catch, then settles. The owner accepts this appearance. Decision207 improves swing momentum and recoil; Decision208 fixes attack-circle drift and clipped white strokes, accepted by the owner. Decision209 now quickens cadence, adds24 new white effect frames and dedicated scythe sound; quicker motion/live mix review remains open.
+2026-10-14. Decision206 preserves owner-approved running in every direction and regenerates all attacks/idle to match that appearance. The new idle makes one small upward toss/catch, then settles. The owner accepts this appearance. Decision207 improves swing momentum and recoil; Decision208 fixes attack-circle drift and clipped white strokes, accepted by the owner. Decision209 now quickens cadence, adds24 new white effect frames and dedicated scythe sound; the owner accepts the quicker pass and quiet spin layer.
 
 ## Play
 
@@ -28,7 +28,7 @@ Decision208 registers each complete attack stance to native(128,158) using suppo
 
 Idle flicks the weapon upward, waits with an open palm, catches and returns to quiet carry. Its single0.4s cosmetic arc rises22 world pixels. The short physics tween runs after whole-pose updates and ends on catch/interruption/teardown. There is no gameplay query or damage.
 
-Rebuild: Godot --headless --path . --script res://tools/build_king_iron_reaper.gd, then editor import. The unified baker also packs the current24-frame FX source. Rebuild the seven audio clips with tools/build_iron_reaper_audio.gd. The unified baker is current; the previous returning entry delegates forward. Sources, exact prompts, registration and protected hashes: art_source/generated/characters/king/iron_reaper_style_unified_2026_10_14/. Approved running/canonical steel/flight-FX provenance stays under iron_reaper_returning_2026_10_14. Old complete/oversized/side-preview sources remain historical provenance. Current FX source/exact prompt/packing/authorized guard changes: art_source/generated/characters/king/iron_reaper_cadence_2026_10_14/. CC0 sound source and manifest: art_source/audio/iron_reaper_2026_10_14/. Source art/audio stays excluded from game import/export.
+Decision223 removes bulk generation inputs and image builders. Current runtime art, small approved references, production-assets.json and compact numeric motion/grounding audits are authoritative. Future authoring uses temporary ignored staging; current launcher/gameplay/frame/grip checks remain. See CONTINUE_WEAPONS.md.
 
 ## Evidence and remaining work
 

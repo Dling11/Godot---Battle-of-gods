@@ -1,0 +1,41 @@
+[gd_resource type="Resource" load_steps=7 format=3]
+[ext_resource type="Script" path="res://data/weapons/weapon_family_pose_definition.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/characters/playable/king/twinsteel_unified/down/run_body.png" id="2"]
+[ext_resource type="Texture2D" path="res://assets/characters/playable/king/twinsteel_unified/run_hands.png" id="3"]
+[ext_resource type="Texture2D" path="res://assets/characters/playable/king/twinsteel_unified/twinsteel.png" id="4"]
+[ext_resource type="Script" path="res://data/weapons/offhand_pose_definition.gd" id="5"]
+[sub_resource type="Resource" id="offhand"]
+script = ExtResource("5")
+texture = ExtResource("4")
+grip = Vector2(8,56)
+tip = Vector2(8,0)
+handle_axis = Vector2(0,1)
+hands = PackedVector2Array(140, 130, 141, 133, 139, 133, 141, 133, 139, 130, 114, 132, 114, 131, 116, 130)
+axes = PackedVector2Array(136.04, 134.5, 137.04, 137.5, 135.04, 137.5, 137.04, 137.5, 135.04, 134.5, 117.96, 136.5, 117.96, 135.5, 119.96, 134.5)
+behind_body = PackedByteArray(1, 1, 1, 1, 1, 1, 1, 1)
+visible_poses = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0)
+[resource]
+script = ExtResource("1")
+body_atlas = ExtResource("2")
+hand_atlas = ExtResource("3")
+weapon_texture = ExtResource("4")
+offhand = SubResource("offhand")
+cell_size = Vector2i(256,256)
+columns = 4
+pose_count = 8
+pose_order = PackedInt32Array(0, 1, 2, 3, 4, 5, 6, 7)
+primary_hands = PackedVector2Array(116, 135, 115, 132, 115, 132, 114, 129, 115, 124, 140, 130, 140, 130, 141, 129)
+secondary_hands = PackedVector2Array(119.96, 139.5, 118.96, 136.5, 118.96, 136.5, 117.96, 133.5, 118.96, 128.5, 136.04, 134.5, 136.04, 134.5, 137.04, 133.5)
+weapon_primary_grip = Vector2(8,56)
+weapon_tip = Vector2(8,0)
+weapon_handle_axis = Vector2(0,1)
+mirror_cutting_edge = false
+lift_pixels = PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0)
+weapon_behind_body = PackedByteArray(1, 1, 1, 1, 1, 1, 1, 1)
+primary_visible_poses = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0)
+single_hand_poses = PackedByteArray(1, 1, 1, 1, 1, 1, 1, 1)
+stowed_poses = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0)
+released_poses = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0)
+ground_clipped_poses = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0)
+phase_windows = PackedVector2Array(0,3,4,5,6,7)
+allow_rest = false

@@ -1,24 +1,25 @@
 # Active Asset Catalog
 
-Updated 2026-10-14. This catalog names current owners. The production graph and Godot resource checks determine actual dependencies; folder/version names do not establish whether an asset is obsolete. Historical models/source sheets/recordings and all archives were deleted by owner request.
+Updated2026-10-16. Decision223 retains final playable art plus compact important support. art_source/generated and image builders are deleted; raw trials use temporary ignored staging in future work.
 
 | Content | Current owner |
-|---|---|
-| King signature Sword | entities/player/player.tscn; shared_bodies/sword/frames.tres with retained action rasters |
-| Iron Beard | Current21 iron_beard_unified clips;212's canonical steel/icon/carry/idle remain exact.213's69 complete attack actors restore running-compatible proportions, normal overhead landing and continuous eight-heading turn. Current attack source/prompts/recipe: iron_beard_motion_2026_10_15; canonical source folder supplies unchanged weapon/idle.40 white frames/audio unchanged |
-| Royal Greatsword | data/weapons/families/royal_greatsword_v2/presentation.tres; accepted referenced carry/combo/FX dependencies |
-| Twinsteel | data/weapons/families/twinsteel_v2/presentation.tres; shared_bodies/dual_carry_v3 and canonical blade/FX |
-| Iron Reaper playable family | assets/characters/playable/king/iron_reaper:18 current complete body clips, fixed128×192 rigid steel, two empty overlays,24 main white ribbons,8 spin arcs,8 ground sparks and Bag icon. Current120-pose attack/idle sources, exact prompts, grip recipe and motion-authoring.json under iron_reaper_style_unified_2026_10_14; Decision207 translates complete approved poses without changing anatomy/palette and authors full shaft arcs/exposure. Approved running/canonical steel/flight-FX provenance remains under iron_reaper_returning_2026_10_14. Old action sources are historical only. Decision208 adds support-root landmarks and cached ribbon_layout.tres from ribbon-layout.json; Decision209 replaces the white atlas with24 generated frames from iron_reaper_cadence_2026_10_14 and refits all rows/views; complete actor geometry remains unchanged. Follow-up glove-continuity.json remaps96 missing-glove color pixels from a generated brown material reference under iron_reaper_gloves_2026_10_14. Dedicated seven-clip scythe audio lives under assets/audio/sfx/player/iron_reaper with CC0 source/manifest under art_source/audio/iron_reaper_2026_10_14. Source art excluded from game import/export; old runtime spin clips retired (Decision206) |
-| Frozen King body reference | assets/characters/playable/king/body_library/v1/contract.json |
-| King techniques | data/abilities/king and gameplay/abilities/king; assets/vfx/abilities/king |
-| Enemy families | entities/enemies and their referenced assets/characters/enemies, VFX/audio/materials |
-| Sanctuary NPCs/layout | levels/sanctuary/town; renewed NPC resources and referenced environment props |
-| StagesI–VI | levels and data/environment/layouts; current referenced forest/dead-forest/StageVI atlases |
-| Gates/chests | gameplay/encounters, gameplay/loot and current referenced portal/chest assets |
-| Title/loading/HUD/Bag | ui and assets/ui; randomized campfire trio, quiet transition, compact portrait/centered paper doll |
-| Sound and attribution | assets/audio plus preserved license files; original CC0 contact pack under art_source/audio |
-| Current regeneration | Complete Twinsteel running/attack source sheets and prompts, hash recipes/registration; current walk/attack/slash builders; immutable body_library/v1 supplies visual guidance only. Attack pass uses20 selected source sheets,15 clips and one white-slash atlas; unused vertical Twinsteel slash duplicates are retired |
+| --- | --- |
+| King Sword | sword_unified;15 clips,20×80 steel,36 white frames; Decision221 attacks/224 side run |
+| Iron Beard | iron_beard_unified;21 clips, canonical thin steel/back carry,40 white frames; Decision213 |
+| Royal Greatsword | greatsword_unified;18 clips,30×140 steel, selected shoulder rest, full spin/landing effects; Decision217 |
+| Twinsteel | twinsteel_unified;21 clips,16×68 pair/Bag icon,60 white frames; Decision219 |
+| Iron Reaper | iron_reaper;18 clips,128×192 steel, throw/orbit/spark/catch effects, dedicated audio; Decisions206–209 |
+| Frozen King references | assets/characters/playable/king/body_library/baseline; ten immutable complete body atlases |
+| King techniques | data/abilities/king and gameplay/abilities/king with referenced VFX/audio; legacy Sword/Spellward art remains live |
+| NPCs/Sanctuary | levels/sanctuary/town, renewed NPC resources and referenced environment art |
+| Enemies/stagesI–VI | entities/enemies, environment, levels and data/environment/layouts |
+| Gates/chests | gameplay/encounters and gameplay/loot with current referenced assets |
+| Title/loading/HUD/Bag | ui and assets/ui; campfire trio, quiet transition, compact portrait and centered paper doll |
+| Compact support | art_source/production-assets.json; small King reference images and axe-motion.json/reaper-grounding.json |
+| Licensed audio | assets/audio plus attribution and retained licensed originals under art_source/audio |
 
-Runtime raster density/palette/origins/import settings remain. Frozen complete body references are immutable; reviewed motion variants use separate resources. No new frame is authored or visually approved by cleanup. The pre-cleanup production hash manifest is docs/maintenance/active-assets-2026-10-13.json.
+Weapon artwork paths are under assets/characters/playable/king/. Every installed runtime raster/audio file remains unchanged by source removal. Frame/resource SHA checks and native gameplay preserve current presentation. Current source/size/test evidence: docs/maintenance/repository-cleanup.md. Current review routes: CONTINUE_WEAPONS.md.
 
-Keep copyrighted/CC0 attribution/license text with retained content. Current test captures belong in ignored tmp/review/ and should not be committed. A compact playable source ZIP excludes generation sources, tests, docs/history/caches but retains the runtime editor-backdrop scene dependency.
+Retain pixel density, palette, origins, complete anatomy and import settings. Do not transplant reference anatomy or silently update accepted hashes to hide drift. Publish approved assets from temporary staging and clear trials; do not retain permanent generated/archive collections. Runtime dependencies include tools/editor backdrops. Captures, exports, caches and raw generation trials stay outside Git/distribution.
+
+Decision224 changes only Sword horizontal run atlas/grips; prompt/calibration audit is sword-side-run.json under compact King references. Current raw authoring sheets stay temporary; owner review is pending.

@@ -1,0 +1,36 @@
+[gd_resource type="Resource" load_steps=5 format=3]
+[ext_resource type="Script" path="res://data/weapons/weapon_family_pose_definition.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/characters/playable/king/sword_unified/side/idle_body.png" id="2"]
+[ext_resource type="Texture2D" path="res://assets/characters/playable/king/sword_unified/action_hands.png" id="3"]
+[ext_resource type="Texture2D" path="res://assets/characters/playable/king/sword_unified/sword.png" id="4"]
+[resource]
+script = ExtResource("1")
+body_atlas = ExtResource("2")
+hand_atlas = ExtResource("3")
+weapon_texture = ExtResource("4")
+cell_size = Vector2i(256,256)
+columns = 4
+pose_count = 16
+pose_order = PackedInt32Array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15)
+primary_hands = PackedVector2Array(141, 136, 141, 136, 141, 136, 141, 136, 141, 136, 141, 130, 144, 121, 142, 122, 141, 122, 147, 116, 144, 133, 144, 133, 144, 132, 143, 134, 143, 133, 144, 133)
+secondary_hands = PackedVector2Array(135.36, 138.046, 135.36, 138.046, 135.36, 138.046, 135.36, 138.046, 135.375, 138.089, 135.633, 132.683, 139.438, 124.897, 137.511, 125.981, 135.923, 125.198, 143.102, 120.561, 138.117, 134.177, 138.117, 134.177, 138.133, 133.257, 137.224, 135.624, 137.12, 134.194, 138.117, 134.177)
+weapon_primary_grip = Vector2(10,66)
+weapon_tip = Vector2(10,0)
+weapon_handle_axis = Vector2(0,1)
+mirror_cutting_edge = false
+lift_pixels = PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+weapon_behind_body = PackedByteArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
+primary_visible_poses = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+single_hand_poses = PackedByteArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
+stowed_poses = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+released_poses = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+ground_clipped_poses = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+phase_windows = PackedVector2Array(0,3,4,7,8,15)
+allow_rest = true
+rest_start_pose = 4
+rest_transition_end_pose = 10
+rest_transition_seconds = 1.0
+rest_loop_window = Vector2(10,15)
+rest_loop_seconds = 6.6
+retrieval_start_pose = 10
+retrieval_end_pose = 3

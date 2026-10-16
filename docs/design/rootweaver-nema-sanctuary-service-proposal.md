@@ -1,5 +1,7 @@
 # Rootweaver Nema Sanctuary Service Proposal
 
+Decision223 retention note: raw generation/review paths described below are historical provenance. Bulk source collections and image builders are deleted; current runtime assets and compact references/validation metadata remain. Future trials use temporary ignored staging and are cleared after publishing.
+
 - **Status:** Owner-approved and implemented through the atomic Segment 5 service; Decisions 071 and 120 route outputs through character-owned equipment and validated crafting
 - **Prepared:** 2026-07-29
 - **Owning production segment:** Forest Segment 4

@@ -1,5 +1,7 @@
 # Sanctuary courtyards and ambient life
 
+Decision223 retention note: raw generation/review paths described below are historical provenance. Bulk source collections and image builders are deleted; current runtime assets and compact references/validation metadata remain. Future trials use temporary ignored staging and are cleared after publishing.
+
 2026-10-02. Normal-town baseline under Decision165; this pass is temporarily complete. See [closeout](sanctuary-closeout.md). Previous courier/house comparison history is preserved in the recovery archive.
 
 Nema/Umi use eight-pose work atlases and matching portraits on their original DialogueNpc bodies. Shared service_work_animation.gd holds attention for greetings/dialogue, resumes work on close and plays Nema's existing forge strike at frame5. Crafting/exchange authority remains unchanged.

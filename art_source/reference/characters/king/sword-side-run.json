@@ -1,0 +1,297 @@
+{
+  "decision": 224,
+  "mode": "builtin_imagegen_complete_side_running_poses",
+  "runtime": {
+    "atlas": "assets/characters/playable/king/sword_unified/side/run_body.png",
+    "resource": "assets/characters/playable/king/sword_unified/side/run.tres",
+    "atlas_sha256": "74e7bd43331edc62d8cfbddb37463a1c8a378f74b8a745756e4eb79f8ccc552f",
+    "resource_sha256": "2514e80d42bf78111da68944ea36349c61a8fea11f63dceebf1965dd29347153"
+  },
+  "carry": "Compact waist guard with a steady 10-degree forward/up blade and natural accepted full-body running.",
+  "cell": [
+    256,
+    256
+  ],
+  "crown": 99,
+  "scale": 0.19,
+  "weapon": {
+    "path": "assets/characters/playable/king/sword_unified/sword.png",
+    "native_size": [
+      20,
+      80
+    ],
+    "grip": [
+      10,
+      66
+    ],
+    "tip": [
+      10,
+      0
+    ],
+    "scale": 1,
+    "axis": [
+      0.984807753012208,
+      -0.17364817766693033
+    ]
+  },
+  "palette": "Nearest accepted existing side-run colors; existing hair material only for dark crown pixels.",
+  "frames": [
+    {
+      "key": 0,
+      "palm": [
+        124,
+        129
+      ],
+      "secondary": [
+        118.091,
+        130.042
+      ],
+      "crown": 99,
+      "body_bounds": [
+        97,
+        100,
+        44,
+        57
+      ],
+      "body_pixels": 1050,
+      "palm_color": [
+        139,
+        65,
+        16,
+        255
+      ],
+      "body_sha256": "d9a7c11f607f5a3c687ad7db540603b5b62e4e59986e30626dbc9fb1f200dc1a"
+    },
+    {
+      "key": 1,
+      "palm": [
+        123,
+        127
+      ],
+      "secondary": [
+        117.091,
+        128.042
+      ],
+      "crown": 99,
+      "body_bounds": [
+        98,
+        100,
+        40,
+        54
+      ],
+      "body_pixels": 947,
+      "palm_color": [
+        164,
+        82,
+        32,
+        255
+      ],
+      "body_sha256": "578ff3e2dc839484ff4aea099769ab1d463dc671a83dbc1030b17e4bb51c4ffd"
+    },
+    {
+      "key": 2,
+      "palm": [
+        125,
+        128
+      ],
+      "secondary": [
+        119.091,
+        129.042
+      ],
+      "crown": 99,
+      "body_bounds": [
+        100,
+        99,
+        40,
+        57
+      ],
+      "body_pixels": 986,
+      "palm_color": [
+        164,
+        82,
+        32,
+        255
+      ],
+      "body_sha256": "3b0ac6c4827bcc395de93be24e4daef985f1f8a1646b8d7a5b4ca8cf71c3eaae"
+    },
+    {
+      "key": 3,
+      "palm": [
+        125,
+        128
+      ],
+      "secondary": [
+        119.091,
+        129.042
+      ],
+      "crown": 99,
+      "body_bounds": [
+        96,
+        100,
+        48,
+        56
+      ],
+      "body_pixels": 1034,
+      "palm_color": [
+        148,
+        74,
+        24,
+        255
+      ],
+      "body_sha256": "4f026d2aa01a1dc4eb791e0703a813fc8467d0a37bd0463e499585512e91fa35"
+    },
+    {
+      "key": 4,
+      "palm": [
+        124,
+        128
+      ],
+      "secondary": [
+        118.091,
+        129.042
+      ],
+      "crown": 99,
+      "body_bounds": [
+        98,
+        99,
+        47,
+        59
+      ],
+      "body_pixels": 1154,
+      "palm_color": [
+        164,
+        82,
+        32,
+        255
+      ],
+      "body_sha256": "d88471ce6114619167db77aca9bac41c7328131fa38772908337284aa5c8a4ff"
+    },
+    {
+      "key": 5,
+      "palm": [
+        124,
+        129
+      ],
+      "secondary": [
+        118.091,
+        130.042
+      ],
+      "crown": 99,
+      "body_bounds": [
+        100,
+        99,
+        39,
+        59
+      ],
+      "body_pixels": 1005,
+      "palm_color": [
+        148,
+        74,
+        24,
+        255
+      ],
+      "body_sha256": "cd5fc257c77942fff550e3dabbfe7bd5df22b3bc9176e9491ec92626b6558811"
+    },
+    {
+      "key": 6,
+      "palm": [
+        125,
+        128
+      ],
+      "secondary": [
+        119.091,
+        129.042
+      ],
+      "crown": 99,
+      "body_bounds": [
+        98,
+        99,
+        41,
+        59
+      ],
+      "body_pixels": 1020,
+      "palm_color": [
+        164,
+        82,
+        32,
+        255
+      ],
+      "body_sha256": "70c6ec4a7c1bd0c27a6469b9a99d86489c6b9ba19fe51be17305e0942438f28a"
+    },
+    {
+      "key": 7,
+      "palm": [
+        125,
+        128
+      ],
+      "secondary": [
+        119.091,
+        129.042
+      ],
+      "crown": 99,
+      "body_bounds": [
+        98,
+        99,
+        46,
+        58
+      ],
+      "body_pixels": 1093,
+      "palm_color": [
+        164,
+        90,
+        32,
+        255
+      ],
+      "body_sha256": "7729d131ae1ecccea4782d196f40a65c327a68e66ad2a5fee0e73ab949ef3bf3"
+    }
+  ],
+  "prompts": [
+    "Use case: game sprite sheet, complete connected character animation. Input image is a STYLE AND IDENTITY REFERENCE only, showing the currently installed King at nearest-neighbor enlargement. Generate a NEW complete 8-frame RIGHT-FACING RUN CYCLE, not a pasted head/body edit. Preserve the same lean small King, head-to-body ratio, warm near-black spiky hair, red scarf trailing LEFT, dark charcoal tunic, silver trim/belt, warm brown gloves and boots, crisp dark pixel outlines and shaded pixel-art RPG finish. One silver straight longsword, same silhouette and relative length as reference (blade from guard to tip about 1.1 times crown-to-heel height). Change the carry: sword hand CLOSE to torso at lower chest/waist in a compact bent-elbow combat guard. Blade points forward RIGHT and gently upward about 20 degrees in EVERY frame. Firm connected closed brown glove around the hilt. Small relaxed shoulder/body bob, controlled stable wrist; do NOT pump the weapon arm forward/back like a sprinting empty hand, do NOT sweep the sword up/down or across the body. The free arm counter-swings modestly, scarf responds softly. Legs do a readable natural 8-phase running cycle: right-foot forward contact, compression, passing, toe-off, left-foot forward contact, compression, passing, toe-off. Equal leg/boot lengths, feet separate and readable. Stable connected neck/chest/waist. No anatomical fragments, no oversized head, no fat body, no outline loss, no facing change, no deformed weapon, no slash effects. Sheet output 1536x1024, FOUR EQUAL COLUMNS by TWO EQUAL ROWS, eight isolated full actors in strict row-major playback order. All actors have exactly matching anatomy scale and sword length. Each 384x512 cell contains a complete actor plus entire sword with at least 20px clear margins. Keep each body about 170px crown-to-heel so its long forward sword fits fully inside its cell; shoulder/crown registration consistent across all eight cells. Body is left of cell center to provide room for forward blade. No cropped tips, hair or boots, no cast shadows, no labels, no grid, no text. GENUINE TRANSPARENT BACKGROUND. This is final game animation art; prioritize coherent running, firm grip, readable blade and faithful reference identity.",
+    "Use case: precise-object-edit for a game sprite-sheet authoring intermediate. Edit the provided eight-frame transparent King running sheet. Preserve all eight COMPLETE character poses exactly: same connected face/head/neck/body/arms/hands/legs/boots, same hair/scarf, same pixel details/colors, same positions, same scale, same eight distinct strides, same 4-column by 2-row grid. CHANGE ONLY THE WEAPON: remove every silver sword, crossguard, pommel and hilt completely, leaving each original closed brown gloved fist and the surrounding chest intact. At the center of the gripping brown fist draw a tiny saturated MAGENTA dot, and from that dot draw a thin straight saturated MAGENTA direction rod about 120 pixels long aimed FORWARD RIGHT and UP about 20 degrees. At the forward end of the rod add a tiny saturated CYAN endpoint dot. These are registration marks for compositing the game's existing fixed-size blade. The fist must stay closed and anatomically connected to the forearm. The other brown hand stays unchanged. No residual metallic blade pieces, no extra hands, no detached body patches, no labels/text/grid. Preserve the ORIGINAL alpha/transparency of complete body pixels; remove ONLY the faint red/orange background bloom/haze to leave genuinely fully transparent empty space. Final image remains exactly 1536x1024. Do not enlarge or redraw the character or change the running motion. Crisp pixel RPG shading, not vector art.",
+    "Precise edit of this eight-frame game sprite-sheet intermediate. Remove ALL saturated magenta rods/dots and cyan dots, restoring the small brown glove underneath each origin dot as a closed fist. Do NOT add a weapon: each character is deliberately holding an imaginary hilt with one closed fist in its existing compact guard so the engine can place its actual sword. Preserve every complete character pose, exact body proportions, head/neck, face, hair, gloves, connected limbs, boots, clothes, scarf, colors and shading. Preserve EXACT pixel locations and 1536x1024 four-column/two-row layout of all eight actors. Change only registration marks and the tiny covered glove pixels. Every character must remain complete and connected. Remove any remaining red/orange/purple glow in the empty area; empty background alpha must be zero, no floor, haze or shadow. No labels, no borders, no grid, no extra sprites, no silver weapon remnants. Match the existing pixel RPG shading and crisp dark outlines. Actual transparent background."
+  ],
+  "retention": "Only installed atlas, resource and this small audit belong to the project source. Raw staging under ignored tmp/sword_side_guard_2026_10_16 is not a dependency; automatic approval review rejected its PNG deletion with blocked by policy, so those temporary files remain outside Git.",
+  "verification": {
+    "date": "2026-10-16",
+    "status": "passed",
+    "side_run_checks": 64,
+    "sword_art_checks": 571,
+    "native_gameplay_checks": 1233,
+    "failures": 0,
+    "prior_production_files_preserved": 651,
+    "intentional_production_file_changes": 2,
+    "complete_body_poses_preserved": 8,
+    "saves_unchanged": true,
+    "native_preview_frames": 1
+  },
+  "owner_visual_approved": false,
+  "hilt_depth": {
+    "reason": "Owner identifies pommel-end grip as unrealistic; move the sword down/back into the existing closed glove.",
+    "source_grasp": [
+      10,
+      66
+    ],
+    "previous_source_grasp": [
+      10,
+      70
+    ],
+    "foreground_source_rows": [
+      55,
+      79
+    ],
+    "closed_glove_occlusion": {
+      "half_width": 3,
+      "half_height": 3,
+      "material": "Existing same-pose warm brown leather"
+    },
+    "body_pose_changes": 0,
+    "canonical_weapon_changes": 0,
+    "guard_pixels_per_frame": 55,
+    "pommel_pixels_per_frame": 6,
+    "exposed_rear_handle_pixels_per_frame": 8,
+    "blade_angle_degrees": -10,
+    "method": "Deterministic canonical steel composition: middle of the leather grip at the real closed glove, four source pixels back from the rejected pommel grasp, five degrees lower. No anatomical redraw or transplant."
+  },
+  "owner_motion_accepted": true,
+  "owner_grip_review_pending": true
+}

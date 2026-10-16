@@ -1,17 +1,20 @@
-[gd_resource type="Resource" script_class="WeaponDefinition" load_steps=6 format=3]
+[gd_resource type="Resource" script_class="WeaponDefinition" load_steps=7 format=3]
 
 [ext_resource type="Script" path="res://data/weapons/weapon_definition.gd" id="1_script"]
 [ext_resource type="Resource" path="res://data/weapons/attack_styles/king_sword_form.tres" id="2_style"]
-[ext_resource type="Shape2D" path="res://data/weapons/hit_shapes/king_greatsword_cleave.tres" id="3_shape"]
+[ext_resource type="Shape2D" path="res://data/weapons/hit_shapes/king_sword_unified_fan.tres" id="3_shape"]
 
-[ext_resource type="Resource" path="res://data/weapons/attack_styles/king_greatsword_chain.tres" id="4_combo"]
+[ext_resource type="Resource" path="res://data/weapons/families/sword/combo.tres" id="4_combo"]
 [ext_resource type="Resource" path="res://data/weapons/audio/sword_contact.tres" id="5_audio"]
+[ext_resource type="Resource" path="res://data/weapons/families/sword/presentation.tres" id="6_family"]
 
 [resource]
 script = ExtResource("1_script")
 weapon_id = &"weapon_king_signature_sword"
 display_name = "King's Sword"
 uses_integrated_visual = true
+family_presentation = ExtResource("6_family")
+attack_movement_ratios = PackedFloat32Array(0.85,0.35,0.9)
 melee_hitbox_shape = ExtResource("3_shape")
 attack_style = ExtResource("2_style")
 combo = ExtResource("4_combo")

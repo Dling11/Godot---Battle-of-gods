@@ -3,7 +3,7 @@ $ErrorActionPreference = 'Stop'
 $taskWorkspace = [IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..')).TrimEnd('\', '/')
 $taskPlan = Get-Content -Raw -LiteralPath $PlanPath | ConvertFrom-Json
 if ([IO.Path]::GetFullPath($taskPlan.root).TrimEnd('\', '/') -ne $taskWorkspace) { throw 'Plan belongs to a different workspace.' }
-$taskAllowed = @('art_source', 'assets', 'tools', 'tests', 'data', 'entities', 'gameplay', 'docs')
+$taskAllowed = @('art_source', 'assets', 'tools', 'tests', 'data', 'entities', 'gameplay', 'levels', 'docs')
 $taskTargets = @($taskPlan.folder_targets) + @($taskPlan.file_targets)
 # Resolve and check every target before any deletion. Never cross the project,
 # remove Git history, or delete a folder containing a retained dependency.

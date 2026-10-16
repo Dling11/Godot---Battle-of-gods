@@ -2,7 +2,7 @@ extends "res://tests/sanctuary_test_base.gd"
 
 const LAB = preload("res://levels/combat_lab/combat_lab.tscn")
 const ITEM = preload("res://data/items/equipment/king_iron_reaper.tres")
-const AUDIT = "res://art_source/generated/characters/king/iron_reaper_style_unified_2026_10_14/registration.json"
+const AUDIT = "res://art_source/reference/characters/king/reaper-grounding.json"
 
 func _run() -> void:
 	root.get_node("SaveService").configure_storage_path_for_testing("user://iron_reaper_grounding_smoke.json")

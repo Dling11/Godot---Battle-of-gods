@@ -1,5 +1,7 @@
 # King impact, typed damage and counter review
 
+Decision223 retention note: raw generation/review paths described below are historical provenance. Bulk source collections and image builders are deleted; current runtime assets and compact references/validation metadata remain. Future trials use temporary ignored staging and are cleared after publishing.
+
 2026-10-04. Decision178. **Delivered:** approved damage families/resistance, matching skill and gear copy, Hog brace metadata repair, larger red critical digits and a registered four-frame critical burst in normal gameplay. **Playable comparison only:** perfect-dodge counter and 36/42px basic sword reach. **Planned:** further third-cut material/audio polish, one authored elite break experiment and representative cold campaign/GPU/phone profiling.
 
 ## Damage rules in normal gameplay

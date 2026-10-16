@@ -14,7 +14,7 @@ Spin: eight45-degree shaft directions and matching complete body turns, stepped 
 
 Chop → rising return → head push → jump slam → turn. Preserve3.19s,14–16 Physical basics,25 skill power, multipliers1.15/1.10/1.05/1.50/1.35, fan72px/push78px/spin68px, knockback60, movement ratios0.25/0/0.60. Held attacks/buffering, skills/dodge/collision, IDs,40 white frames/contact fits, audio and other families stay exact.
 
-Build tools/build_king_axe_unified.gd → king_axe_technique_baker.gd, then editor import. Current source/prompts: art_source/generated/characters/king/iron_beard_motion_2026_10_15/.212 canonical sources supply weapon/idle; earlier unified sources supply FX/audio/370 prior-file guards. Current25-file manifest additionally protects carry/idle/weapon/combat/FX/recordings. Source art stays out of import/export.
+Decision223 removes bulk generation inputs and image builders. Current runtime art, small approved references, production-assets.json and compact numeric motion/grounding audits are authoritative. Future authoring uses temporary ignored staging; current launcher/gameplay/frame/grip checks remain. See CONTINUE_WEAPONS.md.
 
 Verification:799 production checks;1591 pose/carry/frame assertions over336 directional samples;840 native gameplay/160 slash-frame checks pass. All native strokes retain bright paint with zero mask clipping/contact overflow. Held-input/resources/native-motion results are in source verification.json. Existing54-instance fixture teardown warning is separate. Tests do not approve owner feel.
 

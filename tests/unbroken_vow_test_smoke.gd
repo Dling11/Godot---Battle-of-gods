@@ -21,6 +21,7 @@ func _run() -> void:
 	var review: Node = lab.get_node("KingCombatReview")
 	var test: Node = review.buff_test
 	var body: AnimatedSprite2D = actor.get_node("VisualRoot/Body")
+	var family := actor.get_node("WeaponFamilyPresentation")
 	var original_frames := body.sprite_frames
 	var health := actor.health_component.current_health
 	var armor := actor.health_component.armor_rating
@@ -45,7 +46,11 @@ func _run() -> void:
 	test.advance(.148)
 	check(contacts == 1 and actor.is_cinematic_locked(), "Repeated contact or early recovery")
 	test.advance(.012)
-	check(returns == 1 and not actor.is_cinematic_locked() and body.visible, "Normal cast did not return control after .32s")
+	# physics_frame resumes before node processing; allow the presentation
+	# adapter to complete one physics tick after the manual release.
+	await physics_frame
+	await physics_frame
+	check(returns == 1 and not actor.is_cinematic_locked() and family.presenter.visible and not body.visible, "Normal cast did not return control after .32s")
 	check(test.active and not test._cast.visible and test._visual.visible, "Sustain did not outlive the cast")
 	check(body.sprite_frames == original_frames, "Review replaced production SpriteFrames")
 	var before := actor.position
@@ -80,7 +85,9 @@ func _run() -> void:
 	test.set_physics_process(false)
 	test.advance(.08)
 	test.close()
-	check(not actor.is_cinematic_locked() and body.visible and not test.active, "Closing mid-cast left player hidden/locked")
+	await physics_frame
+	await physics_frame
+	check(not actor.is_cinematic_locked() and family.presenter.visible and not body.visible and not test.active, "Closing mid-cast left player hidden/locked")
 	check(lab._ai_enabled == ai and lab.camera.zoom == zoom and not test._panel.visible, "Closing failed to restore Lab settings")
 	check(root.get_node("RunSession").king_skill_slots == saved_slots, "Test changed saved loadout state")
 	# Removing the test node mid-cast must release its sibling-owned visuals.
@@ -88,7 +95,9 @@ func _run() -> void:
 	test.queue_free()
 	await process_frame
 	await process_frame
-	check(not actor.is_cinematic_locked() and body.visible and actor.get_node_or_null("UnbrokenVowTestVisual") == null, "Freeing test left player state/visuals behind")
+	await physics_frame
+	await physics_frame
+	check(not actor.is_cinematic_locked() and family.presenter.visible and not body.visible and actor.get_node_or_null("UnbrokenVowTestVisual") == null, "Freeing test left player state/visuals behind")
 	check(lab._ai_enabled == ai and lab.camera.zoom == zoom, "Freeing test did not restore Lab settings")
 	lab.queue_free()
 	await process_frame

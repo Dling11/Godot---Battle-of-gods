@@ -1,5 +1,7 @@
 # Disciples of The One Above — Visual and Animation Contract
 
+Decision223 retention note: raw generation/review paths described below are historical provenance. Bulk source collections and image builders are deleted; current runtime assets and compact references/validation metadata remain. Future trials use temporary ignored staging and are cleared after publishing.
+
 ## Status
 
 Decision 136 (2026-09-12) is the current F7 visual iteration, authorized by the owner to redo Examiner. It retains the tall masculine ivory/gold mask and glaive identity with new filled armor shapes, ten eight-column 192x160 body sheets, 116 clips, disjoint anticipation/contact, original sound, and a 12-pixel movement footprint. Earlier V3/V5/V6 approvals below are historical references; the owner approved the corrected replacement; production Stage XX integration remains pending. Executioner remains documentation-only.

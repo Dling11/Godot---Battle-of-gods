@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-16",
+  "decision": 223,
+  "generated_directory_deleted": true,
+  "deleted_files": 323,
+  "deleted_bytes": 118843676,
+  "deleted_folder": [
+    "art_source/generated"
+  ],
+  "deleted_tools": [
+    "tools/build_king_axe_unified.gd",
+    "tools/build_king_iron_reaper.gd",
+    "tools/build_king_sword_unified.mjs",
+    "tools/build_king_twinsteel_unified.mjs",
+    "tools/build_king_greatsword_unified.mjs",
+    "tools/king_axe_technique_baker.gd",
+    "tools/king_raster_baker.gd",
+    "tools/king_twinsteel_source.mjs",
+    "tools/king_greatsword_ribbons.mjs",
+    "tools/king_greatsword_shoulder_idle.mjs",
+    "tools/build_iron_reaper_fx.gd",
+    "tools/pack_iron_reaper_fx.gd",
+    "tools/build_king_axe_unified.gd.uid",
+    "tools/build_king_iron_reaper.gd.uid",
+    "tools/king_axe_technique_baker.gd.uid",
+    "tools/king_raster_baker.gd.uid",
+    "tools/build_iron_reaper_fx.gd.uid",
+    "tools/pack_iron_reaper_fx.gd.uid"
+  ],
+  "retained": "Installed game assets plus compact identity reference images, production-assets.json, two numeric motion contracts, licensed audio originals and attribution.",
+  "production_assets_verified": 653,
+  "unchanged_original_runtime_rasters_audio": 527,
+  "immutable_body_atlases": 10,
+  "affected_test_scripts": 16,
+  "affected_test_failures": 0,
+  "resource_loads": 918,
+  "raw_image_rebaking": "Intentionally retired at owner request",
+  "future_policy": "Ignored temporary staging; publish approved runtime assets and clear trials. art_source/generated ignored and rejected by boundary regression.",
+  "git_history_rewritten": false,
+  "committed": false,
+  "current_source": {
+    "files": 2862,
+    "bytes": 58162261,
+    "excludes": [
+      ".git",
+      ".godot",
+      "tmp",
+      "exports",
+      ".agents",
+      ".codex"
+    ]
+  },
+  "retained_art_support_bytes": 1667444,
+  "orphan_import_uid_files": 0
+}
