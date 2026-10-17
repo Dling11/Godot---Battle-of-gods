@@ -1,5 +1,8 @@
 [gd_scene format=3 uid="uid://7gpqrhm32t6x"]
 
+[ext_resource type="PackedScene" path="res://gameplay/abilities/weapons/axe_war_cyclone.tscn" id="cyclone_scene"]
+[ext_resource type="Script" path="res://gameplay/abilities/weapons/war_cyclone_visual.gd" id="cyclone_visual"]
+
 [ext_resource type="Script" path="res://gameplay/abilities/king/unbroken_vow_component.gd" id="vow_component"]
 [ext_resource type="Resource" path="res://data/abilities/king/unbroken_vow.tres" id="vow_data"]
 [ext_resource type="Script" path="res://gameplay/abilities/king/unbroken_vow_visual.gd" id="vow_visual"]
@@ -309,6 +312,11 @@ script = ExtResource("5_attack")
 weapon = ExtResource("7_sword_data")
 hitbox = NodePath("../SwordPivot/AttackHitbox")
 collision_shape = NodePath("../SwordPivot/AttackHitbox/CollisionShape2D")
+
+[node name="WarCycloneComponent" parent="." instance=ExtResource("cyclone_scene")]
+
+[node name="WarCycloneVisual" type="Node2D" parent="VisualRoot"]
+script = ExtResource("cyclone_visual")
 
 [node name="EvadeComponent" type="Node" parent="." unique_id=730348988]
 unique_name_in_owner = true

@@ -1,0 +1,141 @@
+{
+  "date": "2026-10-17",
+  "mode": "builtin_imagegen_edit",
+  "status": "owner_selected_C_requested_mastery_and_stats_variations",
+  "runtime_changes": false,
+  "selected_direction": "C Veil Sigils",
+  "requirements": [
+    "Avatar first at top-left then HP extending right",
+    "Preserve selected C portrait and round skill art",
+    "Keep8 King+6 weapon review slots, separate SPACE, numeric XP",
+    "Bottom-right Bag/Settings positions retained",
+    "Add one illustrative weapon mastery readout separate from King level/XP",
+    "Compare small labeled attack/defense/attack-speed status chips"
+  ],
+  "illustrative_values": {
+    "king_level": 12,
+    "hp": "1240/1600",
+    "weapon_mastery": 5,
+    "attack": 32,
+    "defense": 18,
+    "attack_speed": "+8%"
+  },
+  "concepts": [
+    {
+      "id": "c1_combat_readout",
+      "label": "C1 · Combat Readout",
+      "description": "Mastery beside the weapon row; ATK/DEF/AS beneath the top-left health bar",
+      "prompt": "Use case: precise-object-edit. Asset: Battle of Gods C Veil Sigils HUD refinement, full16:9 game screenshot.\nInput1: EDIT TARGET, selected and approved visual identity for the new UI: round skill medallions, specific King portrait drawing, world and established positions. Input2: DETAIL REFERENCE ONLY for its small \"MASTERY5\" weapon progress readout and tiny attack/defense/status icons. Do NOT borrow input2's twenty square skills, bottom avatar or long bottom HP.\nKEEP input1's forest map, character/action, target header, upper-right objectives and accepted bottom-right TAB satchel/ESC settings pair. Keep C's round medallion artwork and exact8 lower KING1,2,3,4,5,6,7,8 +6 upper WEAPON F1,F2,F3,F4,F5,F6, plus separate SPACE. No new skill glyphs, no extra buttons, no9/0/F7-F10, no rectangular skill cells. Preserve the thin blue XP strip \"4,250 / 10,000 XP\". All available skills remain visible in this full-capacity illustration; no locked cells.\nREQUIRED TOP-LEFT FIX: reverse only player-status ORDER. Avatar must come FIRST on the LEFT, near the left safe margin; red horizontal HEALTH extends to its RIGHT. Never HP first then avatar. Use exactly C's portrait drawing, octagonal frame and small level12 badge, not A/B's face or the source2 portrait. HP \"1,240 / 1,600\" has readable pale numbers inside and about77.5% crimson fill, visible dark empty portion. Small compact roughly190logicalpx wide player-status module at960x540, not huge full-width panel. No duplicate avatar/HP in bottom dock.\nADD REFERENCE DETAILS AS BELOW: exactly one small EQUIPPED WEAPON MASTERY indicator, a tiny weapon pictogram, verbatim \"MASTERY5\" and short PURPLE progress strip with visibly partial fill. This is weapon-family mastery, separate from King level12 and blue player XP. Three small labeled stat/status chips use tiny red sword \"ATK32\", blue shield \"DEF18\", green upward arrow \"AS+8%\". Text conveys meaning alongside color. These numbers and mastery are illustrative design data, not installed mechanics. Do not add mana, stamina, quests, loadout panels, gear grids, large level emblems or new menu buttons.\nSTYLE: original compact pixel-RPG C Veil Sigils theme, obsidian/navy, muted silver, bone text, restrained cyan/violet, red HP. Round skill silhouette, crisp authored glyphs, neat aligned readouts, no broad gold or gem ornaments. Mastery/stat widgets must be clearly distinct from clickable round ability buttons. Fit these few new readouts into existing corner/row margins; avoid big panels and expanding the entire action bar just for mastery. Keep central battlefield clear and no overlaps. The base skill medallions can be uniformly tightened slightly, but preserve identical glyphs, key order and readable size. New native sizing is approximate review artwork, not a production UI texture.\nRender one clean full-screen gameplay image without layout labels/arrows/comparison sheets. Check avatar LEFT before HP, exactly one weapon MASTERY5, three ATK/DEF/AS chips,6+8 round skill buttons, accepted utilities unchanged.\nARRANGEMENT C1: Keep portrait+HP top-left; align the three small ATK/DEF/AS chips in one quiet row directly beneath the HP, starting to the RIGHT of the portrait. Put the small MASTERY5 weapon panel immediately LEFT of F1 at the beginning of the UPPER weapon row, like input2's mastery-before-weapon-techniques arrangement. Fit its60-75logicalpx width within the spare horizontal space beside the shorter six-icon row so the overall dock does not become excessively wide. Lower8King+SPACE remains centered with XP below. Mastery is a shallow narrow rectangle with its tiny weapon at left and purple line below label, not an extra round skill.",
+      "refs": [
+        "D:/React_ONLY_2026/GODOT-BATTLE-OF-GODS/tmp/review/combat_hud_full_art_2026_10_17/c_veil_sigils.png",
+        "C:/Users/ADMINI~1/AppData/Local/Temp/codex-clipboard-08af7efd-a9bc-401f-bdaa-4a7099a4f739.png"
+      ],
+      "output": "tmp/review/combat_hud_c_mastery_2026_10_17/c1_combat_readout.png",
+      "generated_original": "C:/Users/Administrator/.codex/generated_images/01a0eed4-5878-7032-a315-e493f92ce97a/exec-f6270cad-fed4-4ff9-b07a-183c80ff776a.png",
+      "width": 1671,
+      "height": 941,
+      "bytes": 1863685,
+      "sha256": "c8ea3a92e58ffaf3d30535f3011540f4cdaf1220cb2cbd1daa42fd010e1ed53f",
+      "visual_review": {
+        "avatar_first_left": true,
+        "hp_right": true,
+        "round_weapon_slots": 6,
+        "round_king_slots": 8,
+        "space_separate": true,
+        "one_mastery_label": true,
+        "one_filled_purple_mastery_meter": true,
+        "stats": [
+          "ATK32",
+          "DEF18",
+          "AS+8%"
+        ],
+        "utilities_bottom_right": true
+      }
+    },
+    {
+      "id": "c2_status_card",
+      "label": "C2 · Status Card",
+      "description": "Mastery and stats grouped with the avatar; clean round skill rows below",
+      "prompt": "Use case: precise-object-edit. Asset: Battle of Gods C Veil Sigils HUD refinement, full16:9 game screenshot.\nInput1: EDIT TARGET, selected and approved visual identity for the new UI: round skill medallions, specific King portrait drawing, world and established positions. Input2: DETAIL REFERENCE ONLY for its small \"MASTERY5\" weapon progress readout and tiny attack/defense/status icons. Do NOT borrow input2's twenty square skills, bottom avatar or long bottom HP.\nKEEP input1's forest map, character/action, target header, upper-right objectives and accepted bottom-right TAB satchel/ESC settings pair. Keep C's round medallion artwork and exact8 lower KING1,2,3,4,5,6,7,8 +6 upper WEAPON F1,F2,F3,F4,F5,F6, plus separate SPACE. No new skill glyphs, no extra buttons, no9/0/F7-F10, no rectangular skill cells. Preserve the thin blue XP strip \"4,250 / 10,000 XP\". All available skills remain visible in this full-capacity illustration; no locked cells.\nREQUIRED TOP-LEFT FIX: reverse only player-status ORDER. Avatar must come FIRST on the LEFT, near the left safe margin; red horizontal HEALTH extends to its RIGHT. Never HP first then avatar. Use exactly C's portrait drawing, octagonal frame and small level12 badge, not A/B's face or the source2 portrait. HP \"1,240 / 1,600\" has readable pale numbers inside and about77.5% crimson fill, visible dark empty portion. Small compact roughly190logicalpx wide player-status module at960x540, not huge full-width panel. No duplicate avatar/HP in bottom dock.\nADD REFERENCE DETAILS AS BELOW: exactly one small EQUIPPED WEAPON MASTERY indicator, a tiny weapon pictogram, verbatim \"MASTERY5\" and short PURPLE progress strip with visibly partial fill. This is weapon-family mastery, separate from King level12 and blue player XP. Three small labeled stat/status chips use tiny red sword \"ATK32\", blue shield \"DEF18\", green upward arrow \"AS+8%\". Text conveys meaning alongside color. These numbers and mastery are illustrative design data, not installed mechanics. Do not add mana, stamina, quests, loadout panels, gear grids, large level emblems or new menu buttons.\nSTYLE: original compact pixel-RPG C Veil Sigils theme, obsidian/navy, muted silver, bone text, restrained cyan/violet, red HP. Round skill silhouette, crisp authored glyphs, neat aligned readouts, no broad gold or gem ornaments. Mastery/stat widgets must be clearly distinct from clickable round ability buttons. Fit these few new readouts into existing corner/row margins; avoid big panels and expanding the entire action bar just for mastery. Keep central battlefield clear and no overlaps. The base skill medallions can be uniformly tightened slightly, but preserve identical glyphs, key order and readable size. New native sizing is approximate review artwork, not a production UI texture.\nRender one clean full-screen gameplay image without layout labels/arrows/comparison sheets. Check avatar LEFT before HP, exactly one weapon MASTERY5, three ATK/DEF/AS chips,6+8 round skill buttons, accepted utilities unchanged.\nARRANGEMENT C2: Group ALL player readouts in the upper-left: avatar first LEFT with HP to RIGHT, then a narrow MASTERY5 row directly BELOW HP, tiny weapon on its left and purple progress beneath text. A third compact line below contains the ATK/DEF/AS chips, all aligned with the HP left edge rather than beginning underneath the avatar. Keep the whole player group under100logicalpx tall with thin, separate fitted backings; no large rectangular empty frame. Bottom C round-medallion dock stays exceptionally clean: six weapon circles above8King circles plusSPACE, XP below, NO mastery card attached to the bottom.",
+      "refs": [
+        "D:/React_ONLY_2026/GODOT-BATTLE-OF-GODS/tmp/review/combat_hud_full_art_2026_10_17/c_veil_sigils.png",
+        "C:/Users/ADMINI~1/AppData/Local/Temp/codex-clipboard-08af7efd-a9bc-401f-bdaa-4a7099a4f739.png"
+      ],
+      "output": "tmp/review/combat_hud_c_mastery_2026_10_17/c2_status_card.png",
+      "generated_original": "C:/Users/Administrator/.codex/generated_images/01a0eed4-5878-7032-a315-e493f92ce97a/exec-e458cd5a-f940-47d3-9f43-c4c7148d07b0.png",
+      "width": 1671,
+      "height": 941,
+      "bytes": 1857880,
+      "sha256": "789d4de7d4549d37c5f8a0c177da4eb25c0df63334c41bb63378db3fe2acdefa",
+      "visual_review": {
+        "avatar_first_left": true,
+        "hp_right": true,
+        "round_weapon_slots": 6,
+        "round_king_slots": 8,
+        "space_separate": true,
+        "one_mastery_label": true,
+        "one_filled_purple_mastery_meter": true,
+        "stats": [
+          "ATK32",
+          "DEF18",
+          "AS+8%"
+        ],
+        "utilities_bottom_right": true
+      }
+    },
+    {
+      "id": "c3_technique_strip",
+      "label": "C3 · Technique Strip",
+      "description": "Slim mastery strip above the weapon row; compact stat chips under the portrait/HP module",
+      "prompt": "Use case: precise-object-edit. Asset: Battle of Gods C Veil Sigils HUD refinement, full16:9 game screenshot.\nInput1: EDIT TARGET, selected and approved visual identity for the new UI: round skill medallions, specific King portrait drawing, world and established positions. Input2: DETAIL REFERENCE ONLY for its small \"MASTERY5\" weapon progress readout and tiny attack/defense/status icons. Do NOT borrow input2's twenty square skills, bottom avatar or long bottom HP.\nKEEP input1's forest map, character/action, target header, upper-right objectives and accepted bottom-right TAB satchel/ESC settings pair. Keep C's round medallion artwork and exact8 lower KING1,2,3,4,5,6,7,8 +6 upper WEAPON F1,F2,F3,F4,F5,F6, plus separate SPACE. No new skill glyphs, no extra buttons, no9/0/F7-F10, no rectangular skill cells. Preserve the thin blue XP strip \"4,250 / 10,000 XP\". All available skills remain visible in this full-capacity illustration; no locked cells.\nREQUIRED TOP-LEFT FIX: reverse only player-status ORDER. Avatar must come FIRST on the LEFT, near the left safe margin; red horizontal HEALTH extends to its RIGHT. Never HP first then avatar. Use exactly C's portrait drawing, octagonal frame and small level12 badge, not A/B's face or the source2 portrait. HP \"1,240 / 1,600\" has readable pale numbers inside and about77.5% crimson fill, visible dark empty portion. Small compact roughly190logicalpx wide player-status module at960x540, not huge full-width panel. No duplicate avatar/HP in bottom dock.\nADD REFERENCE DETAILS AS BELOW: exactly one small EQUIPPED WEAPON MASTERY indicator, a tiny weapon pictogram, verbatim \"MASTERY5\" and short PURPLE progress strip with visibly partial fill. This is weapon-family mastery, separate from King level12 and blue player XP. Three small labeled stat/status chips use tiny red sword \"ATK32\", blue shield \"DEF18\", green upward arrow \"AS+8%\". Text conveys meaning alongside color. These numbers and mastery are illustrative design data, not installed mechanics. Do not add mana, stamina, quests, loadout panels, gear grids, large level emblems or new menu buttons.\nSTYLE: original compact pixel-RPG C Veil Sigils theme, obsidian/navy, muted silver, bone text, restrained cyan/violet, red HP. Round skill silhouette, crisp authored glyphs, neat aligned readouts, no broad gold or gem ornaments. Mastery/stat widgets must be clearly distinct from clickable round ability buttons. Fit these few new readouts into existing corner/row margins; avoid big panels and expanding the entire action bar just for mastery. Keep central battlefield clear and no overlaps. The base skill medallions can be uniformly tightened slightly, but preserve identical glyphs, key order and readable size. New native sizing is approximate review artwork, not a production UI texture.\nRender one clean full-screen gameplay image without layout labels/arrows/comparison sheets. Check avatar LEFT before HP, exactly one weapon MASTERY5, three ATK/DEF/AS chips,6+8 round skill buttons, accepted utilities unchanged.\nARRANGEMENT C3: Avatar first LEFT and HP RIGHT in upper-left with three small ATK/DEF/AS chips on a quiet line just BELOW the overall portrait/health module. Center one very THIN mastery header directly ABOVE the six weapon medallions, spanning only that six-medallion group's width. Tiny weapon pictogram and \"MASTERY5\" on the left of the strip, short partial purple progression segment to their right. It is a light8-12logicalpx-high readout strip with a hairline dark-silver outline, not a big extra panel or action row. Keep a small clear gap so the strip does not cover F1-F6 labels. C's8King circles andSPACE below remain identical, XP underneath. This is the most restrained bottom mastery treatment.",
+      "refs": [
+        "D:/React_ONLY_2026/GODOT-BATTLE-OF-GODS/tmp/review/combat_hud_full_art_2026_10_17/c_veil_sigils.png",
+        "C:/Users/ADMINI~1/AppData/Local/Temp/codex-clipboard-08af7efd-a9bc-401f-bdaa-4a7099a4f739.png"
+      ],
+      "output": "tmp/review/combat_hud_c_mastery_2026_10_17/c3_technique_strip.png",
+      "generated_original": "C:/Users/Administrator/.codex/generated_images/01a0eed4-5878-7032-a315-e493f92ce97a/exec-756e85d8-9593-4e78-9aa3-3fb743ece374.png",
+      "width": 1671,
+      "height": 941,
+      "bytes": 1861320,
+      "sha256": "3466be9e39902cb9cbbf3c1ca707c1c9a216c17398a2050f44e27824e7083bf5",
+      "visual_review": {
+        "avatar_first_left": true,
+        "hp_right": true,
+        "round_weapon_slots": 6,
+        "round_king_slots": 8,
+        "space_separate": true,
+        "one_mastery_label": true,
+        "one_filled_purple_mastery_meter": true,
+        "stats": [
+          "ATK32",
+          "DEF18",
+          "AS+8%"
+        ],
+        "utilities_bottom_right": true
+      }
+    }
+  ],
+  "corrections": [
+    {
+      "id": "c2_status_card",
+      "refs": [
+        "C:/Users/Administrator/.codex/generated_images/01a0eed4-5878-7032-a315-e493f92ce97a/exec-211a4150-3121-41ff-b291-8d9f32e238bb.png"
+      ],
+      "prompt": "Use case: precise-object-edit. Input1 is C2's nearly finished Battle of Gods HUD mockup. Make one tiny correction ONLY inside the top-left weapon-mastery readout below HP.\nCurrently MASTERY5 has TWO purple progress bars: a tiny bar under its label at the left and another longer bar to the right. REMOVE the tiny purple bar under the \"MASTERY5\" TEXT at the LEFT, filling its pixels with the exact surrounding dark panel background. Keep the one longer partial-purple progress bar on the RIGHT as the ONLY mastery meter. Keep the small sword icon and MASTERY5 label exactly, one readable label and one meter.\nPreserve EVERYTHING ELSE: avatar FIRST LEFT then health to RIGHT; specific King portrait art; HP digits; three ATK32/DEF18/AS+8% chips; forest/player/world; target and objectives; all six F1-F6 round weapon medallions and eight1-8 King medallions; SPACE; blue XP; bottom-right TAB bag and ESC settings. No new meters, labels, glyphs, duplicates, cropping or annotations. Output the same full16:9 image with just that tiny duplicate purple meter removed."
+    }
+  ],
+  "review": {
+    "status": "three_selected_C_refinements_generated_and_visually_inspected",
+    "decision": 225,
+    "selected_layout": null,
+    "scope": "Selected C artwork with corrected portrait/HP order and proposed mastery/status placement; no runtime implementation.",
+    "production_files_checked": 653,
+    "production_mismatches": 0,
+    "correction": "C2 duplicate purple mastery fill removed; an empty decorative underline/bevel remains below its label. Native implementation should use exactly one mastery meter.",
+    "limitations": [
+      "Stats and mastery are illustrative, not earned runtime data.",
+      "Native compact sizing, portrait pixels, alignment, fonts and health fill remain approximate review artwork.",
+      "Final precise mastery/status placement and learned/equipped policy remain open."
+    ]
+  }
+}

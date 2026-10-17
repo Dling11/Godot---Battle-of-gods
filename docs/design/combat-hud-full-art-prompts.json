@@ -1,0 +1,154 @@
+{
+  "date": "2026-10-17",
+  "mode": "builtin_imagegen_edit",
+  "status": "owner_requests_complete_skill_and_status_art_redesign",
+  "runtime_changes": false,
+  "accepted": [
+    "Bottom-right Bag/TAB and Settings/ESC position",
+    "Top-left player status separated from bottom-center skills",
+    "8+6 working review capacity and unlocked-only future growth"
+  ],
+  "new_review": [
+    "Fresh skill glyphs and slot/action-bar artwork",
+    "Fresh portrait rendering preserving King identity",
+    "HP to right, vertical left, or horizontal left of portrait"
+  ],
+  "concepts": [
+    {
+      "id": "a_ashsteel",
+      "label": "A · Ashsteel",
+      "description": "Portrait left, horizontal HP to its right; engraved steel skill tiles",
+      "prompt": "Use case: precise-object-edit. Asset: original Battle of Gods pixel-RPG COMPLETE INTERFACE ART REDESIGN concept, one full16:9 game screenshot.\nInput1 is the edit target and exact world/layout reference. Input2 is King's approved character-identity reference.\nUSER INTENT: genuinely NEW SKILL ICON ART and ACTION-BAR framing, freshly painted King PORTRAIT ART, and a new HP arrangement. Do not just swap the old portrait frame or retain the same old generic blue swoosh/fire/cross icons.\nPRESERVE input1's entire forest/world/player sprite, top-center target header and upper-right objectives. Absolutely preserve the accepted bottom-right satchel \"TAB\" and settings cog \"ESC\" pair, its location, size and alignment. No duplicate Bag/Menu banners or new corner menus. Keep central battlefield clear.\nLAYOUT: player status in TOP LEFT, compact skills BOTTOM CENTER, unchanged bottom-right utilities. HP may now be BESIDE the portrait or on its left as specified in the design variant. This relaxes the previous requirement for HP underneath. One portrait only; no player status in the bottom dock. One small level12 badge, numerical current/max HP \"1,240 / 1,600\", crimson/red fill at roughly77.5%, dark visible unfilled portion. HP digits must be readable against a dark backing. XP remains a thin strip below the action dock reading \"4,250 / 10,000 XP\".\nNEW SKILLS: EXACTLY6 upper WEAPON buttons F1,F2,F3,F4,F5,F6 and EXACTLY8 lower KING buttons1,2,3,4,5,6,7,8. Redesign EACH icon interior and slot rim in the chosen art direction. Two contiguous rows, no holes/locked slots/extra buttons. Separate small SPACE dodge at lower row right, outside14count. Small pale key labels with dark backing outside the central glyph. An optional single cooldown6.2 remains readable. Keep the bottom dock around320logicalpx wide and85high at960x540, not a huge screen-spanning MMO bar.\nGive every icon a DISTINCT readable primary silhouette with one secondary energy mark and generous dark margins, substantial pixel clusters, controlled highlights and no blurry glow. Weapon icons depict blade-led actions:1 broad cleaving blade,2 returning blade cut,3 crossing steel,4 rising edge,5 full-turn blade arc,6 falling sword impact. King glyphs:1 earth fissure from a blade,2 local molten-ground impact,3 leaping warrior and landing arc,4 defiant shield/oath,5 large radial splitting impact,6 binding chain sigil,7 spectral step/afterimage,8 fractured violet star. Keys6-8 and the weapon techniques are illustrative design glyphs, not implemented new mechanics. Replace the old generic icons completely, avoid copy-pasting identical crescents or crosses.\nPORTRAIT: paint a fresh deliberate pixel BUST of King with naturally proportioned head/face, dark tousled hair, serious small dark eyes, red scarf, navy/iron shoulders and connected neck. Preserve identity from input2; show scarf folds, thoughtful face planes and clean silhouette with crisp pixel detail. No giant round baby head, enlarged cheeks, glossy anime painting, realistic photograph or changes to the actual in-world character.\nCoherent original dark-fantasy pixel UI: charcoal/navy, muted silver, bone white, spirit cyan/violet; tiny crimson weapon accents, red HP. No broad gold borders, glowing yellow circles, over-rendered chrome, floating gems, huge spikes/wings, mobile-game gloss, noise fog or excessive filigree. Pixel-art finish throughout. All displayed skills/numbers are concept examples. Output one clean full-screen gameplay image without option labels, arrows, annotations or extra thumbnails. Count6+8before finishing.\nDESIGN A — ASHSTEEL. TOP LEFT is a compact HORIZONTAL status module: small rectangular40x48logicalpx freshly illustrated portrait on the LEFT; an elegant crimson HP bar extends to its RIGHT, about105logicalpx wide and14high, with current/max digits inside. Tiny \"KING\" and level12 above the HP at its left edge; a subtle iron line joins portrait and bar without a large enclosing black box. Whole status roughly165x58logicalpx, safe12px margin. More space-efficient horizontally oriented player status than input1. BOTTOM: newly painted ENGRAVED STEEL skill tiles, square flat charcoal insets, thin silver corner brackets and short understated baseline, no big spiky outer tray. Upper physical weapon glyphs are ivory with a tiny cold-blue edge; lower King glyphs use deep blue/violet with limited appropriate molten crimson. The icons should resemble compact authored pixel illustrations with dynamic motion and layered silhouette, not luminous abstract squiggles. Both rows use a matching deliberate24-28pixel native icon style.",
+      "refs": [
+        "D:/React_ONLY_2026/GODOT-BATTLE-OF-GODS/tmp/review/combat_hud_status_variants_2026_10_17/c_riftline.png",
+        "D:/React_ONLY_2026/GODOT-BATTLE-OF-GODS/assets/characters/playable/king/portraits/king_portrait_96x96.png"
+      ],
+      "output": "tmp/review/combat_hud_full_art_2026_10_17/a_ashsteel.png",
+      "generated_original": "C:/Users/Administrator/.codex/generated_images/01a0eed4-5878-7032-a315-e493f92ce97a/exec-42f91436-e1f5-4dc1-9921-ce8a7ce4b378.png",
+      "width": 1670,
+      "height": 941,
+      "bytes": 1883845,
+      "sha256": "d60f28fa4ac3fb73a4e4313222539824f6c83ad0a56cf75b0ee0fbabde564aca",
+      "visual_review": {
+        "new_skill_glyphs": true,
+        "new_portrait_rendering": true,
+        "new_slot_frames": true,
+        "weapon_keys": [
+          "F1",
+          "F2",
+          "F3",
+          "F4",
+          "F5",
+          "F6"
+        ],
+        "king_keys": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8"
+        ],
+        "space_separate": true,
+        "bag_settings_bottom_right": true
+      }
+    },
+    {
+      "id": "b_bloodstone",
+      "label": "B · Bloodstone",
+      "description": "Vertical red HP rail left of the portrait; carved skill cards",
+      "prompt": "Use case: precise-object-edit. Asset: original Battle of Gods pixel-RPG COMPLETE INTERFACE ART REDESIGN concept, one full16:9 game screenshot.\nInput1 is the edit target and exact world/layout reference. Input2 is King's approved character-identity reference.\nUSER INTENT: genuinely NEW SKILL ICON ART and ACTION-BAR framing, freshly painted King PORTRAIT ART, and a new HP arrangement. Do not just swap the old portrait frame or retain the same old generic blue swoosh/fire/cross icons.\nPRESERVE input1's entire forest/world/player sprite, top-center target header and upper-right objectives. Absolutely preserve the accepted bottom-right satchel \"TAB\" and settings cog \"ESC\" pair, its location, size and alignment. No duplicate Bag/Menu banners or new corner menus. Keep central battlefield clear.\nLAYOUT: player status in TOP LEFT, compact skills BOTTOM CENTER, unchanged bottom-right utilities. HP may now be BESIDE the portrait or on its left as specified in the design variant. This relaxes the previous requirement for HP underneath. One portrait only; no player status in the bottom dock. One small level12 badge, numerical current/max HP \"1,240 / 1,600\", crimson/red fill at roughly77.5%, dark visible unfilled portion. HP digits must be readable against a dark backing. XP remains a thin strip below the action dock reading \"4,250 / 10,000 XP\".\nNEW SKILLS: EXACTLY6 upper WEAPON buttons F1,F2,F3,F4,F5,F6 and EXACTLY8 lower KING buttons1,2,3,4,5,6,7,8. Redesign EACH icon interior and slot rim in the chosen art direction. Two contiguous rows, no holes/locked slots/extra buttons. Separate small SPACE dodge at lower row right, outside14count. Small pale key labels with dark backing outside the central glyph. An optional single cooldown6.2 remains readable. Keep the bottom dock around320logicalpx wide and85high at960x540, not a huge screen-spanning MMO bar.\nGive every icon a DISTINCT readable primary silhouette with one secondary energy mark and generous dark margins, substantial pixel clusters, controlled highlights and no blurry glow. Weapon icons depict blade-led actions:1 broad cleaving blade,2 returning blade cut,3 crossing steel,4 rising edge,5 full-turn blade arc,6 falling sword impact. King glyphs:1 earth fissure from a blade,2 local molten-ground impact,3 leaping warrior and landing arc,4 defiant shield/oath,5 large radial splitting impact,6 binding chain sigil,7 spectral step/afterimage,8 fractured violet star. Keys6-8 and the weapon techniques are illustrative design glyphs, not implemented new mechanics. Replace the old generic icons completely, avoid copy-pasting identical crescents or crosses.\nPORTRAIT: paint a fresh deliberate pixel BUST of King with naturally proportioned head/face, dark tousled hair, serious small dark eyes, red scarf, navy/iron shoulders and connected neck. Preserve identity from input2; show scarf folds, thoughtful face planes and clean silhouette with crisp pixel detail. No giant round baby head, enlarged cheeks, glossy anime painting, realistic photograph or changes to the actual in-world character.\nCoherent original dark-fantasy pixel UI: charcoal/navy, muted silver, bone white, spirit cyan/violet; tiny crimson weapon accents, red HP. No broad gold borders, glowing yellow circles, over-rendered chrome, floating gems, huge spikes/wings, mobile-game gloss, noise fog or excessive filigree. Pixel-art finish throughout. All displayed skills/numbers are concept examples. Output one clean full-screen gameplay image without option labels, arrows, annotations or extra thumbnails. Count6+8before finishing.\nDESIGN B — BLOODSTONE. TOP LEFT uses a distinctive VERTICAL red health RAIL to the LEFT of a fresh roughly44x48logicalpx portrait. Narrow10x48logicalpx crimson column with dark upper unfilled capacity and thin carved pewter ends; health fills from BOTTOM to TOP. Beside it King is shown as a complete expressive bust inside a modest clipped-corner stone window. One readable numeric \"1,240 / 1,600\" line directly below the combined rail/portrait, and one small level12 tab. No second horizontal red HP bar. Whole module about100x75logicalpx, safe12px margin. BOTTOM: new CARVED BLACKSTONE ability cards with clipped octagonal corners, narrow silver edges, low relief pixel-symbol illustrations and warm gray depth. Physical weapon glyphs bone/steel with tiny dark-crimson motion accents; King powers spirit blue/violet with restrained thematic red for molten impact. All silhouettes differ and feel hand-authored, substantial, sharp; no reused default blue-swoosh/fire/cross set. Restrained sculptural fantasy weight without ornate gems or long spikes. Keep new slot/card corners visibly distinct from A's steel bracket squares.",
+      "refs": [
+        "D:/React_ONLY_2026/GODOT-BATTLE-OF-GODS/tmp/review/combat_hud_status_variants_2026_10_17/c_riftline.png",
+        "D:/React_ONLY_2026/GODOT-BATTLE-OF-GODS/assets/characters/playable/king/portraits/king_portrait_96x96.png"
+      ],
+      "output": "tmp/review/combat_hud_full_art_2026_10_17/b_bloodstone.png",
+      "generated_original": "C:/Users/Administrator/.codex/generated_images/01a0eed4-5878-7032-a315-e493f92ce97a/exec-d870e5ac-47a1-40bf-b6ed-11f6b61f9d54.png",
+      "width": 1671,
+      "height": 941,
+      "bytes": 1843861,
+      "sha256": "944e9171abca16f38272409329850c7e8f916136f0b869333d2def9c3bc139d3",
+      "visual_review": {
+        "new_skill_glyphs": true,
+        "new_portrait_rendering": true,
+        "new_slot_frames": true,
+        "weapon_keys": [
+          "F1",
+          "F2",
+          "F3",
+          "F4",
+          "F5",
+          "F6"
+        ],
+        "king_keys": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8"
+        ],
+        "space_separate": true,
+        "bag_settings_bottom_right": true
+      }
+    },
+    {
+      "id": "c_veil_sigils",
+      "label": "C · Veil Sigils",
+      "description": "Portrait right, HP extending left; round rune skill medallions",
+      "prompt": "Use case: precise-object-edit. Asset: original Battle of Gods pixel-RPG COMPLETE INTERFACE ART REDESIGN concept, one full16:9 game screenshot.\nInput1 is the edit target and exact world/layout reference. Input2 is King's approved character-identity reference.\nUSER INTENT: genuinely NEW SKILL ICON ART and ACTION-BAR framing, freshly painted King PORTRAIT ART, and a new HP arrangement. Do not just swap the old portrait frame or retain the same old generic blue swoosh/fire/cross icons.\nPRESERVE input1's entire forest/world/player sprite, top-center target header and upper-right objectives. Absolutely preserve the accepted bottom-right satchel \"TAB\" and settings cog \"ESC\" pair, its location, size and alignment. No duplicate Bag/Menu banners or new corner menus. Keep central battlefield clear.\nLAYOUT: player status in TOP LEFT, compact skills BOTTOM CENTER, unchanged bottom-right utilities. HP may now be BESIDE the portrait or on its left as specified in the design variant. This relaxes the previous requirement for HP underneath. One portrait only; no player status in the bottom dock. One small level12 badge, numerical current/max HP \"1,240 / 1,600\", crimson/red fill at roughly77.5%, dark visible unfilled portion. HP digits must be readable against a dark backing. XP remains a thin strip below the action dock reading \"4,250 / 10,000 XP\".\nNEW SKILLS: EXACTLY6 upper WEAPON buttons F1,F2,F3,F4,F5,F6 and EXACTLY8 lower KING buttons1,2,3,4,5,6,7,8. Redesign EACH icon interior and slot rim in the chosen art direction. Two contiguous rows, no holes/locked slots/extra buttons. Separate small SPACE dodge at lower row right, outside14count. Small pale key labels with dark backing outside the central glyph. An optional single cooldown6.2 remains readable. Keep the bottom dock around320logicalpx wide and85high at960x540, not a huge screen-spanning MMO bar.\nGive every icon a DISTINCT readable primary silhouette with one secondary energy mark and generous dark margins, substantial pixel clusters, controlled highlights and no blurry glow. Weapon icons depict blade-led actions:1 broad cleaving blade,2 returning blade cut,3 crossing steel,4 rising edge,5 full-turn blade arc,6 falling sword impact. King glyphs:1 earth fissure from a blade,2 local molten-ground impact,3 leaping warrior and landing arc,4 defiant shield/oath,5 large radial splitting impact,6 binding chain sigil,7 spectral step/afterimage,8 fractured violet star. Keys6-8 and the weapon techniques are illustrative design glyphs, not implemented new mechanics. Replace the old generic icons completely, avoid copy-pasting identical crescents or crosses.\nPORTRAIT: paint a fresh deliberate pixel BUST of King with naturally proportioned head/face, dark tousled hair, serious small dark eyes, red scarf, navy/iron shoulders and connected neck. Preserve identity from input2; show scarf folds, thoughtful face planes and clean silhouette with crisp pixel detail. No giant round baby head, enlarged cheeks, glossy anime painting, realistic photograph or changes to the actual in-world character.\nCoherent original dark-fantasy pixel UI: charcoal/navy, muted silver, bone white, spirit cyan/violet; tiny crimson weapon accents, red HP. No broad gold borders, glowing yellow circles, over-rendered chrome, floating gems, huge spikes/wings, mobile-game gloss, noise fog or excessive filigree. Pixel-art finish throughout. All displayed skills/numbers are concept examples. Output one clean full-screen gameplay image without option labels, arrows, annotations or extra thumbnails. Count6+8before finishing.\nDESIGN C — VEIL SIGILS. TOP LEFT is a slim REVERSED horizontal player-status arrangement: the new small rounded/octagonal portrait is on the RIGHT END of the module, and a slender crimson HP ribbon extends LEFT from it toward the screen margin. Portrait remains within the top-left corner area, not at the right screen edge. Module max175logicalpx wide and58high. Put clear current/max digits centered inside the leftward bar and one small level12 tag just below the portrait. No duplicated HP underneath. Paint King's bust with a clear three-quarter face, red-scarf silhouette and confident expression. BOTTOM: all14new skill icons are compact ROUND RUNE MEDALLIONS with dark inset faces, fine weathered silver rims, just two tiny cyan/violet notches each, and distinct hand-pixelled emblem illustrations. Six weapon medallions above, eight King medallions below, stable pale F1-F6 and1-8 tabs at their upper-left edges. Weapon silhouettes ivory/cold steel; King powers saturated deep blue/violet with controlled white cores; plenty of dark space inside each circle. A restrained flat dark baseline unifies them, no large wings or spikes. SPACE remains a separate smaller matching utility. This is an original RPG icon family with expressive mini-illustrations, not vector circles containing the unchanged old symbols.",
+      "refs": [
+        "D:/React_ONLY_2026/GODOT-BATTLE-OF-GODS/tmp/review/combat_hud_status_variants_2026_10_17/c_riftline.png",
+        "D:/React_ONLY_2026/GODOT-BATTLE-OF-GODS/assets/characters/playable/king/portraits/king_portrait_96x96.png"
+      ],
+      "output": "tmp/review/combat_hud_full_art_2026_10_17/c_veil_sigils.png",
+      "generated_original": "C:/Users/Administrator/.codex/generated_images/01a0eed4-5878-7032-a315-e493f92ce97a/exec-40fa8ffc-3f85-4d89-83b9-5ccf9dd7d163.png",
+      "width": 1671,
+      "height": 941,
+      "bytes": 1869611,
+      "sha256": "014766f7d308c433cdf2b2b13b9b662d9174ae1f292fa34a926c84edfded84ad",
+      "visual_review": {
+        "new_skill_glyphs": true,
+        "new_portrait_rendering": true,
+        "new_slot_frames": true,
+        "weapon_keys": [
+          "F1",
+          "F2",
+          "F3",
+          "F4",
+          "F5",
+          "F6"
+        ],
+        "king_keys": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8"
+        ],
+        "space_separate": true,
+        "bag_settings_bottom_right": true
+      }
+    }
+  ],
+  "review": {
+    "status": "three_complete_art_concepts_generated_and_visually_inspected",
+    "owner_selected": null,
+    "scope": "Fresh skill, portrait, status layout and slot artwork review only; no new gameplay or production install.",
+    "production_files_checked": 653,
+    "production_mismatches": 0,
+    "limitations": [
+      "Generated docks are larger than the native target budget; do not trace their display dimensions into production. Compact28px slots must be measured after art selection.",
+      "Portrait pixels, health-fill ratio and key/glyph spacing are concept approximations.",
+      "Slots6-8 and six weapon techniques remain illustrative; no new mechanics or unlocks are installed.",
+      "Small-size contrast, actual icon mappings, hit areas, keyboard bindings and safe-zone behavior still need native review."
+    ]
+  }
+}

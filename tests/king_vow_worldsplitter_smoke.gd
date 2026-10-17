@@ -48,7 +48,7 @@ func _run() -> void:
 	await capture("01_vow_release.png")
 	await create_timer(.16, false, true).timeout
 	check(not vow.is_casting() and not actor.is_cinematic_locked(), "Vow did not return control after .32s")
-	check(lab.combat_hud.get_node("VowStatus").visible, "Shield readout is not visible")
+	check(lab.combat_hud.status_presenter.effect_strip.get_effect_button(&"vow").visible, "Shield readout is not visible")
 	var before := health.current_health
 	health.set_equipment_defenses(100.0, 0.0)
 	var shield_before := health.shield_health

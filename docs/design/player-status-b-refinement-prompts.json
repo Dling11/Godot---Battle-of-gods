@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-17",
+  "selected": "B — Mastery Ribbon",
+  "scope": "Concept refinement: generic mastery naming, aligned gauges, active-effect placement/hover; no runtime install",
+  "mode": "builtin_imagegen",
+  "prompts": [
+    "Use case: precise-object-edit / UI refinement. EDIT the selected B MASTERY RIBBON mockup in input image1. Keep its ROUND King portrait, dark brown hair/red scarf identity, dark-steel/cyan/violet fantasy RPG language, top-left composition and village context. This is the SAME chosen B, not another option or a new art direction. Remove its old candidate caption and replace with the quiet outside-HUD caption \"B REFINED · WEAPON MASTERY\".\nCorrect the status layout as follows:\n1. ROUND portrait remains first on LEFT, small distinct \"Lv 10\" badge attached to its bottom.\n2. The RED HP gauge on the right shows \"248 / 248\". The PURPLE mastery gauge below it shows \"340 / 600\". CRITICAL GEOMETRY: these TWO VISIBLE GAUGE BODIES must have EXACTLY the SAME LEFT EDGE, SAME RIGHT EDGE and SAME WIDTH; matching complete border ends. HP is slightly TALLER/stronger than the purple gauge. No mastery gauge longer than HP, no extra empty track. Give BOTH enough quiet dark border and numeral padding.\n3. Keep B's slim full-width mastery ribbon chassis tucked under the portrait/HP group, but lay out a compact header \"WEAPON MASTERY\" above its purple fill, with one small SINGLE sword-family emblem on the left and a clearly separate rank badge \"5\" on the right. The rank badge is outside the purple fill, never confused with Lv10. There is ONE purple meter only. NO words SWORD MASTERY, no weapon item name, no King's Sword, no ATK/DEF/AS row. Preserve B's integrated curved portrait-to-ribbon silhouette rather than turning this into three floating rectangles.\n4. Add a deliberately SMALL ACTIVE-EFFECT ICON ROW immediately BELOW the mastery ribbon, aligned under the gauges. Native target:18px square icons, sparse2px gaps, no wide permanent stat cards. Show TWO beneficial icons on the LEFT: blue shield for Unbroken Vow with tiny \"4s\" countdown, pale-blue resolve/strength glyph with a small \"3\" stack count. After a small clear gap show ONE negative root/vines icon with a restrained crimson/violet rim and tiny \"3\" remaining-escape-count badge. Buff borders use cold blue, harmful borders crimson. These are active effect icons, NOT attack/defense/speed stats. Leave the rest of the row unframed/empty. No placeholder icon slots. Keep coin icon and \"3,218\" below the portrait, separate from the effect icons.\n5. Show ONE example hover card opened from the blue shield icon, slightly BELOW/RIGHT of the status group over the village background, without covering the gauges. A tiny pointer hovering over the blue shield makes clear this card is a hover example, not permanent HUD. Card text EXACTLY: title \"Unbroken Vow\"; body lines \"Shield: 62 HP\", \"+12% outgoing damage\", \"4s remaining\". The tooltip is compact dark navy with a fine cool border and readable ivory text, matching the existing selected RPG styling.\nKeep compact believable proportions: intended full status group about240px wide and90px tall INCLUDING the effect row at960x540; this image is an ENLARGED corner showcase for visual comparison. Avoid oversized portrait, extra decoration, repeated labels, tiny cluttered gem spikes or stretched glyphs. Strong clean pixel-RPG outlines and native-looking readable typography. No other HUD, no quest redesign, no new enemies or equipment. The chosen B flow must remain recognizable. All numbers are illustrative UI review values, not installed progression. Do not include prose explaining implementation in the image.",
+    "Precisely edit input image1, preserving its selected B round portrait, character identity, village background, Lv10 badge, coin readout, three small active-effect icons and Unbroken Vow hover card exactly in the same style. Make ONLY this layout cleanup: MERGE the separate bottom frame containing WEAPON MASTERY and5 into the PURPLE MASTERY FRAME above it, so there are exactly TWO main horizontal status frames: red HP and purple weapon mastery. The purple frame should be one compact integrated ribbon with a small header band INSIDE ITS SAME BORDER: a single small sword-family emblem at the left, text WEAPON MASTERY, rank badge5 on the right. Under that header within the SAME frame put a full-width purple progress gauge showing340 /600. The purple GAUGE itself must match the red HP gauge's left edge, right edge and width. Red HP fill should be slightly taller than purple fill. NO separate third WEAPON MASTERY-only framed strip below. Move the existing three effect icons up so they sit immediately below the now-compact mastery ribbon, with clear separation from coins. Move the hover card up proportionately and keep its pointer touching the shield icon. Replace the crossed-swords emblem with ONE single diagonal sword; this sample is the sword family, not dual swords. Keep exact existing text:248 /248, Lv10, WEAPON MASTERY,5,340 /600, coin3,218, status badges4s/3/3 and hover title Unbroken Vow; Shield:62 HP; +12% outgoing damage;4s remaining. Keep the same readable typography, strong pixel-RPG outlines and calm silver/cyan/violet borders. No new elements, no new stat chips, no item-name strip, no clipping, no new labels outside the HUD. This is an enlarged concept preview; compactness and clear hierarchy are the goal."
+  ],
+  "illustrative_values": {
+    "level": 10,
+    "hp": [
+      248,
+      248
+    ],
+    "weapon_family": "sword",
+    "mastery_rank": 5,
+    "mastery_progress": [
+      340,
+      600
+    ],
+    "vow_preview": {
+      "shield_hp": 62,
+      "outgoing_damage_bonus_percent": 12,
+      "remaining_seconds": 4
+    }
+  },
+  "source_of_vow_values": "data/abilities/king/unbroken_vow_definition.gd: Foundation 25% max-HP shield, +12% outgoing damage; preview HP248 gives62 shield."
+}

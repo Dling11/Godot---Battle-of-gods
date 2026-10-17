@@ -80,6 +80,7 @@ func _commit_new_journey() -> void:
 	var story_state := get_node_or_null("/root/StoryState")
 	if story_state != null:
 		story_state.reset_story()
+	get_node("/root/WeaponTraining").reset_training()
 	var weapon_inventory := get_node_or_null("/root/WeaponInventory")
 	if weapon_inventory != null:
 		weapon_inventory.reset_inventory()

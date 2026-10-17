@@ -1,0 +1,86 @@
+{
+  "date": "2026-10-17",
+  "status": "Owner-approved floorless gradient installed and verified",
+  "method": "Native Godot GradientTexture2D and a transparent Panel border; no generated background raster",
+  "runtime_resource": {
+    "path": "assets/ui/inventory/portrait_backdrop.tres",
+    "size": [
+      336,
+      412
+    ],
+    "logical_size": [
+      168,
+      206
+    ],
+    "center": "#282637",
+    "edge": "#0d131e",
+    "fill": "radial",
+    "fill_from": [
+      0.5,
+      0.58
+    ],
+    "fill_to": [
+      0.5,
+      1.22
+    ],
+    "border": {
+      "color": "#46516a",
+      "width": 1,
+      "radius": 3
+    }
+  },
+  "actor": {
+    "scale": 0.85,
+    "boot_row_anchor": [
+      0.5,
+      0.675
+    ],
+    "rules": "Translate the complete existing resting actor only; preserve all body/weapon pixels and shared scale."
+  },
+  "layout": {
+    "modal": [
+      840,
+      490
+    ],
+    "left_loadout_minimum": [
+      500,
+      232
+    ],
+    "detail_minimum": [
+      300,
+      264
+    ],
+    "portrait": [
+      168,
+      206
+    ],
+    "inventory_columns": 12,
+    "item_preview": [
+      84,
+      80
+    ],
+    "item_icon_fit": [
+      72,
+      72
+    ]
+  },
+  "rules": [
+    "No ground, pedestal, architecture or scenery.",
+    "Player/inventory remain equip and ownership authorities.",
+    "Variable item information scrolls inside a bounded inspector; equip action stays fixed.",
+    "Only material search remains; equipment uses categories and explicit sorting.",
+    "Rarity styling follows actual item tier; persisted enum IDs are unchanged."
+  ],
+  "retired_art": "Rejected portrait_chamber.png and its import sidecar removed. Preview images remain outside maintained production assets.",
+  "validation": {
+    "native_bag_checks": 99,
+    "failures": 0,
+    "character_menu": "pass",
+    "equipment_catalog": "pass",
+    "runtime_archive_boundary": "pass",
+    "native_all_family_review": "six item captures complete",
+    "protected_total_files": 683,
+    "protected_asset_hash_mismatches": 0
+  },
+  "current_capture": "tmp/review/ui/bag_inspection_2026_10_17/"
+}

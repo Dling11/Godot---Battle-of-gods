@@ -18,9 +18,10 @@ const Stage5CoreEquipment: EquipmentCatalogDefinition = preload(
 )
 const BAG_CAPACITY := 24
 const BAG_COLUMNS := 12
+const SORT_MODES: Array[StringName] = [&"slot",&"rarity",&"name",&"hit",&"dps",&"quantity"]
 const EQUIPMENT_SLOT_NAMES := [
 	"Head",
-	"Weapon Essence",
+	"Weapon",
 	"Plate",
 	"Gloves",
 	"Leggings",
@@ -85,10 +86,10 @@ var _future_tiers: HBoxContainer
 @onready var materials_filter_button: Button = %MaterialsFilterButton
 @onready var consumables_filter_button: Button = %ConsumablesFilterButton
 @onready var key_filter_button: Button = %KeyFilterButton
-@onready var sort_button: Button = %SortButton
+@onready var sort_button: OptionButton = %SortButton
 @onready var skills_container: GridContainer = %Skills
 @onready var skill_detail_label: Label = %SkillDetailLabel
-@onready var portrait_aura: Polygon2D = %PortraitAura
+@onready var portrait_canvas: Control = %PortraitCanvas
 @onready var weapon_preview: Sprite2D = %WeaponPreview
 @onready var attack_label: Label = %AttackLabel
 
@@ -103,9 +104,7 @@ var _future_skill_cards: Array[SkillSlotCard] = []
 var _active_page := &"gear"
 var _active_inventory_filter := &"all"
 var _inventory_sort_mode := &"slot"
-var _portrait_rotation_tween: Tween
 var _family_portrait: Node2D
-var _portrait_pulse_tween: Tween
 var _selected_equipment: EquipmentDefinition
 var _selected_material: MaterialDefinition
 var _search_query := ""
@@ -118,6 +117,7 @@ func _ready() -> void:
 	process_mode = Node.PROCESS_MODE_ALWAYS
 	PaperdollPresenter.apply_skin(self)
 	equipment_slots.resized.connect(_layout_equipment_slots)
+	portrait_canvas.resized.connect(_layout_family_portrait)
 	if player == null:
 		push_error("CharacterMenu requires a Player reference.")
 		return
@@ -149,7 +149,7 @@ func _ready() -> void:
 	_configure_tabs()
 	_configure_inventory_filters()
 	bag_search.text_changed.connect(_on_bag_search_changed)
-	sort_button.pressed.connect(_cycle_inventory_sort)
+	sort_button.item_selected.connect(_select_inventory_sort)
 	equipment_detail_panel.equip_requested.connect(_on_equipment_equip_requested)
 	_build_character_bag()
 	collection_button = Button.new()
@@ -164,7 +164,6 @@ func _ready() -> void:
 	_refresh_skill_context()
 	_build_skill_cards()
 	_show_page(&"gear", false)
-	_start_portrait_aura()
 	hide()
 
 
@@ -281,6 +280,12 @@ func _configure_inventory_filters() -> void:
 		button.button_group = filter_group
 		button.pressed.connect(_set_inventory_filter.bind(filters[button]))
 	all_filter_button.set_pressed_no_signal(true)
+	_add_equipment_category(filter_group,"Weapons",&"weapons",PaperdollPresenter.EMPTY_ICONS[1])
+	_add_equipment_category(filter_group,"Armor",&"armor",PaperdollPresenter.EMPTY_ICONS[2])
+	bag_search.get_parent().hide()
+	for mode in SORT_MODES:
+		sort_button.add_item("Sort: "+String(mode).capitalize())
+	sort_button.select(0)
 
 
 func _show_page(page: StringName, focus_content: bool = true) -> void:
@@ -299,6 +304,10 @@ func _set_inventory_filter(filter_name: StringName) -> void:
 	if _active_inventory_filter == filter_name:
 		return
 	_active_inventory_filter = filter_name
+	bag_search.get_parent().visible = filter_name == &"materials"
+	if filter_name != &"materials":
+		_search_query = ""
+		bag_search.set_text("")
 	bag_scroll.scroll_vertical = 0
 	_build_inventory_grid()
 	if visible and _active_page == &"gear":
@@ -375,8 +384,10 @@ func _build_inventory_grid() -> void:
 	var selected_slot: InventorySlotButton
 	var owned_equipment := _get_sorted_owned_equipment(weapon_inventory)
 
-	if _active_inventory_filter in [&"all", &"equipment"]:
+	if _active_inventory_filter in [&"all", &"equipment", &"weapons", &"armor"]:
 		for item: EquipmentDefinition in owned_equipment:
+			if _active_inventory_filter == &"weapons" and item.slot != EquipmentDefinition.Slot.WEAPON: continue
+			if _active_inventory_filter == &"armor" and item.slot not in [EquipmentDefinition.Slot.HEAD,EquipmentDefinition.Slot.PLATE,EquipmentDefinition.Slot.GLOVES,EquipmentDefinition.Slot.LEGGINGS,EquipmentDefinition.Slot.BOOTS]: continue
 			if not _matches_search(item.display_name+" "+item.get_slot_name()+" "+item.get_rarity_name()): continue
 			var slot := _create_inventory_slot(button_group)
 			var equipped := _is_equipment_equipped(item)
@@ -440,7 +451,7 @@ func _on_bag_search_changed(query: String) -> void:
 	_build_inventory_grid()
 
 func _matches_search(value: String) -> bool:
-	return _search_query.is_empty() or value.to_lower().contains(_search_query)
+	return _active_inventory_filter != &"materials" or _search_query.is_empty() or value.to_lower().contains(_search_query)
 
 
 func _create_inventory_slot(button_group: ButtonGroup) -> InventorySlotButton:
@@ -479,8 +490,8 @@ func _equipment_sort_less(a: EquipmentDefinition, b: EquipmentDefinition) -> boo
 		&"name":
 			return a.display_name.naturalnocasecmp_to(b.display_name) < 0
 		&"rarity":
-			if a.rarity != b.rarity:
-				return a.rarity > b.rarity
+			if a.get_rarity_rank() != b.get_rarity_rank():
+				return a.get_rarity_rank() > b.get_rarity_rank()
 		&"quantity":
 			pass
 		&"hit", &"dps":
@@ -514,11 +525,26 @@ func _material_sort_less(a: MaterialDefinition, b: MaterialDefinition, inventory
 	return a.display_name.naturalnocasecmp_to(b.display_name) < 0
 
 
-func _cycle_inventory_sort() -> void:
-	var modes: Array[StringName] = [&"slot", &"name", &"rarity", &"quantity", &"hit", &"dps"]
-	_inventory_sort_mode = modes[(modes.find(_inventory_sort_mode) + 1) % modes.size()]
-	sort_button.text = "SORT: %s" % String(_inventory_sort_mode).to_upper()
+func _select_inventory_sort(index: int) -> void:
+	_inventory_sort_mode = SORT_MODES[index]
+	bag_scroll.scroll_vertical = 0
 	_build_inventory_grid()
+
+func _add_equipment_category(group: ButtonGroup, label: String, filter: StringName, icon: Texture2D) -> void:
+	var button := Button.new()
+	button.name = label+"FilterButton"
+	button.text = label
+	button.icon = icon
+	button.expand_icon = true
+	button.add_theme_constant_override("icon_max_width",14)
+	button.add_theme_font_size_override("font_size",9)
+	button.custom_minimum_size = Vector2(64,22)
+	button.toggle_mode = true
+	button.button_group = group
+	button.pressed.connect(_set_inventory_filter.bind(filter))
+	var header := all_filter_button.get_parent()
+	header.add_child(button)
+	header.move_child(button,equipment_filter_button.get_index())
 
 
 func _is_equipment_equipped(item: EquipmentDefinition) -> bool:
@@ -603,51 +629,31 @@ func _on_equipment_equip_requested(definition: EquipmentDefinition) -> void:
 		_build_inventory_grid()
 
 
-func _refresh_equipment_presentation(selected: EquipmentDefinition) -> void:
-	var equipped := player.get_equipped_weapon_item()
-	if equipped == null:
-		return
-	for card: InventorySlotButton in _equipment_cards:
-		card.configure_equipment(
-			card.equipment_definition,
-			_is_equipment_equipped(card.equipment_definition),
-			card.equipment_definition.is_compatible_with(player.character_class_id)
-		)
-		card.set_pressed_no_signal(card.equipment_definition == selected)
-	if _equipment_slot_cards.size() > WEAPON_ESSENCE_SLOT_INDEX:
-		_equipment_slot_cards[WEAPON_ESSENCE_SLOT_INDEX].configure(
-			"Weapon Essence",
-			EquipmentDefinition.Slot.WEAPON,
-			equipped,
-			PaperdollPresenter.EMPTY_ICONS[WEAPON_ESSENCE_SLOT_INDEX]
-		)
-	weapon_preview.texture = equipped.weapon_definition.world_texture
-	weapon_preview.position = equipped.weapon_definition.sprite_offset_from_grip
-	_refresh_family_portrait(equipped.weapon_definition)
-	attack_label.text = "MOUSE: %s" % equipped.display_name.to_upper()
-	_refresh_equipment_detail(selected)
-
-
 func _refresh_family_portrait(weapon: WeaponDefinition) -> void:
 	var canvas := weapon_preview.get_parent().get_parent()
 	var body := canvas.get_node("Body") as AnimatedSprite2D
-	if is_instance_valid(_family_portrait) and weapon.family_presentation != null and _family_portrait.definition == weapon.family_presentation.idle_poses:
+	var family := weapon.family_presentation
+	if family == null: family = player.weapon_catalog.default_weapon.weapon_definition.family_presentation
+	if is_instance_valid(_family_portrait) and family != null and _family_portrait.definition == family.idle_poses:
 		return
 	if is_instance_valid(_family_portrait):
 		canvas.remove_child(_family_portrait)
 		_family_portrait.queue_free()
 		_family_portrait = null
-	body.visible = weapon.family_presentation == null
-	if weapon.family_presentation == null:
+	body.visible = family == null
+	if family == null:
 		return
 	var pose := preload("res://gameplay/presentation/weapon_family_pose_presenter.gd").new()
-	pose.configure(weapon.family_presentation.idle_poses, player.attack_component, false)
+	pose.configure(family.idle_poses, player.attack_component, false)
 	pose.position = Vector2(76, 120)
-	# One native texel per screen pixel fits the huge blade inside the paper doll.
-	pose.scale = Vector2.ONE
 	canvas.add_child(pose)
 	pose.set_pose(7) # Family rest pose: planted greatsword or back-stowed axe.
 	_family_portrait = pose
+	_layout_family_portrait.call_deferred()
+
+func _layout_family_portrait() -> void:
+	portrait_canvas.get_node("Body").position.x = portrait_canvas.size.x*.5
+	if is_instance_valid(_family_portrait): PaperdollPresenter.position_preview(_family_portrait,portrait_canvas)
 
 
 func _refresh_equipment_detail(selected: EquipmentDefinition) -> void:
@@ -794,18 +800,6 @@ func _refresh_skill_context() -> void:
 	if collection_button == null: return
 	collection_button.text = "TRAIN & ARRANGE" if _skillkeeper_access else "ARRANGE SKILLS"
 	_skill_context.text = "EIRA · SKILL TRAINING   Select a technique to check its next upgrade and arrange your combat slots." if _skillkeeper_access else "COMBAT LOADOUT   Arrange learned techniques in Sanctuary. Visit Eira for skill upgrades."
-
-
-func _start_portrait_aura() -> void:
-	if _portrait_rotation_tween != null:
-		_portrait_rotation_tween.kill()
-	if _portrait_pulse_tween != null:
-		_portrait_pulse_tween.kill()
-	_portrait_rotation_tween = create_tween().set_loops()
-	_portrait_rotation_tween.tween_property(portrait_aura, "rotation", TAU, 8.0).from(0.0)
-	_portrait_pulse_tween = create_tween().set_loops()
-	_portrait_pulse_tween.tween_property(portrait_aura, "modulate:a", 0.28, 1.2).from(0.72).set_trans(Tween.TRANS_SINE)
-	_portrait_pulse_tween.tween_property(portrait_aura, "modulate:a", 0.72, 1.4).set_trans(Tween.TRANS_SINE)
 
 
 func _clear_children(container: Node) -> void:

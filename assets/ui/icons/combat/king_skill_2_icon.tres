@@ -1,8 +1,8 @@
 [gd_resource type="AtlasTexture" load_steps=2 format=3]
 
-[ext_resource type="Texture2D" path="res://assets/ui/icons/combat/king_greatsword_skills_24.png" id="1_atlas"]
+[ext_resource type="Texture2D" path="res://assets/ui/hud/veil_sigils/molten_crash.png" id="1_atlas"]
 
 [resource]
 atlas = ExtResource("1_atlas")
-region = Rect2(24, 0, 24, 24)
+region = Rect2(0, 0, 72, 72)
 filter_clip = true

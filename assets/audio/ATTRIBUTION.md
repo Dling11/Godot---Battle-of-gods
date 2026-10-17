@@ -1,5 +1,9 @@
 # Audio Attribution
 
+## War Cyclone recorded spin suite (2026-10-17)
+
+Three WAVs in sfx/abilities/weapons/war_cyclone/ derive from retained **Swishes Sound Pack** recordings by artisticdude ([primary source/CC0](https://opengameart.org/content/swishes-sound-pack)) and **Impact** by Iwan qubodup Gabovitch ([primary source/CC0](https://opengameart.org/content/impact)). Offline windowed air grains/quiet late metal, resampling, cyclic low-pass, DC removal, fades and peak normalization produce mono44.1kHz PCM16 start,0.40s spin and finish. One loop/one cue plus the existing contact voice remain bounded; repeat-use cues throttle180ms. No runtime DSP or edits to other weapon recordings. Builder: tools/build_war_cyclone_audio.gd; exact sources/processing/hashes: art_source/reference/abilities/axe-war-cyclone.json.
+
 ## Royal Greatsword recorded metal (2026-10-15)
 
 Five WAVs in sfx/player/greatsword_heavy derive from the retained **Impact** recordings by Iwan qubodup Gabovitch, [original source and CC0 dedication](https://opengameart.org/content/impact). Metal/Meat01/Wood supply three normal cuts; stronger Metal/Stone/Wood/Meat01 supplies the jump smash; quieter Metal/Stone/Wood supplies floor debris. Offline resample/damp/mix/fade/peak normalization to mono44.1kHz PCM16. Runtime normal−6dB, smash−4dB, floor−12dB; one hit voice per accepted cut. No new download, runtime DSP or per-enemy voice multiplication. Original archive/page/recordings remain under art_source/audio/weapon_contact_2026_10_06; exact hashes/processing under art_source/audio/greatsword_heavy_2026_10_15/manifest.json. build_greatsword_heavy_audio.gd is current; the older contact tool delegates forward. The superseded weapon_contact/greatsword_finisher.wav is retired; the earlier2026-10-07 section below documents historical processing only.

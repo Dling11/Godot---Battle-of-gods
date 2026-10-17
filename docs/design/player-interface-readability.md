@@ -1,4 +1,10 @@
+# Current Bag227 update2026-10-17
+
+The owner accepts the sealed mastery/larger level HUD. The Bag now uses bounded scrolling item details with fixed identity/equip, explicit category/sort controls, coloured definition-derived weapon information and one new grounded King chamber. Equipment search is removed; material search remains. Current geometry/ownership/retention/test evidence: [Bag inspection refresh](bag-inspection-refresh.md). Earlier paperdoll/search/frame descriptions below are historical and superseded where they differ.
+
 # Player vitality, growth and bag readability
+
+2026-10-17 current HUD supersedes the older layout descriptions below: approved B round portrait, aligned HP/mastery, actual active-effect hover icons with12-effect wrapping; family mastery rank/XP remains pending. See veil-sigils-hud.md and player-status-mastery-redraw.md. Bag/progression authority remains unchanged.
 
 Decision223 retention note: raw generation/review paths described below are historical provenance. Bulk source collections and image builders are deleted; current runtime assets and compact references/validation metadata remain. Future trials use temporary ignored staging and are cleared after publishing.
 
@@ -12,9 +18,9 @@ A presentation shortcut classified every sealed no-save test session as F9's all
 
 ## Vitality and growth
 
-Owner selected Slim Runic simplicity, then C Portrait Link, then requested a smaller footprint with XP inside its bar. The active connected frame is248x64, about45% less area than the initial300x96. Keep the circular King portrait/LV badge and gold/violet rails; remove both raised plaques and draw native outlined HP/XP digits centered INSIDE the fills, above both bars. Coins/critical sit above a smaller248x26 bag button; shield and finite level notice move upward without overlap. Earlier frames remain historical. Native label/fill rectangles are documented in normalization.json. HP/red fill still update immediately from HealthComponent. The gold trail holds .25s and settles over .55s; healing/max-HP changes snap it. Critical at25% or below has red styling and CRITICAL text; tooltip reads actual regeneration delay. Gameplay and progression are unchanged.
+Current2026-10-17: Decision225 supersedes the older248x64 Portrait Link with C2 Veil Sigils. The254x76 top-left composition places the portrait/level before HP, then actual equipped weapon and ATK/DEF/AS. Numeric blue XP is inside the13px strip below the compact bottom-center skill dock; Bag/Menu move to bottom-right. Themed hover/focus cards replace permanent detailed text. The old Sanctuary decorative tray override is removed. Read veil-sigils-hud.md for sizes, data meanings and current tests. HP remains immediate; its finite violet trail holds.25s then settles over.55s. Healing/max-HP changes snap the trail. Critical at25% or below remains explicit, with actual regeneration-delay help. Gameplay and progression are unchanged.
 
-Vow retains its real shield/duration readout, now below the bag button. Shield-only damage leaves HP unchanged. A separate finite level-up notice sits below that readout and names newly eligible Eira training. No perpetual flashing or new per-frame gameplay observer is introduced.
+Vow retains its real shield/duration readout below the top-left status group. Shield-only damage leaves HP unchanged. A separate finite level-up notice sits below that readout and names newly eligible Eira training. No perpetual flashing or new per-frame gameplay observer is introduced.
 
 HUD and CharacterMenu share progression_readout.gd. The HUD uses LV.N plus compact exact XP digits, with comma grouping for large numbers. XP is into the current level against its own requirement, not lifetime total: after150 cumulative XP, Level2 displays XP0/250; after175, it displays XP25/250. The concept's3,250/10,000 was illustrative only. Hover and CharacterMenu retain full XP remaining/next-level/training copy. STAGE CAP appears in the XP plaque while the LV badge names the current level; hover names the actual stage/cap requirement. MAX LEVEL remains distinct. ProgressionDefinition display names and next_cap_requirement do not change thresholds, earned levels, growth, caps or rewards. Legacy earned levels above old story gates receive the next higher cap requirement. XP still stops at the ceiling while gold/loot continue.
 

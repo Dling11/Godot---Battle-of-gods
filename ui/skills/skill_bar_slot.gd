@@ -1,6 +1,9 @@
 class_name SkillBarSlot
 extends Panel
 
+const VeilStyle = preload("res://ui/hud/veil_theme.gd")
+const Tips = preload("res://ui/hud/combat_tooltip_readout.gd")
+
 ## Compact reusable HUD observer for one configured skill slot.
 
 signal activation_requested(slot_number: int)
@@ -19,44 +22,36 @@ var ability_component: AbilityComponent
 var _cooldown_tween: Tween
 var _targeting_tween: Tween
 var _targeting_active := false
-var _accent_color := Color(0.45, 0.78, 0.94, 1.0)
 
-
-const SLOT_ACCENTS := {
-	1: Color(0.42, 0.79, 0.96, 1.0),
-	2: Color(0.95, 0.69, 0.30, 1.0),
-	3: Color(0.36, 0.66, 0.94, 1.0),
-	4: Color(0.65, 0.58, 1.0, 1.0),
-}
 
 
 func _ready() -> void:
+	VeilStyle.skin_slot(self,activation_button)
+	activation_button.configure_tooltip(_tooltip_readout)
 	if slot_definition != null:
 		configure(slot_definition)
 	queue_redraw()
 
 
 func _draw() -> void:
-	var accent := Color(1.0, 0.86, 0.52, 1.0) if _targeting_active else _accent_color
-	var right := size.x - 2.0
-	var bottom := size.y - 2.0
-	draw_polyline(PackedVector2Array([
-		Vector2(2.0, 8.0), Vector2(2.0, 2.0), Vector2(8.0, 2.0)
-	]), accent, 1.0, false)
-	draw_polyline(PackedVector2Array([
-		Vector2(right - 6.0, bottom), Vector2(right, bottom), Vector2(right, bottom - 6.0)
-	]), accent, 1.0, false)
+	var accent := VeilStyle.CYAN
+	if _targeting_active:
+		draw_arc(size/2,19,0,TAU,48,accent,1,false)
 	if ability_component is SovereignPursuitComponent and slot_definition != null and slot_definition.is_equipped():
 		var pursuit := ability_component as SovereignPursuitComponent
 		for index in pursuit.get_max_charges():
 			var pip_color := accent if index < pursuit.charges_available else Color(0.17, 0.25, 0.33, 1.0)
-			draw_rect(Rect2(size.x - 7.0 - index * 6.0, 4.0, 4.0, 4.0), pip_color)
+			draw_rect(Rect2(size.x - 10.0 - index * 6.0, 34.0, 4.0, 2.0), pip_color)
+
+func _tooltip_readout() -> Dictionary:
+	var data := Tips.skill(ability_component,slot_definition.get_key_label() if slot_definition != null else "")
+	data["icon"] = slot_definition.get_icon() if slot_definition != null else null
+	return data
 
 
 func configure(definition: SkillSlotDefinition) -> void:
 	slot_definition = definition
 	name = "Skill%d" % definition.slot_number
-	_accent_color = SLOT_ACCENTS.get(definition.slot_number, SLOT_ACCENTS[1])
 	key_label.text = definition.get_key_label()
 	ability_icon.texture = definition.get_icon()
 	tooltip_text = "%s — %s" % [definition.get_display_name(), definition.get_status_text()]
@@ -126,6 +121,7 @@ func _show_cooldown(duration_seconds: float) -> void:
 	# mouse, and future touch input all reach the shared denied-action feedback.
 	activation_button.disabled = false
 	state_label.text = "%.1f" % duration_seconds
+	state_label.show()
 	state_label.add_theme_font_size_override("font_size", 10)
 	state_label.add_theme_color_override("font_color", Color(0.94, 0.72, 0.38, 1))
 	cooldown_bar.max_value = duration_seconds
@@ -148,6 +144,7 @@ func _show_ready() -> void:
 	ability_icon.modulate = Color.WHITE
 	activation_button.disabled = false
 	state_label.text = "READY"
+	state_label.hide()
 	state_label.add_theme_font_size_override("font_size", 10)
 	state_label.add_theme_color_override("font_color", Color(0.62, 0.9, 0.54, 1))
 	cooldown_tick.stop()
@@ -158,8 +155,9 @@ func show_targeting() -> void:
 		return
 	_targeting_active = true
 	state_label.text = "AIM  RMB"
-	state_label.add_theme_font_size_override("font_size", 8)
-	state_label.add_theme_color_override("font_color", Color(1.0, 0.86, 0.5, 1.0))
+	state_label.show()
+	state_label.add_theme_font_size_override("font_size", 7)
+	state_label.add_theme_color_override("font_color", VeilStyle.CYAN)
 	if _targeting_tween != null and _targeting_tween.is_valid():
 		_targeting_tween.kill()
 	ability_icon.modulate = Color.WHITE
@@ -204,6 +202,7 @@ func _show_pursuit_charges(_available: int, _maximum: int) -> void:
 		_cooldown_tween.kill()
 	if not _targeting_active:
 		state_label.text = "%d/%d" % [pursuit.charges_available, pursuit.get_max_charges()]
+		state_label.visible = pursuit.charges_available == 0
 		state_label.add_theme_font_size_override("font_size", 10)
 		state_label.add_theme_color_override("font_color", Color(0.62, 0.9, 0.54, 1) if pursuit.charges_available > 0 else Color(0.94, 0.72, 0.38, 1))
 	modulate = Color.WHITE

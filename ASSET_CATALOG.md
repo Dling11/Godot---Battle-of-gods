@@ -1,5 +1,12 @@
 # Active Asset Catalog
 
+Current Weapon Court 234: assets/characters/npcs/veyr/idle.png (384x192, eight complete 96px hooded cels, 33,743 bytes); assets/environment/sanctuary/weapon_court/training_pavilion.png (232x152, 224x122 occupied, 46,488 bytes); training_post.png (256x64, four whole recoil cels, 10,761 bytes). These replace the same three paths; binary alpha/nearest filtering remain. Gate/energy are unchanged. Five current court/gate/NPC PNGs total 152,139 bytes. The other 689 guarded assets remain exact; guard count stays 692. Veyr's 0.5 runtime scale/y=-15 and post 0.65/y=-14.3 preserve grounding. Prompts/source/hashes/registration: art_source/reference/environment/weapon-court.json. Earlier 232/233 totals are historical.
+
+Cyclone231 final VFX under assets/vfx/abilities/weapons/axe_war_cyclone/: motion.png1024x1024(155,517 bytes), outer.png320x320(45,051), ground.png1024x512(33,433), icon.png96x96(20,112). Total254,113 bytes; old spin/recovery/slash sheets retired. Three unchanged recorded PCM WAVs remain under assets/audio/sfx/abilities/weapons/war_cyclone/. Sole compact prompts/source/registration/audio audit: art_source/reference/abilities/axe-war-cyclone.json. No permanent generation archive; ordinary weapon art/audio remain protected.
+
+
+Bag227 uses assets/ui/inventory/portrait_backdrop.tres: a native336×412 GradientTexture2D displayed168×206, with a thin slate border. The rejected472,484-byte chamber PNG/import is removed; no background raster is added. Existing complete King/steel textures remain unchanged. Selected settings/layout: art_source/reference/ui/bag-inspection.json; current UI rules: docs/design/bag-inspection-refresh.md.
+
 Updated2026-10-16. Decision223 retains final playable art plus compact important support. art_source/generated and image builders are deleted; raw trials use temporary ignored staging in future work.
 
 | Content | Current owner |
@@ -14,7 +21,7 @@ Updated2026-10-16. Decision223 retains final playable art plus compact important
 | NPCs/Sanctuary | levels/sanctuary/town, renewed NPC resources and referenced environment art |
 | Enemies/stagesI–VI | entities/enemies, environment, levels and data/environment/layouts |
 | Gates/chests | gameplay/encounters and gameplay/loot with current referenced assets |
-| Title/loading/HUD/Bag | ui and assets/ui; campfire trio, quiet transition, compact portrait and centered paper doll |
+| Title/loading/HUD/Bag | ui and assets/ui; campfire trio, quiet transition, reference-matched portrait/mastery/skill UI (veil_sigils,28 PNGs plus bundled Lora font) and centered paper doll |
 | Compact support | art_source/production-assets.json; small King reference images and axe-motion.json/reaper-grounding.json |
 | Licensed audio | assets/audio plus attribution and retained licensed originals under art_source/audio |
 

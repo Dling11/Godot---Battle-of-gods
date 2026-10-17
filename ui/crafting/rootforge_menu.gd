@@ -7,9 +7,6 @@ extends Control
 signal menu_closed
 
 const ALL_CATEGORIES := -1
-const Stage5CoreEquipment: EquipmentCatalogDefinition = preload(
-	"res://data/items/equipment/forest/stage_5_core_catalog.tres"
-)
 const KingWeaponCatalog: WeaponCatalogDefinition = preload(
 	"res://data/items/king_weapon_catalog.tres"
 )
@@ -63,6 +60,7 @@ func _ready() -> void:
 	if story_state != null:
 		story_state.story_state_changed.connect(_on_story_state_changed)
 	get_node("/root/RunSession").progression_state_changed.connect(_on_currency_changed)
+	get_node("/root/WeaponTraining").training_changed.connect(_on_recipe_discovery_reset)
 	_build_recipe_list()
 	hide()
 
@@ -145,7 +143,7 @@ func _build_recipe_list() -> void:
 			recipe.display_name.to_upper(),
 		]
 		button.tooltip_text = recipe.description
-		var output := Stage5CoreEquipment.find_item(recipe.output_id)
+		var output: EquipmentDefinition = get_node("/root/CraftingService").resolve_output(recipe)
 		var formula_icon := TextureRect.new()
 		formula_icon.name = "FormulaIcon"
 		formula_icon.mouse_filter = Control.MOUSE_FILTER_IGNORE
@@ -222,7 +220,7 @@ func _refresh_recipe_detail() -> void:
 		selected_recipe.tier,
 		_category_name(selected_recipe.category),
 	]
-	var output := Stage5CoreEquipment.find_item(selected_recipe.output_id)
+	var output: EquipmentDefinition = get_node("/root/CraftingService").resolve_output(selected_recipe)
 	output_preview.visible = output != null
 	if output != null:
 		output_icon.texture = output.icon
@@ -268,7 +266,7 @@ func _refresh_recipe_detail() -> void:
 		primary_action_button.text = "ALREADY OWNED" if status["reason"] == &"already_owned" else "CRAFT"
 		primary_action_button.disabled = true
 	elif status["success"]:
-		milestone_label.text = "STAGE V CORE GEAR SEAL VERIFIED\nALL MATERIALS READY"
+		milestone_label.text = "AXE PROOF EARNED · NEMA'S FORGE\nALL MATERIALS READY" if selected_recipe.unlock_id == &"axe_cyclone_proof" else "STAGE V CORE GEAR SEAL VERIFIED\nALL MATERIALS READY"
 		primary_action_button.text = "CRAFT %s" % selected_recipe.display_name.to_upper()
 		primary_action_button.disabled = false
 	else:
@@ -350,18 +348,14 @@ func _category_name(category: int) -> String:
 
 
 func _required_seal_text(category: int) -> String:
+	if selected_recipe != null and selected_recipe.unlock_id == &"axe_cyclone_proof": return "COMPLETE VEYR'S AXE LESSON"
 	if category == RecipeDefinition.CraftingCategory.ACCESSORY:
 		return "STAGE VIII ACCESSORY SEAL REQUIRED"
 	return "STAGE V CORE GEAR SEAL REQUIRED"
 
 
 func _is_recipe_available(recipe: RecipeDefinition) -> bool:
-	var recipe_discovery := get_node_or_null("/root/RecipeDiscovery")
-	var story_state := get_node_or_null("/root/StoryState")
-	return (
-		(recipe_discovery != null and recipe_discovery.is_recipe_discovered(recipe.recipe_id))
-		or (story_state != null and story_state.has_discovery(recipe.unlock_id))
-	)
+	return get_node("/root/CraftingService").is_recipe_unlocked(recipe)
 
 
 func _craft_selected_recipe() -> void:

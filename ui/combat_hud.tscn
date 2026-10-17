@@ -747,20 +747,3 @@ theme_override_font_sizes/font_size = 20
 layout_mode = 2
 text = "Press R / gamepad north button to return to Sanctuary"
 horizontal_alignment = 1
-
-[node name="ResolveLabel" type="Label" parent="."]
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -190.0
-offset_top = -123.0
-offset_right = 190.0
-offset_bottom = -107.0
-mouse_filter = 1
-theme_override_colors/font_color = Color(0.82, 0.94, 1.0, 1)
-theme_override_colors/font_outline_color = Color(0.01, 0.02, 0.03, 1)
-theme_override_constants/outline_size = 2
-theme_override_font_sizes/font_size = 11
-horizontal_alignment = 1
-text = "RESOLVE 0/3 · LAND BASIC HITS"

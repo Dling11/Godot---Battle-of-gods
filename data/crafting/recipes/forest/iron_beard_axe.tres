@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="RecipeDefinition" format=3]
+
+[ext_resource type="Script" path="res://data/crafting/recipes/recipe_definition.gd" id="1"]
+[ext_resource type="Script" path="res://data/items/materials/material_stack_definition.gd" id="2"]
+[ext_resource type="Resource" path="res://data/items/materials/forest/weathered_fittings.tres" id="3"]
+[ext_resource type="Resource" path="res://data/items/materials/forest/root_fiber.tres" id="4"]
+
+[sub_resource type="Resource" id="Iron"]
+script = ExtResource("2")
+material = ExtResource("3")
+quantity = 4
+
+[sub_resource type="Resource" id="Grip"]
+script = ExtResource("2")
+material = ExtResource("4")
+quantity = 6
+
+[resource]
+script = ExtResource("1")
+recipe_id = &"sanctuary_iron_beard_axe"
+display_name = "Iron Beard Axe"
+description = "Nema reforges salvaged fittings into a broad iron edge and binds its grip with root fiber. Complete Veyr's Axe lesson to earn this pattern; forge it here in Sanctuary. Your learned Cyclone belongs to the Axe family."
+region_id = &"forest"
+category = 1
+output_id = &"weapon_king_iron_beard_axe"
+ingredients = Array[Resource]([SubResource("Iron"),SubResource("Grip")])
+unlock_id = &"axe_cyclone_proof"
+gold_cost = 75
+requires_sanctuary_station = true

@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="WarCycloneDefinition" load_steps=13 format=3]
+
+[ext_resource type="Script" path="res://data/abilities/weapons/war_cyclone_definition.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/vfx/abilities/weapons/axe_war_cyclone/icon.png" id="2"]
+[ext_resource type="Texture2D" path="res://assets/vfx/abilities/weapons/axe_war_cyclone/outer.png" id="3"]
+[ext_resource type="Resource" path="res://assets/characters/playable/king/iron_beard_unified/side/spin.tres" id="4"]
+[ext_resource type="Resource" path="res://assets/characters/playable/king/iron_beard_unified/up/spin.tres" id="5"]
+[ext_resource type="Resource" path="res://assets/characters/playable/king/iron_beard_unified/down/spin.tres" id="6"]
+[ext_resource type="AudioStream" path="res://assets/audio/sfx/abilities/weapons/war_cyclone/spin.wav" id="7"]
+[ext_resource type="Texture2D" path="res://assets/vfx/abilities/weapons/axe_war_cyclone/motion.png" id="8"]
+[ext_resource type="Texture2D" path="res://assets/vfx/abilities/weapons/axe_war_cyclone/ground.png" id="9"]
+[ext_resource type="AudioStream" path="res://assets/audio/sfx/abilities/weapons/war_cyclone/start.wav" id="10"]
+[ext_resource type="AudioStream" path="res://assets/audio/sfx/abilities/weapons/war_cyclone/finish.wav" id="11"]
+
+[sub_resource type="CircleShape2D" id="Circle_cyclone"]
+radius = 96.0
+
+[resource]
+script = ExtResource("1")
+ability_id = &"axe_war_cyclone"
+display_name = "War Cyclone"
+hud_name = "CYCLONE"
+description = "Spin your axe around you for five seconds, continuously damaging nearby enemies. Take 50% less damage from all types and ignore stun and stagger while spinning. Move with WASD or right-click. Repeating F1 keeps the spin running; Space dodges out."
+icon = ExtResource("2")
+activation_mode = 2
+impact_weight = 0
+damage_type = 0
+hitbox_shape = SubResource("Circle_cyclone")
+weapon_damage_multiplier = 6.0
+knockback_strength = 12.0
+stagger_seconds = 0.0
+stun_seconds = 0.0
+wind_up_seconds = 0.03
+active_seconds = 5.0
+recovery_seconds = 0.24
+cooldown_seconds = 16.0
+grants_invulnerability = false
+grants_super_armor = false
+dash_cancelable = true
+turn_seconds = 0.5
+minimum_turn_seconds = 0.28
+movement_ratio = 0.9
+motion_atlas = ExtResource("8")
+ground_atlas = ExtResource("9")
+spin_poses = Array[Resource]([ExtResource("4"), ExtResource("5"), ExtResource("6")])
+outer_atlas = ExtResource("3")
+swing_sound = ExtResource("7")
+activation_sound = ExtResource("10")
+finish_sound = ExtResource("11")

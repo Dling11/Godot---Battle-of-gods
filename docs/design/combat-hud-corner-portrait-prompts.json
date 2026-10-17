@@ -1,0 +1,87 @@
+{
+  "date": "2026-10-17",
+  "mode": "builtin_imagegen_edit",
+  "status": "owner_proposed_8_King_6_weapon_top_left_portrait",
+  "runtime_changes": false,
+  "requirements": [
+    "Top-left avatar with HP directly below",
+    "Bottom center skills separate from player portrait",
+    "Working maximum 8 King + 6 equipped weapon techniques = 14",
+    "Unlocked only; no locked placeholders or empty rows"
+  ],
+  "concepts": [
+    {
+      "id": "full_14",
+      "king": 8,
+      "weapon": 6,
+      "prompt": "Use case: precise-object-edit.\nAsset: original Battle of Gods pixel-RPG combat HUD concept, not a production texture.\nInput 1 is the clean full-gameplay edit target and exact UI/style/world reference. Input 2 is the user's annotated position guide ONLY: its yellow arrow means MOVE the portrait/player-status from the bottom to the TOP LEFT. Do not render any yellow lines, boxes, arrows or annotation.\nKeep input 1's entire 16:9 forest scene, tiny King sprite, environment, top-center enemy information, and upper-right objectives unchanged. Change ONLY player-status position and bottom skill dock.\nTOP LEFT: Move the entire small King portrait into the upper-left screen corner with a neat safe margin, where Bag used to be. Small dark-haired red-scarf King portrait, one level12 badge. Directly UNDER the portrait put a short red HP bar reading \"1,240 / 1,600\". HP must be BELOW the face, not beside it or above it. Compact roughly64x70 logical-pixel module at logical960x540. Use restrained iron/obsidian frame and violet details matching input1. No mastery/M5 badge, no orb. Move small \"BAG [TAB]\" and \"MENU [ESC]\" controls beneath this corner module in a compact horizontal pair; keep the top-center target clear.\nBOTTOM CENTER: ONLY skills and a thin XP strip, absolutely NO portrait, face, level, HP or empty portrait-shaped gap. The dock is now appreciably smaller. Icons about28x28 logicalpixels with2px gaps and thin iron frames; clear small pale key labels, original blue/cyan/purple/white RPG glyphs. Exact unlocked abilities specified below. King powers form the lower row; weapon techniques the upper row. Each row ends at its last unlocked button. No locked icons, padlocks, blank squares or reserved gaps. Keep icon size constant rather than enlarging early skills. A small separate \"SPACE\" dodge utility at the lower row's right, not part of skill count. Thin XP strip directly beneath the fitted dock, \"4,250 / 10,000 XP\" inside. Use a compact silhouette, dark navy/obsidian, weathered silver, bone text, restrained cyan/violet; no large spikes, gold flourishes or extra panels.\nAll digits, named skills, target casting and levels are illustrative review data; do not introduce new artwork of characters or monsters. Render as one clean full-screen gameplay mockup, no headings, arrows, labels or callout sheets. Before finalizing check portrait TOP LEFT, health BELOW portrait, zero avatar in bottom dock, exact requested keys and counts.\nFULL WORKING PROPOSAL: exactly FOURTEEN skill buttons, SIX weapon techniques labeled \"F1\" \"F2\" \"F3\" \"F4\" \"F5\" \"F6\" in an upper contiguous row; EIGHT King powers labeled \"1\" \"2\" \"3\" \"4\" \"5\" \"6\" \"7\" \"8\" in a lower contiguous row. No F7-F10, no9 or0. One lower skill may show6.2 cooldown. Align both rows' left edges; shorter six-button top row ends naturally. Entire bottom dock including utility roughly290 logicalpixels wide (about30% screen), at most82logicalpixels high. Keep most world space clear.",
+      "refs": [
+        "D:/React_ONLY_2026/GODOT-BATTLE-OF-GODS/tmp/review/combat_hud_compact_portrait_2026_10_17/full_20.png",
+        "C:/Users/ADMINI~1/AppData/Local/Temp/codex-clipboard-e1f63104-879a-465e-9fdf-f129447db648.png"
+      ],
+      "output": "tmp/review/combat_hud_corner_portrait_2026_10_17/full_14.png",
+      "generated_original": "C:/Users/Administrator/.codex/generated_images/01a0eed4-5878-7032-a315-e493f92ce97a/exec-c024e325-7797-43d4-b90e-40aece5d6d3e.png",
+      "width": 1671,
+      "height": 941,
+      "bytes": 1831623,
+      "sha256": "f777c51e82da3c9460d69ae0fa89f2045b0b32a6d56a0fb9fb915117b5aae71a",
+      "visual_review": {
+        "top_left_portrait": true,
+        "hp_directly_below_portrait": true,
+        "bottom_portrait_absent": true,
+        "king_slots": 8,
+        "weapon_slots": 6,
+        "space_separate_utility": true,
+        "no_locked_placeholders": true
+      }
+    },
+    {
+      "id": "early_4",
+      "king": 4,
+      "weapon": 0,
+      "prompt": "Use case: precise-object-edit.\nAsset: original Battle of Gods pixel-RPG combat HUD concept, not a production texture.\nInput 1 is the clean full-gameplay edit target and exact UI/style/world reference. Input 2 is the user's annotated position guide ONLY: its yellow arrow means MOVE the portrait/player-status from the bottom to the TOP LEFT. Do not render any yellow lines, boxes, arrows or annotation.\nKeep input 1's entire 16:9 forest scene, tiny King sprite, environment, top-center enemy information, and upper-right objectives unchanged. Change ONLY player-status position and bottom skill dock.\nTOP LEFT: Move the entire small King portrait into the upper-left screen corner with a neat safe margin, where Bag used to be. Small dark-haired red-scarf King portrait, one level12 badge. Directly UNDER the portrait put a short red HP bar reading \"1,240 / 1,600\". HP must be BELOW the face, not beside it or above it. Compact roughly64x70 logical-pixel module at logical960x540. Use restrained iron/obsidian frame and violet details matching input1. No mastery/M5 badge, no orb. Move small \"BAG [TAB]\" and \"MENU [ESC]\" controls beneath this corner module in a compact horizontal pair; keep the top-center target clear.\nBOTTOM CENTER: ONLY skills and a thin XP strip, absolutely NO portrait, face, level, HP or empty portrait-shaped gap. The dock is now appreciably smaller. Icons about28x28 logicalpixels with2px gaps and thin iron frames; clear small pale key labels, original blue/cyan/purple/white RPG glyphs. Exact unlocked abilities specified below. King powers form the lower row; weapon techniques the upper row. Each row ends at its last unlocked button. No locked icons, padlocks, blank squares or reserved gaps. Keep icon size constant rather than enlarging early skills. A small separate \"SPACE\" dodge utility at the lower row's right, not part of skill count. Thin XP strip directly beneath the fitted dock, \"4,250 / 10,000 XP\" inside. Use a compact silhouette, dark navy/obsidian, weathered silver, bone text, restrained cyan/violet; no large spikes, gold flourishes or extra panels.\nAll digits, named skills, target casting and levels are illustrative review data; do not introduce new artwork of characters or monsters. Render as one clean full-screen gameplay mockup, no headings, arrows, labels or callout sheets. Before finalizing check portrait TOP LEFT, health BELOW portrait, zero avatar in bottom dock, exact requested keys and counts.\nEARLY UNLOCK STATE: exactly FOUR King powers labeled \"1\" \"2\" \"3\" \"4\" in one compact contiguous row. ZERO weapon techniques: NO F-key labels and NO vacant upper row or empty header. Four numbered icons plus separate SPACE utility. Bottom dock about170logicalpixels wide and45high; do not enlarge icons. The top-left portrait and HP module has exactly the same size and location as the full-unlock design.",
+      "refs": [
+        "D:/React_ONLY_2026/GODOT-BATTLE-OF-GODS/tmp/review/combat_hud_compact_portrait_2026_10_17/full_20.png",
+        "C:/Users/ADMINI~1/AppData/Local/Temp/codex-clipboard-e1f63104-879a-465e-9fdf-f129447db648.png"
+      ],
+      "output": "tmp/review/combat_hud_corner_portrait_2026_10_17/early_4.png",
+      "generated_original": "C:/Users/Administrator/.codex/generated_images/01a0eed4-5878-7032-a315-e493f92ce97a/exec-92f36639-c509-4a28-afc9-6eaa607f8a57.png",
+      "width": 1671,
+      "height": 941,
+      "bytes": 1862777,
+      "sha256": "903b259bbb4f092718193f7024220a1cf408d3580233cf123b952c2773952a5e",
+      "visual_review": {
+        "top_left_portrait": true,
+        "hp_directly_below_portrait": true,
+        "bottom_portrait_absent": true,
+        "king_slots": 4,
+        "weapon_slots": 0,
+        "space_separate_utility": true,
+        "no_locked_placeholders": true
+      }
+    }
+  ],
+  "corrections": [
+    {
+      "id": "full_14",
+      "prompt": "Use case: precise-object-edit. Input1 is the generated Battle of Gods HUD review image. Make ONLY this precise bottom-dock correction; preserve the top-left portrait and HP below it, Bag/Menu, target header, objective, all world artwork and pixel UI style.\nThe lower King row mistakenly contains NINE buttons with a duplicated7. DELETE the GREEN LEAF button between the gold shield and the blue ghost. After deleting it, shift the blue ghost8 and SPACE left to close the gap; shorten and recenter the bottom dock and XP strip to fit. EXACT lower row:1 blue cut,2 blue crescent,3 dark cooldown6.2,4 purple vortex,5 fire,6 golden cross,7 golden shield,8 blue ghost. These are exactly EIGHT skill squares followed by the separate SPACE dodge utility. NO green leaf square, NO9, NO0, NO duplicated labels.\nRetain exactly SIX upper weapon buttons F1,F2,F3,F4,F5,F6, no extra techniques. Align the upper row's LEFT edge with lower skill1; leave the right side naturally shorter without blank cells. Keep all existing icons the same size. XP below still reads \"4,250 / 10,000 XP\". Final counts:8 lower skills+6 upper skills=14. SPACE is not a skill. Do not draw a bottom portrait, arrows, annotations or empty squares. Do not alter any other image area.",
+      "refs": [
+        "C:/Users/Administrator/.codex/generated_images/01a0eed4-5878-7032-a315-e493f92ce97a/exec-b7723993-fb2a-49ac-b820-a597e2d912be.png"
+      ]
+    }
+  ],
+  "review": {
+    "status": "generated_and_visually_reviewed",
+    "full_count": "8 King + 6 weapon = 14; SPACE separate",
+    "early_count": "4 King + 0 weapon = 4; empty row hidden",
+    "correction": "Removed generated duplicate7/extra green skill from full sample; only corrected final copied into workspace.",
+    "limitations": [
+      "Image geometry and shared glyph mapping are illustrative, not a native sizing contract.",
+      "Generated full sample centers the shorter upper row; final native row alignment remains a layout detail.",
+      "Bindings, learned-versus-equipped limits and migration await agreement."
+    ],
+    "production_files_checked": 653,
+    "production_mismatches": 0,
+    "runtime_changes": false
+  }
+}

@@ -57,6 +57,11 @@ func _ready() -> void:
 		row.add_child(button)
 		buttons[item.item_id] = button
 	detail = _label(column,10)
+	var cyclone := Button.new()
+	cyclone.text = "TRY WAR CYCLONE · F1"
+	cyclone.focus_mode = Control.FOCUS_NONE
+	cyclone.pressed.connect(_try_cyclone)
+	column.add_child(cyclone)
 	var inventory := get_node("/root/WeaponInventory")
 	inventory.weapon_acquired.connect(_acquired)
 	for signal_name in ["weapon_definition_changed","testing_preset_applied"]:
@@ -88,6 +93,14 @@ func refresh() -> void:
 		button.modulate = Color("b8d2c6") if item==current else Color.WHITE
 	detail.text = current.synergy_description
 	if current.show_combo_details: detail.text += "\n\n"+WeaponCombatReadout.summary(current.weapon_definition)
+
+func _try_cyclone() -> void:
+	var actor: Player = lab.player
+	if actor.is_any_ability_casting() or actor.attack_component.phase != MeleeAttackComponent.Phase.IDLE or actor.evade_component.is_dashing() or actor.is_in_hit_recovery() or actor.is_restrained() or actor.is_cinematic_locked() or actor.is_defeated:
+		status.text = "Finish the current action before switching."
+		return
+	lab.open_weapon_review(&"weapon_king_iron_beard_axe")
+	status.text = "War Cyclone ready · F1 to spin · Space to dodge"
 
 func equip(item: EquipmentDefinition) -> void:
 	var actor: Player = lab.player

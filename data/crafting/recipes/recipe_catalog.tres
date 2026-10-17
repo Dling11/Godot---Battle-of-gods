@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="RecipeCatalogDefinition" load_steps=10 format=3]
+[gd_resource type="Resource" script_class="RecipeCatalogDefinition" load_steps=11 format=3]
 
 [ext_resource type="Script" path="res://data/crafting/recipes/recipe_catalog_definition.gd" id="1_catalog"]
 [ext_resource type="Resource" path="res://data/crafting/recipes/forest/stage_5_varkuun_edge.tres" id="2_weapon"]
@@ -9,7 +9,8 @@
 [ext_resource type="Resource" path="res://data/crafting/recipes/forest/stage_5_mirehide_boots.tres" id="7_boots"]
 [ext_resource type="Resource" path="res://data/crafting/recipes/forest/mireward_charm.tres" id="8_charm"]
 [ext_resource type="Resource" path="res://data/crafting/recipes/forest/thornward_clasp.tres" id="9_clasp"]
+[ext_resource type="Resource" path="res://data/crafting/recipes/forest/iron_beard_axe.tres" id="10_axe"]
 
 [resource]
 script = ExtResource("1_catalog")
-recipes = Array[Resource]([ExtResource("2_weapon"), ExtResource("3_helm"), ExtResource("4_plate"), ExtResource("5_gloves"), ExtResource("6_leggings"), ExtResource("7_boots"), ExtResource("8_charm"), ExtResource("9_clasp")])
+recipes = Array[Resource]([ExtResource("2_weapon"), ExtResource("3_helm"), ExtResource("4_plate"), ExtResource("5_gloves"), ExtResource("6_leggings"), ExtResource("7_boots"), ExtResource("8_charm"), ExtResource("9_clasp"),ExtResource("10_axe")])

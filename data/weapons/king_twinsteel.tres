@@ -9,6 +9,7 @@ points = PackedVector2Array(2,-14,26,-48,74,-36,88,0,74,36,26,48,2,14)
 script = ExtResource("1")
 weapon_id = &"weapon_king_twinsteel"
 display_name = "Twinsteel"
+family_display_name = "Dual Swords"
 uses_integrated_visual = true
 family_presentation = ExtResource("3")
 melee_hitbox_shape = SubResource("fan")

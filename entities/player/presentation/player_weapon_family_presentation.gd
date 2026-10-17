@@ -153,7 +153,8 @@ func _sync() -> void:
 	if is_instance_valid(impacts):
 		impacts.mirror_horizontal_landing = uses_side_clip()
 		impacts.ground_offset = Vector2(46,32) if uses_side_clip() else Vector2(46,0)
-	actor.get_node("VisualRoot/Body").visible = not shown
+	var active_ability := actor.get_active_ability_component()
+	actor.get_node("VisualRoot/Body").visible = not shown and not (active_ability != null and active_ability.owns_body_presentation())
 	trail.visible = shown
 	if is_instance_valid(impacts): impacts.visible = shown
 	if shown != presenter.visible:

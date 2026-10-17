@@ -1,0 +1,96 @@
+{
+  "date": "2026-10-17",
+  "mode": "builtin_imagegen_edit",
+  "status": "owner_selected_B_compact_revision_review",
+  "requirements": [
+    "Smaller B portrait dock",
+    "Health directly below avatar, not above skill rows",
+    "Only unlocked active skills visible",
+    "Examples at4,10,20 total skills"
+  ],
+  "runtime_changes": false,
+  "concepts": [
+    {
+      "id": "early_4",
+      "source": "b_early_4.png",
+      "king": 4,
+      "weapon": 0,
+      "suffix": "EARLY STATE: exactly FOUR skill buttons, KING1,2,3,4 in one contiguous row to the right of the portrait/HP. ZERO weapon skills, ZERO F-key labels, and NO empty top row. Portrait module may be taller than the four-icon strip but do NOT create a blank chamber above that strip; keep separate fitted outlines. Entire dock about220 logical pixels wide (roughly23% of screen width), centered close to bottom edge. Exactly4 numbered ability icons plus one small SPACE utility. The early interface should look extremely compact.",
+      "prompt": "Use case: precise-object-edit, original pixel-RPG HUD concept. Input1 is the current PORTRAIT COMMAND gameplay screenshot to edit. Preserve its entire forest world, tiny King sprite/action, top-center enemy information, right objective tracker and corner menu buttons. Redesign ONLY the bottom player/skill dock as B COMPACT. NO health orb. The user's key requirement: move the player's red HP bar and exact health digits DIRECTLY BELOW KING'S AVATAR, confined to the portrait module. There must be NO long HP bar over or across the skill rows. Keep the serious dark-haired red-scarf King portrait in a small weathered-iron medallion on the LEFT of the action dock; portrait about34-38 logical pixels high inside a64-logical-pixel-wide module. Put one small level12 badge at the portrait edge, then a SHORT red HP bar64 logical pixels wide immediately under the portrait, with legible '1,240 / 1,600' inside it. Make the whole bottom interface visibly SMALLER than the source, around35-40% smaller in width and height at full20 skills. Design at logical960x540: skill icon squares26x26 logical pixels,2px gaps, thin2px iron edging, crisp small key labels9-10 logical pixels. Full20 dock width should be about400 logical pixels (42% of the screen), NOT70-80% of the screen; smaller stages contract further. Overall dock height at full capacity at most75 logical pixels, about14% of screen height. Most of the screenshot must remain clear world space. Two rows only when weapon techniques exist: F-key WEAPON techniques above, number-key KING powers below. Left portrait/HP module sits beside those rows; its HP is UNDER THE FACE, NEVER stretched above the icons. Keep icon dimensions the same across stages, do not enlarge early icons to fill the old panel. No giant spikes, wings, heavy gold edging, oversized buttons, huge gaps or empty rectangular chambers. Crisp original navy-black/slate panels, muted pewter iron corners, restrained violet/cyan runes, bone readable type. Use existing skill glyph style and key order. Keep a modest separate SPACE dodge pip/cell at far RIGHT (smaller than a skill), NO LMB button. Remove the large weapon/mastery panel; at most a tiny M5 badge near the portrait, with no extra action-looking square. A thin XP strip beneath the dock reads '4,250 / 10,000 XP' and matches the dock width, not full-screen width. No duplicate HP or level, no minimap, no extra avatar. Only unlocked active skills listed below exist: locked/unlearned skills and empty category rows are completely hidden, with no padlocks, placeholders, vacant cells or reserved gaps. Cooling-down skills stay visible. One available skill may show6.2 cooldown; all other slots have readable distinct RPG glyphs. All displayed values/skills are illustrative review data. Preserve16:9 full gameplay framing. Do not crop to the HUD or add review-board labels/arrows. Important hierarchy: smaller portrait above its own short red HP strip, compact icon grid beside it, XP underneath everything. Before finishing, verify health is BELOW the avatar and that the exact requested skill count/labels appear.\n\nEARLY STATE: exactly FOUR skill buttons, KING1,2,3,4 in one contiguous row to the right of the portrait/HP. ZERO weapon skills, ZERO F-key labels, and NO empty top row. Portrait module may be taller than the four-icon strip but do NOT create a blank chamber above that strip; keep separate fitted outlines. Entire dock about220 logical pixels wide (roughly23% of screen width), centered close to bottom edge. Exactly4 numbered ability icons plus one small SPACE utility. The early interface should look extremely compact.",
+      "refs": [
+        "D:/React_ONLY_2026/GODOT-BATTLE-OF-GODS/tmp/review/combat_hud_adaptive_2026_10_17/b_early_4.png"
+      ],
+      "output": "tmp/review/combat_hud_compact_portrait_2026_10_17/early_4.png",
+      "generated_original": "C:/Users/Administrator/.codex/generated_images/01a0eed4-5878-7032-a315-e493f92ce97a/exec-98752b76-f774-4c2e-b891-e250e3d9ad34.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 1973356,
+      "sha256": "1b9d47bc2ba833b92614cb227436b9207c3cc37f0df2b25e8a5b0e1f08244b1f",
+      "visual_review": {
+        "hp_below_portrait": true,
+        "king_slots": 4,
+        "weapon_slots": 0,
+        "no_locked_placeholders": true,
+        "no_empty_weapon_row": "confirmed"
+      }
+    },
+    {
+      "id": "growing_10",
+      "source": "b_growing_10.png",
+      "king": 6,
+      "weapon": 4,
+      "suffix": "GROWING STATE: exactly TEN skill buttons TOTAL: upper row ONLY F1,F2,F3,F4 (four weapon techniques); lower row ONLY1,2,3,4,5,6 (six King powers). Shorter upper row ends naturally without empty squares. Two small regular rows to the right of portrait/short HP module. Overall dock about280 logical pixels wide (29% of screen width), centered near the bottom; no F5 or King7 exists. COUNT4 F icons and6 number icons.",
+      "prompt": "Use case: precise-object-edit, original pixel-RPG HUD concept. Input1 is the current PORTRAIT COMMAND gameplay screenshot to edit. Preserve its entire forest world, tiny King sprite/action, top-center enemy information, right objective tracker and corner menu buttons. Redesign ONLY the bottom player/skill dock as B COMPACT. NO health orb. The user's key requirement: move the player's red HP bar and exact health digits DIRECTLY BELOW KING'S AVATAR, confined to the portrait module. There must be NO long HP bar over or across the skill rows. Keep the serious dark-haired red-scarf King portrait in a small weathered-iron medallion on the LEFT of the action dock; portrait about34-38 logical pixels high inside a64-logical-pixel-wide module. Put one small level12 badge at the portrait edge, then a SHORT red HP bar64 logical pixels wide immediately under the portrait, with legible '1,240 / 1,600' inside it. Make the whole bottom interface visibly SMALLER than the source, around35-40% smaller in width and height at full20 skills. Design at logical960x540: skill icon squares26x26 logical pixels,2px gaps, thin2px iron edging, crisp small key labels9-10 logical pixels. Full20 dock width should be about400 logical pixels (42% of the screen), NOT70-80% of the screen; smaller stages contract further. Overall dock height at full capacity at most75 logical pixels, about14% of screen height. Most of the screenshot must remain clear world space. Two rows only when weapon techniques exist: F-key WEAPON techniques above, number-key KING powers below. Left portrait/HP module sits beside those rows; its HP is UNDER THE FACE, NEVER stretched above the icons. Keep icon dimensions the same across stages, do not enlarge early icons to fill the old panel. No giant spikes, wings, heavy gold edging, oversized buttons, huge gaps or empty rectangular chambers. Crisp original navy-black/slate panels, muted pewter iron corners, restrained violet/cyan runes, bone readable type. Use existing skill glyph style and key order. Keep a modest separate SPACE dodge pip/cell at far RIGHT (smaller than a skill), NO LMB button. Remove the large weapon/mastery panel; at most a tiny M5 badge near the portrait, with no extra action-looking square. A thin XP strip beneath the dock reads '4,250 / 10,000 XP' and matches the dock width, not full-screen width. No duplicate HP or level, no minimap, no extra avatar. Only unlocked active skills listed below exist: locked/unlearned skills and empty category rows are completely hidden, with no padlocks, placeholders, vacant cells or reserved gaps. Cooling-down skills stay visible. One available skill may show6.2 cooldown; all other slots have readable distinct RPG glyphs. All displayed values/skills are illustrative review data. Preserve16:9 full gameplay framing. Do not crop to the HUD or add review-board labels/arrows. Important hierarchy: smaller portrait above its own short red HP strip, compact icon grid beside it, XP underneath everything. Before finishing, verify health is BELOW the avatar and that the exact requested skill count/labels appear.\n\nGROWING STATE: exactly TEN skill buttons TOTAL: upper row ONLY F1,F2,F3,F4 (four weapon techniques); lower row ONLY1,2,3,4,5,6 (six King powers). Shorter upper row ends naturally without empty squares. Two small regular rows to the right of portrait/short HP module. Overall dock about280 logical pixels wide (29% of screen width), centered near the bottom; no F5 or King7 exists. COUNT4 F icons and6 number icons.",
+      "refs": [
+        "D:/React_ONLY_2026/GODOT-BATTLE-OF-GODS/tmp/review/combat_hud_adaptive_2026_10_17/b_growing_10.png"
+      ],
+      "output": "tmp/review/combat_hud_compact_portrait_2026_10_17/growing_10.png",
+      "generated_original": "C:/Users/Administrator/.codex/generated_images/01a0eed4-5878-7032-a315-e493f92ce97a/exec-e4a895f5-e202-402b-b2fd-12bc62f376c0.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2023402,
+      "sha256": "96d6872ca3667e2663b2de2469071c8b0c98dc2d9f2629f7f8e378769fd64c6b",
+      "visual_review": {
+        "hp_below_portrait": true,
+        "king_slots": 6,
+        "weapon_slots": 4,
+        "no_locked_placeholders": true,
+        "no_empty_weapon_row": "not_applicable"
+      }
+    },
+    {
+      "id": "full_20",
+      "source": "b_full_20.png",
+      "king": 10,
+      "weapon": 10,
+      "suffix": "FULL STATE: exactly TWENTY skill buttons TOTAL. Ten upper-row weapon techniques labeled F1,F2,F3,F4,F5,F6,F7,F8,F9,F10 in that order, and ten lower-row King powers labeled1,2,3,4,5,6,7,8,9,0 in that order. Both rows contiguous, no center gap or extra cell. Exactly20 small26-logical-pixel icons, not a giant MMO bar. Overall dock only about400-430 logical pixels wide, below46% of screen width. On the current1672-pixel-wide input this means roughly700-750 image pixels, centered horizontally, rather than the old1200-pixel-wide dock. Player HP remains a short bar ONLY below the avatar at the LEFT end. COUNT ALL F1-F10 and1-0 labels; no skipped/repeated keys.",
+      "prompt": "Use case: precise-object-edit, original pixel-RPG HUD concept. Input1 is the current PORTRAIT COMMAND gameplay screenshot to edit. Preserve its entire forest world, tiny King sprite/action, top-center enemy information, right objective tracker and corner menu buttons. Redesign ONLY the bottom player/skill dock as B COMPACT. NO health orb. The user's key requirement: move the player's red HP bar and exact health digits DIRECTLY BELOW KING'S AVATAR, confined to the portrait module. There must be NO long HP bar over or across the skill rows. Keep the serious dark-haired red-scarf King portrait in a small weathered-iron medallion on the LEFT of the action dock; portrait about34-38 logical pixels high inside a64-logical-pixel-wide module. Put one small level12 badge at the portrait edge, then a SHORT red HP bar64 logical pixels wide immediately under the portrait, with legible '1,240 / 1,600' inside it. Make the whole bottom interface visibly SMALLER than the source, around35-40% smaller in width and height at full20 skills. Design at logical960x540: skill icon squares26x26 logical pixels,2px gaps, thin2px iron edging, crisp small key labels9-10 logical pixels. Full20 dock width should be about400 logical pixels (42% of the screen), NOT70-80% of the screen; smaller stages contract further. Overall dock height at full capacity at most75 logical pixels, about14% of screen height. Most of the screenshot must remain clear world space. Two rows only when weapon techniques exist: F-key WEAPON techniques above, number-key KING powers below. Left portrait/HP module sits beside those rows; its HP is UNDER THE FACE, NEVER stretched above the icons. Keep icon dimensions the same across stages, do not enlarge early icons to fill the old panel. No giant spikes, wings, heavy gold edging, oversized buttons, huge gaps or empty rectangular chambers. Crisp original navy-black/slate panels, muted pewter iron corners, restrained violet/cyan runes, bone readable type. Use existing skill glyph style and key order. Keep a modest separate SPACE dodge pip/cell at far RIGHT (smaller than a skill), NO LMB button. Remove the large weapon/mastery panel; at most a tiny M5 badge near the portrait, with no extra action-looking square. A thin XP strip beneath the dock reads '4,250 / 10,000 XP' and matches the dock width, not full-screen width. No duplicate HP or level, no minimap, no extra avatar. Only unlocked active skills listed below exist: locked/unlearned skills and empty category rows are completely hidden, with no padlocks, placeholders, vacant cells or reserved gaps. Cooling-down skills stay visible. One available skill may show6.2 cooldown; all other slots have readable distinct RPG glyphs. All displayed values/skills are illustrative review data. Preserve16:9 full gameplay framing. Do not crop to the HUD or add review-board labels/arrows. Important hierarchy: smaller portrait above its own short red HP strip, compact icon grid beside it, XP underneath everything. Before finishing, verify health is BELOW the avatar and that the exact requested skill count/labels appear.\n\nFULL STATE: exactly TWENTY skill buttons TOTAL. Ten upper-row weapon techniques labeled F1,F2,F3,F4,F5,F6,F7,F8,F9,F10 in that order, and ten lower-row King powers labeled1,2,3,4,5,6,7,8,9,0 in that order. Both rows contiguous, no center gap or extra cell. Exactly20 small26-logical-pixel icons, not a giant MMO bar. Overall dock only about400-430 logical pixels wide, below46% of screen width. On the current1672-pixel-wide input this means roughly700-750 image pixels, centered horizontally, rather than the old1200-pixel-wide dock. Player HP remains a short bar ONLY below the avatar at the LEFT end. COUNT ALL F1-F10 and1-0 labels; no skipped/repeated keys.",
+      "refs": [
+        "D:/React_ONLY_2026/GODOT-BATTLE-OF-GODS/tmp/review/combat_hud_adaptive_2026_10_17/b_full_20.png"
+      ],
+      "output": "tmp/review/combat_hud_compact_portrait_2026_10_17/full_20.png",
+      "generated_original": "C:/Users/Administrator/.codex/generated_images/01a0eed4-5878-7032-a315-e493f92ce97a/exec-9a2b7116-a6c2-4244-b558-b4abc7c452dd.png",
+      "width": 1671,
+      "height": 941,
+      "bytes": 1981842,
+      "sha256": "776d4d12051cd02a4dee10c02f235f10b835f26e6ffe1135f3810672f8474638",
+      "visual_review": {
+        "hp_below_portrait": true,
+        "king_slots": 10,
+        "weapon_slots": 10,
+        "no_locked_placeholders": true,
+        "no_empty_weapon_row": "not_applicable"
+      }
+    }
+  ],
+  "review": {
+    "status": "three_samples_generated_and_visually_checked",
+    "native_ui_implemented": false,
+    "notes": [
+      "HP appears directly below the portrait in all three samples.",
+      "Counts verified: 4+0, 6+4 and 10+10. SPACE is separate utility.",
+      "Generated examples approximate compact sizing; final icon, portrait and font metrics require native layout work.",
+      "Early and growing icon sizes are not an exact shared-pixel contract; native implementation must hold them constant."
+    ]
+  }
+}

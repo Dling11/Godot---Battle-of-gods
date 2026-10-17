@@ -28,6 +28,9 @@ var is_damage_immune := false
 ## Optional guard authority consumes a mitigated hit before it reaches HP.
 ## Return true only when the entire hit was absorbed (including a breaking hit).
 var damage_absorber: Callable
+## Keyed temporary effects compose after typed resistance, before guard/shields.
+## They may adjust accepted damage/control without overwriting equipment stats.
+var _incoming_damage_modifiers: Dictionary[StringName, Callable] = {}
 
 
 func _ready() -> void:
@@ -68,6 +71,8 @@ func apply_damage(info: DamageInfo) -> bool:
 
 	info.raw_amount = info.amount
 	info.amount = resolve_damage(info.amount, info.damage_type)
+	for modifier: Callable in _incoming_damage_modifiers.values():
+		if modifier.is_valid(): modifier.call(info)
 	if damage_absorber.is_valid() and damage_absorber.call(info):
 		damage_absorbed.emit(info)
 		return true
@@ -86,6 +91,15 @@ func apply_damage(info: DamageInfo) -> bool:
 	if current_health <= 0.0:
 		died.emit()
 	return true
+
+
+func set_incoming_damage_modifier(key: StringName, modifier: Callable) -> void:
+	if modifier.is_valid(): _incoming_damage_modifiers[key] = modifier
+	else: _incoming_damage_modifiers.erase(key)
+
+
+func remove_incoming_damage_modifier(key: StringName) -> void:
+	_incoming_damage_modifiers.erase(key)
 
 
 func set_invulnerable(value: bool) -> void:

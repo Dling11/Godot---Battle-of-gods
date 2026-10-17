@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3]
+[gd_scene load_steps=20 format=3]
 
 [ext_resource type="Script" path="res://ui/character_menu.gd" id="1_script"]
 [ext_resource type="Theme" path="res://assets/ui/themes/battle_of_gods_theme.tres" id="2_theme"]
@@ -9,7 +9,6 @@
 [ext_resource type="SpriteFrames" path="res://assets/characters/playable/king/shared_bodies/sword/frames.tres" id="7_frames"]
 [ext_resource type="Shader" path="res://entities/player/presentation/king_spellward_outline.gdshader" id="king_outline"]
 [ext_resource type="PackedScene" path="res://ui/equipment/equipment_detail_panel.tscn" id="8_detail"]
-[ext_resource type="Script" path="res://entities/npcs/presentation/npc_idle_breath.gd" id="9_breath"]
 [ext_resource type="Texture2D" path="res://assets/ui/icons/status/icon_status_health_16x16.png" id="11_health"]
 
 [ext_resource type="Texture2D" path="res://assets/ui/player_readability/satchel.png" id="12_satchel"]
@@ -100,6 +99,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("2_theme")
 script = ExtResource("1_script")
+z_index = 10
 
 [node name="Veil" type="ColorRect" parent="."]
 mouse_filter = 2
@@ -112,6 +112,7 @@ grow_vertical = 2
 color = Color(0.006, 0.01, 0.019, 0.84)
 
 [node name="Panel" type="PanelContainer" parent="."]
+clip_contents = true
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -180,7 +181,7 @@ theme_override_font_sizes/font_size = 16
 
 [node name="Subtitle" type="Label" parent="Panel/Margin/Root/Header/Identity"]
 layout_mode = 2
-text = "MORTAL RIFTSWORD  •  EQUIPMENT & TECHNIQUES"
+text = "EQUIPMENT & TECHNIQUES"
 theme_override_colors/font_color = Color(0.45, 0.5, 0.42, 1)
 theme_override_font_sizes/font_size = 8
 
@@ -296,7 +297,7 @@ theme_override_font_sizes/font_size = 7
 visible = false
 layout_mode = 2
 
-[node name="PageHost" type="Control" parent="Panel/Margin/Root"]
+[node name="PageHost" type="MarginContainer" parent="Panel/Margin/Root"]
 custom_minimum_size = Vector2(808, 348)
 layout_mode = 2
 size_flags_vertical = 3
@@ -312,12 +313,13 @@ grow_vertical = 2
 theme_override_constants/separation = 6
 
 [node name="LoadoutRow" type="HBoxContainer" parent="Panel/Margin/Root/PageHost/GearPage"]
-custom_minimum_size = Vector2(0, 232)
+custom_minimum_size = Vector2(0, 264)
 layout_mode = 2
 theme_override_constants/separation = 8
 
 [node name="PaperDollPanel" type="PanelContainer" parent="Panel/Margin/Root/PageHost/GearPage/LoadoutRow"]
-custom_minimum_size = Vector2(520, 232)
+custom_minimum_size = Vector2(500, 232)
+size_flags_vertical = 4
 layout_mode = 2
 theme_override_styles/panel = SubResource("inner_panel")
 
@@ -339,7 +341,7 @@ theme_override_colors/font_color = Color(0.85, 0.76, 0.57, 1)
 theme_override_font_sizes/font_size = 9
 
 [node name="EquipmentLayout" type="Control" parent="Panel/Margin/Root/PageHost/GearPage/LoadoutRow/PaperDollPanel/PaperDollMargin/PaperDollRoot"]
-custom_minimum_size = Vector2(502, 206)
+custom_minimum_size = Vector2(482, 206)
 layout_mode = 2
 
 [node name="Portrait" type="PanelContainer" parent="Panel/Margin/Root/PageHost/GearPage/LoadoutRow/PaperDollPanel/PaperDollMargin/PaperDollRoot/EquipmentLayout"]
@@ -347,31 +349,16 @@ layout_mode = 1
 anchors_preset = 0
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -76.0
+offset_left = -84.0
 offset_top = 0.0
-offset_right = 76.0
+offset_right = 84.0
 offset_bottom = 206.0
 theme_override_styles/panel = SubResource("portrait_panel")
 
 [node name="PortraitCanvas" type="Control" parent="Panel/Margin/Root/PageHost/GearPage/LoadoutRow/PaperDollPanel/PaperDollMargin/PaperDollRoot/EquipmentLayout/Portrait"]
+unique_name_in_owner = true
 layout_mode = 2
 clip_contents = true
-
-[node name="PortraitAura" type="Polygon2D" parent="Panel/Margin/Root/PageHost/GearPage/LoadoutRow/PaperDollPanel/PaperDollMargin/PaperDollRoot/EquipmentLayout/Portrait/PortraitCanvas"]
-unique_name_in_owner = true
-position = Vector2(76, 103)
-polygon = PackedVector2Array(0, -54, 40, -33, 55, 0, 40, 33, 0, 54, -40, 33, -55, 0, -40, -33)
-color = Color(0.463, 0.353, 0.639, 0.34)
-
-[node name="PortraitAuraCore" type="Polygon2D" parent="Panel/Margin/Root/PageHost/GearPage/LoadoutRow/PaperDollPanel/PaperDollMargin/PaperDollRoot/EquipmentLayout/Portrait/PortraitCanvas"]
-position = Vector2(76, 103)
-polygon = PackedVector2Array(0, -43, 32, -26, 44, 0, 32, 26, 0, 43, -32, 26, -44, 0, -32, -26)
-color = Color(0.027, 0.034, 0.052, 0.96)
-
-[node name="PortraitShadow" type="Polygon2D" parent="Panel/Margin/Root/PageHost/GearPage/LoadoutRow/PaperDollPanel/PaperDollMargin/PaperDollRoot/EquipmentLayout/Portrait/PortraitCanvas"]
-position = Vector2(76, 157)
-polygon = PackedVector2Array(-25, 0, -15, -5, 15, -5, 25, 0, 15, 5, -15, 5)
-color = Color(0.01, 0.015, 0.025, 0.68)
 
 [node name="Body" type="AnimatedSprite2D" parent="Panel/Margin/Root/PageHost/GearPage/LoadoutRow/PaperDollPanel/PaperDollMargin/PaperDollRoot/EquipmentLayout/Portrait/PortraitCanvas"]
 material = SubResource("ShaderMaterial_king_outline")
@@ -390,13 +377,6 @@ scale = Vector2(3.5, 3.5)
 unique_name_in_owner = true
 position = Vector2(0, -7)
 
-[node name="IdleBreath" type="Timer" parent="Panel/Margin/Root/PageHost/GearPage/LoadoutRow/PaperDollPanel/PaperDollMargin/PaperDollRoot/EquipmentLayout/Portrait/PortraitCanvas" node_paths=PackedStringArray("visual")]
-wait_time = 0.22
-autostart = true
-script = ExtResource("9_breath")
-visual = NodePath("../Body")
-vertical_steps = PackedInt32Array(0, -1, -1, 0, 0)
-
 [node name="EquipmentSlots" type="Control" parent="Panel/Margin/Root/PageHost/GearPage/LoadoutRow/PaperDollPanel/PaperDollMargin/PaperDollRoot/EquipmentLayout"]
 unique_name_in_owner = true
 mouse_filter = 1
@@ -409,12 +389,12 @@ grow_vertical = 2
 
 [node name="EquipmentDetailPanel" parent="Panel/Margin/Root/PageHost/GearPage/LoadoutRow" instance=ExtResource("8_detail")]
 unique_name_in_owner = true
-custom_minimum_size = Vector2(280, 232)
+custom_minimum_size = Vector2(300, 264)
 layout_mode = 2
 size_flags_horizontal = 3
 
 [node name="BagPanel" type="PanelContainer" parent="Panel/Margin/Root/PageHost/GearPage"]
-custom_minimum_size = Vector2(0, 150)
+custom_minimum_size = Vector2(0, 126)
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_styles/panel = SubResource("inner_panel")
@@ -454,7 +434,7 @@ custom_minimum_size = Vector2(46, 20)
 layout_mode = 2
 toggle_mode = true
 button_pressed = true
-text = "ALL"
+text = "All"
 theme_override_font_sizes/font_size = 7
 theme_override_styles/pressed = SubResource("filter_pressed")
 
@@ -463,7 +443,7 @@ unique_name_in_owner = true
 custom_minimum_size = Vector2(72, 20)
 layout_mode = 2
 toggle_mode = true
-text = "EQUIPMENT"
+text = "Gear"
 theme_override_font_sizes/font_size = 7
 theme_override_styles/pressed = SubResource("filter_pressed")
 
@@ -472,7 +452,7 @@ unique_name_in_owner = true
 custom_minimum_size = Vector2(68, 20)
 layout_mode = 2
 toggle_mode = true
-text = "MATERIALS"
+text = "Materials"
 theme_override_font_sizes/font_size = 7
 theme_override_styles/pressed = SubResource("filter_pressed")
 
@@ -494,12 +474,12 @@ text = "KEY"
 theme_override_font_sizes/font_size = 7
 theme_override_styles/pressed = SubResource("filter_pressed")
 
-[node name="SortButton" type="Button" parent="Panel/Margin/Root/PageHost/GearPage/BagPanel/BagMargin/BagRoot/BagHeader"]
+[node name="SortButton" type="OptionButton" parent="Panel/Margin/Root/PageHost/GearPage/BagPanel/BagMargin/BagRoot/BagHeader"]
 unique_name_in_owner = true
-custom_minimum_size = Vector2(78, 20)
+custom_minimum_size = Vector2(100, 22)
 layout_mode = 2
 mouse_default_cursor_shape = 2
-text = "SORT: SLOT"
+text = ""
 theme_override_font_sizes/font_size = 7
 
 [node name="BagHeaderSpacer" type="Control" parent="Panel/Margin/Root/PageHost/GearPage/BagPanel/BagMargin/BagRoot/BagHeader"]
@@ -528,7 +508,7 @@ theme_override_font_sizes/font_size = 11
 
 [node name="BagScroll" type="ScrollContainer" parent="Panel/Margin/Root/PageHost/GearPage/BagPanel/BagMargin/BagRoot"]
 unique_name_in_owner = true
-custom_minimum_size = Vector2(0,80)
+custom_minimum_size = Vector2(0,48)
 layout_mode = 2
 size_flags_vertical = 3
 horizontal_scroll_mode = 0
@@ -553,6 +533,7 @@ theme_override_font_sizes/font_size = 7
 [node name="BagFooter" type="Label" parent="Panel/Margin/Root/PageHost/GearPage/BagPanel/BagMargin/BagRoot"]
 unique_name_in_owner = true
 layout_mode = 2
+autowrap_mode = 2
 text = "MATERIALS USE NO BAG SPACE  •  DRAG OR SELECT + EQUIP ITEMS"
 theme_override_colors/font_color = Color(0.45, 0.5, 0.42, 1)
 theme_override_font_sizes/font_size = 7
@@ -656,7 +637,7 @@ theme_override_font_sizes/font_size = 9
 
 [node name="Footer" type="Label" parent="Panel/Margin/Root"]
 layout_mode = 2
-text = "TAB  •  OPEN    ESC  •  CLOSE    MOUSE / ARROWS + ENTER  •  NAVIGATE"
+text = "ESC · CLOSE    ARROWS / ENTER · NAVIGATE    DRAG EQUIPMENT TO EQUIP"
 horizontal_alignment = 1
 theme_override_colors/font_color = Color(0.55, 0.52, 0.62, 1)
 theme_override_font_sizes/font_size = 8

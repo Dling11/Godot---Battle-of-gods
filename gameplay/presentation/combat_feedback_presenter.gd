@@ -145,6 +145,11 @@ func _resolve_ability_hitstop(component: AbilityComponent) -> float:
 
 
 func _on_player_damaged(info: DamageInfo) -> void:
+	var active_ability := player.get_active_ability_component()
+	if active_ability != null and active_ability.owns_incoming_feedback():
+		# Guard still loses real HP. Its own bounded spark replaces flinch/pause.
+		_show_hit(player.global_position + Vector2(0.0,-26.0),info,PLAYER_DAMAGED_TINT,0.0,false)
+		return
 	_show_hit(player.global_position + Vector2(0.0, -26.0), info, PLAYER_DAMAGED_TINT, 2.0)
 	_request_hitstop(_resolve_incoming_hitstop(info.amount))
 	_play_sound_at(player_hurt_sound, player.global_position, 1.0)
@@ -163,7 +168,7 @@ func _resolve_incoming_hitstop(damage_amount: float) -> float:
 	return LIGHT_HITSTOP_SECONDS
 
 
-func _show_hit(position: Vector2, info: DamageInfo, tint: Color, camera_strength: float) -> void:
+func _show_hit(position: Vector2, info: DamageInfo, tint: Color, camera_strength: float, show_burst := true) -> void:
 	var resolved_tint := CRITICAL_HIT_TINT if info.is_critical else tint
 	if not info.is_critical and tint != PLAYER_DAMAGED_TINT:
 		if info.damage_type == DamageInfo.DamageType.MAGIC: resolved_tint = MAGIC_HIT_TINT
@@ -178,10 +183,11 @@ func _show_hit(position: Vector2, info: DamageInfo, tint: Color, camera_strength
 	)
 	effects_parent.add_child(number)
 
-	var burst: HitBurst = CRITICAL_BURST.new() if info.is_critical else hit_burst_scene.instantiate()
-	burst.global_position = position + info.direction * 3.0
-	burst.configure(info.direction, resolved_tint)
-	effects_parent.add_child(burst)
+	if show_burst:
+		var burst: HitBurst = CRITICAL_BURST.new() if info.is_critical else hit_burst_scene.instantiate()
+		burst.global_position = position + info.direction * 3.0
+		burst.configure(info.direction, resolved_tint)
+		effects_parent.add_child(burst)
 	if camera_strength > 0.0:
 		_pulse_camera(camera_strength)
 

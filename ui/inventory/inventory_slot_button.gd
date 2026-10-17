@@ -1,5 +1,6 @@
 class_name InventorySlotButton
 extends Button
+const IconPresenter = preload("res://ui/equipment/equipment_icon_presenter.gd")
 
 ## Compact focusable slot used by the Character & Bag grid. It presents
 ## authoritative ownership data but never mutates inventory state itself.
@@ -26,6 +27,7 @@ var quantity := 0
 
 func _ready() -> void:
 	pressed.connect(_on_pressed)
+	resized.connect(_fit_equipment_icon)
 
 
 func configure_equipment(
@@ -38,7 +40,7 @@ func configure_equipment(
 	equipment_definition = item
 	name = String(item.item_id)
 	disabled = false
-	item_icon.texture = item.icon
+	item_icon.texture = IconPresenter.texture(item.icon)
 	item_icon.visible = item.icon != null
 	fallback_glyph.visible = item.icon == null
 	fallback_glyph.text = item.display_name.left(1).to_upper()
@@ -57,6 +59,7 @@ func configure_equipment(
 		item.get_stat_summary(),
 	]
 	_apply_slot_style(item.get_rarity_color(), equipped)
+	_fit_equipment_icon.call_deferred()
 
 
 func configure_material(item: MaterialDefinition, owned_quantity: int) -> void:
@@ -101,6 +104,13 @@ func _reset_content() -> void:
 	focus_mode = Control.FOCUS_ALL
 	button_pressed = false
 	item_icon.texture = null
+	item_icon.rotation = 0
+	item_icon.pivot_offset = Vector2.ZERO
+	item_icon.set_anchors_and_offsets_preset(Control.PRESET_CENTER)
+	item_icon.offset_left = -12
+	item_icon.offset_top = -12
+	item_icon.offset_right = 12
+	item_icon.offset_bottom = 12
 	item_icon.visible = false
 	fallback_glyph.text = ""
 	fallback_glyph.visible = false
@@ -117,6 +127,9 @@ func _apply_slot_style(color: Color, selected_item: bool, empty := false) -> voi
 	normal.border_color = color.darkened(0.48) if not empty else color.darkened(0.25)
 	normal.set_border_width_all(1)
 	normal.set_corner_radius_all(3)
+	if not empty:
+		normal.shadow_color = Color(color,.18)
+		normal.shadow_size = 2
 	var hover := normal.duplicate() as StyleBoxFlat
 	hover.bg_color = color.darkened(0.82)
 	hover.border_color = color.lightened(0.12)
@@ -131,6 +144,11 @@ func _apply_slot_style(color: Color, selected_item: bool, empty := false) -> voi
 	add_theme_stylebox_override("pressed", pressed_style)
 	add_theme_stylebox_override("focus", focus)
 	add_theme_stylebox_override("disabled", normal)
+
+
+func _fit_equipment_icon() -> void:
+	if kind == Kind.EQUIPMENT and is_instance_valid(item_icon):
+		IconPresenter.fit(item_icon,Rect2((size-Vector2(28,28))*.5,Vector2(28,28)))
 
 
 func _on_pressed() -> void:

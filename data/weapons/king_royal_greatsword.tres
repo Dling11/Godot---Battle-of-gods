@@ -10,6 +10,7 @@ points = PackedVector2Array(2,-12,48,-70,82,-44,96,0,82,44,48,70,2,12)
 script = ExtResource("1")
 weapon_id = &"weapon_king_royal_greatsword_v2"
 display_name = "Royal Greatsword"
+family_display_name = "Greatsword"
 uses_integrated_visual = true
 family_presentation = ExtResource("3")
 melee_hitbox_shape = SubResource("shape")

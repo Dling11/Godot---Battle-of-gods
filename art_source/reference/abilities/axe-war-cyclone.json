@@ -1,0 +1,745 @@
+{
+  "date": "2026-10-18",
+  "status": "Owner accepts connected Cyclone for now; Decision231 final runtime installed and visual iteration closed. Art/trial archive cleanup completed. Three disposable clone folders remain blocked by automatic approval review; see cleanup audit.",
+  "mode": "Built-in image_gen artwork; approved runtime rasters are authoritative. No permanent raw generation archive.",
+  "runtime_assets": [
+    {
+      "path": "assets/vfx/abilities/weapons/axe_war_cyclone/icon.png",
+      "size": [
+        96,
+        96
+      ],
+      "bytes": 20112,
+      "sha256": "a93333c02ef007adbfe118af6abad7ded3d4ff55a0b9a252c33cf1cbcec0a105"
+    },
+    {
+      "path": "assets/vfx/abilities/weapons/axe_war_cyclone/motion.png",
+      "size": [
+        1024,
+        1024
+      ],
+      "bytes": 155517,
+      "sha256": "e3e2f234e293cdd69cb7f54bb39fc08c2aa27e6a334e0784f569e53c0b715976"
+    },
+    {
+      "path": "assets/vfx/abilities/weapons/axe_war_cyclone/outer.png",
+      "size": [
+        320,
+        320
+      ],
+      "bytes": 45051,
+      "sha256": "3bbe9286922c8dd004c89303dc709c6ea638f4a499341c76b71d10a6edabd688"
+    },
+    {
+      "path": "assets/vfx/abilities/weapons/axe_war_cyclone/ground.png",
+      "size": [
+        1024,
+        512
+      ],
+      "bytes": 33433,
+      "sha256": "ccb57aaa450cbacfb2a6d1ef89e1d64848b2a9ee5ece7b70de4a830abc36da86"
+    }
+  ],
+  "motion": {
+    "prompt_set": [
+      {
+        "role": "Paired connected body/cut replacement; use first12 keys, supersede last4 after motion diagnostic found reversal",
+        "source": "C:/Users/Administrator/.codex/generated_images/01a0eed4-5878-7032-a315-e493f92ce97a/exec-b5d1f9d9-16bd-46d2-96c5-800017549a1f.png",
+        "reference": "Initial paired design",
+        "prompt": "Use case: precise-object-edit. Edit this 4x4 animation sheet. Preserve the idea of ONE connected clockwise body-action smear and its silver blade sweep, the pixel palette and sixteen phases, but fix these specific defects. Output genuinely transparent alpha.\n1. Every sprite is currently too close to a cell edge. REDRAW the whole sheet on exactly16 EQUAL SQUARE cells (4columns4rows), each sprite centered with at least18% transparent margins on all four sides; no effect touches or crosses an invisible cell boundary. No grid/text. White crescent and every tail must fit wholly inside each cell.\n2. Remove the literal visible face/skin and the distinct round hairy head. Blend the upper dark crown into an upright dark charcoal BODY-ACTION speed silhouette. Keep a small dark upper cap but no eyes, mouth, ears, neck gap or separate head. A viewer should sense the body spinning rapidly but cannot resolve literal anatomy.\n3. REMOVE the repeated brown diagonal ribbing/bandage wraps. Use one connected dark charcoal torso mass with just ONE small warm leather streak at the lower center and ONE short crimson scarf streak high on the body. Not a pointed funnel, vase, orb, mushroom, spinning top, goblet or cone. Lower body remains substantial and connected to the upper volume, ending in a short blunt pivot; no separate feet. Width of body about half its height before its short sideways motion trails. Keep body SAME shape class and height/pivot across all16keys, with changing front/side/back charcoal planes to convey turn. No floating disconnected sections.\n4. Silver crescent is the single expressive rotating cut, broad clear leading edge and short trailing lines. It must wrap BEHIND the compact body during back phases and IN FRONT during front phases. In every cell preserve a visible dark center above/between the silver sweep. ONE coherent turning action. Fixed projected ellipse and fixed camera for every cell; no bob, changing camera or flat-rotating whole image. Clockwise one revolution, frame1 tip right, frame5 tip down/front, frame9 left, frame13 up/back, frame16 close to1. Do not draw a permanent circular hoop beneath the body. No blue, outer ring, ground, particles, weapon props, caption or scenery. All colors remain charcoal, restrained crimson, tiny warm brown, white/silver.\nA fast illustrated body smear, not a literal standing fighter and not an empty ring. Crisp readable RPG pixel clusters. Regenerate with those corrections, do not merely recolor the old sheet.",
+        "source_sha256": "50f9ee49e36b9e18a1a409e845cdecdb80375de45a6da437d130f115c5bc89b4"
+      },
+      {
+        "role": "Four new back-right continuation cels; use all4 with matching body-height class",
+        "source": "C:/Users/Administrator/.codex/generated_images/01a0eed4-5878-7032-a315-e493f92ce97a/exec-37c1772b-428f-448f-a7ab-53d73e30e78c.png",
+        "reference": "Paired connected replacement for palette/shape",
+        "prompt": "Use case: stylized-concept. Generate a FOUR-FRAME CONTINUATION animation sheet with exactly2columns2rows equal square cells, genuine transparent background. The input image is a STYLE/CHARCOAL-BODY-SMEAR reference only, NOT the sheet to reproduce. Draw ONLY FOUR new keys for the final quarter of the SAME clockwise spin. Crisp RPG pixel-art, charcoal connected body-action blur, one restrained crimson scarf, one tiny leather streak, ivory/silver broad weapon crescent. No visible skin/face/hands/feet, no anatomy gap, no literal standing figure, blue glow, particles, ground, text or borders.\nCRITICAL PHASE: These are four new BACK-RIGHT QUARTER keys. In ALL FOUR the WHITE CUT is predominantly BEHIND the upper half of the body, ABOVE the waist. The broad BRIGHT LEADING SECTION travels from directly ABOVE body center -> upper-right -> right-above-center -> almost right. Position white leading mass relative to body center: key1 at12o'clock, key2 at1o'clock, key3 at2o'clock, key4 at2:45o'clock. Clockwise movement as viewed on screen on a flattened horizontal ellipse. On a clock, this is12→1→2→nearly3. Do NOT draw any bright U-shaped swoosh UNDER the body or across its front in these4keys; those phases already exist and would REVERSE the motion. The white back crescent is partially OCCLUDED by the opaque dark body, whose front remains readable. Leading blade tip near top first, then sweeping rightwards. Back-half stroke stays behind the upper shoulders, no white platform under torso. A thin quiet silver trail may extend leftward above/behind body.\nBODY: match the reference's compact connected dark spinning mass with a small dark cap merged into it, short crimson scarf, tiny diagonal warm brown accent. It turns from rear-quarter to right-side across these4keys; no big T silhouette, thin stem, mushroom or separate literal head. The body changes its charcoal directional planes to imply spinning, but its height/width, lower pivot and overall camera are identical all4keys. Palette and medium must match input closely. Body height24% of eachcell, width14%, foot pivot(50%,67%); bodytop43%. White back crescent at most70%cellwidth,20%cellheight, circling upperhalf not bottom. Every complete stroke must have at least15% transparent cell-edge margin. Four successive frames read left-right top-bottom and join the reference's initial right-side sweep. No additional rows or other images.",
+        "source_sha256": "63299b98844dd1f12d70f16caa35ad7ba78a21f9c97b9efa09870fd86a3e8af1"
+      }
+    ],
+    "normalization": {
+      "board_densities": [
+        0.31638418079096,
+        0.171779141104294
+      ],
+      "core_height_class_native": 56,
+      "method": "Headless Image compositor. Body-motion and silver cut are one authored16-key drawing sequence. Original blue template/clock, C wake and independent sparks remain. Not gameplay capture or performance profiling.",
+      "normalized_sha256": "e3e2f234e293cdd69cb7f54bb39fc08c2aa27e6a334e0784f569e53c0b715976",
+      "phase_sampling": [
+        {
+          "key": 0,
+          "source_a": 0,
+          "source_b": 1,
+          "target_phase_degrees": 0.0,
+          "whole_cel_mix": 0.0
+        },
+        {
+          "key": 1,
+          "source_a": 1,
+          "source_b": 2,
+          "target_phase_degrees": 22.5,
+          "whole_cel_mix": 0.551050504099407
+        },
+        {
+          "key": 2,
+          "source_a": 2,
+          "source_b": 3,
+          "target_phase_degrees": 45.0,
+          "whole_cel_mix": 0.963992197974006
+        },
+        {
+          "key": 3,
+          "source_a": 3,
+          "source_b": 4,
+          "target_phase_degrees": 67.5,
+          "whole_cel_mix": 0.722119501159626
+        },
+        {
+          "key": 4,
+          "source_a": 4,
+          "source_b": 5,
+          "target_phase_degrees": 90.0,
+          "whole_cel_mix": 0.483041333847147
+        },
+        {
+          "key": 5,
+          "source_a": 5,
+          "source_b": 6,
+          "target_phase_degrees": 112.5,
+          "whole_cel_mix": 0.758892809910756
+        },
+        {
+          "key": 6,
+          "source_a": 7,
+          "source_b": 9,
+          "target_phase_degrees": 135.0,
+          "whole_cel_mix": 0.305217075465902
+        },
+        {
+          "key": 7,
+          "source_a": 9,
+          "source_b": 10,
+          "target_phase_degrees": 157.5,
+          "whole_cel_mix": 0.143733129596983
+        },
+        {
+          "key": 8,
+          "source_a": 10,
+          "source_b": 11,
+          "target_phase_degrees": 180.0,
+          "whole_cel_mix": 0.0574641429457752
+        },
+        {
+          "key": 9,
+          "source_a": 10,
+          "source_b": 11,
+          "target_phase_degrees": 202.5,
+          "whole_cel_mix": 0.910461847274975
+        },
+        {
+          "key": 10,
+          "source_a": 11,
+          "source_b": 12,
+          "target_phase_degrees": 225.0,
+          "whole_cel_mix": 0.340370983883412
+        },
+        {
+          "key": 11,
+          "source_a": 11,
+          "source_b": 12,
+          "target_phase_degrees": 247.5,
+          "whole_cel_mix": 0.720660505787711
+        },
+        {
+          "key": 12,
+          "source_a": 12,
+          "source_b": 13,
+          "target_phase_degrees": 270.0,
+          "whole_cel_mix": 0.468229423520019
+        },
+        {
+          "key": 13,
+          "source_a": 15,
+          "source_b": 0,
+          "target_phase_degrees": 292.5,
+          "whole_cel_mix": 0.056481079037981
+        },
+        {
+          "key": 14,
+          "source_a": 15,
+          "source_b": 0,
+          "target_phase_degrees": 315.0,
+          "whole_cel_mix": 0.37098738602532
+        },
+        {
+          "key": 15,
+          "source_a": 15,
+          "source_b": 0,
+          "target_phase_degrees": 337.5,
+          "whole_cel_mix": 0.68549369301266
+        }
+      ],
+      "quarter_source": "C:/Users/Administrator/.codex/generated_images/01a0eed4-5878-7032-a315-e493f92ce97a/exec-37c1772b-428f-448f-a7ab-53d73e30e78c.png",
+      "quarter_source_sha256": "63299b98844dd1f12d70f16caa35ad7ba78a21f9c97b9efa09870fd86a3e8af1",
+      "registration": "Whole paired drawings; one fixed density per source board from the same56px core-height class. Dark-core horizontal center and lower-paint anchor. First12 original cels plus4 new back-right phases; uniformly sampled by whole-cel premultiplied crossfade. Body and cut always share the same blend. No anatomy replacement, separate white projection or flat actor rotation.",
+      "software_renderer": true,
+      "source": "C:/Users/Administrator/.codex/generated_images/01a0eed4-5878-7032-a315-e493f92ce97a/exec-b5d1f9d9-16bd-46d2-96c5-800017549a1f.png",
+      "source_frames": [
+        {
+          "anchor": [
+            161.361312866211,
+            287.0
+          ],
+          "bounds": [
+            97,
+            114,
+            80,
+            56
+          ],
+          "density": 0.31638418079096,
+          "key": 0,
+          "source_board": 0,
+          "source_bounds": [
+            64,
+            112,
+            251,
+            176
+          ],
+          "source_key": 0
+        },
+        {
+          "anchor": [
+            162.097305297852,
+            288.0
+          ],
+          "bounds": [
+            92,
+            114,
+            84,
+            56
+          ],
+          "density": 0.31638418079096,
+          "key": 1,
+          "source_board": 0,
+          "source_bounds": [
+            48,
+            112,
+            266,
+            177
+          ],
+          "source_key": 1
+        },
+        {
+          "anchor": [
+            161.532684326172,
+            294.0
+          ],
+          "bounds": [
+            95,
+            113,
+            81,
+            57
+          ],
+          "density": 0.31638418079096,
+          "key": 2,
+          "source_board": 0,
+          "source_bounds": [
+            56,
+            114,
+            255,
+            181
+          ],
+          "source_key": 2
+        },
+        {
+          "anchor": [
+            158.530944824219,
+            291.0
+          ],
+          "bounds": [
+            90,
+            114,
+            83,
+            56
+          ],
+          "density": 0.31638418079096,
+          "key": 3,
+          "source_board": 0,
+          "source_bounds": [
+            39,
+            114,
+            262,
+            178
+          ],
+          "source_key": 3
+        },
+        {
+          "anchor": [
+            168.312057495117,
+            265.0
+          ],
+          "bounds": [
+            89,
+            112,
+            85,
+            58
+          ],
+          "density": 0.31638418079096,
+          "key": 4,
+          "source_board": 0,
+          "source_bounds": [
+            43,
+            83,
+            269,
+            183
+          ],
+          "source_key": 4
+        },
+        {
+          "anchor": [
+            166.478012084961,
+            265.0
+          ],
+          "bounds": [
+            85,
+            113,
+            86,
+            57
+          ],
+          "density": 0.31638418079096,
+          "key": 5,
+          "source_board": 0,
+          "source_bounds": [
+            33,
+            84,
+            270,
+            182
+          ],
+          "source_key": 5
+        },
+        {
+          "anchor": [
+            169.29084777832,
+            262.0
+          ],
+          "bounds": [
+            84,
+            115,
+            82,
+            55
+          ],
+          "density": 0.31638418079096,
+          "key": 6,
+          "source_board": 0,
+          "source_bounds": [
+            31,
+            87,
+            259,
+            176
+          ],
+          "source_key": 6
+        },
+        {
+          "anchor": [
+            170.037719726563,
+            263.0
+          ],
+          "bounds": [
+            81,
+            114,
+            82,
+            56
+          ],
+          "density": 0.31638418079096,
+          "key": 7,
+          "source_board": 0,
+          "source_bounds": [
+            22,
+            85,
+            260,
+            179
+          ],
+          "source_key": 7
+        },
+        {
+          "anchor": [
+            173.014022827148,
+            237.0
+          ],
+          "bounds": [
+            82,
+            115,
+            86,
+            55
+          ],
+          "density": 0.31638418079096,
+          "key": 8,
+          "source_board": 0,
+          "source_bounds": [
+            28,
+            64,
+            271,
+            174
+          ],
+          "source_key": 8
+        },
+        {
+          "anchor": [
+            173.876388549805,
+            237.0
+          ],
+          "bounds": [
+            81,
+            115,
+            85,
+            55
+          ],
+          "density": 0.31638418079096,
+          "key": 9,
+          "source_board": 0,
+          "source_bounds": [
+            24,
+            64,
+            270,
+            174
+          ],
+          "source_key": 9
+        },
+        {
+          "anchor": [
+            170.364242553711,
+            242.0
+          ],
+          "bounds": [
+            84,
+            113,
+            86,
+            57
+          ],
+          "density": 0.31638418079096,
+          "key": 10,
+          "source_board": 0,
+          "source_bounds": [
+            31,
+            64,
+            271,
+            179
+          ],
+          "source_key": 10
+        },
+        {
+          "anchor": [
+            171.417739868164,
+            242.0
+          ],
+          "bounds": [
+            82,
+            113,
+            84,
+            57
+          ],
+          "density": 0.31638418079096,
+          "key": 11,
+          "source_board": 0,
+          "source_bounds": [
+            24,
+            64,
+            267,
+            179
+          ],
+          "source_key": 11
+        },
+        {
+          "anchor": [
+            331.59130859375,
+            578.0
+          ],
+          "bounds": [
+            87,
+            105,
+            80,
+            66
+          ],
+          "density": 0.171779141104294,
+          "key": 12,
+          "source_board": 1,
+          "source_bounds": [
+            91,
+            198,
+            466,
+            381
+          ],
+          "source_key": 0
+        },
+        {
+          "anchor": [
+            325.445190429688,
+            583.0
+          ],
+          "bounds": [
+            86,
+            108,
+            81,
+            63
+          ],
+          "density": 0.171779141104294,
+          "key": 13,
+          "source_board": 1,
+          "source_bounds": [
+            81,
+            220,
+            471,
+            364
+          ],
+          "source_key": 1
+        },
+        {
+          "anchor": [
+            321.570983886719,
+            506.0
+          ],
+          "bounds": [
+            87,
+            109,
+            86,
+            61
+          ],
+          "density": 0.171779141104294,
+          "key": 14,
+          "source_board": 1,
+          "source_bounds": [
+            84,
+            151,
+            496,
+            356
+          ],
+          "source_key": 2
+        },
+        {
+          "anchor": [
+            317.999053955078,
+            506.0
+          ],
+          "bounds": [
+            88,
+            111,
+            84,
+            59
+          ],
+          "density": 0.171779141104294,
+          "key": 15,
+          "source_board": 1,
+          "source_bounds": [
+            87,
+            161,
+            489,
+            346
+          ],
+          "source_key": 3
+        }
+      ],
+      "source_sha256": "50f9ee49e36b9e18a1a409e845cdecdb80375de45a6da437d130f115c5bc89b4"
+    },
+    "motion_check": {
+      "frames": 16,
+      "method": "Offline paired-cel pixel inspection. White centroid is a diagnostic, not blade-tip tracking or owner animation approval.",
+      "minimum_normalized_clearance": 79,
+      "white_centroid_angles_degrees": [
+        21.2871058785924,
+        43.5347412601638,
+        63.7283218998061,
+        85.7256906124517,
+        103.627466162893,
+        125.125951028372,
+        142.843871546735,
+        164.216913157918,
+        -173.480097672559,
+        -147.107958645574,
+        -119.690404524606,
+        -95.400544288748,
+        -74.3994133080622,
+        -54.8274276942152,
+        -31.3078386269109,
+        -4.1749791702665
+      ],
+      "white_phase_steps_degrees": [
+        22.2476353815713,
+        20.1935806396423,
+        21.9973687126456,
+        17.9017755504417,
+        21.4984848654787,
+        17.7179205183633,
+        21.3730416111822,
+        22.3029891695235,
+        26.3721390269846,
+        27.4175541209684,
+        24.2898602358578,
+        21.0011309806859,
+        19.571985613847,
+        23.5195890673042,
+        27.1328594566444,
+        25.4620850488589
+      ]
+    },
+    "scale": [
+      0.5,
+      0.5
+    ],
+    "position": [
+      0,
+      -21
+    ],
+    "pivot": [
+      128,
+      170
+    ],
+    "baseline_visual_turn_seconds": 0.32,
+    "shader": "gameplay/abilities/weapons/war_cyclone_motion.gdshader",
+    "blend": "Whole paired cels share premultiplied alpha interpolation; no independent inner cut rotation",
+    "accepted_review_sha256": "b4c20cf10a9f1b314bdd24edf8cb7af1108b029f367a85c52f194af8aa58938a"
+  },
+  "outer": {
+    "source": "C:/Users/Administrator/.codex/generated_images/01a0eed4-5878-7032-a315-e493f92ce97a/exec-4ad089cd-1bf7-42dd-a2f0-57c9558d3443.png",
+    "source_sha256": "095ad92e8dfa478677beb8a5e1340094acc38fb00ce76286abb4d94f1bfa1e02",
+    "method": "Original229 first320px padded cel after original extraction; fixed source center/radii, ground-plane UV rotation",
+    "source_center": [
+      0.525,
+      0.496875
+    ],
+    "source_radii": [
+      0.353125,
+      0.1671875
+    ],
+    "output_radii": [
+      0.35,
+      0.3
+    ],
+    "scale": [
+      0.66,
+      0.35
+    ],
+    "position": [
+      0,
+      -8
+    ],
+    "base_alpha": 0.8,
+    "front_alpha": 0.5,
+    "import_fix_alpha_border": false,
+    "speed_multiplier": 1.6,
+    "baseline_turn_seconds": 0.2,
+    "speed_followup": "Owner requests quicker outer circle2026-10-18. Multiply only outer back/front shader angle; body/inner0.32s clock, art, contact clocks and audio remain unchanged."
+  },
+  "ground": {
+    "choice": "C compact dust wake",
+    "prompt": "Create ONE small ground-contact VFX sprite sheet for Battle of Gods. The reference is STYLE AND PALETTE ONLY: keep its crisp pixel RPG cobalt-blue, cyan, ivory/steel-white and charcoal contours. DO NOT redraw its big ring or central spinning smear. This new asset is ONLY a tiny grounding detail underneath that already-approved effect, replacing the need to show a character or feet. No person, anatomy, boots, weapon, UI pointer, rune circle, letters, arrows or background. GENUINELY TRANSPARENT alpha. Exactly FOUR columns TWO rows, eight equal square cells; no borders or text. Every drawing stays inside central60% of its cell, with at least15% fully transparent margin. Same scale in all eight frames. Ground contact anchor at x50%,y66% is FIXED across the entire loop: no bouncing, wobbling, drifting or expanding footprint. Eight sequential hand-drawn keys cycle smoothly and last joins first. Compact controlled motion, clean dark contours, crunchy readable pixel clusters, no photorealism, no soft vector glow. VARIANT C — COMPACT GROUND WAKE. A tiny low charcoal/slate dust swirl and three crisp blue/ivory friction glints stick to the fixed ground anchor. It is a short tactile dust wake underneath an unseen spinning fighter, occupying35%cell width and18%cell height around the anchor. Two or three small pebble silhouettes and wispy low smoke curls rotate slowly in eight clear consecutive phases, with little cyan-white steel friction streaks contrasting on dark dust. Footprint stays the SAME WIDTH and height across every cel, no big dust explosion, no expanding shockwave. No brown/orange fire or golden light. No ground disk, real feet, body, pointer, full ring or funnel.",
+    "source": "C:/Users/Administrator/.codex/generated_images/01a0eed4-5878-7032-a315-e493f92ce97a/exec-75048b9a-1747-45c8-b924-2dfc2af7a313.png",
+    "source_sha256": "01ec1257bc238f7740f225a9c3fbc0ea14571953fbf63b6ae87e7e905e5d15e6",
+    "method": "Eight whole cels on4x2 atlas, one density from72px maximum painted width; common pivot(128,192)",
+    "scale": [
+      0.44,
+      0.44
+    ],
+    "alpha": 0.76,
+    "position": [
+      0,
+      -20.16
+    ],
+    "frame_seconds": 0.08
+  },
+  "icon": {
+    "path": "assets/vfx/abilities/weapons/axe_war_cyclone/icon.png",
+    "size": [
+      96,
+      96
+    ],
+    "bytes": 20112,
+    "sha256": "a93333c02ef007adbfe118af6abad7ded3d4ff55a0b9a252c33cf1cbcec0a105",
+    "prompt": "Use case: stylized-concept. Asset type: small game skill icon, War Cyclone for Battle of Gods.\nONE square inventory/HUD ability icon: a readable rugged iron single-bladed axe, narrow straight warm-brown shaft, large broad dark silver cutting head with a sharp bright edge, surrounded by two bold sweeping white and icy steel-blue crescent strokes that clearly imply a clockwise spinning axe technique. Dark navy blue background, strong dark outlines, limited well-chosen palette, crisp moderately detailed pixel art, clean 32-bit RPG action skill icon. Cool and powerful but readable when displayed 28 by 28 pixels. The axe and curves fill the center and stay fully within the image; leave a small safe margin. No frame, jewels, gold, letters, numbers, text, watermark, extra weapons, hands, character, realistic illustration, fog or excessive sparkle.",
+    "source_path": "C:/Users/Administrator/.codex/generated_images/01a0eed4-5878-7032-a315-e493f92ce97a/exec-b3fc9365-c94e-47a7-81a9-f52b0012264c.png",
+    "normalization": "Whole icon resized to96px with Lanczos; local linear HUD sampling.",
+    "source_sha256": "1132db1c83bd358084a775b7408683444b2d3f0fb4feb0bc8dbba994d6e829c0"
+  },
+  "audio": {
+    "files": [
+      {
+        "path": "res://assets/audio/sfx/abilities/weapons/war_cyclone/spin.wav",
+        "seconds": 0.4,
+        "sha256": "b2883c4e43c8288c4cfbba73325ae0891026b75103e4bb0d6f7b6a0fb34ad005"
+      },
+      {
+        "path": "res://assets/audio/sfx/abilities/weapons/war_cyclone/start.wav",
+        "seconds": 0.167755102040816,
+        "sha256": "ad045274f4b36e3d31760019f14c0481cac0b6b272c23d6c8ff1660dbf7d13d8"
+      },
+      {
+        "path": "res://assets/audio/sfx/abilities/weapons/war_cyclone/finish.wav",
+        "seconds": 0.22,
+        "sha256": "42f64c71e465f591131ab57e2a4db9526855714e7a7c4b499829bc7a4086fb0a"
+      }
+    ],
+    "loop_seam": 0.0,
+    "processing": "Retained recorded air/late metal. Offline resample, grains, DC removal, cyclic lowpass, fades and peak normalization. PCM16 mono44100. No runtime DSP.",
+    "sources": [
+      "Swishes Sound Pack by artisticdude, CC0",
+      "Impact by Iwan qubodup Gabovitch, CC0"
+    ],
+    "urls": [
+      "https://opengameart.org/content/swishes-sound-pack",
+      "https://opengameart.org/content/impact"
+    ]
+  },
+  "particles": {
+    "points": 16,
+    "trails": 16,
+    "lifetime_seconds": 0.32,
+    "method": "Fixed reusable sprite pool; independent deterministic rim/tangent/gravity/fade clock; ACTIVE-only updates; no collision/damage authority"
+  },
+  "settle": "Existing canonical Axe spin pose clips, startup0..3 and recovery13..15, same0.24s recovery. Old generated settle/body atlases retired.",
+  "retention": "Final runtime PNGs/resources, this compact provenance record and licensed audio sources only; all superseded Cyclone trial directories/documents are retired.",
+  "validation": {
+    "headless_cyclone_checks": 422,
+    "headless_cyclone_failures": 0,
+    "ordinary_prior_assets_unchanged": 687,
+    "native_windows_opened": 0,
+    "owner_art_acceptance": "Accepted for now; close out and move on",
+    "device_performance": "Native gameplay/phone/cold/horde performance not newly profiled",
+    "headless_hud_checks": 242,
+    "headless_axe_art_checks": 1608,
+    "resource_loads": 448,
+    "resource_load_failures": 0,
+    "archive_boundary": "pass",
+    "action_controls": "pass",
+    "profiles_unchanged": 2,
+    "native_weapon_finalize": "Native-only fixture: attempted headlessly, produced native audio assertions and waited for unavailable frame_post_draw. Stopped only owned test process; no native check claimed and no user window interrupted."
+  },
+  "cleanup": {
+    "date": "2026-10-18",
+    "removed_staging_files": 22494,
+    "removed_staging_bytes": 2282336187,
+    "removed_gib": 2.126,
+    "additional_earlier_cyclone_review_folders_removed": 12,
+    "obsolete_runtime_files_removed": 6,
+    "obsolete_trial_jsons_removed": 11,
+    "remaining": [
+      {
+        "path": "D:\\React_ONLY_2026\\GODOT-BATTLE-OF-GODS\\tmp\\clone_storage_9SKa0h",
+        "files": 2866,
+        "bytes": 139345192
+      },
+      {
+        "path": "D:\\React_ONLY_2026\\GODOT-BATTLE-OF-GODS\\tmp\\clone_storage_clean_hUPV7F",
+        "files": 2840,
+        "bytes": 107840159
+      },
+      {
+        "path": "D:\\React_ONLY_2026\\GODOT-BATTLE-OF-GODS\\tmp\\repository_migration_PsGcIT",
+        "files": 4111,
+        "bytes": 146665687
+      }
+    ],
+    "blocked_reason": "Automatic approval review rejected deletion of three disposable clone folders: blocked by policy",
+    "root_git_untouched": true,
+    "art_source_generated_absent": true,
+    "art_source_archive_absent": true
+  }
+}

@@ -1,6 +1,11 @@
 extends SceneTree
 
 const ACTIVE_PATHS := [
+"res://assets/environment/sanctuary/weapon_court/training_pavilion.png",
+"res://assets/characters/npcs/veyr/idle.png",
+"res://assets/environment/sanctuary/weapon_court/veil_gate.png",
+"res://assets/environment/sanctuary/weapon_court/veil_energy.png",
+"res://assets/environment/sanctuary/weapon_court/training_post.png",
 "res://levels/sanctuary/town/sanctuary_town.gd",
 "res://assets/characters/npcs/armskeeper/renewal/sprite_frames.tres",
 "res://assets/characters/npcs/skillkeeper/renewal/sprite_frames.tres",
@@ -12,6 +17,12 @@ const ACTIVE_PATHS := [
 ]
 
 const RETIRED_RUNTIME_PATHS := [
+	"res://assets/environment/sanctuary/landmarks/angel_expedition_portal_ground_192x192.png",
+	"res://assets/environment/sanctuary/landmarks/generated/angel_expedition_portal_static_192x256.png",
+	"res://assets/environment/sanctuary/landmarks/generated/sanctuary_portal_energy_4x_44x112.png",
+	"res://assets/vfx/abilities/weapons/axe_war_cyclone/spin_body.png",
+	"res://assets/vfx/abilities/weapons/axe_war_cyclone/recovery_body.png",
+	"res://assets/vfx/abilities/weapons/axe_war_cyclone/slash.png",
 	"res://art_source/generated",
 	"res://assets/characters/awakened",
 	"res://assets/characters/prototype",

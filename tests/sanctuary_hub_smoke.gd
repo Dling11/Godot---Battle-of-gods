@@ -19,7 +19,7 @@ func _run() -> void:
 	check(not save.is_autosave_suppressed_for_debug(),"Normal Sanctuary disables progression saves")
 	check(save.has_valid_profile(),"Normal Sanctuary no longer writes a recovery checkpoint")
 	check(not town.test_controls_enabled and not town._panel.visible,"Normal town exposes review controls")
-	check(town.ground.get_used_cells().size() == 36*24,"Current ground does not cover Sanctuary")
+	check(town.ground.get_used_cells().size() == 36*28,"Current ground does not cover Sanctuary and its compact northern services")
 	check(not town.town_map.enabled and not town.town_map.mini.visible and not town.town_map.panel.visible and town.town_map._timer.is_stopped(),"Withdrawn map is visible or still polling")
 	town.town_map.set_enabled(true)
 	town.town_map.toggle()
@@ -30,7 +30,7 @@ func _run() -> void:
 	for obsolete in ["ArmskeeperCart","SkillkeeperLodge","ArmskeeperWorkshop","TreeWest","LivingRootforge","EchoCrucible"]:
 		check(not hub.has_node("World/Actors/"+obsolete),"Old town content still instantiated: "+obsolete)
 	check(not town.has_method("set_review_enabled"),"Retired old/new toggle remains callable")
-	check(hub.combat_hud.get_node("CompactSanctuaryFrame").visible,"Normal Sanctuary lacks compact action frame")
+	check(hub.combat_hud.get_node("PortraitLinkFrame").visible and not hub.combat_hud.has_node("CompactSanctuaryFrame"),"Normal Sanctuary does not use the current compact HUD")
 	check(hub.player.health_component.current_health == hub.player.health_component.maximum_health,"Sanctuary does not heal on entry")
 	var space: PhysicsDirectSpaceState2D = hub.player.get_world_2d().direct_space_state
 	check(not _blocked(space,hub.player.position),"Normal spawn is blocked")
@@ -54,7 +54,8 @@ func _run() -> void:
 		await process_frame
 		if recipe[2] != null:
 			check(recipe[2].visible,"Service menu no longer opens")
-			check(recipe[2].get_node("Panel").get_theme_stylebox("panel") is StyleBoxTexture,"Service lacks current theme")
+			var style: StyleBox = recipe[2].get_node("Panel").get_theme_stylebox("panel")
+			check((style is StyleBoxEmpty and recipe[2].has_node("Panel/IllustratedBorder")) if recipe[2] == hub.character_menu else style is StyleBoxTexture,"Service lacks current theme")
 			recipe[2].close_menu()
 		check(not paused,"Service leaves gameplay paused")
 	# Normal saving still commits/reloads progression; presentation adds no fixture rewards.

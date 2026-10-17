@@ -1,5 +1,5 @@
 {
-  "purpose": "Current installed production assets after cleanup. Owner accepts Decision224 running; corrected middle-handle grasp and lower carry await grip review. All other artwork and gameplay remain protected.",
+  "purpose": "Current692 installed production assets. Decision234 replaces only young hooded Veyr, same-size outfitted pavilion and four-cel post artwork;689 other asset bytes remain unchanged. Decision233 world scale/layout and232 proof/forging are preserved. Final art and compact metadata only; no art archive.",
   "files": [
     {
       "path": "assets/audio/ambience/hollow_wind_loop.mp3",
@@ -12,14 +12,14 @@
       "sha256": "0c4d6a13af047d6581c93d0d610d2e7c7bf456b78963a2ea9c374bfe6618e7ba"
     },
     {
-      "path": "assets/audio/ambience/woodland_birds_loop.mp3",
-      "bytes": 1444193,
-      "sha256": "cec0999fe4d153388f87cfd476cc24f0533673130fc2812ff3d7143e7e6d275d"
-    },
-    {
       "path": "assets/audio/ambience/woodland_bird_call.mp3",
       "bytes": 74360,
       "sha256": "81a7061cf52fd28a0cabbe250cb9c09e706a3c42dae6f568c004b8dc590249df"
+    },
+    {
+      "path": "assets/audio/ambience/woodland_birds_loop.mp3",
+      "bytes": 1444193,
+      "sha256": "cec0999fe4d153388f87cfd476cc24f0533673130fc2812ff3d7143e7e6d275d"
     },
     {
       "path": "assets/audio/music/boss/examiner/examiner_ethereal_vocal_loop.mp3",
@@ -105,6 +105,21 @@
       "path": "assets/audio/sfx/abilities/king/worldsplitter_rupture.wav",
       "bytes": 82952,
       "sha256": "7a26a24e03ce4356f41fd74e95e28db97955b274baa8be4e6d1c603928fd58d1"
+    },
+    {
+      "path": "assets/audio/sfx/abilities/weapons/war_cyclone/finish.wav",
+      "bytes": 19448,
+      "sha256": "42f64c71e465f591131ab57e2a4db9526855714e7a7c4b499829bc7a4086fb0a"
+    },
+    {
+      "path": "assets/audio/sfx/abilities/weapons/war_cyclone/spin.wav",
+      "bytes": 35324,
+      "sha256": "b2883c4e43c8288c4cfbba73325ae0891026b75103e4bb0d6f7b6a0fb34ad005"
+    },
+    {
+      "path": "assets/audio/sfx/abilities/weapons/war_cyclone/start.wav",
+      "bytes": 14840,
+      "sha256": "ad045274f4b36e3d31760019f14c0481cac0b6b272c23d6c8ff1660dbf7d13d8"
     },
     {
       "path": "assets/audio/sfx/bramble_impact.wav",
@@ -362,29 +377,19 @@
       "sha256": "82c621c33902a87486764f9e79a7c11b3601a507b86f07808fc6d6cab9a1d69f"
     },
     {
-      "path": "assets/audio/sfx/player/greatsword/cleave.wav",
-      "bytes": 33560,
-      "sha256": "09619e5b276bd858bc008a16310391a90b2b791aedd00661550709adc6b075d3"
+      "path": "assets/audio/sfx/player_ability_hit.ogg",
+      "bytes": 20300,
+      "sha256": "4c7643dbcd813eb614a56451652987d37ba587fac3309303aa0ab9a27d3a7e71"
     },
     {
-      "path": "assets/audio/sfx/player/greatsword/cut.wav",
-      "bytes": 21212,
-      "sha256": "07e6aaa16ecfb14db814cc8caa5dea9e09c362e696c0ba41df28be36c0fcccbe"
+      "path": "assets/audio/sfx/player_dash_grounded.wav",
+      "bytes": 16802,
+      "sha256": "63824a67667cbd094b0cd1649e76592ca63e4f9d17cf9836b9c99273b225bc4b"
     },
     {
-      "path": "assets/audio/sfx/player/greatsword/resolve.wav",
-      "bytes": 44144,
-      "sha256": "da3bd5f52cd9b6b07457006a4e30dfd6059f3479505ebdda48de809b7034458b"
-    },
-    {
-      "path": "assets/audio/sfx/player/greatsword/return.wav",
-      "bytes": 19448,
-      "sha256": "ccfe4e2aaabb7fb89cd1014185e67431dcb3e88603300bcfc63f1097e0683625"
-    },
-    {
-      "path": "assets/audio/sfx/player/greatsword/step.wav",
-      "bytes": 7100,
-      "sha256": "4075220e92d080d6aa589f0947f1b50ca52ee7be63204c634e567c4610fe218f"
+      "path": "assets/audio/sfx/player_hurt_impact.wav",
+      "bytes": 16802,
+      "sha256": "609d76b7e32b90842bc8551309cf30c515565e057a46c8b77d08210f3a4e9775"
     },
     {
       "path": "assets/audio/sfx/player/greatsword_heavy/contact_1.wav",
@@ -410,6 +415,31 @@
       "path": "assets/audio/sfx/player/greatsword_heavy/smash.wav",
       "bytes": 35324,
       "sha256": "764f96a900c526157df48530554462460752fa9a018818487177bbeb4a68fc46"
+    },
+    {
+      "path": "assets/audio/sfx/player/greatsword/cleave.wav",
+      "bytes": 33560,
+      "sha256": "09619e5b276bd858bc008a16310391a90b2b791aedd00661550709adc6b075d3"
+    },
+    {
+      "path": "assets/audio/sfx/player/greatsword/cut.wav",
+      "bytes": 21212,
+      "sha256": "07e6aaa16ecfb14db814cc8caa5dea9e09c362e696c0ba41df28be36c0fcccbe"
+    },
+    {
+      "path": "assets/audio/sfx/player/greatsword/resolve.wav",
+      "bytes": 44144,
+      "sha256": "da3bd5f52cd9b6b07457006a4e30dfd6059f3479505ebdda48de809b7034458b"
+    },
+    {
+      "path": "assets/audio/sfx/player/greatsword/return.wav",
+      "bytes": 19448,
+      "sha256": "ccfe4e2aaabb7fb89cd1014185e67431dcb3e88603300bcfc63f1097e0683625"
+    },
+    {
+      "path": "assets/audio/sfx/player/greatsword/step.wav",
+      "bytes": 7100,
+      "sha256": "4075220e92d080d6aa589f0947f1b50ca52ee7be63204c634e567c4610fe218f"
     },
     {
       "path": "assets/audio/sfx/player/iron_beard/chop.wav",
@@ -442,14 +472,14 @@
       "sha256": "2ca11785db42aa2d08e0b60480fcd61e674d1113e0316a827dda3f678cd0169a"
     },
     {
-      "path": "assets/audio/sfx/player/iron_beard/slam.wav",
-      "bytes": 15934,
-      "sha256": "275eb23ffcc722823cc8849fe484c29fe1f390414151666dde05c5ba4ec6a82b"
-    },
-    {
       "path": "assets/audio/sfx/player/iron_beard/slam_contact.wav",
       "bytes": 40926,
       "sha256": "899e8eef948f4e43e524968f53136694099e46d5112c567fc91c0ba942503087"
+    },
+    {
+      "path": "assets/audio/sfx/player/iron_beard/slam.wav",
+      "bytes": 15934,
+      "sha256": "275eb23ffcc722823cc8849fe484c29fe1f390414151666dde05c5ba4ec6a82b"
     },
     {
       "path": "assets/audio/sfx/player/iron_beard/spin.wav",
@@ -472,14 +502,14 @@
       "sha256": "dd7e2ab6767a4806a73fcb448fffaf4bae7a04614d8564e025007cebb2472304"
     },
     {
-      "path": "assets/audio/sfx/player/iron_reaper/reap.wav",
-      "bytes": 12684,
-      "sha256": "bae9d9ecba85ac7e5456314b8cc1a8b8edfcdbb63541218984038d3035497b36"
-    },
-    {
       "path": "assets/audio/sfx/player/iron_reaper/reap_contact.wav",
       "bytes": 40926,
       "sha256": "8634a0a84e13a876ba36db3a9af1d4c3041a8c819e08af39b4420df5d4692e1b"
+    },
+    {
+      "path": "assets/audio/sfx/player/iron_reaper/reap.wav",
+      "bytes": 12684,
+      "sha256": "bae9d9ecba85ac7e5456314b8cc1a8b8edfcdbb63541218984038d3035497b36"
     },
     {
       "path": "assets/audio/sfx/player/iron_reaper/spin.wav",
@@ -510,21 +540,6 @@
       "path": "assets/audio/sfx/player/weapon_contact/contact_3.wav",
       "bytes": 41260,
       "sha256": "589377e01d30362c1e63b1206aeb3f13f7ed20d0c1b319b73ba9b83fc9b0f9fc"
-    },
-    {
-      "path": "assets/audio/sfx/player_ability_hit.ogg",
-      "bytes": 20300,
-      "sha256": "4c7643dbcd813eb614a56451652987d37ba587fac3309303aa0ab9a27d3a7e71"
-    },
-    {
-      "path": "assets/audio/sfx/player_dash_grounded.wav",
-      "bytes": 16802,
-      "sha256": "63824a67667cbd094b0cd1649e76592ca63e4f9d17cf9836b9c99273b225bc4b"
-    },
-    {
-      "path": "assets/audio/sfx/player_hurt_impact.wav",
-      "bytes": 16802,
-      "sha256": "609d76b7e32b90842bc8551309cf30c515565e057a46c8b77d08210f3a4e9775"
     },
     {
       "path": "assets/audio/sfx/rootling_root_jab.wav",
@@ -938,13 +953,8 @@
     },
     {
       "path": "assets/characters/playable/king/body_library/baseline/contract.json",
-      "bytes": 2674,
+      "bytes": 2680,
       "sha256": "bc7708fc8413c32e6b53206c0a63b6ff4f9e102bdf043f61a73f14e394da8702"
-    },
-    {
-      "path": "assets/characters/playable/king/body_library/baseline/down_ready.tres",
-      "bytes": 2296,
-      "sha256": "c56ceb5a9949ff63d4e14e0beb2557a0fe368ae60cfcc6d54933e2004338ee9d"
     },
     {
       "path": "assets/characters/playable/king/body_library/baseline/down_ready_body.png",
@@ -957,9 +967,9 @@
       "sha256": "2a2bb92f4f2a71f86d9678b9c482bdcef36f825b0a07a262f563be7e2b2c2da1"
     },
     {
-      "path": "assets/characters/playable/king/body_library/baseline/down_relaxed.tres",
-      "bytes": 2899,
-      "sha256": "fd30fef7ea76966abed35877ec8017bb14341c4eadc82bd35070cd8cb67a4891"
+      "path": "assets/characters/playable/king/body_library/baseline/down_ready.tres",
+      "bytes": 2305,
+      "sha256": "c56ceb5a9949ff63d4e14e0beb2557a0fe368ae60cfcc6d54933e2004338ee9d"
     },
     {
       "path": "assets/characters/playable/king/body_library/baseline/down_relaxed_body.png",
@@ -972,9 +982,9 @@
       "sha256": "1f9b8e38353a982aed78b9bf0250afaadb4f52a4f7d35aa302c823afa54c0576"
     },
     {
-      "path": "assets/characters/playable/king/body_library/baseline/down_run.tres",
-      "bytes": 2374,
-      "sha256": "b6eb3ae6b84198277ad17e7915dea09e21ca673a1842c7d346a2cb7e40c2a99b"
+      "path": "assets/characters/playable/king/body_library/baseline/down_relaxed.tres",
+      "bytes": 2928,
+      "sha256": "fd30fef7ea76966abed35877ec8017bb14341c4eadc82bd35070cd8cb67a4891"
     },
     {
       "path": "assets/characters/playable/king/body_library/baseline/down_run_body.png",
@@ -987,6 +997,11 @@
       "sha256": "8df9360a66b70ab63774c276e57ed13b832c6d9083dd88cf9eb276ba8042a758"
     },
     {
+      "path": "assets/characters/playable/king/body_library/baseline/down_run.tres",
+      "bytes": 2383,
+      "sha256": "b6eb3ae6b84198277ad17e7915dea09e21ca673a1842c7d346a2cb7e40c2a99b"
+    },
+    {
       "path": "assets/characters/playable/king/body_library/baseline/README.md",
       "bytes": 1158,
       "sha256": "c66cce68596d3771844d13d3c518128f016bdd75290a257659fde4b885d7c8af"
@@ -995,11 +1010,6 @@
       "path": "assets/characters/playable/king/body_library/baseline/side_axe_ready_body.png",
       "bytes": 14652,
       "sha256": "808c61da64d50a88a67a39b9305d13db4aa9dc570b86e6594762446a7d825cfd"
-    },
-    {
-      "path": "assets/characters/playable/king/body_library/baseline/side_ready.tres",
-      "bytes": 2020,
-      "sha256": "c02acc36abe9e58b07a3abffd6505cbd8f82a106e4d2f8d1e8d0d35be592d923"
     },
     {
       "path": "assets/characters/playable/king/body_library/baseline/side_ready_body.png",
@@ -1012,9 +1022,9 @@
       "sha256": "d007d0690a1652723c5d7cf6c6ba5ef8f6acf8a6cc13af3bce55f2abecacd25c"
     },
     {
-      "path": "assets/characters/playable/king/body_library/baseline/side_relaxed.tres",
-      "bytes": 2875,
-      "sha256": "c4d80a388481f39131d25655b27829a6ef2c0ba6f031b7637efc181d09d8c34f"
+      "path": "assets/characters/playable/king/body_library/baseline/side_ready.tres",
+      "bytes": 2029,
+      "sha256": "c02acc36abe9e58b07a3abffd6505cbd8f82a106e4d2f8d1e8d0d35be592d923"
     },
     {
       "path": "assets/characters/playable/king/body_library/baseline/side_relaxed_body.png",
@@ -1027,9 +1037,9 @@
       "sha256": "d2719042cdcd493aaf33b63fd472bc9414dc43732dab1064df1cf99f6582d475"
     },
     {
-      "path": "assets/characters/playable/king/body_library/baseline/side_run.tres",
-      "bytes": 2211,
-      "sha256": "83af0b889374e7208ccaa67d12ae64e44f19b42ce6212bccf585ac15632b5d5d"
+      "path": "assets/characters/playable/king/body_library/baseline/side_relaxed.tres",
+      "bytes": 2904,
+      "sha256": "c4d80a388481f39131d25655b27829a6ef2c0ba6f031b7637efc181d09d8c34f"
     },
     {
       "path": "assets/characters/playable/king/body_library/baseline/side_run_body.png",
@@ -1042,9 +1052,9 @@
       "sha256": "4d97f957815921f958b337544da18b38ec5f9b0748c3ecd411a70328d6198aa4"
     },
     {
-      "path": "assets/characters/playable/king/body_library/baseline/up_ready.tres",
-      "bytes": 2292,
-      "sha256": "c4075385946634458bfd39084dae547b77d6b87b4abd2da5c0bde2943e60ab29"
+      "path": "assets/characters/playable/king/body_library/baseline/side_run.tres",
+      "bytes": 2220,
+      "sha256": "83af0b889374e7208ccaa67d12ae64e44f19b42ce6212bccf585ac15632b5d5d"
     },
     {
       "path": "assets/characters/playable/king/body_library/baseline/up_ready_body.png",
@@ -1057,9 +1067,9 @@
       "sha256": "f54c3e7f83495da946b02d316bdd5a7701e55555eb903ae0ea633ed7adb3776b"
     },
     {
-      "path": "assets/characters/playable/king/body_library/baseline/up_relaxed.tres",
-      "bytes": 2927,
-      "sha256": "952defcf4d6d468e888e84825c01d647a6fea64d41df2d8cfcd7b454f3348179"
+      "path": "assets/characters/playable/king/body_library/baseline/up_ready.tres",
+      "bytes": 2301,
+      "sha256": "c4075385946634458bfd39084dae547b77d6b87b4abd2da5c0bde2943e60ab29"
     },
     {
       "path": "assets/characters/playable/king/body_library/baseline/up_relaxed_body.png",
@@ -1072,9 +1082,9 @@
       "sha256": "4845ad9fcc16993cabc5375b0bb01838ff16d3bc7d0927c283d860cc4a647e9e"
     },
     {
-      "path": "assets/characters/playable/king/body_library/baseline/up_run.tres",
-      "bytes": 2374,
-      "sha256": "9ce2a2ae63d41c0ae999f6fd3699213076707e09fe2589fb14a14d8b157b94f9"
+      "path": "assets/characters/playable/king/body_library/baseline/up_relaxed.tres",
+      "bytes": 2956,
+      "sha256": "952defcf4d6d468e888e84825c01d647a6fea64d41df2d8cfcd7b454f3348179"
     },
     {
       "path": "assets/characters/playable/king/body_library/baseline/up_run_body.png",
@@ -1087,9 +1097,9 @@
       "sha256": "8df9360a66b70ab63774c276e57ed13b832c6d9083dd88cf9eb276ba8042a758"
     },
     {
-      "path": "assets/characters/playable/king/greatsword/king_greatsword_portrait_96x96.png",
-      "bytes": 16300,
-      "sha256": "65cd9177a6f66c3aa769a049a19e3a5c55592924f8cc8a9a3e80d140e8177219"
+      "path": "assets/characters/playable/king/body_library/baseline/up_run.tres",
+      "bytes": 2383,
+      "sha256": "9ce2a2ae63d41c0ae999f6fd3699213076707e09fe2589fb14a14d8b157b94f9"
     },
     {
       "path": "assets/characters/playable/king/greatsword_unified/attack_hands.png",
@@ -1097,19 +1107,14 @@
       "sha256": "9342fcd3eb816671f8d38243744f6c7ddaaf1f11eed58740a67ba9681d964e80"
     },
     {
-      "path": "assets/characters/playable/king/greatsword_unified/down/front.tres",
-      "bytes": 2462,
-      "sha256": "d18034a35ea99a0a84874b854812ba7a17a4b35c69d278400cc385ebebb984ce"
-    },
-    {
       "path": "assets/characters/playable/king/greatsword_unified/down/front_body.png",
       "bytes": 125823,
       "sha256": "0c32bfdcd98847abde7693b090f49d4cbf63ac7f8abd70d1b731f11431933a22"
     },
     {
-      "path": "assets/characters/playable/king/greatsword_unified/down/idle.tres",
-      "bytes": 2305,
-      "sha256": "ed7028aa736260279b6fd267f97aa44f3505276622dd87af26d74b1f5d42b1e3"
+      "path": "assets/characters/playable/king/greatsword_unified/down/front.tres",
+      "bytes": 2459,
+      "sha256": "d18034a35ea99a0a84874b854812ba7a17a4b35c69d278400cc385ebebb984ce"
     },
     {
       "path": "assets/characters/playable/king/greatsword_unified/down/idle_body.png",
@@ -1117,9 +1122,9 @@
       "sha256": "6a31469fed43a3a239498f4a47982d493498b50ebd265018ca50c8da94d357f8"
     },
     {
-      "path": "assets/characters/playable/king/greatsword_unified/down/return.tres",
-      "bytes": 2022,
-      "sha256": "b8f6f0b3de9f0867eb4f515611488ad4d294f1e95781c5b77e663c4b70437ee2"
+      "path": "assets/characters/playable/king/greatsword_unified/down/idle.tres",
+      "bytes": 2302,
+      "sha256": "ed7028aa736260279b6fd267f97aa44f3505276622dd87af26d74b1f5d42b1e3"
     },
     {
       "path": "assets/characters/playable/king/greatsword_unified/down/return_body.png",
@@ -1127,9 +1132,9 @@
       "sha256": "4ac138e575f887029065df9349b9e8eb7674355af9d54211fbe7830e3c9b44a1"
     },
     {
-      "path": "assets/characters/playable/king/greatsword_unified/down/run.tres",
-      "bytes": 1665,
-      "sha256": "d9eb3f73cc5de0aff644e2c8d85722d2465657651cd7e498bf8c231eaf28f199"
+      "path": "assets/characters/playable/king/greatsword_unified/down/return.tres",
+      "bytes": 2019,
+      "sha256": "b8f6f0b3de9f0867eb4f515611488ad4d294f1e95781c5b77e663c4b70437ee2"
     },
     {
       "path": "assets/characters/playable/king/greatsword_unified/down/run_body.png",
@@ -1137,9 +1142,9 @@
       "sha256": "9d02eea07456cf11248b5fee9e433690650e7aac686d02ebfcacefd85675d73d"
     },
     {
-      "path": "assets/characters/playable/king/greatsword_unified/down/slam.tres",
-      "bytes": 2025,
-      "sha256": "5aebef331cbedac262b3f6ecc7e35bfc9351feb631c19bc7cedad17497e101e1"
+      "path": "assets/characters/playable/king/greatsword_unified/down/run.tres",
+      "bytes": 1662,
+      "sha256": "d9eb3f73cc5de0aff644e2c8d85722d2465657651cd7e498bf8c231eaf28f199"
     },
     {
       "path": "assets/characters/playable/king/greatsword_unified/down/slam_body.png",
@@ -1147,14 +1152,29 @@
       "sha256": "3059a493ef3db71ff399fe88dc5250e697636cc6080192acae1503461a740d5f"
     },
     {
-      "path": "assets/characters/playable/king/greatsword_unified/down/spin.tres",
-      "bytes": 2175,
-      "sha256": "49c35243427ad8c94110ea8d8df4244e2827d86143f092efccaee205c69643fc"
+      "path": "assets/characters/playable/king/greatsword_unified/down/slam.tres",
+      "bytes": 2022,
+      "sha256": "5aebef331cbedac262b3f6ecc7e35bfc9351feb631c19bc7cedad17497e101e1"
     },
     {
       "path": "assets/characters/playable/king/greatsword_unified/down/spin_body.png",
       "bytes": 149964,
       "sha256": "c41dbbfdd623cd905b9c8ee9f9e820738f79f9d0d969b07d2e272a32151a5849"
+    },
+    {
+      "path": "assets/characters/playable/king/greatsword_unified/down/spin.tres",
+      "bytes": 2172,
+      "sha256": "49c35243427ad8c94110ea8d8df4244e2827d86143f092efccaee205c69643fc"
+    },
+    {
+      "path": "assets/characters/playable/king/greatsword_unified/greatsword.png",
+      "bytes": 5257,
+      "sha256": "5077162899cf254e05aff546d3973d2162094d84e386bb011ee85e5b2a9899c6"
+    },
+    {
+      "path": "assets/characters/playable/king/greatsword_unified/impact.png",
+      "bytes": 65162,
+      "sha256": "9e97d74e5385343b4f08d7213542a088e3b8c0f67abc798a5504485fe51277bf"
     },
     {
       "path": "assets/characters/playable/king/greatsword_unified/landing.png",
@@ -1172,19 +1192,14 @@
       "sha256": "bba55d43d6bad22b018e07e3208305fd999a638d405ebe6471b35261fd74ac42"
     },
     {
-      "path": "assets/characters/playable/king/greatsword_unified/side/front.tres",
-      "bytes": 2462,
-      "sha256": "18a25a77d8fe8a7ed3ee9855905ba5b57d550418bf47b581738f5070972c3dab"
-    },
-    {
       "path": "assets/characters/playable/king/greatsword_unified/side/front_body.png",
       "bytes": 131826,
       "sha256": "4b574baa49b8a56450df50e7e91087056278e9b25757b5d14d5ea7093f5e4689"
     },
     {
-      "path": "assets/characters/playable/king/greatsword_unified/side/idle.tres",
-      "bytes": 2324,
-      "sha256": "cbfad49e03c4e7a08d1de52baaab5a22bfa027e88c56b265aa377e553c232b8a"
+      "path": "assets/characters/playable/king/greatsword_unified/side/front.tres",
+      "bytes": 2459,
+      "sha256": "18a25a77d8fe8a7ed3ee9855905ba5b57d550418bf47b581738f5070972c3dab"
     },
     {
       "path": "assets/characters/playable/king/greatsword_unified/side/idle_body.png",
@@ -1192,9 +1207,9 @@
       "sha256": "f2f6fcbca905b43f538dcb1e3cc3f200d13a4920b581762edfb9abc27cc9de6b"
     },
     {
-      "path": "assets/characters/playable/king/greatsword_unified/side/return.tres",
-      "bytes": 2022,
-      "sha256": "9c15aa727e4d01fbb8b63d589253cd1b8ec453c45afff57c21f124f5a6619b87"
+      "path": "assets/characters/playable/king/greatsword_unified/side/idle.tres",
+      "bytes": 2321,
+      "sha256": "cbfad49e03c4e7a08d1de52baaab5a22bfa027e88c56b265aa377e553c232b8a"
     },
     {
       "path": "assets/characters/playable/king/greatsword_unified/side/return_body.png",
@@ -1202,9 +1217,9 @@
       "sha256": "cbe9b8a9b9053f005cd3eeec543f32a0afd9cb844241f7eb8a5747c08d152a3a"
     },
     {
-      "path": "assets/characters/playable/king/greatsword_unified/side/run.tres",
-      "bytes": 1665,
-      "sha256": "115969a439592896dd242b60b78804c571bc4545f64e5d884ade469153458721"
+      "path": "assets/characters/playable/king/greatsword_unified/side/return.tres",
+      "bytes": 2019,
+      "sha256": "9c15aa727e4d01fbb8b63d589253cd1b8ec453c45afff57c21f124f5a6619b87"
     },
     {
       "path": "assets/characters/playable/king/greatsword_unified/side/run_body.png",
@@ -1212,9 +1227,9 @@
       "sha256": "233c9954835ff93d7dfed35db6ed964c64895498d4b2fc0b1485808828afbc95"
     },
     {
-      "path": "assets/characters/playable/king/greatsword_unified/side/slam.tres",
-      "bytes": 2063,
-      "sha256": "b2681f869dcf45afd172d52ae2c9308681867c39efe9cc964797fed1376a6141"
+      "path": "assets/characters/playable/king/greatsword_unified/side/run.tres",
+      "bytes": 1662,
+      "sha256": "115969a439592896dd242b60b78804c571bc4545f64e5d884ade469153458721"
     },
     {
       "path": "assets/characters/playable/king/greatsword_unified/side/slam_body.png",
@@ -1222,14 +1237,19 @@
       "sha256": "4dbacd6996fc21e093762fd6bb1cfe38c575117d9b93cdb2d31429587d487a1b"
     },
     {
-      "path": "assets/characters/playable/king/greatsword_unified/side/spin.tres",
-      "bytes": 2175,
-      "sha256": "c73a3cd9e5b2e72cb6abbf2b4c2c9ac51ae08137a7f767e9c7bc5843e8ac3756"
+      "path": "assets/characters/playable/king/greatsword_unified/side/slam.tres",
+      "bytes": 2060,
+      "sha256": "b2681f869dcf45afd172d52ae2c9308681867c39efe9cc964797fed1376a6141"
     },
     {
       "path": "assets/characters/playable/king/greatsword_unified/side/spin_body.png",
       "bytes": 161116,
       "sha256": "f4aeadfe419fb21c8465da743d47f436da5f58a98143bd6c4ab33fab0f5f52a3"
+    },
+    {
+      "path": "assets/characters/playable/king/greatsword_unified/side/spin.tres",
+      "bytes": 2172,
+      "sha256": "c73a3cd9e5b2e72cb6abbf2b4c2c9ac51ae08137a7f767e9c7bc5843e8ac3756"
     },
     {
       "path": "assets/characters/playable/king/greatsword_unified/slash.png",
@@ -1242,19 +1262,14 @@
       "sha256": "cc6599e385531e47e943de3f9d3d26cb398d524bf5bca5630f19ca658298e92c"
     },
     {
-      "path": "assets/characters/playable/king/greatsword_unified/up/front.tres",
-      "bytes": 2454,
-      "sha256": "863457c579a0ba6b07ee0162765b82d9398c2aa54fd9d090ae90ce6bd182f719"
-    },
-    {
       "path": "assets/characters/playable/king/greatsword_unified/up/front_body.png",
       "bytes": 125309,
       "sha256": "cda587e783db21caef827d3f76e3c9ef184b5c715d19b9e92756d097c76a0bc1"
     },
     {
-      "path": "assets/characters/playable/king/greatsword_unified/up/idle.tres",
-      "bytes": 2324,
-      "sha256": "9733dd04b7e37fc2d681423030bb54960a434b1983254ae0f89ebff67f4776b5"
+      "path": "assets/characters/playable/king/greatsword_unified/up/front.tres",
+      "bytes": 2451,
+      "sha256": "863457c579a0ba6b07ee0162765b82d9398c2aa54fd9d090ae90ce6bd182f719"
     },
     {
       "path": "assets/characters/playable/king/greatsword_unified/up/idle_body.png",
@@ -1262,9 +1277,9 @@
       "sha256": "a806ecc631d84c63f5ac7a3752a626abb7b6c9f2faad716c887d9aa5eaa71f61"
     },
     {
-      "path": "assets/characters/playable/king/greatsword_unified/up/return.tres",
-      "bytes": 2020,
-      "sha256": "0ba267ff73ae9b27ada9ec7c9ee9e99858a771e94b31ed19c05bd85dc63313c5"
+      "path": "assets/characters/playable/king/greatsword_unified/up/idle.tres",
+      "bytes": 2321,
+      "sha256": "9733dd04b7e37fc2d681423030bb54960a434b1983254ae0f89ebff67f4776b5"
     },
     {
       "path": "assets/characters/playable/king/greatsword_unified/up/return_body.png",
@@ -1272,9 +1287,9 @@
       "sha256": "741f7a77d1635489d622cc5561a269e4a6635422f7360b270e4d87eda6cd3910"
     },
     {
-      "path": "assets/characters/playable/king/greatsword_unified/up/run.tres",
-      "bytes": 1663,
-      "sha256": "7f22b8f8e154d9cd4033c3b997f8715f2c43a1a00c729ba591caef27711850c3"
+      "path": "assets/characters/playable/king/greatsword_unified/up/return.tres",
+      "bytes": 2017,
+      "sha256": "0ba267ff73ae9b27ada9ec7c9ee9e99858a771e94b31ed19c05bd85dc63313c5"
     },
     {
       "path": "assets/characters/playable/king/greatsword_unified/up/run_body.png",
@@ -1282,9 +1297,9 @@
       "sha256": "787bd679323f8cc2c3eab589b29b01a3fcccb18b86c6004f330bc99044e0c845"
     },
     {
-      "path": "assets/characters/playable/king/greatsword_unified/up/slam.tres",
-      "bytes": 2023,
-      "sha256": "57bf1579c8f951ad6aada123e4c8f9b04a4fea4adb0227c345a03c710c568a1e"
+      "path": "assets/characters/playable/king/greatsword_unified/up/run.tres",
+      "bytes": 1660,
+      "sha256": "7f22b8f8e154d9cd4033c3b997f8715f2c43a1a00c729ba591caef27711850c3"
     },
     {
       "path": "assets/characters/playable/king/greatsword_unified/up/slam_body.png",
@@ -1292,14 +1307,19 @@
       "sha256": "22cef752a8e53c8c9fed1c7f5efc33316c8aafea60286ac17f973499b78a94b3"
     },
     {
-      "path": "assets/characters/playable/king/greatsword_unified/up/spin.tres",
-      "bytes": 2173,
-      "sha256": "34c586f2532c5db2bbd96e5b4b066f478247c0070c8ad2a0ed85db2647dc31ff"
+      "path": "assets/characters/playable/king/greatsword_unified/up/slam.tres",
+      "bytes": 2020,
+      "sha256": "57bf1579c8f951ad6aada123e4c8f9b04a4fea4adb0227c345a03c710c568a1e"
     },
     {
       "path": "assets/characters/playable/king/greatsword_unified/up/spin_body.png",
       "bytes": 148031,
       "sha256": "0872db077f837f5b5c15bfbbec9d3f2f892dc825281231fad7d9cf088e5723b9"
+    },
+    {
+      "path": "assets/characters/playable/king/greatsword_unified/up/spin.tres",
+      "bytes": 2170,
+      "sha256": "34c586f2532c5db2bbd96e5b4b066f478247c0070c8ad2a0ed85db2647dc31ff"
     },
     {
       "path": "assets/characters/playable/king/greatsword_unified/vertical_landing.png",
@@ -1312,19 +1332,9 @@
       "sha256": "11e8231fa833e03e1de45287bc5548ab4330b497ac543e256f7786a46d3f3d62"
     },
     {
-      "path": "assets/characters/playable/king/greatsword_unified/greatsword.png",
-      "bytes": 5257,
-      "sha256": "5077162899cf254e05aff546d3973d2162094d84e386bb011ee85e5b2a9899c6"
-    },
-    {
-      "path": "assets/characters/playable/king/greatsword_unified/impact.png",
-      "bytes": 65162,
-      "sha256": "9e97d74e5385343b4f08d7213542a088e3b8c0f67abc798a5504485fe51277bf"
-    },
-    {
-      "path": "assets/characters/playable/king/iron_beard_unified/down/chop.tres",
-      "bytes": 2771,
-      "sha256": "500f6b73eac70c599486940782a620e25532c859530b7b93131a587038e878a9"
+      "path": "assets/characters/playable/king/greatsword/king_greatsword_portrait_96x96.png",
+      "bytes": 16300,
+      "sha256": "65cd9177a6f66c3aa769a049a19e3a5c55592924f8cc8a9a3e80d140e8177219"
     },
     {
       "path": "assets/characters/playable/king/iron_beard_unified/down/chop_body.png",
@@ -1332,9 +1342,9 @@
       "sha256": "c79a6a21231f3cb895b38671004a2191290f8332eb8f54297780f99df5ef492d"
     },
     {
-      "path": "assets/characters/playable/king/iron_beard_unified/down/idle.tres",
-      "bytes": 1972,
-      "sha256": "0dd7433dbcc6192959686c24822cbceecc7670b78aa249d23b8c0c731b5473c6"
+      "path": "assets/characters/playable/king/iron_beard_unified/down/chop.tres",
+      "bytes": 2771,
+      "sha256": "500f6b73eac70c599486940782a620e25532c859530b7b93131a587038e878a9"
     },
     {
       "path": "assets/characters/playable/king/iron_beard_unified/down/idle_body.png",
@@ -1342,9 +1352,9 @@
       "sha256": "18b94d438896436542aac01437dd16c35dfd3e8fbc84e6b77ddf1a5213f93880"
     },
     {
-      "path": "assets/characters/playable/king/iron_beard_unified/down/rise.tres",
-      "bytes": 2197,
-      "sha256": "77b8e3bb17855f4a5bf46df04d365b3000bf860e6c008af6471137d7003f9250"
+      "path": "assets/characters/playable/king/iron_beard_unified/down/idle.tres",
+      "bytes": 1972,
+      "sha256": "0dd7433dbcc6192959686c24822cbceecc7670b78aa249d23b8c0c731b5473c6"
     },
     {
       "path": "assets/characters/playable/king/iron_beard_unified/down/rise_body.png",
@@ -1352,14 +1362,14 @@
       "sha256": "c31c40c25c39a6cb4d0db3ab62246b32028251510b22f70ad206e7132b778a2d"
     },
     {
+      "path": "assets/characters/playable/king/iron_beard_unified/down/rise.tres",
+      "bytes": 2197,
+      "sha256": "77b8e3bb17855f4a5bf46df04d365b3000bf860e6c008af6471137d7003f9250"
+    },
+    {
       "path": "assets/characters/playable/king/iron_beard_unified/down/run.tres",
       "bytes": 1969,
       "sha256": "32e00006e2da79023afd1da22a8d465b6a9e8e3dd1ec5a8f9314d63c04add58d"
-    },
-    {
-      "path": "assets/characters/playable/king/iron_beard_unified/down/slam.tres",
-      "bytes": 2196,
-      "sha256": "24d2a92bc9cbbd9d4e94178be290db558581ec271c886085a55db55d75161e8d"
     },
     {
       "path": "assets/characters/playable/king/iron_beard_unified/down/slam_body.png",
@@ -1367,9 +1377,9 @@
       "sha256": "866288322a926778625234d4e6746fd73447ca7db8f477118f363bcae68fcba0"
     },
     {
-      "path": "assets/characters/playable/king/iron_beard_unified/down/spin.tres",
-      "bytes": 2338,
-      "sha256": "c8d2e87e39207dd5b7d897f794bbe5f49a16ad571717835aef177866116ad351"
+      "path": "assets/characters/playable/king/iron_beard_unified/down/slam.tres",
+      "bytes": 2196,
+      "sha256": "24d2a92bc9cbbd9d4e94178be290db558581ec271c886085a55db55d75161e8d"
     },
     {
       "path": "assets/characters/playable/king/iron_beard_unified/down/spin_body.png",
@@ -1377,9 +1387,9 @@
       "sha256": "ddbc02e2cbf9952af695fd355a041ce94fcceee85ea0571b329bc013ac7425cb"
     },
     {
-      "path": "assets/characters/playable/king/iron_beard_unified/down/thrust.tres",
-      "bytes": 2199,
-      "sha256": "c9923eb3fc0b65981774b36218b2bf67f28398cc32983f6decbe3c213da7c5c2"
+      "path": "assets/characters/playable/king/iron_beard_unified/down/spin.tres",
+      "bytes": 2338,
+      "sha256": "c8d2e87e39207dd5b7d897f794bbe5f49a16ad571717835aef177866116ad351"
     },
     {
       "path": "assets/characters/playable/king/iron_beard_unified/down/thrust_body.png",
@@ -1387,14 +1397,14 @@
       "sha256": "d3cd128763b80ff1d60e4d556704f48962d86b09be410a425a23fca1edff7131"
     },
     {
+      "path": "assets/characters/playable/king/iron_beard_unified/down/thrust.tres",
+      "bytes": 2199,
+      "sha256": "c9923eb3fc0b65981774b36218b2bf67f28398cc32983f6decbe3c213da7c5c2"
+    },
+    {
       "path": "assets/characters/playable/king/iron_beard_unified/iron_beard_canonical.png",
       "bytes": 2138,
       "sha256": "30fbf770ecdd0e69119e0f1570c2aef3629445d1910ea66d9275cf93006ac9c1"
-    },
-    {
-      "path": "assets/characters/playable/king/iron_beard_unified/side/chop.tres",
-      "bytes": 2771,
-      "sha256": "2c86c68fb11884829607017d8983944141bea5921c535ba40451862fe18705d2"
     },
     {
       "path": "assets/characters/playable/king/iron_beard_unified/side/chop_body.png",
@@ -1402,9 +1412,9 @@
       "sha256": "116aa6dedaf68d5c6f09c4c9dbd87b718c0e9634ffdc67c23f080f6e1a08f829"
     },
     {
-      "path": "assets/characters/playable/king/iron_beard_unified/side/idle.tres",
-      "bytes": 1972,
-      "sha256": "03484b30361159ccfcdd049e6305a4504929369418b8e3bdf0fb2f2988da639e"
+      "path": "assets/characters/playable/king/iron_beard_unified/side/chop.tres",
+      "bytes": 2771,
+      "sha256": "2c86c68fb11884829607017d8983944141bea5921c535ba40451862fe18705d2"
     },
     {
       "path": "assets/characters/playable/king/iron_beard_unified/side/idle_body.png",
@@ -1412,9 +1422,9 @@
       "sha256": "e812262913f6850817d2dda5ba3d14948102538b84f01f20c6054ca0a5d3f8ae"
     },
     {
-      "path": "assets/characters/playable/king/iron_beard_unified/side/rise.tres",
-      "bytes": 2197,
-      "sha256": "b6f504bab4ab4fb51d7730c12721865d1974ecb18e9543cb67e84f9d461af5f4"
+      "path": "assets/characters/playable/king/iron_beard_unified/side/idle.tres",
+      "bytes": 1972,
+      "sha256": "03484b30361159ccfcdd049e6305a4504929369418b8e3bdf0fb2f2988da639e"
     },
     {
       "path": "assets/characters/playable/king/iron_beard_unified/side/rise_body.png",
@@ -1422,14 +1432,14 @@
       "sha256": "b41b1a7a08e7d9644ec77efaf726447b11501a4fd226a6c7cdd3f5428faa3c27"
     },
     {
+      "path": "assets/characters/playable/king/iron_beard_unified/side/rise.tres",
+      "bytes": 2197,
+      "sha256": "b6f504bab4ab4fb51d7730c12721865d1974ecb18e9543cb67e84f9d461af5f4"
+    },
+    {
       "path": "assets/characters/playable/king/iron_beard_unified/side/run.tres",
       "bytes": 1969,
       "sha256": "f6e89b053d123b23158f044f0fbd0f594e5d3d7b17a52b18d3c03e7150c97925"
-    },
-    {
-      "path": "assets/characters/playable/king/iron_beard_unified/side/slam.tres",
-      "bytes": 2200,
-      "sha256": "e74679948dcea6a4788d88603ab50dd43ae4c8e10b91968ed9726a09971426eb"
     },
     {
       "path": "assets/characters/playable/king/iron_beard_unified/side/slam_body.png",
@@ -1437,9 +1447,9 @@
       "sha256": "a13548db572d9d66cb1237ed0b08d11c27598d2e4d2a911a40dd0d508b78cd96"
     },
     {
-      "path": "assets/characters/playable/king/iron_beard_unified/side/spin.tres",
-      "bytes": 2338,
-      "sha256": "46e5914ffddbfd73ec30c07828f7af5ee2b6b1eb9f0687f5447f603cc8bcab0e"
+      "path": "assets/characters/playable/king/iron_beard_unified/side/slam.tres",
+      "bytes": 2200,
+      "sha256": "e74679948dcea6a4788d88603ab50dd43ae4c8e10b91968ed9726a09971426eb"
     },
     {
       "path": "assets/characters/playable/king/iron_beard_unified/side/spin_body.png",
@@ -1447,9 +1457,9 @@
       "sha256": "04e2f83b7eb5353ec52acfd4f98ae2626438db52dfe38072f1fad736a56fd63d"
     },
     {
-      "path": "assets/characters/playable/king/iron_beard_unified/side/thrust.tres",
-      "bytes": 2199,
-      "sha256": "e2409398304f3347db7c3893453764e8e3659f1e71a23c9c358abd6261b90c16"
+      "path": "assets/characters/playable/king/iron_beard_unified/side/spin.tres",
+      "bytes": 2338,
+      "sha256": "46e5914ffddbfd73ec30c07828f7af5ee2b6b1eb9f0687f5447f603cc8bcab0e"
     },
     {
       "path": "assets/characters/playable/king/iron_beard_unified/side/thrust_body.png",
@@ -1457,14 +1467,14 @@
       "sha256": "a65d820adc287e6224b2a56f5f32750bd9011d4e7e52ce2db5dd86ce9b20fcff"
     },
     {
+      "path": "assets/characters/playable/king/iron_beard_unified/side/thrust.tres",
+      "bytes": 2199,
+      "sha256": "e2409398304f3347db7c3893453764e8e3659f1e71a23c9c358abd6261b90c16"
+    },
+    {
       "path": "assets/characters/playable/king/iron_beard_unified/slash.png",
       "bytes": 304974,
       "sha256": "3ca10a8653c4f2f4a65503fcffa56b92b003e27f6a30c741efc4ad0430337cde"
-    },
-    {
-      "path": "assets/characters/playable/king/iron_beard_unified/up/chop.tres",
-      "bytes": 2762,
-      "sha256": "2d482e4aad2a258de0d819bb929c432de032e4f66b75b4cd03697184404a5b88"
     },
     {
       "path": "assets/characters/playable/king/iron_beard_unified/up/chop_body.png",
@@ -1472,9 +1482,9 @@
       "sha256": "5293f46d67ba5e2c8badd568494716a9411b07da81741762a0d072b96a4fbe10"
     },
     {
-      "path": "assets/characters/playable/king/iron_beard_unified/up/idle.tres",
-      "bytes": 1970,
-      "sha256": "9070b2b7fecb04f4e2cbc31213fcbc03cc4de859109a831f4c3c40cca6c8f835"
+      "path": "assets/characters/playable/king/iron_beard_unified/up/chop.tres",
+      "bytes": 2762,
+      "sha256": "2d482e4aad2a258de0d819bb929c432de032e4f66b75b4cd03697184404a5b88"
     },
     {
       "path": "assets/characters/playable/king/iron_beard_unified/up/idle_body.png",
@@ -1482,9 +1492,9 @@
       "sha256": "385a301adbfead03ef343d36afe7e6dba26734dae76dcf3542b6ae8def33bc28"
     },
     {
-      "path": "assets/characters/playable/king/iron_beard_unified/up/rise.tres",
-      "bytes": 2195,
-      "sha256": "0fb057f2a5c73b9a9e7ee48eb96a16f018ea48eabb8e731980c2bcd73dfeb620"
+      "path": "assets/characters/playable/king/iron_beard_unified/up/idle.tres",
+      "bytes": 1970,
+      "sha256": "9070b2b7fecb04f4e2cbc31213fcbc03cc4de859109a831f4c3c40cca6c8f835"
     },
     {
       "path": "assets/characters/playable/king/iron_beard_unified/up/rise_body.png",
@@ -1492,14 +1502,14 @@
       "sha256": "1b467067aea774fc9423aa6878049c10f9cda198c26e20f756c930d9227edcf3"
     },
     {
+      "path": "assets/characters/playable/king/iron_beard_unified/up/rise.tres",
+      "bytes": 2195,
+      "sha256": "0fb057f2a5c73b9a9e7ee48eb96a16f018ea48eabb8e731980c2bcd73dfeb620"
+    },
+    {
       "path": "assets/characters/playable/king/iron_beard_unified/up/run.tres",
       "bytes": 1967,
       "sha256": "262e89a41ab77682871646744f437724dc5cf0469750a5deaca5df3d9abe490c"
-    },
-    {
-      "path": "assets/characters/playable/king/iron_beard_unified/up/slam.tres",
-      "bytes": 2198,
-      "sha256": "cd99988e253dc5ad8f834a71c5db8c93ff7e4844270265e7bdabe61c49142d2a"
     },
     {
       "path": "assets/characters/playable/king/iron_beard_unified/up/slam_body.png",
@@ -1507,9 +1517,9 @@
       "sha256": "7361403ce1a7b9f82e7a02e613118ff566d9837eb2c6f6ae92fb6c2bc27084da"
     },
     {
-      "path": "assets/characters/playable/king/iron_beard_unified/up/spin.tres",
-      "bytes": 2336,
-      "sha256": "a6ae23aba374acbed01ad0ecc6d2302b71359f96fb5d32064d9d5c2a19acd68c"
+      "path": "assets/characters/playable/king/iron_beard_unified/up/slam.tres",
+      "bytes": 2198,
+      "sha256": "cd99988e253dc5ad8f834a71c5db8c93ff7e4844270265e7bdabe61c49142d2a"
     },
     {
       "path": "assets/characters/playable/king/iron_beard_unified/up/spin_body.png",
@@ -1517,9 +1527,9 @@
       "sha256": "cf01f12c6f4cec853ef472b99c535477275f26a8979f294cefff9b2d2ee379ba"
     },
     {
-      "path": "assets/characters/playable/king/iron_beard_unified/up/thrust.tres",
-      "bytes": 2197,
-      "sha256": "c2ae2f33d66d78dc21b0df69336b18a63fa1377107cfdfba98dd113c0179e3e7"
+      "path": "assets/characters/playable/king/iron_beard_unified/up/spin.tres",
+      "bytes": 2336,
+      "sha256": "a6ae23aba374acbed01ad0ecc6d2302b71359f96fb5d32064d9d5c2a19acd68c"
     },
     {
       "path": "assets/characters/playable/king/iron_beard_unified/up/thrust_body.png",
@@ -1527,14 +1537,14 @@
       "sha256": "076744270a041ccd3c2ca2a84b0a9a19baa0898da1c26b0501daba6c7bb34e47"
     },
     {
+      "path": "assets/characters/playable/king/iron_beard_unified/up/thrust.tres",
+      "bytes": 2197,
+      "sha256": "c2ae2f33d66d78dc21b0df69336b18a63fa1377107cfdfba98dd113c0179e3e7"
+    },
+    {
       "path": "assets/characters/playable/king/iron_reaper/attack_hands.png",
       "bytes": 4157,
       "sha256": "4f8be0b10c1d0add0c81b6674a9edc3099b1f4791f81ab4e3fbaa06cf8143e70"
-    },
-    {
-      "path": "assets/characters/playable/king/iron_reaper/down/idle.tres",
-      "bytes": 1884,
-      "sha256": "3bd8c2c2e2992cbbbc368d87b99d7c846e7e7697b79cbe3755f14a5359e0f39e"
     },
     {
       "path": "assets/characters/playable/king/iron_reaper/down/idle_body.png",
@@ -1542,9 +1552,9 @@
       "sha256": "4c40761fd05156bbad21162434055ad011eef5494bd518edff8cac7d6be90853"
     },
     {
-      "path": "assets/characters/playable/king/iron_reaper/down/reap.tres",
-      "bytes": 2493,
-      "sha256": "93fd567cf54daeb157c3c26ca7a739ed396cd0676a69857bee673d1558afb4d7"
+      "path": "assets/characters/playable/king/iron_reaper/down/idle.tres",
+      "bytes": 1884,
+      "sha256": "3bd8c2c2e2992cbbbc368d87b99d7c846e7e7697b79cbe3755f14a5359e0f39e"
     },
     {
       "path": "assets/characters/playable/king/iron_reaper/down/reap_body.png",
@@ -1552,9 +1562,9 @@
       "sha256": "698562b37f035f5fd0323f32e42913405d71ff1d46c8a5cf4d8d756964d47045"
     },
     {
-      "path": "assets/characters/playable/king/iron_reaper/down/return.tres",
-      "bytes": 2508,
-      "sha256": "3ae00b6d3d6d3def7a5310031e00b7f43ab63ab5daaf153370059f9458840ed7"
+      "path": "assets/characters/playable/king/iron_reaper/down/reap.tres",
+      "bytes": 2493,
+      "sha256": "93fd567cf54daeb157c3c26ca7a739ed396cd0676a69857bee673d1558afb4d7"
     },
     {
       "path": "assets/characters/playable/king/iron_reaper/down/return_body.png",
@@ -1562,9 +1572,9 @@
       "sha256": "5d544c65505ba131ab2690c3326b170bfc57d18cc50e807c890bdec467f5b90a"
     },
     {
-      "path": "assets/characters/playable/king/iron_reaper/down/run.tres",
-      "bytes": 1884,
-      "sha256": "be1c30b552fac891e04ef4f91fe54cac2da6aef59e67f6e220256a0314565e97"
+      "path": "assets/characters/playable/king/iron_reaper/down/return.tres",
+      "bytes": 2508,
+      "sha256": "3ae00b6d3d6d3def7a5310031e00b7f43ab63ab5daaf153370059f9458840ed7"
     },
     {
       "path": "assets/characters/playable/king/iron_reaper/down/run_body.png",
@@ -1572,9 +1582,9 @@
       "sha256": "9d035c4cdd4cbb8fce5bdce946cf8c29a5b618e454693455ae23f017f796422f"
     },
     {
-      "path": "assets/characters/playable/king/iron_reaper/down/sweep.tres",
-      "bytes": 2896,
-      "sha256": "7e3197827c14dd812628c3f42e273d06a961e392a554046a7a5c2e1d9dc1936a"
+      "path": "assets/characters/playable/king/iron_reaper/down/run.tres",
+      "bytes": 1884,
+      "sha256": "be1c30b552fac891e04ef4f91fe54cac2da6aef59e67f6e220256a0314565e97"
     },
     {
       "path": "assets/characters/playable/king/iron_reaper/down/sweep_body.png",
@@ -1582,14 +1592,19 @@
       "sha256": "17cf4671404bfc97b2da6f4d2f541b90ad66a4326134dda0e537175faa8da9d9"
     },
     {
-      "path": "assets/characters/playable/king/iron_reaper/down/throw.tres",
-      "bytes": 2485,
-      "sha256": "0d192ea3d05db8d7def412d498511b9904757957262a5891a53257d57b5d5750"
+      "path": "assets/characters/playable/king/iron_reaper/down/sweep.tres",
+      "bytes": 2896,
+      "sha256": "7e3197827c14dd812628c3f42e273d06a961e392a554046a7a5c2e1d9dc1936a"
     },
     {
       "path": "assets/characters/playable/king/iron_reaper/down/throw_body.png",
       "bytes": 41064,
       "sha256": "5098bfc211db38a769e4130311fe75cdf73e9680da4bb164ff0fe03d1e3d032b"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_reaper/down/throw.tres",
+      "bytes": 2485,
+      "sha256": "0d192ea3d05db8d7def412d498511b9904757957262a5891a53257d57b5d5750"
     },
     {
       "path": "assets/characters/playable/king/iron_reaper/locomotion_hands.png",
@@ -1607,19 +1622,14 @@
       "sha256": "d22748d9e88462fa19c3345640030ecb23176d2019309163be4f409ff72f0309"
     },
     {
-      "path": "assets/characters/playable/king/iron_reaper/side/idle.tres",
-      "bytes": 1884,
-      "sha256": "a746985c9cdfb9f25484c899e4193a2e8b382ce583e25fba6fd6da3cc79ac97a"
-    },
-    {
       "path": "assets/characters/playable/king/iron_reaper/side/idle_body.png",
       "bytes": 25722,
       "sha256": "3edb216e5a03e415df46717edaeb68aeab6a993a738d7b36867c82101e51ecb3"
     },
     {
-      "path": "assets/characters/playable/king/iron_reaper/side/reap.tres",
-      "bytes": 2493,
-      "sha256": "b719307d085d5d713e21e79f97cbe3dafa94629f47b185c1427e2038c40e8788"
+      "path": "assets/characters/playable/king/iron_reaper/side/idle.tres",
+      "bytes": 1884,
+      "sha256": "a746985c9cdfb9f25484c899e4193a2e8b382ce583e25fba6fd6da3cc79ac97a"
     },
     {
       "path": "assets/characters/playable/king/iron_reaper/side/reap_body.png",
@@ -1627,9 +1637,9 @@
       "sha256": "05807879cf43fe431e0e9bfb63fb321c6eac4d07c26d5b72634b0b96388804a9"
     },
     {
-      "path": "assets/characters/playable/king/iron_reaper/side/return.tres",
-      "bytes": 2485,
-      "sha256": "f8f301f809795de2d609c3ab6a80c82d99240730b0e101ba1a792fe5f54d9ad2"
+      "path": "assets/characters/playable/king/iron_reaper/side/reap.tres",
+      "bytes": 2493,
+      "sha256": "b719307d085d5d713e21e79f97cbe3dafa94629f47b185c1427e2038c40e8788"
     },
     {
       "path": "assets/characters/playable/king/iron_reaper/side/return_body.png",
@@ -1637,9 +1647,9 @@
       "sha256": "6843b6fb1a973f56040f6f0a7f39a0d852fd68ca44f8ed7f9a837b111d567803"
     },
     {
-      "path": "assets/characters/playable/king/iron_reaper/side/run.tres",
-      "bytes": 1884,
-      "sha256": "f05a2687abf772ab3d83df8dff8c0dfbb4926abf577d1630736798b4c346a517"
+      "path": "assets/characters/playable/king/iron_reaper/side/return.tres",
+      "bytes": 2485,
+      "sha256": "f8f301f809795de2d609c3ab6a80c82d99240730b0e101ba1a792fe5f54d9ad2"
     },
     {
       "path": "assets/characters/playable/king/iron_reaper/side/run_body.png",
@@ -1647,9 +1657,9 @@
       "sha256": "c2236aaf45680515c040edbe02ea8a25da6039e77f613ed17598339da3d5109d"
     },
     {
-      "path": "assets/characters/playable/king/iron_reaper/side/sweep.tres",
-      "bytes": 2896,
-      "sha256": "dcec699c271ca51c197276df8323831432336040acf2e94d7da23ac488a24079"
+      "path": "assets/characters/playable/king/iron_reaper/side/run.tres",
+      "bytes": 1884,
+      "sha256": "f05a2687abf772ab3d83df8dff8c0dfbb4926abf577d1630736798b4c346a517"
     },
     {
       "path": "assets/characters/playable/king/iron_reaper/side/sweep_body.png",
@@ -1657,14 +1667,19 @@
       "sha256": "cbf1f8d8641d771ce73ad8750a751a869fca8fc09d8811bf1c3711b5575cfcde"
     },
     {
-      "path": "assets/characters/playable/king/iron_reaper/side/throw.tres",
-      "bytes": 2480,
-      "sha256": "fbad17ef90086345fcfbcaf19edf345710224b0ef9df77e860735ff9e3d209b5"
+      "path": "assets/characters/playable/king/iron_reaper/side/sweep.tres",
+      "bytes": 2896,
+      "sha256": "dcec699c271ca51c197276df8323831432336040acf2e94d7da23ac488a24079"
     },
     {
       "path": "assets/characters/playable/king/iron_reaper/side/throw_body.png",
       "bytes": 41993,
       "sha256": "364a6b7115f6c755221b9bc2aaae6e84b99687025142d3dd1d46de3069dcf984"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_reaper/side/throw.tres",
+      "bytes": 2480,
+      "sha256": "fbad17ef90086345fcfbcaf19edf345710224b0ef9df77e860735ff9e3d209b5"
     },
     {
       "path": "assets/characters/playable/king/iron_reaper/slash.png",
@@ -1677,19 +1692,14 @@
       "sha256": "19e77e1bdb0c905c2d77debe9d0170e195760af3789be196e7ad1f137e755408"
     },
     {
-      "path": "assets/characters/playable/king/iron_reaper/up/idle.tres",
-      "bytes": 1878,
-      "sha256": "a30e0b8020a1abd77fa9fbc2dddc02cf1a00368116b6c5133fd239d3240f411d"
-    },
-    {
       "path": "assets/characters/playable/king/iron_reaper/up/idle_body.png",
       "bytes": 25258,
       "sha256": "b84c00a9aeae39ab1744db022b0ddee34657699aded2bedc29403cac336906c0"
     },
     {
-      "path": "assets/characters/playable/king/iron_reaper/up/reap.tres",
-      "bytes": 2486,
-      "sha256": "4d734af08110a586885295902bece357dc48fcb5c116afa1f216d5edbbadd02b"
+      "path": "assets/characters/playable/king/iron_reaper/up/idle.tres",
+      "bytes": 1878,
+      "sha256": "a30e0b8020a1abd77fa9fbc2dddc02cf1a00368116b6c5133fd239d3240f411d"
     },
     {
       "path": "assets/characters/playable/king/iron_reaper/up/reap_body.png",
@@ -1697,9 +1707,9 @@
       "sha256": "8305a8cc4c58fe180fbc1955d188d211e61f07c0e0c02bc83cd23b583697ee0c"
     },
     {
-      "path": "assets/characters/playable/king/iron_reaper/up/return.tres",
-      "bytes": 2502,
-      "sha256": "ba68186fff5465f4db835ff80cc83e0655c21226260261b16ab1eb696c64facf"
+      "path": "assets/characters/playable/king/iron_reaper/up/reap.tres",
+      "bytes": 2486,
+      "sha256": "4d734af08110a586885295902bece357dc48fcb5c116afa1f216d5edbbadd02b"
     },
     {
       "path": "assets/characters/playable/king/iron_reaper/up/return_body.png",
@@ -1707,9 +1717,9 @@
       "sha256": "69c445e0c53d7ecf82bfbeefa849507a17f1deda41335d37c1d42b9fcddd8e05"
     },
     {
-      "path": "assets/characters/playable/king/iron_reaper/up/run.tres",
-      "bytes": 1878,
-      "sha256": "25f8e32efdca5e0b78105d196504d56c191f08ca924429be097423dd5e5ac8db"
+      "path": "assets/characters/playable/king/iron_reaper/up/return.tres",
+      "bytes": 2502,
+      "sha256": "ba68186fff5465f4db835ff80cc83e0655c21226260261b16ab1eb696c64facf"
     },
     {
       "path": "assets/characters/playable/king/iron_reaper/up/run_body.png",
@@ -1717,9 +1727,9 @@
       "sha256": "c0e527a252e44416241f95ed887988004e214e0bc341eaf85fb888f36710bc59"
     },
     {
-      "path": "assets/characters/playable/king/iron_reaper/up/sweep.tres",
-      "bytes": 2882,
-      "sha256": "e23717147cd2e62f86b8badf388ed1944b3cad474fa97c03ac4494d630fe9fed"
+      "path": "assets/characters/playable/king/iron_reaper/up/run.tres",
+      "bytes": 1878,
+      "sha256": "25f8e32efdca5e0b78105d196504d56c191f08ca924429be097423dd5e5ac8db"
     },
     {
       "path": "assets/characters/playable/king/iron_reaper/up/sweep_body.png",
@@ -1727,14 +1737,19 @@
       "sha256": "eb3e488f1af84750f3b7f3340f90e45320604b261d730663089d176bf35e1ab6"
     },
     {
-      "path": "assets/characters/playable/king/iron_reaper/up/throw.tres",
-      "bytes": 2477,
-      "sha256": "b03992db28dcf1b76a71de3d1306744131841da0d8dbb642966499e0f27d04be"
+      "path": "assets/characters/playable/king/iron_reaper/up/sweep.tres",
+      "bytes": 2882,
+      "sha256": "e23717147cd2e62f86b8badf388ed1944b3cad474fa97c03ac4494d630fe9fed"
     },
     {
       "path": "assets/characters/playable/king/iron_reaper/up/throw_body.png",
       "bytes": 39772,
       "sha256": "46932af9c1043e682c2632a09817283ebd783ec77654f1785401d96f322720b2"
+    },
+    {
+      "path": "assets/characters/playable/king/iron_reaper/up/throw.tres",
+      "bytes": 2477,
+      "sha256": "b03992db28dcf1b76a71de3d1306744131841da0d8dbb642966499e0f27d04be"
     },
     {
       "path": "assets/characters/playable/king/iron_reaper/weapon.png",
@@ -1842,14 +1857,14 @@
       "sha256": "66b2c56dd1b779f5df53d96fc6c25401e0ee158af82cc4cf9fa5a5ed282984c5"
     },
     {
-      "path": "assets/characters/playable/king/spellward/walk.png",
-      "bytes": 66587,
-      "sha256": "77aaade862d9fed24a59d2f102fe17328b877539414245ebad09972cc9b75b42"
-    },
-    {
       "path": "assets/characters/playable/king/spellward/walk_side.png",
       "bytes": 59415,
       "sha256": "626747b0c73e2d6d4435fcc4a4dfcf50beb3fcee327f85b99023c3c62edf6486"
+    },
+    {
+      "path": "assets/characters/playable/king/spellward/walk.png",
+      "bytes": 66587,
+      "sha256": "77aaade862d9fed24a59d2f102fe17328b877539414245ebad09972cc9b75b42"
     },
     {
       "path": "assets/characters/playable/king/sword_unified/action_hands.png",
@@ -1857,19 +1872,14 @@
       "sha256": "074196faa9193315d6574b91f9263bfbabf04ba5521b8efa7789f905fd1bfa2e"
     },
     {
-      "path": "assets/characters/playable/king/sword_unified/down/cut.tres",
-      "bytes": 2481,
-      "sha256": "8a2fbf68faf374c11e81e2103e92960095bdbe6cb5db370a915189f4f09cab9b"
-    },
-    {
       "path": "assets/characters/playable/king/sword_unified/down/cut_body.png",
       "bytes": 78187,
       "sha256": "39645fe734d979313848e266fa2dbb7b7c6f8b7c01e65ded1e293d64fb7ce925"
     },
     {
-      "path": "assets/characters/playable/king/sword_unified/down/finish.tres",
-      "bytes": 2181,
-      "sha256": "af17df76dae3f50a7add60c0160dea3972a0b9d740e59bd5d67d6332cdc707aa"
+      "path": "assets/characters/playable/king/sword_unified/down/cut.tres",
+      "bytes": 2481,
+      "sha256": "8a2fbf68faf374c11e81e2103e92960095bdbe6cb5db370a915189f4f09cab9b"
     },
     {
       "path": "assets/characters/playable/king/sword_unified/down/finish_body.png",
@@ -1877,9 +1887,9 @@
       "sha256": "6d0e26c0812611ec87bddbc12f0105b6b619a52bbdf6c4e79ed789400447df85"
     },
     {
-      "path": "assets/characters/playable/king/sword_unified/down/idle.tres",
-      "bytes": 2245,
-      "sha256": "b661d9a2475aa131c1e65c21cfbd0050965b6517f8a1dabd9b42b7ff1807594e"
+      "path": "assets/characters/playable/king/sword_unified/down/finish.tres",
+      "bytes": 2181,
+      "sha256": "af17df76dae3f50a7add60c0160dea3972a0b9d740e59bd5d67d6332cdc707aa"
     },
     {
       "path": "assets/characters/playable/king/sword_unified/down/idle_body.png",
@@ -1887,9 +1897,9 @@
       "sha256": "e927a141eac5e1aecca9f1d3b55d359194a630a53fbcd608c4e98ab3b6bd9308"
     },
     {
-      "path": "assets/characters/playable/king/sword_unified/down/return.tres",
-      "bytes": 2189,
-      "sha256": "6b16ae46c1c1f29059143f138a983fa484428253786f9fb0a0b85e64fd3827ec"
+      "path": "assets/characters/playable/king/sword_unified/down/idle.tres",
+      "bytes": 2245,
+      "sha256": "b661d9a2475aa131c1e65c21cfbd0050965b6517f8a1dabd9b42b7ff1807594e"
     },
     {
       "path": "assets/characters/playable/king/sword_unified/down/return_body.png",
@@ -1897,14 +1907,19 @@
       "sha256": "9482c6652eeb6088c908c3a0386724b03ad481581930052d2c90cf5812f47807"
     },
     {
-      "path": "assets/characters/playable/king/sword_unified/down/run.tres",
-      "bytes": 1631,
-      "sha256": "e54f93d0d97e4276896b96f008fda6f873bc0918b1ab3424ef31d51bbc4bf15a"
+      "path": "assets/characters/playable/king/sword_unified/down/return.tres",
+      "bytes": 2189,
+      "sha256": "6b16ae46c1c1f29059143f138a983fa484428253786f9fb0a0b85e64fd3827ec"
     },
     {
       "path": "assets/characters/playable/king/sword_unified/down/run_body.png",
       "bytes": 36677,
       "sha256": "45c8989b63267938208452de6ddec7cb6fa40c9af02d6f2da2f6c2bbed63025a"
+    },
+    {
+      "path": "assets/characters/playable/king/sword_unified/down/run.tres",
+      "bytes": 1631,
+      "sha256": "e54f93d0d97e4276896b96f008fda6f873bc0918b1ab3424ef31d51bbc4bf15a"
     },
     {
       "path": "assets/characters/playable/king/sword_unified/ribbon_layout.tres",
@@ -1917,19 +1932,14 @@
       "sha256": "7ef4e27069369d9b6e7a340bffccd7b11fced892feef18774868915cedc71472"
     },
     {
-      "path": "assets/characters/playable/king/sword_unified/side/cut.tres",
-      "bytes": 2491,
-      "sha256": "474288c18969e75a4e3f9b12028c32cf4281ff6901cb7f94f271c3266dfeca28"
-    },
-    {
       "path": "assets/characters/playable/king/sword_unified/side/cut_body.png",
       "bytes": 80325,
       "sha256": "2804d168c6ff398c6ee8ecd12b8245480f8d73c39ebf565d31abc8053ca24a81"
     },
     {
-      "path": "assets/characters/playable/king/sword_unified/side/finish.tres",
-      "bytes": 2167,
-      "sha256": "628617d22b66f5a75d5b29d6ec473da9f253cfd8e528d24af04e58c42837b193"
+      "path": "assets/characters/playable/king/sword_unified/side/cut.tres",
+      "bytes": 2491,
+      "sha256": "474288c18969e75a4e3f9b12028c32cf4281ff6901cb7f94f271c3266dfeca28"
     },
     {
       "path": "assets/characters/playable/king/sword_unified/side/finish_body.png",
@@ -1937,9 +1947,9 @@
       "sha256": "8e8bdc8ed3d89e9afef0d7692937f03164f047e661cb9d7c491c92b4a41be371"
     },
     {
-      "path": "assets/characters/playable/king/sword_unified/side/idle.tres",
-      "bytes": 2240,
-      "sha256": "8b360cc354c12f3d69703f02838157d0ca10c5789c9126f89808f7a840cb6ba8"
+      "path": "assets/characters/playable/king/sword_unified/side/finish.tres",
+      "bytes": 2167,
+      "sha256": "628617d22b66f5a75d5b29d6ec473da9f253cfd8e528d24af04e58c42837b193"
     },
     {
       "path": "assets/characters/playable/king/sword_unified/side/idle_body.png",
@@ -1947,9 +1957,9 @@
       "sha256": "fab7e3302a281c33844412826fb5b38de14d87d3c2226c98b5191c53fe0a027f"
     },
     {
-      "path": "assets/characters/playable/king/sword_unified/side/return.tres",
-      "bytes": 2191,
-      "sha256": "d3b86b8b9a11f9351b00888757548936c2e4d62d9be4d68401cf82e4b5e5bbb5"
+      "path": "assets/characters/playable/king/sword_unified/side/idle.tres",
+      "bytes": 2240,
+      "sha256": "8b360cc354c12f3d69703f02838157d0ca10c5789c9126f89808f7a840cb6ba8"
     },
     {
       "path": "assets/characters/playable/king/sword_unified/side/return_body.png",
@@ -1957,9 +1967,9 @@
       "sha256": "b87669c5c5311c4cb0882e436554470cc8d51bf20f99ee26294f776b060f1c34"
     },
     {
-      "path": "assets/characters/playable/king/sword_unified/side/run.tres",
-      "bytes": 1631,
-      "sha256": "2514e80d42bf78111da68944ea36349c61a8fea11f63dceebf1965dd29347153"
+      "path": "assets/characters/playable/king/sword_unified/side/return.tres",
+      "bytes": 2191,
+      "sha256": "d3b86b8b9a11f9351b00888757548936c2e4d62d9be4d68401cf82e4b5e5bbb5"
     },
     {
       "path": "assets/characters/playable/king/sword_unified/side/run_body.png",
@@ -1967,14 +1977,14 @@
       "sha256": "74e7bd43331edc62d8cfbddb37463a1c8a378f74b8a745756e4eb79f8ccc552f"
     },
     {
+      "path": "assets/characters/playable/king/sword_unified/side/run.tres",
+      "bytes": 1631,
+      "sha256": "2514e80d42bf78111da68944ea36349c61a8fea11f63dceebf1965dd29347153"
+    },
+    {
       "path": "assets/characters/playable/king/sword_unified/slash.png",
       "bytes": 143541,
       "sha256": "9369c7bb70c2069e7139d8940fa819e4766452fd00fb63e42667fea2868854ee"
-    },
-    {
-      "path": "assets/characters/playable/king/sword_unified/sword.png",
-      "bytes": 1289,
-      "sha256": "eb27932807dee93a80377d34f146b8b9263ffa759ea275ae2249231dba8cdd4d"
     },
     {
       "path": "assets/characters/playable/king/sword_unified/sword_icon.png",
@@ -1982,9 +1992,9 @@
       "sha256": "1db69090bf8ed9214aa54a4758d2c7b57f391fe5f3c23b36c6c4493808da538a"
     },
     {
-      "path": "assets/characters/playable/king/sword_unified/up/cut.tres",
-      "bytes": 2484,
-      "sha256": "de909cbbd4a8ff658fd6acf8173a651940dbb1c7811e1b64733de13958a63c9d"
+      "path": "assets/characters/playable/king/sword_unified/sword.png",
+      "bytes": 1289,
+      "sha256": "eb27932807dee93a80377d34f146b8b9263ffa759ea275ae2249231dba8cdd4d"
     },
     {
       "path": "assets/characters/playable/king/sword_unified/up/cut_body.png",
@@ -1992,9 +2002,9 @@
       "sha256": "cab7ec1206a0d29842a727d0493cd7997ec3549fdd0bc628dc1d65f523da2c10"
     },
     {
-      "path": "assets/characters/playable/king/sword_unified/up/finish.tres",
-      "bytes": 2183,
-      "sha256": "32ee4e66013ce7634a15424c5bc59ec3efe0523641156ec5f37d482629e52330"
+      "path": "assets/characters/playable/king/sword_unified/up/cut.tres",
+      "bytes": 2484,
+      "sha256": "de909cbbd4a8ff658fd6acf8173a651940dbb1c7811e1b64733de13958a63c9d"
     },
     {
       "path": "assets/characters/playable/king/sword_unified/up/finish_body.png",
@@ -2002,9 +2012,9 @@
       "sha256": "998c719dd305544a44116e018cd6786b4a6c5c6ed2c05084168935ebbdc0753e"
     },
     {
-      "path": "assets/characters/playable/king/sword_unified/up/idle.tres",
-      "bytes": 2242,
-      "sha256": "56fedb3a657fa9853ed7f5f11150829416f49c7644a1380b88043223d1c5fc35"
+      "path": "assets/characters/playable/king/sword_unified/up/finish.tres",
+      "bytes": 2183,
+      "sha256": "32ee4e66013ce7634a15424c5bc59ec3efe0523641156ec5f37d482629e52330"
     },
     {
       "path": "assets/characters/playable/king/sword_unified/up/idle_body.png",
@@ -2012,9 +2022,9 @@
       "sha256": "faef55830089695ede64fc0c3ad824890cf53b5c0850553da76d9b7386f67159"
     },
     {
-      "path": "assets/characters/playable/king/sword_unified/up/return.tres",
-      "bytes": 2194,
-      "sha256": "c2d975fef632f20920afc1b30d1ed6b4dd69b2e56e09a1fb41bd718ec7ebd44a"
+      "path": "assets/characters/playable/king/sword_unified/up/idle.tres",
+      "bytes": 2242,
+      "sha256": "56fedb3a657fa9853ed7f5f11150829416f49c7644a1380b88043223d1c5fc35"
     },
     {
       "path": "assets/characters/playable/king/sword_unified/up/return_body.png",
@@ -2022,9 +2032,9 @@
       "sha256": "963a7296381b3f124149933f9d9bf250a12027d89e40ee7e0fcfcca113082c78"
     },
     {
-      "path": "assets/characters/playable/king/sword_unified/up/run.tres",
-      "bytes": 1629,
-      "sha256": "57ddee104e8a933719cb58039189c32c12a22c1ebd443962e332213d371ed073"
+      "path": "assets/characters/playable/king/sword_unified/up/return.tres",
+      "bytes": 2194,
+      "sha256": "c2d975fef632f20920afc1b30d1ed6b4dd69b2e56e09a1fb41bd718ec7ebd44a"
     },
     {
       "path": "assets/characters/playable/king/sword_unified/up/run_body.png",
@@ -2032,14 +2042,14 @@
       "sha256": "b12147928ee2d4d255c143c9a797701a8fac5ddd0e4e3af948f374cb8097aa18"
     },
     {
+      "path": "assets/characters/playable/king/sword_unified/up/run.tres",
+      "bytes": 1629,
+      "sha256": "57ddee104e8a933719cb58039189c32c12a22c1ebd443962e332213d371ed073"
+    },
+    {
       "path": "assets/characters/playable/king/twinsteel_unified/action_hands.png",
       "bytes": 4144,
       "sha256": "074196faa9193315d6574b91f9263bfbabf04ba5521b8efa7789f905fd1bfa2e"
-    },
-    {
-      "path": "assets/characters/playable/king/twinsteel_unified/down/cross_finish.tres",
-      "bytes": 3130,
-      "sha256": "3a7725a58a5e95280cf0b7d0f7a2e376c69609f80346fbd190fba28d433e0556"
     },
     {
       "path": "assets/characters/playable/king/twinsteel_unified/down/cross_finish_body.png",
@@ -2047,9 +2057,9 @@
       "sha256": "d44b3974ddfa80092affc1ee873bf0c955d1df79dc0d3c2a69f4b83299ff574b"
     },
     {
-      "path": "assets/characters/playable/king/twinsteel_unified/down/diagonal.tres",
-      "bytes": 3637,
-      "sha256": "73192dc3350c99b1a3f91df9473925e03a1b348a09ca3ee1a4394302ed910bb1"
+      "path": "assets/characters/playable/king/twinsteel_unified/down/cross_finish.tres",
+      "bytes": 3130,
+      "sha256": "3a7725a58a5e95280cf0b7d0f7a2e376c69609f80346fbd190fba28d433e0556"
     },
     {
       "path": "assets/characters/playable/king/twinsteel_unified/down/diagonal_body.png",
@@ -2057,9 +2067,9 @@
       "sha256": "4ec75eb1a52d022f01d76706c65087bcbb0e945bd7dc0f5367ce26ad2f61dcd4"
     },
     {
-      "path": "assets/characters/playable/king/twinsteel_unified/down/hop_spin.tres",
-      "bytes": 3056,
-      "sha256": "3e744b4cd0d89ca5bb0879c2732ef1426a1871bc280b0b814aa330c4e3015bf2"
+      "path": "assets/characters/playable/king/twinsteel_unified/down/diagonal.tres",
+      "bytes": 3637,
+      "sha256": "73192dc3350c99b1a3f91df9473925e03a1b348a09ca3ee1a4394302ed910bb1"
     },
     {
       "path": "assets/characters/playable/king/twinsteel_unified/down/hop_spin_body.png",
@@ -2067,9 +2077,9 @@
       "sha256": "b7f10eab2573e7f4d32e5709b3cd4338f6ecb7dc5d60b315f737b71767ccc122"
     },
     {
-      "path": "assets/characters/playable/king/twinsteel_unified/down/idle.tres",
-      "bytes": 3173,
-      "sha256": "9bb952d15d0d744e9fccc418787d6c25e3d90f20b1c09291695d7be5fd88ffb3"
+      "path": "assets/characters/playable/king/twinsteel_unified/down/hop_spin.tres",
+      "bytes": 3056,
+      "sha256": "3e744b4cd0d89ca5bb0879c2732ef1426a1871bc280b0b814aa330c4e3015bf2"
     },
     {
       "path": "assets/characters/playable/king/twinsteel_unified/down/idle_body.png",
@@ -2077,9 +2087,9 @@
       "sha256": "bce4573ad927f80b4589f6a94ffc5b9091e7606a6e77a5e104c7b8825fa66a13"
     },
     {
-      "path": "assets/characters/playable/king/twinsteel_unified/down/return.tres",
-      "bytes": 3029,
-      "sha256": "36b2ab22a855a16543b77c21871ab1aacaf3ed263822e1a1253c1e9cd020dc38"
+      "path": "assets/characters/playable/king/twinsteel_unified/down/idle.tres",
+      "bytes": 3173,
+      "sha256": "9bb952d15d0d744e9fccc418787d6c25e3d90f20b1c09291695d7be5fd88ffb3"
     },
     {
       "path": "assets/characters/playable/king/twinsteel_unified/down/return_body.png",
@@ -2087,9 +2097,9 @@
       "sha256": "4e85d3b34362f49607aa93f5098a873498562df68b023d8feb569ee43dcddacc"
     },
     {
-      "path": "assets/characters/playable/king/twinsteel_unified/down/rising_cross.tres",
-      "bytes": 3072,
-      "sha256": "7255b1b4deab00cef216975f7ffe3ac20729ee5feddd22c4d30170706a7b6362"
+      "path": "assets/characters/playable/king/twinsteel_unified/down/return.tres",
+      "bytes": 3029,
+      "sha256": "36b2ab22a855a16543b77c21871ab1aacaf3ed263822e1a1253c1e9cd020dc38"
     },
     {
       "path": "assets/characters/playable/king/twinsteel_unified/down/rising_cross_body.png",
@@ -2097,14 +2107,19 @@
       "sha256": "de6fdd858ce6d2dc28d7d535e9bfaf43eb7ea8ff0466c4be64219492f111f469"
     },
     {
-      "path": "assets/characters/playable/king/twinsteel_unified/down/run.tres",
-      "bytes": 2270,
-      "sha256": "55fdb40b871fb3bc1ce6b2fe10aa1a7027004e2e6ce35214494c4e38dce94d96"
+      "path": "assets/characters/playable/king/twinsteel_unified/down/rising_cross.tres",
+      "bytes": 3072,
+      "sha256": "7255b1b4deab00cef216975f7ffe3ac20729ee5feddd22c4d30170706a7b6362"
     },
     {
       "path": "assets/characters/playable/king/twinsteel_unified/down/run_body.png",
       "bytes": 46527,
       "sha256": "b0699b96fcaf49c0e1b7305f8ddaa14332705fb6077e22011e8e3166209a5db0"
+    },
+    {
+      "path": "assets/characters/playable/king/twinsteel_unified/down/run.tres",
+      "bytes": 2270,
+      "sha256": "55fdb40b871fb3bc1ce6b2fe10aa1a7027004e2e6ce35214494c4e38dce94d96"
     },
     {
       "path": "assets/characters/playable/king/twinsteel_unified/ribbon_layout.tres",
@@ -2117,19 +2132,14 @@
       "sha256": "7ef4e27069369d9b6e7a340bffccd7b11fced892feef18774868915cedc71472"
     },
     {
-      "path": "assets/characters/playable/king/twinsteel_unified/side/cross_finish.tres",
-      "bytes": 3112,
-      "sha256": "7e1f4d3a0e9aa6f33e7ea20a6747ffd8e4a52b7989ab94d6ae2319b1c8cb88d3"
-    },
-    {
       "path": "assets/characters/playable/king/twinsteel_unified/side/cross_finish_body.png",
       "bytes": 89983,
       "sha256": "43b350d905fedc0e65247fa1204a1d0d90e5b5d8e82e41799f49debaa9d83848"
     },
     {
-      "path": "assets/characters/playable/king/twinsteel_unified/side/diagonal.tres",
-      "bytes": 3709,
-      "sha256": "f9a2987e81ea1af37a319e1afb97c59e1d542580aef12bd80f49ab90337c3087"
+      "path": "assets/characters/playable/king/twinsteel_unified/side/cross_finish.tres",
+      "bytes": 3112,
+      "sha256": "7e1f4d3a0e9aa6f33e7ea20a6747ffd8e4a52b7989ab94d6ae2319b1c8cb88d3"
     },
     {
       "path": "assets/characters/playable/king/twinsteel_unified/side/diagonal_body.png",
@@ -2137,9 +2147,9 @@
       "sha256": "9cf639be1f519be14c6b8c6769cc27d59391ee333626fe003e304ccab827d94f"
     },
     {
-      "path": "assets/characters/playable/king/twinsteel_unified/side/hop_spin.tres",
-      "bytes": 3104,
-      "sha256": "fa65ed579cdc91d3249d30cfbc3f0fe36174cb14c6558ad4beab61659b07940b"
+      "path": "assets/characters/playable/king/twinsteel_unified/side/diagonal.tres",
+      "bytes": 3709,
+      "sha256": "f9a2987e81ea1af37a319e1afb97c59e1d542580aef12bd80f49ab90337c3087"
     },
     {
       "path": "assets/characters/playable/king/twinsteel_unified/side/hop_spin_body.png",
@@ -2147,9 +2157,9 @@
       "sha256": "63e6844ae902cb2fbf4dc24fb4bf738da06dfd53c04437d3a24724f2aed8678f"
     },
     {
-      "path": "assets/characters/playable/king/twinsteel_unified/side/idle.tres",
-      "bytes": 3191,
-      "sha256": "6fd95bf538ae6942e08590d4b956a77fd3c149380e43ef6aee2d4ef1259a095f"
+      "path": "assets/characters/playable/king/twinsteel_unified/side/hop_spin.tres",
+      "bytes": 3104,
+      "sha256": "fa65ed579cdc91d3249d30cfbc3f0fe36174cb14c6558ad4beab61659b07940b"
     },
     {
       "path": "assets/characters/playable/king/twinsteel_unified/side/idle_body.png",
@@ -2157,9 +2167,9 @@
       "sha256": "d314fd5ab1c6e84978bcf7968742c2ee3b2032e383d215048afa5c0ad74c40c8"
     },
     {
-      "path": "assets/characters/playable/king/twinsteel_unified/side/return.tres",
-      "bytes": 3138,
-      "sha256": "22ef4ff8ee437ade751a601f17feee11ee66da760250b4ca52d700e31a12858d"
+      "path": "assets/characters/playable/king/twinsteel_unified/side/idle.tres",
+      "bytes": 3191,
+      "sha256": "6fd95bf538ae6942e08590d4b956a77fd3c149380e43ef6aee2d4ef1259a095f"
     },
     {
       "path": "assets/characters/playable/king/twinsteel_unified/side/return_body.png",
@@ -2167,9 +2177,9 @@
       "sha256": "67e8b25722c7cb03fe294fa2d655972962ad5e1930ea03c5ea8fb1bbbe3bd6bc"
     },
     {
-      "path": "assets/characters/playable/king/twinsteel_unified/side/rising_cross.tres",
-      "bytes": 3114,
-      "sha256": "e18a772944e31824f3bdc39879dc54a5635c772d27f5143a8e97cc7253a1965b"
+      "path": "assets/characters/playable/king/twinsteel_unified/side/return.tres",
+      "bytes": 3138,
+      "sha256": "22ef4ff8ee437ade751a601f17feee11ee66da760250b4ca52d700e31a12858d"
     },
     {
       "path": "assets/characters/playable/king/twinsteel_unified/side/rising_cross_body.png",
@@ -2177,9 +2187,9 @@
       "sha256": "cc5814b4d71ff09638098b50153caf83a647494768f58f7542ad3782f1f70951"
     },
     {
-      "path": "assets/characters/playable/king/twinsteel_unified/side/run.tres",
-      "bytes": 2302,
-      "sha256": "b43e16550ffdc13138cbd2d31522d3cce8bb05e7bf3d27f7761332d9d3acb7a1"
+      "path": "assets/characters/playable/king/twinsteel_unified/side/rising_cross.tres",
+      "bytes": 3114,
+      "sha256": "e18a772944e31824f3bdc39879dc54a5635c772d27f5143a8e97cc7253a1965b"
     },
     {
       "path": "assets/characters/playable/king/twinsteel_unified/side/run_body.png",
@@ -2187,14 +2197,14 @@
       "sha256": "ed6299fe34bd3897c0ba6735194c8b1a9ddd5690e5c975168c38150488ea84cc"
     },
     {
+      "path": "assets/characters/playable/king/twinsteel_unified/side/run.tres",
+      "bytes": 2302,
+      "sha256": "b43e16550ffdc13138cbd2d31522d3cce8bb05e7bf3d27f7761332d9d3acb7a1"
+    },
+    {
       "path": "assets/characters/playable/king/twinsteel_unified/slash.png",
       "bytes": 303469,
       "sha256": "2187495ab9395f301663ba7cd48e90f3e0298a10d37981ab6614e931d57568bd"
-    },
-    {
-      "path": "assets/characters/playable/king/twinsteel_unified/twinsteel.png",
-      "bytes": 1181,
-      "sha256": "4dddb394b6f759c0945d2e40006cd7573f50f93e5670c4a92c47fb24cebc244e"
     },
     {
       "path": "assets/characters/playable/king/twinsteel_unified/twinsteel_pair.png",
@@ -2202,9 +2212,9 @@
       "sha256": "a00d4c326c52110c27325d1404bafb5237f07232995a702766c9aeea91090dea"
     },
     {
-      "path": "assets/characters/playable/king/twinsteel_unified/up/cross_finish.tres",
-      "bytes": 3123,
-      "sha256": "6a23db51b57e6fc32a11e74aa93dfebfe89bb25f47cf6b6e2efb9486b20a0ab6"
+      "path": "assets/characters/playable/king/twinsteel_unified/twinsteel.png",
+      "bytes": 1181,
+      "sha256": "4dddb394b6f759c0945d2e40006cd7573f50f93e5670c4a92c47fb24cebc244e"
     },
     {
       "path": "assets/characters/playable/king/twinsteel_unified/up/cross_finish_body.png",
@@ -2212,9 +2222,9 @@
       "sha256": "52ced04efd2ea5f8b7a603fe49323b02ecfeede398aa5655e06026cf00385062"
     },
     {
-      "path": "assets/characters/playable/king/twinsteel_unified/up/diagonal.tres",
-      "bytes": 3706,
-      "sha256": "f9ea899cff31a3803148cfa8f5985dae8b8328f07c4ce8dddaebbfb5c24b524d"
+      "path": "assets/characters/playable/king/twinsteel_unified/up/cross_finish.tres",
+      "bytes": 3123,
+      "sha256": "6a23db51b57e6fc32a11e74aa93dfebfe89bb25f47cf6b6e2efb9486b20a0ab6"
     },
     {
       "path": "assets/characters/playable/king/twinsteel_unified/up/diagonal_body.png",
@@ -2222,9 +2232,9 @@
       "sha256": "d44bf64bb66514c28ac7a11fabbfe318069c39bc7d17ce7b4a643b689d231cfa"
     },
     {
-      "path": "assets/characters/playable/king/twinsteel_unified/up/hop_spin.tres",
-      "bytes": 3112,
-      "sha256": "a3ebe43b4fa6ac60d4b8e7b74e27b93f47c220e22ffba362c0545606c04a8992"
+      "path": "assets/characters/playable/king/twinsteel_unified/up/diagonal.tres",
+      "bytes": 3706,
+      "sha256": "f9ea899cff31a3803148cfa8f5985dae8b8328f07c4ce8dddaebbfb5c24b524d"
     },
     {
       "path": "assets/characters/playable/king/twinsteel_unified/up/hop_spin_body.png",
@@ -2232,9 +2242,9 @@
       "sha256": "48e8e5c9970be0196e6809871ae7693e8bece6d826ae01d4a2f9fdd4f17cae26"
     },
     {
-      "path": "assets/characters/playable/king/twinsteel_unified/up/idle.tres",
-      "bytes": 3158,
-      "sha256": "6bb238cf26a604d5e05f6f16c57e117db35321f89ebde132a103f5ddb4ae1dba"
+      "path": "assets/characters/playable/king/twinsteel_unified/up/hop_spin.tres",
+      "bytes": 3112,
+      "sha256": "a3ebe43b4fa6ac60d4b8e7b74e27b93f47c220e22ffba362c0545606c04a8992"
     },
     {
       "path": "assets/characters/playable/king/twinsteel_unified/up/idle_body.png",
@@ -2242,9 +2252,9 @@
       "sha256": "da3ed5aec8f824b4f2f794cfe91fd2e13800fb2d087f512278d9739b3817d83c"
     },
     {
-      "path": "assets/characters/playable/king/twinsteel_unified/up/return.tres",
-      "bytes": 3093,
-      "sha256": "d1e7159d06d1871796ae0b8c60cd80f6a2df7abf401e4d47a3e36e53564aeea5"
+      "path": "assets/characters/playable/king/twinsteel_unified/up/idle.tres",
+      "bytes": 3158,
+      "sha256": "6bb238cf26a604d5e05f6f16c57e117db35321f89ebde132a103f5ddb4ae1dba"
     },
     {
       "path": "assets/characters/playable/king/twinsteel_unified/up/return_body.png",
@@ -2252,9 +2262,9 @@
       "sha256": "d2a5113a6232b06864176ed17befceaf6f02c0d252fe6f80dd10ed6d021e3224"
     },
     {
-      "path": "assets/characters/playable/king/twinsteel_unified/up/rising_cross.tres",
-      "bytes": 3124,
-      "sha256": "303e5527ab2b09a046cd919cd742092d387cd4a85c448be1e763396846a44f46"
+      "path": "assets/characters/playable/king/twinsteel_unified/up/return.tres",
+      "bytes": 3093,
+      "sha256": "d1e7159d06d1871796ae0b8c60cd80f6a2df7abf401e4d47a3e36e53564aeea5"
     },
     {
       "path": "assets/characters/playable/king/twinsteel_unified/up/rising_cross_body.png",
@@ -2262,14 +2272,19 @@
       "sha256": "dc30c2a7e9b1ab0302515192f96dcb83ffa1a92bcc13b7e0f5ef705ecb05d00e"
     },
     {
-      "path": "assets/characters/playable/king/twinsteel_unified/up/run.tres",
-      "bytes": 2268,
-      "sha256": "8a3c19b56e88ffb1163ba9b3411cfcad768bde831c59801ed27dcd80f1b3eb12"
+      "path": "assets/characters/playable/king/twinsteel_unified/up/rising_cross.tres",
+      "bytes": 3124,
+      "sha256": "303e5527ab2b09a046cd919cd742092d387cd4a85c448be1e763396846a44f46"
     },
     {
       "path": "assets/characters/playable/king/twinsteel_unified/up/run_body.png",
       "bytes": 45031,
       "sha256": "7d766b44cd49d2670e6e2b266bcacfb4fb1197c8217459963ef763e77d03090e"
+    },
+    {
+      "path": "assets/characters/playable/king/twinsteel_unified/up/run.tres",
+      "bytes": 2268,
+      "sha256": "8a3c19b56e88ffb1163ba9b3411cfcad768bde831c59801ed27dcd80f1b3eb12"
     },
     {
       "path": "assets/environment/arenas/divine_order/court_of_first_measure/court_slate_floor.png",
@@ -2457,11 +2472,6 @@
       "sha256": "8742bcd35291dbe0e8b54b99be03c7aea4159e3fb986a348dd47f686fdc38343"
     },
     {
-      "path": "assets/environment/forest/hollow_renewal/rootbound_32.png",
-      "bytes": 41205,
-      "sha256": "c9dff19b38f1307b88e198c5ddd7533ce4e0812cb27b5e0424c67abdc406903c"
-    },
-    {
       "path": "assets/environment/forest/hollow_renewal/root_elm.png",
       "bytes": 20304,
       "sha256": "e0943e5017b1eb27a775cc9f4bd6d77ef8b235811e57ec1a3c66dc1d9c760967"
@@ -2470,6 +2480,11 @@
       "path": "assets/environment/forest/hollow_renewal/root_mound.png",
       "bytes": 3019,
       "sha256": "74d484d8aeb130354faa55bffab5b945b655586f5f99266e531984cae1981c66"
+    },
+    {
+      "path": "assets/environment/forest/hollow_renewal/rootbound_32.png",
+      "bytes": 41205,
+      "sha256": "c9dff19b38f1307b88e198c5ddd7533ce4e0812cb27b5e0424c67abdc406903c"
     },
     {
       "path": "assets/environment/forest/hollow_renewal/seal.png",
@@ -2627,19 +2642,14 @@
       "sha256": "0cdb3d6df91647b792ef5a2cade2753aa438120906af0c162088f1322eb637e1"
     },
     {
-      "path": "assets/environment/portals/threat_family/calm.png",
-      "bytes": 161283,
-      "sha256": "32649a6dcf35e2ae1388555c7c8a47ba4acb94dd2cf14481c7c3015cd79ed5c6"
-    },
-    {
       "path": "assets/environment/portals/threat_family/calm_frames.tres",
       "bytes": 1817,
       "sha256": "31f46d3861bc5e28c1f8a658c0ddfc47c35c167dc2ec08d49d58655c4a287e33"
     },
     {
-      "path": "assets/environment/portals/threat_family/divine.png",
-      "bytes": 170206,
-      "sha256": "32ba51d13ab6ef9edc709e09d10994136786d88bc320cd786a85d7eb3516cdb9"
+      "path": "assets/environment/portals/threat_family/calm.png",
+      "bytes": 161283,
+      "sha256": "32649a6dcf35e2ae1388555c7c8a47ba4acb94dd2cf14481c7c3015cd79ed5c6"
     },
     {
       "path": "assets/environment/portals/threat_family/divine_frames.tres",
@@ -2647,9 +2657,9 @@
       "sha256": "d4bdbf90212d18d5114550b29ab9d09a8d55cf886a5f7ac625d4dff9a3135277"
     },
     {
-      "path": "assets/environment/portals/threat_family/grasp.png",
-      "bytes": 196985,
-      "sha256": "f5d947d2a5ea291fe6d26357d5c3a783bc44980ad57dd2c9a1e6fa9b042d7b85"
+      "path": "assets/environment/portals/threat_family/divine.png",
+      "bytes": 170206,
+      "sha256": "32ba51d13ab6ef9edc709e09d10994136786d88bc320cd786a85d7eb3516cdb9"
     },
     {
       "path": "assets/environment/portals/threat_family/grasp_frames.tres",
@@ -2657,9 +2667,9 @@
       "sha256": "53fdbe84c616fd44dfe7e2a53ab39f3ac8b018c6b7df72ba048be0ea97395731"
     },
     {
-      "path": "assets/environment/portals/threat_family/maw.png",
-      "bytes": 194815,
-      "sha256": "e1335c41c828dc762a426380f76fca4b156d005c054ecf4d98bdc0e51317c148"
+      "path": "assets/environment/portals/threat_family/grasp.png",
+      "bytes": 196985,
+      "sha256": "f5d947d2a5ea291fe6d26357d5c3a783bc44980ad57dd2c9a1e6fa9b042d7b85"
     },
     {
       "path": "assets/environment/portals/threat_family/maw_frames.tres",
@@ -2667,9 +2677,9 @@
       "sha256": "6ccebd3507311c55b628a9be82233639b0b83d8e03a1a22b12f6aba2ad130b10"
     },
     {
-      "path": "assets/environment/portals/threat_family/ominous.png",
-      "bytes": 164602,
-      "sha256": "fc8c1a033d1d4642059dab0fb08ce5143aa7498b74e34c86805b5b336d7c0c1b"
+      "path": "assets/environment/portals/threat_family/maw.png",
+      "bytes": 194815,
+      "sha256": "e1335c41c828dc762a426380f76fca4b156d005c054ecf4d98bdc0e51317c148"
     },
     {
       "path": "assets/environment/portals/threat_family/ominous_frames.tres",
@@ -2677,9 +2687,9 @@
       "sha256": "c9c0ae9484f44ece493bc7d9b32cc761b0b184ee856e9c1fd826fd49c91bab57"
     },
     {
-      "path": "assets/environment/portals/threat_family/unknowable.png",
-      "bytes": 176620,
-      "sha256": "9f329c73ef397e817315f8295ae3b135ae8437e193e25c21c659c9c4d186db44"
+      "path": "assets/environment/portals/threat_family/ominous.png",
+      "bytes": 164602,
+      "sha256": "fc8c1a033d1d4642059dab0fb08ce5143aa7498b74e34c86805b5b336d7c0c1b"
     },
     {
       "path": "assets/environment/portals/threat_family/unknowable_frames.tres",
@@ -2687,29 +2697,19 @@
       "sha256": "bdec6f1dbf3a208d69d5f5b70d2cc7fec74e45a31ab477d846a798a974c406f5"
     },
     {
+      "path": "assets/environment/portals/threat_family/unknowable.png",
+      "bytes": 176620,
+      "sha256": "9f329c73ef397e817315f8295ae3b135ae8437e193e25c21c659c9c4d186db44"
+    },
+    {
       "path": "assets/environment/sanctuary/courtyards/swallow.png",
       "bytes": 5692,
       "sha256": "9974b0547ebf3c3746cc828bd84db6e37dfbc162a78fd245116f84a8dc7af2e2"
     },
     {
-      "path": "assets/environment/sanctuary/landmarks/angel_expedition_portal_ground_192x192.png",
-      "bytes": 8050,
-      "sha256": "d341898f662416bcfbb6929a1d760e0af7f0f5e82ca319ba4fc39a72caa961b9"
-    },
-    {
       "path": "assets/environment/sanctuary/landmarks/divine_fountain_112x96.png",
       "bytes": 10641,
       "sha256": "0dff1338e8881e7ca6e4ef3fb9291409312467c6862be1661af74e2029add89c"
-    },
-    {
-      "path": "assets/environment/sanctuary/landmarks/generated/angel_expedition_portal_static_192x256.png",
-      "bytes": 75023,
-      "sha256": "33ce0226c5b10420e4d089d0e8c125a1e6af95f6b8bada2b62c9c93b3b1d8f11"
-    },
-    {
-      "path": "assets/environment/sanctuary/landmarks/generated/sanctuary_portal_energy_4x_44x112.png",
-      "bytes": 61667,
-      "sha256": "1c61194e1c0b7e48aad30dbbb95158ba5ffed8919ef8f2e1f742d707ed562b84"
     },
     {
       "path": "assets/environment/sanctuary/orthographic/nema.png",
@@ -2842,14 +2842,14 @@
       "sha256": "31d8118c1fb41bf2c00e63bbd571c229056cf6497b56b36cdfac956c670dfa04"
     },
     {
-      "path": "assets/items/materials/forest/rootbound_core_24x24.png",
-      "bytes": 1050,
-      "sha256": "b94a3f2755f335073089c0cc3e7e6c5332c8bfc4877449c928b1d1b3fa83118a"
-    },
-    {
       "path": "assets/items/materials/forest/root_fiber_24x24.png",
       "bytes": 756,
       "sha256": "1f1d8f58f4d506e9d7880e57925fa388ae5e05a9ec92d283c8225ff1927b9e9c"
+    },
+    {
+      "path": "assets/items/materials/forest/rootbound_core_24x24.png",
+      "bytes": 1050,
+      "sha256": "b94a3f2755f335073089c0cc3e7e6c5332c8bfc4877449c928b1d1b3fa83118a"
     },
     {
       "path": "assets/items/materials/forest/thorn_sap_24x24.png",
@@ -2872,6 +2872,16 @@
       "sha256": "99d9cf8afe5b6f4928d30524b8d4f3d8ce787560f1be61719e79c8711a9dc6e2"
     },
     {
+      "path": "assets/ui/fonts/lora/Lora.ttf",
+      "bytes": 212196,
+      "sha256": "822a6621ccbe8d97d20ac88c1c41f5615c9c2c202eaa75f272cd452aac6475a7"
+    },
+    {
+      "path": "assets/ui/fonts/lora/OFL.txt",
+      "bytes": 4423,
+      "sha256": "1d9a970809ac804b582a6ce7f0ebc4e7fefcbfd7ff6299cad35ee656a21be716"
+    },
+    {
       "path": "assets/ui/hud/eclipse_bind/eclipse_dash_24.png",
       "bytes": 865,
       "sha256": "9a32629f68baae37d7289da9e7467bfff5ea5206b5d1b6f0181a8013da572a93"
@@ -2880,6 +2890,146 @@
       "path": "assets/ui/hud/eclipse_bind/eclipse_frame_compact_720x104.png",
       "bytes": 15325,
       "sha256": "c14a0649accc1e09769082968c58a67dbac7e453abbbfd03e79d6af10cfb9b5f"
+    },
+    {
+      "path": "assets/ui/hud/veil_sigils/bag_face.png",
+      "bytes": 23674,
+      "sha256": "710c2197ed7f0e07abb388477385d66c5948979932724d0e6c0b2bd7c46344fb"
+    },
+    {
+      "path": "assets/ui/hud/veil_sigils/coin_plaque.png",
+      "bytes": 10420,
+      "sha256": "356d06a644539e1013ad0aff1346995a41f258d86aec42a51e07787bc700d370"
+    },
+    {
+      "path": "assets/ui/hud/veil_sigils/dodge.png",
+      "bytes": 9385,
+      "sha256": "e136411848038f590e8edc692b27ab13003f6aaf79f95ee572f646e26319e423"
+    },
+    {
+      "path": "assets/ui/hud/veil_sigils/earthsplitter.png",
+      "bytes": 11373,
+      "sha256": "b82a4309169dd51567a2085d71a19fb3bfd899361cee5be6ffaf0e2008c9f0ab"
+    },
+    {
+      "path": "assets/ui/hud/veil_sigils/family_axe.png",
+      "bytes": 4124,
+      "sha256": "8bd99de9188afef320c06e57fce6302a1b1f469036003b9d5b920fb12f85dc20"
+    },
+    {
+      "path": "assets/ui/hud/veil_sigils/family_dual_swords.png",
+      "bytes": 5187,
+      "sha256": "7bbbffaac8576d71960595fae7d1576c5ad545ff629eb3852a789e142bbc309d"
+    },
+    {
+      "path": "assets/ui/hud/veil_sigils/family_greatsword.png",
+      "bytes": 4158,
+      "sha256": "ff6f951d4f4e178b340046a15682d28b55e8d496d772d1805b04c0a9267aadae"
+    },
+    {
+      "path": "assets/ui/hud/veil_sigils/family_scythe.png",
+      "bytes": 3180,
+      "sha256": "4f7bca910fb9f66c438a3631b7580e7ae4e72e73cbe14dff135725611794824b"
+    },
+    {
+      "path": "assets/ui/hud/veil_sigils/family_sword.png",
+      "bytes": 3633,
+      "sha256": "ed5def0623c87cc59311727161a1506fd3e1642d98e23932bbcd63e3ea23486d"
+    },
+    {
+      "path": "assets/ui/hud/veil_sigils/health_frame.png",
+      "bytes": 43276,
+      "sha256": "2e3d5faa160b06ed406c67d0f2925b2b05cf9966686967e2d448b3735a87ca64"
+    },
+    {
+      "path": "assets/ui/hud/veil_sigils/king_portrait.png",
+      "bytes": 71365,
+      "sha256": "6df92c1528ff74f2f072f4afe65563d2fd472df62f6c99f019c3624eb39a88d6"
+    },
+    {
+      "path": "assets/ui/hud/veil_sigils/level_badge.png",
+      "bytes": 8822,
+      "sha256": "f2cc267285f579d0affce3bf7c96ce99fce4aed5634402e6ce0434acc10910c5"
+    },
+    {
+      "path": "assets/ui/hud/veil_sigils/mastery_fill.png",
+      "bytes": 17836,
+      "sha256": "6fb81ac3d1e402d755661342deadb46fcdec9f9340765a3d9b398cdd9b0e8a4a"
+    },
+    {
+      "path": "assets/ui/hud/veil_sigils/mastery_frame.png",
+      "bytes": 62275,
+      "sha256": "725c63a5435a36fc3e71a1a09bf18a0988bbe0245d85790c980032fe508f4311"
+    },
+    {
+      "path": "assets/ui/hud/veil_sigils/medallion.png",
+      "bytes": 25310,
+      "sha256": "a0edccb1972e0b69df583a3bbfa9390e409682df7bd831cf85c995664acba35e"
+    },
+    {
+      "path": "assets/ui/hud/veil_sigils/molten_crash.png",
+      "bytes": 10856,
+      "sha256": "f0ef42fc1642e1006022a24e030d2610582056254d348270621424a97c2eeb19"
+    },
+    {
+      "path": "assets/ui/hud/veil_sigils/settings_face.png",
+      "bytes": 24989,
+      "sha256": "9a26e301e37e20e5a030f54bf988e8c58dbcd852033d28e3e8e3a78fc5b043ea"
+    },
+    {
+      "path": "assets/ui/hud/veil_sigils/sovereign_pursuit.png",
+      "bytes": 9966,
+      "sha256": "dce534862f1092d34edd65d3a28957d9d0369a878487a3df2ce160ef9f778e1d"
+    },
+    {
+      "path": "assets/ui/hud/veil_sigils/status_beneficial.png",
+      "bytes": 9403,
+      "sha256": "4c2dc764e609ba2de84abab3ad605dc1d382aa5caaeff6d437dcf3d9f20f4506"
+    },
+    {
+      "path": "assets/ui/hud/veil_sigils/status_harmful.png",
+      "bytes": 9313,
+      "sha256": "7f890a66a12a0fe0386ffb39d1fc55195e0396f331b49c8a3c2f96218e608387"
+    },
+    {
+      "path": "assets/ui/hud/veil_sigils/status_resolve.png",
+      "bytes": 3734,
+      "sha256": "a2d06f9488190ee38cad23ed13f8a2cd630a4eee37644462bbfcd064808390db"
+    },
+    {
+      "path": "assets/ui/hud/veil_sigils/status_root.png",
+      "bytes": 5501,
+      "sha256": "3e22d42242f844a5ec6cbd65201dabab5ed046d5cb8c692caf8c737e092d3ec9"
+    },
+    {
+      "path": "assets/ui/hud/veil_sigils/status_shield.png",
+      "bytes": 4208,
+      "sha256": "6fb27f42468733d54390834b528057e61ad114b7f1c43cadab6d5b2bf08a46d4"
+    },
+    {
+      "path": "assets/ui/hud/veil_sigils/status_stun.png",
+      "bytes": 4233,
+      "sha256": "f861346c373752c41b8e0623e59e2710f26b0e07e8aac7875adf3a2da02709ee"
+    },
+    {
+      "path": "assets/ui/hud/veil_sigils/tooltip_frame.png",
+      "bytes": 75914,
+      "sha256": "d3d7620b740955c7432dad16ed463709712be83af87a6191bcc9b221c036880f"
+    },
+    {
+      "path": "assets/ui/hud/veil_sigils/unbroken_vow.png",
+      "bytes": 9212,
+      "sha256": "ea8a222dd29c97fe9db847a0964df6fff719a9279b6f08fea471e47632b93d42"
+    },
+    {
+      "path": "assets/ui/hud/veil_sigils/worldsplitter.png",
+      "bytes": 11324,
+      "sha256": "edbc8339874ebcf143b3911eba0137e8a838feed14f520c7d6be98f23dc04173"
+    },
+    {
+      "path": "assets/ui/hud/veil_sigils/xp_frame.png",
+      "bytes": 29913,
+      "sha256": "3d3785c26e5cb68d4f4e1ad17ea00e243fd062499a55fdb0c07e3875e7c9a57a"
     },
     {
       "path": "assets/ui/icons/actions/icon_action_auto_all_24.svg",
@@ -2918,28 +3068,28 @@
     },
     {
       "path": "assets/ui/icons/combat/king_skill_1_icon.tres",
-      "bytes": 267,
-      "sha256": "f79af52a4eb66bf66f34858d6960915425bea5eb132e93f88d00b6d36f6e2078"
+      "bytes": 250,
+      "sha256": "046d144bd0f1c1081372554b687f659018384fa6bc02ab7437cf4f3445270ebb"
     },
     {
       "path": "assets/ui/icons/combat/king_skill_2_icon.tres",
-      "bytes": 268,
-      "sha256": "bb84581e2c0fae102d95ea7fbf6ba9d5490f7a80c28b94e80e58bde81eb705de"
+      "bytes": 249,
+      "sha256": "64f9fc2dc219001e1a71599eb179948e8bef9402c52cee6a1c07030752c224f7"
     },
     {
       "path": "assets/ui/icons/combat/king_skill_3_icon.tres",
-      "bytes": 268,
-      "sha256": "d0aa18f62d069671d10a151827792e46a95a394e175a890742c3c34aff210519"
+      "bytes": 254,
+      "sha256": "24d9891bc0dcdd47087a0885e89fb7dfa6f125dfacdde642ed2c74f175b35abe"
     },
     {
       "path": "assets/ui/icons/combat/king_skill_4_icon.tres",
-      "bytes": 268,
-      "sha256": "8e9949fb99f8532b4c70569fdb538dcbde4f860843f414d331891c5a14cd3c72"
+      "bytes": 250,
+      "sha256": "a1dc5081612145663c5bac568fe3c9a017a92e86a2e7026fa5000f69926b9580"
     },
     {
       "path": "assets/ui/icons/combat/unbroken_vow_icon.tres",
-      "bytes": 254,
-      "sha256": "7504d188273216a06d2a6362b0860715536841a718c7a68234161cdd6a5d3c4c"
+      "bytes": 249,
+      "sha256": "fa63e5584fea29316ecef56f498b218983648b1669591dc14457a9eb216b7fe1"
     },
     {
       "path": "assets/ui/icons/economy/icon_currency_coin_16x16.png",
@@ -3047,14 +3197,14 @@
       "sha256": "a772218ea3f670d57c949d355f548870ef31cb14d1afae68f7e0980ff6b728a1"
     },
     {
-      "path": "assets/ui/quiet_transition/seal.png",
-      "bytes": 47896,
-      "sha256": "b7b7569787257de79021579b1d054e77f94cc116d8759ac5de5ad2feb3341ea5"
-    },
-    {
       "path": "assets/ui/quiet_transition/seal_frames.tres",
       "bytes": 1801,
       "sha256": "e4c584f636f9d91e81d8f2028ef333eaf77ba4dea100430c139dcf0159e7d9e1"
+    },
+    {
+      "path": "assets/ui/quiet_transition/seal.png",
+      "bytes": 47896,
+      "sha256": "b7b7569787257de79021579b1d054e77f94cc116d8759ac5de5ad2feb3341ea5"
     },
     {
       "path": "assets/ui/sanctuary_theme/map_paper.png",
@@ -3157,24 +3307,24 @@
       "sha256": "3af938c0c636b45a9cb3badb9f7a22e5fae199543d79cb16294f478803f05787"
     },
     {
-      "path": "assets/vfx/abilities/king/sovereign_pursuit_review/landing.png",
-      "bytes": 63820,
-      "sha256": "ce729ef30eacbdcaf4ad4403700ad1ad2b147a50f71612f678316e649f6fd2c4"
-    },
-    {
       "path": "assets/vfx/abilities/king/sovereign_pursuit_review/landing_frames.tres",
       "bytes": 3116,
       "sha256": "de284da0472e378f7a4ad5b3b902dc97008491f2bd9b23e2fdcea05f4beacd8b"
     },
     {
-      "path": "assets/vfx/abilities/king/sovereign_pursuit_review/travel.png",
-      "bytes": 31241,
-      "sha256": "12d7effc9a5c33d9407594cfd841e09b77669a9196a87f7181dde9167cdeeb67"
+      "path": "assets/vfx/abilities/king/sovereign_pursuit_review/landing.png",
+      "bytes": 63820,
+      "sha256": "ce729ef30eacbdcaf4ad4403700ad1ad2b147a50f71612f678316e649f6fd2c4"
     },
     {
       "path": "assets/vfx/abilities/king/sovereign_pursuit_review/travel_frames.tres",
       "bytes": 1623,
       "sha256": "db0d9087406d69aa0f6aa7455149dcb5a3e4c1b7de7b433113deb9946338ea5a"
+    },
+    {
+      "path": "assets/vfx/abilities/king/sovereign_pursuit_review/travel.png",
+      "bytes": 31241,
+      "sha256": "12d7effc9a5c33d9407594cfd841e09b77669a9196a87f7181dde9167cdeeb67"
     },
     {
       "path": "assets/vfx/abilities/king/unbroken_vow_test/barrier.png",
@@ -3200,6 +3350,26 @@
       "path": "assets/vfx/abilities/king/worldsplitter/summoned/summon.png",
       "bytes": 128480,
       "sha256": "154d0226aa83f45e4d28a0f593709563851d56ab3b80db2987a2e733e4628822"
+    },
+    {
+      "path": "assets/vfx/abilities/weapons/axe_war_cyclone/ground.png",
+      "bytes": 33433,
+      "sha256": "ccb57aaa450cbacfb2a6d1ef89e1d64848b2a9ee5ece7b70de4a830abc36da86"
+    },
+    {
+      "path": "assets/vfx/abilities/weapons/axe_war_cyclone/icon.png",
+      "bytes": 20112,
+      "sha256": "a93333c02ef007adbfe118af6abad7ded3d4ff55a0b9a252c33cf1cbcec0a105"
+    },
+    {
+      "path": "assets/vfx/abilities/weapons/axe_war_cyclone/motion.png",
+      "bytes": 155517,
+      "sha256": "e3e2f234e293cdd69cb7f54bb39fc08c2aa27e6a334e0784f569e53c0b715976"
+    },
+    {
+      "path": "assets/vfx/abilities/weapons/axe_war_cyclone/outer.png",
+      "bytes": 45051,
+      "sha256": "3bbe9286922c8dd004c89303dc709c6ea638f4a499341c76b71d10a6edabd688"
     },
     {
       "path": "assets/vfx/combat/critical_impact/frames.tres",
@@ -3242,14 +3412,14 @@
       "sha256": "06732d9a2029ebc39f60fb57afba4a38a4a823fe3d6c30942301e51964692373"
     },
     {
-      "path": "assets/vfx/divine_order/examiner/sun.png",
-      "bytes": 158764,
-      "sha256": "c58509a5aecb6b71a8486403e9e53e4e5c76afe842dad3d0673878f7fbcb82b3"
-    },
-    {
       "path": "assets/vfx/divine_order/examiner/sun_loop.png",
       "bytes": 654035,
       "sha256": "5e604e32f814e03e4c7d1bb904da6a46d3eaf1e579016973f79a6fc928df7267"
+    },
+    {
+      "path": "assets/vfx/divine_order/examiner/sun.png",
+      "bytes": 158764,
+      "sha256": "c58509a5aecb6b71a8486403e9e53e4e5c76afe842dad3d0673878f7fbcb82b3"
     },
     {
       "path": "assets/vfx/divine_order/examiner/sweep.png",
@@ -3265,6 +3435,31 @@
       "path": "assets/vfx/generic_enemy_arrival/ground.png",
       "bytes": 3630,
       "sha256": "9bbb64cf2e95d6e32854cc102c89428575fbe2951e80de054fd9a417d5c734d4"
+    },
+    {
+      "path": "assets/characters/npcs/veyr/idle.png",
+      "bytes": 33743,
+      "sha256": "bc010548248272432fa5a9a3401d9a65441cc8f49bd38b3fb568979a4a74c2a4"
+    },
+    {
+      "path": "assets/environment/sanctuary/weapon_court/veil_gate.png",
+      "bytes": 47922,
+      "sha256": "ae204c6a5a5b52c3e3b06336b4357a4a8dcae891b1a03b8a3ee1b4d6eac15b7d"
+    },
+    {
+      "path": "assets/environment/sanctuary/weapon_court/training_post.png",
+      "bytes": 10761,
+      "sha256": "56853a235c33f23c3e6761cf522f08a067f8175733367d4e273c05760370a827"
+    },
+    {
+      "path": "assets/environment/sanctuary/weapon_court/veil_energy.png",
+      "bytes": 13225,
+      "sha256": "18d3cf62d1a6154d22a450192a94bf97595cd835b144805d37eaa78b4afb06b4"
+    },
+    {
+      "path": "assets/environment/sanctuary/weapon_court/training_pavilion.png",
+      "bytes": 46488,
+      "sha256": "4787ec995e43cbfa86adbb552884bb1e5be626c25f1c79b33c41a88a4ff82298"
     }
   ]
 }

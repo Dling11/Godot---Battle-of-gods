@@ -13,6 +13,8 @@ const Beacon = preload("res://entities/npcs/presentation/service_beacon.gd")
 const TownMap = preload("res://levels/sanctuary/town/town_map.gd")
 const Courier = preload("res://entities/npcs/courier/sanctuary_courier.gd")
 const Noticeboard = preload("res://levels/sanctuary/town/town_noticeboard.gd")
+const WeaponCourt = preload("res://levels/sanctuary/town/weapon_court.gd")
+const Layout = preload("res://levels/sanctuary/town/sanctuary_layout.gd")
 const ART := "res://assets/environment/sanctuary/refuge_review/"
 var hub: Node
 var ground: TileMapLayer
@@ -29,6 +31,7 @@ var dressing: Node
 var town_map: CanvasLayer
 var courier: CharacterBody2D
 var noticeboard: Area2D
+var weapon_court: Node2D
 var beacons: Array[Node2D] = []
 var test_controls_enabled := false
 var overview := false
@@ -36,6 +39,8 @@ var _panel: PanelContainer
 
 func _ready() -> void:
 	name = "SanctuaryTown"
+	hub.player.movement_bounds = Layout.MOVEMENT_BOUNDS
+	hub.expedition_altar.position = Layout.GATE
 	ground = Ground.new()
 	ground.name = "SanctuaryGround32"
 	hub.get_node("World/Level").add_child(ground)
@@ -58,9 +63,9 @@ func _ready() -> void:
 	umi_review.configure(hub,"Umi","Umi","Echo Melder")
 	for position in [Vector2(168,448),Vector2(456,432),Vector2(464,388),Vector2(688,388),Vector2(464,564),Vector2(672,584),Vector2(512,720),Vector2(624,720)]:
 		_prop("lantern",position,Vector2(18,12))
-	for position in [Vector2(440,336),Vector2(752,408),Vector2(400,584),Vector2(720,584)]:
+	for position in [Vector2(440,336),Vector2(752,408),Vector2(400,584),Vector2(720,584),Vector2(544,64),Vector2(640,64)]:
 		_prop("planter",position,Vector2(54,18))
-	for position in [Vector2(408,352),Vector2(752,352)]:
+	for position in [Vector2(408,352),Vector2(752,352),Vector2(592,112)]:
 		_prop("bench",position,Vector2(56,14))
 	dressing = TownDressing.new()
 	add_child(dressing)
@@ -75,6 +80,11 @@ func _ready() -> void:
 	workshop_visit = WorkshopVisit.new()
 	add_child(workshop_visit)
 	workshop_visit.configure(self)
+	weapon_court = WeaponCourt.new()
+	hub.get_node("World/Level").add_child(weapon_court)
+	weapon_court.configure(hub)
+	for point in [Vector2(160,208),Vector2(448,64),Vector2(752,128),Vector2(976,128)]:
+		_prop("lantern",point,Vector2(18,12))
 	_panel.hide()
 	workshop_visit.set_enabled(true)
 	for beacon in beacons: beacon.set_enabled(true)
@@ -264,10 +274,10 @@ func set_overview(value: bool) -> void:
 	var camera := hub.get_node("World/Actors/Player/Camera2D") as Camera2D
 	camera.position_smoothing_enabled = false
 	camera.set_as_top_level(value)
-	camera.position = Vector2(576,384) if value else Vector2(0,-8)
-	camera.zoom = Vector2(.68,.68) if value else Vector2.ONE
+	camera.position = Vector2(576,320) if value else Vector2(0,-8)
+	camera.zoom = Vector2(.58,.58) if value else Vector2.ONE
 	camera.limit_left = -10000 if value else 0
-	camera.limit_top = -10000 if value else 0
+	camera.limit_top = -10000 if value else Layout.CAMERA_TOP
 	camera.limit_right = 10000 if value else 1152
 	camera.limit_bottom = 10000 if value else 768
 	camera.reset_smoothing()

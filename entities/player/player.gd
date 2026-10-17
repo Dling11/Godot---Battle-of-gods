@@ -22,7 +22,7 @@ signal hit_recovery_started(duration_seconds: float)
 signal hit_recovery_kind_changed(duration_seconds: float)
 signal hit_recovery_finished
 
-enum BufferedAction { NONE, PRIMARY_ATTACK, EVADE, ABILITY }
+enum BufferedAction { NONE, PRIMARY_ATTACK, EVADE, ABILITY, WEAPON_TECHNIQUE }
 
 const ACTION_BUFFER_WINDOW_SECONDS := 0.8
 const PRIMARY_CLICK_ENGAGE_WINDOW_MSEC := 520
@@ -52,6 +52,7 @@ const CombatTargetingScript = preload("res://entities/player/components/player_c
 @onready var ability_2_component: AbilityComponentScript = %Ability2Component
 @onready var ability_3_component: AbilityComponentScript = %Ability3Component
 @onready var ability_4_component: AbilityComponentScript = %Ability4Component
+@onready var war_cyclone: WarCycloneComponent = %WarCycloneComponent
 @onready var directional_wedge_targeting: DirectionalWedgeTargetingScript = %DirectionalWedgeTargeting
 @onready var ground_point_targeting: GroundPointTargetingScript = %GroundPointTargeting
 @onready var combat_targeting: CombatTargetingScript = %CombatTargetingComponent
@@ -158,10 +159,11 @@ func _physics_process(delta: float) -> void:
 		and not is_restrained()
 		and not is_in_hit_recovery()
 		and not evade_component.is_dashing()
-		and not is_any_ability_casting()
 	):
-		move_direction = combat_targeting.get_assisted_move_direction(delta)
-		if move_direction.is_zero_approx():
+		var steering_ability := get_active_ability_component()
+		if steering_ability == null:
+			move_direction = combat_targeting.get_assisted_move_direction(delta)
+		if move_direction.is_zero_approx() and (steering_ability == null or steering_ability.get_manual_movement_ratio() > 0.0):
 			move_direction = combat_targeting.get_click_move_direction(delta)
 	if directional_wedge_targeting.is_targeting():
 		directional_wedge_targeting.update_aim(
@@ -195,6 +197,8 @@ func _physics_process(delta: float) -> void:
 		selected_skill_changed.emit(selected_skill_slot)
 	if Input.is_action_just_pressed("player_skill_selected"):
 		request_ability(selected_skill_slot)
+	if Input.is_action_just_pressed("player_weapon_technique_1"):
+		request_weapon_technique()
 	_try_assisted_primary_attack()
 	var active_ability := get_active_ability_component()
 	var ability_movement_active := active_ability != null and active_ability.has_active_movement()
@@ -213,6 +217,8 @@ func _physics_process(delta: float) -> void:
 	elif is_any_ability_casting():
 		if ability_movement_active:
 			velocity = active_ability.get_active_velocity()
+		elif active_ability.get_manual_movement_ratio() > 0.0:
+			velocity = movement_component.calculate_velocity(velocity, move_direction, delta, active_ability.get_manual_movement_ratio())
 		else:
 			velocity = movement_component.calculate_velocity(velocity, Vector2.ZERO, delta)
 	else:
@@ -347,6 +353,7 @@ func enable_debug_combat_tools() -> void:
 		save_service.suppress_autosave_for_debug_session()
 	_enable_debug_test_loadout()
 	_enable_debug_unlimited_skills()
+	war_cyclone.enable_review()
 
 
 func try_begin_root_restraint(source: Node, break_points: int) -> bool:
@@ -580,7 +587,11 @@ func request_ability(slot_number: int) -> bool:
 	if _is_targeting_any_ability():
 		## Repeating the skill key is intentionally consumed but never confirms.
 		## Confirmation belongs only to primary attack/right trigger.
-		return directional_wedge_targeting.get_target_component() == component or ground_point_targeting.get_target_component() == component
+		if directional_wedge_targeting.get_target_component() == component or ground_point_targeting.get_target_component() == component:
+			return true
+		if component == null or not component.can_queue_cast() or is_defeated:
+			return false
+		_cancel_all_targeting()
 	if component != null and not component.can_queue_cast():
 		action_denied.emit(&"skill_cooldown")
 		return false
@@ -606,6 +617,26 @@ func request_ability(slot_number: int) -> bool:
 	if not evade_component.is_ready():
 		return false
 	return _begin_ability_input(component, direction)
+
+
+func request_weapon_technique() -> bool:
+	held_attack.cancel()
+	if is_defeated or is_restrained() or is_in_hit_recovery() or _cinematic_locked:
+		return false
+	if war_cyclone.is_casting():
+		return war_cyclone.reaffirm_channel()
+	if not war_cyclone.can_queue_cast():
+		if war_cyclone.is_available(): action_denied.emit(&"skill_cooldown")
+		return false
+	_cancel_all_targeting()
+	if is_any_ability_casting() or attack_component.phase != MeleeAttackComponent.Phase.IDLE or evade_component.is_dashing() or evade_component.is_recovering():
+		_buffer_action(BufferedAction.WEAPON_TECHNIQUE, facing_direction)
+		if attack_component.phase == MeleeAttackComponent.Phase.RECOVERY or evade_component.is_recovering():
+			return _try_execute_buffered_action()
+		return true
+	combat_targeting.cancel_click_move()
+	combat_targeting.suspend_auto_attack()
+	return _start_ability(war_cyclone, facing_direction)
 
 
 func set_auto_farm_enabled(enabled: bool) -> void:
@@ -660,6 +691,7 @@ func get_equipped_weapon_item() -> EquipmentDefinition:
 
 
 func equip_owned_weapon(item: EquipmentDefinition) -> bool:
+	if get_meta(&"weapon_lesson_active",false): return false
 	if (
 		item == null
 		or weapon_catalog == null
@@ -902,6 +934,9 @@ func _try_execute_buffered_action() -> bool:
 		return request_primary_attack()
 	if action == BufferedAction.EVADE:
 		return evade_component.request_evade(action_direction)
+	if action == BufferedAction.WEAPON_TECHNIQUE:
+		_set_facing_direction(action_direction)
+		return request_weapon_technique()
 	var component := get_ability_component_for_slot(ability_slot)
 	if component == null:
 		return false

@@ -1,0 +1,215 @@
+{
+  "date": "2026-10-17",
+  "mode": "builtin_imagegen_edit",
+  "status": "adaptive_layout_review",
+  "runtime_changes": false,
+  "visibility_rule": "Only unlocked active skills appear; rows/frame grow or contract; no locked placeholders; stable key labels.",
+  "states": [
+    {
+      "id": "early_4",
+      "king": 4,
+      "weapon": 0,
+      "total": 4
+    },
+    {
+      "id": "growing_10",
+      "king": 6,
+      "weapon": 4,
+      "total": 10
+    },
+    {
+      "id": "full_20",
+      "king": 10,
+      "weapon": 10,
+      "total": 20
+    }
+  ],
+  "reused_a_full_20": "tmp/review/combat_hud_concepts_2026_10_16/d_twenty_skill_orbit.png",
+  "concepts": [
+    {
+      "id": "a_early_4",
+      "layout": "a",
+      "stage": "early_4",
+      "refs": [
+        "D:/React_ONLY_2026/GODOT-BATTLE-OF-GODS/tmp/review/combat_hud_concepts_2026_10_16/d_twenty_skill_orbit.png",
+        "D:/React_ONLY_2026/GODOT-BATTLE-OF-GODS/tmp/review/combat_hud_concepts_2026_10_16/a_relic_orbit.png"
+      ],
+      "prompt": "Use case: precise-object-edit, pixel-game HUD mockup. Produce one complete full-screen16:9 Battle of Gods gameplay preview. Input image1 is the EDIT TARGET and the chosen layout identity. Preserve its forest terrain, paths, trees, tiny black-haired red-scarf King/sword action, top-center ROOTBOUND HUSK enemy panel, top-left Bag/Menu controls and upper-right objective. Change only the BOTTOM PLAYER/ABILITY UI to demonstrate the exact unlocked-skill state described below. Input image2 is the supporting original style reference for this same layout. Retain original shaded pixel-RPG materials: crisp weathered silver/iron, near-black obsidian, ivory typography, tiny violet/cyan accents, red HP and thin blue-violet XP. No broad gold frame, giant wings or new screen overlays. UI must fit logical960x540 and remain reasonably compact: icon glyphs about28-32 logical pixels, key text at least10 logical pixels. Keep icon size CONSISTENT between early/mid/full samples; shrink the surrounding dock when fewer skills exist, never enlarge four icons into the width of ten. LOCKED AND NOT-YET-LEARNED SKILLS ARE COMPLETELY ABSENT: no padlocks, EMPTY cards, ghosts, vacant square slots, extra holes, unused reserved rectangles or blank skill rows. Only the expressly listed active skills have buttons. Cooling-down skills remain visible. Keep HP '1,240 / 1,600' (two lines for an orb), level12 exactly once, a slim XP strip '4,250 / 10,000 XP', a modest weapon badge with 'MASTERY 5', and one separate 'SPACE' dodge utility. No minimap. Treat portrait/weapon/dodge utilities as visually distinct from ability buttons so the exact skill count is unambiguous. No extra LMB attack button. All character/world artwork and top interface must retain the source composition. No arrows, annotation board, watermarks or big concept titles. Review-only illustrative values. Final image is one usable-looking gameplay screenshot.\n\nLAYOUT A — RELIC ORBIT. Preserve a compact central ruby HEALTH ORB with current/max digits inside and a single level12 plate beneath. Keep the orb at the same bottom-center anchor in every state. Skill groups flank the orb symmetrically. Thin original iron/violet frame, small portrait at far left, separate SPACE utility far right. The dock and XP strip CONTRACT around the actual populated groups. If weapon techniques exist, they occupy the upper row and King powers the lower row; otherwise the weapon row and its header disappear entirely.\n\nUNLOCK STATE — EARLY, EXACTLY FOUR ABILITY BUTTONS TOTAL. There are FOUR King powers labeled exactly1,2,3,4 and ZERO weapon techniques. Remove every F-key button and the entire empty weapon-skill row/header. A: place King1,2 LEFT of the orb, King3,4 RIGHT. B/C: one compact row of King1,2,3,4. Four distinct painted power glyphs, all available; no cooldown numeral needed. Maintain small ordinary icon sizes and significantly contract the frame/HP or XP dock to match this small group. Absolutely NO extra skills, no locked cards, no F labels. COUNT exactly4 numbered skill icons.",
+      "output": "tmp/review/combat_hud_adaptive_2026_10_17/a_early_4.png",
+      "output_width": 1672,
+      "output_height": 941,
+      "output_bytes": 2014644,
+      "output_sha256": "30fa0d70e9df01814414cffe7c43faa10ba81d6c61076c13051f27863b0da4f1",
+      "review": {
+        "visually_counted_king": 4,
+        "visually_counted_weapon": 0,
+        "locked_placeholder_slots": false,
+        "empty_weapon_row_hidden": true,
+        "owner_selected": false
+      }
+    },
+    {
+      "id": "a_growing_10",
+      "layout": "a",
+      "stage": "growing_10",
+      "refs": [
+        "D:/React_ONLY_2026/GODOT-BATTLE-OF-GODS/tmp/review/combat_hud_concepts_2026_10_16/d_twenty_skill_orbit.png",
+        "D:/React_ONLY_2026/GODOT-BATTLE-OF-GODS/tmp/review/combat_hud_concepts_2026_10_16/a_relic_orbit.png"
+      ],
+      "prompt": "Use case: precise-object-edit, pixel-game HUD mockup. Produce one complete full-screen16:9 Battle of Gods gameplay preview. Input image1 is the EDIT TARGET and the chosen layout identity. Preserve its forest terrain, paths, trees, tiny black-haired red-scarf King/sword action, top-center ROOTBOUND HUSK enemy panel, top-left Bag/Menu controls and upper-right objective. Change only the BOTTOM PLAYER/ABILITY UI to demonstrate the exact unlocked-skill state described below. Input image2 is the supporting original style reference for this same layout. Retain original shaded pixel-RPG materials: crisp weathered silver/iron, near-black obsidian, ivory typography, tiny violet/cyan accents, red HP and thin blue-violet XP. No broad gold frame, giant wings or new screen overlays. UI must fit logical960x540 and remain reasonably compact: icon glyphs about28-32 logical pixels, key text at least10 logical pixels. Keep icon size CONSISTENT between early/mid/full samples; shrink the surrounding dock when fewer skills exist, never enlarge four icons into the width of ten. LOCKED AND NOT-YET-LEARNED SKILLS ARE COMPLETELY ABSENT: no padlocks, EMPTY cards, ghosts, vacant square slots, extra holes, unused reserved rectangles or blank skill rows. Only the expressly listed active skills have buttons. Cooling-down skills remain visible. Keep HP '1,240 / 1,600' (two lines for an orb), level12 exactly once, a slim XP strip '4,250 / 10,000 XP', a modest weapon badge with 'MASTERY 5', and one separate 'SPACE' dodge utility. No minimap. Treat portrait/weapon/dodge utilities as visually distinct from ability buttons so the exact skill count is unambiguous. No extra LMB attack button. All character/world artwork and top interface must retain the source composition. No arrows, annotation board, watermarks or big concept titles. Review-only illustrative values. Final image is one usable-looking gameplay screenshot.\n\nLAYOUT A — RELIC ORBIT. Preserve a compact central ruby HEALTH ORB with current/max digits inside and a single level12 plate beneath. Keep the orb at the same bottom-center anchor in every state. Skill groups flank the orb symmetrically. Thin original iron/violet frame, small portrait at far left, separate SPACE utility far right. The dock and XP strip CONTRACT around the actual populated groups. If weapon techniques exist, they occupy the upper row and King powers the lower row; otherwise the weapon row and its header disappear entirely.\n\nUNLOCK STATE — DEVELOPING, EXACTLY TEN ABILITY BUTTONS TOTAL: FOUR weapon techniques F1,F2,F3,F4 and SIX King powers1,2,3,4,5,6. A: upper row F1,F2 LEFT of orb and F3,F4 RIGHT; lower row King1,2,3 LEFT and King4,5,6 RIGHT. B/C: upper row contains ONLY F1,F2,F3,F4; lower row ONLY1,2,3,4,5,6. Distinct legible skill glyphs. One King skill can show6.2 cooldown. There is NO F5 or later and NO King7 or later, no reserved empty cells. Moderate dock width between the early four-slot and full twenty-slot versions. COUNT exactly4 F-key icons plus6 numeric icons.",
+      "output": "tmp/review/combat_hud_adaptive_2026_10_17/a_growing_10.png",
+      "output_width": 1671,
+      "output_height": 941,
+      "output_bytes": 2023118,
+      "output_sha256": "0faf5f8f7fdd89d93b98b15fbba6f8adee77fa498850a55588ea4517a1f76c13",
+      "review": {
+        "visually_counted_king": 6,
+        "visually_counted_weapon": 4,
+        "locked_placeholder_slots": false,
+        "empty_weapon_row_hidden": false,
+        "owner_selected": false
+      }
+    },
+    {
+      "id": "b_early_4",
+      "layout": "b",
+      "stage": "early_4",
+      "refs": [
+        "D:/React_ONLY_2026/GODOT-BATTLE-OF-GODS/tmp/review/combat_hud_concepts_2026_10_16/b_portrait_command.png",
+        "D:/React_ONLY_2026/GODOT-BATTLE-OF-GODS/tmp/review/combat_hud_concepts_2026_10_16/b_portrait_command.png"
+      ],
+      "prompt": "Use case: precise-object-edit, pixel-game HUD mockup. Produce one complete full-screen16:9 Battle of Gods gameplay preview. Input image1 is the EDIT TARGET and the chosen layout identity. Preserve its forest terrain, paths, trees, tiny black-haired red-scarf King/sword action, top-center ROOTBOUND HUSK enemy panel, top-left Bag/Menu controls and upper-right objective. Change only the BOTTOM PLAYER/ABILITY UI to demonstrate the exact unlocked-skill state described below. Input image2 is the supporting original style reference for this same layout. Retain original shaded pixel-RPG materials: crisp weathered silver/iron, near-black obsidian, ivory typography, tiny violet/cyan accents, red HP and thin blue-violet XP. No broad gold frame, giant wings or new screen overlays. UI must fit logical960x540 and remain reasonably compact: icon glyphs about28-32 logical pixels, key text at least10 logical pixels. Keep icon size CONSISTENT between early/mid/full samples; shrink the surrounding dock when fewer skills exist, never enlarge four icons into the width of ten. LOCKED AND NOT-YET-LEARNED SKILLS ARE COMPLETELY ABSENT: no padlocks, EMPTY cards, ghosts, vacant square slots, extra holes, unused reserved rectangles or blank skill rows. Only the expressly listed active skills have buttons. Cooling-down skills remain visible. Keep HP '1,240 / 1,600' (two lines for an orb), level12 exactly once, a slim XP strip '4,250 / 10,000 XP', a modest weapon badge with 'MASTERY 5', and one separate 'SPACE' dodge utility. No minimap. Treat portrait/weapon/dodge utilities as visually distinct from ability buttons so the exact skill count is unambiguous. No extra LMB attack button. All character/world artwork and top interface must retain the source composition. No arrows, annotation board, watermarks or big concept titles. Review-only illustrative values. Final image is one usable-looking gameplay screenshot.\n\nLAYOUT B — PORTRAIT COMMAND. NO health orb. Preserve King face in a compact hexagonal iron portrait at the LEFT end of a horizontal bottom-center command dock, with level12 on its lower rim. Red numeric HP bar extends RIGHT from the portrait immediately above the King skill row. Weapon skills, when present, form a smaller UPPER row above the HP bar. King skills form the LOWER row. Do NOT split rows around an orb and do not add empty portrait-shaped cells. Use original navy/iron/violet identity with lighter narrow frame. Width adapts to the longest populated row plus portrait and a small separate SPACE utility; shorter rows end naturally with no filler slots. XP is a slim strip below.\n\nUNLOCK STATE — EARLY, EXACTLY FOUR ABILITY BUTTONS TOTAL. There are FOUR King powers labeled exactly1,2,3,4 and ZERO weapon techniques. Remove every F-key button and the entire empty weapon-skill row/header. A: place King1,2 LEFT of the orb, King3,4 RIGHT. B/C: one compact row of King1,2,3,4. Four distinct painted power glyphs, all available; no cooldown numeral needed. Maintain small ordinary icon sizes and significantly contract the frame/HP or XP dock to match this small group. Absolutely NO extra skills, no locked cards, no F labels. COUNT exactly4 numbered skill icons.",
+      "output": "tmp/review/combat_hud_adaptive_2026_10_17/b_early_4.png",
+      "output_width": 1672,
+      "output_height": 941,
+      "output_bytes": 2172243,
+      "output_sha256": "baf5d3afb0ad3ac3c38b2adf4546d1625ca5d728894f0f72a552c76ed9aaf2f0",
+      "review": {
+        "visually_counted_king": 4,
+        "visually_counted_weapon": 0,
+        "locked_placeholder_slots": false,
+        "empty_weapon_row_hidden": true,
+        "owner_selected": false
+      }
+    },
+    {
+      "id": "b_growing_10",
+      "layout": "b",
+      "stage": "growing_10",
+      "refs": [
+        "D:/React_ONLY_2026/GODOT-BATTLE-OF-GODS/tmp/review/combat_hud_concepts_2026_10_16/b_portrait_command.png",
+        "D:/React_ONLY_2026/GODOT-BATTLE-OF-GODS/tmp/review/combat_hud_concepts_2026_10_16/b_portrait_command.png"
+      ],
+      "prompt": "Use case: precise-object-edit, pixel-game HUD mockup. Produce one complete full-screen16:9 Battle of Gods gameplay preview. Input image1 is the EDIT TARGET and the chosen layout identity. Preserve its forest terrain, paths, trees, tiny black-haired red-scarf King/sword action, top-center ROOTBOUND HUSK enemy panel, top-left Bag/Menu controls and upper-right objective. Change only the BOTTOM PLAYER/ABILITY UI to demonstrate the exact unlocked-skill state described below. Input image2 is the supporting original style reference for this same layout. Retain original shaded pixel-RPG materials: crisp weathered silver/iron, near-black obsidian, ivory typography, tiny violet/cyan accents, red HP and thin blue-violet XP. No broad gold frame, giant wings or new screen overlays. UI must fit logical960x540 and remain reasonably compact: icon glyphs about28-32 logical pixels, key text at least10 logical pixels. Keep icon size CONSISTENT between early/mid/full samples; shrink the surrounding dock when fewer skills exist, never enlarge four icons into the width of ten. LOCKED AND NOT-YET-LEARNED SKILLS ARE COMPLETELY ABSENT: no padlocks, EMPTY cards, ghosts, vacant square slots, extra holes, unused reserved rectangles or blank skill rows. Only the expressly listed active skills have buttons. Cooling-down skills remain visible. Keep HP '1,240 / 1,600' (two lines for an orb), level12 exactly once, a slim XP strip '4,250 / 10,000 XP', a modest weapon badge with 'MASTERY 5', and one separate 'SPACE' dodge utility. No minimap. Treat portrait/weapon/dodge utilities as visually distinct from ability buttons so the exact skill count is unambiguous. No extra LMB attack button. All character/world artwork and top interface must retain the source composition. No arrows, annotation board, watermarks or big concept titles. Review-only illustrative values. Final image is one usable-looking gameplay screenshot.\n\nLAYOUT B — PORTRAIT COMMAND. NO health orb. Preserve King face in a compact hexagonal iron portrait at the LEFT end of a horizontal bottom-center command dock, with level12 on its lower rim. Red numeric HP bar extends RIGHT from the portrait immediately above the King skill row. Weapon skills, when present, form a smaller UPPER row above the HP bar. King skills form the LOWER row. Do NOT split rows around an orb and do not add empty portrait-shaped cells. Use original navy/iron/violet identity with lighter narrow frame. Width adapts to the longest populated row plus portrait and a small separate SPACE utility; shorter rows end naturally with no filler slots. XP is a slim strip below.\n\nUNLOCK STATE — DEVELOPING, EXACTLY TEN ABILITY BUTTONS TOTAL: FOUR weapon techniques F1,F2,F3,F4 and SIX King powers1,2,3,4,5,6. A: upper row F1,F2 LEFT of orb and F3,F4 RIGHT; lower row King1,2,3 LEFT and King4,5,6 RIGHT. B/C: upper row contains ONLY F1,F2,F3,F4; lower row ONLY1,2,3,4,5,6. Distinct legible skill glyphs. One King skill can show6.2 cooldown. There is NO F5 or later and NO King7 or later, no reserved empty cells. Moderate dock width between the early four-slot and full twenty-slot versions. COUNT exactly4 F-key icons plus6 numeric icons.",
+      "output": "tmp/review/combat_hud_adaptive_2026_10_17/b_growing_10.png",
+      "output_width": 1672,
+      "output_height": 941,
+      "output_bytes": 2182462,
+      "output_sha256": "75cc2e6af5dfd12bcf917ac296740217a050cb6fb9d549f669a7063468041b55",
+      "review": {
+        "visually_counted_king": 6,
+        "visually_counted_weapon": 4,
+        "locked_placeholder_slots": false,
+        "empty_weapon_row_hidden": false,
+        "owner_selected": false
+      }
+    },
+    {
+      "id": "b_full_20",
+      "layout": "b",
+      "stage": "full_20",
+      "refs": [
+        "D:/React_ONLY_2026/GODOT-BATTLE-OF-GODS/tmp/review/combat_hud_concepts_2026_10_16/b_portrait_command.png",
+        "D:/React_ONLY_2026/GODOT-BATTLE-OF-GODS/tmp/review/combat_hud_concepts_2026_10_16/b_portrait_command.png"
+      ],
+      "prompt": "Use case: precise-object-edit, pixel-game HUD mockup. Produce one complete full-screen16:9 Battle of Gods gameplay preview. Input image1 is the EDIT TARGET and the chosen layout identity. Preserve its forest terrain, paths, trees, tiny black-haired red-scarf King/sword action, top-center ROOTBOUND HUSK enemy panel, top-left Bag/Menu controls and upper-right objective. Change only the BOTTOM PLAYER/ABILITY UI to demonstrate the exact unlocked-skill state described below. Input image2 is the supporting original style reference for this same layout. Retain original shaded pixel-RPG materials: crisp weathered silver/iron, near-black obsidian, ivory typography, tiny violet/cyan accents, red HP and thin blue-violet XP. No broad gold frame, giant wings or new screen overlays. UI must fit logical960x540 and remain reasonably compact: icon glyphs about28-32 logical pixels, key text at least10 logical pixels. Keep icon size CONSISTENT between early/mid/full samples; shrink the surrounding dock when fewer skills exist, never enlarge four icons into the width of ten. LOCKED AND NOT-YET-LEARNED SKILLS ARE COMPLETELY ABSENT: no padlocks, EMPTY cards, ghosts, vacant square slots, extra holes, unused reserved rectangles or blank skill rows. Only the expressly listed active skills have buttons. Cooling-down skills remain visible. Keep HP '1,240 / 1,600' (two lines for an orb), level12 exactly once, a slim XP strip '4,250 / 10,000 XP', a modest weapon badge with 'MASTERY 5', and one separate 'SPACE' dodge utility. No minimap. Treat portrait/weapon/dodge utilities as visually distinct from ability buttons so the exact skill count is unambiguous. No extra LMB attack button. All character/world artwork and top interface must retain the source composition. No arrows, annotation board, watermarks or big concept titles. Review-only illustrative values. Final image is one usable-looking gameplay screenshot.\n\nLAYOUT B — PORTRAIT COMMAND. NO health orb. Preserve King face in a compact hexagonal iron portrait at the LEFT end of a horizontal bottom-center command dock, with level12 on its lower rim. Red numeric HP bar extends RIGHT from the portrait immediately above the King skill row. Weapon skills, when present, form a smaller UPPER row above the HP bar. King skills form the LOWER row. Do NOT split rows around an orb and do not add empty portrait-shaped cells. Use original navy/iron/violet identity with lighter narrow frame. Width adapts to the longest populated row plus portrait and a small separate SPACE utility; shorter rows end naturally with no filler slots. XP is a slim strip below.\n\nUNLOCK STATE — FULL, EXACTLY TWENTY ABILITY BUTTONS TOTAL: TEN weapon techniques labeled F1,F2,F3,F4,F5,F6,F7,F8,F9,F10 in that order on the UPPER row and TEN King powers labeled1,2,3,4,5,6,7,8,9,0 in that order on the LOWER row. B/C: both rows are ten contiguous equally spaced slots, with no extra center gap or blank divider. Exactly one icon per key label, no skipped F5/F10 or5/0, no repeated keys. All20 have distinct RPG skill glyphs; one numeric skill shows6.2 cooldown and another is subdued, neither removed. Keep the full dock sensibly small at the bottom, with narrow frames and the central play area open. COUNT10 F-key icons and10 number-key icons before finishing. Utilities must NOT be mistaken for extra ability slots.",
+      "output": "tmp/review/combat_hud_adaptive_2026_10_17/b_full_20.png",
+      "output_width": 1671,
+      "output_height": 941,
+      "output_bytes": 2206763,
+      "output_sha256": "932d93b089b3b6f1f27d1a03915d7a500a49abc993ec93a105b469e949275280",
+      "review": {
+        "visually_counted_king": 10,
+        "visually_counted_weapon": 10,
+        "locked_placeholder_slots": false,
+        "empty_weapon_row_hidden": false,
+        "owner_selected": false
+      }
+    },
+    {
+      "id": "c_early_4",
+      "layout": "c",
+      "stage": "early_4",
+      "refs": [
+        "D:/React_ONLY_2026/GODOT-BATTLE-OF-GODS/tmp/review/combat_hud_concepts_2026_10_16/c_steel_ribbon.png",
+        "D:/React_ONLY_2026/GODOT-BATTLE-OF-GODS/tmp/review/combat_hud_concepts_2026_10_16/c_steel_ribbon.png"
+      ],
+      "prompt": "Use case: precise-object-edit, pixel-game HUD mockup. Produce one complete full-screen16:9 Battle of Gods gameplay preview. Input image1 is the EDIT TARGET and the chosen layout identity. Preserve its forest terrain, paths, trees, tiny black-haired red-scarf King/sword action, top-center ROOTBOUND HUSK enemy panel, top-left Bag/Menu controls and upper-right objective. Change only the BOTTOM PLAYER/ABILITY UI to demonstrate the exact unlocked-skill state described below. Input image2 is the supporting original style reference for this same layout. Retain original shaded pixel-RPG materials: crisp weathered silver/iron, near-black obsidian, ivory typography, tiny violet/cyan accents, red HP and thin blue-violet XP. No broad gold frame, giant wings or new screen overlays. UI must fit logical960x540 and remain reasonably compact: icon glyphs about28-32 logical pixels, key text at least10 logical pixels. Keep icon size CONSISTENT between early/mid/full samples; shrink the surrounding dock when fewer skills exist, never enlarge four icons into the width of ten. LOCKED AND NOT-YET-LEARNED SKILLS ARE COMPLETELY ABSENT: no padlocks, EMPTY cards, ghosts, vacant square slots, extra holes, unused reserved rectangles or blank skill rows. Only the expressly listed active skills have buttons. Cooling-down skills remain visible. Keep HP '1,240 / 1,600' (two lines for an orb), level12 exactly once, a slim XP strip '4,250 / 10,000 XP', a modest weapon badge with 'MASTERY 5', and one separate 'SPACE' dodge utility. No minimap. Treat portrait/weapon/dodge utilities as visually distinct from ability buttons so the exact skill count is unambiguous. No extra LMB attack button. All character/world artwork and top interface must retain the source composition. No arrows, annotation board, watermarks or big concept titles. Review-only illustrative values. Final image is one usable-looking gameplay screenshot.\n\nLAYOUT C — STEEL RIBBON. NO orb and NO portrait in the action dock. Preserve the small portrait/level12 token at TOP LEFT. Bottom-center action UI is the thinnest and least decorated of the variants: slender red numeric HP strip above a compact centered two-row skill ribbon (only one row if no weapon skills). Weapon techniques form one continuous UPPER row, King powers form one continuous LOWER row, with NO center gaps or extra divider cells. Frame fits the longer populated row and ends close to the last real icon; never pad shorter rows to ten with black cells. Small weapon badge at far left, separate modest SPACE utility at far right, thin full-width XP at absolute screen bottom. Restrained steel corner brackets, near-black backgrounds and minimal violet runes. Keep the largest clear world area.\n\nUNLOCK STATE — EARLY, EXACTLY FOUR ABILITY BUTTONS TOTAL. There are FOUR King powers labeled exactly1,2,3,4 and ZERO weapon techniques. Remove every F-key button and the entire empty weapon-skill row/header. A: place King1,2 LEFT of the orb, King3,4 RIGHT. B/C: one compact row of King1,2,3,4. Four distinct painted power glyphs, all available; no cooldown numeral needed. Maintain small ordinary icon sizes and significantly contract the frame/HP or XP dock to match this small group. Absolutely NO extra skills, no locked cards, no F labels. COUNT exactly4 numbered skill icons.",
+      "output": "tmp/review/combat_hud_adaptive_2026_10_17/c_early_4.png",
+      "output_width": 1672,
+      "output_height": 941,
+      "output_bytes": 2220617,
+      "output_sha256": "5e1939c0b46f1c6fd8d69bbf57e7ecb61b1ec3326647348c72bdbfa9daecdbf3",
+      "review": {
+        "visually_counted_king": 4,
+        "visually_counted_weapon": 0,
+        "locked_placeholder_slots": false,
+        "empty_weapon_row_hidden": true,
+        "owner_selected": false
+      }
+    },
+    {
+      "id": "c_growing_10",
+      "layout": "c",
+      "stage": "growing_10",
+      "refs": [
+        "D:/React_ONLY_2026/GODOT-BATTLE-OF-GODS/tmp/review/combat_hud_concepts_2026_10_16/c_steel_ribbon.png",
+        "D:/React_ONLY_2026/GODOT-BATTLE-OF-GODS/tmp/review/combat_hud_concepts_2026_10_16/c_steel_ribbon.png"
+      ],
+      "prompt": "Use case: precise-object-edit, pixel-game HUD mockup. Produce one complete full-screen16:9 Battle of Gods gameplay preview. Input image1 is the EDIT TARGET and the chosen layout identity. Preserve its forest terrain, paths, trees, tiny black-haired red-scarf King/sword action, top-center ROOTBOUND HUSK enemy panel, top-left Bag/Menu controls and upper-right objective. Change only the BOTTOM PLAYER/ABILITY UI to demonstrate the exact unlocked-skill state described below. Input image2 is the supporting original style reference for this same layout. Retain original shaded pixel-RPG materials: crisp weathered silver/iron, near-black obsidian, ivory typography, tiny violet/cyan accents, red HP and thin blue-violet XP. No broad gold frame, giant wings or new screen overlays. UI must fit logical960x540 and remain reasonably compact: icon glyphs about28-32 logical pixels, key text at least10 logical pixels. Keep icon size CONSISTENT between early/mid/full samples; shrink the surrounding dock when fewer skills exist, never enlarge four icons into the width of ten. LOCKED AND NOT-YET-LEARNED SKILLS ARE COMPLETELY ABSENT: no padlocks, EMPTY cards, ghosts, vacant square slots, extra holes, unused reserved rectangles or blank skill rows. Only the expressly listed active skills have buttons. Cooling-down skills remain visible. Keep HP '1,240 / 1,600' (two lines for an orb), level12 exactly once, a slim XP strip '4,250 / 10,000 XP', a modest weapon badge with 'MASTERY 5', and one separate 'SPACE' dodge utility. No minimap. Treat portrait/weapon/dodge utilities as visually distinct from ability buttons so the exact skill count is unambiguous. No extra LMB attack button. All character/world artwork and top interface must retain the source composition. No arrows, annotation board, watermarks or big concept titles. Review-only illustrative values. Final image is one usable-looking gameplay screenshot.\n\nLAYOUT C — STEEL RIBBON. NO orb and NO portrait in the action dock. Preserve the small portrait/level12 token at TOP LEFT. Bottom-center action UI is the thinnest and least decorated of the variants: slender red numeric HP strip above a compact centered two-row skill ribbon (only one row if no weapon skills). Weapon techniques form one continuous UPPER row, King powers form one continuous LOWER row, with NO center gaps or extra divider cells. Frame fits the longer populated row and ends close to the last real icon; never pad shorter rows to ten with black cells. Small weapon badge at far left, separate modest SPACE utility at far right, thin full-width XP at absolute screen bottom. Restrained steel corner brackets, near-black backgrounds and minimal violet runes. Keep the largest clear world area.\n\nUNLOCK STATE — DEVELOPING, EXACTLY TEN ABILITY BUTTONS TOTAL: FOUR weapon techniques F1,F2,F3,F4 and SIX King powers1,2,3,4,5,6. A: upper row F1,F2 LEFT of orb and F3,F4 RIGHT; lower row King1,2,3 LEFT and King4,5,6 RIGHT. B/C: upper row contains ONLY F1,F2,F3,F4; lower row ONLY1,2,3,4,5,6. Distinct legible skill glyphs. One King skill can show6.2 cooldown. There is NO F5 or later and NO King7 or later, no reserved empty cells. Moderate dock width between the early four-slot and full twenty-slot versions. COUNT exactly4 F-key icons plus6 numeric icons.",
+      "output": "tmp/review/combat_hud_adaptive_2026_10_17/c_growing_10.png",
+      "output_width": 1672,
+      "output_height": 941,
+      "output_bytes": 2305332,
+      "output_sha256": "6eb01c3690f8d71ef0ab4d3ccf5b0f659c24de620631f19644af48b4138eaf08",
+      "review": {
+        "visually_counted_king": 6,
+        "visually_counted_weapon": 4,
+        "locked_placeholder_slots": false,
+        "empty_weapon_row_hidden": false,
+        "owner_selected": false
+      }
+    },
+    {
+      "id": "c_full_20",
+      "layout": "c",
+      "stage": "full_20",
+      "refs": [
+        "D:/React_ONLY_2026/GODOT-BATTLE-OF-GODS/tmp/review/combat_hud_concepts_2026_10_16/c_steel_ribbon.png",
+        "D:/React_ONLY_2026/GODOT-BATTLE-OF-GODS/tmp/review/combat_hud_concepts_2026_10_16/c_steel_ribbon.png"
+      ],
+      "prompt": "Use case: precise-object-edit, pixel-game HUD mockup. Produce one complete full-screen16:9 Battle of Gods gameplay preview. Input image1 is the EDIT TARGET and the chosen layout identity. Preserve its forest terrain, paths, trees, tiny black-haired red-scarf King/sword action, top-center ROOTBOUND HUSK enemy panel, top-left Bag/Menu controls and upper-right objective. Change only the BOTTOM PLAYER/ABILITY UI to demonstrate the exact unlocked-skill state described below. Input image2 is the supporting original style reference for this same layout. Retain original shaded pixel-RPG materials: crisp weathered silver/iron, near-black obsidian, ivory typography, tiny violet/cyan accents, red HP and thin blue-violet XP. No broad gold frame, giant wings or new screen overlays. UI must fit logical960x540 and remain reasonably compact: icon glyphs about28-32 logical pixels, key text at least10 logical pixels. Keep icon size CONSISTENT between early/mid/full samples; shrink the surrounding dock when fewer skills exist, never enlarge four icons into the width of ten. LOCKED AND NOT-YET-LEARNED SKILLS ARE COMPLETELY ABSENT: no padlocks, EMPTY cards, ghosts, vacant square slots, extra holes, unused reserved rectangles or blank skill rows. Only the expressly listed active skills have buttons. Cooling-down skills remain visible. Keep HP '1,240 / 1,600' (two lines for an orb), level12 exactly once, a slim XP strip '4,250 / 10,000 XP', a modest weapon badge with 'MASTERY 5', and one separate 'SPACE' dodge utility. No minimap. Treat portrait/weapon/dodge utilities as visually distinct from ability buttons so the exact skill count is unambiguous. No extra LMB attack button. All character/world artwork and top interface must retain the source composition. No arrows, annotation board, watermarks or big concept titles. Review-only illustrative values. Final image is one usable-looking gameplay screenshot.\n\nLAYOUT C — STEEL RIBBON. NO orb and NO portrait in the action dock. Preserve the small portrait/level12 token at TOP LEFT. Bottom-center action UI is the thinnest and least decorated of the variants: slender red numeric HP strip above a compact centered two-row skill ribbon (only one row if no weapon skills). Weapon techniques form one continuous UPPER row, King powers form one continuous LOWER row, with NO center gaps or extra divider cells. Frame fits the longer populated row and ends close to the last real icon; never pad shorter rows to ten with black cells. Small weapon badge at far left, separate modest SPACE utility at far right, thin full-width XP at absolute screen bottom. Restrained steel corner brackets, near-black backgrounds and minimal violet runes. Keep the largest clear world area.\n\nUNLOCK STATE — FULL, EXACTLY TWENTY ABILITY BUTTONS TOTAL: TEN weapon techniques labeled F1,F2,F3,F4,F5,F6,F7,F8,F9,F10 in that order on the UPPER row and TEN King powers labeled1,2,3,4,5,6,7,8,9,0 in that order on the LOWER row. B/C: both rows are ten contiguous equally spaced slots, with no extra center gap or blank divider. Exactly one icon per key label, no skipped F5/F10 or5/0, no repeated keys. All20 have distinct RPG skill glyphs; one numeric skill shows6.2 cooldown and another is subdued, neither removed. Keep the full dock sensibly small at the bottom, with narrow frames and the central play area open. COUNT10 F-key icons and10 number-key icons before finishing. Utilities must NOT be mistaken for extra ability slots.",
+      "output": "tmp/review/combat_hud_adaptive_2026_10_17/c_full_20.png",
+      "output_width": 1672,
+      "output_height": 941,
+      "output_bytes": 2167356,
+      "output_sha256": "a710d57c3420a07a1deb4da0ad3657c4312a5a0effb6421f9393312abb829052",
+      "review": {
+        "visually_counted_king": 10,
+        "visually_counted_weapon": 10,
+        "locked_placeholder_slots": false,
+        "empty_weapon_row_hidden": false,
+        "owner_selected": false
+      }
+    }
+  ],
+  "gallery": "tmp/review/combat_hud_adaptive_2026_10_17/index.html",
+  "verification": {
+    "gallery_images_present": 9,
+    "new_images_generated": 8,
+    "production_files_unchanged": 653,
+    "runtime_changes": 0,
+    "gallery_javascript_syntax": "passed node --check",
+    "notes": "Layout studies, not native-sized runtime assets. Some decorative text, icon artwork and physical icon dimensions vary; rebuild native controls with consistent icons, keybinds and metrics after selection."
+  }
+}

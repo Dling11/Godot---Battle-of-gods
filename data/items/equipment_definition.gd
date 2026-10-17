@@ -97,6 +97,19 @@ func get_rarity_color() -> Color:
 	return Color.WHITE
 
 
+func get_rarity_rank() -> int:
+	# Serialized rarity IDs are historical, not ascending presentation tiers.
+	match rarity:
+		Rarity.WOOD: return 0
+		Rarity.STONE: return 1
+		Rarity.IRON: return 2
+		Rarity.A_GRADE, Rarity.RARE: return 3
+		Rarity.S_GRADE: return 4
+		Rarity.LEGENDARY: return 5
+		Rarity.MYTHIC: return 6
+	return 0
+
+
 func get_stat_summary() -> String:
 	if weapon_definition != null:
 		if show_combo_details:

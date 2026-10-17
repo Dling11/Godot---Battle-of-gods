@@ -1,0 +1,152 @@
+{
+  "date": "2026-10-18",
+  "decision": 234,
+  "status": "Owner provisionally likes233 layout/dummy idea. Requested younger hooded mentor/shadow/lodge/posts234 installed for review; native art/feel approval pending.",
+  "tools": "image_gen.imagegen; Godot Image nearest-neighbor packing and binary alpha threshold only",
+  "source_directory": "C:/Users/Administrator/.codex/generated_images/01a0eed4-5878-7032-a315-e493f92ce97a",
+  "generation": [
+    {
+      "file": "exec-feed4c3b-e180-46a1-aeb2-ffdefbb01d99.png",
+      "target": "assets/characters/npcs/veyr/idle.png",
+      "tool": "built-in image_gen.imagegen",
+      "prompt": "Edit this production pixel-art NPC sprite sheet into a new YOUNG ADULT hooded weapons master for the same top-down 3/4 RPG. Replace the old veteran entirely; no grey hair, no beard, no elderly face. Eight COMPLETE connected actors, exact 4 columns by 2 rows of equal square cells on transparent background. Maintain the existing game's crisp dark outlines, small pixel clusters, earthy brown boots/gloves, restrained blue-grey steel and upper-left lighting. Veyr: confident young mortal man in his late twenties, dark teal hood with a short charcoal shoulder cloak, face visible under hood, dark hair, calm dark eyes, fitted slate leather tunic, brown belt and gloves, slim agile proportions, ordinary planted boots. Two readable compact crossed sheathed swords and ONE narrow axe haft across back; weapons fit below hood and inside actor silhouette, practical backpack-style mount, no giant weapon. Small steel buckles and one pale-blue sash accent, no glowing eyes or gold, no red scarf. Natural arms relaxed by belt; connected neck/head/torso and fully readable hands, NO pasted anatomy. Each actor faces south with a slight three-quarter turn, exactly the same costume/proportions/scale, subtle eight-frame breathing/cloth movement only. Head/boots remain steady, no lateral swaying, no direction change, no camera change. Registration: actor about57% of each square cell height, centered horizontally; boot sole at81.25% of cell height; head top around22%. Clear gaps between cells. Whole actors uncut. Transparent background including every gap, NO shadows or floor, no labels, no grid lines. This will be mechanically fitted into96px cells, rendered at0.5 scale, so face and weapons must read at roughly29 world pixels high. Authentic top-down RPG pixel art; no smooth illustration, no oversized chibi head or heavy broad shoulders. Make the hood/cape silhouette cool, young and recognizable.",
+      "registration": "Eight complete96px cels, whole actors57px high, common boot baseline78; one uniform scale ratio, whole-pose boot alignment only. Runtime0.5/y=-15 yields28.5 world pixels. Stationary Orren-style18x6 shadow at y=-2/z=-2."
+    },
+    {
+      "file": "exec-7b5bb053-7b63-4687-808d-83ca4e782c63.png",
+      "target": "assets/environment/sanctuary/weapon_court/training_pavilion.png",
+      "tool": "built-in image_gen.imagegen",
+      "prompt": "Edit this RPG pixel-art weapons pavilion into a better outfitted mentor's arms lodge. Preserve its exact low open-front silhouette, blue-grey slate roof, warm timber, grey stone footings, top-down3/4 south-facing camera, upper-left light, dark crisp pixel edges, same aspect ratio and scale. Replace the sparse rear wall with a clear orderly steel weapon display: a VERY LARGE greatsword center-left, paired short swords crossed center, single broad axe to right, long curved iron scythe on the far side. Blades point in sensible mounted directions, hilts clearly attached, separate silhouettes, no visual pile-up. Put a compact brown equipment chest and rolled dark-blue cloth under the roof; a few small iron buckles/tools and a little sharpening wheel at left. Add two short muted teal hanging banners to visually match a young hooded mentor. Roof remains clean and readable with one restrained steel crest or crossed-blades emblem at gable; no text or golden icons. Open front fully readable at native232x152 resolution. Entire building stays within same occupied outline as reference; do NOT enlarge building, add a house extension or floor/courtyard. Keep shallow stone base only. No people, no training dummies, no trees, no ground outside its base, no cast shadows, no particles. Complete unclipped transparent background. Authentic pixel-art clusters, dark outlines, no smooth painterly AI fantasy style. Practical and cool weapon dojo with displayed gear, coherent with the original woodland Sanctuary buildings.",
+      "registration": "232x152 canvas; occupied224x122; base148; uniform nearest resize/binary alpha. Existing world position256,16; sprite y=-72;208x24 collision/canopy reveal unchanged."
+    },
+    {
+      "file": "exec-2015b552-eabc-4371-8a69-d45394e96ad8.png",
+      "target": "assets/environment/sanctuary/weapon_court/training_post.png",
+      "tool": "built-in image_gen.imagegen",
+      "prompt": "Edit this tiny top-down3/4 fantasy RPG training dummy into a crisp readable four-frame hit-reaction sprite sheet. Transparent background. Exactly FOUR columns in ONE row, equal SQUARE cells, ample clean margins. SAME dummy every frame: compact straw torso on a sturdy dark wood upright, small round dark-teal padded chest target with two clear stitched concentric rings, brown leather straps, two short straw arm bundles, visible rope ties, iron-reinforced short cross base. No face, no human, no weapons, no writing. Detailed clean pixel clusters with hard dark outlines, matching woodland stone-and-timber RPG props, upper-left light. FIRST frame fully upright at rest, SECOND straw torso yields slightly left under a strike, THIRD yields slightly right with opposite recoil, FOURTH settles upright. Feet/base remain IDENTICAL and centered on same baseline across all four cels, complete post never cropped; only straw and cloth deform subtly. Head/target never disappears, no broken components, no color changes. Base sole at84% cell height; whole prop about72% cell height; body width48%. Reactions should be subtle3-5degrees equivalent, no large scale change. No floor, no shadow, no effect bursts, no sparks, no hit numbers, no grid lines. Four individually complete props suitable for mechanical nearest reduction into64px square cells and world size about32px tall. Authentic pixel-art target with legible steel/rope/cloth/straw separation, not a painterly illustration.",
+      "registration": "Four complete64px cels in256x64 atlas;48-49px occupied height, base54; same reduction ratio and whole-base centering. Runtime0.65/y=-14.3;0.24s event-only reaction without moving collision."
+    },
+    {
+      "file": "exec-897b5634-ca64-4a4d-908f-cec1f96f83b1.png",
+      "target": "assets/environment/sanctuary/weapon_court/veil_gate.png",
+      "prompt": "Original production pixel-art landmark for a top-down 3/4 fantasy RPG sanctuary: THE VEIL GATE, a quiet mysterious expedition gateway. Use attached existing portal only for camera perspective, native pixel-density and overall footprint. Redesign its old golden angel statues as a grounded weathered grey blue stone arch with iron-silver inset rails, small chipped runic marks, two compact buttresses, tiny violet crystals tucked inside corners, a dignified ancient doorway. No angel statues, no giant skull, no demon, no spoilers, no gold. Strong readable silhouette and hard dark pixel outlines, hand-placed pixel clusters, restrained forest sanctuary palette with upper-left lighting. Detailed enough for RPG but not fussy/photoreal. Complete upright gateway centered, arch maximum width72% canvas, height83%, flat short threshold at90% canvas. Camera looks slightly down from south with visible thin top planes, matches attached sprite. Deep dark transparent opening through center, NO painted energy in opening: leave aperture transparent so game can animate a subtle violet veil separately. Pure TRANSPARENT background outside structure and through doorway. No floor tile, no scenery, no cast shadow, no title or letters, no mockup, no multiple versions, single game sprite. Square canvas, ideally768x768 to be nearest-resampled mechanically into a192px sprite. Crisp recognizable stone blocks not smooth glossy fantasy illustration. A gateway a small hero can step up to; warm sanctuary stone with cool iron and dim violet accents.",
+      "registration": "192px canvas; occupied maximum184px; 4px foot padding; fixed structure y=-92"
+    }
+  ],
+  "energy": "veil_energy.png is a lossless44x112 extraction at(44,0) from the retired four-cell Sanctuary energy atlas. Only light pulses; masonry/aperture registration is fixed.",
+  "retention": "Only final installed rasters, compact prompts/provenance and current review evidence. No raw sheets or permanent archive in this repository.",
+  "retired_assets": [
+    {
+      "path": "assets/environment/sanctuary/landmarks/angel_expedition_portal_ground_192x192.png",
+      "bytes": 8050,
+      "sha256": "d341898f662416bcfbb6929a1d760e0af7f0f5e82ca319ba4fc39a72caa961b9"
+    },
+    {
+      "path": "assets/environment/sanctuary/landmarks/generated/angel_expedition_portal_static_192x256.png",
+      "bytes": 75023,
+      "sha256": "33ce0226c5b10420e4d089d0e8c125a1e6af95f6b8bada2b62c9c93b3b1d8f11"
+    },
+    {
+      "path": "assets/environment/sanctuary/landmarks/generated/sanctuary_portal_energy_4x_44x112.png",
+      "bytes": 61667,
+      "sha256": "1c61194e1c0b7e48aad30dbbb95158ba5ffed8919ef8f2e1f742d707ed562b84"
+    }
+  ],
+  "final_assets": [
+    {
+      "path": "assets/characters/npcs/veyr/idle.png",
+      "bytes": 33743,
+      "sha256": "bc010548248272432fa5a9a3401d9a65441cc8f49bd38b3fb568979a4a74c2a4"
+    },
+    {
+      "path": "assets/environment/sanctuary/weapon_court/veil_gate.png",
+      "bytes": 47922,
+      "sha256": "ae204c6a5a5b52c3e3b06336b4357a4a8dcae891b1a03b8a3ee1b4d6eac15b7d"
+    },
+    {
+      "path": "assets/environment/sanctuary/weapon_court/training_post.png",
+      "bytes": 10761,
+      "sha256": "56853a235c33f23c3e6761cf522f08a067f8175733367d4e273c05760370a827"
+    },
+    {
+      "path": "assets/environment/sanctuary/weapon_court/veil_energy.png",
+      "bytes": 13225,
+      "sha256": "18d3cf62d1a6154d22a450192a94bf97595cd835b144805d37eaa78b4afb06b4"
+    },
+    {
+      "path": "assets/environment/sanctuary/weapon_court/training_pavilion.png",
+      "bytes": 46488,
+      "sha256": "4787ec995e43cbfa86adbb552884bb1e5be626c25f1c79b33c41a88a4ff82298"
+    }
+  ],
+  "preserved_prior_assets": 689,
+  "verification": {
+    "engine": "4.7.2.stable.official.ed1daf0bf",
+    "headless": {
+      "weapon_mentor": {
+        "checks": 181,
+        "failures": 0
+      },
+      "sanctuary_hub": {
+        "checks": 67,
+        "failures": 0
+      },
+      "eira_skills": {
+        "checks": 73,
+        "failures": 0
+      },
+      "runtime_archive_boundary": "pass",
+      "editor_import": "pass"
+    },
+    "protected_asset_hashes": 692,
+    "prior_assets_unchanged": 689,
+    "requested_png_replacements": 3,
+    "profile_hashes_unchanged": {
+      "primary": "4f8bb6beafa4a7ba24a9244433454f9450a73a6a376e1865ead65ac41992acf2",
+      "backup": "156251d6d55aa77938edefd51e213f43e0370ffd6da02534625c2810d9a8505c"
+    },
+    "native_windows_opened": false,
+    "native_owner_review": "pending",
+    "previews": "tmp/review/sanctuary_234/",
+    "logs": "tmp/test_logs/sanctuary_234/"
+  },
+  "layout": {
+    "source": "levels/sanctuary/town/sanctuary_layout.gd",
+    "mentor": [
+      368,
+      80
+    ],
+    "mentor_approach": [
+      368,
+      116
+    ],
+    "pavilion": [
+      256,
+      16
+    ],
+    "gate": [
+      864,
+      128
+    ],
+    "gate_approach": [
+      864,
+      176
+    ],
+    "ground": "36x28, top row-4, y=-128..768",
+    "player_bounds": [
+      56,
+      -72,
+      1040,
+      784
+    ],
+    "walls": "North/west/east perimeter; remove y224 internal barriers",
+    "posts_scale": 0.65
+  },
+  "post_presentation": {
+    "source": "entities/training/presentation/weapon_training_post.gd",
+    "signal": "HealthComponent.damaged",
+    "recoil_seconds": 0.24,
+    "reused_flecks": 4,
+    "modifies_collision_or_proof": false
+  }
+}

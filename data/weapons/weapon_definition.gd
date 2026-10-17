@@ -5,6 +5,8 @@ extends Resource
 
 @export var weapon_id: StringName
 @export var display_name: String = "Weapon"
+## Presentation label only; this does not grant family mastery or XP.
+@export var family_display_name := "Sword"
 @export var world_texture: Texture2D
 ## Character-authored signature weapons may be drawn inside body action frames
 ## instead of requiring a second detached world sprite.

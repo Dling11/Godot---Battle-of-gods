@@ -10,6 +10,7 @@ points = PackedVector2Array(2,-14,20,-40,56,-34,72,0,56,34,20,40,2,14)
 script = ExtResource("1")
 weapon_id = &"weapon_king_iron_beard_axe"
 display_name = "Iron Beard Axe"
+family_display_name = "Axe"
 uses_integrated_visual = true
 family_presentation = ExtResource("3")
 melee_hitbox_shape = SubResource("shape")

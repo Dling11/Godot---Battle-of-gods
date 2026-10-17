@@ -1,5 +1,25 @@
 # Decisions Index
 
+- [234 — Hooded Veyr and responsive training court](docs/decisions/234-hooded-veyr-and-responsive-training-court.md): younger hooded mentor, grounded shadow, same-size weapon-filled pavilion and event-driven post recoil. Preserve 233 layout/scale and 232 learning rules; owner art review pending.
+
+- [233 — NPC world scale and northern service courts](docs/decisions/233-sanctuary-world-scale-and-service-courts.md): correct Veyr's missed0.5 transform, add a furnished northwest weapons pavilion, move the gate northeast, and rebuild perimeter/paths with a smaller extension. Preserve232 learning/forging and prior artwork.
+
+- [232 — Veyr, first Axe proof and Sanctuary gate](docs/decisions/232-veyr-axe-proof-and-sanctuary-gate.md): northern court, real-action learning/permanent Cyclone, proof-opened Nema forging, mastery proof ribbon and fixed Sanctuary gate/route selection. Other family/evolution work remains future; owner native review pending.
+
+- [231 — Final Cyclone motion and archive closeout](docs/decisions/231-final-cyclone-motion-and-closeout.md): owner accepts paired body/cut animation for now; install it with the accepted blue outer/C contact/sparks, reuse ordinary Axe settle poses, retire old sheets and remove trial archives. Preserve230 mechanics/audio and687 earlier protected assets.
+
+- [230 — Full-duration Cyclone and readable skill facts](docs/decisions/230-continuous-cyclone-and-skill-facts.md): presentation superseded by231; retain recorded cues,96px radius, fixed Physical total, full-duration repeated F1, right-click steering, aim replacement and colored damage/protection facts. Future evolved-axe/F1 progression documented, not earned.
+
+- [229 — Fast Axe Blade Guard](docs/decisions/229-fast-axe-blade-guard.md): owner-selected blue cuts and B Body Twister installed;30ms start,90% steering, ACTIVE all-type50% mitigation/stun immunity and bounded feedback without hurt hitstop. Remove obsolete tint/echo code; preserve ordinary Axe art/combat.
+
+- [228 — Axe first technique before mastery earning](docs/decisions/228-axe-first-technique-before-mastery-earning.md): playable War Cyclone review via F1/F9/Combat Lab; owner wants distinctive learning after skill1, not an ordinary second XP bar. NPC/earning/permanent unlocks remain deferred.
+
+- [227 — Bounded Bag and equipment inspection](docs/decisions/227-bounded-bag-and-equipment-inspection.md): fixes modal depth/overflow; adds scrollable coloured live weapon details, category/sort controls, complete existing-steel icons and the accepted floorless King gradient. Gameplay/saves/accepted actors remain unchanged.
+
+- [226 — Base forging and family mastery](docs/decisions/226-base-forging-and-family-mastery-direction.md): owner requires base weapon crafting, mastery-earned weapon skills, visible upgrade milestones and expanded combat vocabulary; XP/trials/new mentor and tuning remain proposals, runtime unchanged.
+
+- [225 — C Veil Sigils combat HUD direction](docs/decisions/225-c-veil-sigils-combat-hud-direction.md): owner selects C2 Status Card with C's round skills/portrait, avatar-first HP, grouped mastery/stats and compact bottom dock/themed hover requirements; skills-only bottom anchoring confirmed; native HUD installed with current data, collapsed empty slots and themed hover/focus cards. Family mastery remains deferred. Latest review approves refined B Mastery Ribbon; native replacement includes family hover and sealed presentation and12-effect wrapping, with family rank/XP still deferred.
+
 - [224 — Sword compact side-running guard](docs/decisions/224-sword-compact-side-running-guard.md): fresh complete eight-frame horizontal run, steady close-body grip and unchanged unit-size steel; all other directions/actions/gameplay remain exact. Owner review pending.
 
 - [223 — Keep only compact art support](docs/decisions/223-keep-only-compact-art-support.md): delete all bulk raw generation sheets/builders; preserve installed artwork, tiny references/metadata and licensed originals; stage future trials temporarily.

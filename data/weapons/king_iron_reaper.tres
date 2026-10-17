@@ -10,6 +10,7 @@ points = PackedVector2Array(2,-14,38,-66,98,-56,130,0,98,56,38,66,2,14)
 script = ExtResource("1")
 weapon_id = &"weapon_king_iron_reaper"
 display_name = "Iron Reaper"
+family_display_name = "Scythe"
 uses_integrated_visual = true
 family_presentation = ExtResource("3")
 melee_hitbox_shape = SubResource("sweep")

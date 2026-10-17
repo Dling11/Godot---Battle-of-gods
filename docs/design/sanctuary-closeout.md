@@ -1,5 +1,13 @@
 # Sanctuary closeout
 
+## Current refinement 234
+
+Owner provisionally likes 233's layout/dummy idea. Younger hooded Veyr with grounded shadow, same-size outfitted lodge and responsive straw posts are installed for visual review. Preserve 233 coordinates/world scale and 232 learning/forging. Resume through CONTINUE_SANCTUARY.md and Decision 234; older artwork descriptions below are historical where superseded.
+
+## Current correction233
+
+Veyr now uses Orren's0.5 world scale at a furnished northwest pavilion/yard. The gate moves northeast; coherent perimeter walls/paths and a small rest garden replace232's placement. Four additional north rows reduce the oversized terrace. The first Axe proof remains installed for review. Nema gains one proof-opened base-only Axe pattern. The Sanctuary Veil Gate/route picker are refreshed; other service/house/character artwork is retained. See weapon-court-and-first-proof.md and Decision232. The older closeout below is historical where superseded.
+
 2026-10-02. **Temporarily complete for the current development pass.** Decision 165 replaces the optional-only town boundary. Resume other game work unless a concrete Sanctuary regression is reported.
 
 ## Playable baseline
@@ -35,15 +43,11 @@ Starts at Nema with temporary materials/gold and XP/damage/heal/cap controls. -T
 
 ## Archive and recovery
 
-art_source/archive/sanctuary_retired_2026_10_02/ has .gdignore, retired_paths.json, file_manifest.json and README.md. Retired assets/code retain original relative paths under retired/. Before-edit copies of town code, NPC scenes, builders and documentation are under snapshots/. The original hub smoke remains archived even though a new normal-town test reuses its old filename.
-
-Archived content includes the old ground/tiles, NPC atlases/portraits/frame resources, red cart, buildings/trees/stations, idle helpers, undersized Orren/courier candidates, rejected angled houses, oversized first interior, obsolete comparison suites and old asset processors. Current builders no longer recreate rejected wall/house/walk outputs. Sources/prompts used by current builders and native evidence stay in art_source; history is recoverable without a second live town.
-
-Restore only through an explicit follow-up decision: consult the manifest, copy the matching files/snapshot into an isolated checkout, restore their consumers together and import/test there. Do not copy the archive wholesale into runtime folders. No commits or pushes were performed.
+Decision223 permanently removed raw generation archives and old builder snapshots. Do not recreate art_source/archive or art_source/generated. Current installed assets and compact metadata are authoritative; historical implementations can be recovered from Git into an isolated checkout. Current review evidence belongs in ignored tmp, not a permanent archive.
 
 ## Validation and deferred work
 
-tests/sanctuary_hub_smoke.gd covers real normal scene composition, absence of legacy instances, exact save/reload, no fixture gold or debug UI, all four physical F/service routes, current frames/portraits, free approaches, minimap/theme, F-only workshop entry and debug reuse/save suppression. tests/runtime_archive_boundary_smoke.gd validates retired-file recovery and runtime exclusion. Retained Eira, workshop and HP/bag tests now exercise the same town rather than mounting a second overlay.
+tests/sanctuary_hub_smoke.gd covers real normal scene composition, absence of legacy instances, exact save/reload, no fixture gold or debug UI, all four physical F/service routes, current frames/portraits, free approaches, minimap/theme, F-only workshop entry and debug reuse/save suppression. tests/runtime_archive_boundary_smoke.gd checks retired runtime paths and archive directories remain absent. Retained Eira, workshop and HP/bag tests now exercise the same town rather than mounting a second overlay.
 
 207 rendered checks pass (normal town67, workshop60, HP/bag66, demo14); Eira73 headless and archive/crafting/menu/progression/Umi/editor regressions pass. Final import and diff checks pass. Details are recorded in CHANGELOG.md. Native closeout captures live under art_source/review/environment/sanctuary_closeout_2026_10_02/. Existing GPU teardown warnings remain. Representative-phone profiling, indoor audio, further interiors and whole-kit balance are deferred; temporary completion does not claim those are finished.
 

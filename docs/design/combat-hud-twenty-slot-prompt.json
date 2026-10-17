@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-17",
+  "mode": "builtin_imagegen_edit",
+  "status": "capacity_preview_only",
+  "prompt": "Use case: precise-object-edit / ui-mockup. Create ONE updated full-screen Battle of Gods HUD preview from input image 1 (Relic Orbit, the EDIT TARGET). Input image 2 (Steel Ribbon) is a supporting reference for THINNER, LESS ORNATE iron framing only. Preserve the entire input-1 forest gameplay background, tiny dark-haired red-scarf King and sword slash, top-center selected boss header, upper-right objective tracker, top-left BAG/MENU and the overall 16:9 image. EDIT THE BOTTOM COMBAT DOCK to show EXACTLY TWENTY USABLE SKILL BUTTONS. This is the main non-negotiable change: 10 WEAPON skills plus 10 KING skills. Keep a compact deep-red central HEALTH ORB between both halves of BOTH rows, with '1,240' on the first centered line and '/ 1,600' on the second, and exactly one small level '12' plate under the orb. Around the orb create a balanced TWO-ROW layout, no single 20-button strip and no scattered separate bars. TOP ROW, read left to right: five square skill icons LEFT of the orb with exact labels 'F1', 'F2', 'F3', 'F4', 'F5'; then the central orb gap; five square skill icons RIGHT of the orb with exact labels 'F6', 'F7', 'F8', 'F9', 'F10'. That is TEN weapon technique icons, with distinct readable blue-white steel/motion glyphs. BOTTOM ROW, read left to right: five square skill icons LEFT of orb labeled exactly '1', '2', '3', '4', '5'; then the same central orb gap; five square skill icons RIGHT of orb labeled exactly '6', '7', '8', '9', '0'. That is TEN King power icons with distinct blue, violet, white and restrained crimson RPG glyphs. All ten upper-row buttons align above all ten lower-row buttons; each half is a regular five-column, two-row grid. Every key label appears once and is crisply legible. No skipped or repeated keys; no missing F5/F10/5/0; no extra unlabeled square cells. Give the upper group a tiny understated 'WEAPON' label and the lower group a tiny 'KING' label. Key labels are embedded at the top-left of each icon frame, not a long text list disconnected from the buttons. Keep the weapon icons very slightly smaller than King icons, but still readable at logical960x540; aim about28 logical pixels and32 logical pixels respectively. Entire bottom dock should remain roughly55-60% of full screen width and at most20% of screen height; prioritize the large clear world area above. Thin weathered silver/iron rails, obsidian square backplates, cool violet/cyan rune accents and crisp pixel-art outlines, using image2's simpler framing. Remove giant curling spikes/wings and broad gold ornament. Preserve compact King portrait token at the far LEFT of the dock but remove its duplicate level number. Show a small greatsword badge and 'MASTERY 5' as a narrow strip immediately above the left grid, not another square resembling a skill slot. Far RIGHT use a modest separate 'SPACE' dodge indicator; dodge, portrait and mastery are utilities, visually distinct from the20 skills. Keep a slim XP strip beneath the entire dock reading '4,250 / 10,000 XP'. At most three small boon icons above the right grid. One skill has cooldown '6.2'; one has subdued unavailable shading; other18 show clear skill art. No READY/EMPTY spam. The original enemy panel, quest text and map remain as they were; there is no minimap. This is original high-quality game UI in our established shaded hard-pixel RPG art, not vector wireframe, not a copied Guild Wars asset, no watermark, no explanatory arrows, no border around the full screen. Do not change the world or character art. BEFORE FINISHING COUNT exactly10 F-labeled skill buttons on the top row and10 number-labeled buttons on the lower row. Fully composed playable-looking gameplay screen, one image, same 16:9 framing as the edit target.",
+  "inputs": [
+    {
+      "path": "tmp/review/combat_hud_concepts_2026_10_16/a_relic_orbit.png",
+      "role": "Edit target; preserve gameplay world/top interface, expand bottom dock"
+    },
+    {
+      "path": "tmp/review/combat_hud_concepts_2026_10_16/c_steel_ribbon.png",
+      "role": "Thin frame material/layout style reference"
+    }
+  ],
+  "concept_output": "tmp/review/combat_hud_concepts_2026_10_16/d_twenty_skill_orbit.png",
+  "weapon_slots": 10,
+  "king_slots": 10,
+  "gameplay_changes": false,
+  "output_width": 1672,
+  "output_height": 941,
+  "output_sha256": "e16510e56d75cef12bcd942278d201a702250845ae7078db73771338b66c056b",
+  "review": {
+    "weapon_labels": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6",
+      "F7",
+      "F8",
+      "F9",
+      "F10"
+    ],
+    "king_labels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "0"
+    ],
+    "visually_counted_weapon_slots": 10,
+    "visually_counted_king_slots": 10,
+    "owner_selected": false,
+    "native_ui_sizing": "Concept-only; final Godot dimensions/font sizing still require native review. Generated dock is wider than the initial compact budget."
+  }
+}

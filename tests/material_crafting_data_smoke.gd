@@ -19,8 +19,8 @@ func _run() -> void:
 	if not ForestMaterials.has_valid_layout() or ForestMaterials.materials.size() != 15:
 		_fail("The Forest material catalog did not expose fifteen valid stable definitions.")
 		return
-	if not ForestRecipes.has_valid_layout() or ForestRecipes.recipes.size() != 8:
-		_fail("The Forest recipe catalog did not expose six Stage V and two future accessory recipes.")
+	if not ForestRecipes.has_valid_layout() or ForestRecipes.recipes.size() != 9:
+		_fail("The Forest recipe catalog did not expose six Stage V, two accessory and one proof-earned Axe recipe.")
 		return
 	if not Stage5CoreEquipment.has_valid_layout() or Stage5CoreEquipment.items.size() != 6:
 		_fail("The Stage V core-equipment catalog did not expose six valid unique-slot outputs.")

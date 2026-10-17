@@ -2,14 +2,19 @@ extends TileMapLayer
 
 ## Current 32px Sanctuary ground and service routes.
 const ATLAS = preload("res://assets/environment/sanctuary/refuge_review/ground_32.png")
-const MAP_SIZE := Vector2i(36,24)
+const Layout = preload("res://levels/sanctuary/town/sanctuary_layout.gd")
+const MAP_SIZE := Layout.GROUND_CELLS
+const TOP_ROW := Layout.TOP_ROW
 var routes: Array[PackedVector2Array] = [
-	PackedVector2Array([Vector2(576,752),Vector2(560,608),Vector2(576,520),Vector2(576,304)]),
+	PackedVector2Array([Vector2(576,752),Vector2(560,608),Vector2(576,520),Vector2(576,320)]),
 	PackedVector2Array([Vector2(224,400),Vector2(224,464),Vector2(352,496),Vector2(480,488),Vector2(576,480),Vector2(688,488),Vector2(864,472),Vector2(928,400)]),
 	PackedVector2Array([Vector2(194,672),Vector2(368,672),Vector2(464,592),Vector2(560,608),Vector2(704,688),Vector2(800,688),Vector2(800,584),Vector2(928,472)]),
 	PackedVector2Array([Vector2(800,688),Vector2(886,688)]),
 	PackedVector2Array([Vector2(352,496),Vector2(352,464)]),
 	PackedVector2Array([Vector2(912,472),Vector2(992,464),Vector2(992,416)]),
+	PackedVector2Array(Layout.MENTOR_ROUTE),
+	PackedVector2Array(Layout.GATE_ROUTE),
+	PackedVector2Array([Vector2(576,320),Vector2(576,224),Vector2(592,160),Vector2(592,144)]),
 ]
 var path_cells: Dictionary = {}
 
@@ -24,13 +29,13 @@ func _ready() -> void:
 	for y in 8:
 		for x in 4: atlas.create_tile(Vector2i(x,y))
 	tile_set.add_source(atlas,0)
-	for y in MAP_SIZE.y:
+	for y in range(TOP_ROW,TOP_ROW+MAP_SIZE.y):
 		for x in MAP_SIZE.x:
 			var cell := Vector2i(x,y)
 			var p := Vector2(cell*32)+Vector2(16,16)
-			if _route_distance(p) <= 32.0 or p.distance_to(Vector2(576,452)) < 100.0:
+			if _route_distance(p) <= 32.0 or p.distance_to(Vector2(576,452)) < 100.0 or Layout.COURT_PAVING.has_point(p) or Layout.GATE_PAVING.has_point(p):
 				path_cells[cell] = true
-	for y in MAP_SIZE.y:
+	for y in range(TOP_ROW,TOP_ROW+MAP_SIZE.y):
 		for x in MAP_SIZE.x:
 			var cell := Vector2i(x,y)
 			var p := Vector2(cell*32)+Vector2(16,16)

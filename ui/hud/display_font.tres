@@ -1,0 +1,7 @@
+[gd_resource type="FontVariation" load_steps=2 format=3]
+
+[ext_resource type="FontFile" path="res://assets/ui/fonts/lora/Lora.ttf" id="1_lora"]
+
+[resource]
+base_font = ExtResource("1_lora")
+variation_opentype = {&"wght": 600.0}

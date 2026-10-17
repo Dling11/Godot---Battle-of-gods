@@ -54,7 +54,11 @@ func is_lab() -> bool:
 	return false
 
 func entries() -> Array[AbilityComponent]:
-	return actor.get_all_ability_components()
+	var result: Array[AbilityComponent] = []
+	for ability in actor.get_all_ability_components():
+		if String(ability.definition.ability_id) in KingSkillCatalog.IDS:
+			result.append(ability)
+	return result
 
 func equip(id: String, slot_number: int) -> bool:
 	if not can_edit() or (not id.is_empty() and not is_learned(id)) or slot_number<1 or slot_number>SkillLoadoutDefinition.SLOT_COUNT:

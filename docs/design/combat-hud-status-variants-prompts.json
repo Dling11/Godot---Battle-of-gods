@@ -1,0 +1,115 @@
+{
+  "date": "2026-10-17",
+  "mode": "builtin_imagegen_edit",
+  "status": "requested_avatar_hp_and_utility_design_review",
+  "runtime_changes": false,
+  "requirements": [
+    "Keep approved top-left status / bottom-center skills format",
+    "Exactly8 King +6 equipped-weapon active slots; only unlocked skills shown in future UI",
+    "Three distinct portrait/HP treatments with HP beneath avatar",
+    "Compact bottom-right TAB satchel / ESC menu pair, no large banners"
+  ],
+  "research": [
+    {
+      "url": "https://na.finalfantasyxiv.com/uiguide/know/know-hud/hud-layout.html",
+      "use": "Size, position, visibility and transparency can be considered separately."
+    },
+    {
+      "url": "https://na.finalfantasyxiv.com/game_manual/view/",
+      "use": "Parameter, hotbar and system-menu roles are distinguished."
+    },
+    {
+      "url": "https://www.guildwars2.com/en/news/the-big-beta-weekend-preview/",
+      "use": "Historical UI-design note on small usability refinements and progressive skills; no game artwork copied."
+    }
+  ],
+  "concepts": [
+    {
+      "id": "a_runic_medallion",
+      "label": "A · Runic Medallion",
+      "description": "Round portrait and a short curved-end HP bar",
+      "prompt": "Use case: precise-object-edit. Asset type: original pixel action-RPG HUD review mockup, full-screen16:9 gameplay.\nInput1: clean HUD screenshot EDIT TARGET, for world/skills/layout. Input2: approved96x96 King portrait IDENTITY AND PIXEL STYLE reference, not another screen element.\nPRIMARY CHANGE: replace only the top-left avatar/HP with the new distinct design below, and relocate Bag/Menu to the BOTTOM RIGHT as tidy small icon controls. Keep portrait/status TOP LEFT, HP DIRECTLY BELOW portrait, skills BOTTOM CENTER.\nPRESERVE: input1's entire forest map, player sprite/action, center play space, top-center target header, upper-right objective panel. Keep bottom skills and XP exactly, including the six upper weapon keys F1,F2,F3,F4,F5,F6 and eight lower King keys1,2,3,4,5,6,7,8; separate SPACE dodge. Do not add/delete/reorder/redraw skill icons, change their sizes or add a bottom portrait. No locked slots or blank placeholders.\nIDENTITY: use input2's dark tousled hair, small serious dark eyes, warm face, red scarf and navy shoulders. Portrait should be a clear complete bust with intact hair/neck/scarf, attractive readable pixel clusters, same King identity, no oversized baby face or giant round cheeks. Do not copy the old huge spiked square player panel. No gold border. Only one level badge12. Current/max HP text \"1,240 / 1,600\" directly in the red bar UNDER the portrait, with clear fill and dark unfilled capacity; source values mean roughly77% health, not full. Small crisp pale digits, strong dark backing, modest bevel and shadow. HP is not a portrait ring alone, and must never move beside or above the face. Status approximately90-125 logicalpixels wide and75high maximum in a960x540 game, safe12px margin. Keep it understated so the world dominates.\nBAG/MENU: completely REMOVE the two existing large banners below the portrait, restoring forest there. Add ONE quiet horizontal utility pair at BOTTOM RIGHT,12logicalpx safe margin, with a small recognisable brown leather SATCHEL icon labeled \"TAB\" and a small iron COG icon labeled \"ESC\". Each control24x24logicalpixels plus a tiny key tag. Same size, baseline,6px gap, fitted thin dark-silver frame, no enclosing giant black panel or long text banner. At1671wide screenshot this entire pair should be under120imagepixels wide. No duplicates. Keep this group separate from the action bar, far enough right not to overlap it or the objective.\nStyle: crisp raster pixel-RPG matching approved King, weathered muted pewter, deep navy/obsidian, parchment white type, controlled crimson health and restrained cyan/violet. No glossy mobile-game buttons, big neon glow, excessive spikes, wing ornaments, giant frames, gold accents or gradients. Keep target/objective/skill art unchanged for a fair comparison.\nOutput one finished full-screen game UI mockup. No comparison panels, titles, arrows, reference thumbnails, watermark or instructions. Confirm exactly8 King+6 weapon skill buttons, one TOP LEFT portrait/HP, and bottom-right two-icon TAB/ESC group.\nDESIGN A: RUNIC MEDALLION. Entirely replace the top-left old status frame. A small round48logicalpx medallion in thin hammered pewter with only four tiny violet rune cuts, nearly black backing and King's expressive complete bust from input2. One very small level12 shield overlaps lower-right of the ROUND frame. Directly beneath the round avatar, centered with it, a compact90logicalpx red HP capsule with slightly curved/stepped ends and a fine silver rim; current/max digits in its center. One tiny dark crescent under the bar visually links the pieces without an enclosing rectangle. No player-name banner, no hanging ornaments. Attractive restrained old-school RPG medallion; health is distinctly below it. The overall shape must be ROUND avatar+short HORIZONTAL health, visibly unlike the original square.",
+      "refs": [
+        "D:/React_ONLY_2026/GODOT-BATTLE-OF-GODS/tmp/review/combat_hud_corner_portrait_2026_10_17/full_14.png",
+        "D:/React_ONLY_2026/GODOT-BATTLE-OF-GODS/assets/characters/playable/king/portraits/king_portrait_96x96.png"
+      ],
+      "output": "tmp/review/combat_hud_status_variants_2026_10_17/a_runic_medallion.png",
+      "generated_original": "C:/Users/Administrator/.codex/generated_images/01a0eed4-5878-7032-a315-e493f92ce97a/exec-f50ffeca-1b33-4757-b987-7cf6af0384d9.png",
+      "width": 1670,
+      "height": 941,
+      "bytes": 1822768,
+      "sha256": "def508959220058679de59a6a35914b66ea86d7d958ca43b059e6b73633b1aa0",
+      "visual_review": {
+        "top_left_portrait": true,
+        "hp_beneath_portrait": true,
+        "king_slots": 8,
+        "weapon_slots": 6,
+        "space_separate": true,
+        "bag_menu_bottom_right": true,
+        "old_banners_removed": true
+      }
+    },
+    {
+      "id": "b_sentinel_card",
+      "label": "B · Sentinel Card",
+      "description": "Connected rectangular portrait/status card with clear spacing",
+      "prompt": "Use case: precise-object-edit. Asset type: original pixel action-RPG HUD review mockup, full-screen16:9 gameplay.\nInput1: clean HUD screenshot EDIT TARGET, for world/skills/layout. Input2: approved96x96 King portrait IDENTITY AND PIXEL STYLE reference, not another screen element.\nPRIMARY CHANGE: replace only the top-left avatar/HP with the new distinct design below, and relocate Bag/Menu to the BOTTOM RIGHT as tidy small icon controls. Keep portrait/status TOP LEFT, HP DIRECTLY BELOW portrait, skills BOTTOM CENTER.\nPRESERVE: input1's entire forest map, player sprite/action, center play space, top-center target header, upper-right objective panel. Keep bottom skills and XP exactly, including the six upper weapon keys F1,F2,F3,F4,F5,F6 and eight lower King keys1,2,3,4,5,6,7,8; separate SPACE dodge. Do not add/delete/reorder/redraw skill icons, change their sizes or add a bottom portrait. No locked slots or blank placeholders.\nIDENTITY: use input2's dark tousled hair, small serious dark eyes, warm face, red scarf and navy shoulders. Portrait should be a clear complete bust with intact hair/neck/scarf, attractive readable pixel clusters, same King identity, no oversized baby face or giant round cheeks. Do not copy the old huge spiked square player panel. No gold border. Only one level badge12. Current/max HP text \"1,240 / 1,600\" directly in the red bar UNDER the portrait, with clear fill and dark unfilled capacity; source values mean roughly77% health, not full. Small crisp pale digits, strong dark backing, modest bevel and shadow. HP is not a portrait ring alone, and must never move beside or above the face. Status approximately90-125 logicalpixels wide and75high maximum in a960x540 game, safe12px margin. Keep it understated so the world dominates.\nBAG/MENU: completely REMOVE the two existing large banners below the portrait, restoring forest there. Add ONE quiet horizontal utility pair at BOTTOM RIGHT,12logicalpx safe margin, with a small recognisable brown leather SATCHEL icon labeled \"TAB\" and a small iron COG icon labeled \"ESC\". Each control24x24logicalpixels plus a tiny key tag. Same size, baseline,6px gap, fitted thin dark-silver frame, no enclosing giant black panel or long text banner. At1671wide screenshot this entire pair should be under120imagepixels wide. No duplicates. Keep this group separate from the action bar, far enough right not to overlap it or the objective.\nStyle: crisp raster pixel-RPG matching approved King, weathered muted pewter, deep navy/obsidian, parchment white type, controlled crimson health and restrained cyan/violet. No glossy mobile-game buttons, big neon glow, excessive spikes, wing ornaments, giant frames, gold accents or gradients. Keep target/objective/skill art unchanged for a fair comparison.\nOutput one finished full-screen game UI mockup. No comparison panels, titles, arrows, reference thumbnails, watermark or instructions. Confirm exactly8 King+6 weapon skill buttons, one TOP LEFT portrait/HP, and bottom-right two-icon TAB/ESC group.\nDESIGN B: SENTINEL CARD. Entirely replace the top-left old status frame. A small neatly proportioned rectangular charcoal/blue stone player card, roughly100logicalpx wide and76high. In the upper part, put King's complete bust from input2 in a wide shallow PORTRAIT WINDOW, with hair and shoulders visible, a thin straight brushed-silver border and clipped outer corners. The portrait art occupies about48logicalpx in height. A tiny inset level12 tab sits top-right, not a spiked diamond. Directly below the portrait window, inside the same card, a straight deep red HP ribbon fills the card width with current/max digits inside. A single narrow crimson inset on the bottom edge provides material detail. Grounded, sturdy, clean rectangular geometry with modest separation between portrait and health; no giant square black empty field, giant head or purple gems. Make the silhouette a compact cohesive CARD, distinctly different from a circle or floating ribbon.",
+      "refs": [
+        "D:/React_ONLY_2026/GODOT-BATTLE-OF-GODS/tmp/review/combat_hud_corner_portrait_2026_10_17/full_14.png",
+        "D:/React_ONLY_2026/GODOT-BATTLE-OF-GODS/assets/characters/playable/king/portraits/king_portrait_96x96.png"
+      ],
+      "output": "tmp/review/combat_hud_status_variants_2026_10_17/b_sentinel_card.png",
+      "generated_original": "C:/Users/Administrator/.codex/generated_images/01a0eed4-5878-7032-a315-e493f92ce97a/exec-ef43f1fb-8027-4f0e-bf07-7851d56e6eeb.png",
+      "width": 1671,
+      "height": 941,
+      "bytes": 1807557,
+      "sha256": "1ab6e09fa20e512bd999788e674896fccdcfde511d575c1d168684517adce4fe",
+      "visual_review": {
+        "top_left_portrait": true,
+        "hp_beneath_portrait": true,
+        "king_slots": 8,
+        "weapon_slots": 6,
+        "space_separate": true,
+        "bag_menu_bottom_right": true,
+        "old_banners_removed": true
+      }
+    },
+    {
+      "id": "c_riftline",
+      "label": "C · Riftline",
+      "description": "Octagonal portrait and a thin angular HP strip",
+      "prompt": "Use case: precise-object-edit. Asset type: original pixel action-RPG HUD review mockup, full-screen16:9 gameplay.\nInput1: clean HUD screenshot EDIT TARGET, for world/skills/layout. Input2: approved96x96 King portrait IDENTITY AND PIXEL STYLE reference, not another screen element.\nPRIMARY CHANGE: replace only the top-left avatar/HP with the new distinct design below, and relocate Bag/Menu to the BOTTOM RIGHT as tidy small icon controls. Keep portrait/status TOP LEFT, HP DIRECTLY BELOW portrait, skills BOTTOM CENTER.\nPRESERVE: input1's entire forest map, player sprite/action, center play space, top-center target header, upper-right objective panel. Keep bottom skills and XP exactly, including the six upper weapon keys F1,F2,F3,F4,F5,F6 and eight lower King keys1,2,3,4,5,6,7,8; separate SPACE dodge. Do not add/delete/reorder/redraw skill icons, change their sizes or add a bottom portrait. No locked slots or blank placeholders.\nIDENTITY: use input2's dark tousled hair, small serious dark eyes, warm face, red scarf and navy shoulders. Portrait should be a clear complete bust with intact hair/neck/scarf, attractive readable pixel clusters, same King identity, no oversized baby face or giant round cheeks. Do not copy the old huge spiked square player panel. No gold border. Only one level badge12. Current/max HP text \"1,240 / 1,600\" directly in the red bar UNDER the portrait, with clear fill and dark unfilled capacity; source values mean roughly77% health, not full. Small crisp pale digits, strong dark backing, modest bevel and shadow. HP is not a portrait ring alone, and must never move beside or above the face. Status approximately90-125 logicalpixels wide and75high maximum in a960x540 game, safe12px margin. Keep it understated so the world dominates.\nBAG/MENU: completely REMOVE the two existing large banners below the portrait, restoring forest there. Add ONE quiet horizontal utility pair at BOTTOM RIGHT,12logicalpx safe margin, with a small recognisable brown leather SATCHEL icon labeled \"TAB\" and a small iron COG icon labeled \"ESC\". Each control24x24logicalpixels plus a tiny key tag. Same size, baseline,6px gap, fitted thin dark-silver frame, no enclosing giant black panel or long text banner. At1671wide screenshot this entire pair should be under120imagepixels wide. No duplicates. Keep this group separate from the action bar, far enough right not to overlap it or the objective.\nStyle: crisp raster pixel-RPG matching approved King, weathered muted pewter, deep navy/obsidian, parchment white type, controlled crimson health and restrained cyan/violet. No glossy mobile-game buttons, big neon glow, excessive spikes, wing ornaments, giant frames, gold accents or gradients. Keep target/objective/skill art unchanged for a fair comparison.\nOutput one finished full-screen game UI mockup. No comparison panels, titles, arrows, reference thumbnails, watermark or instructions. Confirm exactly8 King+6 weapon skill buttons, one TOP LEFT portrait/HP, and bottom-right two-icon TAB/ESC group.\nDESIGN C: RIFTLINE. Entirely replace the top-left old status frame. Minimal angular fantasy-RPG design: a compact38logicalpx octagonal portrait aperture with King's complete bust from input2, delicate flat pewter1-2px edges and two tiny cool-cyan notches. Small12 tab tucked against lower-right edge. Immediately BELOW the portrait a92logicalpx thin angular red HP strip, horizontal with stepped pointed ends, current/max digits centered legibly against dark backing. Center the portrait slightly left of the HP strip's center to make an elegant restrained asymmetrical status silhouette; HP stays wholly BELOW the avatar, not alongside. A short dark-silver hairline joins them, no enclosing panel. Tiny violet shard only at the far-left HP cap; otherwise silver/navy/crimson. This should be the SLIMMEST lightest option, using clean negative space and crisp flat pixels, not glossy futuristic glass. Clearly distinguish its small OCTAGON and ANGULAR STRIP from A's round medallion and B's card.",
+      "refs": [
+        "D:/React_ONLY_2026/GODOT-BATTLE-OF-GODS/tmp/review/combat_hud_corner_portrait_2026_10_17/full_14.png",
+        "D:/React_ONLY_2026/GODOT-BATTLE-OF-GODS/assets/characters/playable/king/portraits/king_portrait_96x96.png"
+      ],
+      "output": "tmp/review/combat_hud_status_variants_2026_10_17/c_riftline.png",
+      "generated_original": "C:/Users/Administrator/.codex/generated_images/01a0eed4-5878-7032-a315-e493f92ce97a/exec-76322868-9a0f-40df-8f4c-a4c17289bffd.png",
+      "width": 1671,
+      "height": 941,
+      "bytes": 1817015,
+      "sha256": "47897e36f63884ce3b01dd496b3c589ad5a38cf22f908de270a255a367d24697",
+      "visual_review": {
+        "top_left_portrait": true,
+        "hp_beneath_portrait": true,
+        "king_slots": 8,
+        "weapon_slots": 6,
+        "space_separate": true,
+        "bag_menu_bottom_right": true,
+        "old_banners_removed": true
+      }
+    }
+  ],
+  "review": {
+    "status": "three_final_samples_generated_and_visually_inspected",
+    "selected_design": null,
+    "scope": "Original status/utility concepts over retained screenshot layout; no runtime installation.",
+    "production_files_checked": 653,
+    "production_mismatches": 0,
+    "limitations": [
+      "Generated spacing, health fill and text are review approximations, not native measurement evidence.",
+      "No actual unlock schedule, new skill glyph assignment, control binding or learned-capacity decision is introduced.",
+      "Native contrast at logical960x540, button hit areas, tooltips and varied-biome readability still require implementation review."
+    ]
+  }
+}

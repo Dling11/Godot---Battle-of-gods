@@ -10,6 +10,9 @@ func _initialize() -> void:
 
 
 func _run() -> void:
+	root.size = Vector2i(960,540)
+	root.get_node("SaveService").configure_storage_path_for_testing("user://hud_action_controls_smoke.json")
+	root.get_node("SaveService").delete_profile()
 	root.get_node("RunSession").reset_run()
 	var player := PlayerScene.instantiate() as Player
 	var hud := HudScene.instantiate() as CombatHUD
@@ -20,40 +23,28 @@ func _run() -> void:
 	hud.bind_player(player)
 	await process_frame
 
-	if hud.options_button.text != "MENU  [ESC]":
-		_fail("The top-right pause entry is not labeled as the compact Menu action.")
+	if hud.options_button.get_node("Keycap").text != "ESC":
+		_fail("The pause entry is not the compact Menu action.")
 		return
+	await process_frame
 	var tray := hud.get_node("ActionTray") as Control
 	var dash_rect := hud.dash_slot.get_global_rect()
 	var skill_rect := hud.get_skill_slot(1).get_global_rect()
-	var last_skill_rect := hud.get_skill_slot(10).get_global_rect()
-	var attack_rect := hud.attack_button.get_global_rect()
-	var tray_rect := tray.get_global_rect()
-	var eclipse_frame := hud.get_node("EclipseFrame") as TextureRect
-	var eclipse_veil := hud.get_node("EclipseVeil") as ColorRect
 	if (
-		dash_rect.end.x > skill_rect.position.x
-		or last_skill_rect.end.x > attack_rect.position.x
-		or attack_rect.position.x - last_skill_rect.end.x < 8.0
-		or not tray_rect.encloses(dash_rect)
-		or not tray_rect.encloses(skill_rect)
-		or not tray_rect.encloses(last_skill_rect)
-		or not tray_rect.encloses(attack_rect)
-		or hud.dash_slot.size != Vector2(54.0, 44.0)
-		or hud.attack_button.size.y != 44.0
-		or hud.attack_button.size.x != 54.0
-		or hud.get_skill_slot(1).size != Vector2(46.0, 44.0)
-		or eclipse_frame.texture == null
-		or eclipse_frame.mouse_filter != Control.MOUSE_FILTER_IGNORE
-		or eclipse_veil.mouse_filter != Control.MOUSE_FILTER_IGNORE
-		or eclipse_veil.color.a < 0.76
-		or eclipse_veil.color.a > 0.8
-		or not eclipse_frame.get_global_rect().encloses(tray_rect)
+		not tray.get_global_rect().encloses(dash_rect)
+		or not tray.get_global_rect().encloses(skill_rect)
+		or dash_rect.position.x < skill_rect.end.x
+		or hud.dash_slot.size != Vector2(40,40)
+		or hud.get_skill_slot(1).size != Vector2(40,40)
+		or hud.get_skill_slot(10).visible
+		or hud.attack_button.is_visible_in_tree()
+		or hud.get_node("EclipseFrame").visible
+		or absf(hud.size.y-tray.get_global_rect().end.y-2) > 1
 	):
-		_fail("The Dash, Skills 1-10, then Attack tray geometry is incorrect: tray=%s dash=%s first=%s last=%s attack=%s sizes=%s/%s/%s" % [tray_rect, dash_rect, skill_rect, last_skill_rect, attack_rect, hud.dash_slot.size, hud.get_skill_slot(1).size, hud.attack_button.size])
+		_fail("Adaptive dock geometry: tray=%s dash=%s skill=%s viewport=%s empty=%s" % [tray.get_global_rect(),dash_rect,skill_rect,hud.size,hud.get_skill_slot(10).visible])
 		return
-	if (hud.attack_button.get_parent().get_node("AttackLabel") as Label).text != "ATK" or (hud.attack_button.get_parent().get_node("AttackIcon") as TextureRect).texture == null or hud.get_skill_slot(1).key_label.text != "1" or hud.get_skill_slot(4).key_label.text != "4":
-		_fail("HUD action numbering does not show unnumbered Attack followed by Skills 1-4.")
+	if hud.get_skill_slot(1).key_label.text != "1" or hud.get_skill_slot(4).key_label.text != "4":
+		_fail("HUD action numbering changed the saved skill identities.")
 		return
 	var dash_sound := player.get_node("PlayerActionSfx/Dash") as AudioStreamPlayer2D
 	if dash_sound.stream == null or dash_sound.stream.resource_path != "res://assets/audio/sfx/player_dash_grounded.wav" or dash_sound.stream.get_length() < 0.18 or dash_sound.stream.get_length() > 0.20 or dash_sound.bus != &"SFX":

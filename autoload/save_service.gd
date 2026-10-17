@@ -36,6 +36,7 @@ func create_profile_snapshot(safe_scene_path: String = DEFAULT_SAFE_SCENE) -> Di
 			"recipe_discovery": RecipeDiscovery.create_snapshot(),
 			"enemy_memory": EnemyMemory.create_snapshot(),
 			"stage_claims": loot_state.create_snapshot(),
+			"weapon_training": get_node("/root/WeaponTraining").create_snapshot(),
 			"regional_progress": {},
 		},
 	}
@@ -127,6 +128,8 @@ func can_restore_profile(snapshot: Dictionary) -> bool:
 		and _can_restore_recipe_extension(recipe_snapshot)
 		and _can_restore_enemy_memory_extension(enemy_memory_snapshot)
 		and _can_restore_stage_claim_extension(stage_claim_snapshot)
+		and (extensions.get("weapon_training", {}) is Dictionary)
+		and get_node("/root/WeaponTraining").can_restore_snapshot(extensions.get("weapon_training", {}))
 	)
 
 
@@ -137,6 +140,7 @@ func restore_profile(snapshot: Dictionary) -> bool:
 	StoryState.restore_snapshot(snapshot["story_state"])
 	WeaponInventory.restore_snapshot(snapshot["weapon_inventory"])
 	var extensions: Dictionary = snapshot["extensions"]
+	get_node("/root/WeaponTraining").restore_snapshot(extensions.get("weapon_training", {}))
 	var gear_snapshot: Dictionary = extensions.get("gear_inventory", {})
 	var material_snapshot: Dictionary = extensions["material_inventory"]
 	var recipe_snapshot: Dictionary = extensions["recipe_discovery"]
@@ -309,6 +313,7 @@ func _has_core_authorities() -> bool:
 		and get_node_or_null("/root/RecipeDiscovery") != null
 		and get_node_or_null("/root/EnemyMemory") != null
 		and get_node_or_null("/root/LootState") != null
+		and get_node_or_null("/root/WeaponTraining") != null
 	)
 
 

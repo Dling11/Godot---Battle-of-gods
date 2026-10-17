@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-17",
+  "mode": "builtin_imagegen",
+  "purpose": "Production C2 UI art; native gameplay labels/data separate",
+  "specs": [
+    {
+      "id": "status_frame",
+      "prompt": "Create a production pixel-art UI asset sheet with GENUINELY TRANSPARENT background for Battle of Gods, guided by the selected C2 screenshot input1. Only TWO isolated complete components in one horizontal row with generous empty transparent spacing between them: LEFT a square/octagonal King PORTRAIT badge; RIGHT a blank ROUND skill MEDALLION. No screenshot, no text, no numbers, no arrows, no other icons, no comparison labels.\nLEFT: faithfully match input1's King bust inside its small navy/obsidian octagonal frame: tousled very dark brown/black hair, warm skin, serious small eyes, red scarf and dark steel shoulders, complete neck; restrained pewter border and tiny cyan corner facets. NO level badge because that is native game text. Keep all hair/scarf/shoulders inside the complete badge. Original cute but confident pixel-RPG style, compact anatomy, no giant cheeks. Draw as a64x64 native pixel asset using deliberate pixel clusters and nearest-neighbor upscaling, not smooth anime illustration.\nRIGHT: one48x48-native-pixel round skill-slot frame in C2's style, dark navy/obsidian inset disk, subtle inner groove, 2-3px weathered pewter rim with small cyan/violet rune notches at cardinal points, complete round silhouette with all corners transparent. The inset disk is dark and empty; NO sword, glyph, letters, numbers, level tag or gem above the frame. Skill glyphs and key tabs will be native separate layers.\nUse a clear two-cell layout: portrait centered in the left half, circle centered in the right half; equally sized visual cells and no component crossing the vertical halfway line. Both assets fully visible with transparency around their complete bounds. Crisp limited-palette pixel art, muted silver/cold cyan/navy/crimson, no gold, no blur, no checkerboard drawn into the image. Transparent background. Preserve chosen C2 identity and frame language.",
+      "refs": [
+        "D:/React_ONLY_2026/GODOT-BATTLE-OF-GODS/tmp/review/combat_hud_c_mastery_2026_10_17/c2_status_card.png"
+      ]
+    },
+    {
+      "id": "skill_glyphs",
+      "prompt": "Create a production pixel-RPG SKILL GLYPH sheet on a GENUINELY TRANSPARENT background for Battle of Gods, using input1's selected C2 skill artwork for style. Five isolated complete icon drawings, arranged in EXACTLY ONE HORIZONTAL ROW OF FIVE equally spaced square cells. Each cell has generous transparent padding, no icon crosses a cell boundary. NO frames, circles, tiles, dark rectangles, captions, labels, letters or numbers; icon artwork only, ready to overlay the game's round medallions. Each icon should read as an authored24x24 native pixel drawing, clean strong silhouette, limited palette, controlled ivory highlights, substantial pixel clusters, no realistic gradients, fog, soft blur or large glow.\nLeft to right:\n1 EARTHSPLITTER: a jagged upward earthy-tan stone fissure/spires, small pale steel pressure wedge, dramatic readable triangular group matching C2 first lower icon.\n2 MOLTEN CRASH: red-orange local ground impact and short erupting flame, white hot central point, compact round impact base, matches C2 second lower icon.\n3 SOVEREIGN PURSUIT: clear ivory/cyan leaping warrior silhouette over a small cyan landing arc; a motion image distinct from generic running/dodge.\n4 UNBROKEN VOW: one ivory outlined blue shield with a small white spirit core, compact confident protection silhouette.\n5 WORLDSPLITTER: concentrated blue/violet radial ground rupture, crisp white center and several substantial upward pressure shards, broad low base.\nKeep all five glyphs distinct and readable at24px; no duplicated crescents or crosses. Leave each complete glyph inside its equal-width cell. Draw the entire source with crisp upscale nearest-neighbor pixels, not vector icon lines. Transparent negative space everywhere outside the five shapes. No character portraits, menus, HUD bars or extra sixth icon.",
+      "refs": [
+        "D:/React_ONLY_2026/GODOT-BATTLE-OF-GODS/tmp/review/combat_hud_c_mastery_2026_10_17/c2_status_card.png"
+      ]
+    }
+  ]
+}

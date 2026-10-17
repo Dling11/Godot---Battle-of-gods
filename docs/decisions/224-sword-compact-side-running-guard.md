@@ -1,6 +1,6 @@
 # 224 - Sword compact side-running guard
 
-Status: implemented2026-10-16; owner provisionally accepts running motion. Targeted hilt visibility correction awaits review.
+Status: implemented2026-10-16; owner provisionally accepts final running/grip and settles current weapon artwork.
 
 The owner rejects the starter Sword's left/right run because the weapon follows an empty-hand arm pump and looks unappealing. Up/down running is accepted and must remain exact.
 
@@ -18,4 +18,4 @@ Small prompts/calibration/grips/current hashes are retained in art_source/refere
 
 Natural-grip follow-up: the owner finds(10,70) too close to the pommel and asks for a lower sword. Restore middle-leather grasp(10,66), retracting the canonical steel four source pixels relative to the same actual glove; lower the angle from15 to10 degrees and update only the secondary direction hints. Foreground hilt/same-pose glove depth remains. All eight body poses and real palm positions stay exact. A rear-handle visibility regression requires exposed leather behind the glove in addition to the complete guard and pommel. No extra art generation is needed.
 
-Hilt follow-up validation passed: king_sword_side_run_smoke (64 checks), king_sword_unified_smoke (571), native king_sword_gameplay_smoke (1,233) and resource loading (919). Measure fixed canonical steel points rather than the grasp-to-tip span to detect accidental scaling independently of the changed grasp. The production audit preserves 651 of 653 files; only the intended side atlas and resource change. Original profile/backup/cosmetic hashes remain exact. Native previews use actual equipped Players. Running motion has owner provisional approval; hilt review remains pending.
+Hilt follow-up validation passed: king_sword_side_run_smoke (64 checks), king_sword_unified_smoke (571), native king_sword_gameplay_smoke (1,233) and resource loading (919). Measure fixed canonical steel points rather than the grasp-to-tip span to detect accidental scaling independently of the changed grasp. The production audit preserves 651 of 653 files; only the intended side atlas and resource change. Original profile/backup/cosmetic hashes remain exact. Native previews use actual equipped Players. The owner provisionally accepts the final running/grip and moves on to next-work planning.

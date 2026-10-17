@@ -179,8 +179,12 @@ func set_equipment_attack_speed_bonus(bonus_ratio: float) -> void:
 	_attack_speed_bonus_ratio = clampf(bonus_ratio, 0.0, 0.5)
 
 
+func get_attack_speed_multiplier() -> float:
+	return 1.0 + _attack_speed_bonus_ratio
+
+
 func _scaled_duration(base_duration: float) -> float:
-	return base_duration / (1.0 + _attack_speed_bonus_ratio)
+	return base_duration / get_attack_speed_multiplier()
 
 
 func reset_combo() -> void:

@@ -86,3 +86,9 @@ func clear() -> void:
 	clear_resolve()
 	_link.stop()
 	link_changed.emit(false)
+
+func get_resolve_remaining_seconds() -> float:
+	return _expiry.time_left
+
+func get_link_remaining_seconds() -> float:
+	return _link.time_left

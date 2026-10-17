@@ -1,134 +1,68 @@
-[gd_scene load_steps=7 format=3]
+[gd_scene load_steps=5 format=3]
 
 [ext_resource type="Script" path="res://ui/skills/dash_bar_slot.gd" id="1_script"]
-[ext_resource type="Texture2D" path="res://assets/ui/hud/eclipse_bind/eclipse_dash_24.png" id="2_icon"]
-
-[sub_resource type="StyleBoxFlat" id="slot_panel"]
-bg_color = Color(0.055, 0.041, 0.067, 0.96)
-border_width_left = 1
-border_width_top = 1
-border_width_right = 1
-border_width_bottom = 1
-border_color = Color(0.72, 0.66, 0.72, 1)
-corner_radius_top_left = 3
-corner_radius_top_right = 3
-corner_radius_bottom_right = 3
-corner_radius_bottom_left = 3
+[ext_resource type="Script" path="res://ui/hud/hud_tooltip_button.gd" id="2_tooltip"]
+[ext_resource type="Texture2D" path="res://assets/ui/hud/eclipse_bind/eclipse_dash_24.png" id="3_icon"]
 
 [sub_resource type="StyleBoxFlat" id="cooldown_fill"]
-bg_color = Color(0.69, 0.39, 0.86, 0.96)
-
-[sub_resource type="StyleBoxFlat" id="state_plate"]
-bg_color = Color(0.018, 0.015, 0.026, 0.96)
-border_width_top = 1
-border_color = Color(0.36, 0.24, 0.43, 1)
-
-[sub_resource type="StyleBoxFlat" id="dash_interact"]
-bg_color = Color(0.55, 0.28, 0.76, 0.18)
-border_width_left = 1
-border_width_top = 1
-border_width_right = 1
-border_width_bottom = 1
-border_color = Color(0.81, 0.62, 0.92, 0.95)
+bg_color = Color(0.38, 0.7, 0.87, 1)
 
 [node name="DashBarSlot" type="Panel"]
-custom_minimum_size = Vector2(54, 44)
+custom_minimum_size = Vector2(40, 40)
 layout_mode = 2
 mouse_filter = 2
-theme_override_styles/panel = SubResource("slot_panel")
 script = ExtResource("1_script")
 
 [node name="Icon" type="TextureRect" parent="."]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -12.0
-offset_top = -16.0
-offset_right = 12.0
-offset_bottom = 8.0
-grow_horizontal = 2
-grow_vertical = 2
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 8.0
+offset_top = 9.0
+offset_right = 32.0
+offset_bottom = 33.0
 mouse_filter = 2
-texture = ExtResource("2_icon")
+texture = ExtResource("3_icon")
 expand_mode = 1
 stretch_mode = 5
 
 [node name="KeyLabel" type="Label" parent="."]
-layout_mode = 1
-offset_left = 5.0
-offset_top = 1.0
-offset_right = 29.0
-offset_bottom = 13.0
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 3.0
+offset_top = 0.0
+offset_right = 37.0
+offset_bottom = 12.0
 mouse_filter = 2
 text = "SPACE"
-theme_override_colors/font_color = Color(0.92, 0.87, 0.93, 1)
+horizontal_alignment = 1
+theme_override_colors/font_color = Color(0.85, 0.93, 1, 1)
 theme_override_colors/font_outline_color = Color(0.02, 0.02, 0.03, 1)
 theme_override_constants/outline_size = 2
-theme_override_font_sizes/font_size = 8
-
-[node name="StatePlate" type="Panel" parent="."]
-layout_mode = 1
-anchors_preset = 12
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_top = -15.0
-grow_horizontal = 2
-grow_vertical = 0
-mouse_filter = 2
-theme_override_styles/panel = SubResource("state_plate")
-
-[node name="OuterAccent" type="ColorRect" parent="."]
-layout_mode = 1
-offset_left = 2.0
-offset_top = 4.0
-offset_right = 4.0
-offset_bottom = 27.0
-mouse_filter = 2
-color = Color(0.67, 0.35, 0.84, 0.92)
-
-[node name="DashChevronTop" type="ColorRect" parent="."]
-layout_mode = 1
-offset_left = 39.0
-offset_top = 3.0
-offset_right = 49.0
-offset_bottom = 4.0
-mouse_filter = 2
-color = Color(0.67, 0.35, 0.84, 0.92)
+theme_override_font_sizes/font_size = 7
 
 [node name="StateLabel" type="Label" parent="."]
 unique_name_in_owner = true
-layout_mode = 1
-anchors_preset = 12
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 2.0
-offset_top = -15.0
-offset_right = -2.0
-offset_bottom = -3.0
-grow_horizontal = 2
-grow_vertical = 0
+visible = false
+layout_mode = 0
+offset_left = 1.0
+offset_top = 17.0
+offset_right = 39.0
+offset_bottom = 30.0
 mouse_filter = 2
 text = "DODGE"
 horizontal_alignment = 1
-theme_override_colors/font_color = Color(0.62, 0.9, 0.54, 1)
+theme_override_colors/font_color = Color(0.87, 0.95, 1, 1)
 theme_override_colors/font_outline_color = Color(0.01, 0.02, 0.03, 1)
-theme_override_constants/outline_size = 1
+theme_override_constants/outline_size = 2
 theme_override_font_sizes/font_size = 8
 
 [node name="CooldownBar" type="ProgressBar" parent="."]
 unique_name_in_owner = true
-layout_mode = 1
-anchors_preset = 12
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 3.0
-offset_top = -3.0
-offset_right = -3.0
-grow_horizontal = 2
-grow_vertical = 0
+layout_mode = 0
+offset_left = 9.0
+offset_top = 35.0
+offset_right = 31.0
+offset_bottom = 37.0
 mouse_filter = 2
 show_percentage = false
 theme_override_styles/fill = SubResource("cooldown_fill")
@@ -146,12 +80,10 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 0
-focus_mode = 0
+focus_mode = 2
 mouse_default_cursor_shape = 2
-tooltip_text = "Dodge (Space)"
 flat = true
-theme_override_styles/hover = SubResource("dash_interact")
-theme_override_styles/pressed = SubResource("dash_interact")
+script = ExtResource("2_tooltip")
 
 [connection signal="timeout" from="CooldownTick" to="." method="_on_cooldown_tick"]
 [connection signal="pressed" from="ActivationButton" to="." method="_on_activation_button_pressed"]

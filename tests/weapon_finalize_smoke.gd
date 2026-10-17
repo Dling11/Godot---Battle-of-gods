@@ -24,6 +24,7 @@ func check(ok: bool, message: String) -> void:
 		push_error(message)
 
 func _run() -> void:
+	AudioServer.set_bus_mute(0,true)
 	root.size = Vector2i(1280,720)
 	root.get_node("SaveService").configure_storage_path_for_testing("user://weapon_finalize_smoke.json")
 	root.get_node("SaveService").suppress_autosave_for_debug_session()
@@ -126,8 +127,9 @@ func _run() -> void:
 		menu._on_equipment_selected(item)
 		await process_frame
 		await process_frame
-		check(menu.equipment_detail_panel.item_icon.texture==item.icon and menu.equipment_detail_panel.item_icon.size==Vector2(64,64),"Bag preview omits or resizes finalized icon")
-		check(menu.equipment_detail_panel.synergy_body.text.contains("Damage per hit"),"Bag lacks actual combo damage description")
+		var inspected: Texture2D = menu.equipment_detail_panel.item_icon.texture
+		check(inspected is AtlasTexture and inspected.atlas == item.icon,"Bag preview loses the actual finalized weapon artwork")
+		check(menu.equipment_detail_panel.synergy_body.get_parsed_text().contains("Cut 1") and menu.equipment_detail_panel.power_label.get_parsed_text().contains("%.2fs" % WeaponCombatReadout.duration(weapon)),"Bag lacks current combo damage/timing")
 		await capture(["sword_bag.png","axe_bag.png","dual_bag.png","greatsword_bag.png"][index])
 		menu.close_menu()
 		rows.append({"item":item.display_name,"base_roll":str(WeaponCombatReadout.base_range(weapon)),"combo_seconds":WeaponCombatReadout.duration(weapon),"base_dps":WeaponCombatReadout.base_dps(weapon),"chain_damage":str(WeaponCombatReadout.chain_range(weapon))})

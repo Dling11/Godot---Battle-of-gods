@@ -13,6 +13,7 @@ const MarqueeLabelScript = preload("res://ui/components/marquee_label.gd")
 const ProgressionReadout = preload("res://ui/hud/progression_readout.gd")
 const StatusPresenter = preload("res://ui/hud/player_status_presenter.gd")
 var status_presenter: Node
+var weapon_technique_dock: Control
 
 signal character_menu_requested
 
@@ -54,7 +55,6 @@ signal character_menu_requested
 
 var _blocked_tween: Tween
 var _player: Player
-var _pursuit_link_available := false
 var _spawn_tween: Tween
 var ability_panel: SkillBarSlot
 var _skill_slots: Array[SkillBarSlot] = []
@@ -102,16 +102,9 @@ func _style_enemy_roster_scrollbar() -> void:
 func bind_player(player: Player) -> void:
 	_player = player
 	status_presenter.bind_player(player)
-	if player.has_node("UnbrokenVowComponent"):
-		var vow_status := preload("res://ui/skills/vow_status.gd").new()
-		vow_status.actor = player
-		add_child(vow_status)
-		vow_status.position = Vector2(12,130)
-	var mastery := player.get_node_or_null("KingMastery") as KingMasteryComponent
-	if mastery != null:
-		mastery.resolve_changed.connect(_update_resolve)
-		mastery.link_changed.connect(_update_link)
-		_update_resolve(mastery.stacks,mastery.definition.resolve_hits)
+	weapon_technique_dock = preload("res://ui/skills/weapon_technique_dock.gd").new()
+	add_child(weapon_technique_dock)
+	weapon_technique_dock.configure(player)
 	var health: HealthComponent = player.health_component
 	health.health_changed.connect(_update_health)
 	health.damage_blocked.connect(_show_blocked)
@@ -189,12 +182,16 @@ func _build_skill_bar(player: Player) -> void:
 		skill_bar.add_child(slot)
 		slot.configure(definition)
 		slot.bind_ability(player.get_ability_component_for_slot(definition.slot_number))
+		# Keep legacy slot identities for input/save compatibility; absent skills
+		# contribute no visual space. Cooldowns never remove an equipped slot.
+		slot.visible = definition.is_equipped()
 		slot.activation_requested.connect(_on_skill_activation_requested)
 		_skill_slots.append(slot)
 		if definition.slot_number == 1:
 			ability_panel = slot
 	if not Input.get_connected_joypads().is_empty():
 		_show_selected_skill(player.selected_skill_slot)
+	status_presenter.layout_dock.call_deferred()
 
 
 func _on_skill_activation_requested(slot_number: int) -> void:
@@ -525,7 +522,7 @@ func _update_progression(_level: int, _total_experience: int, _next_level_experi
 		return
 	var progression := _player.progression_component
 	var readout := ProgressionReadout.describe(progression)
-	level_label.text = readout.hud_level
+	level_label.text = str(progression.level)
 	experience_bar.max_value = readout.maximum
 	experience_bar.value = readout.value
 	experience_label.text = readout.hud_text
@@ -534,7 +531,10 @@ func _update_progression(_level: int, _total_experience: int, _next_level_experi
 
 
 func _update_coins(total_coins: int) -> void:
-	coin_label.text = "COINS %s" % ProgressionReadout.format_number(total_coins)
+	coin_label.text = ProgressionReadout.format_number(total_coins)
+	coin_label.tooltip_text = "Gold: "+coin_label.text+" · crafting and Sanctuary services"
+	if total_coins >= 1000000: coin_label.text = "%.1fM" % (total_coins/1000000.0)
+	elif total_coins >= 10000: coin_label.text = "%.1fK" % (total_coins/1000.0)
 
 
 func _show_testing_preset(level: int, coins: int) -> void:
@@ -600,7 +600,7 @@ func _show_restraint_message(message: String) -> void:
 func _update_health(current: float, maximum: float) -> void:
 	health_bar.max_value = maximum
 	health_bar.value = current
-	health_label.text = "HP  %d / %d" % [ceili(current), ceili(maximum)]
+	health_label.text = "%d / %d" % [ceili(current), ceili(maximum)]
 	status_presenter.set_health(current,maximum)
 
 
@@ -718,17 +718,3 @@ func _play_next_loot_notification() -> void:
 		loot_toast_panel.hide()
 	_loot_toast_busy = false
 	_play_next_loot_notification()
-
-
-func _update_resolve(stacks: int, maximum: int) -> void:
-	var label := get_node("ResolveLabel") as Label
-	label.text = "RESOLVE %d/%d READY · NEXT SKILL +25%%" % [stacks, maximum] if stacks == maximum else "RESOLVE %d/%d STACKS · BASIC HITS" % [stacks, maximum]
-	if _pursuit_link_available:
-		label.text += " · RUPTURE +15%"
-	label.tooltip_text = "Each landed basic swing fills one bar. Fill all three for +25% damage on your next skill. Lasts 8 seconds after your last basic hit; hitting more enemies in one swing still earns only one bar."
-	label.add_theme_color_override("font_color", Color("c7efff") if stacks == maximum else Color("adc5d5"))
-
-func _update_link(available: bool) -> void:
-	_pursuit_link_available = available
-	var mastery := _player.get_node("KingMastery") as KingMasteryComponent
-	_update_resolve(mastery.stacks,mastery.definition.resolve_hits)

@@ -44,6 +44,19 @@ func owns_contact_feedback() -> bool:
 	return false
 
 
+func owns_body_presentation() -> bool:
+	return false
+
+
+func owns_incoming_feedback() -> bool:
+	## Continuous defensive casts may supply their own guarded-hit feedback.
+	return false
+
+
+func get_manual_movement_ratio() -> float:
+	return 0.0
+
+
 func can_queue_cast() -> bool:
 	return cooldown_remaining <= 0.0
 

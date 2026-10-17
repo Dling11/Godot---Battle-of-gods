@@ -1,8 +1,18 @@
 # Roadmap
 
-Updated 2026-10-16.
+## Current review — Hooded mentor and training court 234
+
+Owner provisionally likes 233's service layout/dummy idea. Installed 234: younger hooded Veyr at the corrected 0.5 world scale with a grounded shadow, same-size weapon-filled northwest lodge and four-cel responsive posts. Preserve northeast gate, perimeter/paths and four-row extension. The 232 Axe proof, permanent Cyclone F1, Nema pattern and mastery ribbon remain. Mentor 181/0, Sanctuary 67/0 and Eira 73/0 pass; owner native art/feel approval and recipe/balance tuning remain pending. Current cross-chat handoff: CONTINUE_SANCTUARY.md. Other family lessons, legacy crafting-location migration and visible evolution remain future work.
+
+Updated 2026-10-18.
 
 ## Completed
+
+- Cyclone231 visual closeout: owner accepts connected motion for now; installed with selected blue outer/C contact/sparks and ordinary Axe settle.230 gameplay/audio remain unchanged. Headless Cyclone422/0 passes; archives are retired under Decision223/231.
+
+- B HUD functionality and latest reference-fidelity/skill-art pass are installed; native art acceptance remains for owner review. The first Axe proof is implemented by232; other family learning is deferred.
+
+- Decision225 C2 Veil Sigils HUD: compact adaptive round skills, numeric bottom XP, avatar-first HP, live equipment/stats, bottom-right utilities and themed hover/focus cards. See docs/design/veil-sigils-hud.md.
 
 - Decision223 follows the owner’s clarification: raw generation sources are removed too; permanent generated folders are ignored/rejected. Current installed assets remain exact. Earlier cleanup sizes/counts below are historical.
 
@@ -21,15 +31,29 @@ Updated 2026-10-16.
 
 ## Current work
 
-Decision223 completes minimal source retention: the entire305-file generated tree and18 image-builder/helper files are removed; keep final artwork and compact important references/metadata/licenses. The owner provisionally accepts Decision224 Sword side running; a targeted hilt depth/grasp correction is installed for review, preserving all accepted poses and movement. Next: earned acquisition and intentional campaign balance. Current evidence and footprint are in docs/maintenance/repository-cleanup.md.
+- Art/source trial cleanup is complete; removal of three ignored disposable clone archives remains blocked by automatic approval review. See KNOWN_ISSUES.md for exact paths. The live project/Git/profiles are preserved.
+
+- Cyclone visual work is closed under 231. Current work: owner review of 234 hooded mentor/lodge/dummy feedback, preserving 233 layout, then first Axe proof/forging balance. The first mentor/earning/unlock loop is installed under 232; other family lessons remain planned. Keep the Monster Hunter focus restriction until lifted.
+
+War Cyclone231 is provisionally accepted and installed: paired body/silver-cut motion, original blue outer, quieter C contact and separate sparks. Ordinary Axe poses handle startup/settle. Decision230 mechanics/audio remain:5s ACTIVE,150 starter Physical total/30 DPS,10 normal or15 hasted pulses with the same total,96px radius,90% steering,50% all-type guard/stun immunity, repeated-F1 acknowledgement and Space cancellation. Headless Cyclone422/0 passes; ordinary weapon art and production saves remain exact. Learning/mentor/evolution and campaign/device balance are still planned. Current guide: docs/design/axe-war-cyclone.md; sole compact provenance: art_source/reference/abilities/axe-war-cyclone.json. Visual iteration is closed under231.
+
+The owner provisionally accepts the sealed mastery/larger level HUD. Bag227 now fixes modal depth/clipping, introduces bounded scrolling item details and definition-derived coloured stats/comparisons/mechanics, and refreshes category/sort controls and the complete King/item previews. Equipment search is removed; material search remains. Current evidence/limits: docs/design/bag-inspection-refresh.md. Native Bag99/0, HUD261/0, weapons301/0, readability74/0 and skills73/0 pass; the owner accepts the floorless gradient, now installed without scenery or an added raster. Character menu, equipment catalog and archive-boundary follow-up checks pass; all683 retained art files stay exact.
+
+
+Next review: F5 → Continue → Tab. Check equipment categories, sort dropdown, scythe scrolling, visible equip action, King/weapon previews and rarity styling. Use F9 for session-only all-family review. Preserve the accepted HUD and weapon art.
+
+Decision223 completes minimal source retention: the entire305-file generated tree and18 image-builder/helper files are removed; keep final artwork and compact important references/metadata/licenses. The owner provisionally accepts Decision224 running/final grip and settles all current weapon artwork. Preserve the accepted poses and movement. Next: earned acquisition and intentional campaign balance. Current evidence and footprint are in docs/maintenance/repository-cleanup.md.
+
+Progression direction226: weapons craft at Sanctuary/base; weapon techniques come from family mastery; meaningful item upgrades should gain reviewed weapon/icon/UI designs. Include the full physical/magic/pure/critical/defense/control vocabulary and proposed HP-based damage, poison/blind/miss/evasion/status expansion. Read docs/design/weapon-mastery-crafting-and-combat-expansion.md. The owner requests the first Axe skill before a distinctive learning system rather than another XP bar. Earlier hybrid XP, Mastery5 evolution details and Veyr as a mentor remain unselected proposals.
 
 ## Next
 
-1. Owner-review Sword224 hilt visibility, then define earned family acquisition/balance while preserving the provisionally settled Sword221/224, Twinsteel219, Iron Beard213, Greatsword217 and Reaper.
-2. Define and implement earned weapon recipes/acquisition with Nema and stage rewards.
-3. Refine weapon roles using the real-enemy comparison; only retune with explicit gameplay intent.
-4. Profile cold loading, larger fights and target-device performance before optimization.
-5. Extend stages/biomes and divine/domain mechanics using canonical stage/reward authority.
+1. Owner reviews the refreshed Bag in normal play, including scythe scrolling, all-family previews, rarity and category/sort/equip controls. Keep accepted HUD/actors and future8+6 migration explicit.
+2. Review 234's installed mentor/lodge/dummy visuals and the first Axe proof/forging loop in normal play. That first proof is implemented; other family lessons and evolution rules remain unselected. Keep King level, family learning and item tier separate; no ordinary secondary XP bar is selected.
+3. Expand deterministic family recipes/upgrades and enforce Sanctuary-only crafting through the current Nema transaction/save authority; review material/gold pacing and all-family roles.
+4. Introduce one bounded abnormal status and its typed/control/HP-scaling safeguards before broad status expansion. Review proposed mentor/trial and first visual evolution after its rules/concept are selected.
+5. Profile cold loading, larger fights and target-device performance; verify family balance and earning across slow/fast/cleave weapons.
+6. Extend stages/biomes and divine/domain mechanics using canonical stage/reward authority.
 
 ## Deferred
 

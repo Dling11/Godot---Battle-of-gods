@@ -264,7 +264,7 @@
     "saves_unchanged": true,
     "native_preview_frames": 1
   },
-  "owner_visual_approved": false,
+  "owner_visual_approved": true,
   "hilt_depth": {
     "reason": "Owner identifies pommel-end grip as unrealistic; move the sword down/back into the existing closed glove.",
     "source_grasp": [
@@ -293,5 +293,10 @@
     "method": "Deterministic canonical steel composition: middle of the leather grip at the real closed glove, four source pixels back from the rejected pommel grasp, five degrees lower. No anatomical redraw or transplant."
   },
   "owner_motion_accepted": true,
-  "owner_grip_review_pending": true
+  "owner_grip_review_pending": false,
+  "owner_acceptance": {
+    "date": "2026-10-16",
+    "status": "provisionally_settled",
+    "statement": "you know what that would do... so far everything is done"
+  }
 }

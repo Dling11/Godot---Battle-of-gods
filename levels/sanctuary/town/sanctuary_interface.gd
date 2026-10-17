@@ -26,27 +26,8 @@ func configure(hub: Node, test_controls: Control) -> void:
 		modal.visibility_changed.connect(_sync_review_controls)
 	for recipe in [[hub.dialogue_panel.skip_button,11],[hub.dialogue_panel.continue_button,10],[hub.dialogue_panel.body_label,12]]:
 		recipe[0].add_theme_font_size_override("font_size",recipe[1])
-	var hud: Control = hub.combat_hud
-	hud.get_node("EclipseFrame").hide()
-	hud.get_node("EclipseVeil").hide()
-	var tray: Control = hud.get_node("ActionTray")
-	tray.offset_top = -62
-	tray.offset_bottom = -8
-	var hint: Control = hud.get_node("ResolveLabel")
-	hint.offset_top += 34
-	hint.offset_bottom += 34
-	var compact := Panel.new()
-	compact.name = "CompactSanctuaryFrame"
-	compact.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	compact.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
-	hud.add_child(compact)
-	hud.move_child(compact,tray.get_index())
-	compact.set_anchors_and_offsets_preset(Control.PRESET_CENTER_BOTTOM)
-	compact.offset_left = -330
-	compact.offset_right = 330
-	compact.offset_top = -68
-	compact.offset_bottom = -2
-	compact.add_theme_stylebox_override("panel",ThemeKit.frame())
+	# CombatHUD owns its shared status/dock in Sanctuary and expeditions.
+	# Town presentation styles modals without adding a second legacy HUD frame.
 
 func _on_collection_ready(collection: Node) -> void:
 	_collection_panels = _collection_panels.filter(func(panel) -> bool: return is_instance_valid(panel))

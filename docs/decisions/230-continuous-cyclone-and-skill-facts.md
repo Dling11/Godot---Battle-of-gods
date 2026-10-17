@@ -1,0 +1,19 @@
+# Decision230 — Full-duration Cyclone and readable skill facts
+
+Date2026-10-17. Implements the owner's follow-up to229. Current input, damage and presentation rules below supersede229's early-F1 brake and haste-multiplied total.
+
+Presentation is superseded by Decision231 after owner acceptance2026-10-18. Preserve the gameplay/audio rules below. Current paired-motion assets/provenance: art_source/reference/abilities/axe-war-cyclone.json; current guide: docs/design/axe-war-cyclone.md.
+
+Decision230 widened the real radius84→96px and retained complete phase-exclusive actors. Its generated B spin/settle and later trial artwork are now retired under231; ordinary Axe attacks/running remain protected.
+
+F1 commits a five-second ACTIVE channel. Repeating F1 acknowledges use with a quiet throttled cue; it does not cancel/restart damage, elapsed time or cooldown. Space remains an explicit dodge-cancel; defeat, interaction and ordinary restraint/cancel authority still apply. Right-click destinations can steer a skill that explicitly allows manual movement, using Player's normal acceleration/navigation/collision. Automated pursuit remains suspended during casts. A different available skill replaces an unconfirmed targeting preview; repeating the same targeted key does not confirm it.
+
+DPS is a rate/pattern, not a fourth damage type. Cyclone remains Physical. Snapshot one total budget per target, split across the haste-selected pulses. Baseline Axe power25 gives150 total/30 DPS over5s:10 pulses at normal speed or15 at+50% haste, with the same150 total. This preserves baseline power while removing automatic haste multiplication. The owner's1,000 example means1,000 total/200 DPS, not1,000 every second. Stay in range for the whole total; entering late or dodging out forfeits missed pulses. Criticals, buffs and defenses still change real HP loss. Guard remains ACTIVE-only50% incoming reduction for Physical/Magic/Pure plus stun/stagger immunity, without reflection or bleeding.
+
+Current presentation is owned by231; visual revolutions never create extra damage queries. Dedicated recorded start/spin/finish sounds retain one looping voice, one cue voice and one contact voice, with180ms repeat throttling and no runtime DSP/per-enemy voice stacking.
+
+Shared skill cards add a colored facts area while preserving existing body/status cards: Physical ivory, Magic blue, Pure violet, always labeled in text. Total damage, damage per second where meaningful, duration/cooldown, control and protection are separate facts. Report only authored effects. F1 exposes live definition-derived values and full-range assumptions; no cut-number jargon. Sources of inspiration: [GW2's channelled Whirling Axe damage facts](https://wiki.guildwars2.com/wiki/Whirling_Axe) and [the official weapon/burst/stance roles](https://www.guildwars2.com/en/the-game/professions/warrior/). No game art/audio or balance numbers are copied.
+
+Future evolution is a documented plan, not an earned feature: Sanctuary crafting evolves the item; family mastery earns/upgrades F1. Keep item tier, King level and mastery distinct. A technique variant may change total coefficient, duration/cadence/radius, protection, icon and complete animation/audio set. Scale UI directly from its current definition. Review stronger guard/duration against damage budget rather than stacking every bonus; decide whether haste should ever add total damage explicitly, not as a tick-count accident. Weapon-specific learning/mentor, recipes, rank earning, evolved weapons and milestone unlocks are still unimplemented under226/228.
+
+Current guide: docs/design/axe-war-cyclone.md. Sole provenance: art_source/reference/abilities/axe-war-cyclone.json. Publish final runtime rasters/audio only and remove trial archives under231/223. Owner accepts the connected presentation for now; campaign/device checks remain separate.

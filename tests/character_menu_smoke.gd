@@ -11,6 +11,9 @@ func _initialize() -> void:
 
 
 func _run() -> void:
+	var save := root.get_node("SaveService")
+	assert(save.configure_storage_path_for_testing("user://character_menu_smoke.json"))
+	save.delete_profile()
 	root.get_node("RunSession").reset_run()
 	root.get_node("WeaponInventory").reset_inventory()
 	root.get_node("GearInventory").reset_inventory()
@@ -63,7 +66,7 @@ func _run() -> void:
 		"Panel/Margin/Root/PageHost/GearPage/LoadoutRow/PaperDollPanel/"
 		+ "PaperDollMargin/PaperDollRoot/EquipmentLayout/Portrait/PortraitCanvas/Body"
 	) as AnimatedSprite2D
-	if preview_body.sprite_frames != KingFrames or preview_body.position != Vector2(76, 101) or preview_body.scale != Vector2(2, 2):
+	if preview_body.sprite_frames != KingFrames or not is_equal_approx(preview_body.position.x,(preview_body.get_parent() as Control).size.x*.5) or preview_body.scale != Vector2(2, 2):
 		_fail("Character menu preview is not using King's body-centered active model.")
 		return
 	var preview_grip := menu.get_node(
@@ -82,7 +85,7 @@ func _run() -> void:
 		return
 	var expected_slots := [
 		"HEAD",
-		"WEAPON ESSENCE",
+		"WEAPON",
 		"PLATE",
 		"GLOVES",
 		"LEGGINGS",
@@ -125,7 +128,7 @@ func _run() -> void:
 		return
 	if (
 		(menu.get_node("Panel") as Control).size != Vector2(840, 490)
-		or menu.equipment_detail_panel.custom_minimum_size != Vector2(280, 232)
+		or menu.equipment_detail_panel.custom_minimum_size != Vector2(300, 264)
 	):
 		_fail("Character & Bag did not adopt the approved compact modal and detail dimensions.")
 		return
@@ -152,7 +155,7 @@ func _run() -> void:
 	if (
 		menu.equipment_detail_panel.current_definition == null
 		or menu.equipment_detail_panel.current_definition.item_id != &"weapon_king_signature_sword"
-		or not menu.equipment_detail_panel.state_label.text.contains("ACTIVE EFFECTS")
+		or not menu.equipment_detail_panel.equip_button.disabled
 	):
 		_fail("Selecting King's Sword did not update the active equipment detail surface.")
 		return
@@ -302,9 +305,11 @@ func _run() -> void:
 	):
 		_fail("Equipping the complete Stage V armor set did not apply its real reusable stats.")
 		return
-	menu.sort_button.pressed.emit()
-	if menu.sort_button.text != "SORT: NAME":
-		_fail("The inventory sort control did not cycle from slot order to name order.")
+	var name_sort := CharacterMenu.SORT_MODES.find(&"name")
+	menu.sort_button.select(name_sort)
+	menu.sort_button.item_selected.emit(name_sort)
+	if menu._inventory_sort_mode != &"name":
+		_fail("The inventory sort selection did not apply name order.")
 		return
 	if menu._skill_cards[0].get_node_or_null(menu._skill_cards[0].focus_neighbor_right) != menu._skill_cards[1]:
 		_fail("Character skill cards do not provide explicit directional focus navigation.")
@@ -349,10 +354,14 @@ func _run() -> void:
 		return
 
 	print("Character menu smoke test passed.")
+	save.delete_profile()
+	save.reset_storage_path_after_testing()
 	quit(0)
 
 
 func _fail(message: String) -> void:
 	paused = false
 	push_error(message)
+	root.get_node("SaveService").delete_profile()
+	root.get_node("SaveService").reset_storage_path_after_testing()
 	quit(1)

@@ -1,0 +1,59 @@
+{
+  "date": "2026-10-17",
+  "mode": "built-in image_gen",
+  "transparent_background": true,
+  "input_role": "Owner-approved refined B reference only; blank native production parts are edited/generated from its appearance.",
+  "input_preview": "tmp/review/player_status_redraw_2026_10_17/b_refined.png",
+  "input_sha256": "780cf65bc2fd1ece3c53f1421c077dc5ab32f032e6387b5d47c65d7545730dcc",
+  "prompt": "Use case: precise-object-edit. Asset type: small production RPG HUD asset board for Godot. Input image is the OWNER APPROVED reference B Mastery Ribbon. Create transparent-background isolated clean UI parts that reproduce this exact artwork language (dark steel engraved bevels, tiny cyan/violet jewels, crisp pixel RPG clusters). Arrange ONLY TWO widely separated parts on a square transparent board. TOP HALF: a standalone complete ROUND King portrait medallion, front three-quarter head and red scarf identical to reference, dark brown spiky hair, circular darksteel cyan-jewel rim. No level badge attached, no text. Circle diameter about 420px centered x512 y260. BOTTOM HALF: a very wide short blank purple mastery ribbon frame, dark navy interior with faint violet bottom gutter, darksteel bevel and small violet diamond gems at the corners, rectangle about 900px wide by 190px tall centered x512 y760. Ribbon interior MUST BE EMPTY, no sword, no numbers, no lettering, no progress fill; native Godot will overlay the title and live gauge. No other parts. Both shapes complete with transparent space around edges; absolutely no sanctuary/background, no shadow rectangle, no headings, no checkerboard. Do not redesign the selected appearance or add gold. Prioritize the beautiful round portrait and same ribbon style as the attached reference.",
+  "generated_sha256": "931bd1797a687001a331ea3a512cab1690a84c58e332eb26923686b206ebe030",
+  "source_size": [
+    1254,
+    1254
+  ],
+  "derivatives": [
+    {
+      "file": "king_portrait.png",
+      "sourceBounds": [
+        300,
+        133,
+        655,
+        637
+      ],
+      "size": [
+        192,
+        192
+      ],
+      "path": "assets/ui/hud/veil_sigils/king_portrait.png"
+    },
+    {
+      "file": "mastery_frame.png",
+      "sourceBounds": [
+        31,
+        866,
+        1193,
+        233
+      ],
+      "size": [
+        552,
+        114
+      ],
+      "path": "assets/ui/hud/veil_sigils/mastery_frame.png"
+    }
+  ],
+  "recipe": "Current density correction: Godot Image.INTERPOLATE_LANCZOS directly from the recorded sourceBounds into3x logical raster sizes, preserving graded alpha. No nearest export or binary-alpha quantization. Runtime uses local linear sampling, retaining unchanged logical64x64 portrait/184x38 mastery size. Original built-in prompt/source hash above remain unchanged.",
+  "retention": "Final PNGs authoritative; source image kept only at built-in Codex output location, not a repo/build dependency.",
+  "hp_frame_density": {
+    "source_prompt_file": "docs/design/combat-hud-fidelity-prompts.json",
+    "source_prompt_id": "status",
+    "source_sha256": "d7d5187444e7c1034a4904556578f6e998c6c442eac3f2365abe6622e947989c",
+    "source_rect": [
+      532,
+      213,
+      1155,
+      161
+    ],
+    "recipe": "Lanczos to474x66 (158x22 logical at3x); preserve36px endcaps and stretch402px center to480px. Output552x66. Whole-image StyleBoxTexture draws at184x22; no physical margins used as logical units.",
+    "path": "assets/ui/hud/veil_sigils/health_frame.png"
+  }
+}

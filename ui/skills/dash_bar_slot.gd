@@ -1,6 +1,8 @@
 class_name DashBarSlot
 extends Panel
 
+const VeilStyle = preload("res://ui/hud/veil_theme.gd")
+
 ## Compact HUD control for the core dash action and its cooldown.
 
 signal activation_requested
@@ -14,6 +16,12 @@ signal activation_requested
 var evade_component: EvadeComponent
 var _cooldown_tween: Tween
 var _restraint_active := false
+
+func _ready() -> void:
+	VeilStyle.skin_slot(self,activation_button)
+	$Icon.texture = VeilStyle.DODGE
+	activation_button.configure_tooltip(func() -> Dictionary:
+		return {"title":"Break free · Space" if _restraint_active else "Dodge · Space","body":"Tap repeatedly to escape the roots." if _restraint_active else "Dash in your movement direction. Uses the same cooldown as Space and the controller dodge.","footer":"Remaining %.1fs" % evade_component.get_cooldown_remaining() if is_instance_valid(evade_component) else "Unavailable"})
 
 
 func bind_evade(component: EvadeComponent) -> void:
@@ -40,6 +48,7 @@ func _show_cooldown(duration_seconds: float) -> void:
 	# cooldown-denied feedback from Player.
 	activation_button.disabled = false
 	state_label.text = "%.1f" % duration_seconds
+	state_label.show()
 	state_label.add_theme_color_override("font_color", Color(0.94, 0.72, 0.38, 1))
 	cooldown_bar.max_value = duration_seconds
 	cooldown_bar.value = duration_seconds
@@ -57,6 +66,7 @@ func _show_ready() -> void:
 	modulate = Color.WHITE
 	activation_button.disabled = false
 	state_label.text = "DODGE"
+	state_label.hide()
 	state_label.add_theme_color_override("font_color", Color(0.62, 0.9, 0.54, 1))
 	cooldown_tick.stop()
 
@@ -73,11 +83,14 @@ func show_restraint_progress(remaining: int, total: int) -> void:
 	activation_button.tooltip_text = "Break free — tap repeatedly"
 	key_label.text = "TAP"
 	state_label.text = "BREAK %d/%d" % [total - remaining, total]
+	state_label.show()
+	state_label.add_theme_font_size_override("font_size",6)
 	state_label.add_theme_color_override("font_color", Color(1.0, 0.88, 0.38, 1.0))
 
 
 func clear_restraint_progress() -> void:
 	_restraint_active = false
+	state_label.add_theme_font_size_override("font_size",8)
 	key_label.text = "SPACE"
 	activation_button.tooltip_text = "Dodge (Space)"
 	if is_instance_valid(evade_component) and evade_component.get_cooldown_remaining() > 0.0:

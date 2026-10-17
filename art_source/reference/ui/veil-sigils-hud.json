@@ -1,0 +1,834 @@
+{
+  "date": "2026-10-17",
+  "status": "Approved B artwork retained; larger real player level and designed sealed mastery state installed. Family training authority remains deferred.",
+  "runtime_document": "docs/design/hud-reference-fidelity.md",
+  "approved_reference": "art_source/reference/ui/approved_mastery_ribbon.png",
+  "prompts": "docs/design/hud-reference-fidelity-prompts.json",
+  "textures": [
+    {
+      "path": "assets/ui/hud/veil_sigils/bag_face.png",
+      "size": [
+        108,
+        108
+      ],
+      "bytes": 23674,
+      "sha256": "710c2197ed7f0e07abb388477385d66c5948979932724d0e6c0b2bd7c46344fb"
+    },
+    {
+      "path": "assets/ui/hud/veil_sigils/coin_plaque.png",
+      "size": [
+        144,
+        45
+      ],
+      "bytes": 10420,
+      "sha256": "356d06a644539e1013ad0aff1346995a41f258d86aec42a51e07787bc700d370"
+    },
+    {
+      "path": "assets/ui/hud/veil_sigils/dodge.png",
+      "size": [
+        72,
+        72
+      ],
+      "bytes": 9385,
+      "sha256": "e136411848038f590e8edc692b27ab13003f6aaf79f95ee572f646e26319e423"
+    },
+    {
+      "path": "assets/ui/hud/veil_sigils/earthsplitter.png",
+      "size": [
+        72,
+        72
+      ],
+      "bytes": 11373,
+      "sha256": "b82a4309169dd51567a2085d71a19fb3bfd899361cee5be6ffaf0e2008c9f0ab"
+    },
+    {
+      "path": "assets/ui/hud/veil_sigils/family_axe.png",
+      "size": [
+        54,
+        54
+      ],
+      "bytes": 4124,
+      "sha256": "8bd99de9188afef320c06e57fce6302a1b1f469036003b9d5b920fb12f85dc20"
+    },
+    {
+      "path": "assets/ui/hud/veil_sigils/family_dual_swords.png",
+      "size": [
+        54,
+        54
+      ],
+      "bytes": 5187,
+      "sha256": "7bbbffaac8576d71960595fae7d1576c5ad545ff629eb3852a789e142bbc309d"
+    },
+    {
+      "path": "assets/ui/hud/veil_sigils/family_greatsword.png",
+      "size": [
+        54,
+        54
+      ],
+      "bytes": 4158,
+      "sha256": "ff6f951d4f4e178b340046a15682d28b55e8d496d772d1805b04c0a9267aadae"
+    },
+    {
+      "path": "assets/ui/hud/veil_sigils/family_scythe.png",
+      "size": [
+        54,
+        54
+      ],
+      "bytes": 3180,
+      "sha256": "4f7bca910fb9f66c438a3631b7580e7ae4e72e73cbe14dff135725611794824b"
+    },
+    {
+      "path": "assets/ui/hud/veil_sigils/family_sword.png",
+      "size": [
+        54,
+        54
+      ],
+      "bytes": 3633,
+      "sha256": "ed5def0623c87cc59311727161a1506fd3e1642d98e23932bbcd63e3ea23486d"
+    },
+    {
+      "path": "assets/ui/hud/veil_sigils/health_frame.png",
+      "size": [
+        552,
+        66
+      ],
+      "bytes": 43276,
+      "sha256": "2e3d5faa160b06ed406c67d0f2925b2b05cf9966686967e2d448b3735a87ca64"
+    },
+    {
+      "path": "assets/ui/hud/veil_sigils/king_portrait.png",
+      "size": [
+        192,
+        192
+      ],
+      "bytes": 71365,
+      "sha256": "6df92c1528ff74f2f072f4afe65563d2fd472df62f6c99f019c3624eb39a88d6"
+    },
+    {
+      "path": "assets/ui/hud/veil_sigils/level_badge.png",
+      "size": [
+        102,
+        45
+      ],
+      "bytes": 8822,
+      "sha256": "f2cc267285f579d0affce3bf7c96ce99fce4aed5634402e6ce0434acc10910c5"
+    },
+    {
+      "path": "assets/ui/hud/veil_sigils/mastery_fill.png",
+      "size": [
+        480,
+        30
+      ],
+      "bytes": 17836,
+      "sha256": "6fb81ac3d1e402d755661342deadb46fcdec9f9340765a3d9b398cdd9b0e8a4a"
+    },
+    {
+      "path": "assets/ui/hud/veil_sigils/mastery_frame.png",
+      "size": [
+        552,
+        90
+      ],
+      "bytes": 62275,
+      "sha256": "725c63a5435a36fc3e71a1a09bf18a0988bbe0245d85790c980032fe508f4311"
+    },
+    {
+      "path": "assets/ui/hud/veil_sigils/medallion.png",
+      "size": [
+        120,
+        120
+      ],
+      "bytes": 25310,
+      "sha256": "a0edccb1972e0b69df583a3bbfa9390e409682df7bd831cf85c995664acba35e"
+    },
+    {
+      "path": "assets/ui/hud/veil_sigils/molten_crash.png",
+      "size": [
+        72,
+        72
+      ],
+      "bytes": 10856,
+      "sha256": "f0ef42fc1642e1006022a24e030d2610582056254d348270621424a97c2eeb19"
+    },
+    {
+      "path": "assets/ui/hud/veil_sigils/settings_face.png",
+      "size": [
+        108,
+        108
+      ],
+      "bytes": 24989,
+      "sha256": "9a26e301e37e20e5a030f54bf988e8c58dbcd852033d28e3e8e3a78fc5b043ea"
+    },
+    {
+      "path": "assets/ui/hud/veil_sigils/sovereign_pursuit.png",
+      "size": [
+        72,
+        72
+      ],
+      "bytes": 9966,
+      "sha256": "dce534862f1092d34edd65d3a28957d9d0369a878487a3df2ce160ef9f778e1d"
+    },
+    {
+      "path": "assets/ui/hud/veil_sigils/status_beneficial.png",
+      "size": [
+        66,
+        66
+      ],
+      "bytes": 9403,
+      "sha256": "4c2dc764e609ba2de84abab3ad605dc1d382aa5caaeff6d437dcf3d9f20f4506"
+    },
+    {
+      "path": "assets/ui/hud/veil_sigils/status_harmful.png",
+      "size": [
+        66,
+        66
+      ],
+      "bytes": 9313,
+      "sha256": "7f890a66a12a0fe0386ffb39d1fc55195e0396f331b49c8a3c2f96218e608387"
+    },
+    {
+      "path": "assets/ui/hud/veil_sigils/status_resolve.png",
+      "size": [
+        48,
+        48
+      ],
+      "bytes": 3734,
+      "sha256": "a2d06f9488190ee38cad23ed13f8a2cd630a4eee37644462bbfcd064808390db"
+    },
+    {
+      "path": "assets/ui/hud/veil_sigils/status_root.png",
+      "size": [
+        48,
+        48
+      ],
+      "bytes": 5501,
+      "sha256": "3e22d42242f844a5ec6cbd65201dabab5ed046d5cb8c692caf8c737e092d3ec9"
+    },
+    {
+      "path": "assets/ui/hud/veil_sigils/status_shield.png",
+      "size": [
+        48,
+        48
+      ],
+      "bytes": 4208,
+      "sha256": "6fb27f42468733d54390834b528057e61ad114b7f1c43cadab6d5b2bf08a46d4"
+    },
+    {
+      "path": "assets/ui/hud/veil_sigils/status_stun.png",
+      "size": [
+        48,
+        48
+      ],
+      "bytes": 4233,
+      "sha256": "f861346c373752c41b8e0623e59e2710f26b0e07e8aac7875adf3a2da02709ee"
+    },
+    {
+      "path": "assets/ui/hud/veil_sigils/tooltip_frame.png",
+      "size": [
+        360,
+        180
+      ],
+      "bytes": 75914,
+      "sha256": "d3d7620b740955c7432dad16ed463709712be83af87a6191bcc9b221c036880f"
+    },
+    {
+      "path": "assets/ui/hud/veil_sigils/unbroken_vow.png",
+      "size": [
+        72,
+        72
+      ],
+      "bytes": 9212,
+      "sha256": "ea8a222dd29c97fe9db847a0964df6fff719a9279b6f08fea471e47632b93d42"
+    },
+    {
+      "path": "assets/ui/hud/veil_sigils/worldsplitter.png",
+      "size": [
+        72,
+        72
+      ],
+      "bytes": 11324,
+      "sha256": "edbc8339874ebcf143b3911eba0137e8a838feed14f520c7d6be98f23dc04173"
+    },
+    {
+      "path": "assets/ui/hud/veil_sigils/xp_frame.png",
+      "size": [
+        342,
+        66
+      ],
+      "bytes": 29913,
+      "sha256": "3d3785c26e5cb68d4f4e1ad17ea00e243fd062499a55fdb0c07e3875e7c9a57a"
+    }
+  ],
+  "normalization": "Complete source components with recorded bounds. UI shapes resampled from originals with Lanczos and graded alpha; glyphs contain-fit with3px padding. Soft outside glow removed only where alpha<235 on flagged boards. Local linear UI sampling; world sprites remain unchanged.",
+  "layout": {
+    "logical_viewport": [
+      960,
+      540
+    ],
+    "native_review": [
+      1920,
+      1080
+    ],
+    "status": [
+      244,
+      89
+    ],
+    "status_with_12_effects": [
+      244,
+      122
+    ],
+    "portrait": [
+      64,
+      64
+    ],
+    "level_badge": [
+      48,
+      22
+    ],
+    "coin_plaque": [
+      48,
+      15
+    ],
+    "mastery_frame": [
+      184,
+      30
+    ],
+    "health_gauge": [
+      160,
+      12
+    ],
+    "dock": [
+      269,
+      62
+    ],
+    "bottom_gap": 2,
+    "slot": [
+      40,
+      40
+    ],
+    "glyph_logical": [
+      24,
+      24
+    ],
+    "glyph_raster": [
+      72,
+      72
+    ],
+    "utility": [
+      36,
+      46
+    ],
+    "effects": {
+      "icon": 22,
+      "gap": 4,
+      "columns": 6,
+      "mechanical_cap": false,
+      "y": 74
+    },
+    "health_aperture": {
+      "corner_cut": 3,
+      "shared_by": [
+        "immediate_hp",
+        "damage_trail"
+      ],
+      "portrait_over_socket": true
+    },
+    "level_digit_font": 14,
+    "mastery_inlay": [
+      160,
+      7
+    ],
+    "mastery_state": "sealed_decorative_inlay_no_rank_or_xp"
+  },
+  "ui_png_bytes": 512584,
+  "font": {
+    "path": "assets/ui/fonts/lora/Lora.ttf",
+    "bytes": 212196,
+    "license": "assets/ui/fonts/lora/OFL.txt",
+    "source": "https://github.com/google/fonts/tree/main/ofl/lora"
+  },
+  "protected_before": 668,
+  "protected_after": 683,
+  "native_checks": 261,
+  "native_failures": 0,
+  "exports": [
+    {
+      "file": "level_badge.png",
+      "source": "C:/Users/Administrator/.codex/generated_images/01a0eed4-5878-7032-a315-e493f92ce97a/exec-450a0d7f-9963-4219-9d23-fc96066c0e0d.png",
+      "rect": [
+        922,
+        167,
+        329,
+        144
+      ],
+      "size": [
+        102,
+        45
+      ],
+      "contain": false,
+      "alpha_cutoff": 0,
+      "source_sha256": "a364890eef87f9c6e09ec81174859ab2fbb6bf001d188c14c2b4c03fb18ccd53",
+      "path": "assets/ui/hud/veil_sigils/level_badge.png"
+    },
+    {
+      "file": "coin_plaque.png",
+      "source": "C:/Users/Administrator/.codex/generated_images/01a0eed4-5878-7032-a315-e493f92ce97a/exec-450a0d7f-9963-4219-9d23-fc96066c0e0d.png",
+      "rect": [
+        1485,
+        177,
+        433,
+        135
+      ],
+      "size": [
+        144,
+        45
+      ],
+      "contain": false,
+      "alpha_cutoff": 0,
+      "source_sha256": "a364890eef87f9c6e09ec81174859ab2fbb6bf001d188c14c2b4c03fb18ccd53",
+      "path": "assets/ui/hud/veil_sigils/coin_plaque.png"
+    },
+    {
+      "file": "tooltip_frame.png",
+      "source": "C:/Users/Administrator/.codex/generated_images/01a0eed4-5878-7032-a315-e493f92ce97a/exec-450a0d7f-9963-4219-9d23-fc96066c0e0d.png",
+      "rect": [
+        860,
+        436,
+        456,
+        225
+      ],
+      "size": [
+        360,
+        180
+      ],
+      "contain": false,
+      "alpha_cutoff": 0,
+      "source_sha256": "a364890eef87f9c6e09ec81174859ab2fbb6bf001d188c14c2b4c03fb18ccd53",
+      "path": "assets/ui/hud/veil_sigils/tooltip_frame.png"
+    },
+    {
+      "file": "status_beneficial.png",
+      "source": "C:/Users/Administrator/.codex/generated_images/01a0eed4-5878-7032-a315-e493f92ce97a/exec-31b24300-74c4-44f4-8247-848e4f88b20e.png",
+      "rect": [
+        51,
+        55,
+        288,
+        285
+      ],
+      "size": [
+        66,
+        66
+      ],
+      "contain": false,
+      "alpha_cutoff": 0,
+      "source_sha256": "8cbc0b3efd20b1a6aca412501b9bbf462801a0ec75f65f67384b93528a78c622",
+      "path": "assets/ui/hud/veil_sigils/status_beneficial.png"
+    },
+    {
+      "file": "status_harmful.png",
+      "source": "C:/Users/Administrator/.codex/generated_images/01a0eed4-5878-7032-a315-e493f92ce97a/exec-31b24300-74c4-44f4-8247-848e4f88b20e.png",
+      "rect": [
+        402,
+        55,
+        289,
+        285
+      ],
+      "size": [
+        66,
+        66
+      ],
+      "contain": false,
+      "alpha_cutoff": 0,
+      "source_sha256": "8cbc0b3efd20b1a6aca412501b9bbf462801a0ec75f65f67384b93528a78c622",
+      "path": "assets/ui/hud/veil_sigils/status_harmful.png"
+    },
+    {
+      "file": "status_shield.png",
+      "source": "C:/Users/Administrator/.codex/generated_images/01a0eed4-5878-7032-a315-e493f92ce97a/exec-31b24300-74c4-44f4-8247-848e4f88b20e.png",
+      "rect": [
+        782,
+        69,
+        242,
+        270
+      ],
+      "size": [
+        48,
+        48
+      ],
+      "contain": true,
+      "alpha_cutoff": 0,
+      "source_sha256": "8cbc0b3efd20b1a6aca412501b9bbf462801a0ec75f65f67384b93528a78c622",
+      "path": "assets/ui/hud/veil_sigils/status_shield.png"
+    },
+    {
+      "file": "status_resolve.png",
+      "source": "C:/Users/Administrator/.codex/generated_images/01a0eed4-5878-7032-a315-e493f92ce97a/exec-31b24300-74c4-44f4-8247-848e4f88b20e.png",
+      "rect": [
+        1097,
+        89,
+        309,
+        244
+      ],
+      "size": [
+        48,
+        48
+      ],
+      "contain": true,
+      "alpha_cutoff": 0,
+      "source_sha256": "8cbc0b3efd20b1a6aca412501b9bbf462801a0ec75f65f67384b93528a78c622",
+      "path": "assets/ui/hud/veil_sigils/status_resolve.png"
+    },
+    {
+      "file": "status_root.png",
+      "source": "C:/Users/Administrator/.codex/generated_images/01a0eed4-5878-7032-a315-e493f92ce97a/exec-31b24300-74c4-44f4-8247-848e4f88b20e.png",
+      "rect": [
+        52,
+        398,
+        287,
+        284
+      ],
+      "size": [
+        48,
+        48
+      ],
+      "contain": true,
+      "alpha_cutoff": 0,
+      "source_sha256": "8cbc0b3efd20b1a6aca412501b9bbf462801a0ec75f65f67384b93528a78c622",
+      "path": "assets/ui/hud/veil_sigils/status_root.png"
+    },
+    {
+      "file": "status_stun.png",
+      "source": "C:/Users/Administrator/.codex/generated_images/01a0eed4-5878-7032-a315-e493f92ce97a/exec-31b24300-74c4-44f4-8247-848e4f88b20e.png",
+      "rect": [
+        395,
+        400,
+        297,
+        290
+      ],
+      "size": [
+        48,
+        48
+      ],
+      "contain": true,
+      "alpha_cutoff": 0,
+      "source_sha256": "8cbc0b3efd20b1a6aca412501b9bbf462801a0ec75f65f67384b93528a78c622",
+      "path": "assets/ui/hud/veil_sigils/status_stun.png"
+    },
+    {
+      "file": "family_sword.png",
+      "source": "C:/Users/Administrator/.codex/generated_images/01a0eed4-5878-7032-a315-e493f92ce97a/exec-31b24300-74c4-44f4-8247-848e4f88b20e.png",
+      "rect": [
+        764,
+        402,
+        267,
+        275
+      ],
+      "size": [
+        54,
+        54
+      ],
+      "contain": true,
+      "alpha_cutoff": 0,
+      "source_sha256": "8cbc0b3efd20b1a6aca412501b9bbf462801a0ec75f65f67384b93528a78c622",
+      "path": "assets/ui/hud/veil_sigils/family_sword.png"
+    },
+    {
+      "file": "family_greatsword.png",
+      "source": "C:/Users/Administrator/.codex/generated_images/01a0eed4-5878-7032-a315-e493f92ce97a/exec-31b24300-74c4-44f4-8247-848e4f88b20e.png",
+      "rect": [
+        1091,
+        370,
+        314,
+        322
+      ],
+      "size": [
+        54,
+        54
+      ],
+      "contain": true,
+      "alpha_cutoff": 0,
+      "source_sha256": "8cbc0b3efd20b1a6aca412501b9bbf462801a0ec75f65f67384b93528a78c622",
+      "path": "assets/ui/hud/veil_sigils/family_greatsword.png"
+    },
+    {
+      "file": "family_dual_swords.png",
+      "source": "C:/Users/Administrator/.codex/generated_images/01a0eed4-5878-7032-a315-e493f92ce97a/exec-31b24300-74c4-44f4-8247-848e4f88b20e.png",
+      "rect": [
+        42,
+        743,
+        306,
+        273
+      ],
+      "size": [
+        54,
+        54
+      ],
+      "contain": true,
+      "alpha_cutoff": 0,
+      "source_sha256": "8cbc0b3efd20b1a6aca412501b9bbf462801a0ec75f65f67384b93528a78c622",
+      "path": "assets/ui/hud/veil_sigils/family_dual_swords.png"
+    },
+    {
+      "file": "family_axe.png",
+      "source": "C:/Users/Administrator/.codex/generated_images/01a0eed4-5878-7032-a315-e493f92ce97a/exec-31b24300-74c4-44f4-8247-848e4f88b20e.png",
+      "rect": [
+        389,
+        723,
+        304,
+        305
+      ],
+      "size": [
+        54,
+        54
+      ],
+      "contain": true,
+      "alpha_cutoff": 0,
+      "source_sha256": "8cbc0b3efd20b1a6aca412501b9bbf462801a0ec75f65f67384b93528a78c622",
+      "path": "assets/ui/hud/veil_sigils/family_axe.png"
+    },
+    {
+      "file": "family_scythe.png",
+      "source": "C:/Users/Administrator/.codex/generated_images/01a0eed4-5878-7032-a315-e493f92ce97a/exec-31b24300-74c4-44f4-8247-848e4f88b20e.png",
+      "rect": [
+        722,
+        718,
+        322,
+        319
+      ],
+      "size": [
+        54,
+        54
+      ],
+      "contain": true,
+      "alpha_cutoff": 0,
+      "source_sha256": "8cbc0b3efd20b1a6aca412501b9bbf462801a0ec75f65f67384b93528a78c622",
+      "path": "assets/ui/hud/veil_sigils/family_scythe.png"
+    },
+    {
+      "file": "mastery_fill.png",
+      "source": "C:/Users/Administrator/.codex/generated_images/01a0eed4-5878-7032-a315-e493f92ce97a/exec-31b24300-74c4-44f4-8247-848e4f88b20e.png",
+      "rect": [
+        1066,
+        842,
+        357,
+        81
+      ],
+      "size": [
+        480,
+        30
+      ],
+      "contain": false,
+      "alpha_cutoff": 0,
+      "source_sha256": "8cbc0b3efd20b1a6aca412501b9bbf462801a0ec75f65f67384b93528a78c622",
+      "path": "assets/ui/hud/veil_sigils/mastery_fill.png"
+    },
+    {
+      "file": "king_portrait.png",
+      "source": "C:/Users/Administrator/.codex/generated_images/01a0eed4-5878-7032-a315-e493f92ce97a/exec-99cf0e11-18b3-4554-ac73-fd87c41aefe3.png",
+      "rect": [
+        422,
+        21,
+        692,
+        649
+      ],
+      "size": [
+        192,
+        192
+      ],
+      "contain": false,
+      "alpha_cutoff": 235,
+      "source_sha256": "e48665b1befa5b6b0cf65affc35fec9cddedc2efbff51c9f7937eabf6b784ba4",
+      "path": "assets/ui/hud/veil_sigils/king_portrait.png"
+    },
+    {
+      "file": "mastery_frame.png",
+      "source": "C:/Users/Administrator/.codex/generated_images/01a0eed4-5878-7032-a315-e493f92ce97a/exec-99cf0e11-18b3-4554-ac73-fd87c41aefe3.png",
+      "rect": [
+        42,
+        705,
+        1452,
+        265
+      ],
+      "size": [
+        552,
+        90
+      ],
+      "contain": false,
+      "alpha_cutoff": 235,
+      "source_sha256": "e48665b1befa5b6b0cf65affc35fec9cddedc2efbff51c9f7937eabf6b784ba4",
+      "path": "assets/ui/hud/veil_sigils/mastery_frame.png"
+    },
+    {
+      "file": "earthsplitter.png",
+      "source": "C:/Users/Administrator/.codex/generated_images/01a0eed4-5878-7032-a315-e493f92ce97a/exec-28457c0a-d7c4-42ad-80ff-89353b7770c8.png",
+      "rect": [
+        52,
+        16,
+        459,
+        483
+      ],
+      "size": [
+        72,
+        72
+      ],
+      "contain": true,
+      "alpha_cutoff": 235,
+      "source_sha256": "aea52ad5cc8f6aa38e2347259918adc3f22eff97fda5288bfcb103a4682e3d67",
+      "path": "assets/ui/hud/veil_sigils/earthsplitter.png"
+    },
+    {
+      "file": "molten_crash.png",
+      "source": "C:/Users/Administrator/.codex/generated_images/01a0eed4-5878-7032-a315-e493f92ce97a/exec-28457c0a-d7c4-42ad-80ff-89353b7770c8.png",
+      "rect": [
+        549,
+        14,
+        469,
+        480
+      ],
+      "size": [
+        72,
+        72
+      ],
+      "contain": true,
+      "alpha_cutoff": 235,
+      "source_sha256": "aea52ad5cc8f6aa38e2347259918adc3f22eff97fda5288bfcb103a4682e3d67",
+      "path": "assets/ui/hud/veil_sigils/molten_crash.png"
+    },
+    {
+      "file": "sovereign_pursuit.png",
+      "source": "C:/Users/Administrator/.codex/generated_images/01a0eed4-5878-7032-a315-e493f92ce97a/exec-28457c0a-d7c4-42ad-80ff-89353b7770c8.png",
+      "rect": [
+        1049,
+        98,
+        448,
+        403
+      ],
+      "size": [
+        72,
+        72
+      ],
+      "contain": true,
+      "alpha_cutoff": 235,
+      "source_sha256": "aea52ad5cc8f6aa38e2347259918adc3f22eff97fda5288bfcb103a4682e3d67",
+      "path": "assets/ui/hud/veil_sigils/sovereign_pursuit.png"
+    },
+    {
+      "file": "unbroken_vow.png",
+      "source": "C:/Users/Administrator/.codex/generated_images/01a0eed4-5878-7032-a315-e493f92ce97a/exec-28457c0a-d7c4-42ad-80ff-89353b7770c8.png",
+      "rect": [
+        78,
+        518,
+        394,
+        469
+      ],
+      "size": [
+        72,
+        72
+      ],
+      "contain": true,
+      "alpha_cutoff": 235,
+      "source_sha256": "aea52ad5cc8f6aa38e2347259918adc3f22eff97fda5288bfcb103a4682e3d67",
+      "path": "assets/ui/hud/veil_sigils/unbroken_vow.png"
+    },
+    {
+      "file": "worldsplitter.png",
+      "source": "C:/Users/Administrator/.codex/generated_images/01a0eed4-5878-7032-a315-e493f92ce97a/exec-28457c0a-d7c4-42ad-80ff-89353b7770c8.png",
+      "rect": [
+        522,
+        512,
+        503,
+        496
+      ],
+      "size": [
+        72,
+        72
+      ],
+      "contain": true,
+      "alpha_cutoff": 235,
+      "source_sha256": "aea52ad5cc8f6aa38e2347259918adc3f22eff97fda5288bfcb103a4682e3d67",
+      "path": "assets/ui/hud/veil_sigils/worldsplitter.png"
+    },
+    {
+      "file": "dodge.png",
+      "source": "C:/Users/Administrator/.codex/generated_images/01a0eed4-5878-7032-a315-e493f92ce97a/exec-28457c0a-d7c4-42ad-80ff-89353b7770c8.png",
+      "rect": [
+        1043,
+        594,
+        462,
+        370
+      ],
+      "size": [
+        72,
+        72
+      ],
+      "contain": true,
+      "alpha_cutoff": 235,
+      "source_sha256": "aea52ad5cc8f6aa38e2347259918adc3f22eff97fda5288bfcb103a4682e3d67",
+      "path": "assets/ui/hud/veil_sigils/dodge.png"
+    },
+    {
+      "file": "medallion.png",
+      "source": "C:/Users/Administrator/.codex/generated_images/01a0eed4-5878-7032-a315-e493f92ce97a/exec-f59987dd-0ccf-4857-b48e-2e59027a8be8.png",
+      "rect": [
+        36,
+        60,
+        394,
+        387
+      ],
+      "size": [
+        120,
+        120
+      ],
+      "source_sha256": "dadcaa625821974eae1cd43b315edfbe6bbaa7f7c78c9433cde578ba31e7e7e0",
+      "path": "assets/ui/hud/veil_sigils/medallion.png"
+    },
+    {
+      "file": "xp_frame.png",
+      "source": "C:/Users/Administrator/.codex/generated_images/01a0eed4-5878-7032-a315-e493f92ce97a/exec-f59987dd-0ccf-4857-b48e-2e59027a8be8.png",
+      "rect": [
+        464,
+        208,
+        551,
+        106
+      ],
+      "size": [
+        342,
+        66
+      ],
+      "source_sha256": "dadcaa625821974eae1cd43b315edfbe6bbaa7f7c78c9433cde578ba31e7e7e0",
+      "path": "assets/ui/hud/veil_sigils/xp_frame.png"
+    },
+    {
+      "file": "bag_face.png",
+      "source": "C:/Users/Administrator/.codex/generated_images/01a0eed4-5878-7032-a315-e493f92ce97a/exec-f59987dd-0ccf-4857-b48e-2e59027a8be8.png",
+      "rect": [
+        1068,
+        127,
+        294,
+        262
+      ],
+      "size": [
+        108,
+        108
+      ],
+      "source_sha256": "dadcaa625821974eae1cd43b315edfbe6bbaa7f7c78c9433cde578ba31e7e7e0",
+      "path": "assets/ui/hud/veil_sigils/bag_face.png"
+    },
+    {
+      "file": "settings_face.png",
+      "source": "C:/Users/Administrator/.codex/generated_images/01a0eed4-5878-7032-a315-e493f92ce97a/exec-f59987dd-0ccf-4857-b48e-2e59027a8be8.png",
+      "rect": [
+        1438,
+        127,
+        282,
+        262
+      ],
+      "size": [
+        108,
+        108
+      ],
+      "source_sha256": "dadcaa625821974eae1cd43b315edfbe6bbaa7f7c78c9433cde578ba31e7e7e0",
+      "path": "assets/ui/hud/veil_sigils/settings_face.png"
+    }
+  ],
+  "artwork_scope": "UI presentation only; accepted assets, actors/weapons, combat, movement, saves and progression remain unchanged. Mastery uses a sealed decorative inlay; no numerical rank/XP control is present."
+}

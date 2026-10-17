@@ -26,9 +26,10 @@ const GENERATED_ICON_SIZES := {
 
 const ACTION_ICON_REGIONS := {
 	"res://assets/ui/icons/combat/king_skill_1_icon.tres": 0,
-	"res://assets/ui/icons/combat/king_skill_2_icon.tres": 1,
-	"res://assets/ui/icons/combat/king_skill_3_icon.tres": 2,
-	"res://assets/ui/icons/combat/king_skill_4_icon.tres": 3,
+	"res://assets/ui/icons/combat/king_skill_2_icon.tres": 0,
+	"res://assets/ui/icons/combat/king_skill_3_icon.tres": 0,
+	"res://assets/ui/icons/combat/king_skill_4_icon.tres": 0,
+	"res://assets/ui/icons/combat/unbroken_vow_icon.tres": 0,
 	"res://assets/ui/icons/combat/basic_attack_icon.tres": 4,
 	"res://assets/ui/icons/combat/dodge_dash_icon.tres": 5,
 }
@@ -95,11 +96,12 @@ func _run() -> void:
 					return
 	for path: String in ACTION_ICON_REGIONS:
 		var region_texture := load(path) as AtlasTexture
+		var density_size := 72 if path in ["res://assets/ui/icons/combat/king_skill_1_icon.tres","res://assets/ui/icons/combat/king_skill_2_icon.tres","res://assets/ui/icons/combat/king_skill_3_icon.tres","res://assets/ui/icons/combat/king_skill_4_icon.tres","res://assets/ui/icons/combat/unbroken_vow_icon.tres"] else 24
 		var expected_x: int = ACTION_ICON_REGIONS[path] * 24
 		if (
 			region_texture == null
-			or region_texture.get_size() != Vector2(24, 24)
-			or region_texture.region != Rect2(expected_x, 0, 24, 24)
+			or region_texture.get_size() != Vector2(density_size, density_size)
+			or region_texture.region != Rect2(expected_x, 0, density_size, density_size)
 		):
 			_fail("Combat action resource does not map to its fixed atlas cell: %s" % path)
 			return
@@ -111,7 +113,7 @@ func _run() -> void:
 	if hud.get_node("HealthPanel/Margin/Stack/Header/HealthIcon").texture == null:
 		_fail("CombatHUD health icon is not configured.")
 		return
-	if hud.character_menu_button.icon == null or hud.character_menu_button.text != "CHARACTER & BAG  [TAB]":
+	if hud.character_menu_button.get_node("ActionFace").texture == null or hud.character_menu_button.get_node("Keycap").text != "TAB":
 		_fail("CombatHUD character/inventory entry button is not configured.")
 		return
 	var menu := CharacterMenuScene.instantiate() as CharacterMenu

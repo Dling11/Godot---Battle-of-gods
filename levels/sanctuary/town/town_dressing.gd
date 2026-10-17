@@ -35,13 +35,15 @@ func configure(hub: Node, props: Node2D) -> void:
 	stations.append(_prop("anvil_station", Vector2(1038, 430), Vector2(60, 16), 4))
 	stations.append(_prop("lectern", Vector2(344, 410), Vector2(24, 14), 3))
 	stations.append(_prop("noticeboard", Vector2(438, 658), Vector2(48, 14), 4))
-	for start in [Vector2(136, 224), Vector2(704, 224)]:
+	# Outer perimeter encloses the northern services. Both forecourts open south;
+	# no inherited wall fragments cut across their approaches.
+	for start in [Vector2(136,-96),Vector2(720,-96)]:
 		_wall_run(start, 3, false)
 	for start in [Vector2(136, 704), Vector2(880, 736)]:
 		_wall_run(start, 2, false)
-	_wall_run(Vector2(136, 224), 2, true)
-	_wall_run(Vector2(992, 224), 1, true)
-	for point in [Vector2(136,224),Vector2(424,224),Vector2(704,224),Vector2(992,224),Vector2(136,416),Vector2(992,320),Vector2(136,704),Vector2(328,704),Vector2(880,736),Vector2(1072,736)]:
+	_wall_run(Vector2(136,-96),3,true)
+	_wall_run(Vector2(1008,-96),3,true)
+	for point in [Vector2(136,-96),Vector2(424,-96),Vector2(720,-96),Vector2(1008,-96),Vector2(136,192),Vector2(1008,192),Vector2(136,704),Vector2(328,704),Vector2(880,736),Vector2(1072,736)]:
 		walls.append(_prop("pillar", point, Vector2(20,16), 4))
 	_building("nema",Vector2(232,648),Vector2(132,46),Vector2(-12,-27),Vector2(-38,-3))
 	_building("umi",Vector2(904,668),Vector2(132,42),Vector2(5,-25),Vector2(-18,-3))

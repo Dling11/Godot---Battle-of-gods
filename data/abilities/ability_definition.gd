@@ -29,7 +29,7 @@ enum ImpactWeight { LIGHT, MEDIUM, HEAVY, DEVASTATING }
 @export_range(0.0, 1.0, 0.05) var non_final_stagger_multiplier := 1.0
 @export_range(0.0, 1000.0, 1.0, "suffix:px/s") var active_movement_speed := 0.0
 @export_range(0.0, 2.0, 0.01, "suffix:s") var wind_up_seconds := 0.1
-@export_range(0.01, 2.0, 0.01, "suffix:s") var active_seconds := 0.1
+@export_range(0.01, 10.0, 0.01, "suffix:s") var active_seconds := 0.1
 @export_range(0.0, 3.0, 0.01, "suffix:s") var recovery_seconds := 0.2
 @export_range(0.0, 30.0, 0.1, "suffix:s") var cooldown_seconds := 1.0
 @export var grants_invulnerability := false

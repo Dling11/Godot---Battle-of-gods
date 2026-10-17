@@ -1,6 +1,16 @@
 # Battle of Gods
 
-A Godot pixel action prototype with a renewed Sanctuary, six campaign stages, five equipable weapon families, King techniques, crafting/material exchange and an isolated Combat Lab. The owner provisionally settles current weapon artwork on2026-10-16; Decisions222/223 remove superseded experiments and bulk generation sources. Earned family acquisition, later story arcs and final balance remain planned.
+Sanctuary 234 refreshes Veyr as a young hooded mentor with a ground shadow, visible carried weapons, an outfitted pavilion and responsive straw targets. The northwest mentor/northeast gate routes and first Axe lesson remain as below. Current handoff: [CONTINUE_SANCTUARY.md](CONTINUE_SANCTUARY.md).
+
+Weapon Court232: F5 → Continue → follow the northwest path from the fountain to the weapons pavilion → Veyr → F → Begin Axe Lesson. Complete the cleave/spin/dodge proof, then forge Iron Beard Axe with Nema (4 Weathered Fittings,6 Root Fiber,75 gold). Equip it in Tab/Weapons and use F1 in expeditions. F9/Lab practice never grants permanent learning. The Sanctuary gate now sits northeast with inspectable routes and explicit entry; Veyr/base/walls use the corrected233 layout and approved NPC scale. [First lesson guide](docs/design/weapon-court-and-first-proof.md).
+
+A Godot pixel action prototype with a renewed Sanctuary, six campaign stages, five equipable weapon families, King techniques, crafting/material exchange and an isolated Combat Lab. The owner provisionally settles current weapon artwork on2026-10-16; Decisions222/223 remove superseded experiments and bulk generation sources. Veyr's first Axe proof and Nema forging are playable; other family acquisition, later story arcs and final balance remain planned.
+
+Current HUD: B uses a round portrait/attached Lv badge, red HP, framed coins and a labeled mastery ribbon at top-left. Hover skills/mastery/active effects for themed descriptions and live values. Axe mastery displays its earned proof; untrained families keep the sealed violet inlay and family emblem. Round skills and numeric XP stay bottom-center; Bag/Tab and Menu/Esc bottom-right. Current native images/reference comparison: [HUD review](docs/design/hud-reference-fidelity.md).
+
+Bag227: Tab opens the refreshed paper doll and equipment browser, with King centered against the accepted floorless gradient. Use Weapons/Armor/Gear categories and the sort dropdown; scroll item details while the equip button stays visible. Damage/DPS, comparisons and combo mechanics follow current definitions. Material search remains in its pouch. [Bag review](docs/design/bag-inspection-refresh.md).
+
+War Cyclone231 uses the accepted connected spin; its visual work is closed for now. Trial: F5 → F9 → F7 → Weapons → TRY WAR CYCLONE → F1. Spin for5s; repeating F1 plays a quiet cue and keeps spinning. WASD/right-click steers; Space dodges out. Starter Axe deals150 total Physical/30 DPS before modifiers, with ACTIVE50% all-type reduction/stun immunity. Hover F1 for separate damage/guard facts. Disable King Invincible in Lab to test guard hits. [Technique and future upgrades](docs/design/axe-war-cyclone.md).
 
 ## Setup
 

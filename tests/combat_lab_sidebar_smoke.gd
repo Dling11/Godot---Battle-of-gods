@@ -79,6 +79,8 @@ func _run() -> void:
 	review.buff_test.advance(.17)
 	await capture("04_buff.png")
 	lab.review_tabs.current_tab = 0
+	# Family presentation restores its visible actor in the next physics sync.
+	await physics_frame
 	await process_frame
 	var family := actor.get_node("WeaponFamilyPresentation")
 	check(not review.buff_test.opened and not actor.is_cinematic_locked() and family.presenter.visible and not actor.get_node("VisualRoot/Body").visible, "Changing tabs stranded preview state")

@@ -1,8 +1,18 @@
 # Continue current weapons
 
-Updated2026-10-16. The owner provisionally accepts Decision224 Sword running and requests a natural grasp. Middle-leather grasp(10,66), a lower10-degree blade and foreground hilt/same-pose glove occlusion replace the rejected pommel-end(10,70) grasp. Accepted body poses and motion are unchanged. Grip review is pending. Up/down and all attacks/gameplay remain exact. Audit/prompts: art_source/reference/characters/king/sword-side-run.json. Test F5 → F9 → F7 → Weapons → King’s Sword.
+Latest232: the first Axe lesson is now normal gameplay through Veyr's northwest Sanctuary pavilion/yard (corrected scale/layout233). It earns permanent Cyclone F1 and Nema's Iron Beard recipe without weapon XP. F9/F7 remains non-saving review. See docs/design/weapon-court-and-first-proof.md; all settled ordinary weapon/Cyclone231 artwork remains protected.
+
+Updated2026-10-16. The owner provisionally accepts Sword224 running/final grip and settles current weapon artwork. Preserve the installed five families; acquisition and campaign balance are next proposed work. Audit: art_source/reference/characters/king/sword-side-run.json. Test F5 → F9 → F7 → Weapons → King’s Sword.
 
  The owner provisionally settles the five current weapon families and requests cleanup before the next feature. Decision222 owns this closeout; preserve the current artwork and gameplay. Do not restart redesign by default.
+
+## First Axe technique2026-10-17
+
+War Cyclone231 is provisionally accepted and installed: paired body/silver-cut motion, original blue outer, quieter C contact and separate sparks. Ordinary Axe poses handle startup/settle. Decision230 mechanics/audio remain:5s ACTIVE,150 starter Physical total/30 DPS,10 normal or15 hasted pulses with the same total,96px radius,90% steering,50% all-type guard/stun immunity, repeated-F1 acknowledgement and Space cancellation. Headless Cyclone422/0 passes; ordinary weapon art and production saves remain exact. Learning/mentor/evolution and campaign/device balance are still planned. Current guide: docs/design/axe-war-cyclone.md; sole compact provenance: art_source/reference/abilities/axe-war-cyclone.json. Visual iteration is closed under231.
+
+## Current UI follow-up2026-10-17
+
+Latest HUD review2026-10-17: the owner approves the B concept but rejects the simplified native rendition and requests matching skill quality. Rebuild the missing details from the approved reference: attached cyan Lv plaque, framed coin readout, slimmer30px mastery chassis with emblem/rank lozenges and inset gauge, illustrated status rims/glyphs, icon-headed gemmed hover cards and serif typography. Fresh72px skill glyphs still render24px inside40px medallions; XP/utility art is also dense at its unchanged footprint. Current base status is244x89;12 effects fit244x122 with six22px icons per row. Decision232 displays the earned Axe proof; other families retain the SEALED violet inlay, emblem and lock seal. No rank/XP placeholders are displayed. The larger48x22 level plaque uses14px digits. Earlier sample5/340/600 captures are historical visual studies. Native261 checks and true1080p captures pass; these do not constitute owner art approval. Start next review from docs/design/hud-reference-fidelity.md and the single compact approved reference. Preserve all actor/weapon artwork, inputs, progression and saves.
 
 ## Current families
 

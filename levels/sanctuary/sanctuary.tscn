@@ -48,7 +48,7 @@ music_stream = ExtResource("18_music")
 y_sort_enabled = true
 
 [node name="ExpeditionAltar" parent="World/Actors" unique_id=2049147653 instance=ExtResource("12_altar")]
-position = Vector2(576, 300)
+position = Vector2(864, 128)
 
 [node name="DivineFountain" parent="World/Actors" unique_id=1246935042 instance=ExtResource("12_fountain")]
 position = Vector2(576, 452)
@@ -67,12 +67,12 @@ position = Vector2(786, 650)
 
 [node name="Player" parent="World/Actors" unique_id=1654953230 instance=ExtResource("2_player")]
 position = Vector2(576, 676)
-movement_bounds = Rect2(56, 56, 1040, 656)
+movement_bounds = Rect2(56, -72, 1040, 784)
 
 [node name="Camera2D" type="Camera2D" parent="World/Actors/Player" unique_id=1964421429]
 position = Vector2(0, -8)
 limit_left = 0
-limit_top = 0
+limit_top = -128
 limit_right = 1152
 limit_bottom = 768
 

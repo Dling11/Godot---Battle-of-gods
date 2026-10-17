@@ -197,6 +197,9 @@ func _on_safe_profile_changed(_first: Variant = null, _second: Variant = null) -
 
 
 func _save_profile_at_sanctuary() -> void:
+	# The forge commits its own complete spend/output snapshot once. Inventory
+	# signals inside that transaction must not save a partially paid weapon.
+	if get_node("/root/CraftingService").transaction_active: return
 	var save_service := get_node_or_null("/root/SaveService")
 	if save_service != null:
 		save_service.save_profile()

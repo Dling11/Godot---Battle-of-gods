@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-17",
+  "status": "Accepted and installed",
+  "method": "Native Godot GradientTexture2D and a transparent Panel border; no generated background raster",
+  "selected_settings": "art_source/reference/ui/bag-inspection.json",
+  "runtime_resource": "assets/ui/inventory/portrait_backdrop.tres",
+  "review_capture": "tmp/review/ui/bag_inspection_2026_10_17/weapon_king_signature_sword.png",
+  "art_direction": "Quiet charcoal/violet gradient, thin slate border, no ground or scenery.",
+  "discarded_directions": "The owner rejected ornate chambers, architectural pixel variants and a flat panel with floor seams. Unselected rasters are not runtime assets."
+}
